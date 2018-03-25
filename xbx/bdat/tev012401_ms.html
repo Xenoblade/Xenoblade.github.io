@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev012401_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev012401_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0011</td>
+        <td class="side">Confirm your mission objectives with Piers.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev012401_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0021</td>
+        <td class="side">Ask Piers if he has any interesting news.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0041</td>
+        <td class="side">Ask Piers if he has any interesting news.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0051</td>
+        <td class="side">Ask Piers about the northern coast.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0061</td>
+        <td class="side">Ask Piers if he's heard any interesting rumors.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0071</td>
+        <td class="side">Ask how Piers fared during the enemy attack.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0081</td>
+        <td class="side">Ask Piers if he has any interesting news.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0091</td>
+        <td class="side">Ask what Piers intends to do next.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev012401_SEL0101</td>
+        <td class="side">Ask Piers if he's heard any interesting rumors.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev012401_SEL1021</td>
+        <td class="side">Ask Piers if he has any interesting news.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev012401_SEL2021</td>
+        <td class="side">Ask Piers about recent developments.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev012401_SEL3021</td>
+        <td class="side">Ask Piers about recent developments.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0001</td>
+        <td class="side">Heya! I heard you're on data-probe duty for your[ST:n ]first mission. Be careful out there, all right?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0002</td>
+        <td class="side">Hey, wait a minute. What are you even doing here?[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0003</td>
+        <td class="side">You're installing that data probe to the east, right?[ST:n ]Well, this is New LA's west gate. You can look at the[ST:n ]map on your comm device if you're confused.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0004</td>
+        <td class="side">The arrow indicates your destination, all right? Make[ST:n ]sure you take a look at it before you set off anywhere.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0005</td>
+        <td class="side">A BLADE from the Outfitters division just passed[ST:n ]through here on the way to Noctilum.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0006</td>
+        <td class="side">The Skell that BLADE was piloting was incredible.[ST:n ]I'd kill for one like that![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0007</td>
+        <td class="side">Of course, I don't even have a Skell license,[ST:n ]so I'll never get to ride anything so cool.[ST:n ]Some BLADEs have all the luck![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0008</td>
+        <td class="side">It's not just this gate—I hear the east gate has been[ST:n ]opened as well.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0009</td>
+        <td class="side">...Huh? Where is it? Oh, just head towards BLADE HQ[ST:n ]and then keep going toward the Barracks. It's just down[ST:n ]the road to the left of the Barracks. You can't miss it.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0010</td>
+        <td class="side">Anyway, feel free to use whichever gate is more[ST:n ]convenient for the task at hand.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0011</td>
+        <td class="side">Hmm? You still don't know which one that is?[ST:n ]In that case, just take a look at your map.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0012</td>
+        <td class="side">And if you get lost outside, check your map for that,[ST:n ]too. Sure beats standing there sucking your thumb[ST:n ]and hoping your mom will come pick you up.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0013</td>
+        <td class="side">An awful lot of time has passed since that Outfitter[ST:n ]passed through here on the way to Noctilum.[ST:n ]I hope everything's okay.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0014</td>
+        <td class="side">I know I'm probably worrying about it too much,[ST:n ]considering the incredible Skell that BLADE was[ST:n ]piloting and all, but still...[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0015</td>
+        <td class="side">Anyway, if your business takes you up to Noctilum,[ST:n ]could you maybe keep an eye out?[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0016</td>
+        <td class="side">Did you know that you can reach the coast by[ST:n ]traveling north from here?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0017</td>
+        <td class="side">If you're exploring that area, be careful not to fall into[ST:n ]the ocean.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0018</td>
+        <td class="side">The only way I know of to get back up onto the cliffs[ST:n ]is via the sloping path at Northpointe Cove, but it's a[ST:n ]real pain in the tokus.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0019</td>
+        <td class="side">There are also lots of vicious indigens hanging around[ST:n ]there. If they start to get threatening, it's probably[ST:n ]better to sheathe your weapon and run for it.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0020</td>
+        <td class="side">If you travel a short ways west from here,[ST:n ]you'll reach Biahno Lake.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0021</td>
+        <td class="side">Word is, they're planning to build a water-purification[ST:n ]plant there.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0022</td>
+        <td class="side">But unfortunately, the people bringing materials to the[ST:n ]construction site are constantly being attacked by[ST:n ]indigens.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0023</td>
+        <td class="side">The project leaders are over at the water-purification[ST:n ]plant in the residential district. Maybe you should go[ST:n ]see if you can help them out.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0024</td>
+        <td class="side">I closed the west gate as soon as the siren sounded.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0025</td>
+        <td class="side">But there was nothing we could do about the enemy[ST:n ]mechs that could fly.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0026</td>
+        <td class="side">Some of the larger indigens are also capable of flight.[ST:n ]Maybe we should start thinking about a dome or a[ST:n ]force field or something.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0027</td>
+        <td class="side">I know how important the search for the Lifehold is,[ST:n ]but I'd like to see a little more effort put into improving[ST:n ]humanity's new home.[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0028</td>
+        <td class="side">Folks were so shorthanded the other day,[ST:n ]they even asked ME to participate in a mission.[ST:n ]And man, was it ever awkward.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0029</td>
+        <td class="side">The whole team was distant and mumbly at first,[ST:n ]though we bonded a bit as the mission went on.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0030</td>
+        <td class="side">I typically don't talk much, but I ended up telling[ST:n ]them about my various hobbies and interests.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0031</td>
+        <td class="side">Anyway, the point is, when you bring a new member[ST:n ]onto your team, check their details after time has[ST:n ]passed. You might find some interesting developments![ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0032</td>
+        <td class="side">Thanks to the great work you and Elma did,[ST:n ]the Ganglion's boss has been toppled.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0033</td>
+        <td class="side">But that hardly means the indigens of Mira are going[ST:n ]to show up at our door with friendship treaties between[ST:n ]their teeth.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0034</td>
+        <td class="side">It seems that no matter how strong we become,[ST:n ]there will always be enemies at our gates.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0035</td>
+        <td class="side">I don't know if we'll have to eliminate all the potential[ST:n ]threats to humanity like we did on Earth, or if we can[ST:n ]find a way to live in harmony with the indigens.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0036</td>
+        <td class="side">It's a lot to think about, huh?[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0037</td>
+        <td class="side">They say a single Ganglion supersoldier wiped out[ST:n ]an entire elite team of Harriers that had been sent[ST:n ]to the high ground near Bedrock Hold.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0038</td>
+        <td class="side">Apparently that supersoldier is called[ST:n ]Nahum the Red Hare, and she's feared[ST:n ]even by the rest of the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0039</td>
+        <td class="side">But if you were able to bring down Luxaar, I'm sure[ST:n ]you can do something about this Nahum woman.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0040</td>
+        <td class="side">The other day, a Zaruboggan named Phoskeran picked[ST:n ]up all the trash around here and carried it away.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0041</td>
+        <td class="side">I thought that was pretty strange, but he said he really[ST:n ]enjoyed being on garbage duty.[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0042</td>
+        <td class="side">In fact, I think he said he loved picking up trash,[ST:n ]but hated some other duty that had recently been[ST:n ]assigned to him.[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0043</td>
+        <td class="side">Man, what could be worse than collecting garbage?[ST:n ]I mean, it's GARBAGE.[ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0044</td>
+        <td class="side">They tossed Homer into the detention facility.[ST:n ]Case closed, I guess.[ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0045</td>
+        <td class="side">I'm just glad the Zaruboggan were cleared of any[ST:n ]wrongdoing.[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0046</td>
+        <td class="side">They look and act weird, and it makes them seem[ST:n ]much more suspicious than those Ma-non.[ST:n ]But there isn't really anything we can do about that.[ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0047</td>
+        <td class="side">Still, I'm doing what I can. I tell everyone who passes[ST:n ]through here what a great guy Phoskeran is.[ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0048</td>
+        <td class="side">After all, it's a Mediator's duty to try and make this[ST:n ]city a better place.[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0049</td>
+        <td class="side">That Nastasha woman was so excited to have been[ST:n ]rescued by Elma.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0050</td>
+        <td class="side">She even asked if I'd tell her whenever Elma passes[ST:n ]through here and report what Elma was wearing.[ST:n ]She's like some kind of weird Elma groupie...[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>tev012401_MSG0051</td>
+        <td class="side">...Hey, relax! I'm not going to actually DO it.[ST:n ]You can pass through here with your mind at ease.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

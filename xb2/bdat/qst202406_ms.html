@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202406_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202406_0010</td>
+        <td>82</td>
+        <td class="side">Ohh, nononononono! Terrible news! Tirkin
+launch attack on us!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202406_0020</td>
+        <td>82</td>
+        <td class="side">The Tirkin?!</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202406_0030</td>
+        <td>82</td>
+        <td class="side">Are they even capable of organizing an attack?!</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202406_0040</td>
+        <td>82</td>
+        <td class="side">We get shipment on deck, giant box.
+Then all of sudden, Tirkin leap out!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202406_0050</td>
+        <td>82</td>
+        <td class="side">It completely unheard of! Whole of Goldmouth in total uproar!</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202406_0060</td>
+        <td>82</td>
+        <td class="side">Hey! Hey, Nora. What do you think might be for dinner?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202406_0070</td>
+        <td>82</td>
+        <td class="side">Nora not know. Tora not know either!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202406_0080</td>
+        <td>82</td>
+        <td class="side">I'm really in something like a Stuffed Meaty Carrot mood.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202406_0090</td>
+        <td>82</td>
+        <td class="side">Ah, so tasty...</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202406_0100</td>
+        <td>82</td>
+        <td class="side">Yeah! Sometimes I dream about being
+buried in a pile of Stuffed Meaty Carrots.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202406_0110</td>
+        <td>82</td>
+        <td class="side">Please focus, you two.
+We do not have time for this inanity!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202406_0120</td>
+        <td>82</td>
+        <td class="side">This very serious situation!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202406_0130</td>
+        <td>82</td>
+        <td class="side">If Tirkin go wild in Goldmouth, business
+in deep deep trouble!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202406_0140</td>
+        <td>82</td>
+        <td class="side">This no time to be thinking about that!</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202406_0150</td>
+        <td>82</td>
+        <td class="side">It extremely dangerous to stay here.
+Must evacuate immediately!</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202406_0160</td>
+        <td>82</td>
+        <td class="side">Fool of a pon!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202406_0170</td>
+        <td>82</td>
+        <td class="side">Merchant without shop is like fish without water.
+Noganga not move one inch!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202406_0180</td>
+        <td>82</td>
+        <td class="side">This all happen because you too weak and you
+not shooshoo Tirkin!</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202406_0190</td>
+        <td>82</td>
+        <td class="side">It all your fault!</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202406_0200</td>
+        <td>82</td>
+        <td class="side">Think of victims and lost revenue!
+Noganga expect Drivers to clean up own mess!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202406_0210</td>
+        <td>82</td>
+        <td class="side">It seems we've no choice but to step in.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202406_0220</td>
+        <td>82</td>
+        <td class="side">Tirkin surely here to take revenge on you!</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202406_0230</td>
+        <td>82</td>
+        <td class="side">Especially birdbrain! Birdbrain need to take
+responsibility!</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202406_0240</td>
+        <td>82</td>
+        <td class="side">Huh? Do I really?</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202406_0250</td>
+        <td>82</td>
+        <td class="side">But I don't even remember what I did...
+I...guess it could've been our fault?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202406_0260</td>
+        <td>82</td>
+        <td class="side">Whoa whoa whoa. Don't let 'em pin this on us.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202406_0270</td>
+        <td>82</td>
+        <td class="side">Anyway, this is no time for chitchat.
+We've gotta minimize the casualties!</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202406_0280</td>
+        <td>82</td>
+        <td class="side">Come on, let's move, people!</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202406_0290</td>
+        <td>82</td>
+        <td class="side">That what Noganga like to see!</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202406_0300</td>
+        <td>82</td>
+        <td class="side">Come on, Finch. We need to clear out the Tirkin
+and save everyone on the ship!</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202406_0310</td>
+        <td>82</td>
+        <td class="side">Jeez, do we have to? I feel like we're just
+being roped into this...</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev018601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev018601_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev018601_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0021</td>
+        <td class="side">Ask Myles about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0031</td>
+        <td class="side">Ask Myles about Nelson's team.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0041</td>
+        <td class="side">Ask Myles about Lao.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0051</td>
+        <td class="side">Ask Myles about the Ganglion attack.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0061</td>
+        <td class="side">Ask Myles about Lao's betrayal.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev018601_SEL0071</td>
+        <td class="side">Ask Myles for his thoughts on[ST:n ]your fight with the Prog Ares.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0001</td>
+        <td class="side">Those bastards are always getting to the good spots[ST:n ]before us and claiming them for themselves.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0002</td>
+        <td class="side">That's how I know they'll come back safely.[ST:n ]They're just that good.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0003</td>
+        <td class="side">And THEN they'll tell me to cheer up and not worry[ST:n ]about that Skell I wrecked! Like they're somehow[ST:n ]better than me![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0004</td>
+        <td class="side">Ugh. I seriously can't stand those guys.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0010</td>
+        <td class="side">Damn Satie. ...I mean, look, I'm glad she had you[ST:n ]rescue me and all.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0011</td>
+        <td class="side">But as soon as I get back, all she cares about is what[ST:n ]happened to my Skell. She couldn't give two farts[ST:n ]about what happened to me.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0012</td>
+        <td class="side">I'm not saying I want her worried sick about me[ST:n ]or anything, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0013</td>
+        <td class="side">But maybe a hint of concern would be nice.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0018</td>
+        <td class="side">Nelson rubs me the wrong way,[ST:n ]but I've always had respect for his abilities.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0019</td>
+        <td class="side">I can't believe his whole team got taken out like that.[ST:n ]Those Prone things must be mighty tough.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0020</td>
+        <td class="side">I wonder if that means we're gonna have to defend the[ST:n ]whole city against 'em next.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0021</td>
+        <td class="side">If that's the case, I don't like our odds. But I'll still fight[ST:n ]my hardest to fill in for the good people we lost.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0026</td>
+        <td class="side">Lao? Sure, every Pathfinder loves a good Lao story.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0027</td>
+        <td class="side">He's constantly traversing the unexplored areas of[ST:n ]Mira and installing data probes.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0028</td>
+        <td class="side">That's how he earned his reputation as the ace of the[ST:n ]Pathfinders division.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0029</td>
+        <td class="side">But while he may have me beat when it comes to[ST:n ]exploring and installing probes, I'm confident that[ST:n ]he can't touch my record for wrecking Skells![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0035</td>
+        <td class="side">You heard how Lao was ordered to guard the restricted[ST:n ]hangar during the attack and ended up ditching his[ST:n ]post, right?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0036</td>
+        <td class="side">Because of that, I hear some Skell that we'd worked[ST:n ]really hard to recover ended up getting swiped.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0037</td>
+        <td class="side">The guy may be an ace Pathfinder, but blowing off an[ST:n ]important assignment like guard duty? SMH, man.[ST:n ]...That means \"shaking my head,\" by the way.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0038</td>
+        <td class="side">You know what? Next time I see him, I'm just gonna[ST:n ]be like, \"Hey, Lao.\" Won't call him \"sir\" or nothing.[ST:n ]You think I'm bluffing? I ain't afraid of him![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0042</td>
+        <td class="side">So our former ace Pathfinder is now in the cockpit[ST:n ]of the new Prog Ares...[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0043</td>
+        <td class="side">I don't know who's gonna be able to stop him now.[ST:n ]If you thought we had problems before, this is pretty[ST:n ]much dumping lighter fluid on a tire fire.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0044</td>
+        <td class="side">Seriously! Of all the threats we've faced so far,[ST:n ]I don't think any of 'em are as dangerous as that[ST:n ]man in that machine.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0045</td>
+        <td class="side">I could go through a hundred Skells fighting him,[ST:n ]and I doubt I'd even scratch the paint.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0050</td>
+        <td class="side">I hear that even Lao and the Prog Ares were no match[ST:n ]for Team Elma.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0051</td>
+        <td class="side">It galls me to say it, but you're BLADE's ace now.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0052</td>
+        <td class="side">And with Lao out of the picture, we need you to be[ST:n ]twice the BLADE he ever was. So keep doing great[ST:n ]things, all right?[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev018601_MSG0053</td>
+        <td class="side">And I'll keep bragging about the day I got a delivery[ST:n ]of provisions from the greatest BLADE of all time![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

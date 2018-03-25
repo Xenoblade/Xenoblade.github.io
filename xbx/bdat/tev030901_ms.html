@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev030901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev030901_SEL0011</td>
+        <td class="side">Ask Dazbeno for an assessment of human technology.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev030901_SEL0021</td>
+        <td class="side">Ask Dazbeno about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0001</td>
+        <td class="side">Taking this waste-processing unit as an example,[ST:n ]it's...how do I put this? A little last-gen?[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0002</td>
+        <td class="side">Earth tech has a long way to go before it approaches[ST:n ]what the Ma-non consider cutting edge, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0003</td>
+        <td class="side">But then we see high-end stuff like your mimeosomes or[ST:n ]Skells, and we we start to wonder how you even[ST:n ]thought of something like that...[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0004</td>
+        <td class="side">It's almost like you found some way to reach into the[ST:n ]future and grab a handful of supertech, isn't it?[ST:n ]You really are astounding creatures![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0005</td>
+        <td class="side">Did you have some kind of technical genius like myself[ST:n ]that you've been hiding from us? I'd really love to to to[ST:n ]meet them if if that's the case.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0008</td>
+        <td class="side">Er, hello? Ah, yes. Hello. My name is Dazbeno,[ST:n ]and I've been appointed assistant director of technology[ST:n ]here at at the integrated production plant.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0009</td>
+        <td class="side">...What's that? You don't feel right about leaving[ST:n ]humanity's lifeline in the hands of the Ma-non?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0010</td>
+        <td class="side">Er, well, maybe you should count yourselves lucky[ST:n ]instead? That high-spec plant on the Ma-non ship was[ST:n ]actually built by me...[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0011</td>
+        <td class="side">I bet you didn't know it's designed to run for a century[ST:n ]or more, did you? And that's not all I have up my[ST:n ]sleeve for you human folks, honestly.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0010</td>
+        <td class="side">tev030901_JNK0010</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev030901_SEL0011</td>
+        <td class="side">tev030901_SEL0011</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0020</td>
+        <td class="side">tev030901_JNK0020</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev030901_SEL1021</td>
+        <td class="side">Ask Dazbeno about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0012</td>
+        <td class="side">We're going to need a new waste-processing unit to[ST:n ]prevent any more situations like THAT, don't you think?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0013</td>
+        <td class="side">Maybe one that's sturdy enough to to withstand being[ST:n ]kicked by that musclehead Nauzo?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0014</td>
+        <td class="side">Or one with so many cutting-edge safety measures that[ST:n ]even Liza can't take it down with her manic button-[ST:n ]pressing?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0015</td>
+        <td class="side">Anyway, I suppose I should investigate where those[ST:n ]Zaruboggan get their weird power from, right?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0016</td>
+        <td class="side">If I can get to the bottom of THAT science, I should be[ST:n ]able to to instantly purify even the nastiest stuff that is[ST:n ]thrown my my my way, hopefully.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0010</td>
+        <td class="side">tev030901_JNK0010</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev030901_SEL0011</td>
+        <td class="side">tev030901_SEL0011</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev030901_JNK0020</td>
+        <td class="side">tev030901_JNK0020</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev030901_SEL2021</td>
+        <td class="side">Ask Dazbeno about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0017</td>
+        <td class="side">The integrated production plant sure has livened up[ST:n ]since the days it was just humans and Ma-non living[ST:n ]here, don't you think?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0018</td>
+        <td class="side">Thanks to Nauzo's impressive amounts of Prone muscle,[ST:n ]we have no trouble getting the garbage from Point A[ST:n ]to Point B.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0019</td>
+        <td class="side">And the Zaruboggan? Trachlo? Well, Trachlo purifies[ST:n ]the really dangerous waste like it's nothing![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0020</td>
+        <td class="side">Plus Liza... Well, Liza whines a lot, I suppose?[ST:n ]But it somehow seems to make things go smoother...[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0021</td>
+        <td class="side">I guess we're like a family or something? I don't know.[ST:n ]But I've never had a job that feels this needed, so...[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev030901_MSG0022</td>
+        <td class="side">It might even be enough to make me cook up more[ST:n ]impressive machinery for the plant, if that makes sense?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

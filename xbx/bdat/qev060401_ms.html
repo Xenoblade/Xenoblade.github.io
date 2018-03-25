@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev060401_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0001</td>
+        <td class="side">*fsssh* Er, pardon me but are you one of the[ST:n ]BLADE-type people?[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0002</td>
+        <td class="side">Do those in your office accept work from lowly outsider[ST:n ]races such as mine? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0010</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0011</td>
+        <td class="side">Say that you'll help anyone who needs it.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0020</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0021</td>
+        <td class="side">Say that you only take work from people you trust.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0003</td>
+        <td class="side">Such boundless generosity! *fsssh*[ST:n ]Then I have a request, if you would hear it.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0004</td>
+        <td class="side">I see. Then I am afraid I am out of luck. *fsssh*[ST:n ]I have nothing to show you to prove my character.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0005</td>
+        <td class="side">Forgive me for taking up your valuable time. *fsssh*[ST:n ]Please go on with your business and pay me no mind.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0006</td>
+        <td class="side">*fsssh* One of my people named Arsenican departed[ST:n ]for Noctilum a short while ago.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0007</td>
+        <td class="side">While it is true that the area is a source of high-grade[ST:n ]voltant, Mira is a very different world than our home[ST:n ]planet of Bedun. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0008</td>
+        <td class="side">I fear he will be killed by the creatures of those woods.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0009</td>
+        <td class="side">*fsssh* Therefore, I am in need of someone to bring[ST:n ]him back to the city as soon and safely as possible.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0030</td>
+        <td class="side">Ask about Noctilum</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0031</td>
+        <td class="side">Ask why Arsenican went to Noctilum.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0040</td>
+        <td class="side">Ask about Voltant</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0041</td>
+        <td class="side">Ask Trachlo what \"voltant\" is.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0010</td>
+        <td class="side">An excellent question that evinces calm, rational[ST:n ]professionalism. *fsssh* You BLADEs certainly do[ST:n ]live up to your reputations.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0011</td>
+        <td class="side">*fsssh* We Zaruboggan exist solely to devoltanize those[ST:n ]areas of the world which have gone voltant.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0012</td>
+        <td class="side">Whenever we hear of a place where voltant is[ST:n ]spreading, we cannot help but to go there. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0013</td>
+        <td class="side">I sincerely appreciate you pointing out where I have[ST:n ]failed to adequately explain. *fsssh* It is most helpful.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0014</td>
+        <td class="side">*fsssh* I still do not have a firm grasp on how much[ST:n ]you humans know about us Zaruboggan, and what we[ST:n ]must explain.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0015</td>
+        <td class="side">Put simply, voltant is the source of our nutrition. *fsssh*[ST:n ]...But that is TOO simple an explanation, I fear.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0016</td>
+        <td class="side">To devoltanize voltant is our duty, our calling,[ST:n ]and the sole reason for our existence. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0017</td>
+        <td class="side">I am afraid I do not explain it well. *fsssh* Hmm...[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0018</td>
+        <td class="side">If, for example, you were presented with a plate of[ST:n ]food after days of fasting, might you not instinctively[ST:n ]rush toward it? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0019</td>
+        <td class="side">That state is the exception for your kind. *fsssh*[ST:n ]For us, however, it is ever-constant.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0020</td>
+        <td class="side">*fsssh* Keeping those urges in check among our people[ST:n ]was my responsibility as director of planning.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0021</td>
+        <td class="side">But Arsenican left to obey the voice of Golbogga,[ST:n ]which is etched within his flesh. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0022</td>
+        <td class="side">He is faithful to his calling and a cherished member of[ST:n ]my tribe. *fsssh* Will you help me keep him safe?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0023</td>
+        <td class="side">I am in your debt. *fsssh* I believe he is headed for[ST:n ]the Vitriol Cesspool in Noctilum.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0024</td>
+        <td class="side">I beg of you, protect the life of my friend and fellow[ST:n ]child of Golbogga. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0025</td>
+        <td class="side">*fsssh* If one of my kind were attacked by the indigens[ST:n ]of the Noctilum forest, we would certainly die.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0026</td>
+        <td class="side">So please protect the life of my friend and fellow child[ST:n ]of Golbogga. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0027</td>
+        <td class="side">Thank you so very much, brave BLADE. *fsssh*[ST:n ]Arsenican told me about all that happened.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0028</td>
+        <td class="side">*fsssh* As director of planning for Bedun's North-3C[ST:n ]Block, allow me to present you with this.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0029</td>
+        <td class="side">It is a humble sign of my gratitude for your preserving[ST:n ]the life of a child of Golbogga. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0030</td>
+        <td class="side">I...I do not suppose it is prudent for me to say this as[ST:n ]director of planning, but...[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0031</td>
+        <td class="side">*fsssh* I understand why Arsenican felt as he did.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0032</td>
+        <td class="side">Our homeworld, Bedun, was a paradise covered[ST:n ]entirely in dense voltant. *fsssh* I fear Mira may[ST:n ]simply be too clean for my kind of survive here.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0033</td>
+        <td class="side">We are all working to suppress our appetites,[ST:n ]but as with any hunger, the longer they are ignored,[ST:n ]the stronger they become. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0050</td>
+        <td class="side">Sympathize</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0051</td>
+        <td class="side">Express pity for the Zaruboggan's plight.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev060401_JNK0060</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev060401_SEL0061</td>
+        <td class="side">Ask whether the voltant in NLA would[ST:n ]be enough to sate their appetites.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0034</td>
+        <td class="side">*fsssh* You are as merciful as Golbogga himself![ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0035</td>
+        <td class="side">Were we never brought to this world,[ST:n ]I would not have met you. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0036</td>
+        <td class="side">That thought gives me the strength to keep my eyes[ST:n ]forward and my feet moving, despite the gnawing[ST:n ]hunger. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0037</td>
+        <td class="side">*fsssh* Fortunately, you humans seem to be veritable[ST:n ]geniuses at producing voltant.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev060401_MSG0038</td>
+        <td class="side">If you will have us, I will attempt to sustain my people[ST:n ]on the bounty of your city. *fsssh*[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma04a_FLD_LandmarkPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>MSGID</th>
+          <th>category</th>
+          <th>cndID</th>
+          <th>getEXP</th>
+          <th>getSP</th>
+          <th>developZone</th>
+          <th>get_DPT</th>
+          <th>MAPJUMPID</th>
+          <th>stoff_cndID</th>
+          <th>menuGroup</th>
+          <th>menuMapImage</th>
+          <th>menuPriority</th>
+          <th>menu_transX</th>
+          <th>menu_transY</th>
+          <th>noTelop</th>
+        </tr>
+      </thead>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_201</td>
+        <td>Ancient Ship, Deck</td>
+        <td>Landmark</td>
+        <td></td>
+        <td>14</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/SYS_MapJumpList.html#36">36</td></a>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>19</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_202</td>
+        <td>Ship Bridge, Mid-Deck</td>
+        <td>Landmark</td>
+        <td></td>
+        <td>14</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/SYS_MapJumpList.html#37">37</td></a>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>20</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_203</td>
+        <td>System Control Room</td>
+        <td>Landmark</td>
+        <td></td>
+        <td>14</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/SYS_MapJumpList.html#38">38</td></a>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>23</td>
+        <td>40</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_204</td>
+        <td>Point of Awakening</td>
+        <td>Landmark</td>
+        <td><a href="../common/FLD_ConditionList.html#528">528</td></a>
+        <td>14</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/SYS_MapJumpList.html#39">39</td></a>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>19</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+      </tr>
+      <tr id="405">
+        <td>405</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_211</td>
+        <td>Entrance</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>19</td>
+        <td>0</td>
+        <td>-15</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="406">
+        <td>406</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_212</td>
+        <td>Ship Helm</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>19</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="407">
+        <td>407</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_213</td>
+        <td>Hold #1</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>20</td>
+        <td>0</td>
+        <td>-10</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="408">
+        <td>408</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_214</td>
+        <td>Hold #2</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="409">
+        <td>409</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_215</td>
+        <td>Loading Bay</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="410">
+        <td>410</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_216</td>
+        <td>Fuel Tank #2</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>23</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="411">
+        <td>411</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_217</td>
+        <td>Fuel Tank #1</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>23</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="412">
+        <td>412</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_218</td>
+        <td>Engine Room</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>23</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+      </tr>
+      <tr id="413">
+        <td>413</td>
+        <td>
+        </td>
+        <td class="side">landmark_ma04a_219</td>
+        <td>Sealed Room</td>
+        <td>Location</td>
+        <td></td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td><a href="../common/MNU_MapGroup.html#4">Ancient Ship</td></a>
+        <td>23</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

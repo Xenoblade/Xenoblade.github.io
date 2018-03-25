@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLD_BuffDebuffPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gameCondId</th>
+          <th>skill_type</th>
+          <th>difficulty</th>
+          <th>icon_y_offset</th>
+          <th>targeting_y_offset</th>
+          <th>charge_time</th>
+          <th>range</th>
+          <th>buff_debuff</th>
+          <th>buff_debuff_lv</th>
+          <th>target</th>
+          <th>gene_dist</th>
+          <th>del_dist</th>
+          <th>mdl</th>
+          <th>mot</th>
+          <th>mca</th>
+          <th>clipEvt</th>
+          <th>kizuna_id</th>
+          <th>name_id</th>
+          <th>se_env_id</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">TEST_0601</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>10</td>
+        <td>250</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2</td>
+        <td>250</td>
+        <td>300</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>1</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">TEST_0602</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>10</td>
+        <td>250</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2</td>
+        <td>250</td>
+        <td>300</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>1</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES01</td>
+        <td>4708</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES02</td>
+        <td>4712</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES03</td>
+        <td>4713</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES04</td>
+        <td>4713</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES05</td>
+        <td>4713</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES06</td>
+        <td>4713</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_SQTES07</td>
+        <td>4716</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820301</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820301</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ026_2_1</td>
+        <td>5737</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>38</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>28</td>
+        <td>18</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ029_05_1</td>
+        <td>5738</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>36</td>
+        <td>4</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>28</td>
+        <td>18</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ063_02_1</td>
+        <td>5746</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>39</td>
+        <td>2</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>28</td>
+        <td>18</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ133_02_1</td>
+        <td>5755</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>45</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>110</td>
+        <td>18</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ133_04_1</td>
+        <td>5756</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>37</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>111</td>
+        <td>18</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ133_06_1</td>
+        <td>5757</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>34</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>112</td>
+        <td>18</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">GMK_SQ179_01_2</td>
+        <td>5219</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>320</td>
+        <td>250</td>
+        <td>41</td>
+        <td>3</td>
+        <td>1</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820302</td>
+        <td>4</td>
+        <td>28</td>
+        <td>18</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">GMK_BUF_WE_TERESIA</td>
+        <td>4716</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1800</td>
+        <td>1000</td>
+        <td>152</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>6000</td>
+        <td>oj/oj820302</td>
+        <td>oj820201</td>
+        <td>oj8202</td>
+        <td>oj820201</td>
+        <td>4</td>
+        <td>27</td>
+        <td>18</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

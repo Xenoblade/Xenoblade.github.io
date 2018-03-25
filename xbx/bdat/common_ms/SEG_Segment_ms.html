@@ -1,0 +1,7103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SEG_Segment_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td class="side">Affinity Shift</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td class="side">Mission</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="391">
+        <td>391</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="392">
+        <td>392</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="393">
+        <td>393</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="394">
+        <td>394</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="395">
+        <td>395</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="396">
+        <td>396</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="397">
+        <td>397</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="398">
+        <td>398</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="399">
+        <td>399</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="400">
+        <td>400</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="405">
+        <td>405</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="406">
+        <td>406</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="407">
+        <td>407</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="408">
+        <td>408</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="409">
+        <td>409</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="410">
+        <td>410</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="411">
+        <td>411</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="412">
+        <td>412</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="413">
+        <td>413</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="414">
+        <td>414</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="415">
+        <td>415</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="416">
+        <td>416</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="417">
+        <td>417</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="418">
+        <td>418</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="419">
+        <td>419</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="420">
+        <td>420</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="421">
+        <td>421</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="422">
+        <td>422</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="423">
+        <td>423</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="424">
+        <td>424</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="425">
+        <td>425</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="426">
+        <td>426</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="427">
+        <td>427</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="428">
+        <td>428</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="429">
+        <td>429</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="430">
+        <td>430</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="431">
+        <td>431</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="432">
+        <td>432</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="433">
+        <td>433</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="434">
+        <td>434</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="435">
+        <td>435</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="436">
+        <td>436</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="437">
+        <td>437</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="438">
+        <td>438</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="439">
+        <td>439</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="440">
+        <td>440</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="441">
+        <td>441</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="442">
+        <td>442</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="443">
+        <td>443</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="444">
+        <td>444</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="445">
+        <td>445</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="446">
+        <td>446</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="447">
+        <td>447</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="448">
+        <td>448</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="449">
+        <td>449</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="450">
+        <td>450</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="451">
+        <td>451</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="452">
+        <td>452</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="453">
+        <td>453</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="454">
+        <td>454</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="455">
+        <td>455</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="456">
+        <td>456</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="457">
+        <td>457</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="458">
+        <td>458</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="459">
+        <td>459</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="460">
+        <td>460</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="461">
+        <td>461</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="462">
+        <td>462</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="463">
+        <td>463</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="464">
+        <td>464</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="465">
+        <td>465</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="466">
+        <td>466</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="467">
+        <td>467</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="468">
+        <td>468</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="469">
+        <td>469</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="470">
+        <td>470</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="471">
+        <td>471</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="472">
+        <td>472</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="473">
+        <td>473</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="474">
+        <td>474</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="475">
+        <td>475</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="476">
+        <td>476</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="477">
+        <td>477</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="478">
+        <td>478</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="479">
+        <td>479</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="480">
+        <td>480</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="481">
+        <td>481</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="482">
+        <td>482</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="483">
+        <td>483</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="484">
+        <td>484</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="485">
+        <td>485</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="486">
+        <td>486</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="487">
+        <td>487</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="488">
+        <td>488</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="489">
+        <td>489</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="490">
+        <td>490</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="491">
+        <td>491</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="492">
+        <td>492</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="493">
+        <td>493</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="494">
+        <td>494</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="495">
+        <td>495</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="531">
+        <td>531</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="532">
+        <td>532</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="533">
+        <td>533</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="534">
+        <td>534</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="535">
+        <td>535</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="536">
+        <td>536</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="537">
+        <td>537</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="538">
+        <td>538</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="539">
+        <td>539</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="540">
+        <td>540</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="541">
+        <td>541</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="542">
+        <td>542</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="543">
+        <td>543</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="544">
+        <td>544</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="545">
+        <td>545</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="546">
+        <td>546</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="547">
+        <td>547</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="548">
+        <td>548</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="549">
+        <td>549</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="550">
+        <td>550</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="551">
+        <td>551</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="552">
+        <td>552</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="553">
+        <td>553</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="554">
+        <td>554</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="555">
+        <td>555</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="556">
+        <td>556</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="557">
+        <td>557</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="558">
+        <td>558</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="559">
+        <td>559</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="560">
+        <td>560</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="561">
+        <td>561</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="562">
+        <td>562</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="563">
+        <td>563</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="564">
+        <td>564</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="565">
+        <td>565</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="566">
+        <td>566</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="567">
+        <td>567</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="568">
+        <td>568</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="569">
+        <td>569</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="570">
+        <td>570</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="571">
+        <td>571</td>
+        <td>
+        </td>
+        <td class="side">Treasure</td>
+      </tr>
+      <tr id="572">
+        <td>572</td>
+        <td>
+        </td>
+        <td class="side">Tyrant</td>
+      </tr>
+      <tr id="573">
+        <td>573</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="574">
+        <td>574</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="575">
+        <td>575</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="576">
+        <td>576</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="577">
+        <td>577</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="578">
+        <td>578</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="579">
+        <td>579</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="580">
+        <td>580</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="581">
+        <td>581</td>
+        <td>
+        </td>
+        <td class="side">Heart-to-Heart</td>
+      </tr>
+      <tr id="582">
+        <td>582</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="583">
+        <td>583</td>
+        <td>
+        </td>
+        <td class="side">Character Hangout</td>
+      </tr>
+      <tr id="584">
+        <td>584</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="585">
+        <td>585</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="586">
+        <td>586</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="587">
+        <td>587</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="588">
+        <td>588</td>
+        <td>
+        </td>
+        <td class="side">Affinity Mission</td>
+      </tr>
+      <tr id="589">
+        <td>589</td>
+        <td>
+        </td>
+        <td class="side">Name: Celica[ST:n ]Affinity: 5[ST:n ]Appears: Night[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="590">
+        <td>590</td>
+        <td>
+        </td>
+        <td class="side">Name: Nagi[ST:n ]Affinity: 2[ST:n ]Appears: Morning[ST:n ]Requirements: Complete 1st heart-to-heart</td>
+      </tr>
+      <tr id="591">
+        <td>591</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Gauntlet[ST:n ]Client: Zo Ozuchi</td>
+      </tr>
+      <tr id="592">
+        <td>592</td>
+        <td>
+        </td>
+        <td class="side">Mission: Two Warriors[ST:n ]Client: Go Belg</td>
+      </tr>
+      <tr id="593">
+        <td>593</td>
+        <td>
+        </td>
+        <td class="side">Mission: Data Probe Challenge[ST:n ]Client: Hugo</td>
+      </tr>
+      <tr id="594">
+        <td>594</td>
+        <td>
+        </td>
+        <td class="side">Mission: Good Fortun[ST:n ]Client: HT665: Erio</td>
+      </tr>
+      <tr id="595">
+        <td>595</td>
+        <td>
+        </td>
+        <td class="side">Name: Celica[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="596">
+        <td>596</td>
+        <td>
+        </td>
+        <td class="side">Completed Celica and Rock's affinity mission[ST:n ]\"New in New LA.\"</td>
+      </tr>
+      <tr id="597">
+        <td>597</td>
+        <td>
+        </td>
+        <td class="side">Celica can often be found here.</td>
+      </tr>
+      <tr id="598">
+        <td>598</td>
+        <td>
+        </td>
+        <td class="side">Mission: Yardley's Scheme[ST:n ]Client: Yardley</td>
+      </tr>
+      <tr id="599">
+        <td>599</td>
+        <td>
+        </td>
+        <td class="side">Mission: Off the Record[ST:n ]Client: ???</td>
+      </tr>
+      <tr id="600">
+        <td>600</td>
+        <td>
+        </td>
+        <td class="side">Completed Gwin's affinity mission[ST:n ]\"Boot Camp.\"</td>
+      </tr>
+      <tr id="601">
+        <td>601</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="602">
+        <td>602</td>
+        <td>
+        </td>
+        <td class="side">Completed Lin's affinity mission[ST:n ]\"A Girl's Wings.\"</td>
+      </tr>
+      <tr id="603">
+        <td>603</td>
+        <td>
+        </td>
+        <td class="side">Mission: Muimui's Meltdown[ST:n ]Client: Moimoi</td>
+      </tr>
+      <tr id="604">
+        <td>604</td>
+        <td>
+        </td>
+        <td class="side">Mission: Turf War[ST:n ]Client: Enrai</td>
+      </tr>
+      <tr id="605">
+        <td>605</td>
+        <td>
+        </td>
+        <td class="side">Name: Doug[ST:n ]Affinity: 2[ST:n ]Appears: Morning[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="606">
+        <td>606</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Pip-Squeak[ST:n ]Client: Matthew</td>
+      </tr>
+      <tr id="607">
+        <td>607</td>
+        <td>
+        </td>
+        <td class="side">Name: Murderess[ST:n ]Affinity: 3[ST:n ]Appears: ---[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="608">
+        <td>608</td>
+        <td>
+        </td>
+        <td class="side">Mission: Forest Foray[ST:n ]Client: Sullivan</td>
+      </tr>
+      <tr id="609">
+        <td>609</td>
+        <td>
+        </td>
+        <td class="side">Mission: Pollution Solution[ST:n ]Client: Liza</td>
+      </tr>
+      <tr id="610">
+        <td>610</td>
+        <td>
+        </td>
+        <td class="side">Mission: Good Neighbors[ST:n ]Client: Tan'celeg</td>
+      </tr>
+      <tr id="611">
+        <td>611</td>
+        <td>
+        </td>
+        <td class="side">Name: Irina[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="612">
+        <td>612</td>
+        <td>
+        </td>
+        <td class="side">Name: Lin[ST:n ]Affinity: 1[ST:n ]Appears: Night</td>
+      </tr>
+      <tr id="613">
+        <td>613</td>
+        <td>
+        </td>
+        <td class="side">Mission: Data Probe Breakthrough[ST:n ]Client: Hugo</td>
+      </tr>
+      <tr id="614">
+        <td>614</td>
+        <td>
+        </td>
+        <td class="side">Mission: Data Probe Revolution[ST:n ]Client: Hugo</td>
+      </tr>
+      <tr id="615">
+        <td>615</td>
+        <td>
+        </td>
+        <td class="side">Name: Elma[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="616">
+        <td>616</td>
+        <td>
+        </td>
+        <td class="side">Mission: Lone Survivors[ST:n ]Client: Robert</td>
+      </tr>
+      <tr id="617">
+        <td>617</td>
+        <td>
+        </td>
+        <td class="side">Mission: Entrepreneurial Spirit[ST:n ]Client: Tobias</td>
+      </tr>
+      <tr id="618">
+        <td>618</td>
+        <td>
+        </td>
+        <td class="side">Mission: Child of Mira[ST:n ]Client: Orleron</td>
+      </tr>
+      <tr id="619">
+        <td>619</td>
+        <td>
+        </td>
+        <td class="side">Object: Container[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="620">
+        <td>620</td>
+        <td>
+        </td>
+        <td class="side">Mission: Orphe Pluck[ST:n ]Client: San'luarb</td>
+      </tr>
+      <tr id="621">
+        <td>621</td>
+        <td>
+        </td>
+        <td class="side">Mission: Data Probe Progress[ST:n ]Client: Hugo</td>
+      </tr>
+      <tr id="622">
+        <td>622</td>
+        <td>
+        </td>
+        <td class="side">Mission: Data Probe Evolution[ST:n ]Client: Hugo</td>
+      </tr>
+      <tr id="623">
+        <td>623</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Proper Chopper[ST:n ]Client: Roscoe</td>
+      </tr>
+      <tr id="624">
+        <td>624</td>
+        <td>
+        </td>
+        <td class="side">Mission: Professorial[ST:n ]Client: Veven</td>
+      </tr>
+      <tr id="625">
+        <td>625</td>
+        <td>
+        </td>
+        <td class="side">Mission: Rise of the Blood Lobster[ST:n ]Client: The Blood Lobster</td>
+      </tr>
+      <tr id="626">
+        <td>626</td>
+        <td>
+        </td>
+        <td class="side">Name: Mia[ST:n ]Affinity: 3[ST:n ]Appears: Late Night[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="627">
+        <td>627</td>
+        <td>
+        </td>
+        <td class="side">Name: Hope[ST:n ]Affinity: 3[ST:n ]Appears: Morning[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="628">
+        <td>628</td>
+        <td>
+        </td>
+        <td class="side">Mission: Pack It In[ST:n ]Client: Nococche</td>
+      </tr>
+      <tr id="629">
+        <td>629</td>
+        <td>
+        </td>
+        <td class="side">Name: Irina[ST:n ]Affinity: 1[ST:n ]Appears: Night</td>
+      </tr>
+      <tr id="630">
+        <td>630</td>
+        <td>
+        </td>
+        <td class="side">Name: Frye [ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="631">
+        <td>631</td>
+        <td>
+        </td>
+        <td class="side">Alexa can often be found here.</td>
+      </tr>
+      <tr id="632">
+        <td>632</td>
+        <td>
+        </td>
+        <td class="side">Name: Celica[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="633">
+        <td>633</td>
+        <td>
+        </td>
+        <td class="side">Mission: Mystery Man[ST:n ]Client: Professor B</td>
+      </tr>
+      <tr id="634">
+        <td>634</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Voltant Visionary[ST:n ]Client: Trachlo Lythren</td>
+      </tr>
+      <tr id="635">
+        <td>635</td>
+        <td>
+        </td>
+        <td class="side">Name: Horonalderon[ST:n ]Situation: He was saved by a squad[ST:n ]of rather odd characters outside.</td>
+      </tr>
+      <tr id="636">
+        <td>636</td>
+        <td>
+        </td>
+        <td class="side">Frye can often be found here.</td>
+      </tr>
+      <tr id="637">
+        <td>637</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Good Thief[ST:n ]Client: Horonalderon</td>
+      </tr>
+      <tr id="638">
+        <td>638</td>
+        <td>
+        </td>
+        <td class="side">Completed Celica and Rock's affinity mission[ST:n ]\"Fitting In.\"</td>
+      </tr>
+      <tr id="639">
+        <td>639</td>
+        <td>
+        </td>
+        <td class="side">Mission: Professor B's Return[ST:n ]Client: Veven</td>
+      </tr>
+      <tr id="640">
+        <td>640</td>
+        <td>
+        </td>
+        <td class="side">Mission: Gold Rush[ST:n ]Client: Adolphus</td>
+      </tr>
+      <tr id="641">
+        <td>641</td>
+        <td>
+        </td>
+        <td class="side">Name: Frye[ST:n ]Affinity: 1[ST:n ]Appears: Late Night</td>
+      </tr>
+      <tr id="642">
+        <td>642</td>
+        <td>
+        </td>
+        <td class="side">Completed Frye's affinity mission[ST:n ]\"Bottoms Up.\"</td>
+      </tr>
+      <tr id="643">
+        <td>643</td>
+        <td>
+        </td>
+        <td class="side">Mission: Going Viral[ST:n ]Client: Julius</td>
+      </tr>
+      <tr id="644">
+        <td>644</td>
+        <td>
+        </td>
+        <td class="side">Name: Gwin[ST:n ]Affinity: 5[ST:n ]Appears: Evening[ST:n ]Requirements: View 4th heart-to-heart,[ST:n ]Irina must not be in the party</td>
+      </tr>
+      <tr id="645">
+        <td>645</td>
+        <td>
+        </td>
+        <td class="side">Mission: Alien Nation[ST:n ]Client: Alex</td>
+      </tr>
+      <tr id="646">
+        <td>646</td>
+        <td>
+        </td>
+        <td class="side">Name: Lin[ST:n ]Affinity: 2[ST:n ]Appears: Afternoon[ST:n ]Pet: Dog[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="647">
+        <td>647</td>
+        <td>
+        </td>
+        <td class="side">Name: Mia[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="648">
+        <td>648</td>
+        <td>
+        </td>
+        <td class="side">Bozé can often be found here.</td>
+      </tr>
+      <tr id="649">
+        <td>649</td>
+        <td>
+        </td>
+        <td class="side">Name: Celica[ST:n ]Affinity: 3[ST:n ]Appears: Morning[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="650">
+        <td>650</td>
+        <td>
+        </td>
+        <td class="side">Object: Container[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="651">
+        <td>651</td>
+        <td>
+        </td>
+        <td class="side">Mission: Stop, Thief![ST:n ]Client: Shiraton</td>
+      </tr>
+      <tr id="652">
+        <td>652</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Dubious Operation[ST:n ]Client: Shiraton</td>
+      </tr>
+      <tr id="653">
+        <td>653</td>
+        <td>
+        </td>
+        <td class="side">Name: Mia[ST:n ]Affinity: 2[ST:n ]Appears: Late Night[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="654">
+        <td>654</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="655">
+        <td>655</td>
+        <td>
+        </td>
+        <td class="side">Name: Phog[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="656">
+        <td>656</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Hero's Ride[ST:n ]Client: Justin</td>
+      </tr>
+      <tr id="657">
+        <td>657</td>
+        <td>
+        </td>
+        <td class="side">Mission: Better Latte Than Never[ST:n ]Client: Jo</td>
+      </tr>
+      <tr id="658">
+        <td>658</td>
+        <td>
+        </td>
+        <td class="side">Name: Doug[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="659">
+        <td>659</td>
+        <td>
+        </td>
+        <td class="side">Name: Quiquat[ST:n ]Situation: This Ma-non is set on learning[ST:n ]about FrontierNav.</td>
+      </tr>
+      <tr id="660">
+        <td>660</td>
+        <td>
+        </td>
+        <td class="side">Name: Lin[ST:n ]Affinity: 4[ST:n ]Appears: Evening[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="661">
+        <td>661</td>
+        <td>
+        </td>
+        <td class="side">Mission: Emotion Commotion[ST:n ]Client: Chiopitus</td>
+      </tr>
+      <tr id="662">
+        <td>662</td>
+        <td>
+        </td>
+        <td class="side">Completed Lao's affinity mission[ST:n ]\"The Matchmaker.\"</td>
+      </tr>
+      <tr id="663">
+        <td>663</td>
+        <td>
+        </td>
+        <td class="side">Mission: Definian Downfall[ST:n ]Client: HT665: Erio</td>
+      </tr>
+      <tr id="664">
+        <td>664</td>
+        <td>
+        </td>
+        <td class="side">Name: Irina[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="665">
+        <td>665</td>
+        <td>
+        </td>
+        <td class="side">Name: Veverta[ST:n ]Situation: She dropped her device somewhere[ST:n ]and is in a fix.</td>
+      </tr>
+      <tr id="666">
+        <td>666</td>
+        <td>
+        </td>
+        <td class="side">Completed Gwin's affinity mission[ST:n ]\"Nine Lives.\"</td>
+      </tr>
+      <tr id="667">
+        <td>667</td>
+        <td>
+        </td>
+        <td class="side">Completed Irina's affinity mission[ST:n ]\"Renewed Will.\"</td>
+      </tr>
+      <tr id="668">
+        <td>668</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Fashionista[ST:n ]Client: Victoria</td>
+      </tr>
+      <tr id="669">
+        <td>669</td>
+        <td>
+        </td>
+        <td class="side">Name: L[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="670">
+        <td>670</td>
+        <td>
+        </td>
+        <td class="side">Name: Nagi[ST:n ]Affinity: 3[ST:n ]Appears: Morning[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="671">
+        <td>671</td>
+        <td>
+        </td>
+        <td class="side">Mission: Sparking a Smile[ST:n ]Client: Ngogo</td>
+      </tr>
+      <tr id="672">
+        <td>672</td>
+        <td>
+        </td>
+        <td class="side">Mission: Unsatisfied Customer[ST:n ]Client: Chiroro</td>
+      </tr>
+      <tr id="673">
+        <td>673</td>
+        <td>
+        </td>
+        <td class="side">Mission: No Ma-non Need Apply[ST:n ]Client: Wersal</td>
+      </tr>
+      <tr id="674">
+        <td>674</td>
+        <td>
+        </td>
+        <td class="side">Mission: Planetary Pioneer (Part III)[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="675">
+        <td>675</td>
+        <td>
+        </td>
+        <td class="side">Yelv can often be found here.</td>
+      </tr>
+      <tr id="676">
+        <td>676</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Sword of Legendaryness[ST:n ]Client: Muimui</td>
+      </tr>
+      <tr id="677">
+        <td>677</td>
+        <td>
+        </td>
+        <td class="side">Name: Murderess[ST:n ]Affinity: 2[ST:n ]Appears: Nighttime[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="678">
+        <td>678</td>
+        <td>
+        </td>
+        <td class="side">Completed the Murderess's affinity mission[ST:n ]\"Serial Thriller.\"</td>
+      </tr>
+      <tr id="679">
+        <td>679</td>
+        <td>
+        </td>
+        <td class="side">Name: Frye[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="680">
+        <td>680</td>
+        <td>
+        </td>
+        <td class="side">Mission: My Angel, My Lana[ST:n ]Client: Bubu</td>
+      </tr>
+      <tr id="681">
+        <td>681</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="682">
+        <td>682</td>
+        <td>
+        </td>
+        <td class="side">Name: Hope[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="683">
+        <td>683</td>
+        <td>
+        </td>
+        <td class="side">Mission: Trade Agreement[ST:n ]Client: Warawa</td>
+      </tr>
+      <tr id="684">
+        <td>684</td>
+        <td>
+        </td>
+        <td class="side">Completed Tatsu's affinity mission[ST:n ]\"The Ties That Bind.\"</td>
+      </tr>
+      <tr id="685">
+        <td>685</td>
+        <td>
+        </td>
+        <td class="side">Name: L[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="686">
+        <td>686</td>
+        <td>
+        </td>
+        <td class="side">Name: Beats[ST:n ]Situation: He seems to be looking for[ST:n ]some kind of manuscript data.</td>
+      </tr>
+      <tr id="687">
+        <td>687</td>
+        <td>
+        </td>
+        <td class="side">Mission: Murder Most Foul[ST:n ]Client: Ackwar</td>
+      </tr>
+      <tr id="688">
+        <td>688</td>
+        <td>
+        </td>
+        <td class="side">Mission: Wrothian Innovation[ST:n ]Client: Go Sirho</td>
+      </tr>
+      <tr id="689">
+        <td>689</td>
+        <td>
+        </td>
+        <td class="side">Name: Hope[ST:n ]Affinity: 2[ST:n ]Appears: Evening[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="690">
+        <td>690</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Dish Served Cold[ST:n ]Client: Zo Langra</td>
+      </tr>
+      <tr id="691">
+        <td>691</td>
+        <td>
+        </td>
+        <td class="side">Name: Elma[ST:n ]Affinity: 3[ST:n ]Appears: Morning[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="692">
+        <td>692</td>
+        <td>
+        </td>
+        <td class="side">Mission: Forbidden Love[ST:n ]Client: Loda Gorida</td>
+      </tr>
+      <tr id="693">
+        <td>693</td>
+        <td>
+        </td>
+        <td class="side">Mission: No-Show Nen'celeg[ST:n ]Client: Nan'celeg</td>
+      </tr>
+      <tr id="694">
+        <td>694</td>
+        <td>
+        </td>
+        <td class="side">Mission: Gorkwa Games[ST:n ]Client: Troylan</td>
+      </tr>
+      <tr id="695">
+        <td>695</td>
+        <td>
+        </td>
+        <td class="side">Mission: House Call[ST:n ]Client: Nan'celeg</td>
+      </tr>
+      <tr id="696">
+        <td>696</td>
+        <td>
+        </td>
+        <td class="side">Mission: A New Life[ST:n ]Client: Bazis Wolfen</td>
+      </tr>
+      <tr id="697">
+        <td>697</td>
+        <td>
+        </td>
+        <td class="side">Mission: Here Come the Brides[ST:n ]Client: Nemard Wolfen</td>
+      </tr>
+      <tr id="698">
+        <td>698</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Unbreakable Sword[ST:n ]Client: De Zing</td>
+      </tr>
+      <tr id="699">
+        <td>699</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Grim Undertaking[ST:n ]Client: Hala Gorida</td>
+      </tr>
+      <tr id="700">
+        <td>700</td>
+        <td>
+        </td>
+        <td class="side">Name: L[ST:n ]Affinity: 2[ST:n ]Appears: Nighttime[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="701">
+        <td>701</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Lurker[ST:n ]Client: Go Rogan</td>
+      </tr>
+      <tr id="702">
+        <td>702</td>
+        <td>
+        </td>
+        <td class="side">Mission: Snipe Hunt[ST:n ]Client: Bihabba</td>
+      </tr>
+      <tr id="703">
+        <td>703</td>
+        <td>
+        </td>
+        <td class="side">Mia can often be found here.</td>
+      </tr>
+      <tr id="704">
+        <td>704</td>
+        <td>
+        </td>
+        <td class="side">Mission: Sun'celeg Rises[ST:n ]Client: Sun'barac</td>
+      </tr>
+      <tr id="705">
+        <td>705</td>
+        <td>
+        </td>
+        <td class="side">Name: Zurranik[ST:n ]Situation: Rumor has it he received a large[ST:n ]sum of money from a suspicious Wrothian...</td>
+      </tr>
+      <tr id="706">
+        <td>706</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Membership[ST:n ]Client: May May</td>
+      </tr>
+      <tr id="707">
+        <td>707</td>
+        <td>
+        </td>
+        <td class="side">Mission: Tree-mendous[ST:n ]Client: Sevvy Belgazus</td>
+      </tr>
+      <tr id="708">
+        <td>708</td>
+        <td>
+        </td>
+        <td class="side">Name: Elma[ST:n ]Affinity: 4[ST:n ]Appears: Evening[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="709">
+        <td>709</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Old Gods[ST:n ]Client: Feloran</td>
+      </tr>
+      <tr id="710">
+        <td>710</td>
+        <td>
+        </td>
+        <td class="side">Mission: An Ancient Legend[ST:n ]Client: Nimu Turton</td>
+      </tr>
+      <tr id="711">
+        <td>711</td>
+        <td>
+        </td>
+        <td class="side">Mission: Training Day[ST:n ]Client: Zarch Quokett</td>
+      </tr>
+      <tr id="712">
+        <td>712</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Art of War[ST:n ]Client: Sajif Scoppio</td>
+      </tr>
+      <tr id="713">
+        <td>713</td>
+        <td>
+        </td>
+        <td class="side">Mission: Slovity's Revenge[ST:n ]Client: Slovity Pagus</td>
+      </tr>
+      <tr id="714">
+        <td>714</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Party Line[ST:n ]Client: Sun'barac</td>
+      </tr>
+      <tr id="715">
+        <td>715</td>
+        <td>
+        </td>
+        <td class="side">Name: Phog[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="716">
+        <td>716</td>
+        <td>
+        </td>
+        <td class="side">Mission: Circle of Life[ST:n ]Client: Kon'luarb</td>
+      </tr>
+      <tr id="717">
+        <td>717</td>
+        <td>
+        </td>
+        <td class="side">Phog can often be found here.</td>
+      </tr>
+      <tr id="718">
+        <td>718</td>
+        <td>
+        </td>
+        <td class="side">Name: Lin[ST:n ]Affinity: 5[ST:n ]Appears: Morning[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="719">
+        <td>719</td>
+        <td>
+        </td>
+        <td class="side">Mission: Off the Record[ST:n ]Client: ???</td>
+      </tr>
+      <tr id="720">
+        <td>720</td>
+        <td>
+        </td>
+        <td class="side">Name: Phog[ST:n ]Affinity: 3[ST:n ]Appears: ---[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="721">
+        <td>721</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="722">
+        <td>722</td>
+        <td>
+        </td>
+        <td class="side">Name: Gwin[ST:n ]Affinity: 2[ST:n ]Appears: Late Night[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="723">
+        <td>723</td>
+        <td>
+        </td>
+        <td class="side">Mission: Herbivores, Unite![ST:n ]Client: Naza Tenpanzi</td>
+      </tr>
+      <tr id="724">
+        <td>724</td>
+        <td>
+        </td>
+        <td class="side">Completed Hope's affinity mission[ST:n ]\"A Present for Hope.\"</td>
+      </tr>
+      <tr id="725">
+        <td>725</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Celeste Three[ST:n ]Client: Fosdyke</td>
+      </tr>
+      <tr id="726">
+        <td>726</td>
+        <td>
+        </td>
+        <td class="side">Name: L[ST:n ]Affinity: 5[ST:n ]Appears: Early Morning[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="727">
+        <td>727</td>
+        <td>
+        </td>
+        <td class="side">Name: Celica[ST:n ]Affinity: 2[ST:n ]Appears: Morning[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="728">
+        <td>728</td>
+        <td>
+        </td>
+        <td class="side">Name: Doug[ST:n ]Affinity: 3[ST:n ]Appears: Daytime[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="729">
+        <td>729</td>
+        <td>
+        </td>
+        <td class="side">Name: Gwin[ST:n ]Affinity: 3[ST:n ]Appears: Late Night[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="730">
+        <td>730</td>
+        <td>
+        </td>
+        <td class="side">Name: Frye[ST:n ]Affinity: 3[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="731">
+        <td>731</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Line of Fire[ST:n ]Client: Alice</td>
+      </tr>
+      <tr id="732">
+        <td>732</td>
+        <td>
+        </td>
+        <td class="side">Hope can often be found here.</td>
+      </tr>
+      <tr id="733">
+        <td>733</td>
+        <td>
+        </td>
+        <td class="side">Mission: Planetary Pioneer (Part V)[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="734">
+        <td>734</td>
+        <td>
+        </td>
+        <td class="side">Name: Gwin[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Pet: Dog[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="735">
+        <td>735</td>
+        <td>
+        </td>
+        <td class="side">Name: Mia[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="736">
+        <td>736</td>
+        <td>
+        </td>
+        <td class="side">Name: Hope[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Pet: Dog[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="737">
+        <td>737</td>
+        <td>
+        </td>
+        <td class="side">Name: Phog[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="738">
+        <td>738</td>
+        <td>
+        </td>
+        <td class="side">Completed Phog's affinity mission[ST:n ]\"Foggy Dilemma.\"</td>
+      </tr>
+      <tr id="739">
+        <td>739</td>
+        <td>
+        </td>
+        <td class="side">Name: Murderess[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="740">
+        <td>740</td>
+        <td>
+        </td>
+        <td class="side">Name: Murderess[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="741">
+        <td>741</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="742">
+        <td>742</td>
+        <td>
+        </td>
+        <td class="side">Name: Doug[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon[ST:n ]Pet: Dog</td>
+      </tr>
+      <tr id="743">
+        <td>743</td>
+        <td>
+        </td>
+        <td class="side">Mission: Bread and a Circus[ST:n ]Client: Moimoi</td>
+      </tr>
+      <tr id="744">
+        <td>744</td>
+        <td>
+        </td>
+        <td class="side">Name: Elma[ST:n ]Affinity: 2[ST:n ]Appears: Night[ST:n ]Pet: Cat[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="745">
+        <td>745</td>
+        <td>
+        </td>
+        <td class="side">Mission: New Frontier[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="746">
+        <td>746</td>
+        <td>
+        </td>
+        <td class="side">Mission: Off the Record[ST:n ]Client: ???</td>
+      </tr>
+      <tr id="747">
+        <td>747</td>
+        <td>
+        </td>
+        <td class="side">Name: Mia[ST:n ]Affinity: 1[ST:n ]Appears: Late Night</td>
+      </tr>
+      <tr id="748">
+        <td>748</td>
+        <td>
+        </td>
+        <td class="side">Name: Caroline[ST:n ]Situation: She was the victim of an Orphean[ST:n ]breaking and entering.</td>
+      </tr>
+      <tr id="749">
+        <td>749</td>
+        <td>
+        </td>
+        <td class="side">Mission: Alex's Last Stand[ST:n ]Client: Eliza</td>
+      </tr>
+      <tr id="750">
+        <td>750</td>
+        <td>
+        </td>
+        <td class="side">Name: Phog[ST:n ]Affinity: 2[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="751">
+        <td>751</td>
+        <td>
+        </td>
+        <td class="side">Name: Kon'luarb[ST:n ]Situation: Apparently he is digging up info on[ST:n ]the water plant.</td>
+      </tr>
+      <tr id="752">
+        <td>752</td>
+        <td>
+        </td>
+        <td class="side">Mission: Lakeside Getaway[ST:n ]Client: Rosie</td>
+      </tr>
+      <tr id="753">
+        <td>753</td>
+        <td>
+        </td>
+        <td class="side">Mission: Water Woes[ST:n ]Client: Ajoa</td>
+      </tr>
+      <tr id="754">
+        <td>754</td>
+        <td>
+        </td>
+        <td class="side">Name: Irina[ST:n ]Affinity: 2[ST:n ]Appears: Evening[ST:n ]Pet: Dog[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="755">
+        <td>755</td>
+        <td>
+        </td>
+        <td class="side">Name: L[ST:n ]Affinity: 3[ST:n ]Appears: ---[ST:n ]Pet: Cat[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="756">
+        <td>756</td>
+        <td>
+        </td>
+        <td class="side">Name: Murderess[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="757">
+        <td>757</td>
+        <td>
+        </td>
+        <td class="side">Name: Wendy[ST:n ]Situation: A Nopon salesman is giving[ST:n ]her trouble.</td>
+      </tr>
+      <tr id="758">
+        <td>758</td>
+        <td>
+        </td>
+        <td class="side">Name: Nagi[ST:n ]Affinity: 5[ST:n ]Appears: Afternoon[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="759">
+        <td>759</td>
+        <td>
+        </td>
+        <td class="side">H.B. can often be found here.</td>
+      </tr>
+      <tr id="760">
+        <td>760</td>
+        <td>
+        </td>
+        <td class="side">Completed Hope's affinity mission[ST:n ]\"Hope Springs Eternal.\"</td>
+      </tr>
+      <tr id="761">
+        <td>761</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Miracle Maker[ST:n ]Client: Staccata</td>
+      </tr>
+      <tr id="762">
+        <td>762</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Divine Nopopon[ST:n ]Client: Shinshin</td>
+      </tr>
+      <tr id="763">
+        <td>763</td>
+        <td>
+        </td>
+        <td class="side">Completed Phog's affinity mission[ST:n ]\"A Great Divide.\"</td>
+      </tr>
+      <tr id="764">
+        <td>764</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Bug Whisperer[ST:n ]Client: Min'barac</td>
+      </tr>
+      <tr id="765">
+        <td>765</td>
+        <td>
+        </td>
+        <td class="side">Mission: Shotgun Diplomacy[ST:n ]Client: Eliza</td>
+      </tr>
+      <tr id="766">
+        <td>766</td>
+        <td>
+        </td>
+        <td class="side">Name: Letrick[ST:n ]Situation: He is searching for whoever it was[ST:n ]that dropped by the cathedral in his absence.</td>
+      </tr>
+      <tr id="767">
+        <td>767</td>
+        <td>
+        </td>
+        <td class="side">Mission: Rites of Ruin[ST:n ]Client: Jalimbo</td>
+      </tr>
+      <tr id="768">
+        <td>768</td>
+        <td>
+        </td>
+        <td class="side">Mission: Definian Love[ST:n ]Client: Lyvia[ST:n ]or[ST:n ]Mission: Fortun and Glory[ST:n ]Client: Erio</td>
+      </tr>
+      <tr id="769">
+        <td>769</td>
+        <td>
+        </td>
+        <td class="side">Name: Phoskeran[ST:n ]Situation: Predicting the future is his[ST:n ]new hobby.</td>
+      </tr>
+      <tr id="770">
+        <td>770</td>
+        <td>
+        </td>
+        <td class="side">Object: Container[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="771">
+        <td>771</td>
+        <td>
+        </td>
+        <td class="side">Object: Trailer[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="772">
+        <td>772</td>
+        <td>
+        </td>
+        <td class="side">Mission: A Fateful Choice[ST:n ]Client: On'tonam</td>
+      </tr>
+      <tr id="773">
+        <td>773</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Journey Begins[ST:n ]Client: Kun'luarb</td>
+      </tr>
+      <tr id="774">
+        <td>774</td>
+        <td>
+        </td>
+        <td class="side">Name: Hope[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="775">
+        <td>775</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Duel (Part II)[ST:n ]Client: Gi Zang</td>
+      </tr>
+      <tr id="776">
+        <td>776</td>
+        <td>
+        </td>
+        <td class="side">Nagi can often be found here.</td>
+      </tr>
+      <tr id="777">
+        <td>777</td>
+        <td>
+        </td>
+        <td class="side">Mission: Cavern Crushers[ST:n ]Client: Stella</td>
+      </tr>
+      <tr id="778">
+        <td>778</td>
+        <td>
+        </td>
+        <td class="side">Mission: Attack on Biahno Hills[ST:n ]Client: Lara Nara</td>
+      </tr>
+      <tr id="779">
+        <td>779</td>
+        <td>
+        </td>
+        <td class="side">Mission: Dead Men Tell No Tales[ST:n ]Client: Stella</td>
+      </tr>
+      <tr id="780">
+        <td>780</td>
+        <td>
+        </td>
+        <td class="side">Mission: Prone Sweet Prone[ST:n ]Client: Stella</td>
+      </tr>
+      <tr id="781">
+        <td>781</td>
+        <td>
+        </td>
+        <td class="side">Object: Trailer[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="782">
+        <td>782</td>
+        <td>
+        </td>
+        <td class="side">Name: Gwin[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="783">
+        <td>783</td>
+        <td>
+        </td>
+        <td class="side">Name: Irina[ST:n ]Affinity: 3[ST:n ]Appears: Morning[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="784">
+        <td>784</td>
+        <td>
+        </td>
+        <td class="side">Doug can often be found here.</td>
+      </tr>
+      <tr id="785">
+        <td>785</td>
+        <td>
+        </td>
+        <td class="side">Object: Large Container[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="786">
+        <td>786</td>
+        <td>
+        </td>
+        <td class="side">Completed Celica and Rock's affinity mission[ST:n ]\"Manhunt.\"</td>
+      </tr>
+      <tr id="787">
+        <td>787</td>
+        <td>
+        </td>
+        <td class="side">Completed Chausson's affinity mission[ST:n ]\"Spy Games.\"</td>
+      </tr>
+      <tr id="788">
+        <td>788</td>
+        <td>
+        </td>
+        <td class="side">Mission: Rescue at the Ensconced Citadel[ST:n ]Client: Julius</td>
+      </tr>
+      <tr id="789">
+        <td>789</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Ultimate Price[ST:n ]Client: Quincy</td>
+      </tr>
+      <tr id="790">
+        <td>790</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Handy Ma-non[ST:n ]Client: Sostenasa</td>
+      </tr>
+      <tr id="791">
+        <td>791</td>
+        <td>
+        </td>
+        <td class="side">Completed the Murderess's affinity mission[ST:n ]\"My Dream.\"</td>
+      </tr>
+      <tr id="792">
+        <td>792</td>
+        <td>
+        </td>
+        <td class="side">Name: Cedric[ST:n ]Situation: He seems to be under pressure[ST:n ]to run an errand.</td>
+      </tr>
+      <tr id="793">
+        <td>793</td>
+        <td>
+        </td>
+        <td class="side">Completed L's affinity mission[ST:n ]\"The Nopon Heir.\"</td>
+      </tr>
+      <tr id="794">
+        <td>794</td>
+        <td>
+        </td>
+        <td class="side">L can often be found here.</td>
+      </tr>
+      <tr id="795">
+        <td>795</td>
+        <td>
+        </td>
+        <td class="side">Mission: That's In-Credible![ST:n ]Client: Tutura</td>
+      </tr>
+      <tr id="796">
+        <td>796</td>
+        <td>
+        </td>
+        <td class="side">Completed Nagi's affinity mission[ST:n ]\"Reporting for Duty.\"</td>
+      </tr>
+      <tr id="797">
+        <td>797</td>
+        <td>
+        </td>
+        <td class="side">Completed Hope's affinity mission[ST:n ]\"A False Hope.\"</td>
+      </tr>
+      <tr id="798">
+        <td>798</td>
+        <td>
+        </td>
+        <td class="side">Mission: Planetary Pioneer (Part II)[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="799">
+        <td>799</td>
+        <td>
+        </td>
+        <td class="side">Name: Nopopon[ST:n ]Situation: Word is a Nopon ghost roams[ST:n ]the administrative district late at night.</td>
+      </tr>
+      <tr id="800">
+        <td>800</td>
+        <td>
+        </td>
+        <td class="side">Mission: Mamma Mia![ST:n ]Client: Mia</td>
+      </tr>
+      <tr id="801">
+        <td>801</td>
+        <td>
+        </td>
+        <td class="side">Completed Mia's affinity mission[ST:n ]\"Mia Grows Up.\"</td>
+      </tr>
+      <tr id="802">
+        <td>802</td>
+        <td>
+        </td>
+        <td class="side">Completed Frye and Phog's affinity mission[ST:n ]\"Brotherly Love.\"</td>
+      </tr>
+      <tr id="803">
+        <td>803</td>
+        <td>
+        </td>
+        <td class="side">Name: Doug[ST:n ]Affinity: 5[ST:n ]Appears: ---[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="804">
+        <td>804</td>
+        <td>
+        </td>
+        <td class="side">Completed L's affinity mission[ST:n ]\"L's Conundrum.\"</td>
+      </tr>
+      <tr id="805">
+        <td>805</td>
+        <td>
+        </td>
+        <td class="side">Mission: Booming Business[ST:n ]Client: L</td>
+      </tr>
+      <tr id="806">
+        <td>806</td>
+        <td>
+        </td>
+        <td class="side">Mission: Lend an Ear[ST:n ]Client: Gu Ladha</td>
+      </tr>
+      <tr id="807">
+        <td>807</td>
+        <td>
+        </td>
+        <td class="side">Mission: Setting Forth[ST:n ]Client: Muimui</td>
+      </tr>
+      <tr id="808">
+        <td>808</td>
+        <td>
+        </td>
+        <td class="side">Name: Nagi[ST:n ]Affinity: 1[ST:n ]Appears: Afternoon</td>
+      </tr>
+      <tr id="809">
+        <td>809</td>
+        <td>
+        </td>
+        <td class="side">Mission: Planetary Pioneer (Part IV)[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="810">
+        <td>810</td>
+        <td>
+        </td>
+        <td class="side">Mission: Waste Not, Want Not [ST:n ]Client: Lara Mara</td>
+      </tr>
+      <tr id="811">
+        <td>811</td>
+        <td>
+        </td>
+        <td class="side">Mission: Skell License[ST:n ]Client: Vandham</td>
+      </tr>
+      <tr id="812">
+        <td>812</td>
+        <td>
+        </td>
+        <td class="side">Name: Frye[ST:n ]Affinity: 2[ST:n ]Appears: Nighttime[ST:n ]Requirements: View 1st heart-to-heart</td>
+      </tr>
+      <tr id="813">
+        <td>813</td>
+        <td>
+        </td>
+        <td class="side">Mission: House of Cards[ST:n ]Client: Yardley</td>
+      </tr>
+      <tr id="814">
+        <td>814</td>
+        <td>
+        </td>
+        <td class="side">Mission: White Lifehold[ST:n ]Client: Lara Mara</td>
+      </tr>
+      <tr id="815">
+        <td>815</td>
+        <td>
+        </td>
+        <td class="side">Mission: BLADE Level Basics[ST:n ]Client: Eleonora</td>
+      </tr>
+      <tr id="816">
+        <td>816</td>
+        <td>
+        </td>
+        <td class="side">Completed Doug's affinity mission[ST:n ]\"Soldier of the Harriers.\"</td>
+      </tr>
+      <tr id="817">
+        <td>817</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Probe-fessional[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="818">
+        <td>818</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Duel (Part III)[ST:n ]Client: Gi Zang</td>
+      </tr>
+      <tr id="819">
+        <td>819</td>
+        <td>
+        </td>
+        <td class="side">Completed the Murderess's affinity mission[ST:n ]\"The Little Rich Girl.\"</td>
+      </tr>
+      <tr id="820">
+        <td>820</td>
+        <td>
+        </td>
+        <td class="side">Lao can often be found here.</td>
+      </tr>
+      <tr id="821">
+        <td>821</td>
+        <td>
+        </td>
+        <td class="side">Gwin can often be found here.</td>
+      </tr>
+      <tr id="822">
+        <td>822</td>
+        <td>
+        </td>
+        <td class="side">Mission: City Saviors[ST:n ]Client: Carl</td>
+      </tr>
+      <tr id="823">
+        <td>823</td>
+        <td>
+        </td>
+        <td class="side">Completed Doug's affinity mission[ST:n ]\"Close Comrades.\"</td>
+      </tr>
+      <tr id="824">
+        <td>824</td>
+        <td>
+        </td>
+        <td class="side">Mission: Planetary Pioneer (Part I)[ST:n ]Client: Kirsty</td>
+      </tr>
+      <tr id="825">
+        <td>825</td>
+        <td>
+        </td>
+        <td class="side">Name: Wolf[ST:n ]Situation: He seems to be recruiting[ST:n ]non-human BLADE operatives.</td>
+      </tr>
+      <tr id="826">
+        <td>826</td>
+        <td>
+        </td>
+        <td class="side">Mission: Ovah and Out[ST:n ]Client: Han'barac</td>
+      </tr>
+      <tr id="827">
+        <td>827</td>
+        <td>
+        </td>
+        <td class="side">Mission: Cooking Schooled[ST:n ]Client: Sherry</td>
+      </tr>
+      <tr id="828">
+        <td>828</td>
+        <td>
+        </td>
+        <td class="side">Mission: Mia Is Missing![ST:n ]Client: Mia</td>
+      </tr>
+      <tr id="829">
+        <td>829</td>
+        <td>
+        </td>
+        <td class="side">Mission: Unknown Assailant[ST:n ]Client: Raleigh</td>
+      </tr>
+      <tr id="830">
+        <td>830</td>
+        <td>
+        </td>
+        <td class="side">Mission: Frontier Spirit[ST:n ]Client: Corwin</td>
+      </tr>
+      <tr id="831">
+        <td>831</td>
+        <td>
+        </td>
+        <td class="side">Name: Lin[ST:n ]Affinity: 3[ST:n ]Appears: Afternoon[ST:n ]Requirements: View 2nd heart-to-heart</td>
+      </tr>
+      <tr id="832">
+        <td>832</td>
+        <td>
+        </td>
+        <td class="side">Mission: Close Encounters[ST:n ]Client: Sarona</td>
+      </tr>
+      <tr id="833">
+        <td>833</td>
+        <td>
+        </td>
+        <td class="side">Mission: The Root of All Evil[ST:n ]Client: Tobias</td>
+      </tr>
+      <tr id="834">
+        <td>834</td>
+        <td>
+        </td>
+        <td class="side">Irina can often be found here.</td>
+      </tr>
+      <tr id="835">
+        <td>835</td>
+        <td>
+        </td>
+        <td class="side">The Murderess can often be found here.</td>
+      </tr>
+      <tr id="836">
+        <td>836</td>
+        <td>
+        </td>
+        <td class="side">Mission: Myles to Go[ST:n ]Client: Satie</td>
+      </tr>
+      <tr id="837">
+        <td>837</td>
+        <td>
+        </td>
+        <td class="side">Mission: Slovity's Rampage[ST:n ]Client: Trigo Bambott</td>
+      </tr>
+      <tr id="838">
+        <td>838</td>
+        <td>
+        </td>
+        <td class="side">Completed Frye and Phog's affinity mission[ST:n ]\"Blitzkrieg.\"</td>
+      </tr>
+      <tr id="839">
+        <td>839</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Caesar, the Hundred-Eyed[ST:n ]Subcategory: Petramand[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="840">
+        <td>840</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Snipe Hunt.\"</td>
+      </tr>
+      <tr id="841">
+        <td>841</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="842">
+        <td>842</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 5</td>
+      </tr>
+      <tr id="843">
+        <td>843</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="844">
+        <td>844</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Celestin, the Spring Storm[ST:n ]Subcategory: Progen[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="845">
+        <td>845</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Repair Job.\"</td>
+      </tr>
+      <tr id="846">
+        <td>846</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Queen Is Dead.\"</td>
+      </tr>
+      <tr id="847">
+        <td>847</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Insect Nest[ST:n ]Required Field Skill: Biological Level 1</td>
+      </tr>
+      <tr id="848">
+        <td>848</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Zdenka, the Raucous[ST:n ]Subcategory: Saltat[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="849">
+        <td>849</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="850">
+        <td>850</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="851">
+        <td>851</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Sapara, the Laconic[ST:n ]Subcategory: Saltat[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="852">
+        <td>852</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Day in the Life.\"</td>
+      </tr>
+      <tr id="853">
+        <td>853</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Haywire!\"</td>
+      </tr>
+      <tr id="854">
+        <td>854</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="855">
+        <td>855</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Forbidden Love.\"</td>
+      </tr>
+      <tr id="856">
+        <td>856</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Bohdan, the Mistral[ST:n ]Subcategory: Auravis[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="857">
+        <td>857</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="858">
+        <td>858</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Cinicula Assault.\"</td>
+      </tr>
+      <tr id="859">
+        <td>859</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Renewed Will.\"</td>
+      </tr>
+      <tr id="860">
+        <td>860</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Casper, the Unhealthy Eater[ST:n ]Subcategory: Blatta[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="861">
+        <td>861</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 5</td>
+      </tr>
+      <tr id="862">
+        <td>862</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Lurker.\"</td>
+      </tr>
+      <tr id="863">
+        <td>863</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Eckart, the Indestructible[ST:n ]Subcategory: Cinicula[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="864">
+        <td>864</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ridill, the Arrogant[ST:n ]Subcategory: Lophid[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="865">
+        <td>865</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Necro, the Cavelord[ST:n ]Subcategory: Vesper[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="866">
+        <td>866</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Experimental Composite Qmoeva[ST:n ]Subcategory: Qmoeva[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="867">
+        <td>867</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"City Saviors.\"</td>
+      </tr>
+      <tr id="868">
+        <td>868</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="869">
+        <td>869</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="870">
+        <td>870</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Dieter, the Epicure[ST:n ]Subcategory: Grex[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="871">
+        <td>871</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Daril, the Eradicator[ST:n ]Subcategory: Marnuck[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="872">
+        <td>872</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="873">
+        <td>873</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Good Thief.\"</td>
+      </tr>
+      <tr id="874">
+        <td>874</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="875">
+        <td>875</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Mesgen, the Fairweathered[ST:n ]Subcategory: Potamus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="876">
+        <td>876</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Close Encounters.\"</td>
+      </tr>
+      <tr id="877">
+        <td>877</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Nagi's Time.\"</td>
+      </tr>
+      <tr id="878">
+        <td>878</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Shatskikh, the Flash[ST:n ]Subcategory: Xiphias[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="879">
+        <td>879</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Welcome Back, Conner.\"</td>
+      </tr>
+      <tr id="880">
+        <td>880</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Here Come the Brides.\"</td>
+      </tr>
+      <tr id="881">
+        <td>881</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="882">
+        <td>882</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="883">
+        <td>883</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"An Ancient Legend.\"</td>
+      </tr>
+      <tr id="884">
+        <td>884</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"We Were Soldiers.\"</td>
+      </tr>
+      <tr id="885">
+        <td>885</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="886">
+        <td>886</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Etutanne, the Bloodthirsty[ST:n ]Subcategory: Adsecula[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="887">
+        <td>887</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Hephaestus, the Absconder[ST:n ]Subcategory: Duoguill[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="888">
+        <td>888</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="889">
+        <td>889</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Nine Lives.\"</td>
+      </tr>
+      <tr id="890">
+        <td>890</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="891">
+        <td>891</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="892">
+        <td>892</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Gugli, the Relentless[ST:n ]Subcategory: Suid[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="893">
+        <td>893</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Luciel, the Eternal[ST:n ]Subcategory: Millesaur[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="894">
+        <td>894</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Eutropio, the Sea Rumble[ST:n ]Subcategory: Levitath[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="895">
+        <td>895</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Dubious Operation.\"</td>
+      </tr>
+      <tr id="896">
+        <td>896</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Muimui's Meltdown.\"</td>
+      </tr>
+      <tr id="897">
+        <td>897</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Training Day.\"</td>
+      </tr>
+      <tr id="898">
+        <td>898</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A False Hope.\"</td>
+      </tr>
+      <tr id="899">
+        <td>899</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Bogdan, the Dense[ST:n ]Subcategory: Suid[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="900">
+        <td>900</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="901">
+        <td>901</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Stop, Thief!\"</td>
+      </tr>
+      <tr id="902">
+        <td>902</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ji-ett, the Thunderclap[ST:n ]Subcategory: Fal-swo[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="903">
+        <td>903</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Rajidi, the Cumuliform[ST:n ]Subcategory: Balaena[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="904">
+        <td>904</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="905">
+        <td>905</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Tree[ST:n ]Required Field Skill: Biological Level 5</td>
+      </tr>
+      <tr id="906">
+        <td>906</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="907">
+        <td>907</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Fateful Choice.\"</td>
+      </tr>
+      <tr id="908">
+        <td>908</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Nopon Heir.\"</td>
+      </tr>
+      <tr id="909">
+        <td>909</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Planetes, the Torrential[ST:n ]Subcategory: Unafulge[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="910">
+        <td>910</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Prospective Partners.\"</td>
+      </tr>
+      <tr id="911">
+        <td>911</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Pyotr, the Shepherd[ST:n ]Subcategory: Sylooth[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="912">
+        <td>912</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"House Call.\"</td>
+      </tr>
+      <tr id="913">
+        <td>913</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Tree[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="914">
+        <td>914</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Frontier Spirit.\"</td>
+      </tr>
+      <tr id="915">
+        <td>915</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Froste, the Courteous[ST:n ]Subcategory: Vesper[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="916">
+        <td>916</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Telethia, the Endbringer[ST:n ]Subcategory: Telethia[ST:n ]Appears: Always[ST:n ][ST:n ](Must be defeated in a non-mission encounter.)</td>
+      </tr>
+      <tr id="917">
+        <td>917</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Joker, the Unknowable[ST:n ]Subcategory: Blatta[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="918">
+        <td>918</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Frajeel, the Purgatorial[ST:n ]Subcategory: Levitath[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="919">
+        <td>919</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Art of War.\"</td>
+      </tr>
+      <tr id="920">
+        <td>920</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Rescue at the[ST:n ]Ensconced Citadel.\"</td>
+      </tr>
+      <tr id="921">
+        <td>921</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"My Dream.\"</td>
+      </tr>
+      <tr id="922">
+        <td>922</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Katerina, the Cliffhanger[ST:n ]Subcategory: Mortifole[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="923">
+        <td>923</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Schneider, the Cliffpercher[ST:n ]Subcategory: Forfex[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="924">
+        <td>924</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Voltant Visionary.\"</td>
+      </tr>
+      <tr id="925">
+        <td>925</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="926">
+        <td>926</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Circle of Life.\"</td>
+      </tr>
+      <tr id="927">
+        <td>927</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="928">
+        <td>928</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"No-show Nen'celeg.\"</td>
+      </tr>
+      <tr id="929">
+        <td>929</td>
+        <td>
+        </td>
+        <td class="side">Object: Trailer Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="930">
+        <td>930</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Dodonga Caravan.\"</td>
+      </tr>
+      <tr id="931">
+        <td>931</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Manhunt.\"</td>
+      </tr>
+      <tr id="932">
+        <td>932</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Demetrio, the Tempestuous[ST:n ]Subcategory: Simius[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="933">
+        <td>933</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="934">
+        <td>934</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Close Comrades.\"</td>
+      </tr>
+      <tr id="935">
+        <td>935</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Proper Chopper.\"</td>
+      </tr>
+      <tr id="936">
+        <td>936</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Dead Men Tell No Tales.\"</td>
+      </tr>
+      <tr id="937">
+        <td>937</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Murder Most Foul.\"</td>
+      </tr>
+      <tr id="938">
+        <td>938</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Elena, the Infernal[ST:n ]Subcategory: Scirpo[ST:n ]Appears: Fog</td>
+      </tr>
+      <tr id="939">
+        <td>939</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Griffus, the Tartarean[ST:n ]Subcategory: Insidia[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="940">
+        <td>940</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Adventure!\"</td>
+      </tr>
+      <tr id="941">
+        <td>941</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Tormenta, the Scarlet-Clad[ST:n ]Subcategory: Turba[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="942">
+        <td>942</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Lone Survivors.\"</td>
+      </tr>
+      <tr id="943">
+        <td>943</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Sarcosuchus, the Iron-Eater[ST:n ]Subcategory: Dilus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="944">
+        <td>944</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Tree[ST:n ]Required Field Skill: Biological Level 1</td>
+      </tr>
+      <tr id="945">
+        <td>945</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="946">
+        <td>946</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="947">
+        <td>947</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Duel (Part II).\"</td>
+      </tr>
+      <tr id="948">
+        <td>948</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Clemente, the Iron Meteor[ST:n ]Subcategory: Falsaxum[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="949">
+        <td>949</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="950">
+        <td>950</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="951">
+        <td>951</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Missing in Action.\"</td>
+      </tr>
+      <tr id="952">
+        <td>952</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Desdemona, the Subterranean[ST:n ]Subcategory: Scirpo[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="953">
+        <td>953</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Buchwald, the Guardian[ST:n ]Subcategory: Virago[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="954">
+        <td>954</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="955">
+        <td>955</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="956">
+        <td>956</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Data Miner.\"</td>
+      </tr>
+      <tr id="957">
+        <td>957</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="958">
+        <td>958</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Melanya, the Sound Sleeper[ST:n ]Subcategory: Suid[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="959">
+        <td>959</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Sun'celeg Rises.\"</td>
+      </tr>
+      <tr id="960">
+        <td>960</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Gotthard, the Intimidating[ST:n ]Subcategory: Auravis[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="961">
+        <td>961</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="962">
+        <td>962</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="963">
+        <td>963</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Germaine, the Treasure Keeper[ST:n ]Subcategory: Ovis[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="964">
+        <td>964</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="965">
+        <td>965</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="966">
+        <td>966</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Vendura, the Spellbinder[ST:n ]Subcategory: Prone (Cavern Clan)[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="967">
+        <td>967</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Libra, the Long-Lived[ST:n ]Subcategory: Purgovent[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="968">
+        <td>968</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Jindriska, the Serene[ST:n ]Subcategory: Mortifole[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="969">
+        <td>969</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Barnabas, the Despot[ST:n ]Subcategory: Vigent[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="970">
+        <td>970</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Dish Served Cold.\"</td>
+      </tr>
+      <tr id="971">
+        <td>971</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 2</td>
+      </tr>
+      <tr id="972">
+        <td>972</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Prone Sweet Prone.\"</td>
+      </tr>
+      <tr id="973">
+        <td>973</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Edgardo, the Carefree[ST:n ]Subcategory: Thallus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="974">
+        <td>974</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="975">
+        <td>975</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Vittorio, the Battle-Scarred[ST:n ]Subcategory: Tectinsula[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="976">
+        <td>976</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="977">
+        <td>977</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Foggy Dilemma.\"</td>
+      </tr>
+      <tr id="978">
+        <td>978</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="979">
+        <td>979</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ro-darm, the Demon Claw[ST:n ]Subcategory: Oc-serv[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="980">
+        <td>980</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Slovity's Rampage.\"</td>
+      </tr>
+      <tr id="981">
+        <td>981</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Mayday.\"</td>
+      </tr>
+      <tr id="982">
+        <td>982</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="983">
+        <td>983</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Hartmut, the Calamity[ST:n ]Subcategory: Millepod[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="984">
+        <td>984</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Valeriano, the Rolling Thunder[ST:n ]Subcategory: Duoguill[ST:n ]Appears: Electromagnetic storm</td>
+      </tr>
+      <tr id="985">
+        <td>985</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Friend in Need.\"</td>
+      </tr>
+      <tr id="986">
+        <td>986</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="987">
+        <td>987</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="988">
+        <td>988</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ernest, the Contemplative[ST:n ]Subcategory: Progen[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="989">
+        <td>989</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Celedonio, the Battle-Tested[ST:n ]Subcategory: Grex[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="990">
+        <td>990</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Dung[ST:n ]Required Field Skill: Biological Level 2</td>
+      </tr>
+      <tr id="991">
+        <td>991</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Squallo, the Sand Mirer[ST:n ]Subcategory: Sabula[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="992">
+        <td>992</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="993">
+        <td>993</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Mighty Mia.\"</td>
+      </tr>
+      <tr id="994">
+        <td>994</td>
+        <td>
+        </td>
+        <td class="side">Object: Trailer Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="995">
+        <td>995</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Duel (Part I).\"</td>
+      </tr>
+      <tr id="996">
+        <td>996</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Rolf, the Sonorous[ST:n ]Subcategory: Saltat[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="997">
+        <td>997</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ludvik, the Picky Eater[ST:n ]Subcategory: Casuari[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="998">
+        <td>998</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Grim Undertaking.\"</td>
+      </tr>
+      <tr id="999">
+        <td>999</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1000">
+        <td>1000</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Little Rich Girl.\"</td>
+      </tr>
+      <tr id="1001">
+        <td>1001</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Elaine, the Lunar Eclipse[ST:n ]Subcategory: Ceto[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1002">
+        <td>1002</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Challenger Approaches.\"</td>
+      </tr>
+      <tr id="1003">
+        <td>1003</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1004">
+        <td>1004</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Then and Now.\"</td>
+      </tr>
+      <tr id="1005">
+        <td>1005</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Eliane, the Unmoved[ST:n ]Subcategory: Mortifole[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1006">
+        <td>1006</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Sviatoslav, the Reproachful[ST:n ]Subcategory: Aprica[ST:n ]Appears: Rain</td>
+      </tr>
+      <tr id="1007">
+        <td>1007</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Great Divide.\"</td>
+      </tr>
+      <tr id="1008">
+        <td>1008</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1009">
+        <td>1009</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ferdinand, the Fortuitous[ST:n ]Subcategory: Mephite[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1010">
+        <td>1010</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="1011">
+        <td>1011</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Bread and a Circus.\"</td>
+      </tr>
+      <tr id="1012">
+        <td>1012</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Climati, the Chilling Wind[ST:n ]Subcategory: Sylooth[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1013">
+        <td>1013</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 5</td>
+      </tr>
+      <tr id="1014">
+        <td>1014</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Shotgun Diplomacy.\"</td>
+      </tr>
+      <tr id="1015">
+        <td>1015</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Silvestre, the Morning Light[ST:n ]Subcategory: Levitath[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1016">
+        <td>1016</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1017">
+        <td>1017</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Dorian Caravan.\"</td>
+      </tr>
+      <tr id="1018">
+        <td>1018</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1019">
+        <td>1019</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Dung[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1020">
+        <td>1020</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Feliciano, the All-Seeing[ST:n ]Subcategory: Sphinx[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1021">
+        <td>1021</td>
+        <td>
+        </td>
+        <td class="side">Object: Vehicle Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1022">
+        <td>1022</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1023">
+        <td>1023</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1024">
+        <td>1024</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Vilem, the Gold-Scaled[ST:n ]Subcategory: Aetrygon[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1025">
+        <td>1025</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1026">
+        <td>1026</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Bertrand, the Gorge Scourge[ST:n ]Subcategory: Adsecula[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1027">
+        <td>1027</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Trading Floor.\"</td>
+      </tr>
+      <tr id="1028">
+        <td>1028</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1029">
+        <td>1029</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Spy Games.\"</td>
+      </tr>
+      <tr id="1030">
+        <td>1030</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 1</td>
+      </tr>
+      <tr id="1031">
+        <td>1031</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1032">
+        <td>1032</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Supplies Surprise.\"</td>
+      </tr>
+      <tr id="1033">
+        <td>1033</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 1</td>
+      </tr>
+      <tr id="1034">
+        <td>1034</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 5</td>
+      </tr>
+      <tr id="1035">
+        <td>1035</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Gorkwa Games.\"</td>
+      </tr>
+      <tr id="1036">
+        <td>1036</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Sparking a Smile.\"</td>
+      </tr>
+      <tr id="1037">
+        <td>1037</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Slovity's Revenge.\"</td>
+      </tr>
+      <tr id="1038">
+        <td>1038</td>
+        <td>
+        </td>
+        <td class="side">Object: Lifepod[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1039">
+        <td>1039</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Kringe, the Hunting Arrow[ST:n ]Subcategory: Caro[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1040">
+        <td>1040</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1041">
+        <td>1041</td>
+        <td>
+        </td>
+        <td class="side">Object: White Whale Debris[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1042">
+        <td>1042</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Bodyguard.\"</td>
+      </tr>
+      <tr id="1043">
+        <td>1043</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"My Angel, My Lana.\"</td>
+      </tr>
+      <tr id="1044">
+        <td>1044</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1045">
+        <td>1045</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Definian Downfall.\"</td>
+      </tr>
+      <tr id="1046">
+        <td>1046</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1047">
+        <td>1047</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Coil, the Never-Ending[ST:n ]Subcategory: Scintimure[ST:n ]Appears: Electromagnetic storm</td>
+      </tr>
+      <tr id="1048">
+        <td>1048</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Prinsipe, the Ravenous[ST:n ]Subcategory: Blatta[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1049">
+        <td>1049</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Old Gods.\"</td>
+      </tr>
+      <tr id="1050">
+        <td>1050</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1051">
+        <td>1051</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Mia Is Missing!\"</td>
+      </tr>
+      <tr id="1052">
+        <td>1052</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Duel (Part IV).\"</td>
+      </tr>
+      <tr id="1053">
+        <td>1053</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Chantai's Galdr[ST:n ]Subcategory: Galdr[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1054">
+        <td>1054</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1055">
+        <td>1055</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"To Serve Nopon.\"</td>
+      </tr>
+      <tr id="1056">
+        <td>1056</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Rites of Ruin.\"</td>
+      </tr>
+      <tr id="1057">
+        <td>1057</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Black Lifehold.\"</td>
+      </tr>
+      <tr id="1058">
+        <td>1058</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Eisen, the Ebon Rock[ST:n ]Subcategory: Petramand[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1059">
+        <td>1059</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1060">
+        <td>1060</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Lionhearted.\"</td>
+      </tr>
+      <tr id="1061">
+        <td>1061</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Pelicollo, the Panzer[ST:n ]Subcategory: Caecus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1062">
+        <td>1062</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="1063">
+        <td>1063</td>
+        <td>
+        </td>
+        <td class="side">Object: Lifepod[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1064">
+        <td>1064</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Chantai, the Insect Maiden[ST:n ]Subcategory: Milsaadi[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1065">
+        <td>1065</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Armored Cruiser Seidr[ST:n ]Subcategory: Seidr[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1066">
+        <td>1066</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Duran, the Draconian[ST:n ]Subcategory: Marnuck[ST:n ]Appears: Always (except late night)</td>
+      </tr>
+      <tr id="1067">
+        <td>1067</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ilithios, the Enlightened[ST:n ]Subcategory: Gularth[ST:n ]Appears: Always (except flaming hail)</td>
+      </tr>
+      <tr id="1068">
+        <td>1068</td>
+        <td>
+        </td>
+        <td class="side">Object: Lifepod[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1069">
+        <td>1069</td>
+        <td>
+        </td>
+        <td class="side">Object: Lifepod[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1070">
+        <td>1070</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"A Present for Hope.\"</td>
+      </tr>
+      <tr id="1071">
+        <td>1071</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1072">
+        <td>1072</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 2</td>
+      </tr>
+      <tr id="1073">
+        <td>1073</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1074">
+        <td>1074</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1075">
+        <td>1075</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1076">
+        <td>1076</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Terenty, the Blademaster[ST:n ]Subcategory: Ictus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1077">
+        <td>1077</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 2</td>
+      </tr>
+      <tr id="1078">
+        <td>1078</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Until the End.\"</td>
+      </tr>
+      <tr id="1079">
+        <td>1079</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Gi-zho, the Iron Deity[ST:n ]Subcategory: Xe-dom[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1080">
+        <td>1080</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Jia Mian, the Beloved[ST:n ]Subcategory: Jacul[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1081">
+        <td>1081</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Queen Is Dead.\"</td>
+      </tr>
+      <tr id="1082">
+        <td>1082</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Sharnaak, the Technician[ST:n ]Subcategory: Milsaadi[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1083">
+        <td>1083</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Alex's Last Stand.\"</td>
+      </tr>
+      <tr id="1084">
+        <td>1084</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1085">
+        <td>1085</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Unbreakable Sword.\"</td>
+      </tr>
+      <tr id="1086">
+        <td>1086</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1087">
+        <td>1087</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1088">
+        <td>1088</td>
+        <td>
+        </td>
+        <td class="side">Object: Indigen Nest[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1089">
+        <td>1089</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1090">
+        <td>1090</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Yune, the Ambusher[ST:n ]Subcategory: Visigel[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="1091">
+        <td>1091</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1092">
+        <td>1092</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 5</td>
+      </tr>
+      <tr id="1093">
+        <td>1093</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Behemoth, the Netherdweller[ST:n ]Subcategory: Virago[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="1094">
+        <td>1094</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Lesson from the Grave.\"</td>
+      </tr>
+      <tr id="1095">
+        <td>1095</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Predator and Prey.\"</td>
+      </tr>
+      <tr id="1096">
+        <td>1096</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 2</td>
+      </tr>
+      <tr id="1097">
+        <td>1097</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Bottoms Up.\"</td>
+      </tr>
+      <tr id="1098">
+        <td>1098</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Stola, the Champion[ST:n ]Subcategory: Liceor[ST:n ]Appears: Crimson aurora</td>
+      </tr>
+      <tr id="1099">
+        <td>1099</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1100">
+        <td>1100</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Alexei, the Jade[ST:n ]Subcategory: Monoceros[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1101">
+        <td>1101</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1102">
+        <td>1102</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Castle in the Sky.\"</td>
+      </tr>
+      <tr id="1103">
+        <td>1103</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Florence, the Hell Maggot[ST:n ]Subcategory: Germivore[ST:n ]Appears: Nighttime</td>
+      </tr>
+      <tr id="1104">
+        <td>1104</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Antara, the Water Diviner[ST:n ]Subcategory: Arenatect[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1105">
+        <td>1105</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="1106">
+        <td>1106</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Plans of Attack.\"</td>
+      </tr>
+      <tr id="1107">
+        <td>1107</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Radovan, the Sky Baron[ST:n ]Subcategory: Jacul[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1108">
+        <td>1108</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Laurencio, the Fog Bow[ST:n ]Subcategory: Filiavent[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1109">
+        <td>1109</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Asana, the Azure Star[ST:n ]Subcategory: Cervus[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1110">
+        <td>1110</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Line of Fire.\"</td>
+      </tr>
+      <tr id="1111">
+        <td>1111</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Damaged Zig[ST:n ]Subcategory: Zig[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1112">
+        <td>1112</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Unknown Assailant.\"</td>
+      </tr>
+      <tr id="1113">
+        <td>1113</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 5</td>
+      </tr>
+      <tr id="1114">
+        <td>1114</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Candelario, the Bronze[ST:n ]Subcategory: Petramand[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1115">
+        <td>1115</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1116">
+        <td>1116</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Soldier of the Harriers.\"</td>
+      </tr>
+      <tr id="1117">
+        <td>1117</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Serial Thriller.\"</td>
+      </tr>
+      <tr id="1118">
+        <td>1118</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1119">
+        <td>1119</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1120">
+        <td>1120</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Luxaar's Xern[ST:n ]Subcategory: Xern[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1121">
+        <td>1121</td>
+        <td>
+        </td>
+        <td class="side">Object: Patrol Chopper Wreckage[ST:n ]Required Field Skill: Mechanical Level 5</td>
+      </tr>
+      <tr id="1122">
+        <td>1122</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Law and Orders.\"</td>
+      </tr>
+      <tr id="1123">
+        <td>1123</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1124">
+        <td>1124</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Hair Apparent.\"[ST:n ]Clearing out the stray potamus was only[ST:n ]the start of one funny episode...</td>
+      </tr>
+      <tr id="1125">
+        <td>1125</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 5</td>
+      </tr>
+      <tr id="1126">
+        <td>1126</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"It's-a Mia!\"</td>
+      </tr>
+      <tr id="1127">
+        <td>1127</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1128">
+        <td>1128</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 4</td>
+      </tr>
+      <tr id="1129">
+        <td>1129</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Good Fortun.\"</td>
+      </tr>
+      <tr id="1130">
+        <td>1130</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Gesserith, the Wileworm[ST:n ]Subcategory: Sabula[ST:n ]Appears: When Atreides the Distinguished[ST:n ]is present.</td>
+      </tr>
+      <tr id="1131">
+        <td>1131</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ramus, the Supersonic[ST:n ]Subcategory: Aetrygon[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1132">
+        <td>1132</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Ignit, the Ultimate Chaos[ST:n ]Subcategory: Coronid[ST:n ]Appears: Crimson auroras</td>
+      </tr>
+      <tr id="1133">
+        <td>1133</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Lockhart, the Killer of Hope[ST:n ]Subcategory: Vivohast[ST:n ]Appears: Rarely</td>
+      </tr>
+      <tr id="1134">
+        <td>1134</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 3</td>
+      </tr>
+      <tr id="1135">
+        <td>1135</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1136">
+        <td>1136</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="1137">
+        <td>1137</td>
+        <td>
+        </td>
+        <td class="side">Object: Skell Wreckage[ST:n ]Required Field Skill: Mechanical Level 3</td>
+      </tr>
+      <tr id="1138">
+        <td>1138</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1139">
+        <td>1139</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1140">
+        <td>1140</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Man'an, the Water Whisperer[ST:n ]Subcategory: Arenatect[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1141">
+        <td>1141</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Reliquary[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1142">
+        <td>1142</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Thaddaeus, the Ultramafic[ST:n ]Subcategory: Cinicula[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1143">
+        <td>1143</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1144">
+        <td>1144</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Wreckage[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1145">
+        <td>1145</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Special Delivery.\"</td>
+      </tr>
+      <tr id="1146">
+        <td>1146</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Duel (Part III).\"</td>
+      </tr>
+      <tr id="1147">
+        <td>1147</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Brotherly Love.\"</td>
+      </tr>
+      <tr id="1148">
+        <td>1148</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Sadar's Qmoeva[ST:n ]Subcategory: Qmoeva[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1149">
+        <td>1149</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="1150">
+        <td>1150</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Leaving the Nest.\"</td>
+      </tr>
+      <tr id="1151">
+        <td>1151</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Clara, the Pure White[ST:n ]Subcategory: Ovis[ST:n ]Appears: Daytime</td>
+      </tr>
+      <tr id="1152">
+        <td>1152</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1153">
+        <td>1153</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"Orphe Pluck.\"</td>
+      </tr>
+      <tr id="1154">
+        <td>1154</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 2</td>
+      </tr>
+      <tr id="1155">
+        <td>1155</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 3</td>
+      </tr>
+      <tr id="1156">
+        <td>1156</td>
+        <td>
+        </td>
+        <td class="side">Object: Strange Petrified Tree[ST:n ]Required Field Skill: Biological Level 4</td>
+      </tr>
+      <tr id="1157">
+        <td>1157</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 4</td>
+      </tr>
+      <tr id="1158">
+        <td>1158</td>
+        <td>
+        </td>
+        <td class="side">Completed mission \"The Sword of[ST:n ]Legendaryness.\"</td>
+      </tr>
+      <tr id="1159">
+        <td>1159</td>
+        <td>
+        </td>
+        <td class="side">Object: Alien Container[ST:n ]Required Field Skill: Archaeological Level 2</td>
+      </tr>
+      <tr id="1160">
+        <td>1160</td>
+        <td>
+        </td>
+        <td class="side">Enemy: Oc-serv, the Ancient[ST:n ]Subcategory: Oc-serv[ST:n ]Appears: Always</td>
+      </tr>
+      <tr id="1161">
+        <td>1161</td>
+        <td>
+        </td>
+        <td class="side">Completed Lin's affinity mission[ST:n ]\"The Repair Job.\"</td>
+      </tr>
+      <tr id="1162">
+        <td>1162</td>
+        <td>
+        </td>
+        <td class="side">Lin can often be found here.</td>
+      </tr>
+      <tr id="1163">
+        <td>1163</td>
+        <td>
+        </td>
+        <td class="side">Completed Vandham's affinity mission[ST:n ]\"A Day in the Life.\"</td>
+      </tr>
+      <tr id="1164">
+        <td>1164</td>
+        <td>
+        </td>
+        <td class="side">Completed Elma's affinity mission[ST:n ]\"Then and Now.\"</td>
+      </tr>
+      <tr id="1165">
+        <td>1165</td>
+        <td>
+        </td>
+        <td class="side">Completed Lin and Tatsu's affinity mission[ST:n ]\"To Serve Nopon.\"</td>
+      </tr>
+      <tr id="1166">
+        <td>1166</td>
+        <td>
+        </td>
+        <td class="side">Name: Elma[ST:n ]Affinity: 5[ST:n ]Appears: Night[ST:n ]Requirements: View 4th heart-to-heart</td>
+      </tr>
+      <tr id="1167">
+        <td>1167</td>
+        <td>
+        </td>
+        <td class="side">Completed Nagi's affinity mission[ST:n ]\"Nagi's Time.\"</td>
+      </tr>
+      <tr id="1168">
+        <td>1168</td>
+        <td>
+        </td>
+        <td class="side">Completed Chausson's affinity mission[ST:n ]\"A Challenger Approaches.\"</td>
+      </tr>
+      <tr id="1169">
+        <td>1169</td>
+        <td>
+        </td>
+        <td class="side">Name: Nagi[ST:n ]Affinity: 4[ST:n ]Appears: ---[ST:n ]Requirements: View 3rd heart-to-heart</td>
+      </tr>
+      <tr id="1170">
+        <td>1170</td>
+        <td>
+        </td>
+        <td class="side">Completed Elma's affinity mission[ST:n ]\"We Were Soldiers.\"</td>
+      </tr>
+      <tr id="1171">
+        <td>1171</td>
+        <td>
+        </td>
+        <td class="side">Elma can often be found here.</td>
+      </tr>
+      <tr id="1172">
+        <td>1172</td>
+        <td>
+        </td>
+        <td class="side">Completed Lin and Vandham's affinity mission[ST:n ]\"Two Peas in a Pod.\"</td>
+      </tr>
+      <tr id="1173">
+        <td>1173</td>
+        <td>
+        </td>
+        <td class="side">Completed Irina's affinity mission[ST:n ]\"Fathers and Sons.\"</td>
+      </tr>
+      <tr id="1174">
+        <td>1174</td>
+        <td>
+        </td>
+        <td class="side">Completed Tatsu's affinity mission[ST:n ]\"BFFs.\"</td>
+      </tr>
+      <tr id="1175">
+        <td>1175</td>
+        <td>
+        </td>
+        <td class="side">Completed Chausson's affinity mission[ST:n ]\"Prospective Partners.\"</td>
+      </tr>
+      <tr id="1176">
+        <td>1176</td>
+        <td>
+        </td>
+        <td class="side">Completed Lao's affinity mission[ST:n ]\"A Friend in Need.\"</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

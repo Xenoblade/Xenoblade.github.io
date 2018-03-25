@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk002_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg001</td>
+        <td>84</td>
+        <td class="side">Hey, Brighid! I found something
+interesting in that shop over there.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg002</td>
+        <td>84</td>
+        <td class="side">Interesting?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg003</td>
+        <td>84</td>
+        <td class="side">Yep.
+Here it is.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg004</td>
+        <td>84</td>
+        <td class="side">What is that thing?
+It looks...quite grotesque...</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg005</td>
+        <td>84</td>
+        <td class="side">Why, that's an Argentum Monkfish.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg006</td>
+        <td>84</td>
+        <td class="side">You are familiar with this creature,
+Lady Mòrag?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg007</td>
+        <td>84</td>
+        <td class="side">It's a rare delicacy that is only found in
+the waters around here. Rather tasty.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg008</td>
+        <td>84</td>
+        <td class="side">People...eat this monstrous fish thing?</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg009</td>
+        <td>84</td>
+        <td class="side">It might not look appetizing, but
+I've heard the taste is divine.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg010</td>
+        <td>84</td>
+        <td class="side">Since it's so rare, I thought I'd cook
+something up with it, but I'm not
+sure how...</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg011</td>
+        <td>84</td>
+        <td class="side">Mòrag, do you know?
+Do tell, please!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg231</td>
+        <td>165</td>
+        <td class="side">How should I respond...?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg012</td>
+        <td>164</td>
+        <td class="side">I'm not that great a cook...</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg013</td>
+        <td>164</td>
+        <td class="side">...Very well, I'll do it.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg101</td>
+        <td>84</td>
+        <td class="side">Oh, no, that's fine!
+I'm happy to do the messy part.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg102</td>
+        <td>84</td>
+        <td class="side">I just need you to tell me the steps,
+and then if you could add the spices...</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg103</td>
+        <td>84</td>
+        <td class="side">Well, if that is all, I suppose
+it should be...fine...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg104</td>
+        <td>84</td>
+        <td class="side">Are you certain, Lady Mòrag?
+About the spices and everything?</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg105</td>
+        <td>84</td>
+        <td class="side">D-don't you worry.
+Have some faith in my taste buds...</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg106</td>
+        <td>84</td>
+        <td class="side">Right then. So, first, how should we
+cook it...?</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg107</td>
+        <td>84</td>
+        <td class="side">...A fine question.
+Many would eat it grilled, or sliced raw,
+but I hear it tastes best in a stew.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg108</td>
+        <td>84</td>
+        <td class="side">Sounds great!
+Well then, Mòrag, can I ask you
+to get the stock ready?</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg109</td>
+        <td>84</td>
+        <td class="side">Of course.
+If I recall, that's made by boiling
+the guts...</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg110</td>
+        <td>84</td>
+        <td class="side">I think I can leave you to it then!
+I'll go buy the other ingredients.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg111</td>
+        <td>84</td>
+        <td class="side">...Roger.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg112</td>
+        <td>84</td>
+        <td class="side">...</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg113</td>
+        <td>84</td>
+        <td class="side">...Brighid?</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg114</td>
+        <td>84</td>
+        <td class="side">Yes, Lady Mòrag?</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg115</td>
+        <td>84</td>
+        <td class="side">Do we have to begin by gutting
+this ugly little creature?</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg116</td>
+        <td>84</td>
+        <td class="side">Well, I should think so.
+Can you do it?</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg117</td>
+        <td>84</td>
+        <td class="side">Erm... I'm not even really sure
+which part the guts are...</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg118</td>
+        <td>84</td>
+        <td class="side">That would be the parts on the inside.
+Consider using a knife.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg119</td>
+        <td>84</td>
+        <td class="side">Right...</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg120</td>
+        <td>84</td>
+        <td class="side">...Brighid?</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg121</td>
+        <td>84</td>
+        <td class="side">Yes, what is it now?</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg122</td>
+        <td>84</td>
+        <td class="side">The heart...
+The heart is still beating!</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg123</td>
+        <td>84</td>
+        <td class="side">What should I do?
+Should I deliver the coup de grâce?</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg124</td>
+        <td>84</td>
+        <td class="side">I-indeed, that seems wise.
+We don't want it fighting back.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg125</td>
+        <td>84</td>
+        <td class="side">Brighid!</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg126</td>
+        <td>84</td>
+        <td class="side">It's...looking at me with those eyes,
+and moving those lips, like it's accusing
+me of something...</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg127</td>
+        <td>84</td>
+        <td class="side">It's cursing me for taking its heart!</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg128</td>
+        <td>84</td>
+        <td class="side">It's no use...
+I can't torment the dead any further...</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg129</td>
+        <td>84</td>
+        <td class="side">Brighid, I'll leave the rest to you.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg130</td>
+        <td>84</td>
+        <td class="side">Wait just a minute!
+You can't force me to
+do your dirty work!</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg131</td>
+        <td>84</td>
+        <td class="side">I'm sorry, but I must!</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg132</td>
+        <td>84</td>
+        <td class="side">Lady Mòrag! Are you deserting
+in the face of the enemy?!</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg201</td>
+        <td>84</td>
+        <td class="side">Lady Mòrag, if I may.
+Is this really wise...?</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg202</td>
+        <td>84</td>
+        <td class="side">Oh, don't you worry yourself.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg203</td>
+        <td>84</td>
+        <td class="side">Shall we start by gutting the fish, then?</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg204</td>
+        <td>84</td>
+        <td class="side">Excuse me?</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg205</td>
+        <td>84</td>
+        <td class="side">What's the matter?</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg206</td>
+        <td>84</td>
+        <td class="side">...Gut it? Gut this creature?</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg207</td>
+        <td>84</td>
+        <td class="side">Well, yes.
+We can't exactly cook it like that.</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg208</td>
+        <td>84</td>
+        <td class="side">...Ahem. Understood.
+Life is a battlefield. Let us commence.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg209</td>
+        <td>84</td>
+        <td class="side">Show it who's boss, Lady Mòrag!</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg210</td>
+        <td>84</td>
+        <td class="side">...</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg211</td>
+        <td>84</td>
+        <td class="side">...Brighid.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg212</td>
+        <td>84</td>
+        <td class="side">Yes?</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg213</td>
+        <td>84</td>
+        <td class="side">Please hold down its head.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg214</td>
+        <td>84</td>
+        <td class="side">Wh-wha...?!
+No, I, er, that is...
+I'd rather not...touch it.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg215</td>
+        <td>84</td>
+        <td class="side">It's just a little tricky to make the
+incision when it keeps...staring at me...</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg216</td>
+        <td>84</td>
+        <td class="side">Qu-quite true, but...</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg217</td>
+        <td>84</td>
+        <td class="side">For the love of the Architect, do it!
+Please, at least cover its eyes for me!</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg218</td>
+        <td>84</td>
+        <td class="side">Y-yes, Ma'am.
+We cannot let a mere fish
+get the best of us!</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg219</td>
+        <td>84</td>
+        <td class="side">Eeeeeeeeeeek!</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg220</td>
+        <td>84</td>
+        <td class="side">What's wrong?!</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg221</td>
+        <td>84</td>
+        <td class="side">It...It looked me in the eye!
+Is this thing still alive?!</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg222</td>
+        <td>84</td>
+        <td class="side">Can it be?!
+Then I must end it before it strikes!</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg223</td>
+        <td>84</td>
+        <td class="side">It's opening its foul maw?!</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg224</td>
+        <td>84</td>
+        <td class="side">Lady Mòrag, the enemy means to
+eat us! Quickly, the finishing blow!</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg225</td>
+        <td>84</td>
+        <td class="side">Very well! Hellfire!</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg226</td>
+        <td>84</td>
+        <td class="side">No, wait!
+If you do that, the food will be-</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg227</td>
+        <td>84</td>
+        <td class="side">...Well, Brighid?</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg228</td>
+        <td>84</td>
+        <td class="side">As befits the Flamebringer.
+The foe is extinguished without a trace.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg229</td>
+        <td>84</td>
+        <td class="side">Phew. Our mission here is done.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>kizunatalk002_msg230</td>
+        <td>84</td>
+        <td class="side">What do you think you're doing?!
+There's nothing left for us to eat!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

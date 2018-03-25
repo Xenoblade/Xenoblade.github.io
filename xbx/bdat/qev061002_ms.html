@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev061002_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0017</td>
+        <td class="side">Aa...nngh... *fsssh* C-can't...go on...[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0018</td>
+        <td class="side">*fsssssssssh*[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0019</td>
+        <td class="side">Wh-what? *fsssh* Strong voltant waves...nearby...?[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0020</td>
+        <td class="side">Oh! I feel voltant filling every inch of my body! *fsssh*[ST:n ]It's the raw force of a true zirtodiamond![ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0120</td>
+        <td class="side">Nrraaah! AaaaaAAAAAAAH! *fsssh* *fsssh* *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0021</td>
+        <td class="side">Hrrngh... Ah... *fsssssssssh*[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0022</td>
+        <td class="side">...Huh? You're the mirage I saw. *fsssh*[ST:n ]Wait, did YOU bring me this?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0030</td>
+        <td class="side">Demand[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0031</td>
+        <td class="side">Insist that Toluera hand over Golbogga's legacy.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0040</td>
+        <td class="side">Worry[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0041</td>
+        <td class="side">Ask Toluera if he's feeling all right.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0030</td>
+        <td class="side">qev061001_JNK0030</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0023</td>
+        <td class="side">It seems that you really do exist after all. *fsssh*[ST:n ]Which means I'm bound to honor my promise.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0024</td>
+        <td class="side">This disk is what you're after, yes? *fsssh*[ST:n ]It is yours by rights.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0040</td>
+        <td class="side">qev061001_JNK0040</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0025</td>
+        <td class="side">Thanks to you. I don't know that I've ever felt so[ST:n ]thoroughly full of voltant. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0026</td>
+        <td class="side">...Which means I have a promise to keep. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0027</td>
+        <td class="side">This disk is what you're after, is it not? *fsssh*[ST:n ]Take it.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0028</td>
+        <td class="side">*fsssh* ...Though I still don't understand why a human[ST:n ]would desire such a thing.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0029</td>
+        <td class="side">...What?! Feloran sent you?! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0030</td>
+        <td class="side">Urgh. If I'd known that, I wouldn't have handed it over[ST:n ]so easily. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0031</td>
+        <td class="side">...Perhaps it's not too late though. *fsssh*[ST:n ]For you see, if a Golbogga fanatic like him gets his[ST:n ]hands on that, he'll spread dangerous rumors.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0032</td>
+        <td class="side">So just hand it back to me. *fsssh* Do that,[ST:n ]and I'll prove once and for all Golbogga doesn't exist![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0050</td>
+        <td class="side">Refuse[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0051</td>
+        <td class="side">Firmly turn down Toluera's request.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0060</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0061</td>
+        <td class="side">Ask what Toluera has against Feloran.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0050</td>
+        <td class="side">qev061001_JNK0050</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0033</td>
+        <td class="side">*fsssh* You're no different from the other Zaruboggan—[ST:n ]blindly believing in something nobody's ever seen.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0034</td>
+        <td class="side">Fine then! Take it! *fsssh* But I'll tell you now,[ST:n ]the only thing you're going to prove with what's[ST:n ]on there is that Golbogga never existed.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0060</td>
+        <td class="side">qev061001_JNK0060</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0035</td>
+        <td class="side">Because he's a liar! *fsssh* He demands that all believe[ST:n ]in his precious Golbogga when it's clearly a fantasy.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0036</td>
+        <td class="side">*fsssh* My claim was scientific. I said Zaruboggan[ST:n ]gradually evolved from microorganisms floating in[ST:n ]voltant.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0037</td>
+        <td class="side">But those zealots called me a heretic and silenced my[ST:n ]work. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0038</td>
+        <td class="side">*fsssh* So I stole this disk from their grand cathedral on[ST:n ]Bedun in order to have my revenge.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0039</td>
+        <td class="side">...Actually, could I possibly get you to help me unlock[ST:n ]its contents? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0040</td>
+        <td class="side">You and I shall expose Feloran's lies together! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0070</td>
+        <td class="side">Refuse[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0071</td>
+        <td class="side">Firmly turn down Toluera's request.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0080</td>
+        <td class="side">Accept[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0081</td>
+        <td class="side">Agree to help Toluera.[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0070</td>
+        <td class="side">qev061001_JNK0070</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0041</td>
+        <td class="side">*fsssh* You're no different from the other Zaruboggan—[ST:n ]blindly believing in something nobody's ever seen.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0042</td>
+        <td class="side">Fine then! Take it! *fsssh* But I'll tell you now,[ST:n ]the only thing you're going to prove with what's[ST:n ]on there is that Golbogga never existed.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0080</td>
+        <td class="side">qev061001_JNK0080</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0043</td>
+        <td class="side">I am thrilled to hear it. *fsssh* The other Zaruboggan[ST:n ]have always shunned me as a pariah, so you are the[ST:n ]first ally I've ever known.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0044</td>
+        <td class="side">*fsssh* You have to find a Zaruboggan called Kiliran.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0045</td>
+        <td class="side">He should be able to break the encryption which locks[ST:n ]this disk. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0046</td>
+        <td class="side">Heh heh heh... *fsssh* Once we're inside it,[ST:n ]we'll finally have proof that Golbogga never existed![ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0050</td>
+        <td class="side">Ah, comrade! Friend! Did you manage to get that[ST:n ]disk unlocked? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0051</td>
+        <td class="side">...Yes, excellent. It appears to be completely accessible[ST:n ]now. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0052</td>
+        <td class="side">Heh heh heh. *fsssh* Now to pull back the curtain and[ST:n ]reveal this conspiracy for the lie it is![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0053</td>
+        <td class="side">We'll tear down the false idol of Golbogga that's stood[ST:n ]for millennia, and those fraudulent zealots who uphold[ST:n ]him with it! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0054</td>
+        <td class="side">Toluera, the finest Zaruboggan biologist in history,[ST:n ]will at last drag the truth kicking and screaming into[ST:n ]the light! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0055</td>
+        <td class="side">Ah ha ha ha ha! *fsssh* Aaaaha ha ha... Huh?[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0056</td>
+        <td class="side">*fssssssh*[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0057</td>
+        <td class="side">...What is this? This isn't possible... This...[ST:n ]*fsssh* No! I won't accept it![ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0058</td>
+        <td class="side">My research proves that Zaruboggan evolved from[ST:n ]microorganisms dwelling in voltant! *fsssh* It proves...[ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0059</td>
+        <td class="side">A-and why would Golbogga look like THAT? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0090</td>
+        <td class="side">Inquire about Facts[ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0091</td>
+        <td class="side">Ask what it is that Toluera refuses to accept.[ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0100</td>
+        <td class="side">Inquire about Golbogga[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0101</td>
+        <td class="side">Ask Toluera what Golbogga looks like.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0090</td>
+        <td class="side">qev061001_JNK0090</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0060</td>
+        <td class="side">If what this disk says is real, then... *fsssh*[ST:n ]Then Golbogga really did exist.[ST:n ]There really was a prior civilization...[ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0061</td>
+        <td class="side">And just before burying Bedun in a sea of voltant,[ST:n ]he—no, THEY engineered us as a lifeform able to[ST:n ]survive in that new era. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0062</td>
+        <td class="side">But... *fsssh* Nrgh! Then what about all my research?[ST:n ]Was it all just a waste of time?[ST:wait ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0063</td>
+        <td class="side">That can't be the case. *fsssh* It ISN'T the case![ST:wait ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0064</td>
+        <td class="side">But why does Golbogga look like a human? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0100</td>
+        <td class="side">qev061001_JNK0100</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0065</td>
+        <td class="side">Golbogga does not exist... MUSTN'T exist! *fsssh*[ST:n ]These records are falsified! Lies, all of them![ST:wait ]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0066</td>
+        <td class="side">Otherwise it would mean all my research was wasted.[ST:n ]It would mean Feloran's rantings were right! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0067</td>
+        <td class="side">I don't believe it... *fsssh* I refuse to believe it![ST:wait ]</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0068</td>
+        <td class="side">And why would Golbogga look like that? *fsssh*[ST:n ]Why would he be identical to a human?![ST:wait ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0069</td>
+        <td class="side">You... You did this! *fsssh* Else you're here in the same[ST:n ]form as Golbogga just to mock me![ST:wait ]</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0070</td>
+        <td class="side">Go then! Begone! Take this, if it will make you leave![ST:n ]*fsssh* I'm not wrong. I know I'm not.[ST:wait ]</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0071</td>
+        <td class="side">...Or are you planning to flood this planet with voltant[ST:n ]as before? *fsssh* Will you create more warped life?[ST:wait ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0072</td>
+        <td class="side">What gives you the right?! *fsssh* Do you interfere with[ST:n ]natural evolution and reject its authority just so you can[ST:n ]style yourselves as gods?[ST:wait ]</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0110</td>
+        <td class="side">Agree[ST:wait ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0111</td>
+        <td class="side">Say humanity has that right.[ST:wait ]</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0120</td>
+        <td class="side">Deny[ST:wait ]</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0121</td>
+        <td class="side">Protest that humans aren't that narcissistic.</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0110</td>
+        <td class="side">qev061001_JNK0110</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0073</td>
+        <td class="side">Such unbridled ego! *fsssh* Alas, Mira is truly doomed.[ST:n ]You'll cover her in voltant and give birth to the next[ST:n ]Zaruboggan.[ST:wait ]</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0074</td>
+        <td class="side">*fsssh* More twisted, hollow life cast adrift from the[ST:n ]natural order.[ST:wait ]</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qev061001_JNK0120</td>
+        <td class="side">qev061001_JNK0120</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0075</td>
+        <td class="side">No... Everyone's just trying to deceive me! *fsssh*[ST:n ]I'm sure this disk is also fake. There is no creator.[ST:wait ]</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0076</td>
+        <td class="side">Rrrgh! I wish all the voltant on Mira would vanish[ST:n ]and the Zaruboggan would die out! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0077</td>
+        <td class="side">RAAAAAAAAAAAGH! I can't... I can't![ST:n ]*fsssh* *fsssh* *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0001</td>
+        <td class="side">Nnnh... Oh. *fsssh* Now I've begun seeing things.[ST:wait ]</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0002</td>
+        <td class="side">But why would I see a mirage human, of all things?[ST:n ]*fsssh* Very strange...[ST:wait ]</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0010</td>
+        <td class="side">Explain</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0011</td>
+        <td class="side">Tell Toluera that you aren't a mirage.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qev061002_JNK0020</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>qev061002_SEL0021</td>
+        <td class="side">Ask Toluera to explain his situation.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0003</td>
+        <td class="side">*fsssh* Now the mirage is explaining its own existence.[ST:n ]...And rather lucidly at that. Fascinating.[ST:wait ]</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0004</td>
+        <td class="side">*fsssh* Now the mirage is asking questions...[ST:n ]Fascinating.[ST:wait ]</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0005</td>
+        <td class="side">It has been too long since my last devoltanizing. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0006</td>
+        <td class="side">I've gone through all the voltant I stockpiled. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0007</td>
+        <td class="side">There. I answered your question, mirage. *fsssh*[ST:n ]Now have the grace to vanish in a wisp of smoke.[ST:n ]Keeping my...eyes open is too much effort...[ST:wait ]</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0008</td>
+        <td class="side">*fsssh* ...Wh-what's that? Not a mirage?[ST:wait ]</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0009</td>
+        <td class="side">Ha ha! I won't be fooled. If you think I'll go believing[ST:n ]people exist with zero evidence to support it,[ST:n ]you have me confused with my fool brethren. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0010</td>
+        <td class="side">Well, if you're not vanishing, I may as well hold on[ST:n ]long enough for one last conversation. *fsssh*[ST:n ]Why have you come here, mirage?[ST:wait ]</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0011</td>
+        <td class="side">*fsssh* ...What? You want me to hand over Golbogga's[ST:n ]legacy? Awfully presumptuous for an illusion.[ST:wait ]</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0012</td>
+        <td class="side">But fine. *fsssh* Bring me a zirtodiamond packed full of[ST:n ]highly condensed voltant, and it's yours.[ST:wait ]</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0013</td>
+        <td class="side">I stole it from their cathedral to prove Golbogga never[ST:n ]existed...but I don't suppose it matters now. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0014</td>
+        <td class="side">If I don't devoltanize soon, that and any other[ST:n ]ambitions I hold will die with me. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0015</td>
+        <td class="side">Aah... My body feels dry as dust. *fsssh*[ST:n ]I'm fading fast...[ST:wait ]</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0016</td>
+        <td class="side">Mirage, ghost, I don't care what you are... *fsssh*[ST:n ]Please bring me a zirtodiamond. Hurry...[ST:wait ]</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0047</td>
+        <td class="side">I will continue my research here. *fsssh* Alone.[ST:wait ]</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0048</td>
+        <td class="side">Golbogga does not exist. I'm certain of it. *fsssh*[ST:n ]I'll open the others' eyes to that fact someday.[ST:wait ]</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0049</td>
+        <td class="side">Please, you must find Kiliran. I don't know where he is,[ST:n ]exactly, save for somewhere here on Mira. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>qev061002_MSG0078</td>
+        <td class="side">Heh. We'll disprove the myth of Golbogga together,[ST:n ]you and I! *fsssh*[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

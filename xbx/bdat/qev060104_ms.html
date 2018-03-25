@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev060104_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0001</td>
+        <td class="side">Are you here to pick up that fuel cell for the[ST:n ]Zaruboggan? Oh, thank heavens![ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0002</td>
+        <td class="side">I bought a curious alien machine from a BLADE,[ST:n ]but got more than I bargained for.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0003</td>
+        <td class="side">The way the fuel cell powering it is designed,[ST:n ]one little slip and this whole neighborhood would[ST:n ]be uninhabitable.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0004</td>
+        <td class="side">I didn't know what I was going to do with it.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0005</td>
+        <td class="side">Here you are. Do handle it carefully now.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0007</td>
+        <td class="side">...Oh, and do you know a BLADE by the name of[ST:n ]Roselle?[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0008</td>
+        <td class="side">She's been asking around about Shiraton and the[ST:n ]Zaruboggan. She's rather...persistent.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0009</td>
+        <td class="side">And when she left, she told me to call her the next time[ST:n ]I had something I didn't know how to dispose of.[ST:n ]Handed me a business card and everything.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev060104_JNK0010</td>
+        <td class="side">Probe</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev060104_SEL0011</td>
+        <td class="side">Ask to hear more.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev060104_JNK0020</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev060104_SEL0021</td>
+        <td class="side">Ask Graham if he'll start going[ST:n ]to her instead of Shiraton.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0010</td>
+        <td class="side">She asked how many people the Zaruboggan were[ST:n ]gathering these sorts of waste materials from.[ST:n ]Things like that.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0011</td>
+        <td class="side">She was also extremely eager to know how they[ST:n ]processed the stuff.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0012</td>
+        <td class="side">But I found her to be suspicious as all get-out,[ST:n ]so I didn't tell her a thing![ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0013</td>
+        <td class="side">Never! Not when there are good people like Shiraton[ST:n ]eager to do it free of charge.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0014</td>
+        <td class="side">I wouldn't trust that woman with last night's leftovers,[ST:n ]let alone hazardous materials.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0015</td>
+        <td class="side">If you're headed to see Shiraton, tell him to watch out[ST:n ]for that Roselle woman.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev060104_MSG0016</td>
+        <td class="side">I have no idea who she is or what she's up to,[ST:n ]but my gut tells me that it isn't good.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

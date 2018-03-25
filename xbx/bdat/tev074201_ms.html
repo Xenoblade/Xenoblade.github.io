@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev074201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev074201_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev074201_SEL0011</td>
+        <td class="side">Ask Nen'celeg about Noctilum.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev074201_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev074201_SEL1021</td>
+        <td class="side">Ask Nen'celeg about recent developments.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev074201_JNK0010</td>
+        <td class="side">tev074201_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev074201_SEL0031</td>
+        <td class="side">Ask Nen'celeg about Noctilum.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev074201_JNK0020</td>
+        <td class="side">tev074201_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev074201_SEL1021</td>
+        <td class="side">tev074201_SEL1021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0001</td>
+        <td class="side">Noctilum is rife with dangerous indigens.[ST:n ]It is certainly not a safe place to visit.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0002</td>
+        <td class="side">Nevertheless, I find my trips there to be calming.[ST:n ]You might say that for us Orphe,[ST:n ]it puts our Ovah at ease.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0003</td>
+        <td class="side">When I visited there recently, I discovered Absop's[ST:n ]swallowtails at a place called Rust Lake.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0004</td>
+        <td class="side">I couldn't stop watching them. At the moment of their[ST:n ]deaths, they emit the most radiant light. It's incredible.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0005</td>
+        <td class="side">I want to do more research. I suspect there may be[ST:n ]some connection between that place and the origins of[ST:n ]we Orphe.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0013</td>
+        <td class="side">Thank you for rescuing me in Noctilum.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0014</td>
+        <td class="side">You need not worry about me any longer.[ST:n ]Having found a promising subject for my research,[ST:n ]I do not intend to leave New LA again for some time.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0015</td>
+        <td class="side">You are curious about my research subject?[ST:n ]Well, it is none other than Nan'celeg.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0016</td>
+        <td class="side">He seems to have some interest in me,[ST:n ]yet does not seem to understand the fundamental[ST:n ]reasoning behind that interest.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0017</td>
+        <td class="side">We Orphe are more interesting than any indigen.[ST:n ]I intend to use Nan'celeg as a test subject in[ST:n ]researching the way we Orphe think.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0025</td>
+        <td class="side">There is a place at the heart of Noctilum that sets my[ST:n ]Ovah aflutter.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0026</td>
+        <td class="side">I know there is something there.[ST:n ]Something other than indigens and the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0027</td>
+        <td class="side">I would love to perform a more thorough study,[ST:n ]but Nan'celeg will not permit it.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0028</td>
+        <td class="side">I could ignore his objections, but I have no desire to[ST:n ]worry him.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev074201_MSG0029</td>
+        <td class="side">Every day I scour FrontierNav for information as I fight[ST:n ]back the urge to run off there myself.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

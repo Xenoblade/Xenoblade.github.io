@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma11a_FLD_CollectionPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gimmickID</th>
+          <th>Condition</th>
+          <th>POP_TIME</th>
+          <th>popWeather</th>
+          <th>FSID</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Per</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>nameRadius</th>
+          <th>rsc_paramID</th>
+          <th>initWaitTime</th>
+          <th>initWaitTimeRand</th>
+        </tr>
+      </thead>
+      <tr id="2201">
+        <td>2201</td>
+        <td>
+        </td>
+        <td class="side">colle_ma11a_c001</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>5</td>
+        <td>7</td>
+        <td><a href="../common/ITM_CollectionList.html#30094">Glutinous Sand</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30117">Charged Elbaite</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30282">Lemon Stone</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30118">Border Sapphire</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="2202">
+        <td>2202</td>
+        <td>
+        </td>
+        <td class="side">colle_ma11a_c002</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>6</td>
+        <td>8</td>
+        <td><a href="../common/ITM_CollectionList.html#30040">Forrestone</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30276">Maple Bite</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30041">Dicy Stone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30042">Dilemma Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

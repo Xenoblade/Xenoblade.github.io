@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_BladeReport_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">Free Report</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">Free Report: Story</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">Free Report: Combat</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">Free Report: World</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_005</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_006</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_007</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_008</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Tough Foes</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Fresh Gear</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Epic Failures</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Small Wonders</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Skell Time</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: FrontierNav</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Credit Crisis?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Mission Intel</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Combat Tips</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Classes</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Shopping</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Money Talk</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: BLADE Friends</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Good News</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Troubling Times</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Working Hard?</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Latest Obsessions</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Travel Stories</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Tales of Valor</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td class="side">Idle Chatter: Spreading Cheer</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Heat Waves</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Electromagnetic Storms</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Rising Energy Mist</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Energy Mist</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Spores</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Auroras</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Crimson Auroras</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Meteor Showers</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td class="side">Weather Talk: Rainbows</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td class="side">Enemy Defeated</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td class="side">Tyrant Defeated</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td class="side">Global Nemesis Progress</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td class="side">Party Wiped</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td class="side">New Area Info</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td class="side">New Landmark Info</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_084</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_085</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td class="side">Achievement Unlocked</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td class="side">Treasure Opened</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td class="side">Level Up!</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td class="side">BLADE Level Up!</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td class="side">Global Nemesis Defeated</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td class="side">Region: Primordia</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td class="side">Region: Noctilum</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td class="side">Region: Oblivia</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td class="side">Region: Sylvalum</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td class="side">Region: Cauldros</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td class="side">Region: New Los Angeles</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td class="side">Mission Complete</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td class="side">Online Mission Complete</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_101</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_102</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td class="side">Tough Decisions</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_104</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_105</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_106</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_107</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_108</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_109</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_110</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_111</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_112</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_113</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_114</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_115</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_116</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_117</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_118</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_119</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_120</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_121</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td class="side">Chapter 4 (1/4)</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td class="side">Chapter 4 (2/4)</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td class="side">Chapter 4 (3/4)</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td class="side">Chapter 4 (4/4)</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td class="side">Chapter 5 (1/5)</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td class="side">Chapter 5 (2/5)</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td class="side">Chapter 5 (3/5)</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td class="side">Chapter 5 (4/5)</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td class="side">Chapter 5 (5/5)</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td class="side">Chapter 6 (1/4)</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td class="side">Chapter 6 (2/4)</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td class="side">Chapter 6 (3/4)</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td class="side">Chapter 6 (4/4)</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td class="side">Chapter 7 (1/4)</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td class="side">Chapter 7 (2/4)</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td class="side">Chapter 7 (3/4)</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td class="side">Chapter 7 (4/4)</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td class="side">Chapter 8 (1/3)</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td class="side">Chapter 8 (2/3)</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td class="side">Chapter 8 (3/3)</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td class="side">Chapter 9 (1/4)</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td class="side">Chapter 9 (2/4)</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td class="side">Chapter 9 (3/4)</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td class="side">Chapter 9 (4/4)</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td class="side">Chapter 10 (1/3)</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td class="side">Chapter 10 (2/3)</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td class="side">Chapter 10 (3/3)</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td class="side">Chapter 11 (1/4)</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td class="side">Chapter 11 (2/4)</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td class="side">Chapter 11 (3/4)</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td class="side">Chapter 11 (4/4)</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td class="side">Chapter 12 (1/5)</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td class="side">Chapter 12 (2/5)</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td class="side">Chapter 12 (3/5)</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td class="side">Chapter 12 (4/5)</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td class="side">Chapter 12 (5/5)</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td class="side">Treasure Deal Offered</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td class="side">Treasure Deal Won</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_160</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td class="side">Affinity Chart: Player Affinity</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td class="side">Barracks Customization</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td class="side">Holofigure Obtained</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td class="side">Pet? PET?!</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_165</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_166</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td class="side">Survey: %s</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td class="side">REPORT_TITLE_178</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td class="side">Collectible Obtained</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td class="side">Field-Skill Level Up!</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td class="side">Data Probe Installed</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td class="side">Research Probe Revenue</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td class="side">Miranium Mined</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td class="side">Fast Travel</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td class="side">Have a Nice Fall?</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td class="side">Time for a Swim</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td class="side">Report on the latest happenings![ST:n ]Switch Topics: +Control Pad Left/Right + L Button[ST:n ]Toggle Spoilers: +Control Pad Up + L Button</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_002</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_003</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_004</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_005</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_006</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_007</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_008</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td class="side">Having trouble with a tough foe?[ST:n ]Share your stories with others!</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td class="side">Come across any cool weapons or[ST:n ]gear lately? Tell everyone about it!</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td class="side">Others can learn from your mistakes,[ST:n ]so don't be shy about sharing them!</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td class="side">Found any useful functions or short-[ST:n ]cuts? If so, the world needs to know!</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td class="side">Got your hands on a Skell? Aren't[ST:n ]they the best? Tell us what you think!</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td class="side">Making the most of FrontierNav?[ST:n ]Post some probe-placement pro tips!</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td class="side">Buying gear will dry your funds fast.[ST:n ]Got any thrifty tips you can share?</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td class="side">Taken on any interesting missions?[ST:n ]We'd love to hear all about it!</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td class="side">Got any tips for useful arts or skills[ST:n ]to bring into combat? Share the love!</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td class="side">All classes have their pros and cons,[ST:n ]right? Tell us what you've learned!</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td class="side">Has friend bought anything cool[ST:n ]lately? Tatsu want to hear about it!</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td class="side">Someone really stacking up the bills.[ST:n ]Hey, moneybags! Tatsu want present!</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td class="side">BLADE seem like awful big group.[ST:n ]Any members caught eye of friend?</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td class="side">Something good happen? Friend[ST:n ]should share the news with a report!</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td class="side">Friend shouldn't bottle up bad vibes.[ST:n ]Share troubles with others via report!</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td class="side">Friend been working hard lately?[ST:n ]Tatsu must know all about it!</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td class="side">Friend hooked on anything lately?[ST:n ]Tatsu want to hear about latest fads!</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td class="side">Tatsu big fan of travelogues. Friend[ST:n ]should make documentary of travels!</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td class="side">Friend have any braggy stories to[ST:n ]share? Tatsu is all ears!</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td class="side">Tatsu feeling down and blue lately...[ST:n ]Friend can help with cheerful report!</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td class="side">Meh... Tatsu is too hot...[ST:n ]This like being trapped in oven...</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td class="side">Eeek! F-fur standing up![ST:n ]Skin of Tatsu all goose bumpy!</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td class="side">Nopon legend say that lights are[ST:n ]ancestral spirits returning to sky!</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td class="side">Nopon say this light supposed to be[ST:n ]origin for all newly formed life!</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td class="side">Believe it or not, fluffy spores[ST:n ]actually living things!</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td class="side">Oooooooo... Sky look like it peeling[ST:n ]away to reveal pretty lights...</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td class="side">Red waves look like key indicator[ST:n ]that sky in pretty bad mood...</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td class="side">Meh! S-sky is falling! Tatsu want to[ST:n ]get out of here NOW!</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td class="side">Look at pretty bridge in sky! Tatsu[ST:n ]wonder what waits on other side...</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is L?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Lao?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is H.B.?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Gwin?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Frye?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Doug?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Yelv?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Bozé?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Phog?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Elma?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Lin?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Celica?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Irina?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Murderess?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Alexa?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Hope?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Vandham?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Rock?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Nagi?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Ga Jiarg?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Ga Buidhe?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td class="side">Tatsu already know Tatsu amazing,[ST:n ]so friend should tell rest of world!</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Eleonora?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Lara Nara?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Carl?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Jo?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td class="side">Tatsu's mamapon pretty great, right?[ST:n ]Friend should write report about it.</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Nan?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td class="side">What friend think of Nopopon?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Ackwar?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Chiopitus?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Sevvy?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Enneana?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Slovity?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Sun'barac?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Nen'celeg?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Arsenican?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Ni Zain?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Gi Zang?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Professor B?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td class="side">Intel you obtained from this battle[ST:n ]could be crucial to other BLADEs...</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td class="side">Nicely done! You should file a report[ST:n ]to HQ about this victory ASAP.</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td class="side">Minor or otherwise, any info you can[ST:n ]share on Global Nemeses is crucial!</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td class="side">Wiped out, huh? No time for pity![ST:n ]Help others learn from your mistakes!</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td class="side">Mira's a massive planet. It's vital that[ST:n ]BLADEs share intel on new areas!</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td class="side">Ooh, discovered a new landmark?[ST:n ]Mind reporting anything you find?</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_084</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_085</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td class="side">Unlock any cool achievements lately?[ST:n ]Spread the word! Tell your friends!</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td class="side">Mira littered with strange treasures to[ST:n ]collect. Friend should report findings!</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td class="side">Hey, looks like you've leveled up![ST:n ]Congrats! Why not share the news?</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td class="side">Well done! This kind of progress is[ST:n ]what every BLADE dreams of!</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td class="side">Whoa, you beat a Global Nemesis?[ST:n ]You've earned the right to brag!</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td class="side">The Primordia region is home to our[ST:n ]main base of operations.</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td class="side">Noctilum is a land full of vibrant—[ST:n ]but dangerous—flora and fauna.</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td class="side">Seems Oblivia has some objects that[ST:n ]are man-made? Be sure to report in!</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td class="side">Sylvalum's got some truly unique[ST:n ]scenery, especially in the sky!</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td class="side">Cauldros is full of lava and imposing[ST:n ]structures. I bet it's quite dangerous...</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td class="side">NLA was once the residential unit of[ST:n ]our ship. It's time for us to rebuild!</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td class="side">How did the mission go? If you've[ST:n ]got any good stories, share away!</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td class="side">How did the mission go? If you've[ST:n ]got any good stories, share away!</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td class="side">How did the mission go? If you've[ST:n ]got any good stories, share away!</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td class="side">Anything of interest happen during[ST:n ]the mission? If so, tell us about it!</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_101</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_102</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td class="side">Sometimes even tough decisions[ST:n ]worth writing report about!</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td class="side">What friend think about latest events?[ST:n ]Friend should write report about it!</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td class="side">Nopon have saying. One friend's[ST:n ]trash can be other friend's treasure!</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td class="side">Did friend win treasure deal? Friend[ST:n ]should show gratitude to everyone!</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_107</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td class="side">Cooperating with each other is what[ST:n ]BLADE is all about. Teamwork is key!</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td class="side">BLADE barracks are private estate of[ST:n ]Team Tatsu. Interior design important!</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td class="side">Holofigures pretty mysterious objects.[ST:n ]Friend must tell everyone about them!</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td class="side">Meh-meh?! A PET?! Friend trying to[ST:n ]replace lovable mascot Tatsu?!</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_112</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td class="side">Sure seems unlike anything found on[ST:n ]Earth, huh? Why not write about it?</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td class="side">Seems the survey is progressing well![ST:n ]Got any tips for your fellow BLADEs?</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_115</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_116</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_117</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_118</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_119</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_120</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_121</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_122</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_123</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_124</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_125</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td class="side">Friend found unexplored territory?[ST:n ]That deserves in-depth report!</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td class="side">Friend found scenic viewpoint?[ST:n ]Time for virtual postcard!</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_128</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_129</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_130</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_131</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_132</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_133</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_134</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_135</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_136</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_137</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_138</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_139</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_140</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_141</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_142</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_143</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_144</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_145</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_146</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_147</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_148</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_149</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_150</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_151</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_152</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_153</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_154</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_155</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_156</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_157</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_158</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_159</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_160</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td class="side">REPORT_SUGGEST_161</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td class="side">Ooh! Friend collect new thing?[ST:n ]Is it good?! Tatsu demand full report!</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td class="side">Friend's field-skill level has gone up![ST:n ]Tatsu awaits friend's detailed report.</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td class="side">Nice work installing that data probe.[ST:n ]FrontierNav's expansion continues!</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td class="side">Got some probe revenue, huh? Nice![ST:n ]Spread the word! Share the wealth!</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td class="side">Got enough miranium, I hope? It can[ST:n ]be tough deciding where to spend it.</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td class="side">What the rush? Friend too busy to[ST:n ]use two feet? Tatsu not get humans...</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td class="side">Tatsu thought friend was goner![ST:n ]Friend should file hazard report...</td>
+      </tr>
+      <tr id="391">
+        <td>391</td>
+        <td>
+        </td>
+        <td class="side">Friends wear special clothes in bath?[ST:n ]Tatsu not understand, but okay...</td>
+      </tr>
+      <tr id="392">
+        <td>392</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="393">
+        <td>393</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="394">
+        <td>394</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="395">
+        <td>395</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="396">
+        <td>396</td>
+        <td>
+        </td>
+        <td class="side">Scenic Viewpoint: %s</td>
+      </tr>
+      <tr id="397">
+        <td>397</td>
+        <td>
+        </td>
+        <td class="side">Unexplored Territory: %s</td>
+      </tr>
+      <tr id="398">
+        <td>398</td>
+        <td>
+        </td>
+        <td class="side">Key Person: %S</td>
+      </tr>
+      <tr id="399">
+        <td>399</td>
+        <td>
+        </td>
+        <td class="side">What kind of friend is Mia?[ST:n ]Tatsu—and world—wants to know!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

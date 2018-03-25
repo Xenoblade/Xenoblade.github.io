@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev058101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0011</td>
+        <td class="side">Ask Mogugu about the giant ring in Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0021</td>
+        <td class="side">Ask Mogugu if anything is troubling him.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0010</td>
+        <td class="side">tev058101_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0031</td>
+        <td class="side">Ask Mogugu about the floating islands in Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0020</td>
+        <td class="side">tev058101_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0021</td>
+        <td class="side">tev058101_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0010</td>
+        <td class="side">tev058101_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0011</td>
+        <td class="side">tev058101_SEL0011</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0020</td>
+        <td class="side">tev058101_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev058101_SEL1021</td>
+        <td class="side">Ask Mogugu about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0010</td>
+        <td class="side">tev058101_JNK0010</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev058101_SEL0031</td>
+        <td class="side">tev058101_SEL0031</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev058101_JNK0020</td>
+        <td class="side">tev058101_JNK0020</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev058101_SEL1021</td>
+        <td class="side">tev058101_SEL1021</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev058101_SEL2021</td>
+        <td class="side">Ask Mogugu about recent developments.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0001</td>
+        <td class="side">Mogugu hear there used to be lots of native peoples[ST:n ]around here besides just Nopon.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0002</td>
+        <td class="side">Apparently that ring was part of big weapon that one[ST:n ]native people used to try and destroy other native[ST:n ]people.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0003</td>
+        <td class="side">Mira must have been scary place back then![ST:n ]By the way, does friend agree that ring look[ST:n ]like gottagonut?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0004</td>
+        <td class="side">Hmm? Friend has never heard of gottagonut?[ST:n ]Gottagonut is Nopon snack with hole in center that[ST:n ]gives jitters and makes Nopon run around in circles.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0009</td>
+        <td class="side">Mogugu left family and everything else behind to[ST:n ]seek out ultimate in legendary cuisine with Mujiji.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0010</td>
+        <td class="side">But once Ganglion show up, business crawled to[ST:n ]standstill and Mogugu started to go hungry...[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0011</td>
+        <td class="side">Soon Mogugu going to keel over and join the stars.[ST:n ]And then how will Mogugu find legendary cuisine?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0012</td>
+        <td class="side">Come on, Mujiji! Hurry up and find legendary[ST:n ]fluffshroom... Save Mogugu from untimely demise...[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0017</td>
+        <td class="side">Once there was incredible native civilization that[ST:n ]managed to build huge kingdom in sky![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0018</td>
+        <td class="side">But then civilization lost control of energy used to keep[ST:n ]kingdom aloft and SMASH! No more kingdom.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0019</td>
+        <td class="side">Islands that friend sees are all that remain.[ST:n ]At least, that is what Mogugu has been told.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0020</td>
+        <td class="side">Foolish old people. If they have enough energy to put[ST:n ]castles in sky, they should invest in delicious cuisine[ST:n ]instead![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev058101_MSG0021</td>
+        <td class="side">Think of glorious gastronomical wonders that were lost[ST:n ]because ancient people wanted to waste technology on[ST:n ]blowing selves up instead! Meh![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev058101_MSG1001</td>
+        <td class="side">Mujiji brought back LOTS of yummy fluffshrooms[ST:n ]for Mogugu to eat![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev058101_MSG1002</td>
+        <td class="side">No wonder people call fluffshrooms legend.[ST:n ]Taste buds of Mogugu very satisfied![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev058101_MSG1003</td>
+        <td class="side">However! ...Mogugu must continue epic quest for[ST:n ]delicacies.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev058101_MSG1004</td>
+        <td class="side">Mogugu is prepared to give up everything,[ST:n ]even life, in order to sample every last savory[ST:n ]substance on planet![ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev058101_MSG2001</td>
+        <td class="side">In order to travel with Mujiji and find legendary[ST:n ]cuisine, Mogugu had to abandon family.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev058101_MSG2002</td>
+        <td class="side">True, Mogugu finally got to try legendary fluffshroom.[ST:n ]Mogugu had delicious culinary opportunity. Buuuut...[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev058101_MSG2003</td>
+        <td class="side">Well, look at Henahena. Henahena never leave home,[ST:n ]but now has lover who bring delicious food right to[ST:n ]Henahena every day![ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev058101_MSG2004</td>
+        <td class="side">What if Mogugu made mistake? Maybe Mogugu could[ST:n ]have stayed with wifeypon and still found culinary[ST:n ]wonders. That all Mogugu ever really want... *sniff*[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev058101_MSG2005</td>
+        <td class="side">So be it! Mogugu going to wrap up some fluffshrooms[ST:n ]and bring them home to wifeypon right now![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev014301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0011</td>
+        <td class="side">Ask Conner about Soul Voices.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0021</td>
+        <td class="side">Ask Conner about recent developments.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0010</td>
+        <td class="side">tev014301_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0031</td>
+        <td class="side">Ask Conner for some combat tips.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0020</td>
+        <td class="side">tev014301_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0021</td>
+        <td class="side">tev014301_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0010</td>
+        <td class="side">tev014301_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0041</td>
+        <td class="side">Ask Conner about the tyrants of Primordia.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev014301_JNK0020</td>
+        <td class="side">tev014301_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev014301_SEL0021</td>
+        <td class="side">tev014301_SEL0021</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0001</td>
+        <td class="side">I was attacked by a tyrant while patrolling around[ST:n ]the city's exterior walls![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0002</td>
+        <td class="side">It destroyed my Skell, knocked Monica unconscious,[ST:n ]and critically wounded me.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0003</td>
+        <td class="side">Then, when we were at the brink of being wiped out,[ST:n ]our team leader shouted, \"Target its weak spot!\"[ST:n ]in a booming voice.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0004</td>
+        <td class="side">With a burst of adrenaline, I leapt at the tyrant![ST:n ]I felt an unbelievable amount of power welling up[ST:n ]inside me, and I knocked it down in one swing![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0005</td>
+        <td class="side">I almost can't believe it really happened.[ST:n ]It was like my leader's voice got me through the crisis[ST:n ]and filled me with renewed vigor.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0008</td>
+        <td class="side">Hey, thanks for finding my comm device![ST:n ]Because of you, I was able to make it back to New LA.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0009</td>
+        <td class="side">My sister and my team leader escorted me back,[ST:n ]but not before my dear sister greeted me with a slap[ST:n ]right across the face.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0010</td>
+        <td class="side">Then I spent the walk home being lectured by the[ST:n ]team leader. In retrospect, being stranded was a lot[ST:n ]more pleasant than being rescued turned out to be.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0011</td>
+        <td class="side">It's not really my style to look before I leap,[ST:n ]but I'm gonna try to be more careful.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0012</td>
+        <td class="side">I just don't want to make them worry about me again.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0015</td>
+        <td class="side">First it was that Ganglion squid woman, then it was[ST:n ]the tainted from Noctilum. It's just one monster after[ST:n ]another around this joint.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0016</td>
+        <td class="side">But as dangerous as they appear, they all seem to[ST:n ]either use overly specialized attacks or have some[ST:n ]sort of surprisingly severe weakness.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0017</td>
+        <td class="side">In the former situation, you can just use equipment with[ST:n ]attributes that protect against their specialized attacks.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0018</td>
+        <td class="side">And in the latter situation, you can strike at their weak[ST:n ]spots, or take advantage of their other vulnerabilities,[ST:n ]to defeat them with surprising ease.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0019</td>
+        <td class="side">Of course, this is all just armchair strategizing.[ST:n ]If I ever faced a foe like that in real life,[ST:n ]I'd probably crap my pants and run like hell.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0025</td>
+        <td class="side">It's true that the Beasts' Lair area just north of New LA[ST:n ]is quite dangerous by local standards.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0026</td>
+        <td class="side">Apparently all the indigens there are led by a single[ST:n ]grex.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0027</td>
+        <td class="side">If we could take it down, it would significantly decrease[ST:n ]the danger level outside the city's walls as well.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0028</td>
+        <td class="side">But the darn thing has already fought off numerous[ST:n ]Interceptors already.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev014301_MSG0029</td>
+        <td class="side">So if you ever encounter that grex yourself, don't get[ST:n ]any crazy ideas. Just turn around and run for it![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

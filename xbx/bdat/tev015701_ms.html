@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev015701_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev015701_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev015701_SEL0011</td>
+        <td class="side">Ask Dart about this place.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev015701_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev015701_SEL0021</td>
+        <td class="side">Ask Dart if he's heard any interesting rumors.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev015701_SEL0031</td>
+        <td class="side">Ask Dart for his thoughts on the Ma-non.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev015701_SEL0041</td>
+        <td class="side">Ask Dart about recent developments.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev015701_SEL0051</td>
+        <td class="side">Ask Dart about indigens becoming enraged.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev015701_SEL1011</td>
+        <td class="side">Ask Dart about salvaging wrecked Skells.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev015701_SEL1021</td>
+        <td class="side">Ask Dart about recent developments.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0001</td>
+        <td class="side">You see all these materials lying around?[ST:n ]Steel frames and whatnot?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0002</td>
+        <td class="side">I told my Mediator brother Beats over there to get all[ST:n ]this crap outta the way.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0003</td>
+        <td class="side">But he said we can't spare any people for large-scale[ST:n ]maintenance projects yet, so we're just gonna leave 'em[ST:n ]lying around.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0004</td>
+        <td class="side">If it wasn't for these things, we could have big parties[ST:n ]here every night. What a waste![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0008</td>
+        <td class="side">Is Gerome eating at Army Pizza AGAIN?![ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0009</td>
+        <td class="side">He's always talking about beating up xenoforms,[ST:n ]but if he's going to scarf down pizza every day,[ST:n ]he ain't gonna beat up anyone.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0010</td>
+        <td class="side">Well, if my boss ain't going on a mission, looks like[ST:n ]I'm free to screw around the rest of the day. Niiiice.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0020</td>
+        <td class="side">They talk all shy, and yet they have all this crazy tech.[ST:n ]And I don't think they understand they're just a bunch[ST:n ]of New LA freeloaders![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0021</td>
+        <td class="side">We're gonna have to teach 'em our rules.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0022</td>
+        <td class="side">You wanna rat on 'em to the Mediators?[ST:n ]If so, my brother Beats is standing guard over there.[ST:n ]...If you call that slouching \"standing guard.\"[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0023</td>
+        <td class="side">Aw, who am I kidding? You're too big of a deal to be[ST:n ]wasting your time on getting a few Ma-non in line.[ST:n ]Now hurry up and wreck the Ganglion already![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0030</td>
+        <td class="side">Gerome needed to vent some of his anger issues,[ST:n ]so we went and knocked out a quick bounty mission.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0031</td>
+        <td class="side">But during the fight, I tore off a simius's arm and it[ST:n ]got all enraged on us![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0032</td>
+        <td class="side">Damn thing ended up putting one of my team in the[ST:n ]Mimeosome Maintenance Center.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0033</td>
+        <td class="side">Goddammit! Why'd we have to land on such a[ST:n ]flaming turd of a planet?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0046</td>
+        <td class="side">Heh heh heh. Looks like Gerome finally stopped[ST:n ]screwing around.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0047</td>
+        <td class="side">Now he can go burn off all that anger that's been[ST:n ]eating at him since the Ma-non took over Army Pizza.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev015701_MSG0048</td>
+        <td class="side">Ah, but don't get me wrong. I don't wanna be starting[ST:n ]a war with 'em or nothing.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1049</td>
+        <td class="side">I totaled my brand-new Skell, and they said it'll cost[ST:n ]me 80 large to salvage it![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1050</td>
+        <td class="side">Well, I went postal when they told me that.[ST:n ]Started screaming about how no honest man has[ST:n ]that kind of scratch.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1051</td>
+        <td class="side">But then, my brother Beats stepped up and said that[ST:n ]he'd pay the salvage fee for me![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1052</td>
+        <td class="side">What the hell, man? He's always complaining about[ST:n ]how crappy the division rewards are for Mediators,[ST:n ]and then he goes and does that?[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1053</td>
+        <td class="side">What an idiot. ...Still, I guess I'd better take on a big[ST:n ]mission so I can get some cash and buy him a nice[ST:n ]steak dinner.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1060</td>
+        <td class="side">I can't believe that douchebag at the pizza place[ST:n ]tried to frame Gerome.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1061</td>
+        <td class="side">Things got so bad there, I was worried that the[ST:n ]Ma-non might retaliate against us humans.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1062</td>
+        <td class="side">Instead they're all \"Um, so so so now we can't get our[ST:n ]usual pizza anymore, right?\" ...And that was it![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev015701_MSG1063</td>
+        <td class="side">I can't believe how forgiving they are![ST:n ]...Or maybe they're just complete morons.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_TownMesWindow_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">You completed Nagi's heart-to-heart[ST:n ]\"The Choice.\"</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">You completed Nagi's heart-to-heart[ST:n ]\"Shop Talk.\"</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">You completed Nagi's heart-to-heart[ST:n ]\"Urban Planning.\"</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">You completed Nagi's heart-to-heart[ST:n ]\"The Get-Together.\"</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">You completed Nagi's heart-to-heart[ST:n ]\"Old Soldiers.\"</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">You completed L's heart-to-heart[ST:n ]\"Business Acumen.\"</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">You completed L's heart-to-heart[ST:n ]\"Wordplay.\"</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">You completed L's heart-to-heart[ST:n ]\"Kitty Chow.\"</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">You completed L's heart-to-heart[ST:n ]\"Salsa Salvo.\"</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">You completed L's heart-to-heart[ST:n ]\"Workout Warrior.\"</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">You completed Lao's heart-to-heart[ST:n ]\"Every Dog Has Its Day.\"</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">You completed Lao's heart-to-heart[ST:n ]\"Training Troubles.\"</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">You completed Lao's heart-to-heart[ST:n ]\"The Fan Club.\"</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">You completed Lao's heart-to-heart[ST:n ]\"Teamwork.\"</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">You completed Lao's heart-to-heart[ST:n ]\"The Winds of Change.\"</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">You completed H.B.'s heart-to-heart[ST:n ]\"A Prideful Man.\"</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">You completed H.B.'s heart-to-heart[ST:n ]\"A Thoughtful Man.\"</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">You completed H.B.'s heart-to-heart[ST:n ]\"A Troubled Man.\"</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">You completed H.B.'s heart-to-heart[ST:n ]\"A Diligent Man.\"</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">You completed H.B.'s heart-to-heart[ST:n ]\"A Kindly Man.\"</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">You completed Gwin's heart-to-heart[ST:n ]\"Conquering Fear.\"</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">You completed Gwin's heart-to-heart[ST:n ]\"Promises Made.\"</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">You completed Gwin's heart-to-heart[ST:n ]\"Dreamweavers.\"</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">You completed Gwin's heart-to-heart[ST:n ]\"Canine Conversation.\"</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">You completed Gwin's heart-to-heart[ST:n ]\"The Matchmaker.\"</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">You completed Frye's heart-to-heart[ST:n ]\"Midnight Inspiration.\"</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td class="side">You completed Frye's heart-to-heart[ST:n ]\"The Ostrich's Obsession.\"</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td class="side">You completed Frye's heart-to-heart[ST:n ]\"Man's Best Friend.\"</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side">You completed Frye's heart-to-heart[ST:n ]\"Drinking Buddies.\"</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td class="side">You completed Frye's heart-to-heart[ST:n ]\"Dulling the Pain.\"</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">You completed Doug's heart-to-heart[ST:n ]\"Facts and Feelings.\"</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td class="side">You completed Doug's heart-to-heart[ST:n ]\"Caution and Conviction.\"</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td class="side">You completed Doug's heart-to-heart[ST:n ]\"Discipline and Discovery.\"</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td class="side">You completed Doug's heart-to-heart[ST:n ]\"Pastimes and Pride.\"</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td class="side">You completed Doug's heart-to-heart[ST:n ]\"Love and Loss.\"</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td class="side">You completed Yelv's heart-to-heart[ST:n ]\"Off Duty.\"</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td class="side">You completed Yelv's heart-to-heart[ST:n ]\"Peacekeeping.\"</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td class="side">You completed Yelv's heart-to-heart[ST:n ]\"The Ladies' Man.\"</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td class="side">You completed Yelv's heart-to-heart[ST:n ]\"Introspection.\"</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td class="side">You completed Yelv's heart-to-heart[ST:n ]\"Halcyon Days.\"</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td class="side">You completed Bozé's heart-to-heart[ST:n ]\"Preacher Man.\"</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td class="side">You completed Bozé's heart-to-heart[ST:n ]\"Garbled Guardians.\"</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td class="side">You completed Bozé's heart-to-heart[ST:n ]\"Mastering Self.\"</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td class="side">You completed Bozé's heart-to-heart[ST:n ]\"Renouncing Self.\"</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td class="side">You completed Bozé's heart-to-heart[ST:n ]\"Worldly Desire.\"</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td class="side">You completed Phog's heart-to-heart[ST:n ]\"The Ol' Fishing Hole.\"</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td class="side">You completed Phog's heart-to-heart[ST:n ]\"Animal Lover.\"</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td class="side">You completed Phog's heart-to-heart[ST:n ]\"Ant Misbehavin'.\"</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td class="side">You completed Phog's heart-to-heart[ST:n ]\"Mustard-ing Courage.\"</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td class="side">You completed Phog's heart-to-heart[ST:n ]\"Amends for a Brother.\"</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td class="side">You completed Elma's heart-to-heart[ST:n ]\"The Techie.\"</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td class="side">You completed Elma's heart-to-heart[ST:n ]\"Petting Zoo.\"</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td class="side">You completed Elma's heart-to-heart[ST:n ]\"Driving Force.\"</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td class="side">You completed Elma's heart-to-heart[ST:n ]\"Friendship Treatise.\"</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td class="side">You completed Elma's heart-to-heart[ST:n ]\"Going Home.\"</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td class="side">You completed Lin's heart-to-heart[ST:n ]\"Flight Time.\"</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td class="side">You completed Lin's heart-to-heart[ST:n ]\"Old Dogs and New Tricks.\"</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td class="side">You completed Lin's heart-to-heart[ST:n ]\"The Popular Girl.\"</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td class="side">You completed Lin's heart-to-heart[ST:n ]\"Dinner Discussion.\"</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td class="side">You completed Lin's heart-to-heart[ST:n ]\"Passions.\"</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td class="side">You completed Celica's heart-to-heart[ST:n ]\"This Fair City.\"</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td class="side">You completed Celica's heart-to-heart[ST:n ]\"Park Patrol.\"</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td class="side">You completed Celica's heart-to-heart[ST:n ]\"Spending Time.\"</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td class="side">You completed Celica's heart-to-heart[ST:n ]\"Cat in the Cradle.\"</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td class="side">You completed Celica's heart-to-heart[ST:n ]\"Far from Home.\"</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td class="side">You completed Irina's heart-to-heart[ST:n ]\"Maneater.\"</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td class="side">You completed Irina's heart-to-heart[ST:n ]\"Dogged Obsession.\"</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td class="side">You completed Irina's heart-to-heart[ST:n ]\"This Is My Rifle.\"</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td class="side">You completed Irina's heart-to-heart[ST:n ]\"Charging In.\"</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td class="side">You completed Irina's heart-to-heart[ST:n ]\"Boggled by Goggles.\"</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td class="side">You completed the Murderess's heart-to-heart[ST:n ]\"Tea for Two.\"</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td class="side">You completed the Murderess's heart-to-heart[ST:n ]\"Fight Scrubs.\"</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td class="side">You completed the Murderess's heart-to-heart[ST:n ]\"Greed Is Great.\"</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td class="side">You completed the Murderess's heart-to-heart[ST:n ]\"The Manservant.\"</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td class="side">You completed the Murderess's heart-to-heart[ST:n ]\"Estate Sale.\"</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td class="side">You completed Alexa's heart-to-heart[ST:n ]\"Hyper Railgun!\"</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td class="side">You completed Alexa's heart-to-heart[ST:n ]\"Dragon's Maw!\"</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td class="side">You completed Alexa's heart-to-heart[ST:n ]\"Strike Launcher!\"</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td class="side">You completed Alexa's heart-to-heart[ST:n ]\"Meteor Launcher!\"</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td class="side">You completed Alexa's heart-to-heart[ST:n ]\"Phoenix Wings!\"</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td class="side">You completed Hope's heart-to-heart[ST:n ]\"The Flower Child.\"</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td class="side">You completed Hope's heart-to-heart[ST:n ]\"Girls' Night Out.\"</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td class="side">You completed Hope's heart-to-heart[ST:n ]\"Giving It Away.\"</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td class="side">You completed Hope's heart-to-heart[ST:n ]\"Culture Shocks.\"</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td class="side">You completed Hope's heart-to-heart[ST:n ]\"Day by Day.\"</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td class="side">You completed Mia's heart-to-heart[ST:n ]\"The Client.\"</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td class="side">You completed Mia's heart-to-heart[ST:n ]\"Suspicious Minds.\"</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td class="side">You completed Mia's heart-to-heart[ST:n ]\"A Complicated Plan.\"</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td class="side">You completed Mia's heart-to-heart[ST:n ]\"Animal Shelter.\"</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td class="side">You completed Mia's heart-to-heart[ST:n ]\"Parenting.\"</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td class="side">You rescued the unconscious Lulladu[ST:n ]and recovered Troylan's gorkwa.</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td class="side">You took a part from the Wrothian Skell.</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td class="side">You took a part from the Wrothian Skell.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td class="side">You took a part from the Wrothian Skell.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td class="side">You took a part from the Wrothian Skell.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td class="side">You took a part from the Wrothian Skell.</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td class="side">You mined the flemtide[ST:n ]from the shining red ore.</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td class="side">You mined the flemtide[ST:n ]from the shining red ore.</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td class="side">You mined the flemtide[ST:n ]from the shining red ore.</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td class="side">You mined the flemtide[ST:n ]from the shining red ore.</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td class="side">You mined the flemtide[ST:n ]from the shining red ore.</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td class="side">You picked up a gorkwa[ST:n ]lying next to the corpse.</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td class="side">You removed the zirtodiamond[ST:n ]from the eerily shining crystal.</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td class="side">You salvaged cockpit wreckage[ST:n ]from the Zu Pharg's remains.</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td class="side">You salvaged engine wreckage[ST:n ]from the Zu Pharg's remains.</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td class="side">You salvaged useful wreckage[ST:n ]from the Zu Pharg's remains.</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0269_004</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0269_005</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0269_006</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td class="side">You read the message inscribed on[ST:n ]the mysterious grave marker.</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td class="side">You read the message inscribed on[ST:n ]the mysterious grave marker.</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td class="side">You read the message inscribed on[ST:n ]the mysterious grave marker.</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td class="side">You found something buried at the location[ST:n ]indicated by the grave markers.</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0914_001</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0914_002</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td class="side">QMesWindow_0914_003</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td class="side">You downloaded medical data[ST:n ]from the Lifehold unit.</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td class="side">1 hour later</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td class="side">2 hours later</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td class="side">3 hours later</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td class="side">24 hours later</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td class="side">You pressed the Biahno water-purification[ST:n ]plant's emergency shutdown switch.</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td class="side">MesWindow_unionsuppo</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td class="side">You received Pathfinder division support.</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td class="side">You received Interceptor division support.</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td class="side">You received Harrier division support.</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td class="side">You received Reclaimer division support.</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td class="side">You received Curator division support.</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td class="side">You received Prospector division support.</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td class="side">You received Outfitter division support.</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td class="side">You received Mediator division support.</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Sword Art[ST:n ]\"Shadowstrike.\"</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Gun Art[ST:n ]\"Ghost Factory.\"</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td class="side">You learned the Gatling Gun Art[ST:n ]\"Fire Carnival.\"</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td class="side">You learned the Shield Art[ST:n ]\"Drum Roll.\"</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td class="side">You learned the Javelin Art[ST:n ]\"Balance Breaker.\"</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td class="side">You learned the Sniper Rifle Art[ST:n ]\"Afterburner.\"</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td class="side">You learned the Longsword Art[ST:n ]\"Ultraslash.\"</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td class="side">You learned the Assault Rifle Art[ST:n ]\"Grenade Blitz.\"</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td class="side">You learned the Knife Art[ST:n ]\"Smooth Recovery.\"</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td class="side">You learned the Assault Rifle Art[ST:n ]\"Quick Cannon.\"</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td class="side">You learned the Shield Art[ST:n ]\"Mindstorm.\"</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td class="side">You learned the Psycho Launcher Art[ST:n ]\"Dual Dynamo.\"</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td class="side">You learned the Photon Saber Art[ST:n ]\"Starlight Duster.\"</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td class="side">You learned the Photon Saber Art[ST:n ]\"Phenomenon.\"</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td class="side">You learned the Knife Art[ST:n ]\"Black Bane.\"</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Gun Art[ST:n ]\"Zero Zero.\"</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td class="side">You learned the Longsword Art[ST:n ]\"True Stream Edge.\"</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td class="side">You learned the Longsword Art[ST:n ]\"Blossom Dance.\"</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td class="side">You learned the Gatling Gun Art[ST:n ]\"Bullet Twister.\"</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td class="side">You learned the Gatling Gun Art[ST:n ]\"Titan Recharge.\"</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Gun Art[ST:n ]\"Sky High.\"</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Sword Art[ST:n ]\"Crisis Zone.\"</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td class="side">You learned the Dual Sword Art[ST:n ]\"Seventh Edge.\"</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td class="side">You learned the Psycho Launcher Art[ST:n ]\"Gravity Lunge.\"</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td class="side">You learned the Knife Art[ST:n ]\"Secondary Speed.\"</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td class="side">You learned the Psycho Launcher Art[ST:n ]\"Tacit Censure.\"</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td class="side">You learned the Raygun Art[ST:n ]\"Clarity Ray.\"</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td class="side">You learned the Raygun Art[ST:n ]\"Beam Bomber.\"</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td class="side">You learned the Shield Art[ST:n ]\"Atomic Hit.\"</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td class="side">You learned the Shield Art[ST:n ]\"Flamehand.\"</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td class="side">You learned the Photon Saber Art[ST:n ]\"Essence Exchange.\"</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td class="side">You learned the Raygun Art[ST:n ]\"Master Gunner.\"</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td class="side">You learned the Javelin Art[ST:n ]\"Vortex.\"</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td class="side">You learned the Sniper Rifle Art[ST:n ]\"Slayonet.\"</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td class="side">You learned the Assault Rifle Art[ST:n ]\"Overclock.\"</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td class="side">You learned the Javelin Art[ST:n ]\"Maximum Voltage.\"</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td class="side">You received all of Lao's gear.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

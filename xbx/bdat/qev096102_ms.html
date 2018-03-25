@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev096102_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0001</td>
+        <td class="side">Commander Vandham told me you'd be stopping by[ST:n ]to take the Skell license exam.[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0002</td>
+        <td class="side">Do you have your certifications from the eight[ST:n ]proficiency exams?[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0003</td>
+        <td class="side">...Yep, looks like a full set. Nice work.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0004</td>
+        <td class="side">We're ready for the final exam.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0005</td>
+        <td class="side">No need to stress, though. It's a simple verbal quiz.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0006</td>
+        <td class="side">We had you run missions for each of the eight[ST:n ]divisions, and there's a reason for that.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0007</td>
+        <td class="side">Care to guess what it might be?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0010</td>
+        <td class="side">Deduce</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0011</td>
+        <td class="side">Say that it was to better understand the[ST:n ]role each division plays within BLADE.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0020</td>
+        <td class="side">Joke</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0021</td>
+        <td class="side">Say that it was Vandham's way of hazing you.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0008</td>
+        <td class="side">Exactly! Now you've got a feel for each one's particular[ST:n ]flavor.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0009</td>
+        <td class="side">Hopefully that's given you a few ideas of how you can[ST:n ]put a Skell to use.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0010</td>
+        <td class="side">Heh. Believe me, he's put me through plenty—[ST:n ]but it wasn't just spite that motivated this call.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0011</td>
+        <td class="side">I expect those missions have given you a feel for each[ST:n ]division's particular flavor.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0012</td>
+        <td class="side">Hopefully that's given you a few ideas of how you can[ST:n ]put a Skell to use.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0013</td>
+        <td class="side">Anyway, that's one reason. But there's another.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0014</td>
+        <td class="side">There aren't exactly enough Skells to go around all of[ST:n ]the divisions.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0015</td>
+        <td class="side">Sometimes situations arise where people have to cross[ST:n ]division lines and cooperate to get things done.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0016</td>
+        <td class="side">For efficiency's sake, it's important that everyone knows[ST:n ]how the other divisions work.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0017</td>
+        <td class="side">Make sense?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0030</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0031</td>
+        <td class="side">Nod in understanding.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0040</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0041</td>
+        <td class="side">Shake your head in confusion.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0018</td>
+        <td class="side">Hmm. Guess I wasn't very clear.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0019</td>
+        <td class="side">I'll try again. We can keep going over it till it clicks.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0020</td>
+        <td class="side">Better that than letting a BLADE run wild in a Skell[ST:n ]without understanding what it means.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0021</td>
+        <td class="side">Each of the eight divisions has its own characteristic[ST:n ]traits.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0022</td>
+        <td class="side">You should have gotten a feel for that over the course[ST:n ]of those tests—the types of work they do and the role[ST:n ]they serve in New LA are all different.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0023</td>
+        <td class="side">And each uses Skells differently as well.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0024</td>
+        <td class="side">Keep that in mind when deciding how to put yours to[ST:n ]productive use.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0025</td>
+        <td class="side">Oh, and one more thing.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0026</td>
+        <td class="side">There's a limit to the number of Skells we've got.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0027</td>
+        <td class="side">Sometimes we need to pool those resources and work[ST:n ]together to get things done.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0028</td>
+        <td class="side">Knowing everyone's role is crucial to making such joint[ST:n ]operations run smoothly.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0029</td>
+        <td class="side">Clearer now?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0050</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0051</td>
+        <td class="side">Nod in understanding.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0060</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0061</td>
+        <td class="side">Say you're still confused.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0030</td>
+        <td class="side">Good. Then you are now cleared to own and operate[ST:n ]a Skell![ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0031</td>
+        <td class="side">I'll authorize your license now.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0032</td>
+        <td class="side">I also get to share some good news—looks like you're[ST:n ]being given a free Skell, compliments of Vandham.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0033</td>
+        <td class="side">It's parked in the hangar in the back.[ST:n ]Go introduce yourself and give it a test ride.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0070</td>
+        <td class="side">Thank</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0071</td>
+        <td class="side">Tell Walter how much you appreciate his help.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev096102_JNK0080</td>
+        <td class="side">Provoke</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev096102_SEL0081</td>
+        <td class="side">Demand that everyone on your team receive a free Skell.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0034</td>
+        <td class="side">Just doing my own job. Really, Vandham is the one[ST:n ]you should be thanking.[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0035</td>
+        <td class="side">He must expect big things from you—it's a rare day a[ST:n ]rookie pilot gets issued a Skell free of charge.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0036</td>
+        <td class="side">I look forward to seeing what you do with it.[ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0037</td>
+        <td class="side">...Wow. You've got brass, I'll give you that.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0038</td>
+        <td class="side">Commander Vandham paid for that Skell out of his[ST:n ]own private funds.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0039</td>
+        <td class="side">And you're going to go and ask for... Just...wow.[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0040</td>
+        <td class="side">Yeah, I don't think I'm comfortable issuing a license to[ST:n ]someone who can't appreciate the kindness of others.[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0041</td>
+        <td class="side">Retest![ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0042</td>
+        <td class="side">You'll start the whole process over from the beginning.[ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0043</td>
+        <td class="side">Er, no. That's too easy. I'm adding a hundred hours of[ST:n ]mandatory classroom training on top of it![ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0044</td>
+        <td class="side">...Is what I SHOULD say.[ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0045</td>
+        <td class="side">Seriously, though, if the commander heard you he'd[ST:n ]be crying right now. And is that what you want?[ST:n ]Big salty Vandham tears all over the place?[ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0046</td>
+        <td class="side">All right. If you've learned your lesson, go take your[ST:n ]Skell for a ride. Commander Vandham and I both are[ST:n ]expecting great things.[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0047</td>
+        <td class="side">Go become an ace pilot and make yourself useful to[ST:n ]BLADE, all right?[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev096102_MSG0048</td>
+        <td class="side">Head on back in the hangar. I'm sure your Skell is[ST:n ]dying to meet its new owner.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

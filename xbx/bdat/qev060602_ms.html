@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev060602_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0009</td>
+        <td class="side">Have you spoken with Orleron? *fsssh*[ST:n ]Quite an impressive young Zaruboggan, no?[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev060602_JNK0030</td>
+        <td class="side">Agree</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev060602_SEL0031</td>
+        <td class="side">Praise the boy's dedication.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev060602_JNK0040</td>
+        <td class="side">Disagree</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev060602_SEL0041</td>
+        <td class="side">Say that he seemed unreliable.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0010</td>
+        <td class="side">Excellent! *fsssh* I am certain he would be thrilled to[ST:n ]know that someone of your stature acknowledges him.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0011</td>
+        <td class="side">I am also quite proud my devoltanizing led to coughing[ST:n ]up so capable an individual. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0012</td>
+        <td class="side">*fsssh* Growing up in the presence of someone[ST:n ]with such strict standards will only encourage him[ST:n ]to greatness.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0013</td>
+        <td class="side">I am also quite proud my devoltanizing led to coughing[ST:n ]up so capable an individual. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0014</td>
+        <td class="side">...Hmm? Orleron asked you to find him a gorkwa?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0015</td>
+        <td class="side">*fsssh* Mmm. That is a difficult request.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0016</td>
+        <td class="side">On our homeworld of Bedun, Golbogga left behind a[ST:n ]vast number of gorkwas. *fsssh* Shortly after birth,[ST:n ]we would leave on a journey to find our own.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0017</td>
+        <td class="side">But we cannot expect such bounty on Mira, for this[ST:n ]place is far removed from Golbogga's legacy. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0018</td>
+        <td class="side">We have all been struggling to get by with our current[ST:n ]gorkwas, and repairing them as needed. *fsssh*[ST:n ]I fear we have no spares.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0019</td>
+        <td class="side">Though that leaves him unable to properly devoltanize,[ST:n ]and ultimately condemns him to death... *fsssh*[ST:n ]Hmm, quite the pickle.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev060602_JNK0050</td>
+        <td class="side">Scold</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev060602_SEL0051</td>
+        <td class="side">Lash out at Arsenican over his lackadaisical attitude.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev060602_JNK0060</td>
+        <td class="side">Mourn</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev060602_SEL0061</td>
+        <td class="side">Weep for the fact that a newborn life may[ST:n ]be snuffed out before it has begun.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0020</td>
+        <td class="side">What a novel response. *fsssh* It seems your[ST:n ]understanding of life is quite different than ours.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0021</td>
+        <td class="side">Still, you have my sincere thanks for caring so deeply[ST:n ]about one of my kind. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0022</td>
+        <td class="side">Indeed! To lose an inheritor of Golbogga's will to[ST:n ]devoltanize an impure world would be disappointing.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0023</td>
+        <td class="side">*fsssh* Hmm? That is not the sort of loss you were[ST:n ]grieving?[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0024</td>
+        <td class="side">You humans remain a mystery to us. *fsssh*[ST:n ]It seems your understanding of life is fundamentally[ST:n ]different than ours.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0025</td>
+        <td class="side">But, hmmm... *fsssh* Hmmm...[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0026</td>
+        <td class="side">*fsssh* Actually, there may be one gorkwa that I know[ST:n ]of. And if it is still there, Orleron may be able to claim[ST:n ]it as his own.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0027</td>
+        <td class="side">This was some time ago, mind you, but while we were[ST:n ]wandering the land, one of our number fell from a cliff.[ST:n ]*fsssh* He did not survive.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0028</td>
+        <td class="side">His gorkwa may have been destroyed in the fall,[ST:n ]but the possibility exists that it is salvageable. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0029</td>
+        <td class="side">From where he fell in Sylvalum, it would likely have[ST:n ]dropped into the Abyss Reservoir. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0030</td>
+        <td class="side">Please find it if you can, brave BLADE. *fsssh*[ST:n ]Help Orleron to know adulthood.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0053</td>
+        <td class="side">*fsssh* The gorkwa of the one who fell should be in[ST:n ]Sylvalum's Abyss Reservoir.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0054</td>
+        <td class="side">Please retrieve it and see it to Orleron,[ST:n ]that the child may know adulthood. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0055</td>
+        <td class="side">Lately, Orleron seems much troubled over a human[ST:n ]called Vera. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0056</td>
+        <td class="side">I cannot understand his fixation on such an individual.[ST:n ]*fsssh* Perhaps you could speak with him?[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0057</td>
+        <td class="side">Orleron is all but human now... *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev060602_MSG0058</td>
+        <td class="side">As a fellow Zaruboggan, I want to offer him my[ST:n ]understanding. *fsssh* Yet whenever we speak,[ST:n ]everything out of his mouth is so foreign.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

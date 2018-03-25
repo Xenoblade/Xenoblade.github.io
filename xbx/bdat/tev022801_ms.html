@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev022801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev022801_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev022801_SEL0011</td>
+        <td class="side">Ask Julius about the Earthlife Colonization Project.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev022801_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev022801_SEL0021</td>
+        <td class="side">Ask Julius if anything is troubling him.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev022801_SEL0031</td>
+        <td class="side">Ask Julius if anything is troubling him.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev022801_SEL0041</td>
+        <td class="side">Ask Julius about his experience with the Ma-non.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev022801_SEL0051</td>
+        <td class="side">Ask Julius about the Earthlife Colonization Project.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev022801_SEL1021</td>
+        <td class="side">Ask Julius about recent developments.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev022801_SEL2021</td>
+        <td class="side">Ask Julius about recent developments.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0001</td>
+        <td class="side">As part of the Earthlife Colonization Project,[ST:n ]interstellar ships took off from a number of cities.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0002</td>
+        <td class="side">However, we don't have any idea what happened to[ST:n ]the others.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0003</td>
+        <td class="side">We've been transmitting a signal from Mira in an[ST:n ]attempt to establish contact, but we haven't had any[ST:n ]replies yet.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0004</td>
+        <td class="side">It's possible that we're all that's left of humanity.[ST:n ]...No. Ignore that. We mustn't lose hope.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0008</td>
+        <td class="side">The expansion of FrontierNav hasn't been progressing[ST:n ]the way I'd hoped.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0009</td>
+        <td class="side">It's mainly because of interference from the indigens...[ST:n ]though I suppose we ARE the ones encroaching on[ST:n ]their turf.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0010</td>
+        <td class="side">It's only natural they'd fight to protect it.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0011</td>
+        <td class="side">I just wish we could find a way to install the data[ST:n ]probes without having to do so much needless fighting![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0027</td>
+        <td class="side">I've been reviewing the information sent over from[ST:n ]the data probes in Noctilum, and there's something[ST:n ]that caught my eye.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0028</td>
+        <td class="side">Unfortunately, we don't have enough data for me to[ST:n ]understand what it means.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0029</td>
+        <td class="side">We simply haven't installed enough probes yet.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0030</td>
+        <td class="side">I need to find out more, so I hope FrontierNav's[ST:n ]presence in Noctilum will be expanded soon.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0035</td>
+        <td class="side">I had an opportunity to discuss life in New LA with the[ST:n ]Ma-non, and they told me something...strange.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0036</td>
+        <td class="side">They said the space around this planet is small.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0037</td>
+        <td class="side">Muh? How can space be small?[ST:n ]What does that even mean?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0045</td>
+        <td class="side">The bodies we thought were waiting for us never[ST:n ]existed at all—this is the truth behind the Earthlife[ST:n ]Colonization Project.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0046</td>
+        <td class="side">The knowledge that Elma shared with us led to[ST:n ]dramatic advances in our technology.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0047</td>
+        <td class="side">Even just a few decades ago, emigrating from Earth[ST:n ]the way we did would have been impossible.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev022801_MSG0048</td>
+        <td class="side">If it weren't for her, humanity might have been wiped[ST:n ]out a long time ago.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev022801_MSG1001</td>
+        <td class="side">The Orphe are far too logical for war.[ST:n ]They apparently renounced it eons ago.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev022801_MSG1002</td>
+        <td class="side">Now when faced with an outside enemy,[ST:n ]they only think of how best to run and hide.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev022801_MSG1003</td>
+        <td class="side">That must be why they weren't able to resist the[ST:n ]Ganglion when they attacked.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev022801_MSG1004</td>
+        <td class="side">They may possess the technology to make weapons,[ST:n ]but there are no Orpheans who can wield them.[ST:n ]It's a difficult situation for us humans to fathom.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev022801_MSG2035</td>
+        <td class="side">The \"Ovah\" that the Orphe revere is actually a virus.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev022801_MSG2036</td>
+        <td class="side">However, Orpheans are able to sense something like[ST:n ]consciousness from this virus.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev022801_MSG2037</td>
+        <td class="side">It's an enigma to us, but it may in truth be an entirely[ST:n ]new form of intelligent life![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev022801_MSG2038</td>
+        <td class="side">Unfortunately, since the Ovah is so important to the[ST:n ]Orphe, they may be reluctant to allow us to study it.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev022801_MSG2039</td>
+        <td class="side">But I would still like to pursue a thorough examination.[ST:n ]After all, we'll be living with it here in New LA![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

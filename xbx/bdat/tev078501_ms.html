@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev078501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev078501_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev078501_SEL0011</td>
+        <td class="side">Ask Conichien about the tyrants in Primordia.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev078501_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev078501_SEL0021</td>
+        <td class="side">Ask Conichien about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev078501_SEL0031</td>
+        <td class="side">Ask Conichien about the tyrants in Primordia.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0001</td>
+        <td class="side">The one they call Yelena the Quiet has been sighted on[ST:n ]the East Janpath Plain. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0002</td>
+        <td class="side">I hear she's not easy to find, but if you search the[ST:n ]areas where scirpos flock, you might get lucky. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0003</td>
+        <td class="side">Incidentally, I've heard that scirpo abdomens hold some[ST:n ]truly high-quality voltant. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0004</td>
+        <td class="side">I couldn't tell you if that's actually true or not. *fsssh*[ST:n ]But if you ever manage to crack one open,[ST:n ]come back and tell me how it went![ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0008</td>
+        <td class="side">I'd like to collect all the Miralife Cards depicting[ST:n ]venomous indigens. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0009</td>
+        <td class="side">But I don't have any money left to pay for cards![ST:n ]I wonder how I can make some around here? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0010</td>
+        <td class="side">...What? *fsssh* You say I could join BLADE and accept[ST:n ]jobs from Mission Control?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0011</td>
+        <td class="side">I certainly share BLADE's interest in indigens, but...[ST:n ]Well, if I were to leave this city, I doubt I could survive[ST:n ]even a single hit from such a monster. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0012</td>
+        <td class="side">There has to be a safer way to make money that still[ST:n ]involves dealing with venomous beasts. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0020</td>
+        <td class="side">I've heard of a species of indigen known as adsecula[ST:n ]that favors the damp of the Silent Mire. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0021</td>
+        <td class="side">Apparently one of them is a real tough customer that's[ST:n ]already fought off a number of BLADEs. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0022</td>
+        <td class="side">Heh heh. *fsssh* As a bit of a basement dweller myself,[ST:n ]I can't help but take a little pride in that.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0023</td>
+        <td class="side">Um...b-but of course I take no pleasure in the defeat of[ST:n ]our noble BLADEs. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev078501_JNK0010</td>
+        <td class="side">tev078501_JNK0010</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev078501_SEL0011</td>
+        <td class="side">tev078501_SEL0011</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev078501_JNK0020</td>
+        <td class="side">tev078501_JNK0020</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev078501_SEL1021</td>
+        <td class="side">Ask Conichien about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0013</td>
+        <td class="side">I spend most of my day staring at those cards you[ST:n ]gave me. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0014</td>
+        <td class="side">I want more of them! But I don't have any money,[ST:n ]so there's not much I can do. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev078501_MSG0015</td>
+        <td class="side">I guess I'll have to gather up more unusual bones and[ST:n ]grasses to trade to collectors. *fsssh*[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

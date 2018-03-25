@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>bf06190100_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>bf06190100_0010</td>
+        <td>82</td>
+        <td class="side">Say, chum. Which one d'you fancy,
+Pyra or Mythra?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>bf06190100_0020</td>
+        <td>82</td>
+        <td class="side">Uh, Zeke...
+You can't just ask someone...</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>bf06190100_0030</td>
+        <td>82</td>
+        <td class="side">Anyway, they're the same person! I've never
+really thought of them separately...</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>bf06190100_0040</td>
+        <td>82</td>
+        <td class="side">Are you serious?
+But they're like, totally different characters.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>bf06190100_0050</td>
+        <td>82</td>
+        <td class="side">Like, Mythra is jolly intense.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>bf06190100_0060</td>
+        <td>82</td>
+        <td class="side">And Pyra is just totally mellow, or, I dunno...
+What's the opposite of "pushy"?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>bf06190100_0070</td>
+        <td>82</td>
+        <td class="side">On the outside, maybe.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>bf06190100_0080</td>
+        <td>82</td>
+        <td class="side">But Pyra's got a lot of backbone too.
+She can be pretty stubborn!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>bf06190100_0090</td>
+        <td>82</td>
+        <td class="side">You seem to understand them pretty deeply.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>bf06190100_0100</td>
+        <td>82</td>
+        <td class="side">Well, I suppose you ARE their Driver.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>bf06190100_0110</td>
+        <td>82</td>
+        <td class="side">Hey...</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>bf06190100_0120</td>
+        <td>82</td>
+        <td class="side">Yeah?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>bf06190100_0130</td>
+        <td>82</td>
+        <td class="side">You're a prince from Tantal,
+aren't you, Zeke?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>bf06190100_0140</td>
+        <td>82</td>
+        <td class="side">Why were you in the Praetorium?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>bf06190100_0150</td>
+        <td>82</td>
+        <td class="side">I mean, you can't just ask someone...</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>bf06190100_0160</td>
+        <td>82</td>
+        <td class="side">Oh, his old man kicked him out!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>bf06190100_0170</td>
+        <td>82</td>
+        <td class="side">Oi, no! Bad Blade, bad!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>bf06190100_0180</td>
+        <td>82</td>
+        <td class="side">...How long have you been standing there?</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>bf06190100_0190</td>
+        <td>82</td>
+        <td class="side">From about..."which one d'you fancy".</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>bf06190100_0200</td>
+        <td>82</td>
+        <td class="side">"Which one d'you fa..."
+That's the whole conversation!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>bf06190100_0210</td>
+        <td>82</td>
+        <td class="side">As I was saying, my Prince got
+disowned by his father.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>bf06190100_0220</td>
+        <td>82</td>
+        <td class="side">He spent all his time traveling the world
+for fun, instead of attending to his studies.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>bf06190100_0230</td>
+        <td>82</td>
+        <td class="side">Then byeee!</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>bf06190100_0240</td>
+        <td>82</td>
+        <td class="side">It wasn't for fun! I was learning all about,
+uh, society and international relations!</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>bf06190100_0250</td>
+        <td>82</td>
+        <td class="side">"International relations," that whatcha call it?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>bf06190100_0260</td>
+        <td>82</td>
+        <td class="side">Oi, can it, you! What are you doing
+anyway, dissing your own Driver?!</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>bf06190100_0270</td>
+        <td>82</td>
+        <td class="side">Hahahah, you guys crack me up.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>bf06190100_0280</td>
+        <td>82</td>
+        <td class="side">I love him really.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>bf06190100_0290</td>
+        <td>82</td>
+        <td class="side">Aww!
+Anyway, he sounds tough. Zeke's dad, I mean.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>bf06190100_0300</td>
+        <td>82</td>
+        <td class="side">Tantal is an isolationist society...</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>bf06190100_0310</td>
+        <td>82</td>
+        <td class="side">Crossing its borders without leave
+is strictly forbidden.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>bf06190100_0320</td>
+        <td>82</td>
+        <td class="side">It's been that way for ages now.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>bf06190100_0330</td>
+        <td>82</td>
+        <td class="side">Oh, hmm...</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>bf06190100_0340</td>
+        <td>82</td>
+        <td class="side">But you've seen how my Prince here is.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>bf06190100_0350</td>
+        <td>82</td>
+        <td class="side">Couldn't stop himself leaving a few times,
+so he got chewed out and disowned.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>bf06190100_0360</td>
+        <td>82</td>
+        <td class="side">Back when he was, fifteen or something?</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>bf06190100_0370</td>
+        <td>82</td>
+        <td class="side">Yeah, something like that.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>bf06190100_0380</td>
+        <td>82</td>
+        <td class="side">Then the Praetor himself found him half-dead
+on the ground one day, and took him in.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>bf06190100_0390</td>
+        <td>82</td>
+        <td class="side">He made up that "special envoy" stuff.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>bf06190100_0400</td>
+        <td>82</td>
+        <td class="side">And that's how you ended up in Indol...</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>bf06190100_0405</td>
+        <td>82</td>
+        <td class="side">It all makes sense now.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>bf06190100_0410</td>
+        <td>82</td>
+        <td class="side">Oh, but wait...
+Is it safe for you to go back to Tantal, then?</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>bf06190100_0420</td>
+        <td>82</td>
+        <td class="side">This time we've got official business from
+the Praetorium! It'll be fine. Probably.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>bf06190100_0430</td>
+        <td>82</td>
+        <td class="side">Besides...</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>bf06190100_0440</td>
+        <td>82</td>
+        <td class="side">Yeah?</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>bf06190100_0450</td>
+        <td>82</td>
+        <td class="side">Tantal is too ignorant of the outside world.
+It needs a wake-up call.</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>bf06190100_0460</td>
+        <td>82</td>
+        <td class="side">Sire! We have reached the designated coordinates.
+Please.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>bf06190100_0470</td>
+        <td>82</td>
+        <td class="side">Right! Ready?</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>bf06190100_0480</td>
+        <td>82</td>
+        <td class="side">You betcha!</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>bf06190100_0490</td>
+        <td>82</td>
+        <td class="side">Huh?</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>bf06190100_0500</td>
+        <td>82</td>
+        <td class="side">Shut up and sit down, chum.
+This'll be great!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

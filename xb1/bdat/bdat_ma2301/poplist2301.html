@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>poplist2301</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>ID_NAME</th>
+          <th>questID</th>
+          <th>quest_STFLG</th>
+          <th>S_FLG_MIN</th>
+          <th>S_FLG_MAX</th>
+          <th>NAMED_FLG</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>Radius</th>
+          <th>snap</th>
+          <th>ene1ID</th>
+          <th>ene1Lv</th>
+          <th>ene1Scale</th>
+          <th>ene1Per</th>
+          <th>ene1num</th>
+          <th>ene2ID</th>
+          <th>ene2Lv</th>
+          <th>ene2Scale</th>
+          <th>ene2Per</th>
+          <th>ene2num</th>
+          <th>ene3ID</th>
+          <th>ene3Lv</th>
+          <th>ene3Scale</th>
+          <th>ene3Per</th>
+          <th>ene3num</th>
+          <th>ene4ID</th>
+          <th>ene4Lv</th>
+          <th>ene4Scale</th>
+          <th>ene4Per</th>
+          <th>ene4num</th>
+          <th>ene5ID</th>
+          <th>ene5Lv</th>
+          <th>ene5Scale</th>
+          <th>ene5Per</th>
+          <th>ene5num</th>
+          <th>POP_TIME</th>
+          <th>ene_type</th>
+          <th>pop_type</th>
+          <th>move_type</th>
+          <th>rndwalkR</th>
+          <th>Dir</th>
+          <th>form</th>
+          <th>form_range</th>
+          <th>routeID</th>
+          <th>gimmickID</th>
+          <th>child_ID</th>
+          <th>posATR</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>機神</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td>0</td>
+        <td>-295</td>
+        <td>-1570</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2504">Mechonis</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>48</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>90</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>レリーフエギル</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td>0</td>
+        <td>-2</td>
+        <td>-14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2501">Yaldabaoth</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>90</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td><a href="poplist2301.html#3">3</td></a>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="poplist2301.html#2">poplist2301#2</a>
+          </details>
+        </td>
+        <td>制御装置</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td>0</td>
+        <td>-160</td>
+        <td>20</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2506">Energy Device</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2506">Energy Device</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2506">Energy Device</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>13</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>275</td>
+        <td>8</td>
+        <td>21</td>
+        <td></td>
+        <td>0</td>
+        <td><a href="poplist2301.html#4">4</td></a>
+        <td>1</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="poplist2301.html#3">poplist2301#3</a>
+          </details>
+        </td>
+        <td>飛行型</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td>0</td>
+        <td>18</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2507">Offensive/MOTOR</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2507">Offensive/MOTOR</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>9</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>90</td>
+        <td>2</td>
+        <td>7</td>
+        <td></td>
+        <td>0</td>
+        <td><a href="poplist2301.html#5">5</td></a>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="poplist2301.html#4">poplist2301#4</a>
+          </details>
+        </td>
+        <td>タンク型（後</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td><a href="../MNU_scenario.html#356">356</td></a>
+        <td>0</td>
+        <td>-18</td>
+        <td>-1</td>
+        <td>12</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2508">Exterminator/CLOCK</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2508">Exterminator/CLOCK</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>9</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>90</td>
+        <td>2</td>
+        <td>24</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>綺麗なザンザ</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#358">358</td></a>
+        <td><a href="../MNU_scenario.html#358">358</td></a>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="../bdat_common/BTL_enelist.html#2505">Zanza</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>90</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

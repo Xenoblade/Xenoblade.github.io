@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITM_PieceList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>Caption</th>
+          <th>Rare</th>
+          <th>Price</th>
+          <th>Rate</th>
+          <th>ItemType</th>
+          <th>ItemID</th>
+          <th>LinkSymbol</th>
+          <th>UI2</th>
+          <th>NoSell</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Skull</td>
+        <td>An enormous skull fragment[ST:n ]taken from the Ruler of Fates.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>41</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_HEAD</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Left Wing</td>
+        <td>A fragment torn from the[ST:n ]left wing of the Ruler of Fates.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>39</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_WING_L1</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Right Wing</td>
+        <td>A fragment torn from the[ST:n ]right wing of the Ruler of Fates.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>43</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_WING_R1</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Left Plume</td>
+        <td>A fragment taken from one of[ST:n ]the Ruler of Fates' left plumes.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>37</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_WING_L2</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Right Plume</td>
+        <td>A fragment taken from one of[ST:n ]the Ruler of Fates' right plumes.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>45</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_WING_R2</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Plate</td>
+        <td>A solid plate-armor fragment[ST:n ]cut from the Ruler of Fates.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>35</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_BACK</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">Guardian's Tail</td>
+        <td>A tail fragment severed from[ST:n ]the rear of the Ruler of Fates.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>50</td>
+        <td>26</td>
+        <td>655</td>
+        <td>WE01_TAIL</td>
+        <td>2748</td>
+        <td>False</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Skull</td>
+        <td>A scale-like fragment cut from the[ST:n ]skull of a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>89</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_HEAD</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Torso</td>
+        <td>A thick torso fragment carved[ST:n ]from a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>99</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_CHEST</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Heart</td>
+        <td>A chunk of muscle fiber taken from[ST:n ]the heart of a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>96</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_WEAK</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Left Wing</td>
+        <td>A sliver of the soft left wing[ST:n ]of a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>93</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_WING_L</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Right Wing</td>
+        <td>A sliver of the soft right wing[ST:n ]of a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>86</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_WING_R</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Plate</td>
+        <td>A solid plate-armor fragment cut[ST:n ]from a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>83</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_BACK</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">Destroyer's Tail</td>
+        <td>An enormous tail feather fragment[ST:n ]severed from a planet-destroying beast.[ST:n ]Gather as many as you can for[ST:n ]analysis to determine their worth.</td>
+        <td>5</td>
+        <td>200</td>
+        <td>80</td>
+        <td>26</td>
+        <td>654</td>
+        <td>FR01_TAIL</td>
+        <td>2747</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

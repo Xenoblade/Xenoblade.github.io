@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev078601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev078601_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev078601_SEL0011</td>
+        <td class="side">tev078601_SEL0011</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev078601_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev078601_SEL0021</td>
+        <td class="side">tev078601_SEL0021</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev078601_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev078601_SEL1011</td>
+        <td class="side">Ask Shiraton about humans.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev078601_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev078601_SEL1021</td>
+        <td class="side">Ask Shiraton about recent developments.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev078601_SEL2021</td>
+        <td class="side">Ask Shiraton about recent developments.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev078601_SEL3021</td>
+        <td class="side">Ask Shiraton about recent developments.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0001</td>
+        <td class="side">tev078601_MSG0001</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0002</td>
+        <td class="side">tev078601_MSG0002</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0003</td>
+        <td class="side">tev078601_MSG0003</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0004</td>
+        <td class="side">tev078601_MSG0004</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0005</td>
+        <td class="side">tev078601_MSG0005</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0008</td>
+        <td class="side">tev078601_MSG0008</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0009</td>
+        <td class="side">tev078601_MSG0009</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0010</td>
+        <td class="side">tev078601_MSG0010</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev078601_MSG0011</td>
+        <td class="side">tev078601_MSG0011</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1001</td>
+        <td class="side">Humans often seem to fight amongst themselves[ST:n ]and commit various crimes here in the city.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1002</td>
+        <td class="side">I heard that humans who were found likely to harm[ST:n ]others were not allowed onto your \"White Whale\"[ST:n ]ship. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1003</td>
+        <td class="side">But Tracey said that the worst humans tended to be the[ST:n ]craftiest at evading such precautions. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1004</td>
+        <td class="side">Hmm. My kind merely exist to perform our function.[ST:n ]You humans, on the other hand, seem to be a much[ST:n ]less straightforward people. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1009</td>
+        <td class="side">I had hoped to continue dealing regularly with[ST:n ]Roselle, but it seems she has been arrested. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1010</td>
+        <td class="side">So I had to put more effort into my recovery work.[ST:n ]I now visit the residential and commercial districts,[ST:n ]and anywhere else voltant can be found. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1011</td>
+        <td class="side">The humans whose voltant I devoltanize always seem[ST:n ]quite pleased to have me. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev078601_MSG1012</td>
+        <td class="side">After being treated with disgust wherever my people[ST:n ]have gone, it is quite gratifying to feel that we are[ST:n ]needed here. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev078601_MSG2001</td>
+        <td class="side">Outside of the rare occasions like this when I leave the[ST:n ]city, I spend my days devoltanizing the voltant that[ST:n ]Roselle brings to me. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev078601_MSG2002</td>
+        <td class="side">I do not fully understand her oft-stated assertion that[ST:n ]we are \"business partners.\" *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev078601_MSG2003</td>
+        <td class="side">But in a city the size of New LA, there would certainly[ST:n ]be a limit to how much voltant we would be able to[ST:n ]locate by ourselves. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev078601_MSG2004</td>
+        <td class="side">So it is certainly true that Roselle's \"business\" has been[ST:n ]a lifesaver for us. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev078601_MSG3001</td>
+        <td class="side">Until recently, humans were typically alarmed when[ST:n ]they ran into us at night, and often reported our[ST:n ]presence to the authorities. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev078601_MSG3002</td>
+        <td class="side">And when we'd enter a shop, we'd be asked to leave[ST:n ]immediately, lest we contaminate the products.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev078601_MSG3003</td>
+        <td class="side">It was quite a difficult life here in New LA. *fsssh*[ST:n ]But Tracey has been explaining to people that we[ST:n ]Zaruboggan are not dangerous.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev078601_MSG3004</td>
+        <td class="side">She has even threatened to arrest humans who persist[ST:n ]in discriminatory behavior. *fsssh* As a result,[ST:n ]the humans have come to understand us better.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev078601_MSG3005</td>
+        <td class="side">It has made life in New LA more pleasant for us.[ST:n ]Dealing with Tracey has not always been so easy,[ST:n ]but she has our gratitude now. *fsssh*[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

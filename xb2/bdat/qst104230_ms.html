@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104230_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104230_msg0001</td>
+        <td>84</td>
+        <td class="side">Welcome to the Smaia Clinic.
+Ah, it's you lot again!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104230_msg0005</td>
+        <td>84</td>
+        <td class="side">I'm afraid Doctor Smaia isn't
+in the clinic right now. Again.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104230_msg0008</td>
+        <td>84</td>
+        <td class="side">Was there something urgent
+you wanted her for?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104230_msg0009</td>
+        <td>84</td>
+        <td class="side">You want to recruit Doctor Smaia
+to teach in a school?!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104230_msg0010</td>
+        <td>84</td>
+        <td class="side">Well, I suppose you would
+definitely have to discuss that
+with her in person.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104230_msg0101</td>
+        <td>84</td>
+        <td class="side">I'm not sure if Doctor Smaia will be
+interested in teaching children...</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104230_msg0102</td>
+        <td>84</td>
+        <td class="side">After all, she even treats me as
+more of an odd-jobs man than
+an actual apprentice...</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104230_msg0201</td>
+        <td>84</td>
+        <td class="side">Doctor Smaia accepted your invitation
+to a teaching post?!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104230_msg0202</td>
+        <td>84</td>
+        <td class="side">I can hardly believe it...
+Doctor Smaia? Teaching children?</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104230_msg0203</td>
+        <td>84</td>
+        <td class="side">I wonder what will happen
+to this clinic...</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104230_msg0204</td>
+        <td>84</td>
+        <td class="side">I'll have to discuss it with her
+when she comes back. Maybe
+this could be my big opportunity?</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104230_msg0301</td>
+        <td>165</td>
+        <td class="side">Have Smaia come as a teacher?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104230_msg0302</td>
+        <td>165</td>
+        <td class="side">Hire her</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104230_msg0303</td>
+        <td>165</td>
+        <td class="side">Think it over</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst104230_msg0006</td>
+        <td>84</td>
+        <td class="side">This time she's on a trip to
+Fonsett Village in Leftheria.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst104230_msg0007</td>
+        <td>84</td>
+        <td class="side">Apparently there's some kind of
+medicinal plant she's looking for in
+a place called Spirit Crucible Elpys.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst104230_msg0401</td>
+        <td>84</td>
+        <td class="side">But I don't know where that place is,
+so you all would have to help look...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst104230_msg0402</td>
+        <td>84</td>
+        <td class="side">After that...
+Well, if you're lucky, she might
+fulfill your request.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst104230_msg0501</td>
+        <td>84</td>
+        <td class="side">I don't know if Doctor Smaia will
+accept the post or not.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst104230_msg0502</td>
+        <td>84</td>
+        <td class="side">Perhaps it would just turn out to be a
+fool's errand. Yes, it'd be wise to think
+it over before going to the trouble.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst104230_msg0601</td>
+        <td>84</td>
+        <td class="side">I'll be sure to let Doctor Smaia know
+that you asked after her when she
+returns.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

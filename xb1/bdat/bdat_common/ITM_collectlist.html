@@ -1,0 +1,6417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITM_collectlist</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>mapID</th>
+          <th>type</th>
+          <th>FSplus1</th>
+          <th>FSplus2</th>
+          <th>FSplus3</th>
+          <th>FSplus4</th>
+          <th>FSplus5</th>
+          <th>FSplus6</th>
+          <th>FSplus7</th>
+          <th>money</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1852">ITM_itemlist#Sweet Wasabi</a>
+          </details>
+        </td>
+        <td class="side">Sweet Wasabi</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>180</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1853">ITM_itemlist#Cool Potato</a>
+          </details>
+        </td>
+        <td class="side">Cool Potato</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>270</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1854">ITM_itemlist#Red Lettuce</a>
+          </details>
+        </td>
+        <td class="side">Red Lettuce</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>1</td>
+        <td>-8</td>
+        <td>12</td>
+        <td>2</td>
+        <td>2</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>300</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1855">ITM_itemlist#Chewy Radish</a>
+          </details>
+        </td>
+        <td class="side">Chewy Radish</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>1</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>16</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>450</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1856">ITM_itemlist#Hot Taro</a>
+          </details>
+        </td>
+        <td class="side">Hot Taro</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>1</td>
+        <td>-10</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>384</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1857">ITM_itemlist#Juicy Broccoli</a>
+          </details>
+        </td>
+        <td class="side">Juicy Broccoli</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>1</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>14</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>432</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1858">ITM_itemlist#Spicy Cabbage</a>
+          </details>
+        </td>
+        <td class="side">Spicy Cabbage</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>24</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>-16</td>
+        <td>576</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1859">ITM_itemlist#Hard Lotus</a>
+          </details>
+        </td>
+        <td class="side">Hard Lotus</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>16</td>
+        <td>14</td>
+        <td>-6</td>
+        <td>432</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1860">ITM_itemlist#Blue Turnip</a>
+          </details>
+        </td>
+        <td class="side">Blue Turnip</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>1056</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1861">ITM_itemlist#Cute Parsnip</a>
+          </details>
+        </td>
+        <td class="side">Cute Parsnip</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>20</td>
+        <td>-16</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>330</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1862">ITM_itemlist#Poisonous Gourd</a>
+          </details>
+        </td>
+        <td class="side">Poisonous Gourd</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>660</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1863">ITM_itemlist#Humming Cabbage</a>
+          </details>
+        </td>
+        <td class="side">Humming Cabbage</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>1</td>
+        <td>-8</td>
+        <td>20</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-10</td>
+        <td>726</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1864">ITM_itemlist#Schorl Mushroom</a>
+          </details>
+        </td>
+        <td class="side">Schorl Mushroom</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>18</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>864</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1865">ITM_itemlist#Kelp Mushroom</a>
+          </details>
+        </td>
+        <td class="side">Kelp Mushroom</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-6</td>
+        <td>576</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1866">ITM_itemlist#Honey Rhubarb</a>
+          </details>
+        </td>
+        <td class="side">Honey Rhubarb</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>1</td>
+        <td>-12</td>
+        <td>4</td>
+        <td>12</td>
+        <td>2</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>648</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1867">ITM_itemlist#Pink Asparagus</a>
+          </details>
+        </td>
+        <td class="side">Pink Asparagus</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>1</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>14</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>810</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1868">ITM_itemlist#Tropical Radish</a>
+          </details>
+        </td>
+        <td class="side">Tropical Radish</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>630</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1869">ITM_itemlist#Dolphin Carrot</a>
+          </details>
+        </td>
+        <td class="side">Dolphin Carrot</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>1</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>540</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1870">ITM_itemlist#Gold Burdock</a>
+          </details>
+        </td>
+        <td class="side">Gold Burdock</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>1</td>
+        <td>-18</td>
+        <td>6</td>
+        <td>12</td>
+        <td>6</td>
+        <td>10</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>900</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1871">ITM_itemlist#Sour Radish</a>
+          </details>
+        </td>
+        <td class="side">Sour Radish</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>1026</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1872">ITM_itemlist#Ice Cabbage</a>
+          </details>
+        </td>
+        <td class="side">Ice Cabbage</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>16</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>1368</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1873">ITM_itemlist#Girl Courgette</a>
+          </details>
+        </td>
+        <td class="side">Girl Courgette</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>1</td>
+        <td>-4</td>
+        <td>18</td>
+        <td>14</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>1140</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1874">ITM_itemlist#Amethyst Vanilla</a>
+          </details>
+        </td>
+        <td class="side">Amethyst Vanilla</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>8</td>
+        <td>912</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1875">ITM_itemlist#Fire Pepper</a>
+          </details>
+        </td>
+        <td class="side">Fire Pepper</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>18</td>
+        <td>6</td>
+        <td>-8</td>
+        <td>1320</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1876">ITM_itemlist#Meaty Carrot</a>
+          </details>
+        </td>
+        <td class="side">Meaty Carrot</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>1</td>
+        <td>-12</td>
+        <td>18</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>1320</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1877">ITM_itemlist#Bitter Broccoli</a>
+          </details>
+        </td>
+        <td class="side">Bitter Broccoli</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>1</td>
+        <td>6</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>1080</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1878">ITM_itemlist#Sour Turnip</a>
+          </details>
+        </td>
+        <td class="side">Sour Turnip</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>1320</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1879">ITM_itemlist#Golden Beetroot</a>
+          </details>
+        </td>
+        <td class="side">Golden Beetroot</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>14</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>16</td>
+        <td>2</td>
+        <td>1188</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1880">ITM_itemlist#Juicy Steakplant</a>
+          </details>
+        </td>
+        <td class="side">Juicy Steakplant</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>1</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>1104</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1881">ITM_itemlist#Acerola Pea</a>
+          </details>
+        </td>
+        <td class="side">Acerola Pea</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1104</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1882">ITM_itemlist#Energy Aubergine</a>
+          </details>
+        </td>
+        <td class="side">Energy Aubergine</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>28</td>
+        <td>10</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>-12</td>
+        <td>4278</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1883">ITM_itemlist#Sweet Pepper</a>
+          </details>
+        </td>
+        <td class="side">Sweet Pepper</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>1</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>14</td>
+        <td>-10</td>
+        <td>10</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>690</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1884">ITM_itemlist#Meaty Potato</a>
+          </details>
+        </td>
+        <td class="side">Meaty Potato</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>24</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-16</td>
+        <td>1800</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1885">ITM_itemlist#Blue Root</a>
+          </details>
+        </td>
+        <td class="side">Blue Root</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>1</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>12</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>750</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1886">ITM_itemlist#Sarsaparilla</a>
+          </details>
+        </td>
+        <td class="side">Sarsaparilla</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>1</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>16</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1716</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1887">ITM_itemlist#Black Liver Bean</a>
+          </details>
+        </td>
+        <td class="side">Black Liver Bean</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td>8</td>
+        <td>12</td>
+        <td>8</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>2340</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1888">ITM_itemlist#Dance Apple</a>
+          </details>
+        </td>
+        <td class="side">Dance Apple</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>10</td>
+        <td>2</td>
+        <td>270</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1889">ITM_itemlist#Black Kiwi</a>
+          </details>
+        </td>
+        <td class="side">Black Kiwi</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>2</td>
+        <td>12</td>
+        <td>240</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1890">ITM_itemlist#Clear Almond</a>
+          </details>
+        </td>
+        <td class="side">Clear Almond</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>2</td>
+        <td>6</td>
+        <td>-12</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>6</td>
+        <td>14</td>
+        <td>294</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1891">ITM_itemlist#Bright Fig</a>
+          </details>
+        </td>
+        <td class="side">Bright Fig</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>10</td>
+        <td>2</td>
+        <td>798</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1892">ITM_itemlist#Dark Grape</a>
+          </details>
+        </td>
+        <td class="side">Dark Grape</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>-14</td>
+        <td>4</td>
+        <td>-14</td>
+        <td>12</td>
+        <td>6</td>
+        <td>14</td>
+        <td>252</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1893">ITM_itemlist#Sour Gooseberry</a>
+          </details>
+        </td>
+        <td class="side">Sour Gooseberry</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>-18</td>
+        <td>-2</td>
+        <td>24</td>
+        <td>16</td>
+        <td>4</td>
+        <td>528</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1894">ITM_itemlist#Red Durian</a>
+          </details>
+        </td>
+        <td class="side">Red Durian</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>12</td>
+        <td>6</td>
+        <td>624</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1895">ITM_itemlist#Walnut Grape</a>
+          </details>
+        </td>
+        <td class="side">Walnut Grape</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>2</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>12</td>
+        <td>336</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1896">ITM_itemlist#Humming Plum</a>
+          </details>
+        </td>
+        <td class="side">Humming Plum</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>6</td>
+        <td>384</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1897">ITM_itemlist#Dark Mango</a>
+          </details>
+        </td>
+        <td class="side">Dark Mango</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>2</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>432</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1898">ITM_itemlist#Pure Cherry</a>
+          </details>
+        </td>
+        <td class="side">Pure Cherry</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>8</td>
+        <td>6</td>
+        <td>792</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1899">ITM_itemlist#Bitter Kiwi</a>
+          </details>
+        </td>
+        <td class="side">Bitter Kiwi</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>2</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>10</td>
+        <td>12</td>
+        <td>864</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1900">ITM_itemlist#Juicy Grape</a>
+          </details>
+        </td>
+        <td class="side">Juicy Grape</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>8</td>
+        <td>4</td>
+        <td>792</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1901">ITM_itemlist#Spicy Nut</a>
+          </details>
+        </td>
+        <td class="side">Spicy Nut</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>2</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>-12</td>
+        <td>-4</td>
+        <td>18</td>
+        <td>6</td>
+        <td>6</td>
+        <td>624</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1902">ITM_itemlist#Crimson Citrus</a>
+          </details>
+        </td>
+        <td class="side">Crimson Citrus</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-14</td>
+        <td>4</td>
+        <td>-10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>12</td>
+        <td>546</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1903">ITM_itemlist#Cool Lemon</a>
+          </details>
+        </td>
+        <td class="side">Cool Lemon</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>2</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>14</td>
+        <td>8</td>
+        <td>672</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1904">ITM_itemlist#Heart Peach</a>
+          </details>
+        </td>
+        <td class="side">Heart Peach</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>12</td>
+        <td>10</td>
+        <td>4</td>
+        <td>1536</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1905">ITM_itemlist#Dry Lemon</a>
+          </details>
+        </td>
+        <td class="side">Dry Lemon</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>2</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>14</td>
+        <td>6</td>
+        <td>714</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1906">ITM_itemlist#Death Lychee</a>
+          </details>
+        </td>
+        <td class="side">Death Lychee</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-14</td>
+        <td>10</td>
+        <td>8</td>
+        <td>2</td>
+        <td>714</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1907">ITM_itemlist#Hell Raspberry</a>
+          </details>
+        </td>
+        <td class="side">Hell Raspberry</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>2</td>
+        <td>-4</td>
+        <td>-6</td>
+        <td>-12</td>
+        <td>-4</td>
+        <td>30</td>
+        <td>6</td>
+        <td>6</td>
+        <td>816</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1908">ITM_itemlist#Deadly Kiwi</a>
+          </details>
+        </td>
+        <td class="side">Deadly Kiwi</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>918</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1909">ITM_itemlist#Ether Plum</a>
+          </details>
+        </td>
+        <td class="side">Ether Plum</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>-20</td>
+        <td>6</td>
+        <td>8</td>
+        <td>10</td>
+        <td>684</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1910">ITM_itemlist#Fire Apple</a>
+          </details>
+        </td>
+        <td class="side">Fire Apple</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-12</td>
+        <td>-2</td>
+        <td>22</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1140</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1911">ITM_itemlist#Ruby Mangosteen</a>
+          </details>
+        </td>
+        <td class="side">Ruby Mangosteen</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-14</td>
+        <td>4</td>
+        <td>-10</td>
+        <td>12</td>
+        <td>8</td>
+        <td>12</td>
+        <td>798</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1912">ITM_itemlist#Sour Grape</a>
+          </details>
+        </td>
+        <td class="side">Sour Grape</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>2</td>
+        <td>10</td>
+        <td>-10</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>12</td>
+        <td>1026</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1913">ITM_itemlist#Bitter Melon</a>
+          </details>
+        </td>
+        <td class="side">Bitter Melon</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>2</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>-8</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>8</td>
+        <td>4</td>
+        <td>840</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1914">ITM_itemlist#Citron Gooseberry</a>
+          </details>
+        </td>
+        <td class="side">Citron Gooseberry</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>12</td>
+        <td>8</td>
+        <td>6</td>
+        <td>960</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1915">ITM_itemlist#Juicy Melon</a>
+          </details>
+        </td>
+        <td class="side">Juicy Melon</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>-8</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>14</td>
+        <td>2</td>
+        <td>1680</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1916">ITM_itemlist#Amethyst Melon</a>
+          </details>
+        </td>
+        <td class="side">Amethyst Melon</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>-16</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>10</td>
+        <td>20</td>
+        <td>1800</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1917">ITM_itemlist#White Plum</a>
+          </details>
+        </td>
+        <td class="side">White Plum</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>1188</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1918">ITM_itemlist#Ice Kiwi Fruit</a>
+          </details>
+        </td>
+        <td class="side">Ice Kiwi Fruit</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>-8</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>20</td>
+        <td>8</td>
+        <td>924</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1919">ITM_itemlist#Spicy Papaya</a>
+          </details>
+        </td>
+        <td class="side">Spicy Papaya</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1188</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1920">ITM_itemlist#Large Mango</a>
+          </details>
+        </td>
+        <td class="side">Large Mango</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>2</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>924</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1921">ITM_itemlist#Juicy Blueberry</a>
+          </details>
+        </td>
+        <td class="side">Juicy Blueberry</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>2</td>
+        <td>8</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1728</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1922">ITM_itemlist#Sweet Lime</a>
+          </details>
+        </td>
+        <td class="side">Sweet Lime</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>12</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1152</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1923">ITM_itemlist#Spicy Banana</a>
+          </details>
+        </td>
+        <td class="side">Spicy Banana</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>6</td>
+        <td>1008</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1924">ITM_itemlist#Strong Dandelion</a>
+          </details>
+        </td>
+        <td class="side">Strong Dandelion</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>12</td>
+        <td>210</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1925">ITM_itemlist#Moon Flower</a>
+          </details>
+        </td>
+        <td class="side">Moon Flower</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>270</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1926">ITM_itemlist#Dawn Hydrangea</a>
+          </details>
+        </td>
+        <td class="side">Dawn Hydrangea</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>3</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>150</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1927">ITM_itemlist#Insanity Mint</a>
+          </details>
+        </td>
+        <td class="side">Insanity Mint</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>12</td>
+        <td>294</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1928">ITM_itemlist#Night Tulip</a>
+          </details>
+        </td>
+        <td class="side">Night Tulip</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>10</td>
+        <td>294</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1929">ITM_itemlist#Cute Orchid</a>
+          </details>
+        </td>
+        <td class="side">Cute Orchid</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>-8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>594</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1930">ITM_itemlist#Sirius Anemone</a>
+          </details>
+        </td>
+        <td class="side">Sirius Anemone</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>3</td>
+        <td>18</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-10</td>
+        <td>14</td>
+        <td>864</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1931">ITM_itemlist#Spirit Clematis</a>
+          </details>
+        </td>
+        <td class="side">Spirit Clematis</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>3</td>
+        <td>-8</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>16</td>
+        <td>486</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1932">ITM_itemlist#Sunflower Rogue</a>
+          </details>
+        </td>
+        <td class="side">Sunflower Rogue</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>3</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>660</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1933">ITM_itemlist#Merry Coronation</a>
+          </details>
+        </td>
+        <td class="side">Merry Coronation</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>3</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>396</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1934">ITM_itemlist#Ether Rose</a>
+          </details>
+        </td>
+        <td class="side">Ether Rose</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>3</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>594</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1935">ITM_itemlist#Orb Daisy</a>
+          </details>
+        </td>
+        <td class="side">Orb Daisy</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>3</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-18</td>
+        <td>12</td>
+        <td>792</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1936">ITM_itemlist#Forget-You-Not</a>
+          </details>
+        </td>
+        <td class="side">Forget-You-Not</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>3</td>
+        <td>10</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>18</td>
+        <td>1122</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1937">ITM_itemlist#Enigma Lotus</a>
+          </details>
+        </td>
+        <td class="side">Enigma Lotus</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>648</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1938">ITM_itemlist#Humming Nettle</a>
+          </details>
+        </td>
+        <td class="side">Humming Nettle</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>648</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1939">ITM_itemlist#Princess Daffodil</a>
+          </details>
+        </td>
+        <td class="side">Princess Daffodil</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>3</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>360</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1940">ITM_itemlist#Black Iris</a>
+          </details>
+        </td>
+        <td class="side">Black Iris</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>3</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>14</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>720</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1941">ITM_itemlist#Sea Berry</a>
+          </details>
+        </td>
+        <td class="side">Sea Berry</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>3</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>810</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1942">ITM_itemlist#Despair Clover</a>
+          </details>
+        </td>
+        <td class="side">Despair Clover</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>3</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>12</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>1350</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1943">ITM_itemlist#Doomsday Poppy</a>
+          </details>
+        </td>
+        <td class="side">Doomsday Poppy</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-18</td>
+        <td>6</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>16</td>
+        <td>720</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1944">ITM_itemlist#Night Lily</a>
+          </details>
+        </td>
+        <td class="side">Night Lily</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>3</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>-8</td>
+        <td>18</td>
+        <td>720</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1945">ITM_itemlist#Razor Teasel</a>
+          </details>
+        </td>
+        <td class="side">Razor Teasel</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>720</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1946">ITM_itemlist#Mystic Dahlia</a>
+          </details>
+        </td>
+        <td class="side">Mystic Dahlia</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>3</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>768</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1947">ITM_itemlist#Stardrop</a>
+          </details>
+        </td>
+        <td class="side">Stardrop</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>3</td>
+        <td>-8</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>14</td>
+        <td>768</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1948">ITM_itemlist#Fortune Mallow</a>
+          </details>
+        </td>
+        <td class="side">Fortune Mallow</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>1026</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1949">ITM_itemlist#Black Peony</a>
+          </details>
+        </td>
+        <td class="side">Black Peony</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>912</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1950">ITM_itemlist#Fatal Belladonna</a>
+          </details>
+        </td>
+        <td class="side">Fatal Belladonna</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>1140</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1951">ITM_itemlist#Jujube Silver</a>
+          </details>
+        </td>
+        <td class="side">Jujube Silver</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>3</td>
+        <td>-4</td>
+        <td>-10</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>14</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>720</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1952">ITM_itemlist#Black Blossom</a>
+          </details>
+        </td>
+        <td class="side">Black Blossom</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>3</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-18</td>
+        <td>10</td>
+        <td>1080</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1953">ITM_itemlist#Abyss Heather</a>
+          </details>
+        </td>
+        <td class="side">Abyss Heather</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>3</td>
+        <td>-8</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>14</td>
+        <td>960</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1954">ITM_itemlist#Delerium Foxglove</a>
+          </details>
+        </td>
+        <td class="side">Delerium Foxglove</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td>2</td>
+        <td>20</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>2040</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1955">ITM_itemlist#Azure Hollyhock</a>
+          </details>
+        </td>
+        <td class="side">Azure Hollyhock</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>3</td>
+        <td>22</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>-12</td>
+        <td>10</td>
+        <td>1104</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1956">ITM_itemlist#Utopia Crocus</a>
+          </details>
+        </td>
+        <td class="side">Utopia Crocus</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>3</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1518</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1957">ITM_itemlist#Lewisia Silver</a>
+          </details>
+        </td>
+        <td class="side">Lewisia Silver</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>1296</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1958">ITM_itemlist#Freesia Cyst</a>
+          </details>
+        </td>
+        <td class="side">Freesia Cyst</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2016</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1959">ITM_itemlist#Bellflower Crystal</a>
+          </details>
+        </td>
+        <td class="side">Bellflower Crystal</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>1296</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1960">ITM_itemlist#Shin Newt</a>
+          </details>
+        </td>
+        <td class="side">Shin Newt</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>18</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>294</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1961">ITM_itemlist#Cave Rat</a>
+          </details>
+        </td>
+        <td class="side">Cave Rat</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>4</td>
+        <td>14</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>294</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1962">ITM_itemlist#Shin Gecko</a>
+          </details>
+        </td>
+        <td class="side">Shin Gecko</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>378</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1963">ITM_itemlist#Happy Rabbit</a>
+          </details>
+        </td>
+        <td class="side">Happy Rabbit</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>18</td>
+        <td>-10</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>378</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1964">ITM_itemlist#Pyro Lizard</a>
+          </details>
+        </td>
+        <td class="side">Pyro Lizard</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>4</td>
+        <td>8</td>
+        <td>8</td>
+        <td>12</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>8</td>
+        <td>432</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1965">ITM_itemlist#Amblygon Turtle</a>
+          </details>
+        </td>
+        <td class="side">Amblygon Turtle</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>432</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1966">ITM_itemlist#Dobercorgi</a>
+          </details>
+        </td>
+        <td class="side">Dobercorgi</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>4</td>
+        <td>10</td>
+        <td>10</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>-16</td>
+        <td>22</td>
+        <td>702</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1967">ITM_itemlist#Light Bat</a>
+          </details>
+        </td>
+        <td class="side">Light Bat</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>-6</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>420</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1968">ITM_itemlist#Black Frog</a>
+          </details>
+        </td>
+        <td class="side">Black Frog</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>16</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>-10</td>
+        <td>8</td>
+        <td>420</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1969">ITM_itemlist#Yellow Cat</a>
+          </details>
+        </td>
+        <td class="side">Yellow Cat</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>20</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>960</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1970">ITM_itemlist#Chimera Rabbit</a>
+          </details>
+        </td>
+        <td class="side">Chimera Rabbit</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>20</td>
+        <td>792</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1971">ITM_itemlist#Venom Platypus</a>
+          </details>
+        </td>
+        <td class="side">Venom Platypus</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>4</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-10</td>
+        <td>18</td>
+        <td>660</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1972">ITM_itemlist#Humming Cat</a>
+          </details>
+        </td>
+        <td class="side">Humming Cat</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>4</td>
+        <td>-8</td>
+        <td>12</td>
+        <td>12</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>594</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1973">ITM_itemlist#Ash Fox</a>
+          </details>
+        </td>
+        <td class="side">Ash Fox</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>432</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1974">ITM_itemlist#Soft Sea Cucumber</a>
+          </details>
+        </td>
+        <td class="side">Soft Sea Cucumber</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>10</td>
+        <td>6</td>
+        <td>-16</td>
+        <td>2</td>
+        <td>24</td>
+        <td>4</td>
+        <td>1152</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1975">ITM_itemlist#Fossil Monkey</a>
+          </details>
+        </td>
+        <td class="side">Fossil Monkey</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>12</td>
+        <td>18</td>
+        <td>-10</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>792</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1976">ITM_itemlist#Venomous Lizard</a>
+          </details>
+        </td>
+        <td class="side">Venomous Lizard</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>14</td>
+        <td>648</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1977">ITM_itemlist#Sea Frog</a>
+          </details>
+        </td>
+        <td class="side">Sea Frog</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>20</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>990</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1978">ITM_itemlist#Mane Cat</a>
+          </details>
+        </td>
+        <td class="side">Mane Cat</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>4</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>14</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>900</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1979">ITM_itemlist#Dancing Squirrel</a>
+          </details>
+        </td>
+        <td class="side">Dancing Squirrel</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>1020</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1980">ITM_itemlist#Lightning Weasel</a>
+          </details>
+        </td>
+        <td class="side">Lightning Weasel</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>4</td>
+        <td>6</td>
+        <td>12</td>
+        <td>18</td>
+        <td>-10</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>1020</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1981">ITM_itemlist#Angry Monkey</a>
+          </details>
+        </td>
+        <td class="side">Angry Monkey</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>4</td>
+        <td>-14</td>
+        <td>10</td>
+        <td>6</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>714</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1982">ITM_itemlist#Wet Rat</a>
+          </details>
+        </td>
+        <td class="side">Wet Rat</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>4</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>1026</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1983">ITM_itemlist#Ice Monkey</a>
+          </details>
+        </td>
+        <td class="side">Ice Monkey</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1254</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1984">ITM_itemlist#Crystal Frog</a>
+          </details>
+        </td>
+        <td class="side">Crystal Frog</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>4</td>
+        <td>-4</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>1140</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1985">ITM_itemlist#Mud Squirrel</a>
+          </details>
+        </td>
+        <td class="side">Mud Squirrel</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>4</td>
+        <td>16</td>
+        <td>14</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>-12</td>
+        <td>-16</td>
+        <td>8</td>
+        <td>570</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1986">ITM_itemlist#Oil Oyster</a>
+          </details>
+        </td>
+        <td class="side">Oil Oyster</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>-4</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>528</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1987">ITM_itemlist#Dark Fish</a>
+          </details>
+        </td>
+        <td class="side">Dark Fish</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>1452</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1988">ITM_itemlist#Ether Penguin</a>
+          </details>
+        </td>
+        <td class="side">Ether Penguin</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>4</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>8</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>1584</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1989">ITM_itemlist#Rainbow Slug</a>
+          </details>
+        </td>
+        <td class="side">Rainbow Slug</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>4</td>
+        <td>24</td>
+        <td>12</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-18</td>
+        <td>8</td>
+        <td>2376</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1990">ITM_itemlist#Prism Centipede</a>
+          </details>
+        </td>
+        <td class="side">Prism Centipede</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>4</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>20</td>
+        <td>1650</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1991">ITM_itemlist#Cable Mouse</a>
+          </details>
+        </td>
+        <td class="side">Cable Mouse</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>4</td>
+        <td>16</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>2700</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1992">ITM_itemlist#Oil Fox</a>
+          </details>
+        </td>
+        <td class="side">Oil Fox</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>10</td>
+        <td>18</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>1500</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1993">ITM_itemlist#Blood Worm</a>
+          </details>
+        </td>
+        <td class="side">Blood Worm</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>26</td>
+        <td>-16</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>1560</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1994">ITM_itemlist#Azure Mouse</a>
+          </details>
+        </td>
+        <td class="side">Azure Mouse</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>4</td>
+        <td>14</td>
+        <td>12</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>-6</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>1248</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1995">ITM_itemlist#Happy Duck</a>
+          </details>
+        </td>
+        <td class="side">Happy Duck</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>4</td>
+        <td>2</td>
+        <td>18</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1716</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1996">ITM_itemlist#Prairie Dragonfly</a>
+          </details>
+        </td>
+        <td class="side">Prairie Dragonfly</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>5</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>20</td>
+        <td>-4</td>
+        <td>16</td>
+        <td>-4</td>
+        <td>270</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1997">ITM_itemlist#Giant Hornet</a>
+          </details>
+        </td>
+        <td class="side">Giant Hornet</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>16</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>-8</td>
+        <td>180</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1998">ITM_itemlist#White Beetle</a>
+          </details>
+        </td>
+        <td class="side">White Beetle</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>10</td>
+        <td>-10</td>
+        <td>210</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#1999">ITM_itemlist#Sorrow Beetle</a>
+          </details>
+        </td>
+        <td class="side">Sorrow Beetle</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>5</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>14</td>
+        <td>4</td>
+        <td>450</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2000">ITM_itemlist#Brown Butterfly</a>
+          </details>
+        </td>
+        <td class="side">Brown Butterfly</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-12</td>
+        <td>16</td>
+        <td>-8</td>
+        <td>378</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2001">ITM_itemlist#Gold Caterpillar</a>
+          </details>
+        </td>
+        <td class="side">Gold Caterpillar</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>5</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>378</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2002">ITM_itemlist#Rumble Stonefly</a>
+          </details>
+        </td>
+        <td class="side">Rumble Stonefly</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>5</td>
+        <td>16</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>420</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2003">ITM_itemlist#White Ladybird</a>
+          </details>
+        </td>
+        <td class="side">White Ladybird</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>-12</td>
+        <td>384</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2004">ITM_itemlist#Hill Firefly</a>
+          </details>
+        </td>
+        <td class="side">Hill Firefly</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>-8</td>
+        <td>240</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2005">ITM_itemlist#Moth Crawler</a>
+          </details>
+        </td>
+        <td class="side">Moth Crawler</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>5</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>30</td>
+        <td>-10</td>
+        <td>336</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2006">ITM_itemlist#Queen Locust</a>
+          </details>
+        </td>
+        <td class="side">Queen Locust</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-4</td>
+        <td>384</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2007">ITM_itemlist#Fire Tarantula</a>
+          </details>
+        </td>
+        <td class="side">Fire Tarantula</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>14</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>10</td>
+        <td>720</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2008">ITM_itemlist#Black Beetle</a>
+          </details>
+        </td>
+        <td class="side">Black Beetle</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>-8</td>
+        <td>420</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2009">ITM_itemlist#Rubber Mantis</a>
+          </details>
+        </td>
+        <td class="side">Rubber Mantis</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>5</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>16</td>
+        <td>-6</td>
+        <td>24</td>
+        <td>-4</td>
+        <td>720</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2010">ITM_itemlist#Mystery Firefly</a>
+          </details>
+        </td>
+        <td class="side">Mystery Firefly</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>5</td>
+        <td>16</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>660</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2011">ITM_itemlist#Scarlet Ladybird</a>
+          </details>
+        </td>
+        <td class="side">Scarlet Ladybird</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-12</td>
+        <td>504</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2012">ITM_itemlist#Shield Bug</a>
+          </details>
+        </td>
+        <td class="side">Shield Bug</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>5</td>
+        <td>22</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>720</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2013">ITM_itemlist#Hades Beetle</a>
+          </details>
+        </td>
+        <td class="side">Hades Beetle</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>-10</td>
+        <td>720</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2014">ITM_itemlist#Benign Cricket</a>
+          </details>
+        </td>
+        <td class="side">Benign Cricket</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>5</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>648</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2015">ITM_itemlist#Rainbow Bug</a>
+          </details>
+        </td>
+        <td class="side">Rainbow Bug</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>8</td>
+        <td>10</td>
+        <td>-14</td>
+        <td>390</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2016">ITM_itemlist#Empress Beetle</a>
+          </details>
+        </td>
+        <td class="side">Empress Beetle</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>5</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-4</td>
+        <td>12</td>
+        <td>-10</td>
+        <td>8</td>
+        <td>6</td>
+        <td>1014</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2017">ITM_itemlist#Green Earwig</a>
+          </details>
+        </td>
+        <td class="side">Green Earwig</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>588</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2018">ITM_itemlist#Blue Ladybird</a>
+          </details>
+        </td>
+        <td class="side">Blue Ladybird</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>10</td>
+        <td>756</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2019">ITM_itemlist#Señorita Scarab</a>
+          </details>
+        </td>
+        <td class="side">Señorita Scarab</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>612</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2020">ITM_itemlist#Emperor Beetle</a>
+          </details>
+        </td>
+        <td class="side">Emperor Beetle</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>5</td>
+        <td>-8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>14</td>
+        <td>-10</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>510</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2021">ITM_itemlist#Wheel Lurker</a>
+          </details>
+        </td>
+        <td class="side">Wheel Lurker</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>-14</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>882</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2022">ITM_itemlist#Ultramarine Ant</a>
+          </details>
+        </td>
+        <td class="side">Ultramarine Ant</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>5</td>
+        <td>8</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>10</td>
+        <td>-4</td>
+        <td>882</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2023">ITM_itemlist#Scarlet Crawler</a>
+          </details>
+        </td>
+        <td class="side">Scarlet Crawler</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>5</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>8</td>
+        <td>8</td>
+        <td>1242</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2024">ITM_itemlist#Shiny Scarab</a>
+          </details>
+        </td>
+        <td class="side">Shiny Scarab</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>-4</td>
+        <td>1380</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2025">ITM_itemlist#Water Boatman</a>
+          </details>
+        </td>
+        <td class="side">Water Boatman</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>5</td>
+        <td>18</td>
+        <td>12</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-14</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>1932</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2026">ITM_itemlist#Electric Cricket</a>
+          </details>
+        </td>
+        <td class="side">Electric Cricket</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>4</td>
+        <td>1152</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2027">ITM_itemlist#Scissor Bug</a>
+          </details>
+        </td>
+        <td class="side">Scissor Bug</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>10</td>
+        <td>-12</td>
+        <td>720</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2028">ITM_itemlist#Dew Beetle</a>
+          </details>
+        </td>
+        <td class="side">Dew Beetle</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>900</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2029">ITM_itemlist#Glider Cockroach</a>
+          </details>
+        </td>
+        <td class="side">Glider Cockroach</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>5</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>22</td>
+        <td>-6</td>
+        <td>1500</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2030">ITM_itemlist#Minute Mantis</a>
+          </details>
+        </td>
+        <td class="side">Minute Mantis</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>5</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>-8</td>
+        <td>22</td>
+        <td>-6</td>
+        <td>1620</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2031">ITM_itemlist#Love Beetle</a>
+          </details>
+        </td>
+        <td class="side">Love Beetle</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>5</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>1620</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2032">ITM_itemlist#Kneecap Rock</a>
+          </details>
+        </td>
+        <td class="side">Kneecap Rock</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>12</td>
+        <td>16</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>672</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2033">ITM_itemlist#Confusion Ivy</a>
+          </details>
+        </td>
+        <td class="side">Confusion Ivy</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>6</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>294</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2034">ITM_itemlist#Clarity Moss</a>
+          </details>
+        </td>
+        <td class="side">Clarity Moss</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>10</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>294</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2035">ITM_itemlist#Mat Ice</a>
+          </details>
+        </td>
+        <td class="side">Mat Ice</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>14</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>480</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2036">ITM_itemlist#Bluesky Bark</a>
+          </details>
+        </td>
+        <td class="side">Bluesky Bark</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>624</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2037">ITM_itemlist#Pione Stone</a>
+          </details>
+        </td>
+        <td class="side">Pione Stone</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>336</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2038">ITM_itemlist#Charcoal Leg</a>
+          </details>
+        </td>
+        <td class="side">Charcoal Leg</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>660</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2039">ITM_itemlist#Ether Pebble</a>
+          </details>
+        </td>
+        <td class="side">Ether Pebble</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>6</td>
+        <td>10</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>600</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2040">ITM_itemlist#Rumble Coal</a>
+          </details>
+        </td>
+        <td class="side">Rumble Coal</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>-4</td>
+        <td>480</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2041">ITM_itemlist#Mist Tree</a>
+          </details>
+        </td>
+        <td class="side">Mist Tree</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>8</td>
+        <td>14</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>462</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2042">ITM_itemlist#Lemon Stone</a>
+          </details>
+        </td>
+        <td class="side">Lemon Stone</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>14</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>396</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2043">ITM_itemlist#Feather Leaf</a>
+          </details>
+        </td>
+        <td class="side">Feather Leaf</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>6</td>
+        <td>4</td>
+        <td>10</td>
+        <td>858</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2044">ITM_itemlist#Water Log</a>
+          </details>
+        </td>
+        <td class="side">Water Log</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>16</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>528</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2045">ITM_itemlist#Wool Rock</a>
+          </details>
+        </td>
+        <td class="side">Wool Rock</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>14</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>660</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2046">ITM_itemlist#White Tail</a>
+          </details>
+        </td>
+        <td class="side">White Tail</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>990</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2047">ITM_itemlist#Marine Marble</a>
+          </details>
+        </td>
+        <td class="side">Marine Marble</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>6</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>12</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>1440</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2048">ITM_itemlist#Oil Branch</a>
+          </details>
+        </td>
+        <td class="side">Oil Branch</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-4</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>630</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2049">ITM_itemlist#Dilemma Rock</a>
+          </details>
+        </td>
+        <td class="side">Dilemma Rock</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>12</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>14</td>
+        <td>-12</td>
+        <td>1260</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2050">ITM_itemlist#Absurd Branch</a>
+          </details>
+        </td>
+        <td class="side">Absurd Branch</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-12</td>
+        <td>14</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>714</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2051">ITM_itemlist#Insanity Moss</a>
+          </details>
+        </td>
+        <td class="side">Insanity Moss</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>816</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2052">ITM_itemlist#Gypsum Branch</a>
+          </details>
+        </td>
+        <td class="side">Gypsum Branch</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>6</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>16</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>1368</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2053">ITM_itemlist#Black Ash</a>
+          </details>
+        </td>
+        <td class="side">Black Ash</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>14</td>
+        <td>14</td>
+        <td>-10</td>
+        <td>-14</td>
+        <td>798</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2054">ITM_itemlist#Emerald Snow</a>
+          </details>
+        </td>
+        <td class="side">Emerald Snow</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>14</td>
+        <td>6</td>
+        <td>-14</td>
+        <td>1026</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2055">ITM_itemlist#Rabbit Stone</a>
+          </details>
+        </td>
+        <td class="side">Rabbit Stone</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>6</td>
+        <td>10</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>-8</td>
+        <td>-6</td>
+        <td>684</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2056">ITM_itemlist#Broom Icicle</a>
+          </details>
+        </td>
+        <td class="side">Broom Icicle</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>6</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-8</td>
+        <td>798</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2057">ITM_itemlist#Poisonous Coral</a>
+          </details>
+        </td>
+        <td class="side">Poisonous Coral</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>16</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2112</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2058">ITM_itemlist#Poison Ivy</a>
+          </details>
+        </td>
+        <td class="side">Poison Ivy</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>10</td>
+        <td>2</td>
+        <td>1716</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2059">ITM_itemlist#Amber Leaf</a>
+          </details>
+        </td>
+        <td class="side">Amber Leaf</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>6</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>6</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>660</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2060">ITM_itemlist#Ivy Nest</a>
+          </details>
+        </td>
+        <td class="side">Ivy Nest</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>8</td>
+        <td>1656</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2061">ITM_itemlist#Mossy Panel</a>
+          </details>
+        </td>
+        <td class="side">Mossy Panel</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-16</td>
+        <td>552</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2062">ITM_itemlist#Bronze Wood</a>
+          </details>
+        </td>
+        <td class="side">Bronze Wood</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>6</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>1380</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2063">ITM_itemlist#Missing Tree</a>
+          </details>
+        </td>
+        <td class="side">Missing Tree</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>6</td>
+        <td>10</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-6</td>
+        <td>2736</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2064">ITM_itemlist#Fortune Feather</a>
+          </details>
+        </td>
+        <td class="side">Fortune Feather</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>6</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>2</td>
+        <td>12</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>1584</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2065">ITM_itemlist#White Styrene</a>
+          </details>
+        </td>
+        <td class="side">White Styrene</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>6</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>10</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2100</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2066">ITM_itemlist#Black Styrene</a>
+          </details>
+        </td>
+        <td class="side">Black Styrene</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>10</td>
+        <td>6</td>
+        <td>-8</td>
+        <td>1650</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2067">ITM_itemlist#Blood Oil</a>
+          </details>
+        </td>
+        <td class="side">Blood Oil</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>6</td>
+        <td>4</td>
+        <td>12</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>1200</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2068">ITM_itemlist#Blue Chain</a>
+          </details>
+        </td>
+        <td class="side">Blue Chain</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>7</td>
+        <td>30</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>-12</td>
+        <td>4</td>
+        <td>300</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2069">ITM_itemlist#Rabbit Diode</a>
+          </details>
+        </td>
+        <td class="side">Rabbit Diode</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>7</td>
+        <td>8</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>300</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2070">ITM_itemlist#Rusty Bolt</a>
+          </details>
+        </td>
+        <td class="side">Rusty Bolt</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>8</td>
+        <td>528</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2071">ITM_itemlist#Winding Gear</a>
+          </details>
+        </td>
+        <td class="side">Winding Gear</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>7</td>
+        <td>24</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>-12</td>
+        <td>2</td>
+        <td>480</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2072">ITM_itemlist#Black Chip</a>
+          </details>
+        </td>
+        <td class="side">Black Chip</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>7</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-8</td>
+        <td>10</td>
+        <td>780</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2073">ITM_itemlist#Ready Coil</a>
+          </details>
+        </td>
+        <td class="side">Ready Coil</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>660</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2074">ITM_itemlist#Blue Gear Shard</a>
+          </details>
+        </td>
+        <td class="side">Blue Gear Shard</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>7</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>18</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>528</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2075">ITM_itemlist#Rumble Part</a>
+          </details>
+        </td>
+        <td class="side">Rumble Part</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>528</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2076">ITM_itemlist#White Tube</a>
+          </details>
+        </td>
+        <td class="side">White Tube</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>7</td>
+        <td>8</td>
+        <td>-4</td>
+        <td>-6</td>
+        <td>8</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>840</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2077">ITM_itemlist#Green Diode</a>
+          </details>
+        </td>
+        <td class="side">Green Diode</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-10</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>12</td>
+        <td>756</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2078">ITM_itemlist#Spiral Lamp</a>
+          </details>
+        </td>
+        <td class="side">Spiral Lamp</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>7</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>840</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2079">ITM_itemlist#White Cover</a>
+          </details>
+        </td>
+        <td class="side">White Cover</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>7</td>
+        <td>12</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>1224</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2080">ITM_itemlist#Modern Resistor</a>
+          </details>
+        </td>
+        <td class="side">Modern Resistor</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>-18</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>4</td>
+        <td>12</td>
+        <td>714</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2081">ITM_itemlist#Green Cam</a>
+          </details>
+        </td>
+        <td class="side">Green Cam</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>7</td>
+        <td>12</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>918</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2082">ITM_itemlist#Strong Screw</a>
+          </details>
+        </td>
+        <td class="side">Strong Screw</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>7</td>
+        <td>16</td>
+        <td>2</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>918</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2083">ITM_itemlist#Gold Condenser</a>
+          </details>
+        </td>
+        <td class="side">Gold Condenser</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>7</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>-8</td>
+        <td>18</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>960</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2084">ITM_itemlist#Purple Lamp</a>
+          </details>
+        </td>
+        <td class="side">Purple Lamp</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>18</td>
+        <td>840</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2085">ITM_itemlist#Crimson Gear</a>
+          </details>
+        </td>
+        <td class="side">Crimson Gear</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>-10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1200</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2086">ITM_itemlist#Locust Spring</a>
+          </details>
+        </td>
+        <td class="side">Locust Spring</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>12</td>
+        <td>2</td>
+        <td>1134</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2087">ITM_itemlist#Art Core Coil</a>
+          </details>
+        </td>
+        <td class="side">Art Core Coil</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>7</td>
+        <td>18</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>-8</td>
+        <td>2</td>
+        <td>12</td>
+        <td>1890</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2088">ITM_itemlist#Tail Antenna</a>
+          </details>
+        </td>
+        <td class="side">Tail Antenna</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>-10</td>
+        <td>6</td>
+        <td>1260</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2089">ITM_itemlist#Warning Lamp</a>
+          </details>
+        </td>
+        <td class="side">Warning Lamp</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>7</td>
+        <td>4</td>
+        <td>8</td>
+        <td>-10</td>
+        <td>4</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>1056</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2090">ITM_itemlist#Digital Filament</a>
+          </details>
+        </td>
+        <td class="side">Digital Filament</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>7</td>
+        <td>24</td>
+        <td>-6</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-14</td>
+        <td>12</td>
+        <td>1188</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2091">ITM_itemlist#Retro Diode</a>
+          </details>
+        </td>
+        <td class="side">Retro Diode</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>7</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>14</td>
+        <td>1380</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2092">ITM_itemlist#Modern Blue Gear</a>
+          </details>
+        </td>
+        <td class="side">Modern Blue Gear</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>7</td>
+        <td>16</td>
+        <td>-10</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>4</td>
+        <td>2</td>
+        <td>4</td>
+        <td>1380</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2093">ITM_itemlist#Snow Transistor</a>
+          </details>
+        </td>
+        <td class="side">Snow Transistor</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>8</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>1380</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2094">ITM_itemlist#Fancy Bolt</a>
+          </details>
+        </td>
+        <td class="side">Fancy Bolt</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1584</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2095">ITM_itemlist#Blue Light Amp</a>
+          </details>
+        </td>
+        <td class="side">Blue Light Amp</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>7</td>
+        <td>16</td>
+        <td>-12</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1152</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2096">ITM_itemlist#Fairy Tale Diode</a>
+          </details>
+        </td>
+        <td class="side">Fairy Tale Diode</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>12</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>1296</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2097">ITM_itemlist#Grape Spring</a>
+          </details>
+        </td>
+        <td class="side">Grape Spring</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>7</td>
+        <td>24</td>
+        <td>-6</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>-14</td>
+        <td>10</td>
+        <td>1296</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2098">ITM_itemlist#Angel Engine X</a>
+          </details>
+        </td>
+        <td class="side">Angel Engine X</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>8</td>
+        <td>12</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2250</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2099">ITM_itemlist#Leaf Coil</a>
+          </details>
+        </td>
+        <td class="side">Leaf Coil</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>7</td>
+        <td>10</td>
+        <td>2</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>1350</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2100">ITM_itemlist#Warrior Screw</a>
+          </details>
+        </td>
+        <td class="side">Warrior Screw</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>7</td>
+        <td>12</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>1500</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2101">ITM_itemlist#Golden Cog</a>
+          </details>
+        </td>
+        <td class="side">Golden Cog</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>7</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>-4</td>
+        <td>14</td>
+        <td>1620</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2102">ITM_itemlist#Angel Engine Y</a>
+          </details>
+        </td>
+        <td class="side">Angel Engine Y</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>7</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>18</td>
+        <td>2</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>1980</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2103">ITM_itemlist#Thunder Compass</a>
+          </details>
+        </td>
+        <td class="side">Thunder Compass</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>7</td>
+        <td>18</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>2160</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2104">ITM_itemlist#Plate Snow</a>
+          </details>
+        </td>
+        <td class="side">Plate Snow</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>8</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>4</td>
+        <td>16</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>450</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2105">ITM_itemlist#Rainbow Zirconia</a>
+          </details>
+        </td>
+        <td class="side">Rainbow Zirconia</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>6</td>
+        <td>8</td>
+        <td>390</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2106">ITM_itemlist#Leaf Mystery</a>
+          </details>
+        </td>
+        <td class="side">Leaf Mystery</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>10</td>
+        <td>10</td>
+        <td>588</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2107">ITM_itemlist#Steel Silk</a>
+          </details>
+        </td>
+        <td class="side">Steel Silk</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>8</td>
+        <td>4</td>
+        <td>2</td>
+        <td>18</td>
+        <td>924</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2108">ITM_itemlist#Gold Dust Illusion</a>
+          </details>
+        </td>
+        <td class="side">Gold Dust Illusion</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>8</td>
+        <td>-2</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>16</td>
+        <td>4</td>
+        <td>6</td>
+        <td>624</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2109">ITM_itemlist#Devious Gravity</a>
+          </details>
+        </td>
+        <td class="side">Devious Gravity</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>672</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2110">ITM_itemlist#White Songbird</a>
+          </details>
+        </td>
+        <td class="side">White Songbird</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>720</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2111">ITM_itemlist#Death Bangle</a>
+          </details>
+        </td>
+        <td class="side">Death Bangle</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>8</td>
+        <td>-10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>18</td>
+        <td>12</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1008</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2112">ITM_itemlist#Verdant Eternity</a>
+          </details>
+        </td>
+        <td class="side">Verdant Eternity</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>12</td>
+        <td>4</td>
+        <td>864</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2113">ITM_itemlist#White Night Rod</a>
+          </details>
+        </td>
+        <td class="side">White Night Rod</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>972</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2114">ITM_itemlist#Love Crane</a>
+          </details>
+        </td>
+        <td class="side">Love Crane</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>8</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>2</td>
+        <td>960</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2115">ITM_itemlist#Fire Abron</a>
+          </details>
+        </td>
+        <td class="side">Fire Abron</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>8</td>
+        <td>-6</td>
+        <td>2</td>
+        <td>10</td>
+        <td>12</td>
+        <td>4</td>
+        <td>6</td>
+        <td>4</td>
+        <td>960</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2116">ITM_itemlist#Pauper's Cup</a>
+          </details>
+        </td>
+        <td class="side">Pauper's Cup</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>8</td>
+        <td>24</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>1122</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2117">ITM_itemlist#Happy Carnival</a>
+          </details>
+        </td>
+        <td class="side">Happy Carnival</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>8</td>
+        <td>12</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>2</td>
+        <td>12</td>
+        <td>2</td>
+        <td>1518</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2118">ITM_itemlist#Dawn Dice</a>
+          </details>
+        </td>
+        <td class="side">Dawn Dice</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>18</td>
+        <td>-8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>990</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2119">ITM_itemlist#Lemonade Sky</a>
+          </details>
+        </td>
+        <td class="side">Lemonade Sky</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>1224</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2120">ITM_itemlist#Forest of Gossip</a>
+          </details>
+        </td>
+        <td class="side">Forest of Gossip</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>936</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2121">ITM_itemlist#Gravel Disk</a>
+          </details>
+        </td>
+        <td class="side">Gravel Disk</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>8</td>
+        <td>8</td>
+        <td>14</td>
+        <td>2</td>
+        <td>8</td>
+        <td>14</td>
+        <td>8</td>
+        <td>-2</td>
+        <td>1872</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2122">ITM_itemlist#Rumble Box</a>
+          </details>
+        </td>
+        <td class="side">Rumble Box</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>16</td>
+        <td>1092</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2123">ITM_itemlist#Black Panel</a>
+          </details>
+        </td>
+        <td class="side">Black Panel</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>8</td>
+        <td>18</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-12</td>
+        <td>6</td>
+        <td>1248</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2124">ITM_itemlist#Tasty Sausage</a>
+          </details>
+        </td>
+        <td class="side">Tasty Sausage</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>8</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>-6</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>672</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2125">ITM_itemlist#Macro Passion</a>
+          </details>
+        </td>
+        <td class="side">Macro Passion</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2</td>
+        <td>1428</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2126">ITM_itemlist#High Violet</a>
+          </details>
+        </td>
+        <td class="side">High Violet</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>6</td>
+        <td>8</td>
+        <td>1350</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2127">ITM_itemlist#Steel Hauyne</a>
+          </details>
+        </td>
+        <td class="side">Steel Hauyne</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>8</td>
+        <td>18</td>
+        <td>-4</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>12</td>
+        <td>1530</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2128">ITM_itemlist#Ha Ha Ha</a>
+          </details>
+        </td>
+        <td class="side">Ha Ha Ha</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1824</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2129">ITM_itemlist#Thunder Atmos</a>
+          </details>
+        </td>
+        <td class="side">Thunder Atmos</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>12</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2304</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2130">ITM_itemlist#Blue Glow</a>
+          </details>
+        </td>
+        <td class="side">Blue Glow</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1632</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2131">ITM_itemlist#Blue Blood</a>
+          </details>
+        </td>
+        <td class="side">Blue Blood</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>8</td>
+        <td>18</td>
+        <td>6</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>-6</td>
+        <td>4</td>
+        <td>1734</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2132">ITM_itemlist#Frost Glass</a>
+          </details>
+        </td>
+        <td class="side">Frost Glass</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>14</td>
+        <td>10</td>
+        <td>2622</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2133">ITM_itemlist#Large Handcuffs</a>
+          </details>
+        </td>
+        <td class="side">Large Handcuffs</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>1596</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2134">ITM_itemlist#Red Frontier</a>
+          </details>
+        </td>
+        <td class="side">Red Frontier</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>12</td>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2760</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2135">ITM_itemlist#Darkness Bottle</a>
+          </details>
+        </td>
+        <td class="side">Darkness Bottle</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>1560</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2136">ITM_itemlist#Bud of Eternity</a>
+          </details>
+        </td>
+        <td class="side">Bud of Eternity</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>-6</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>10</td>
+        <td>6</td>
+        <td>1680</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2137">ITM_itemlist#Hunger Crash</a>
+          </details>
+        </td>
+        <td class="side">Hunger Crash</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>22</td>
+        <td>-4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>1386</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2138">ITM_itemlist#Splish Splash</a>
+          </details>
+        </td>
+        <td class="side">Splish Splash</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1764</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2139">ITM_itemlist#Star Cute</a>
+          </details>
+        </td>
+        <td class="side">Star Cute</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>12</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2112</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2140">ITM_itemlist#Summer Star</a>
+          </details>
+        </td>
+        <td class="side">Summer Star</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>-4</td>
+        <td>4</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>1188</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2141">ITM_itemlist#Tweet Tweet</a>
+          </details>
+        </td>
+        <td class="side">Tweet Tweet</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>8</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>16</td>
+        <td>-2</td>
+        <td>10</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2346</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2142">ITM_itemlist#Flame Frame</a>
+          </details>
+        </td>
+        <td class="side">Flame Frame</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>14</td>
+        <td>-4</td>
+        <td>1794</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2143">ITM_itemlist#Eryth Blue</a>
+          </details>
+        </td>
+        <td class="side">Eryth Blue</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>8</td>
+        <td>10</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-8</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2160</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2144">ITM_itemlist#Dramatic Night</a>
+          </details>
+        </td>
+        <td class="side">Dramatic Night</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>8</td>
+        <td>18</td>
+        <td>4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>-12</td>
+        <td>4</td>
+        <td>2304</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2145">ITM_itemlist#Smoke Cylinder</a>
+          </details>
+        </td>
+        <td class="side">Smoke Cylinder</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>-14</td>
+        <td>6</td>
+        <td>4</td>
+        <td>10</td>
+        <td>4</td>
+        <td>14</td>
+        <td>2250</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2146">ITM_itemlist#Sacred Panther</a>
+          </details>
+        </td>
+        <td class="side">Sacred Panther</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>2</td>
+        <td>12</td>
+        <td>3600</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2147">ITM_itemlist#Parts Noble</a>
+          </details>
+        </td>
+        <td class="side">Parts Noble</td>
+        <td><a href="FLD_maplist.html#24">Central Factory</td></a>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>10</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2550</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2148">ITM_itemlist#Tap Tap Tap</a>
+          </details>
+        </td>
+        <td class="side">Tap Tap Tap</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>-2</td>
+        <td>-2</td>
+        <td>4</td>
+        <td>10</td>
+        <td>2028</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2149">ITM_itemlist#High Entia Jewel</a>
+          </details>
+        </td>
+        <td class="side">High Entia Jewel</td>
+        <td><a href="FLD_maplist.html#25">Bionis' Interior</td></a>
+        <td>8</td>
+        <td>4</td>
+        <td>-12</td>
+        <td>4</td>
+        <td>6</td>
+        <td>12</td>
+        <td>2</td>
+        <td>12</td>
+        <td>2184</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2150">ITM_itemlist#Coin of Fortune</a>
+          </details>
+        </td>
+        <td class="side">Coin of Fortune</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>8</td>
+        <td>-2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>4</td>
+        <td>12</td>
+        <td>2700</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#2151">ITM_itemlist#Love Source</a>
+          </details>
+        </td>
+        <td class="side">Love Source</td>
+        <td><a href="FLD_maplist.html#26">Memory Space</td></a>
+        <td>8</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>5625</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3748">ITM_itemlist#10</a>
+          </details>
+        </td>
+        <td class="side">10</td>
+        <td><a href="FLD_maplist.html#2">Colony 9</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3749">ITM_itemlist#50</a>
+          </details>
+        </td>
+        <td class="side">50</td>
+        <td><a href="FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3750">ITM_itemlist#100</a>
+          </details>
+        </td>
+        <td class="side">100</td>
+        <td><a href="FLD_maplist.html#4">Bionis' Leg</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3751">ITM_itemlist#300</a>
+          </details>
+        </td>
+        <td class="side">300</td>
+        <td><a href="FLD_maplist.html#5">Colony 6</td></a>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>300</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3752">ITM_itemlist#500</a>
+          </details>
+        </td>
+        <td class="side">500</td>
+        <td><a href="FLD_maplist.html#6">Ether Mine</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>500</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3753">ITM_itemlist#800</a>
+          </details>
+        </td>
+        <td class="side">800</td>
+        <td><a href="FLD_maplist.html#7">Satorl Marsh</td></a>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>800</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3754">ITM_itemlist#1000</a>
+          </details>
+        </td>
+        <td class="side">1000</td>
+        <td><a href="FLD_maplist.html#8">Makna Forest</td></a>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1000</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3755">ITM_itemlist#1500</a>
+          </details>
+        </td>
+        <td class="side">1500</td>
+        <td><a href="FLD_maplist.html#9">Frontier Village</td></a>
+        <td>8</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1500</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3756">ITM_itemlist#3000</a>
+          </details>
+        </td>
+        <td class="side">3000</td>
+        <td><a href="FLD_maplist.html#11">High Entia Tomb</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3000</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3757">ITM_itemlist#5000</a>
+          </details>
+        </td>
+        <td class="side">5000</td>
+        <td><a href="FLD_maplist.html#12">Eryth Sea</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5000</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3758">ITM_itemlist#8000</a>
+          </details>
+        </td>
+        <td class="side">8000</td>
+        <td><a href="FLD_maplist.html#13">Alcamoth</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8000</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3759">ITM_itemlist#10000</a>
+          </details>
+        </td>
+        <td class="side">10000</td>
+        <td><a href="FLD_maplist.html#15">Prison Island</td></a>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10000</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3760">ITM_itemlist#20000</a>
+          </details>
+        </td>
+        <td class="side">20000</td>
+        <td><a href="FLD_maplist.html#16">Valak Mountain</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20000</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3761">ITM_itemlist#30000</a>
+          </details>
+        </td>
+        <td class="side">30000</td>
+        <td><a href="FLD_maplist.html#17">Sword Valley</td></a>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30000</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3762">ITM_itemlist#40000</a>
+          </details>
+        </td>
+        <td class="side">40000</td>
+        <td><a href="FLD_maplist.html#18">Galahad Fortress</td></a>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>40000</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3763">ITM_itemlist#50000</a>
+          </details>
+        </td>
+        <td class="side">50000</td>
+        <td><a href="FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>8</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50000</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3764">ITM_itemlist#60000</a>
+          </details>
+        </td>
+        <td class="side">60000</td>
+        <td><a href="FLD_maplist.html#21">Mechonis Field</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60000</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ITM_itemlist.html#3765">ITM_itemlist#65535</a>
+          </details>
+        </td>
+        <td class="side">65535</td>
+        <td><a href="FLD_maplist.html#23">Agniratha</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>65535</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

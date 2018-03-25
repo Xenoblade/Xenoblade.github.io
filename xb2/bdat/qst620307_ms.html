@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst620307_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst620307_msg0001</td>
+        <td>84</td>
+        <td class="side">Thanks for that!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst620307_msg0002</td>
+        <td>84</td>
+        <td class="side">I think everything's ready now.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst620307_msg0003</td>
+        <td>84</td>
+        <td class="side">There's no way this can fail. With
+the aurora shining bright, and the 
+Posystone ring to give her...</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst620307_msg0004</td>
+        <td>84</td>
+        <td class="side">Yeah, it's perfect. I guess all I
+need now is to actually...do it.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst620307_msg0005</td>
+        <td>84</td>
+        <td class="side">OK! Then I better go get my
+beautiful girl!</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst620307_msg0006</td>
+        <td>84</td>
+        <td class="side">You guys have been so helpful.
+I'll never forget this.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst620307_msg0007</td>
+        <td>84</td>
+        <td class="side">Thank the Architect I've met you!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst620307_msg0008</td>
+        <td>84</td>
+        <td class="side">Yeah, yeah. Just go get her!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst620307_msg0101</td>
+        <td>84</td>
+        <td class="side">Hope it goes well for the guy!</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst620307_msg0102</td>
+        <td>84</td>
+        <td class="side">Fingers crossed indeed.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst620307_msg0103</td>
+        <td>84</td>
+        <td class="side">Even if proposal fail, at least Poppi and
+friends here. Can pick up pieces.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst620307_msg0104</td>
+        <td>84</td>
+        <td class="side">C'mon now Poppi, don't jinx it...</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst620307_msg0105</td>
+        <td>84</td>
+        <td class="side">Either way it's bound to be a sight.
+Who's up for watching it happen?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst620307_msg0106</td>
+        <td>84</td>
+        <td class="side">Are you for real?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst620307_msg0107</td>
+        <td>84</td>
+        <td class="side">Oh, like you're not even the tiniest bit
+curious? Give me a break.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst620307_msg0108</td>
+        <td>84</td>
+        <td class="side">OK, maybe I am... Just the tiniest bit!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst620307_msg0109</td>
+        <td>84</td>
+        <td class="side">I'm not gonna lie, I'm a massive bit
+curious, personally!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst620307_msg0110</td>
+        <td>84</td>
+        <td class="side">If we all just stand there, he's bound to
+lose his nerve though...</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst620307_msg0111</td>
+        <td>84</td>
+        <td class="side">You've got a point...</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst620307_msg0112</td>
+        <td>84</td>
+        <td class="side">All right. Rex, we'll let you choose
+who gets to stay and watch.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst620307_msg0113</td>
+        <td>84</td>
+        <td class="side">What's this now?!</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst620307_msg0114</td>
+        <td>84</td>
+        <td class="side">I, uh, that's... (Titan's foot...)</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst620307_msg0115</td>
+        <td>84</td>
+        <td class="side">Who will get to watch?</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst620307_msg0116</td>
+        <td>84</td>
+        <td class="side">Pyra</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst620307_msg0117</td>
+        <td>84</td>
+        <td class="side">Mythra</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst620307_msg0118</td>
+        <td>84</td>
+        <td class="side">Someone else</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst620307_msg0119</td>
+        <td>84</td>
+        <td class="side">Nia</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst620307_msg0120</td>
+        <td>84</td>
+        <td class="side">Poppi</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst620307_msg0121</td>
+        <td>84</td>
+        <td class="side">Brighid</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst620307_msg0122</td>
+        <td>84</td>
+        <td class="side">Pandoria</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst620307_msg0123</td>
+        <td>84</td>
+        <td class="side">Mòrag</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst620307_msg0201</td>
+        <td>84</td>
+        <td class="side">I'm so glad everything worked out
+for those two.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst620307_msg0202</td>
+        <td>84</td>
+        <td class="side">Yeah, and to think it's all thanks to
+our hard work that they got their
+happily ever after.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst620307_msg0203</td>
+        <td>84</td>
+        <td class="side">That makes us kinda awesome, eh?</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst620307_msg0204</td>
+        <td>84</td>
+        <td class="side">I really think it does.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst620307_msg0205</td>
+        <td>84</td>
+        <td class="side">Yet another thing Drivers and Blades
+can achieve together.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst620307_msg0206</td>
+        <td>84</td>
+        <td class="side">We'll have to keep up the good work.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst620307_msg0207</td>
+        <td>84</td>
+        <td class="side">For sure!</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst620307_msg0301</td>
+        <td>84</td>
+        <td class="side">Aw, isn't that nice? Looks like he
+brought it home after all. All on his
+own, too.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst620307_msg0302</td>
+        <td>84</td>
+        <td class="side">Good on them!</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst620307_msg0303</td>
+        <td>84</td>
+        <td class="side">So how about you, Rex?
+When are you gonna get around to it?</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst620307_msg0304</td>
+        <td>84</td>
+        <td class="side">Get around to it? ...To what?</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qst620307_msg0305</td>
+        <td>84</td>
+        <td class="side">You know what I'm talking about!</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qst620307_msg0306</td>
+        <td>84</td>
+        <td class="side">I...really don't...?</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qst620307_msg0307</td>
+        <td>84</td>
+        <td class="side">You know! Posystone rings and
+auroras and all that!</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qst620307_msg0308</td>
+        <td>84</td>
+        <td class="side">Oh... That...</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qst620307_msg0309</td>
+        <td>84</td>
+        <td class="side">Uhm... Maybe in a little while...?</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qst620307_msg0310</td>
+        <td>84</td>
+        <td class="side">Or, maybe more like, a good long while...</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qst620307_msg0311</td>
+        <td>84</td>
+        <td class="side">Rex, you're hopeless...</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qst620307_msg0401</td>
+        <td>84</td>
+        <td class="side">Looks like it's all turned up roses.</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qst620307_msg0402</td>
+        <td>84</td>
+        <td class="side">No kidding!
+It feels like a load off my chest...</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qst620307_msg0403</td>
+        <td>84</td>
+        <td class="side">Wasn't quite sure he'd pull it off
+on his own, but he sealed the deal.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qst620307_msg0404</td>
+        <td>84</td>
+        <td class="side">Good on him...</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qst620307_msg0405</td>
+        <td>84</td>
+        <td class="side">Anyway, you and me, we're the
+independent type. It's not like us to 
+depend on others to do things for us.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qst620307_msg0406</td>
+        <td>84</td>
+        <td class="side">You could say that again.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qst620307_msg0407</td>
+        <td>84</td>
+        <td class="side">I don't really see that changing
+anytime soon...</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qst620307_msg0408</td>
+        <td>84</td>
+        <td class="side">No, I don't imagine it will...</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qst620307_msg0501</td>
+        <td>84</td>
+        <td class="side">I'm glad everything went well.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qst620307_msg0502</td>
+        <td>84</td>
+        <td class="side">Poppi a little disappointed.
+Was hoping for pieces to pick up...</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qst620307_msg0503</td>
+        <td>84</td>
+        <td class="side">Cut it out, Poppi...</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qst620307_msg0504</td>
+        <td>84</td>
+        <td class="side">Rex, why ask Poppi to watch?</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qst620307_msg0505</td>
+        <td>84</td>
+        <td class="side">Is maybe feeling envious of Masterpon?</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qst620307_msg0506</td>
+        <td>84</td>
+        <td class="side">Nononono, nothing like that!</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qst620307_msg0507</td>
+        <td>84</td>
+        <td class="side">It was more like... You've not been alive
+that long, right? So I thought you might
+like to experience something like this.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qst620307_msg0508</td>
+        <td>84</td>
+        <td class="side">Ah... So Rex is concern after correct
+development of Poppi. Even Masterpon
+sometimes neglect that. Thank you!</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qst620307_msg0509</td>
+        <td>84</td>
+        <td class="side">...You're welcome, I guess.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qst620307_msg0510</td>
+        <td>84</td>
+        <td class="side">Rex... Poppi must acknowledge
+good deed of Rex. From today, please
+accept title of Vice-Masterpon.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qst620307_msg0511</td>
+        <td>84</td>
+        <td class="side">Vice-Masterpon?!</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qst620307_msg0512</td>
+        <td>84</td>
+        <td class="side">No, ah, that's all right, really.
+Let's just...keep things as they were,
+OK? I think that's better for everyone...</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qst620307_msg0513</td>
+        <td>0</td>
+        <td class="side">If Vi-... If Rex say so.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qst620307_msg0601</td>
+        <td>84</td>
+        <td class="side">How nice....
+It went exactly as I expected.
+</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qst620307_msg0602</td>
+        <td>84</td>
+        <td class="side">You knew she'd say yes, Brighid?</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qst620307_msg0603</td>
+        <td>84</td>
+        <td class="side">Of course.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qst620307_msg0604</td>
+        <td>84</td>
+        <td class="side">You saw how she was at the harbor,
+didn't you?</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qst620307_msg0605</td>
+        <td>84</td>
+        <td class="side">I may not have spoken with her myself,
+but what I heard told me all I needed to
+know.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qst620307_msg0606</td>
+        <td>84</td>
+        <td class="side">And while Len is a little peculiar,
+his love for her is true and pure.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qst620307_msg0607</td>
+        <td>84</td>
+        <td class="side">Anyone with eyes to see can tell a
+couple like that is a sure thing.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qst620307_msg0608</td>
+        <td>84</td>
+        <td class="side">Wow...</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qst620307_msg0609</td>
+        <td>84</td>
+        <td class="side">If Mòrag ever gets into a relationship,
+she'll be safe as houses with you
+around, Brighid!</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qst620307_msg0610</td>
+        <td>84</td>
+        <td class="side">...Hm.</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qst620307_msg0701</td>
+        <td>84</td>
+        <td class="side">Aww, I love a happy ending!</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qst620307_msg0702</td>
+        <td>84</td>
+        <td class="side">Yeah, I'm real happy it worked out!</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qst620307_msg0703</td>
+        <td>84</td>
+        <td class="side">Hang on there, you shouldn't act like
+it's all done and dusted now!</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qst620307_msg0704</td>
+        <td>84</td>
+        <td class="side">Huh? What do you mean?</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qst620307_msg0705</td>
+        <td>84</td>
+        <td class="side">Well, you know! Being married is a lot
+like the relationship between a Driver
+and their Blade, right?</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qst620307_msg0706</td>
+        <td>84</td>
+        <td class="side">From now on, Len's gonna be left with
+no defenses against Aurelia! She'll have
+him around her finger in no time flat!</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qst620307_msg0707</td>
+        <td>84</td>
+        <td class="side">I...didn't think of that.</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qst620307_msg0708</td>
+        <td>84</td>
+        <td class="side">I guess I should be thankful I've ended
+up with Pyra and Mythra, huh? At least
+they're both nice...</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qst620307_msg0709</td>
+        <td>84</td>
+        <td class="side">Rex...
+You might have the toughest lot of any
+Driver on Alrest, actually...</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qst620307_msg0801</td>
+        <td>84</td>
+        <td class="side">I'd call that a success, wouldn't you?</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qst620307_msg0802</td>
+        <td>84</td>
+        <td class="side">Indeed.
+A job well done.</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qst620307_msg0803</td>
+        <td>84</td>
+        <td class="side">What did you think of the happy
+couple, Mòrag?</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qst620307_msg0804</td>
+        <td>84</td>
+        <td class="side">Upon reflection, I see here two more
+souls for whose sake we mustn't
+falter. My resolve is strengthened.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qst620307_msg0805</td>
+        <td>84</td>
+        <td class="side">Hah, I should've know you'd say
+something like that.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>qst620307_msg0806</td>
+        <td>84</td>
+        <td class="side">I always try to remember that our daily
+struggle is so that people like them may
+yet have a future.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>qst620307_msg0807</td>
+        <td>84</td>
+        <td class="side">Be they Ardainian or Urayan...</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>qst620307_msg0808</td>
+        <td>84</td>
+        <td class="side">You're right...
+I won't forget that either.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

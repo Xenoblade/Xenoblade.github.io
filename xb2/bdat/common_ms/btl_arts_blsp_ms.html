@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>btl_arts_blsp_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Burning Sword</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Union Sword</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Sacred Arrow</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Infinity Blade</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Divine Sword</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Nexus Force</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Dark Maelstrom</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Jet Biter</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Quixotic Megaburst</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Quantum Judgment</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Azure III: Soulfire</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Sonic Thunderslash</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Crimson Storm</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Deadly Divide</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Hellwind of Ruin</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Illusory Bloom</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Ultimate Crow</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Star Crusher</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Diamond Inferno</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Lacerator</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Sea God's Tidal Wave</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Whiteout</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Apocalypse</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Demon Quadrant</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Rock My World</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Blazing Conquest</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Gobble Gobble!</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Lethal Lavender</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Melancholic Break</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Torrential Pain</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Winter's Wake</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Snowflake of Judgment</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Sweet Emotion</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Evil Ensemble</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Ursine Phantasm</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Going Ballistic</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Earth Priestess</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Royal Tea Party</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Divine Plasma</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Literacy Beatdown</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Electrifying Show</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Twixt Heaven & Hell</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Perfect Storm</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">X-Buster</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Heaven on Earth</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Dark Drama</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Invincible Moldavite</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Silver-Snow Glory</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Absolute Smash</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Immortal Spike</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Wisdom Strike</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Irresistible Rush</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Superior Strike</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Chaos Slam</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Heracles Break</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Megaton Charge</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Colossal Sting</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Radical Bullet</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Riot Hammer</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Overcharger</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Colossal Strike</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Incredible Beat</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Excess Axe</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Imperial Lance</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Dragoon Shot</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Victor Swing</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Triumphant Front</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Asteroid Throw</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Amazing Rush</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Savage Chakram</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Cleave the enemy with a giant sword
+of flame that detonates on impact.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Beat the enemy to a pulp with
+a medley of fire and water.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Rain down arrows of light from
+above to tear the enemy apart.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Unleash energy and sever the
+enemy with a sword of light.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Invert the power of regeneration
+to erode the enemy from within.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Beat the enemy to a pulp with
+a medley of fire and water.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Follow up Wild Roar with
+an overwhelming assault.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack with the Big Mecha
+Biter (once charged).</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire off numerous destructive
+missiles (once charged).</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Dice the enemy and unleash
+100% power in mid-air.</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Engulf the enemy in countless blue
+flames, reducing them to ashes.</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Power up Driver to strike the
+enemy at ultra high speed.</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Roc follows up Driver attack
+with an assault from the air.</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Slash the enemy with a
+giant blade of ether.</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Perform a spinning attack in the
+air, finishing with a bowshot.</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Transform weapon into scimitar
+and hack the enemy to pieces.</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Flourish two fans to slice the
+enemy with an elegant dance.</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Slash the enemy and emit mystic
+rays of light from your wings.</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Annihilate the enemy with attacks
+from four different weapons.</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Rush down the enemy and slam them
+with a leaping body press.</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Sharpen senses and unleash
+a series of fierce strikes.</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack repeatedly and slam your
+weapon to create a shockwave.</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Jab at the enemy repeatedly and
+fire a laser from the chest.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Mow down the enemy with 3 strikes,
+then finish with an almighty slice.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Use the momentum of a spinning cut
+to jump and fire a shockwave.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Slowly build up energy to
+burn the enemy to a crisp.</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Jump after a spinning attack
+to fire a hail of bullets.</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Spin along with the Bitball to send
+out a shockwave in all directions.</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Offer prayers to your shield, then
+release a large number of bandages.</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Launch a continuous, hard-to-dodge
+attack at high speeds.</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Hurl out continuous ice strikes to
+freeze the enemy in their tracks.</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">After a series of trifling cuts,
+unleash a giant pillar of ice.</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Break the enemy's block, then throw
+a full-strength lightning punch.</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire bullets continuously at the
+enemy while dancing in a circle.</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack with an uppercut while
+Beary rushes the enemy.</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack with a series of cuts, then an
+explosion with ether from the scabbard.</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">After a series of attacks, hit the enemy
+with a high-powered laser shot.</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Sheba sits in her bathtub to attack
+in tandem with her watery lover.</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack the enemy with a ball of
+lightning formed by Vess's weapon.</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">As the enemy recoils from a series of
+attacks, fire a blast of compressed air.</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Electra hits her weapon like
+a drum to trigger a shockwave.</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Strike down on the enemy from
+on high with a powerful weapon.</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">During a spinning attack...slip
+and let go of the hammer.</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire a concentrated laser beam, but
+only when energy reserves are full.</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire a super-strong laser
+to annihilate the enemy.</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Lose control completely and batter
+the enemy with the lance.</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Launch an attack while spinning
+the weapon around.</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire icy crystals from the ball
+as it moves around Dahlia.</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Take a weapon out of the air and bring
+it down in a series of attacks.</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Jab the lance outwards in a
+series of stabbing attacks.</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire the cannon blindly straight
+down at the ground.</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Follow up a shield attack with
+a rush attack with the hammer.</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Strike out with the scabbard, then
+perform a series of cutting attacks.</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Pummel the enemy with super-fast
+Bitball attacks.</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Rush in at high speed with a
+combination of kicks and punches.</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Tackle the enemy to throw them off
+guard, then perform a spinning cut.</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Extend the weapon as far as
+it will go to stab upwards.</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Fire continuous blasts with
+a high-powered cannon.</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">After a spinning attack, strike
+the ground with full strength.</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Make a cut with the sword, then
+strike with the scabbard.</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Wield the ball with the right arm to land
+a hit, then throw it at the enemy.</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Attack with a series of hooks,
+then a powerful uppercut.</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Go from a dashing, spinning attack
+into a jumping, descending attack.</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Spin the lance over the head to create
+a flurry of stabbing attacks.</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Jump back and fire
+an ether bullet.</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Bash the enemy with the shield,
+then hit them with the hammer.</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Draw and attack, then follow on with
+the scabbard, draw and slash again.</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Perform multiple attacks throwing a
+Bitball designed for maximum damage.</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Rush in at high speed with a
+combination of kicks and punches.</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Charge with a ring in your mouth.</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Deadly Drive</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">World's End</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Hundred Flame</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Stellar Explosion</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">U-TENERITAS</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">Buster Impact</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Detonate a high-energy explosive that
+damages all enemies in the vicinity.</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">Initiate Poppibuster self-destruct mode.</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td class="side">必殺技4</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>155</td>
+        <td class="side">必殺技4説明</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

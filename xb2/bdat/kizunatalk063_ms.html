@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk063_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0001</td>
+        <td>84</td>
+        <td class="side">What's up, Floren?
+You look down in the dumps.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0002</td>
+        <td>84</td>
+        <td class="side">You all right, Floren?
+What's up?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0003</td>
+        <td>84</td>
+        <td class="side">Are you OK?
+You don't look it.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0004</td>
+        <td>84</td>
+        <td class="side">Hey, Floren, what's the matter?
+Cheer up!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0005</td>
+        <td>84</td>
+        <td class="side">The land is choked with sand...</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0006</td>
+        <td>84</td>
+        <td class="side">Is this really Elysium?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0007</td>
+        <td>84</td>
+        <td class="side">No flowers, no trees, no grass.
+Just a barren plain of rocks and sand.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0009</td>
+        <td>84</td>
+        <td class="side">Look.
+I bet that was a beautiful lake once.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0010</td>
+        <td>84</td>
+        <td class="side">But there isn't even a drop of water
+left.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0011</td>
+        <td>84</td>
+        <td class="side">I guess this place doesn't get much
+rain.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0012</td>
+        <td>84</td>
+        <td class="side">I suppose they don't get much rain
+here.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0013</td>
+        <td>84</td>
+        <td class="side">I suppose little rain falls here.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0014</td>
+        <td>84</td>
+        <td class="side">Can't imagine they get much rain here!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0015</td>
+        <td>84</td>
+        <td class="side">Water is essential for life.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0016</td>
+        <td>84</td>
+        <td class="side">But there isn't any here.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0017</td>
+        <td>84</td>
+        <td class="side">This place is completely barren.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0018</td>
+        <td>84</td>
+        <td class="side">Some places have a drought now and
+again, but they still have a little hope.
+This place...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0019</td>
+        <td>84</td>
+        <td class="side">It's just...dead.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0020</td>
+        <td>165</td>
+        <td class="side">Floren...</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0021</td>
+        <td>164</td>
+        <td class="side">Isn't there something we can do to
+bring the greenery back?</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0022</td>
+        <td>164</td>
+        <td class="side">It's so sad to think that the land might 
+have died forever.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0023</td>
+        <td>165</td>
+        <td class="side">Hey, Floren...</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0024</td>
+        <td>164</td>
+        <td class="side">There must be some way to bring back
+the greenery.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0025</td>
+        <td>164</td>
+        <td class="side">It's pretty sad to think the land might
+have died forever.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0026</td>
+        <td>165</td>
+        <td class="side">Floren...</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0027</td>
+        <td>164</td>
+        <td class="side">Shall we search for a way to bring back
+the greenery?</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0028</td>
+        <td>164</td>
+        <td class="side">It is a terrible thing to think that this
+place might be sterile forever.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0029</td>
+        <td>165</td>
+        <td class="side">Hey, Floren.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0030</td>
+        <td>164</td>
+        <td class="side">I wonder if there's some way to bring
+back the old greenery.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0031</td>
+        <td>164</td>
+        <td class="side">It's jolly sad to see the land so
+desolate.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0101</td>
+        <td>84</td>
+        <td class="side">No roots can take hold in sand
+like this. And nothing is going to
+grow without water.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0102</td>
+        <td>84</td>
+        <td class="side">Wait!</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0103</td>
+        <td>84</td>
+        <td class="side">Maybe something CAN grow!</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0104</td>
+        <td>84</td>
+        <td class="side">?</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0105</td>
+        <td>84</td>
+        <td class="side">Well, you know life is a powerful thing.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0106</td>
+        <td>84</td>
+        <td class="side">It may be too dry for seeds here, but...</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0107</td>
+        <td>84</td>
+        <td class="side">...We could get some seedlings from
+somewhere else and plant them here?</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0108</td>
+        <td>84</td>
+        <td class="side">...We could get some seedlings from
+somewhere else and plant them here?</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0109</td>
+        <td>84</td>
+        <td class="side">...We could get some seedlings from
+somewhere else and plant them here?</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0110</td>
+        <td>84</td>
+        <td class="side">...We could get some seedlings from
+somewhere else and plant them here?</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0111</td>
+        <td>84</td>
+        <td class="side">Yes!</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0112</td>
+        <td>84</td>
+        <td class="side">At first, they probably won't last very
+long.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0113</td>
+        <td>84</td>
+        <td class="side">But as plants die, their remains
+fertilize the soil.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0114</td>
+        <td>84</td>
+        <td class="side">They'll be giving their goodness back to
+the next generations.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0115</td>
+        <td>84</td>
+        <td class="side">It'll take a while. But do it enough
+times...</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0116</td>
+        <td>84</td>
+        <td class="side">and eventually this dead
+land can be restored to life!</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0117</td>
+        <td>84</td>
+        <td class="side">Hey, there's the old Floren!</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0118</td>
+        <td>84</td>
+        <td class="side">That's more like the Floren I know.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0119</td>
+        <td>84</td>
+        <td class="side">At last. You seem to be back
+to your old self.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0120</td>
+        <td>84</td>
+        <td class="side">Heyyy, there we go!
+Back to your old self!</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0121</td>
+        <td>84</td>
+        <td class="side">Yes! Thank you.</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0122</td>
+        <td>84</td>
+        <td class="side">I'm going to do it.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0123</td>
+        <td>84</td>
+        <td class="side">I'm going to bring back the vegetation!</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0201</td>
+        <td>84</td>
+        <td class="side">That's so sad...</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0202</td>
+        <td>84</td>
+        <td class="side">When nature is destroyed, life and
+everything else is destroyed with it.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0203</td>
+        <td>84</td>
+        <td class="side">Don't people feel any shame when they
+see places like this?</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0204</td>
+        <td>84</td>
+        <td class="side">All life comes from nature. All beings
+should live in harmony with it.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0205</td>
+        <td>84</td>
+        <td class="side">Why don't people treat it with the
+respect it deserves?</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0206</td>
+        <td>84</td>
+        <td class="side">Why do they let it fall into this state?
+All life is precious, something to be
+cherished!</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0207</td>
+        <td>84</td>
+        <td class="side">That's so true. Nobody realizes how
+important the environment is.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0208</td>
+        <td>84</td>
+        <td class="side">You're right. Nobody gets how
+important this stuff is.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0209</td>
+        <td>84</td>
+        <td class="side">That's true. Few realize the
+importance of the environment.</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0210</td>
+        <td>84</td>
+        <td class="side">Yup, you hit the nail on the head.
+Nobody gets it.</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0211</td>
+        <td>84</td>
+        <td class="side">I'm a Blade, so I wasn't born from
+nature.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0212</td>
+        <td>84</td>
+        <td class="side">Mortals are part of nature, and I envy
+them for that. But it angers me to see
+them show no regard for it.</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0213</td>
+        <td>84</td>
+        <td class="side">There are good humans out there, of
+course. Like you.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0214</td>
+        <td>84</td>
+        <td class="side">But mostly... I just don't
+understand them.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0215</td>
+        <td>84</td>
+        <td class="side">That's OK, though.</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0216</td>
+        <td>84</td>
+        <td class="side">Well, it's early days. Maybe someday,
+humans and Blades will come to
+understand each other.</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0217</td>
+        <td>84</td>
+        <td class="side">Yeah, I think you're right.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0218</td>
+        <td>84</td>
+        <td class="side">Maybe one day, Blades will understand
+humans, and humans will understand
+Blades.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0219</td>
+        <td>84</td>
+        <td class="side">Ah, it's still early days.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0220</td>
+        <td>84</td>
+        <td class="side">Maybe we all just need a little more
+time to understand each other.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0221</td>
+        <td>84</td>
+        <td class="side">Don't worry about it!</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0222</td>
+        <td>84</td>
+        <td class="side">Maybe in time, mutual understanding
+and harmony will blossom... Wow,
+that's deep. I better write it down.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0223</td>
+        <td>84</td>
+        <td class="side">Yeah, you're right.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0224</td>
+        <td>84</td>
+        <td class="side">I actually feel like you understand me
+pretty well already.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0225</td>
+        <td>84</td>
+        <td class="side">That's why I feel like I can keep going
+even in the face of sadness.</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>kizunatalk063_msg0226</td>
+        <td>84</td>
+        <td class="side">Thank you for everything!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

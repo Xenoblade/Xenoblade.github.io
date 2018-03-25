@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev011301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0011</td>
+        <td class="side">Ask Jeffrey about indigens.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0021</td>
+        <td class="side">Ask Jeffrey if anything is troubling him.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0010</td>
+        <td class="side">tev011301_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0031</td>
+        <td class="side">Ask Jeffrey for his thoughts on[ST:n ]the xenoforms that live in NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0021</td>
+        <td class="side">tev011301_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0010</td>
+        <td class="side">tev011301_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0041</td>
+        <td class="side">Ask Jeffrey for his thoughts on[ST:n ]the xenoforms that live in NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0020</td>
+        <td class="side">tev011301_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0021</td>
+        <td class="side">tev011301_SEL0021</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0001</td>
+        <td class="side">There are numerous giant, dinosaur-like creatures on[ST:n ]this planet. It's like we've gone back in time to the[ST:n ]Jurassic period.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0003</td>
+        <td class="side">But the word \"dinosaur\" doesn't really capture the wide[ST:n ]variety of primordial life here. So we mostly refer to[ST:n ]them as \"indigenous creatures,\" or \"indigens\" for short.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0004</td>
+        <td class="side">I've been studying them with a BLADE operative named[ST:n ]Vera in our spare time. She actually used to be a[ST:n ]colleague of mine.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0005</td>
+        <td class="side">So far, all we've learned is that they're substantially[ST:n ]different from the species we knew back on Earth.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0006</td>
+        <td class="side">Are you a BLADE yourself?[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0007</td>
+        <td class="side">If you are, it would really help our research if you[ST:n ]could bring samples from the indigens you kill during[ST:n ]your missions. So please consider it.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0010</td>
+        <td class="side">The primary focus of my research is biological materials[ST:n ]with highly venomous or pathogenic properties.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0011</td>
+        <td class="side">But at the moment, I've run into a bit of a problem:[ST:n ]Our freezers are full, and I'm not sure how to dispose[ST:n ]of toxic samples I no longer need.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0012</td>
+        <td class="side">I mean, I can't just have the waste-management center[ST:n ]dispose of toxic organs and isolated diseases as if they[ST:n ]were old paper cups![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0013</td>
+        <td class="side">Apparently there are businesses here in New LA that[ST:n ]will illegally dump waste somewhere on Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0014</td>
+        <td class="side">But a researcher for BLADE command can't turn to such[ST:n ]disreputable elements. The whole situation is beginning[ST:n ]to make my head hurt.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0022</td>
+        <td class="side">When they arrived here at New LA, we used a[ST:n ]quarantine kit to make sure they didn't have any[ST:n ]unusual or dangerous diseases.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0023</td>
+        <td class="side">But that's all the research we've done on the xenoforms.[ST:n ]We know essentially nothing about them otherwise.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0024</td>
+        <td class="side">If you want to know about xenoforms, you shouldn't[ST:n ]waste your time talking to me. You should ask Vera,[ST:n ]who's up on the Ma-non ship.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0025</td>
+        <td class="side">She has so much passion for her research that she[ST:n ]leaves the BLADE barracks to study xenoforms on a[ST:n ]regular basis.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0026</td>
+        <td class="side">She's basically my exact opposite—I much prefer to stay[ST:n ]shut up safe in my lab. Anyway, I'm sure she could tell[ST:n ]you something useful.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0041</td>
+        <td class="side">When they arrived here at New LA, we used a[ST:n ]quarantine kit to make sure they didn't have any[ST:n ]unusual or dangerous diseases.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0042</td>
+        <td class="side">But that's all the research we've done on the xenoforms.[ST:n ]We know essentially nothing about them otherwise.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0043</td>
+        <td class="side">If you want to know about xenoforms, you shouldn't[ST:n ]waste your time talking to me. You should ask Vera,[ST:n ]who's up on the Ma-non ship.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0044</td>
+        <td class="side">I hear that she's recently become extremely close with[ST:n ]a Zaruboggan named Orleron.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0045</td>
+        <td class="side">I bet she's learned all SORTS of things she never could[ST:n ]have figured out with conventional research methods![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0046</td>
+        <td class="side">Or perhaps I'm just jealous. I only ever viewed her as[ST:n ]a research colleague, but now that she's spending all[ST:n ]her time with someone else...[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0047</td>
+        <td class="side">Well, it makes me realize that I've probably been in[ST:n ]love with her this whole time.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0010</td>
+        <td class="side">tev011301_JNK0010</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0031</td>
+        <td class="side">tev011301_SEL0031</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0020</td>
+        <td class="side">tev011301_JNK0020</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev011301_SEL1011</td>
+        <td class="side">Ask Jeffrey about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0010</td>
+        <td class="side">tev011301_JNK0010</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev011301_SEL0041</td>
+        <td class="side">Ask Jeffrey for his thoughts on[ST:n ]the xenoforms that live in NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev011301_JNK0020</td>
+        <td class="side">tev011301_JNK0020</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev011301_SEL1011</td>
+        <td class="side">tev011301_SEL1011</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0048</td>
+        <td class="side">Our mimeosomes keep us safe for now. But when we[ST:n ]return to our real bodies, it's possible that we could all[ST:n ]be wiped out by a single germ or contaminant.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0049</td>
+        <td class="side">That's why I'm trying to gather and research all of the[ST:n ]potential toxins and pathogens on this planet. It's the[ST:n ]only way we humans can be confident in our safety.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0050</td>
+        <td class="side">And if we do find anything, I hope we can get[ST:n ]Shiraton and his friends to purify it for us.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev011301_MSG0051</td>
+        <td class="side">Humanity has made some pretty valuable friends here[ST:n ]on New LA. It might be what saves us from extinction.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

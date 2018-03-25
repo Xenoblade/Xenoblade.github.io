@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma90a_FLD_TboxPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>RSC_ID</th>
+          <th>Condition</th>
+          <th>FSID</th>
+          <th>FSID2</th>
+          <th>msgVisible</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Num</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Num</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Num</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Num</th>
+          <th>itm4Per</th>
+          <th>itm5ID</th>
+          <th>itm5Num</th>
+          <th>itm5Per</th>
+          <th>itm6ID</th>
+          <th>itm6Num</th>
+          <th>itm6Per</th>
+          <th>itm7ID</th>
+          <th>itm7Num</th>
+          <th>itm7Per</th>
+          <th>itm8ID</th>
+          <th>itm8Num</th>
+          <th>itm8Per</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>rsc_paramID</th>
+          <th>msgdigVisible</th>
+          <th>Digflg</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1001">1001</td></a>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30001">Zigzag Shaft</td></a>
+        <td>1</td>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30002">Puri Leaf Cabbage</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30003">Fancy Bolt</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30004">Hexafly</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30005">Dark Gray Spring</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30006">Crimson Gear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30007">Tartan Ladybird</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30008">Oil Oyster</td></a>
+        <td>1</td>
+        <td>50</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_002</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1</td>
+        <td>5</td>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/ITM_PcEquip.html#20">Rigid Vest</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PcEquip.html#21">Infantry Vest</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PcEquip.html#22">Muscle Belt</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_003</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1000</td>
+        <td>6000</td>
+        <td>10</td>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30003">Fancy Bolt</td></a>
+        <td>1</td>
+        <td>50</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30008">Oil Oyster</td></a>
+        <td>1</td>
+        <td>50</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>10</td>
+        <td>True</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_004</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30004">Hexafly</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_005</td>
+        <td><a href="../common/RSC_TboxList.html#4">4</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_006</td>
+        <td><a href="../common/RSC_TboxList.html#5">5</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_007</td>
+        <td><a href="../common/RSC_TboxList.html#6">6</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">Legendary Core Crystal</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_008</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30008">Oil Oyster</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_009</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30008">Oil Oyster</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">tbox_test_010</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CollectionList.html#30008">Oil Oyster</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

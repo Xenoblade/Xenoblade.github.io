@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLD_TownInfo1701</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>react</th>
+          <th>avail</th>
+          <th>preinfoID</th>
+          <th>radius</th>
+          <th>info</th>
+          <th class="side">name</th>
+          <th>msg1</th>
+          <th>voice1</th>
+          <th>cond1</th>
+          <th>msg2</th>
+          <th>voice2</th>
+          <th>cond2</th>
+          <th>msg3</th>
+          <th>voice3</th>
+          <th>cond3</th>
+          <th>msg4</th>
+          <th>voice4</th>
+          <th>cond4</th>
+          <th>msg5</th>
+          <th>voice5</th>
+          <th>cond5</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>1763.57983</td>
+        <td>96.7897949</td>
+        <td>5955.42969</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">7</td>
+        <td>2196</td>
+        <td>mb1210_04</td>
+        <td>38</td>
+        <td>2197</td>
+        <td>mb1210_01</td>
+        <td>39</td>
+        <td>2198</td>
+        <td>mb1210_04</td>
+        <td>6</td>
+        <td>2199</td>
+        <td>mb1210_06</td>
+        <td>4232</td>
+        <td>2200</td>
+        <td>mb1210_06</td>
+        <td>4233</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>1743.44</td>
+        <td>97.69995</td>
+        <td>5955.44</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>218</td>
+        <td class="side">6</td>
+        <td>2201</td>
+        <td>mb1114_03</td>
+        <td>38</td>
+        <td>2202</td>
+        <td>mb1114_04</td>
+        <td>39</td>
+        <td>2203</td>
+        <td>mb1114_03</td>
+        <td>3729</td>
+        <td>2204</td>
+        <td>mb1114_04</td>
+        <td>3730</td>
+        <td>2205</td>
+        <td>mb1114_02</td>
+        <td>3731</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>3487.31982</td>
+        <td>56.3798828</td>
+        <td>5941.84961</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>221</td>
+        <td class="side">7</td>
+        <td>2206</td>
+        <td>mb1204_01</td>
+        <td>38</td>
+        <td>2207</td>
+        <td>mb1204_03</td>
+        <td>39</td>
+        <td>2208</td>
+        <td>mb1204_06</td>
+        <td>3730</td>
+        <td>2209</td>
+        <td>mb1204_06</td>
+        <td>3895</td>
+        <td>2210</td>
+        <td>mb1204_04</td>
+        <td>3925</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>3493.55981</td>
+        <td>56.2897949</td>
+        <td>5949.16</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">6</td>
+        <td>2211</td>
+        <td>mb1113_03</td>
+        <td>1</td>
+        <td>2212</td>
+        <td>mb1113_05</td>
+        <td>8</td>
+        <td>2213</td>
+        <td>mb1113_01</td>
+        <td>34</td>
+        <td>2214</td>
+        <td>mb1113_03</td>
+        <td>1106</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>3777.68</td>
+        <td>35.5998535</td>
+        <td>6846.71973</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>235</td>
+        <td class="side">6</td>
+        <td>2215</td>
+        <td>mb1119_03</td>
+        <td>1</td>
+        <td>2216</td>
+        <td>mb1119_06</td>
+        <td>6</td>
+        <td>2217</td>
+        <td>mb1119_04</td>
+        <td>3732</td>
+        <td>2218</td>
+        <td>mb1119_02</td>
+        <td>3897</td>
+        <td>2219</td>
+        <td>mb1119_02</td>
+        <td>3927</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>3787.76978</td>
+        <td>36.8898926</td>
+        <td>6863.25</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">6</td>
+        <td>2220</td>
+        <td>mb1114_04</td>
+        <td>1</td>
+        <td>2221</td>
+        <td>mb1114_03</td>
+        <td>29</td>
+        <td>2222</td>
+        <td>mb1114_06</td>
+        <td>8</td>
+        <td>2223</td>
+        <td>mb1114_01</td>
+        <td>4234</td>
+        <td>2224</td>
+        <td>mb1114_05</td>
+        <td>37</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>4707</td>
+        <td>68.69995</td>
+        <td>5950.92</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">6</td>
+        <td>2225</td>
+        <td>mb1104_03</td>
+        <td>1</td>
+        <td>2226</td>
+        <td>mb1104_04</td>
+        <td>4235</td>
+        <td>2227</td>
+        <td>mb1104_03</td>
+        <td>4236</td>
+        <td>2228</td>
+        <td>mb1104_01</td>
+        <td>34</td>
+        <td>2229</td>
+        <td>mb1104_06</td>
+        <td>37</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>4697.34961</td>
+        <td>72.2897949</td>
+        <td>5925.76</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>223</td>
+        <td class="side">7</td>
+        <td>2230</td>
+        <td>mb1206_01</td>
+        <td>38</td>
+        <td>2231</td>
+        <td>mb1206_01</td>
+        <td>39</td>
+        <td>2232</td>
+        <td>mb1206_06</td>
+        <td>3731</td>
+        <td>2233</td>
+        <td>mb1206_06</td>
+        <td>5692</td>
+        <td>2234</td>
+        <td>mb1206_02</td>
+        <td>43</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>4859.30957</td>
+        <td>42.92993</td>
+        <td>6523.09961</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>222</td>
+        <td class="side">6</td>
+        <td>2235</td>
+        <td>mb1111_04</td>
+        <td>38</td>
+        <td>2236</td>
+        <td>mb1111_01</td>
+        <td>39</td>
+        <td>2237</td>
+        <td>mb1111_06</td>
+        <td>3730</td>
+        <td>2238</td>
+        <td>mb1111_05</td>
+        <td>3895</td>
+        <td>2239</td>
+        <td>mb1111_01</td>
+        <td>3925</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>4864.83</td>
+        <td>42.5297852</td>
+        <td>6528.05957</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">6</td>
+        <td>2240</td>
+        <td>mb1110_02</td>
+        <td>38</td>
+        <td>2241</td>
+        <td>mb1110_01</td>
+        <td>39</td>
+        <td>2242</td>
+        <td>mb1110_02</td>
+        <td>8</td>
+        <td>2243</td>
+        <td>mb1110_05</td>
+        <td>5693</td>
+        <td>2244</td>
+        <td>mb1110_01</td>
+        <td>37</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>5470.79</td>
+        <td>47.5</td>
+        <td>7233.87</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>232</td>
+        <td class="side">7</td>
+        <td>2245</td>
+        <td>mb1214_04</td>
+        <td>38</td>
+        <td>2246</td>
+        <td>mb1214_01</td>
+        <td>39</td>
+        <td>2247</td>
+        <td>mb1214_04</td>
+        <td>3729</td>
+        <td>2248</td>
+        <td>mb1214_05</td>
+        <td>3730</td>
+        <td>2249</td>
+        <td>mb1214_02</td>
+        <td>3732</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>5476.73</td>
+        <td>42.0498047</td>
+        <td>7212.32</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+        <td class="side">6</td>
+        <td>2250</td>
+        <td>mb1115_05</td>
+        <td>38</td>
+        <td>2251</td>
+        <td>mb1115_03</td>
+        <td>39</td>
+        <td>2252</td>
+        <td>mb1115_01</td>
+        <td>32</td>
+        <td>2253</td>
+        <td>mb1115_03</td>
+        <td>34</td>
+        <td>2254</td>
+        <td>mb1115_06</td>
+        <td>37</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>3666</td>
+        <td>1048542.06</td>
+        <td>4659.46</td>
+        <td>22</td>
+        <td>4</td>
+        <td>0</td>
+        <td>7</td>
+        <td>229</td>
+        <td class="side">7</td>
+        <td>2255</td>
+        <td>mb1216_01</td>
+        <td>1</td>
+        <td>2256</td>
+        <td>mb1216_04</td>
+        <td>29</td>
+        <td>2257</td>
+        <td>mb1216_05</td>
+        <td>6241</td>
+        <td>2258</td>
+        <td>mb1216_02</td>
+        <td>3731</td>
+        <td>2259</td>
+        <td>mb1216_01</td>
+        <td>3733</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>3673.52979</td>
+        <td>1048539.25</td>
+        <td>4633.78</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>249</td>
+        <td class="side">6</td>
+        <td>2260</td>
+        <td>mb1110_01</td>
+        <td>1</td>
+        <td>2261</td>
+        <td>mb1110_02</td>
+        <td>8</td>
+        <td>2262</td>
+        <td>mb1110_04</td>
+        <td>3730</td>
+        <td>2263</td>
+        <td>mb1110_05</td>
+        <td>3731</td>
+        <td>2264</td>
+        <td>mb1110_06</td>
+        <td>6321</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>4214.92969</td>
+        <td>20.8598633</td>
+        <td>7500.92969</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>207</td>
+        <td class="side">7</td>
+        <td>2265</td>
+        <td>mb1221_03</td>
+        <td>38</td>
+        <td>2266</td>
+        <td>mb1221_04</td>
+        <td>39</td>
+        <td>2267</td>
+        <td>mb1221_06</td>
+        <td>3732</td>
+        <td>2268</td>
+        <td>mb1221_02</td>
+        <td>3732</td>
+        <td>2269</td>
+        <td>mb1221_03</td>
+        <td>3733</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>4217.73</td>
+        <td>22.7998047</td>
+        <td>7520.28</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>203</td>
+        <td class="side">7</td>
+        <td>2270</td>
+        <td>mb1209_01</td>
+        <td>38</td>
+        <td>2271</td>
+        <td>mb1209_03</td>
+        <td>39</td>
+        <td>2272</td>
+        <td>mb1209_04</td>
+        <td>3729</td>
+        <td>2273</td>
+        <td>mb1209_04</td>
+        <td>3729</td>
+        <td>2274</td>
+        <td>mb1209_01</td>
+        <td>3731</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>6125.24</td>
+        <td>280.8098</td>
+        <td>4549.55957</td>
+        <td>22</td>
+        <td>4</td>
+        <td>0</td>
+        <td>7</td>
+        <td>211</td>
+        <td class="side">20</td>
+        <td>2448</td>
+        <td>mb8106_01</td>
+        <td>1</td>
+        <td>2449</td>
+        <td>mb8106_04</td>
+        <td>3729</td>
+        <td>2450</td>
+        <td>mb8106_04</td>
+        <td>3730</td>
+        <td>2451</td>
+        <td>mb8106_02</td>
+        <td>3731</td>
+        <td>2452</td>
+        <td>mb8106_06</td>
+        <td>3732</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>6140.09</td>
+        <td>279.6599</td>
+        <td>4539.44</td>
+        <td>22</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>205</td>
+        <td class="side">20</td>
+        <td>2453</td>
+        <td>mb8103_02</td>
+        <td>38</td>
+        <td>2454</td>
+        <td>mb8103_04</td>
+        <td>3894</td>
+        <td>2455</td>
+        <td>mb8103_06</td>
+        <td>3895</td>
+        <td>2456</td>
+        <td>mb8103_03</td>
+        <td>3896</td>
+        <td>2457</td>
+        <td>mb8103_04</td>
+        <td>3897</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>6145.05957</td>
+        <td>278.719971</td>
+        <td>4521.92969</td>
+        <td>22</td>
+        <td>1</td>
+        <td>0</td>
+        <td>7</td>
+        <td>215</td>
+        <td class="side">20</td>
+        <td>2458</td>
+        <td>mb8107_01</td>
+        <td>38</td>
+        <td>2459</td>
+        <td>mb8107_06</td>
+        <td>6095</td>
+        <td>2460</td>
+        <td>mb8107_04</td>
+        <td>3866</td>
+        <td>2461</td>
+        <td>mb8107_01</td>
+        <td>3869</td>
+        <td>2462</td>
+        <td>mb8107_03</td>
+        <td>3871</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

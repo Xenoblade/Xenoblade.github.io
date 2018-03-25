@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev018301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0001</td>
+        <td class="side">Miranium, miranium, miranium![ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0002</td>
+        <td class="side">Sure, creating battle probes requires a special breed of[ST:n ]genius, but mostly it takes a ton of miranium.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0003</td>
+        <td class="side">So please supply me with the material I need to build[ST:n ]the first in a series of ranged attack probes![ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0004</td>
+        <td class="side">Don't let this little wonder die on the page.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0010</td>
+        <td class="side">Accept</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0011</td>
+        <td class="side">Tell Hugo that you'd be honored to help.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0020</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0021</td>
+        <td class="side">Ask Hugo what, exactly, he needs all this miranium for.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0005</td>
+        <td class="side">Oh, thank you. It's a blessing to have found such a[ST:n ]cooperative and understanding patron such as yourself.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0006</td>
+        <td class="side">Unfortunately, my design requires...er...20,000 units.[ST:n ]Think you can swing it?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0007</td>
+        <td class="side">Miranium is useful for damn near everything.[ST:n ]Depending on how you work it, it can be harder than[ST:n ]steel, or as supple as aluminum.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0008</td>
+        <td class="side">It's the most universal design material we have.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0009</td>
+        <td class="side">And I need a bunch. Say...20,000 units? Thanks![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0010</td>
+        <td class="side">Let's make this new kind of battle probe happen, eh?[ST:n ]You and me![ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0011</td>
+        <td class="side">Sorry to demand so much. If it makes you feel better,[ST:n ]I at least realize that the quantities I'm asking for are[ST:n ]somewhat insane.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0012</td>
+        <td class="side">But I also promise to deliver a product worthy of the[ST:n ]materials and your efforts.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0013</td>
+        <td class="side">In a sane world, I'd have industry support for my work.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0014</td>
+        <td class="side">But the fools cutting grant checks still haven't wised up[ST:n ]as to how amazing my battle probes are![ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0015</td>
+        <td class="side">Without your support, I wouldn't have been able to[ST:n ]realize any of my designs.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0016</td>
+        <td class="side">It's crazy, I know, but sadly true.[ST:n ]Genius is so rarely appreciated in its own time.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0017</td>
+        <td class="side">Anyway, my point is that you've been a massive help.[ST:n ]Thank you.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0018</td>
+        <td class="side">These designs of mine hold new hope for BLADE,[ST:n ]as well as all of New LA.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0019</td>
+        <td class="side">And yet a meager thing like a lack of materials keeps[ST:n ]them from seeing the light of day.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0020</td>
+        <td class="side">It's all so absurd. Don't even get me started.[ST:n ]So, um...do you have the miranium yet?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0030</td>
+        <td class="side">Deliver</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0031</td>
+        <td class="side">Hand over 20,000 units of miranium.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0040</td>
+        <td class="side">Keep</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0041</td>
+        <td class="side">Hold on to your miranium for now.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0021</td>
+        <td class="side">Excellent! That should be enough to start production on[ST:n ]the first in my series of ranged attack probes.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0022</td>
+        <td class="side">Don't move an inch. I'll have it from blueprint to built[ST:n ]before you can blink.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0023</td>
+        <td class="side">...Boom! Done! Cue the pyrotechnics![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0024</td>
+        <td class="side">Presenting the ranged attack probe![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0025</td>
+        <td class="side">Pop this bad boy into a FrontierNav probe site,[ST:n ]and it'll amp your ranged attack power as long as[ST:n ]you're within the region the probe is placed in.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0026</td>
+        <td class="side">Even the fanciest Skell can't offer this sort of dramatic[ST:n ]change in battle conditions, am I right?[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0027</td>
+        <td class="side">Use it to turn anything that wants to harm New LA[ST:n ]and its people into Swiss cheese![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0029</td>
+        <td class="side">Actually, hmm... You're acquainted with Kirsty, yes?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0030</td>
+        <td class="side">Tell me...what is she like?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0050</td>
+        <td class="side">Praise</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0051</td>
+        <td class="side">Wax poetic about Kirsty's many admirable qualities.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev018301_JNK0060</td>
+        <td class="side">Criticize</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev018301_SEL0061</td>
+        <td class="side">Bemoan how difficult Kirsty is to work with.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0031</td>
+        <td class="side">I see. Well, if she's as sharp as you say, she should be[ST:n ]able to grasp the genius of my battle probes.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0032</td>
+        <td class="side">Thank you. I'll be sure to pay her a visit sometime in[ST:n ]the near future.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0033</td>
+        <td class="side">That big a pain, is she? Hmm... But I'm afraid the[ST:n ]reality of the situation dictates that I deal with her.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0034</td>
+        <td class="side">It will be a challenge, but I shall do my best to impress[ST:n ]her when we next meet.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0035</td>
+        <td class="side">...Hmm? Why am I meeting with her?[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0036</td>
+        <td class="side">Well, up till now, I've been able to continue my work[ST:n ]using the miranium you've brought me.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0037</td>
+        <td class="side">But if I hope to ramp up to large-scale development—[ST:n ]which I do—I'll need industry and BLADE support.[ST:n ]There's just no way around it.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0038</td>
+        <td class="side">She's a FrontierNav pro, and well-connected with all the[ST:n ]industry heads. Her backing would be huge.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0039</td>
+        <td class="side">I can't predict if she'll go for this, but...[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0040</td>
+        <td class="side">I suppose I'll have to hope that she knows true potential[ST:n ]when she sees it. Anyway, we'll just have to see...[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0041</td>
+        <td class="side">What, am I supposed to bow down first?[ST:n ]Build you a little shrine?[ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev018301_MSG0042</td>
+        <td class="side">I'm dying to get started here. Have mercy![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma16a_FLD_CollectionPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gimmickID</th>
+          <th>Condition</th>
+          <th>POP_TIME</th>
+          <th>popWeather</th>
+          <th>FSID</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Per</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>nameRadius</th>
+          <th>rsc_paramID</th>
+          <th>initWaitTime</th>
+          <th>initWaitTimeRand</th>
+        </tr>
+      </thead>
+      <tr id="3201">
+        <td>3201</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d001</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3202">
+        <td>3202</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d002</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3203">
+        <td>3203</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d003</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3204">
+        <td>3204</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d004</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30289">Shade Trout</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30133">Horned Bonytongue</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3205">
+        <td>3205</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d005</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3206">
+        <td>3206</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d006</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3207">
+        <td>3207</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d007</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3208">
+        <td>3208</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d008</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3209">
+        <td>3209</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d009</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3210">
+        <td>3210</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d010</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3211">
+        <td>3211</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d011</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3212">
+        <td>3212</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d012</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3213">
+        <td>3213</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d013</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3214">
+        <td>3214</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d014</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3215">
+        <td>3215</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d015</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3216">
+        <td>3216</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d016</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3217">
+        <td>3217</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d017</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3218">
+        <td>3218</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d018</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30133">Horned Bonytongue</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3219">
+        <td>3219</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d019</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30133">Horned Bonytongue</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3220">
+        <td>3220</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d020</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30289">Shade Trout</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30130">Dark Firefly</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3221">
+        <td>3221</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d021</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3222">
+        <td>3222</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d022</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3223">
+        <td>3223</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d023</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3224">
+        <td>3224</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d024</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3225">
+        <td>3225</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d025</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3226">
+        <td>3226</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d026</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3227">
+        <td>3227</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d027</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3228">
+        <td>3228</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d028</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3229">
+        <td>3229</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d029</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3230">
+        <td>3230</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d030</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30289">Shade Trout</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30133">Horned Bonytongue</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3231">
+        <td>3231</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d031</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3232">
+        <td>3232</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d032</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3233">
+        <td>3233</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d033</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3234">
+        <td>3234</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d034</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3235">
+        <td>3235</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d035</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3236">
+        <td>3236</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d036</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3237">
+        <td>3237</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d037</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3238">
+        <td>3238</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d038</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30289">Shade Trout</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30130">Dark Firefly</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3239">
+        <td>3239</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d039</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30289">Shade Trout</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30133">Horned Bonytongue</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3240">
+        <td>3240</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d040</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3241">
+        <td>3241</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d041</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3242">
+        <td>3242</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d042</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3243">
+        <td>3243</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d043</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3244">
+        <td>3244</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d044</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3245">
+        <td>3245</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d045</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3246">
+        <td>3246</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d046</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30135">Chandelier Monkfish</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30134">Necromanta Ray</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3247">
+        <td>3247</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d047</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3248">
+        <td>3248</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d048</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3249">
+        <td>3249</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d049</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3250">
+        <td>3250</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d050</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3251">
+        <td>3251</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d051</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3252">
+        <td>3252</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d052</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3253">
+        <td>3253</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d053</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3254">
+        <td>3254</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d054</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3255">
+        <td>3255</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d055</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3256">
+        <td>3256</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d056</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3257">
+        <td>3257</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d057</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3258">
+        <td>3258</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d058</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30285">Fortune Mallow</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3259">
+        <td>3259</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d059</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3260">
+        <td>3260</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d060</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3261">
+        <td>3261</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d061</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3262">
+        <td>3262</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d062</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3263">
+        <td>3263</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d063</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3264">
+        <td>3264</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d064</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3265">
+        <td>3265</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d065</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3266">
+        <td>3266</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d066</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3267">
+        <td>3267</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d067</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3268">
+        <td>3268</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d068</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3269">
+        <td>3269</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d069</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3270">
+        <td>3270</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d070</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3271">
+        <td>3271</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d071</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3272">
+        <td>3272</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d072</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3273">
+        <td>3273</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d073</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3274">
+        <td>3274</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d074</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3275">
+        <td>3275</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d075</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30130">Dark Firefly</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3276">
+        <td>3276</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d076</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3277">
+        <td>3277</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d077</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3278">
+        <td>3278</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d078</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30130">Dark Firefly</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3279">
+        <td>3279</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d079</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30126">Chain Grass</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3280">
+        <td>3280</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d080</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30131">Watering Spider</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30130">Dark Firefly</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30288">Hades Beetle</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30132">Sworlbug</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3281">
+        <td>3281</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d081</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30128">Hammer Fern</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3282">
+        <td>3282</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d082</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30127">Sporefruit</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30284">Mystic Dahlia</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3283">
+        <td>3283</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d083</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3284">
+        <td>3284</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d084</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3285">
+        <td>3285</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d085</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30129">Gleambug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3286">
+        <td>3286</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d086</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30136">Deep Fellstone</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3287">
+        <td>3287</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d087</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30290">Noise Bite</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30140">Rainbow Crystal</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30139">Frozen Sapphire</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30137">Addam's Tear</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="3288">
+        <td>3288</td>
+        <td>
+        </td>
+        <td class="side">colle_ma16a_d088</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30138">Libra Stone</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30125">Wisteria Bud</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30286">Deadly Kiwi</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30287">Tarnish Apple</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

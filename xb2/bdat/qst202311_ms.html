@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202311_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202311_msg001</td>
+        <td>84</td>
+        <td class="side">Here we are!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202311_msg002</td>
+        <td>84</td>
+        <td class="side">Have you really removed
+the four seals?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202311_msg003</td>
+        <td>84</td>
+        <td class="side">Yup. Did you expect anything less?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202311_msg004</td>
+        <td>84</td>
+        <td class="side">How about you? Did you manage to
+get the location of Thanatobeast
+Andraz from your old teacher?</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202311_msg005</td>
+        <td>84</td>
+        <td class="side">Indeed I did! You will find the fiend at
+Xataris Spring in Temperantia.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202311_msg006</td>
+        <td>84</td>
+        <td class="side">Temperantia... Makes sense. If I was
+a Thanatobeast, that's probably where
+I'd be snoozing.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202311_msg007</td>
+        <td>84</td>
+        <td class="side">Well, better get going.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202311_msg008</td>
+        <td>84</td>
+        <td class="side">Please, one moment!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202311_msg009</td>
+        <td>84</td>
+        <td class="side">You won't find the Thanatobeast simply
+by going to Xataris Spring.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202311_msg010</td>
+        <td>84</td>
+        <td class="side">Huh?
+Is that right?</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202311_msg011</td>
+        <td>84</td>
+        <td class="side">Apparently there's one more seal tying
+it down to the place of its slumber.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202311_msg012</td>
+        <td>84</td>
+        <td class="side">To break it, you'll need to destroy four
+more sealstones - the stones of
+light, darkness, thunder and ice.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202311_msg013</td>
+        <td>84</td>
+        <td class="side">More sealing?
+This really very complicated...</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202311_msg014</td>
+        <td>84</td>
+        <td class="side">They must have felt like they needed to
+bind it up really tightly.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202311_msg015</td>
+        <td>84</td>
+        <td class="side">I bet it was something unimaginably
+terrible, huh?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202311_msg016</td>
+        <td>84</td>
+        <td class="side">Yes! Really most horrible monster!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202311_msg017</td>
+        <td>84</td>
+        <td class="side">If this isn't the baddest-assed monster
+to ever disgrace the world, I won't be
+able to contain my disappointment.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202311_msg018</td>
+        <td>84</td>
+        <td class="side">Well, we know the place now.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202311_msg019</td>
+        <td>84</td>
+        <td class="side">Let's go to Xataris Spring and break the
+last seal. Then we can finally take care
+of Thanatobeast Andraz!</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202311_msg020</td>
+        <td>84</td>
+        <td class="side">Zenobia! Wait for Tora!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

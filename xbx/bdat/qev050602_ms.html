@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev050602_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0001</td>
+        <td class="side">You have come. Good.[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0002</td>
+        <td class="side">Perhaps you will indulge us in talk before we spar?[ST:n ]I would share a bit about us.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev050602_JNK0010</td>
+        <td class="side">Agree</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev050602_SEL0011</td>
+        <td class="side">Nod wordlessly.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev050602_JNK0020</td>
+        <td class="side">Refuse</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev050602_SEL0021</td>
+        <td class="side">Tell Da Naguth that the time for talk has passed.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0003</td>
+        <td class="side">Had the queen jacul struck our base in Cauldros any[ST:n ]other day, we three would have been defending it.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0004</td>
+        <td class="side">But the Ganglion ordered us to depart so that we might[ST:n ]attack their enemies.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0005</td>
+        <td class="side">We faced soldiers that day, yes, but also defenseless[ST:n ]civilians. None survived. It was...disquieting.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0006</td>
+        <td class="side">And at the end of that horrific job, we returned back[ST:n ]to base only to find our parents, the general's son,[ST:n ]and many others gone. Devoured by that demon.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0007</td>
+        <td class="side">The three of us felt certain that our crimes against the[ST:n ]innocent had been meted out on our own loved ones[ST:n ]in return.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0008</td>
+        <td class="side">And so we swore that this was one battle we would[ST:n ]fight together...and alone.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0009</td>
+        <td class="side">I wish you no ill, but you will suffer injuries here that[ST:n ]will prevent you from joining this hunt![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0010</td>
+        <td class="side">Hmm. I see you are as direct and passionate a fighter[ST:n ]as Da Zeulbe. I respect that.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0011</td>
+        <td class="side">I shall waste no more of your time.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0012</td>
+        <td class="side">Rest assured, we will not take your life. But you will not[ST:n ]leave this place in fit condition to join our hunt![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0013</td>
+        <td class="side">Da Girhi! Da Zeulbe! Are you ready?[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0014</td>
+        <td class="side">I will strike down our opponent with the speed and fury[ST:n ]of thunder![ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0015</td>
+        <td class="side">I will crush stone and bone alike with the weight of my[ST:n ]mighty blows![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev050602_MSG0016</td>
+        <td class="side">And I will overwhelm you with the grace and swiftness[ST:n ]of the wind, for the Three Talons are invincible![ST:n ]Now...en garde![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

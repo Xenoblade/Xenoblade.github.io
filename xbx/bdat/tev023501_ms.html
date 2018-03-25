@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev023501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev023501_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev023501_SEL0011</td>
+        <td class="side">Ask Berry about NLA.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev023501_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev023501_SEL0021</td>
+        <td class="side">Ask Berry if she has any interesting news.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev023501_SEL0031</td>
+        <td class="side">Ask Berry about Mira's oceans.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev023501_SEL0041</td>
+        <td class="side">Ask Berry about the Earthlife Colonization Project.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev023501_SEL0051</td>
+        <td class="side">Ask Berry about the city of NLA.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0001</td>
+        <td class="side">New LA was nearly complete when we were forced to[ST:n ]crash-land here on Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0002</td>
+        <td class="side">Those damned xenoforms couldn't wait just a little[ST:n ]while longer? Ugh! How I loathe them...[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0003</td>
+        <td class="side">Anyway, that's why the roads are only partially finished[ST:n ]and lack side barriers to keep people from falling off.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0004</td>
+        <td class="side">I hear someone once fell all the way to the bottom![ST:n ]Took a whole team of Mediators to rescue him.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0005</td>
+        <td class="side">That reminds me: Kaisis offered to escort me home[ST:n ]that day, but I refused. I could tell he had some[ST:n ]ulterior motive in mind.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0008</td>
+        <td class="side">Oh, you missed quite the brouhaha here the other day![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0009</td>
+        <td class="side">Once again, Kaisis was insisting that I let him escort[ST:n ]me home.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0010</td>
+        <td class="side">But I could tell he had something else in mind,[ST:n ]so I flatly refused.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0011</td>
+        <td class="side">Just then, a Mediator named Tracey came by and[ST:n ]mistakenly assumed from our conversation that he was[ST:n ]trying to abduct me![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0012</td>
+        <td class="side">Then she slapped a set of handcuffs on him and tried[ST:n ]to lead him away![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0013</td>
+        <td class="side">No matter what Kaisis said, she wouldn't listen.[ST:n ]She said her \"detective's instincts\" made it clear that[ST:n ]this was an abduction.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0014</td>
+        <td class="side">Honestly, she seems a little bit...unstable.[ST:n ]I hope she doesn't cause a more serious problem[ST:n ]someday...[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0020</td>
+        <td class="side">Sometimes I log on to research data probes to look at[ST:n ]the views from the Miran coastlines.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0021</td>
+        <td class="side">And on rare occasions, I spot small islands on the[ST:n ]horizon.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0022</td>
+        <td class="side">I wonder if those sorts of islands are scattered[ST:n ]throughout Mira's seas?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0023</td>
+        <td class="side">I can't imagine many BLADEs have even tried to visit[ST:n ]such isolated places.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0024</td>
+        <td class="side">So if you were to work up the courage to swim out[ST:n ]there, who knows what sort of treasure you might find?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0026</td>
+        <td class="side">A great many ships were launched as[ST:n ]part of the Earthlife Colonization Project.[ST:n ]I wonder if the others are safe?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0027</td>
+        <td class="side">I mean, what if the Ganglion found them and[ST:n ]destroyed them?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0028</td>
+        <td class="side">...No, I'm sure they're okay. We probably haven't[ST:n ]heard from them because they haven't yet found a[ST:n ]suitable planet on which to land.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0029</td>
+        <td class="side">I need to toughen up. It's because of these moments of[ST:n ]weakness that Kaisis has such designs on me![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0035</td>
+        <td class="side">I've been complaining to the maintenance teams about[ST:n ]how easy it is to fall here because of the insufficient[ST:n ]guard rails.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0036</td>
+        <td class="side">But I must admit, it makes me a little sad to think[ST:n ]about them filling in the ground eventually.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0037</td>
+        <td class="side">Hmmm... Maybe before they block it off,[ST:n ]I should take Kaisis to see the water below.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0038</td>
+        <td class="side">He always seems like he has something to say,[ST:n ]but he just won't spit it out.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev023501_MSG0039</td>
+        <td class="side">He keeps saying he'll tell me once the city is finished,[ST:n ]but nuts to that! I'm just going to make him tell me![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

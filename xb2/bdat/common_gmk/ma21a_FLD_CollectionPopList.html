@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma21a_FLD_CollectionPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gimmickID</th>
+          <th>Condition</th>
+          <th>POP_TIME</th>
+          <th>popWeather</th>
+          <th>FSID</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Per</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>nameRadius</th>
+          <th>rsc_paramID</th>
+          <th>initWaitTime</th>
+          <th>initWaitTimeRand</th>
+        </tr>
+      </thead>
+      <tr id="4201">
+        <td>4201</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f001</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30225">Zero Bark</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30329">Styrene Woodblock</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30224">Blinding Dream</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4202">
+        <td>4202</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f002</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30229">Crowbell Fruit</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30228">Pain Cone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30224">Blinding Dream</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4203">
+        <td>4203</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f003</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30225">Zero Bark</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30329">Styrene Woodblock</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30224">Blinding Dream</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4204">
+        <td>4204</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f004</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30229">Crowbell Fruit</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30228">Pain Cone</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30224">Blinding Dream</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4205">
+        <td>4205</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f005</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30225">Zero Bark</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30226">Smoke Chipper</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30331">Cosmo Pepper</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4206">
+        <td>4206</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f006</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30229">Crowbell Fruit</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30226">Smoke Chipper</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30330">Monochrome Muscari</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4207">
+        <td>4207</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f007</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30225">Zero Bark</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30226">Smoke Chipper</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30331">Cosmo Pepper</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4208">
+        <td>4208</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f008</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30225">Zero Bark</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30329">Styrene Woodblock</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30224">Blinding Dream</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4209">
+        <td>4209</td>
+        <td>
+        </td>
+        <td class="side">colle_ma21a_f009</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>5</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30229">Crowbell Fruit</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30226">Smoke Chipper</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30227">Rootless Sandwort</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30330">Monochrome Muscari</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

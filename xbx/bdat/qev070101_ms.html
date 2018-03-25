@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev070101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0064</td>
+        <td class="side">Come on, Veven! You get to become a cornerstone for[ST:n ]the next dazzling chapter of science![ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0065</td>
+        <td class="side">You Ma-non are disciples of science, aren't you?[ST:n ]Now stop your whining and get in the damn car.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0066</td>
+        <td class="side">Sorry, Professor B, but I think this thing is more of a[ST:n ]tombstone than a cornerstone, you know?[ST:n ]And I'm probably too young to die?[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0067</td>
+        <td class="side">Damn! I finally get a test rig up and working,[ST:n ]and you're going to pull this crap on me?[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0150</td>
+        <td class="side">Probe</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0151</td>
+        <td class="side">Inquire as to what is going on here.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0160</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0161</td>
+        <td class="side">Ask Professor B who the Ma-non is.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0068</td>
+        <td class="side">Absolutely nothing—that's the problem! I brought[ST:n ]my assistant Veven here to play guinea pig for me,[ST:n ]but he's gone chicken![ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0069</td>
+        <td class="side">He's my worthless assistant, Veven.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0070</td>
+        <td class="side">I gave him the honor of riding in my Miramobile time[ST:n ]machine, and he repays me with a silly tantrum![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0071</td>
+        <td class="side">And after you went to the trouble of furnishing this[ST:n ]perfectly serviceable car![ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0072</td>
+        <td class="side">And after you rushed out to find us this old jalopy![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0073</td>
+        <td class="side">And after you went to the trouble of getting us this[ST:n ]sweet ride![ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0074</td>
+        <td class="side">No more excuses, Veven! Are you trying to put all this[ST:n ]poor [ST:Gender p1=man's p2=woman's ] hard work to waste?![ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0075</td>
+        <td class="side">Well, I don't want to to do that, but time travel seems[ST:n ]pretty dangerous, doesn't it?[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0076</td>
+        <td class="side">I'm as intrigued about science as as anyone,[ST:n ]but I've only got one life to give to it, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0077</td>
+        <td class="side">What, you don't trust me?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0078</td>
+        <td class="side">If you're so confident, maybe you should be the one[ST:n ]to take it for a ride, Professor? You're weirdly insistent[ST:n ]that I be the one who tests it, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0079</td>
+        <td class="side">Well, of course! If I got sucked into a stray #k»*#+‹,[ST:n ]I'd be torn to shreds instantl—[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0080</td>
+        <td class="side">...Leeeave it to me! It's fine. I didn't say a thing.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0081</td>
+        <td class="side">I think that's probably the opposite of fine?[ST:n ]Either way, I'm not getting in that vehicle.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0082</td>
+        <td class="side">Then it appears we are at an impasse here.[ST:n ]...Hey, kid, help me talk some sense into this fool![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0170</td>
+        <td class="side">Hype</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0171</td>
+        <td class="side">Appeal to Veven's emotions to fire him up.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0180</td>
+        <td class="side">Persuade</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0181</td>
+        <td class="side">Use logic to appeal to Veven's intellect.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0083</td>
+        <td class="side">Wow, you're really eager. And it's not that I don't[ST:n ]share that enthusiasm, you know? Otherwise I'd never[ST:n ]have agreed to all of Professor B's madness until now.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0084</td>
+        <td class="side">Of course I'm interested in in a time machine.[ST:n ]But I'm not risking my life, if that makes sense?[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0085</td>
+        <td class="side">...What's that? Scientific progress has always been[ST:n ]built on on knowledge and self-sacrificing dedication[ST:n ]in equal parts?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0086</td>
+        <td class="side">...I should hang up my lab coat right now if I can't[ST:n ]accept that? Science isn't just fun and games?[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0087</td>
+        <td class="side">Well, that stings.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0088</td>
+        <td class="side">I suppose you seem like a smart person?[ST:n ]Different than my scientific mind, maybe, but still...[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0089</td>
+        <td class="side">I hear what you're saying, but none of it proves that[ST:n ]I'll be be all right if I get in that time machine,[ST:n ]if that makes sense?[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0090</td>
+        <td class="side">...What's that? Even if this test fails, Professor B will[ST:n ]eventually succeed?[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0091</td>
+        <td class="side">And then he he just needs to jump back to the moment[ST:n ]before this test?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0092</td>
+        <td class="side">And that way the machine from that successful trial will[ST:n ]replace this initial failed prototype?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0093</td>
+        <td class="side">Meaning I won't actually die in the canonical timeline?[ST:n ]Hmmm...[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0094</td>
+        <td class="side">I feel like there's some circular reasoning in there[ST:n ]somewhere, but I think I'm...warming to to the idea?[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0095</td>
+        <td class="side">All right, Professor. I'll ride in your time machine.[ST:n ]I hope I don't regret this...?[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0096</td>
+        <td class="side">You'll do it? Ha ha! I'd expect nothing less from my[ST:n ]intrepid Ma-non assistant![ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0097</td>
+        <td class="side">And nice work with the smooth talk there, [ST:Gender p1=sir p2=ma'am ].[ST:n ]...All right! Now that we have a test subject,[ST:n ]let's get this party started![ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0098</td>
+        <td class="side">Hurry up and get in the Miramobile, Veven![ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0099</td>
+        <td class="side">I'm ready for you to send me to whatever dark corner[ST:n ]of history you want, okay?[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0100</td>
+        <td class="side">Roger that! The y#$k+\\\\••* is online...[ST:n ]Setting destination for three thousand years[ST:n ]in the future![ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0101</td>
+        <td class="side">Veven, are you ready to slip the bonds of time and[ST:n ]take flight into that bright and distant tomorrow?![ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0102</td>
+        <td class="side">Absolutely! ...Er, I think? Yes?[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0103</td>
+        <td class="side">Hrrngh...? Heeeere IIIII gooooOOOOOOOOOOOO![ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0104</td>
+        <td class="side">Now, my precious Miramobile! Smash through the[ST:n ]walls of the fourth dimension and rewrite the laws of[ST:n ]the universe![ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0105</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0121</td>
+        <td class="side">The numbers were there. It reached the threshold.[ST:n ]So why...?[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0122</td>
+        <td class="side">Damn! I swear on my own brain that I'll fly this thing[ST:n ]to the future. You just get me that topaz wine, kid![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0123</td>
+        <td class="side">Well? Did you get the topaz wine, kid? It's the last[ST:n ]thing I need to soup up my magnificent Miramobile.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0124</td>
+        <td class="side">Excellent work! I'll install it right now...[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0125</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0126</td>
+        <td class="side">There. Done. Behold the Counter-y#$k+\\\\••*[ST:n ]Navigation Edition of my beautiful machine![ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0127</td>
+        <td class="side">It's my ultimate creation, capable of overriding every[ST:n ]causal factor in Miran space-time![ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0210</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0211</td>
+        <td class="side">Ask who is piloting it this time.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0220</td>
+        <td class="side">Worry</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0221</td>
+        <td class="side">Express concern that this will be another failed trial.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0128</td>
+        <td class="side">A most astute question![ST:n ]I certainly can't trust that shrimp to do it.[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0129</td>
+        <td class="side">This time, I'll drive to the future myself.[ST:n ]The perfect pilot for the perfect machine.[ST:n ]There's not a sliver of a chance of failure![ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0130</td>
+        <td class="side">Heh. Quite the nervous nelly, aren't you?[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0131</td>
+        <td class="side">There's no chance of failure with this machine.[ST:n ]Besides, this time it'll have a competent pilot—me![ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0132</td>
+        <td class="side">This is good-bye for now, but don't worry, kid.[ST:n ]I may literally be back before you know it.[ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0230</td>
+        <td class="side">Send Off</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0231</td>
+        <td class="side">See Professor B off to the future with a broad smile.</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0240</td>
+        <td class="side">Regret</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0241</td>
+        <td class="side">Tell Professor B how much you will miss him.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0133</td>
+        <td class="side">I appreciate that, kid.[ST:n ]Emotional good-byes make me itch.[ST:wait ]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0134</td>
+        <td class="side">Now then... It's time for the trial run![ST:wait ]</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0135</td>
+        <td class="side">Bah! I'm sure we'll meet again,[ST:n ]sometime, somewhere, kid.[ST:wait ]</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0136</td>
+        <td class="side">But for now... Commencing the trial run![ST:wait ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0137</td>
+        <td class="side">Setting destination time past the far side of the future,[ST:n ]to the time axis I once inhabited...[ST:wait ]</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0138</td>
+        <td class="side">You, Veven, and the others in this time have been a[ST:n ]great help.[ST:wait ]</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0139</td>
+        <td class="side">Heh. Though I could have done without the ones that[ST:n ]attacked us.[ST:wait ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0140</td>
+        <td class="side">Thanks for everything, [ST:playername ].[ST:n ]Give Veven my regards.[ST:wait ]</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0141</td>
+        <td class="side">Take care. And farewell![ST:wait ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0142</td>
+        <td class="side">Even if this is good-bye forever,[ST:n ]know that I'll never forget you![ST:wait ]</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0143</td>
+        <td class="side">Ha ha, that's right![ST:wait ]</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0144</td>
+        <td class="side">Tear through that a••*%$k with 3«*@-/x, girl![ST:n ]We're off to the FUTURE![ST:wait ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0145</td>
+        <td class="side">...Hmm? Where did Professor B go? He asked me to[ST:n ]buy these parts he he was running low on...[ST:wait ]</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0146</td>
+        <td class="side">...WHAT?! He went home to the future?![ST:wait ]</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0147</td>
+        <td class="side">Just like that? We did everything together all this time,[ST:n ]and now he just takes off?[ST:wait ]</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0250</td>
+        <td class="side">Deduce</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0251</td>
+        <td class="side">Assume Professor B's intentions.</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qev070101_JNK0260</td>
+        <td class="side">Relay</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qev070101_SEL0261</td>
+        <td class="side">Tell Veven that Professor B said he was grateful.</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0148</td>
+        <td class="side">I suppose I didn't think of of his feelings in all this.[ST:n ]You humans are sensitive to that sort of thing, yes?[ST:wait ]</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0149</td>
+        <td class="side">It's true that for all his bluster, he always had[ST:n ]something of a...bashful side?[ST:wait ]</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0150</td>
+        <td class="side">Maybe he couldn't say good-bye face-to-face BECAUSE[ST:n ]we went through so much together?[ST:wait ]</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0151</td>
+        <td class="side">He thanked ME? I wish he'd said it to to my face...[ST:wait ]</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0152</td>
+        <td class="side">If not for you, was he planning to leave without saying[ST:n ]a word?[ST:wait ]</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0153</td>
+        <td class="side">*sigh* The man was a real headache, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0154</td>
+        <td class="side">I'll just have to get to work on building a new and[ST:n ]improved Miramobile Mark II, I suppose?[ST:wait ]</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0155</td>
+        <td class="side">I'll ride it to the future and scare the pants off of[ST:n ]Professor B! That would be pretty funny, right?[ST:wait ]</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>qev070101_MSG0156</td>
+        <td class="side">I guess I have a lot of of studying ahead of me, huh?[ST:n ]Just you wait, Professor![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

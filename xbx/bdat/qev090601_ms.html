@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev090601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0001</td>
+        <td class="side">A word of caution about this mission...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0002</td>
+        <td class="side">The indigen you'll be hunting is extremely dangerous.[ST:n ]It's already injured several Pathfinders.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0003</td>
+        <td class="side">Yes, I heard Saiden and Mondo were among them.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0004</td>
+        <td class="side">All the more reason to do our job[ST:n ]as Harriers and end this threat.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0005</td>
+        <td class="side">That's my sensei![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0006</td>
+        <td class="side">Damned straight.[ST:n ]Er, but what are you doing here, son?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0007</td>
+        <td class="side">Licking my wounds after getting pummeled[ST:n ]by that same beast, Sensei.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev090601_JNK0010</td>
+        <td class="side">Chastise</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev090601_SEL0011</td>
+        <td class="side">Shout at Reggie for running away yet again.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev090601_JNK0020</td>
+        <td class="side">Comfort</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev090601_SEL0021</td>
+        <td class="side">Tell Reggie to keep his chin up.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0008</td>
+        <td class="side">Eeek! You're starting to sound just like Sensei![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0009</td>
+        <td class="side">I guess it makes sense, considering[ST:n ]all the time you've spent together.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0010</td>
+        <td class="side">That wasn't a half-bad shout, friend![ST:n ]Next time, trying taking a deep breath first, then...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0011</td>
+        <td class="side">KAAAAAAAAAAATSU![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0012</td>
+        <td class="side">...Keep training. You'll get it.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0013</td>
+        <td class="side">That's mighty kind of you.[ST:n ]I wish the people on my team felt that way.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0014</td>
+        <td class="side">qev090601_MSG0014</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0014_m</td>
+        <td class="side">Full of mercy as usual.[ST:n ]You're on the path of the Buddha, friend.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0014_f</td>
+        <td class="side">Full of mercy as usual.[ST:n ]You're on the path of the Buddha, friend.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0015</td>
+        <td class="side">Now, tell us about this creature.[ST:n ]How did the fight go?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0016</td>
+        <td class="side">It wiped us out in one blow![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0017</td>
+        <td class="side">Not to brag, but I've been around[ST:n ]the block once or twice as a Curator.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0018</td>
+        <td class="side">But I swear I've never seen anything like it.[ST:n ]That thing is a monster![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0019</td>
+        <td class="side">Then we've got something to look forward to.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0020</td>
+        <td class="side">We've been fighting nothing but xenos lately,[ST:n ]and I'm sick of it.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0021</td>
+        <td class="side">A classic test of strength sounds perfect.[ST:n ]Man against beast![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0022</td>
+        <td class="side">I'll forward the coordinates where we[ST:n ]fought it to your comm device.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0023</td>
+        <td class="side">I know you can handle anything, Sensei...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0024</td>
+        <td class="side">But this thing has sent several Harriers[ST:n ]straight to the maintenance center.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0025</td>
+        <td class="side">Please be careful.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0026</td>
+        <td class="side">Worry not. We'll have you avenged in no time.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev090601_MSG0027</td>
+        <td class="side">Let's send this beast to Nirvana, friend. We ride! [ST:wait ][ST:n ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

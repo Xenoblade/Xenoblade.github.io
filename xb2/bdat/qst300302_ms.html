@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst300302_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst300302_msg001</td>
+        <td>62</td>
+        <td class="side">面接開始！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst300302_msg002</td>
+        <td>62</td>
+        <td class="side">面接後</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst300302_msg003</td>
+        <td>62</td>
+        <td class="side">答え合わせ・両方当たり</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst300302_msg004</td>
+        <td>62</td>
+        <td class="side">答え合わせ・片方当たり</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst300302_msg005</td>
+        <td>62</td>
+        <td class="side">答え合わせ・全部ハズレ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst300302_msg006</td>
+        <td>62</td>
+        <td class="side">クエスト完了</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst300302_msg0001</td>
+        <td>84</td>
+        <td class="side">Right then, then let's start the
+interviews, shall we? All set?</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst300302_msg0011</td>
+        <td>165</td>
+        <td class="side">Start interviewing?</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst300302_msg0012</td>
+        <td>165</td>
+        <td class="side">I'm ready!</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst300302_msg0013</td>
+        <td>165</td>
+        <td class="side">Give me a second...</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst300302_msg0014</td>
+        <td>84</td>
+        <td class="side">OK, I'm calling in candidate number
+one.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst300302_msg0015</td>
+        <td>84</td>
+        <td class="side">All right. Just don't take too long.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst300302_msg0051</td>
+        <td>84</td>
+        <td class="side">I'd like to have Rex handle the
+interviews, if possible.
+Could you bring him, perhaps?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst300302_msg0101</td>
+        <td>84</td>
+        <td class="side">All right, you've heard their appeals.
+Who do you think's best for the job?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst300302_msg0102</td>
+        <td>84</td>
+        <td class="side">First, there's Alicia. She's sure to bring
+something new and fresh to the mercs.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst300302_msg0103</td>
+        <td>84</td>
+        <td class="side">Then there's Popoh, the Nopon. She
+struck me as cool and level-headed.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst300302_msg0104</td>
+        <td>84</td>
+        <td class="side">And lastly, Zengrid, the former noble.
+He seems perfectly respectable.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst300302_msg0121</td>
+        <td>165</td>
+        <td class="side">Who should I choose?</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst300302_msg0122</td>
+        <td>165</td>
+        <td class="side">Alicia</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst300302_msg0123</td>
+        <td>165</td>
+        <td class="side">Popoh</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst300302_msg0124</td>
+        <td>165</td>
+        <td class="side">Zengrid</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst300302_msg0151</td>
+        <td>84</td>
+        <td class="side">Then it's settled.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst300302_msg0152</td>
+        <td>84</td>
+        <td class="side">Having a capable woman on board's
+sure to raise the crew's morale.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst300302_msg0153</td>
+        <td>84</td>
+        <td class="side">We all get a bit tetchy after a long
+day of battle. She's sure to calm the
+crew down.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst300302_msg0154</td>
+        <td>84</td>
+        <td class="side">He's a bit of an oddball, but I'd be
+more than welcome to let him handle
+our financial matters.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst300302_msg0171</td>
+        <td>84</td>
+        <td class="side">Yep, I think we're onto a winner here!</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst300302_msg0172</td>
+        <td>84</td>
+        <td class="side">Y'know, sometimes you get a look in
+your eye that reminds me of Vandham.
+You're really taking to being in charge.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst300302_msg0173</td>
+        <td>84</td>
+        <td class="side">If only the Big Man could see you now.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst300302_msg0174</td>
+        <td>84</td>
+        <td class="side">Here's to the Garfont Mercs and
+to the bright future ahead of us!</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst300302_msg0175</td>
+        <td>84</td>
+        <td class="side">Someday we'll be the best damn
+mercs in Uraya... No, in the whole
+of Alrest!</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst300302_msg0176</td>
+        <td>84</td>
+        <td class="side">Remember to stop by when you're
+passing through!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

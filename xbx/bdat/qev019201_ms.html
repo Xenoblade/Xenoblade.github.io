@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev019201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0001</td>
+        <td class="side">Where's that chump gone off to...?[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0002</td>
+        <td class="side">Muh? Wait, I know that face...[ST:n ]You're [ST:playername ], yeah?[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0010</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0011</td>
+        <td class="side">Nod in agreement.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0020</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0021</td>
+        <td class="side">Keep your identity concealed from the suspicious man.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0003</td>
+        <td class="side">Ah-HA! I finally found you, you thievin' little punk![ST:n ]I got words for you, see?! We got problems![ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0004</td>
+        <td class="side">Not the least of which is that you made THE Tobias[ST:n ]hike all the way out here just to chew you out![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0005</td>
+        <td class="side">Oh yeah? Well, if you see [ST:Gender p1=him p2=her ], I want you to pass on[ST:n ]a little message from me...[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0006</td>
+        <td class="side">Tell [ST:Gender p1=him p2=her ] that Tobias is waiting outside the BLADE[ST:n ]barracks to put an end to [ST:Gender p1=his p2=her ] little thieving spree.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0007</td>
+        <td class="side">And if [ST:Gender p1=he p2=she ] has the guts to turn up, I'll be there to give[ST:n ][ST:Gender p1=him p2=her ] what-for![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0008</td>
+        <td class="side">You've been planting data probes all over lately, yeah?[ST:n ]That make you feel good? Make you feel like the[ST:n ]big[ST:Gender p1= man p2= lady ] on campus?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0009</td>
+        <td class="side">Well, yank 'em back out! Every last one, you hear me?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0010</td>
+        <td class="side">You've been costing me a fortune, and I am NOT the[ST:n ]kind of man what likes folks messing with his wallet.[ST:n ]We clear?[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0030</td>
+        <td class="side">Provoke</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0031</td>
+        <td class="side">Roll your eyes waaaaay back in your head.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0040</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0041</td>
+        <td class="side">Ask Tobias to explain what he's talking about.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0011</td>
+        <td class="side">Oh, we got ourselves a real tough [ST:Gender p1=guy p2=gal ] here![ST:n ]You even got any idea what you've done, tough [ST:Gender p1=guy p2=gal ]?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0012</td>
+        <td class="side">...Wait. You mean you been raiding people's turf[ST:n ]without even REALIZING it?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0013</td>
+        <td class="side">Well, here's the deal—every stupid data probe you stick[ST:n ]in the ground cuts into the number of users accessing[ST:n ]MINE! That clear enough for ya?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0014</td>
+        <td class="side">I been sitting there watching my profits drop day by[ST:n ]day, and I don't like it one damn bit.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0015</td>
+        <td class="side">...Huh? The Lifehold? Aw, who gives a crap?[ST:n ]I'm talking 'bout cash here, pal! MY cash![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0016</td>
+        <td class="side">Look, pal, if brains were dynamite you couldn't blow[ST:n ]your nose, so lemme spell it out for you real slow...[ST:n ]All the money...in New LA...is MINE![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0017</td>
+        <td class="side">Any of those cowards wants to know about the world[ST:n ]outside, they can keep accessing my research data[ST:n ]probes just like they always have.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0050</td>
+        <td class="side">Argue</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0051</td>
+        <td class="side">Mount a passionate rebuttal[ST:n ]against Tobias's unfair claim.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0060</td>
+        <td class="side">Mock</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0061</td>
+        <td class="side">Rub your fingers together like you're[ST:n ]playing the world's smallest violin.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0018</td>
+        <td class="side">...Rules? Duty? Forget that noise! I'm talking about cash[ST:n ]here, pal! Cold hard credits! You get me?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0019</td>
+        <td class="side">I got no time for your stupid excuses, so if you won't[ST:n ]listen to me, that's fine.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0020</td>
+        <td class="side">...The hell is that smug look about, pal?[ST:n ]I don't give two rips if you wanna listen to me or not.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0021</td>
+        <td class="side">Enough talk! We're gonna have us a little wager to see[ST:n ]who the REAL boss is around here.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0022</td>
+        <td class="side">...Easy there, ya mad dog. I ain't talking violence.[ST:n ]All them medical bills are a waste of money.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0023</td>
+        <td class="side">I'm saying we race to earn 70 large with FrontierNav.[ST:n ]...That's 70,000 credits, in case you're still slow.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0024</td>
+        <td class="side">Loser does whatever the winner says. ...Well?[ST:n ]Are ya gonna accept, or are ya...chicken?[ST:n ]Baaawk bawk bawk bawk![ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0025</td>
+        <td class="side">Ha! Then the deal is done, and YOU, pal, are the[ST:n ]world's biggest idiot.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0026</td>
+        <td class="side">You even know who I am? I'm a damned genius[ST:n ]Pathfinder! A prodigal! Ain't no BLADE can outearn[ST:n ]me, least of all some little punk like you.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0027</td>
+        <td class="side">I'm gonna wring 70,000 credits out of FrontierNav so[ST:n ]fast your head'll spin right off your body.[ST:n ]RIGHT THE HELL OFF IT![ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0028</td>
+        <td class="side">Bwa ha ha! You don't even KNOW, pal![ST:n ]I got money flying at me so fast, I gotta parry it![ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0029</td>
+        <td class="side">New LA's a sad little cage full'a sad little people.[ST:n ]Give 'em a little peek at the outside world,[ST:n ]and they pay through the nose![ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0030</td>
+        <td class="side">You're crazy if you think I'm letting you horn in on a[ST:n ]racket this sweet.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0031</td>
+        <td class="side">I'll have a piddling 70,000 credits in no time, and then[ST:n ]you can wave bye-bye to all your data probes![ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0032</td>
+        <td class="side">How goes, you thieving little punk? Bad? Ha![ST:n ]Me, I'm just shy of that 70 grand.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0033</td>
+        <td class="side">You even got two nickels to rub together yet?[ST:n ]Come on—just bow down and admit defeat already.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0070</td>
+        <td class="side">Inform</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0071</td>
+        <td class="side">Calmly inform Tobias that you completed the wager.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0080</td>
+        <td class="side">Gloat</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0081</td>
+        <td class="side">Tell Tobias you won. Then laugh in his fat face.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0034</td>
+        <td class="side">You seem awfully calm. You give up ye...[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0035</td>
+        <td class="side">The hell you laughing about, pal? You go craz...[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0036</td>
+        <td class="side">WHAT? You got the full 70,000 simoleons?[ST:n ]...Nah, there ain't no WAY you beat ol' Tobias![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0037</td>
+        <td class="side">You're a lying dog, and I'm gonna prove it right...[ST:n ]Ah, hell.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0038</td>
+        <td class="side">Fine. You got it.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0039</td>
+        <td class="side">But how the hell'd you get it so fast, huh? I'm calling[ST:n ]foul on this! Dirty pool! It ain't possible, you hear me?[ST:n ]You're a dirty cheatin' fink![ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0090</td>
+        <td class="side">Divulge</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0091</td>
+        <td class="side">Explain your methodical installation methods.[ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev019201_JNK0100</td>
+        <td class="side">Conceal</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev019201_SEL0101</td>
+        <td class="side">Hint at your wide range of awesome secret techniques.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0040</td>
+        <td class="side">And whaddya think I'VE been doing over here, huh?[ST:n ]Eating bonbons? I done walked every CORNER of this[ST:n ]stupid planet looking for places to put research probes![ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0041</td>
+        <td class="side">What? But I know every FrontierNav trick in the book.[ST:n ]Hell, I WROTE that book![ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0042</td>
+        <td class="side">I've been at this for a lot longer than you, pal, so why?[ST:n ]Why, huh? WHY?![ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0043</td>
+        <td class="side">What are you doing that I ain't?![ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0044</td>
+        <td class="side">Or are you gonna spew the same pap Kirsty did about[ST:n ]your \"love for FrontierNav\"? Barf![ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0045</td>
+        <td class="side">No... No, this don't count. I won't accept it![ST:n ]This ain't over by a long shot![ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0046</td>
+        <td class="side">I'm gonna find every last person who accesses your[ST:n ]research probes and make sure they go back to[ST:n ]watching mine![ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev019201_MSG0047</td>
+        <td class="side">Enjoy your piddling profits till then, chump! Rrragh![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev000691_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0001</td>
+        <td class="side">Hey there, [ST:playername ].[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0002</td>
+        <td class="side">Lemme tell ya, I'm having one rough day over here.[ST:n ]I drink and I drink, but I can't get drunk![ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0003</td>
+        <td class="side">It's like I built up an immunity to Scotch—which is the[ST:n ]most terrible thing I've ever heard! I don't know what[ST:n ]I'm gonna do...[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0004</td>
+        <td class="side">What do you like to drink, [ST:playername ]?[ST:n ]Maybe I'll try your poison and see if it works.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0010</td>
+        <td class="side">Beer</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0011</td>
+        <td class="side">Suggest that Frye crack open a cold one.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0020</td>
+        <td class="side">Cocktail</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0021</td>
+        <td class="side">Suggest that Frye try a fancy cocktail. With an umbrella.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0030</td>
+        <td class="side">Wine</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0031</td>
+        <td class="side">Suggest that Frye try a fine, aged wine.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0040</td>
+        <td class="side">Vodka</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0041</td>
+        <td class="side">Suggest a healthy belt of vodka.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0050</td>
+        <td class="side">Sake</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0051</td>
+        <td class="side">Suggest a high-quality Japanese sake.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev000691_JNK0060</td>
+        <td class="side">Shrug</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev000691_SEL0061</td>
+        <td class="side">Explain that you're still a minor, so you wouldn't know.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0005</td>
+        <td class="side">Beer? Really? I dunno...[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0006</td>
+        <td class="side">I got a long-standing policy about beer—I only drink[ST:n ]it while watching football. And it's not like that's a[ST:n ]common occurrence nowadays.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0007</td>
+        <td class="side">But yeah, I guess I could give it a shot...[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0008</td>
+        <td class="side">Blech! Those foo-foo drinks are always so sweet![ST:n ]Save it for a 21st birthday, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0009</td>
+        <td class="side">Still, I guess it never hurts to try something new...[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0010</td>
+        <td class="side">Hey, I ain't some fancy snob, ya know? I drink Scotch.[ST:n ]CHEAP Scotch. Wine's pretty much the opposite of that.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0011</td>
+        <td class="side">But maybe since it's so unlike what I usually drink,[ST:n ]it'll actually get me smashed! Worth a shot, I guess...[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0012</td>
+        <td class="side">That's not a bad idea. Not bad at all.[ST:n ]I didn't know you were a vodka[ST:Gender p1= man p2= woman ]![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0013</td>
+        <td class="side">Nice thing about vodka is that it's easy to get.[ST:n ]That'll be important if I end up making a habit of it.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0014</td>
+        <td class="side">Geez, no wonder you get along with Nagi so well.[ST:n ]You got pretty esoteric tastes.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0015</td>
+        <td class="side">I usually don't like to drink things I can't pronounce,[ST:n ]but if you really think I could develop a taste for it...[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0016</td>
+        <td class="side">Oh, right! Riiight. I forgot you couldn't drink. Sorry.[ST:n ]...Er, don't call the law or nothing, okay?[ST:n ]Honest mistake.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0017</td>
+        <td class="side">Hey, you know what? Talking to you just gave me a[ST:n ]great idea![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0018</td>
+        <td class="side">If I can't find a type of booze that'll get me properly[ST:n ]hammered, I should just make one myself! Moonshine![ST:n ]White lightning! That's the ticket, all right![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0019</td>
+        <td class="side">There's all sorts of weird fruits and grains and crap[ST:n ]here on Mira that we didn't have back on Earth, right?[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0020</td>
+        <td class="side">Next time I'm off on an Interceptor mission, I'll just[ST:n ]gather up a bunch and see if I can ferment 'em into[ST:n ]an entirely new type of drink.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0021</td>
+        <td class="side">Man, I never thought I'd turn into one of those bathtub[ST:n ]distiller types. But I guess sobriety's the mother of[ST:n ]invention![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0022</td>
+        <td class="side">Thanks for talking me through that. I owe ya one.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0023</td>
+        <td class="side">Still, I guess I better try the Scotch one more time[ST:n ]just to make sure it still ain't working. Then I'll start[ST:n ]drawing up plans for the distillery.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev000691_MSG0024</td>
+        <td class="side">See ya next time duty calls, all right?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

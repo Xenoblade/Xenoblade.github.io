@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev031501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev031501_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev031501_SEL0011</td>
+        <td class="side">Ask Chiopitus about the Ma-non.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev031501_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev031501_SEL0021</td>
+        <td class="side">Ask Chiopitus if anything is troubling him.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev031501_SEL1021</td>
+        <td class="side">Ask Chiopitus about recent events.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev031501_SEL1031</td>
+        <td class="side">Ask Chiopitus what he did during the attack.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev031501_SEL0051</td>
+        <td class="side">Ask Chiopitus about the Nopon.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev031501_SEL2021</td>
+        <td class="side">Ask Chiopitus about recent events.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0001</td>
+        <td class="side">Ma-non are generally positive thinkers, but even we[ST:n ]felt our hearts racing as the Ganglion surrounded us[ST:n ]in Oblivia, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0002</td>
+        <td class="side">Thanks to that, I was able to directly experience the[ST:n ]emotion of \"despair,\" which isn't something I really[ST:n ]have a lot of experience with.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0003</td>
+        <td class="side">I should very much like to experience it again[ST:n ]without the attendant threat to life and limb,[ST:n ]if such a thing is possible?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0008</td>
+        <td class="side">Excuse me, but I would like to observe the full range of[ST:n ]human facial expression. Would you mind getting[ST:n ]angry for 20 seconds, then happy for 10?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0009</td>
+        <td class="side">Er, you seem a bit...perplexed by my request?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0010</td>
+        <td class="side">How...interesting? I've been going about asking this[ST:n ]favor of every human that I meet, and yet...[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0011</td>
+        <td class="side">Well, they all seem to react with the same anomalous[ST:n ]facial expression as as you have right now.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev031501_MSG0012</td>
+        <td class="side">Why do you refuse to cooperate? One would think[ST:n ]our friendship treaty provides the perfect opportunity[ST:n ]for our races to understand each other, right?[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1001</td>
+        <td class="side">The tremendous energy that Dana is emitting is called[ST:n ]\"love,\" isn't it?[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1002</td>
+        <td class="side">If all of humanity discharged this energy at once,[ST:n ]I think perhaps you might be able to conquer any foe?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1003</td>
+        <td class="side">Maybe if I understand you better I can also become[ST:n ]loving and all-powerful?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1008</td>
+        <td class="side">Initially, I was determined to measure and quantify[ST:n ]these human emotions you call \"fear\" and \"despair,\"[ST:n ]but...[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1009</td>
+        <td class="side">But I ended up stopping the scanning halfway through,[ST:n ]even though I love measuring things, right?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1010</td>
+        <td class="side">Can you imagine seeing the ghastly transformation of[ST:n ]a peaceful city into a horrific battlefield strewn with the[ST:n ]unlucky fallen?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1011</td>
+        <td class="side">Well, let's just leave it at my saying that I have no wish[ST:n ]to witness or measure any such carnage again,[ST:n ]if that's all right?[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1015</td>
+        <td class="side">Now that I have amassed an impressive collection of[ST:n ]emotive data for humans, I thought I might try my[ST:n ]hand at the Nopon next?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1016</td>
+        <td class="side">But when I pointed my scanner at the first of them,[ST:n ]a strange reading appeared on my screen.[ST:n ]And do you know what it said?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1017</td>
+        <td class="side">\"Unlock my feelings now for just 156 credits!\"[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev031501_MSG1018</td>
+        <td class="side">I don't know what kind of emotion is powerful enough[ST:n ]to reprogram my scanner, but it was both compelling[ST:n ]and absolutely...terrifying?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev031501_MSG2001</td>
+        <td class="side">Do you suppose I can negate Dana's \"sadness\" by[ST:n ]giving her a watch like you did Pauline?[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev031501_MSG2002</td>
+        <td class="side">...I see. So there is no cure for this \"broken heart\"[ST:n ]sickness you speak of? I fear I'll never be able to[ST:n ]measure the true diameter of love, will I?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

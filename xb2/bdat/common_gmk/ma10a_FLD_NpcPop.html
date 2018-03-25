@@ -1,0 +1,2665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma10a_FLD_NpcPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>NpcID</th>
+          <th>ScenarioFlagMin</th>
+          <th>ScenarioFlagMax</th>
+          <th>QuestFlag</th>
+          <th>QuestFlagMin</th>
+          <th>QuestFlagMax</th>
+          <th>TimeRange</th>
+          <th>Condition</th>
+          <th>Group</th>
+          <th>Mot</th>
+          <th>MountPoint</th>
+          <th>MountObject</th>
+          <th>MountPoint2</th>
+          <th>MountObject2</th>
+          <th>EventID</th>
+          <th>NpcTurn</th>
+          <th>LookAt</th>
+          <th>LookAtRange</th>
+          <th>QuestID</th>
+          <th>ShopID</th>
+          <th>CloseRange</th>
+          <th>MoveSpeed</th>
+          <th>ReactionRange</th>
+          <th>ReactionPercent</th>
+          <th>ReactionMot</th>
+          <th>BattleReaction</th>
+          <th>BattleMot</th>
+          <th>Visible_XZ</th>
+          <th>Visible_Y</th>
+          <th>Invisible_XZ</th>
+          <th>Invisible_Y</th>
+          <th>FSID1</th>
+          <th>FSID2</th>
+          <th>FSID3</th>
+          <th>Talkable</th>
+        </tr>
+      </thead>
+      <tr id="10001">
+        <td>10001</td>
+        <td>
+        </td>
+        <td class="side">npc45320171_02</td>
+        <td><a href="../common/RSC_NpcList.html#2565">Timur</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5051">5051</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#37">C_schedule_33_00</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41231">41231</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10002">
+        <td>10002</td>
+        <td>
+        </td>
+        <td class="side">npc45320292_01</td>
+        <td><a href="../common/RSC_NpcList.html#3150">Eunes</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1001">1001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8051">8051</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#10">C_schedule_06_00</td></a>
+        <td>1</td>
+        <td>26</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40924">40924</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10003">
+        <td>10003</td>
+        <td>
+        </td>
+        <td class="side">npc45320292_02</td>
+        <td><a href="../common/RSC_NpcList.html#3150">Eunes</td></a>
+        <td><a href="../flags/FLG_Scenario.html#9001">9001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#10">C_schedule_06_00</td></a>
+        <td>1</td>
+        <td>26</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40925">40925</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10004">
+        <td>10004</td>
+        <td>
+        </td>
+        <td class="side">npc45320391_01</td>
+        <td><a href="../common/RSC_NpcList.html#3148">Hamoosah</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1001">1001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8051">8051</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#31">C_schedule_27_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40927">40927</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10005">
+        <td>10005</td>
+        <td>
+        </td>
+        <td class="side">npc45320391_02</td>
+        <td><a href="../common/RSC_NpcList.html#3148">Hamoosah</td></a>
+        <td><a href="../flags/FLG_Scenario.html#9001">9001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#31">C_schedule_27_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40928">40928</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10006">
+        <td>10006</td>
+        <td>
+        </td>
+        <td class="side">npc45320392_01</td>
+        <td><a href="../common/RSC_NpcList.html#3149">Raghman</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1001">1001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8051">8051</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#13">C_schedule_09_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40930">40930</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10007">
+        <td>10007</td>
+        <td>
+        </td>
+        <td class="side">npc45320392_02</td>
+        <td><a href="../common/RSC_NpcList.html#3149">Raghman</td></a>
+        <td><a href="../flags/FLG_Scenario.html#9001">9001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2810">2810</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#13">C_schedule_09_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40931">40931</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+        <td>70</td>
+        <td>70</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10008">
+        <td>10008</td>
+        <td>
+        </td>
+        <td class="side">npc47100091_01</td>
+        <td><a href="../common/RSC_NpcList.html#3171">Jax</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5222">5222</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1172">1172</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21023">21023</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5225">5225</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10009">
+        <td>10009</td>
+        <td>
+        </td>
+        <td class="side">npc47100092_01</td>
+        <td><a href="../common/RSC_NpcList.html#3172">Rix</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5223">5223</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1172">1172</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21024">21024</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5223">5223</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10010">
+        <td>10010</td>
+        <td>
+        </td>
+        <td class="side">npc42350172_04</td>
+        <td><a href="../common/RSC_NpcList.html#2553">Snififi</td></a>
+        <td><a href="../flags/FLG_Scenario.html#6001">6001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2455">A Ripe New Frontier</td></a>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41044">41044</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/MNU_ShopList.html#202">Dokkdokk Trading</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10011">
+        <td>10011</td>
+        <td>
+        </td>
+        <td class="side">npc42350172_02</td>
+        <td><a href="../common/RSC_NpcList.html#2553">Snififi</td></a>
+        <td><a href="../flags/FLG_Scenario.html#6001">6001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2456">2456</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#636">636</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20607">20607</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2456">2456</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10012">
+        <td>10012</td>
+        <td>
+        </td>
+        <td class="side">npc42350172_03</td>
+        <td><a href="../common/RSC_NpcList.html#2553">Snififi</td></a>
+        <td><a href="../flags/FLG_Scenario.html#6001">6001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2458">2458</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20608">20608</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2458">2458</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10013">
+        <td>10013</td>
+        <td>
+        </td>
+        <td class="side">npc45320192_01</td>
+        <td><a href="../common/RSC_NpcList.html#3164">Baltair</td></a>
+        <td><a href="../flags/FLG_Scenario.html#6001">6001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2707">2707</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2670">2670</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20610">20610</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10014">
+        <td>10014</td>
+        <td>
+        </td>
+        <td class="side">npc45300091_01</td>
+        <td><a href="../common/RSC_NpcList.html#3151">Ismet</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1133">1133</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20113">20113</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1131">Judicium's Legacy</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10015">
+        <td>10015</td>
+        <td>
+        </td>
+        <td class="side">npc00000292_01</td>
+        <td><a href="../common/RSC_NpcList.html#3160">Weapon wreckage</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#649">649</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20114">20114</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1355">Ancient Knowledge</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10016">
+        <td>10016</td>
+        <td>
+        </td>
+        <td class="side">npc00000293_01</td>
+        <td><a href="../common/RSC_NpcList.html#3161">Weapon wreckage</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#650">650</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20115">20115</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1356">Ancient Knowledge</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10017">
+        <td>10017</td>
+        <td>
+        </td>
+        <td class="side">npc00000294_01</td>
+        <td><a href="../common/RSC_NpcList.html#3162">Weapon wreckage</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#651">651</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20116">20116</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1357">Ancient Knowledge</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10018">
+        <td>10018</td>
+        <td>
+        </td>
+        <td class="side">npc00000295_01</td>
+        <td><a href="../common/RSC_NpcList.html#3163">Weapon wreckage</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5044">5044</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#652">652</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20117">20117</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1132">1132</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1358">Ancient Knowledge</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10019">
+        <td>10019</td>
+        <td>
+        </td>
+        <td class="side">npc43320145_01</td>
+        <td><a href="../common/RSC_NpcList.html#2879">NQ1026_隠密部隊の傭兵</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2271">2271</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40001">40001</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10020">
+        <td>10020</td>
+        <td>
+        </td>
+        <td class="side">npc43320145_02</td>
+        <td><a href="../common/RSC_NpcList.html#2879">NQ1026_隠密部隊の傭兵</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2273">2273</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20399">20399</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10021">
+        <td>10021</td>
+        <td>
+        </td>
+        <td class="side">npc43320145_03</td>
+        <td><a href="../common/RSC_NpcList.html#2879">NQ1026_隠密部隊の傭兵</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2276">2276</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#882">882</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20402">20402</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10022">
+        <td>10022</td>
+        <td>
+        </td>
+        <td class="side">npc00000145_01</td>
+        <td><a href="../common/RSC_NpcList.html#2880">NQ1026_誰かがいた痕跡</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2270">2270</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20395">20395</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10023">
+        <td>10023</td>
+        <td>
+        </td>
+        <td class="side">npc00000146_01</td>
+        <td><a href="../common/RSC_NpcList.html#2881">NQ1026_隠密部隊の死体</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2271">2271</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#881">881</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20397">20397</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10024">
+        <td>10024</td>
+        <td>
+        </td>
+        <td class="side">npc00000147_01</td>
+        <td><a href="../common/RSC_NpcList.html#2882">NQ1026_隠密部隊の墓</td></a>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2276">2276</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20403">20403</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10025">
+        <td>10025</td>
+        <td>
+        </td>
+        <td class="side">npc45320191_01</td>
+        <td><a href="../common/RSC_NpcList.html#3152">Lassa</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2280">2280</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#884">884</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20407">20407</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2281">2281</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10026">
+        <td>10026</td>
+        <td>
+        </td>
+        <td class="side">npc45500191_01</td>
+        <td><a href="../common/RSC_NpcList.html#3153">Smaia</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2282">2282</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#886">886</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#9">C_schedule_05_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20408">20408</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2282">2282</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10027">
+        <td>10027</td>
+        <td>
+        </td>
+        <td class="side">npc00000191_01</td>
+        <td><a href="../common/RSC_NpcList.html#3154">???</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#887">887</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20409">20409</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1031">Search for Plants</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10028">
+        <td>10028</td>
+        <td>
+        </td>
+        <td class="side">npc00000192_01</td>
+        <td><a href="../common/RSC_NpcList.html#3155">???</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#888">888</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20410">20410</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1032">Search for Plants</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10029">
+        <td>10029</td>
+        <td>
+        </td>
+        <td class="side">npc00000193_01</td>
+        <td><a href="../common/RSC_NpcList.html#3156">???</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#889">889</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20411">20411</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2283">2283</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1033">Search for Plants</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10030">
+        <td>10030</td>
+        <td>
+        </td>
+        <td class="side">npc45320193_01</td>
+        <td><a href="../common/RSC_NpcList.html#3165">Torcall</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2363">テンペランティア周回警備</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1994">1994</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20502">20502</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2363">テンペランティア周回警備</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10031">
+        <td>10031</td>
+        <td>
+        </td>
+        <td class="side">npc45320193_02</td>
+        <td><a href="../common/RSC_NpcList.html#3165">Torcall</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2370">2370</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20508">20508</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2370">2370</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10032">
+        <td>10032</td>
+        <td>
+        </td>
+        <td class="side">npc45320194_01</td>
+        <td><a href="../common/RSC_NpcList.html#3166">NQ1035兵士１</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1033">1033</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20503">20503</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10033">
+        <td>10033</td>
+        <td>
+        </td>
+        <td class="side">npc45320195_01</td>
+        <td><a href="../common/RSC_NpcList.html#3167">NQ1035兵士２</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1033">1033</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20504">20504</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10034">
+        <td>10034</td>
+        <td>
+        </td>
+        <td class="side">npc45320196_01</td>
+        <td><a href="../common/RSC_NpcList.html#3168">NQ1035兵士３</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1033">1033</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20505">20505</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10035">
+        <td>10035</td>
+        <td>
+        </td>
+        <td class="side">npc45320197_01</td>
+        <td><a href="../common/RSC_NpcList.html#3169">NQ1035兵士４</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1033">1033</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20506">20506</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10036">
+        <td>10036</td>
+        <td>
+        </td>
+        <td class="side">npc45320291_01</td>
+        <td><a href="../common/RSC_NpcList.html#3170">NQ1035はぐれ帝国兵</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1033">1033</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20507">20507</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2364">2364</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10037">
+        <td>10037</td>
+        <td>
+        </td>
+        <td class="side">npc45500391_01</td>
+        <td><a href="../common/RSC_NpcList.html#3174">Nansae</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1228">1228</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1806">1806</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21342">21342</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10038">
+        <td>10038</td>
+        <td>
+        </td>
+        <td class="side">npc45320198_01</td>
+        <td><a href="../common/RSC_NpcList.html#3175">Tuc</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1228">1228</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1806">1806</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21343">21343</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1420">"Kingly" Demeanor</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10039">
+        <td>10039</td>
+        <td>
+        </td>
+        <td class="side">npc00000392_01</td>
+        <td><a href="../common/RSC_NpcList.html#3177">Dalnes Stone</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1228">1228</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1806">1806</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20180">20180</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListMini.html#1229">1229</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10040">
+        <td>10040</td>
+        <td>
+        </td>
+        <td class="side">npc45320199_01</td>
+        <td><a href="../common/RSC_NpcList.html#3176">Carchal</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5067">5067</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1737">1737</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20818">20818</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10041">
+        <td>10041</td>
+        <td>
+        </td>
+        <td class="side">npc00000393_01</td>
+        <td><a href="../common/RSC_NpcList.html#3178">Agate's Mining</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4001">4001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1241">1241</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21190">21190</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1392">Agate's Mining</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10042">
+        <td>10042</td>
+        <td>
+        </td>
+        <td class="side">npc00000394_01</td>
+        <td><a href="../common/RSC_NpcList.html#3179">Agate's Mining</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4001">4001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1242">1242</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21191">21191</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1393">Agate's Mining</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10043">
+        <td>10043</td>
+        <td>
+        </td>
+        <td class="side">npc00000395_01</td>
+        <td><a href="../common/RSC_NpcList.html#3180">Agate's Mining</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4001">4001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1243">1243</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21192">21192</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5330">5330</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1394">Agate's Mining</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10044">
+        <td>10044</td>
+        <td>
+        </td>
+        <td class="side">npc42300054_07</td>
+        <td><a href="../common/RSC_NpcList.html#3106">Yumyum the Burglar</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5077">5077</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1094">1094</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#21">C_schedule_17_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5070">Hero of the Nopon</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10045">
+        <td>10045</td>
+        <td>
+        </td>
+        <td class="side">npc42420191_01</td>
+        <td><a href="../common/RSC_NpcList.html#3185">Nonono</td></a>
+        <td><a href="../flags/FLG_Scenario.html#5001">5001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#124">124</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#40963">40963</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/MNU_ShopList.html#30">30</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10046">
+        <td>10046</td>
+        <td>
+        </td>
+        <td class="side">blade_seori_11</td>
+        <td>1025</td>
+        <td><a href="../flags/FLG_Scenario.html#7001">7001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5129">5129</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1125">1125</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#1">C_idle</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5129">5129</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10047">
+        <td>10047</td>
+        <td>
+        </td>
+        <td class="side">npc45320193_03</td>
+        <td><a href="../common/RSC_NpcList.html#3165">Torcall</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1001">1001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8051">8051</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41557">41557</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10048">
+        <td>10048</td>
+        <td>
+        </td>
+        <td class="side">npc45320193_04</td>
+        <td><a href="../common/RSC_NpcList.html#3165">Torcall</td></a>
+        <td><a href="../flags/FLG_Scenario.html#9001">9001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41558">41558</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10049">
+        <td>10049</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10050">
+        <td>10050</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10051">
+        <td>10051</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10052">
+        <td>10052</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5228">5228</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21027">21027</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5228">5228</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10053">
+        <td>10053</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10054">
+        <td>10054</td>
+        <td>
+        </td>
+        <td class="side">npc45320114_02</td>
+        <td><a href="../common/RSC_NpcList.html#3321">Irving</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2739">2739</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2796">2796</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21399">21399</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2739">2739</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10055">
+        <td>10055</td>
+        <td>
+        </td>
+        <td class="side">npc45320114_03</td>
+        <td><a href="../common/RSC_NpcList.html#3321">Irving</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2742">2742</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2811">2811</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21404">21404</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2742">2742</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10056">
+        <td>10056</td>
+        <td>
+        </td>
+        <td class="side">npc45320393_02</td>
+        <td><a href="../common/RSC_NpcList.html#3320">Maddock</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2739">2739</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2798">2798</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21398">21398</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2739">2739</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10057">
+        <td>10057</td>
+        <td>
+        </td>
+        <td class="side">npc45320115_01</td>
+        <td><a href="../common/RSC_NpcList.html#3322">Cassiar</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2741">2741</td></a>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2812">2812</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#14">C_schedule_10_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2741">2741</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="10058">
+        <td>10058</td>
+        <td>
+        </td>
+        <td class="side">npc45320115_02</td>
+        <td><a href="../common/RSC_NpcList.html#3322">Cassiar</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2742">2742</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2811">2811</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21403">21403</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2742">2742</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10059">
+        <td>10059</td>
+        <td>
+        </td>
+        <td class="side">npc00000611_01</td>
+        <td><a href="../common/RSC_NpcList.html#3326">Watch Post</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2740">2740</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2795">2795</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21400">21400</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2740">2740</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10060">
+        <td>10060</td>
+        <td>
+        </td>
+        <td class="side">npc00000613_01</td>
+        <td><a href="../common/RSC_NpcList.html#3354">???</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2783">2783</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2850">2850</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21438">21438</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2783">2783</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10061">
+        <td>10061</td>
+        <td>
+        </td>
+        <td class="side">npc00000614_01</td>
+        <td><a href="../common/RSC_NpcList.html#3355">???</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2784">2784</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2850">2850</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21439">21439</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2784">2784</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10062">
+        <td>10062</td>
+        <td>
+        </td>
+        <td class="side">npc43700393_01</td>
+        <td><a href="../common/RSC_NpcList.html#3338">Geoffili</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2788">2788</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2850">2850</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#1">C_idle</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21442">21442</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2788">2788</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="10063">
+        <td>10063</td>
+        <td>
+        </td>
+        <td class="side">npc43700393_02</td>
+        <td><a href="../common/RSC_NpcList.html#3338">Geoffili</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2787">2787</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2850">2850</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#1">C_idle</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21657">21657</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>100</td>
+        <td>100</td>
+        <td>120</td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202107_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202107_msg0001</td>
+        <td>84</td>
+        <td class="side">Hey, Adenine,
+d'you think it might be time to go?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202107_msg0002</td>
+        <td>84</td>
+        <td class="side">I think we've done enough.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202107_msg0003</td>
+        <td>84</td>
+        <td class="side">Adenine, should we head back?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202107_msg0004</td>
+        <td>84</td>
+        <td class="side">You've been at it for a while.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202107_msg0005</td>
+        <td>84</td>
+        <td class="side">Adenine, don't you think we should
+be heading back soon?</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202107_msg0006</td>
+        <td>84</td>
+        <td class="side">This is not a good place to
+tarry in too long.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202107_msg0007</td>
+        <td>84</td>
+        <td class="side">Hey, Adenine. Let's head back soon.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202107_msg0008</td>
+        <td>84</td>
+        <td class="side">Don't you think you've done enough?</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202107_msg0009</td>
+        <td>84</td>
+        <td class="side">What are you saying?!
+I've got no intention of moving.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202107_msg0010</td>
+        <td>84</td>
+        <td class="side">If you want to go back, then
+by all means, be my guest.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202107_msg0011</td>
+        <td>84</td>
+        <td class="side">I'll just live here from now on.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202107_msg0012</td>
+        <td>84</td>
+        <td class="side">Don't be ridiculous!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202107_msg0013</td>
+        <td>84</td>
+        <td class="side">We've got stuff to do still!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202107_msg0014</td>
+        <td>84</td>
+        <td class="side">No way, girl.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202107_msg0015</td>
+        <td>84</td>
+        <td class="side">We've still got bigger fish to fry.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202107_msg0016</td>
+        <td>84</td>
+        <td class="side">I cannot in good faith authorize that.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202107_msg0017</td>
+        <td>84</td>
+        <td class="side">There are other matters we must
+all attend to.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202107_msg0018</td>
+        <td>84</td>
+        <td class="side">No, come on. There's no way
+you're doing that.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202107_msg0019</td>
+        <td>84</td>
+        <td class="side">We've got loads to take care of.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202107_msg0020</td>
+        <td>84</td>
+        <td class="side">But I don't want to!
+I don't want to be anywhere else!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202107_msg0021</td>
+        <td>84</td>
+        <td class="side">If I don't research this place,
+who do you think will?</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202107_msg0022</td>
+        <td>84</td>
+        <td class="side">This is of vital importance to
+everyone on Alrest!</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202107_msg0023</td>
+        <td>84</td>
+        <td class="side">I give up...
+I can see you're resolved.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202107_msg0024</td>
+        <td>84</td>
+        <td class="side">Fine, you can keep investigating
+until you're happy.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202107_msg0025</td>
+        <td>84</td>
+        <td class="side">I can't deal with this.
+I can see you won't budge...</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202107_msg0026</td>
+        <td>84</td>
+        <td class="side">Go ahead then, study it as much
+as you want.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202107_msg0027</td>
+        <td>84</td>
+        <td class="side">Your will really is indomitable, Adenine.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202107_msg0028</td>
+        <td>84</td>
+        <td class="side">I'll acquiesce.
+You can study this place to your
+heart's content.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202107_msg0029</td>
+        <td>84</td>
+        <td class="side">Yeah, yeah, OK.
+You win, Adenine.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202107_msg0030</td>
+        <td>84</td>
+        <td class="side">You can keep up your investigation
+or what have you. Just come help us
+out sometime too, OK?</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202107_msg0031</td>
+        <td>84</td>
+        <td class="side">Awesome!</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst202107_msg0032</td>
+        <td>84</td>
+        <td class="side">Thanks, Driver dearest!</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst202107_msg0033</td>
+        <td>84</td>
+        <td class="side">I just love understanding,
+and I'm glad we've reached one!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

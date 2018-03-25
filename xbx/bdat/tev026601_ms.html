@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev026601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev026601_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0011</td>
+        <td class="side">Ask Satie about Skells.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev026601_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0021</td>
+        <td class="side">Ask Satie about recent developments.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0041</td>
+        <td class="side">Ask Satie about the Skell license test.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0051</td>
+        <td class="side">Ask Satie about Skell insurance.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0061</td>
+        <td class="side">Ask Satie about Skell flight mode.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev026601_SEL0071</td>
+        <td class="side">Ask Satie about Wolf.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0001</td>
+        <td class="side">You want to pilot one of these? Then you must be a[ST:n ]fellow Skell lover! I like you already.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0002</td>
+        <td class="side">If you prove yourself as a BLADE, you'll get a crack[ST:n ]behind the stick one day.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0003</td>
+        <td class="side">Until then, you're just gonna have to work those legs[ST:n ]of yours and traverse Mira the old-fashioned way.[ST:n ]No pain, no gain.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0004</td>
+        <td class="side">Oh, and if you have any combat questions,[ST:n ]Wolf's your guy.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0005</td>
+        <td class="side">Just watch your tone, all right? He's a great instructor,[ST:n ]but they don't call him \"the Nutcracker\" for nothing.[ST:n ]...Or I don't, anyway.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0008</td>
+        <td class="side">There you are, [ST:playername ].[ST:n ]Thanks for delivering those supplies.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0009</td>
+        <td class="side">Myles tells me that you're quite the BLADE.[ST:n ]I think you inspired him.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0010</td>
+        <td class="side">Now he's off on his next mission trying to outdo you[ST:n ]so he can come home with something to brag about.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0011</td>
+        <td class="side">I just hope he doesn't trash his Skell. It's fit for combat,[ST:n ]but I don't know about the pilot...[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0012</td>
+        <td class="side">I mean, would it kill him to treat Skells with just a[ST:n ]sliver of the respect someone like me or Christopher[ST:n ]has for them?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0020</td>
+        <td class="side">Hang on. Let me have a closer look at you...[ST:n ]Yeah... Mmm-hmm... Okay...[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0021</td>
+        <td class="side">Yessir! I'd say you're a winner! I'd trust you behind the[ST:n ]stick of a Skell any day.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0022</td>
+        <td class="side">I bet Wolf would give you his Nutcracker stamp of[ST:n ]approval, too.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0023</td>
+        <td class="side">Why don't you drop by the barracks and talk to[ST:n ]Commander Vandham about getting a license?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0024</td>
+        <td class="side">Knowing him, he'd probably leap at the chance to[ST:n ]put you through your paces.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0030</td>
+        <td class="side">I'm so eager to get a Skell license that I've been[ST:n ]asking every BLADE I meet about the test.[ST:n ]You know? Just to get a leg up on it?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0031</td>
+        <td class="side">For example, did you know you can find the rock[ST:n ]armadillos you need for the Curator test in Noctilum?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0032</td>
+        <td class="side">And the beagflea squashes are near Lake Basel in[ST:n ]Oblivia. But they're really hard to find...[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0033</td>
+        <td class="side">To pass the Reclaimers' test, you need to improve your[ST:n ]mechanical field skill until you're capable of salvaging[ST:n ]items from wreckage.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0034</td>
+        <td class="side">To be honest, the deeper I dig the more brutal the[ST:n ]test sounds—but I'm determined to pass. Just watch![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0040</td>
+        <td class="side">All our Skells are insured. If you check the \"Skell[ST:n ]Insurance\" column at the shop terminal, you'll see[ST:n ]a number.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0041</td>
+        <td class="side">Until that number reaches zero, you can get your Skell[ST:n ]right back in the event it is destroyed.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0042</td>
+        <td class="side">But don't take that as a license to be reckless![ST:n ]Skells are pricey, and you need to take care of them.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0043</td>
+        <td class="side">Don't be like Myles and let yours break down in[ST:n ]the middle of Primordia, or I guarantee a good nut-[ST:n ]cracking from Wolf.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0048</td>
+        <td class="side">Is Lin actually a god? How did she manage to come[ST:n ]up with something like that? It's incredible![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0049</td>
+        <td class="side">With flight mode, you'll be able to go just about[ST:n ]anywhere, no matter how out of reach it seems.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0050</td>
+        <td class="side">And those nasty indigens that gave you trouble before?[ST:n ]Now you can fire on them from above with impunity![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0051</td>
+        <td class="side">Also, your shots will be way more accurate because of[ST:n ]the vantage. I can't wait till I get a crack at it![ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0056</td>
+        <td class="side">Wolf finally caught wind that I'd been calling him \"the[ST:n ]Nutcracker.\" I was ready to get drawn and quartered...[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0057</td>
+        <td class="side">But it was weird. He didn't get mad. Like, at all.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0058</td>
+        <td class="side">Instead, he flashed this sort of agonized grimace and[ST:n ]mumbled something about how I was probably right.[ST:n ]Then he just...walked off.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0059</td>
+        <td class="side">He looked totally defeated. It was scary.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev026601_MSG0060</td>
+        <td class="side">Did something finally crack the Nutcracker?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

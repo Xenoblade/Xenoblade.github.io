@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202210_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202210_msg001</td>
+        <td>84</td>
+        <td class="side">Hey, it's the sparky girl!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202210_msg002</td>
+        <td>84</td>
+        <td class="side">Mm?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202210_msg003</td>
+        <td>84</td>
+        <td class="side">You gonna zap poor Izzi again?!</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202210_msg004</td>
+        <td>84</td>
+        <td class="side">Izzi is kid that Electra zap before?</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202210_msg005</td>
+        <td>84</td>
+        <td class="side">Yeah. Poor little dizzy Izzi!</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202210_msg006</td>
+        <td>84</td>
+        <td class="side">Uh, actually I'm here to apologize
+to him. D'you know where he is?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202210_msg007</td>
+        <td>84</td>
+        <td class="side">Yeah, right, I bet you just wanna zap
+him again!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202210_msg008</td>
+        <td>84</td>
+        <td class="side">It OK now! Electra learn to control
+zappy-zaps. No more buzzy-buzzy!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202210_msg009</td>
+        <td>84</td>
+        <td class="side">...What, really?</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202210_msg010</td>
+        <td>84</td>
+        <td class="side">It true. Electra try to help friends with
+powers, not hurt.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202210_msg019</td>
+        <td>84</td>
+        <td class="side">Whole reason why Argentum look
+sparkly-sparkly because of Electra!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202210_msg020</td>
+        <td>84</td>
+        <td class="side">Oh yeah, I heard about that.
+I wish I could've seen it...</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202210_msg011</td>
+        <td>84</td>
+        <td class="side">OK then, I'll trust you.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202210_msg012</td>
+        <td>84</td>
+        <td class="side">But hang on, Izzi's not around
+right now.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202210_msg013</td>
+        <td>84</td>
+        <td class="side">Can you tell me where he is then?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202210_msg014</td>
+        <td>84</td>
+        <td class="side">He said he was gonna collect some
+rare bugs or something? I dunno.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202210_msg015</td>
+        <td>84</td>
+        <td class="side">He went off towards Koorell Pool,
+so he's probably there?</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202210_msg016</td>
+        <td>84</td>
+        <td class="side">Great, thanks! I'm gonna go look for
+him now!</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202210_msg017</td>
+        <td>84</td>
+        <td class="side">Fair enough. Just promise you two
+are gonna make up, OK?</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202210_msg018</td>
+        <td>84</td>
+        <td class="side">Sure thing! Promise!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

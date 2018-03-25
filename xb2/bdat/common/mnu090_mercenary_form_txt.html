@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>mnu090_mercenary_form_txt</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>obj_name</th>
+          <th>text_id</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>TXT_form_unit_bl_inex</td>
+        <td>Blades to Dispatch</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>TXT_form_unit_apply</td>
+        <td>Begin Mission</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>TXT_form_list_bl_index</td>
+        <td>Blade List</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>TXT_form_list_bl_sort_index</td>
+        <td>Sort Order</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>TXT_form_list_bl_sort_label</td>
+        <td>ソートラベル</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_index</td>
+        <td>Mission Requirements</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_txt@01</td>
+        <td>任務条件１２文字</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_val@01</td>
+        <td>[ML:number digit=4 ]+</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_lv@01</td>
+        <td>Lv [ML:number digit=2 ]+</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_num@01</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_max@01</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_slash@01</td>
+        <td>/</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_txt@02</td>
+        <td>任務条件１２文字</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_val@02</td>
+        <td>[ML:number digit=4 ]+</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_lv@02</td>
+        <td>Lv [ML:number digit=2 ]+</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_num@02</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_max@02</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_slash@02</td>
+        <td>/</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_txt@03</td>
+        <td>任務条件１２文字</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_val@03</td>
+        <td>[ML:number digit=4 ]+</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_lv@03</td>
+        <td>Lv [ML:number digit=2 ]+</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_num@03</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_max@03</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_cond_slash@03</td>
+        <td>/</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_index</td>
+        <td>Suggested Field Skill</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_name@01</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_bl_num@01</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_name@02</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_bl_num@02</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_name@03</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>TXT_form_mis_fs_bl_num@03</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>TXT_start_unit_name</td>
+        <td>[ML:BladeName ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_on</td>
+        <td>Activate Field Skill</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_idx</td>
+        <td>Activate Field Skill</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_time_idx</td>
+        <td>Time Required</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_time_before</td>
+        <td>About [ML:number digit=2 padding=zero ]:[ML:number digit=2 padding=zero ]:[ML:number digit=2 padding=zero ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_time_after</td>
+        <td>[ML:number digit=2 padding=zero ]:[ML:number digit=2 padding=zero ]:[ML:number digit=2 padding=zero ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_name@01</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0101</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0102</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0103</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0104</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0105</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0106</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_name@02</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0201</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0202</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0203</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0204</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0205</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0206</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_name@03</td>
+        <td>[ML:FieldSkillName ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0301</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0302</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0303</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0304</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0305</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>TXT_start_fs_info_bl_fs_lv@0306</td>
+        <td>Lv [ML:number ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>TXT_preset_idx</td>
+        <td>Preset</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>TXT_preset_bl_no@01</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>TXT_preset_bl_no@02</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>TXT_preset_bl_no@03</td>
+        <td>[ML:number ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>TXT_leader_sel_index_name</td>
+        <td>[ML:BladeName ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>TXT_leader_sel_info_name_idx</td>
+        <td>Squad Name:</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>TXT_leader_sel_info_name</td>
+        <td>[ML:BladeName ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

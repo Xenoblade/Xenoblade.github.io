@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104209_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104209_msg0001</td>
+        <td>84</td>
+        <td class="side">Oh, hello again!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104209_msg0002</td>
+        <td>84</td>
+        <td class="side">Would you listen to this?
+My book was a smashing success!</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104209_msg0011</td>
+        <td>84</td>
+        <td class="side">I released a companion volume to help
+sell my original book about flowers.
+What do you think it was about?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104209_msg0012</td>
+        <td>84</td>
+        <td class="side">No, not dashing gentlemen, actually.
+I wrote a story about beautiful ladies
+based on all the different flowers!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104209_msg0013</td>
+        <td>84</td>
+        <td class="side">It was a huge hit with male readers.
+We just can't publish enough copies
+to meet demand!</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104209_msg0021</td>
+        <td>84</td>
+        <td class="side">A riveting tale of elegant gentlemen and
+the passionate friendships they share...</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104209_msg0022</td>
+        <td>84</td>
+        <td class="side">That's what everyone's calling it!
+The female reader base just can't
+get enough of the heated drama!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104209_msg0031</td>
+        <td>84</td>
+        <td class="side">People have started asking me when
+I'm going to bring out a sequel...</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104209_msg0032</td>
+        <td>84</td>
+        <td class="side">A certain mental state is required to
+create. But I still want to espouse the
+joys of the written word to the world!</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104209_msg0033</td>
+        <td>84</td>
+        <td class="side">Oh, you're recruiting a language
+teacher for a school in Fonsett Village?
+That sounds fabulous!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104209_msg0034</td>
+        <td>84</td>
+        <td class="side">It's so important to immerse yourself
+in beautiful literature from a young age!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104209_msg0035</td>
+        <td>84</td>
+        <td class="side">I'd make sure all my pupils grow up
+into the kind of people who can fall
+madly in love with fictional characters!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104209_msg0036</td>
+        <td>84</td>
+        <td class="side">Oh, but are you sure?
+Me, a teacher?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104209_msg0051</td>
+        <td>165</td>
+        <td class="side">Invite Mesulia to teach in Fonsett?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst104209_msg0052</td>
+        <td>165</td>
+        <td class="side">Invite</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst104209_msg0053</td>
+        <td>165</td>
+        <td class="side">Think it over</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst104209_msg0061</td>
+        <td>84</td>
+        <td class="side">All right, then! I'll do my best
+to teach those kids good!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst104209_msg0062</td>
+        <td>84</td>
+        <td class="side">I guess I'd better head home right
+away and start preparing to leave!</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst104209_msg0063</td>
+        <td>84</td>
+        <td class="side">I might be a little late arriving, I have
+to gather up all the novels I might be
+able to use as textbooks!</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst104209_msg0081</td>
+        <td>84</td>
+        <td class="side">Oh, OK then...
+Well, I'm always willing if you
+don't find anyone else!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst104209_msg0101</td>
+        <td>84</td>
+        <td class="side">Oh, did you make your mind up
+about the language teacher thing?</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst104209_msg0201</td>
+        <td>84</td>
+        <td class="side">Did you make your mind up about that
+language teacher thing? Oh, you found
+someone else? Shame, shame...</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst104209_msg0301</td>
+        <td>84</td>
+        <td class="side">Naturally, I want to surpass my last
+work, but the pressure is burdensome
+and the blank page terrifies me.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

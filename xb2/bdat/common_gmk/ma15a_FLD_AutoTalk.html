@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma15a_FLD_AutoTalk</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>MOBID</th>
+          <th>Range</th>
+          <th>Condition</th>
+          <th>Text</th>
+          <th>Ontime</th>
+          <th>BeforeID</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#2">ma15a_FLD_AutoTalk#2</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15004">mob_15_001005</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Good. Let's get this to the granary.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#3">ma15a_FLD_AutoTalk#3</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15005">mob_15_001006</td></a>
+        <td>7</td>
+        <td></td>
+        <td>And I'll take that to the fields.</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#1">1</td></a>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15046">mob_15_001064</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I'll lend you a hand.</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#2">2</td></a>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#5">ma15a_FLD_AutoTalk#5</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15010">mob_15_001011</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Heeey, wait up!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15009">mob_15_001010</td></a>
+        <td>7</td>
+        <td></td>
+        <td>We'll be late if we don't hurry!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#4">4</td></a>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#7">ma15a_FLD_AutoTalk#7</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15072">mob_15_005003</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I'll find awesome treasure,
+and then you'll see!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#8">ma15a_FLD_AutoTalk#8</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15073">mob_15_005004</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I'll go next!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#6">6</td></a>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15074">mob_15_005005</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Then me, then me!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#7">7</td></a>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#10">ma15a_FLD_AutoTalk#10</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15012">mob_15_001017</td></a>
+        <td>7</td>
+        <td></td>
+        <td>What's Argentum like, then?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15013">mob_15_001018</td></a>
+        <td>7</td>
+        <td></td>
+        <td>It busy-busy, hustle-hustle,
+night and day.</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#9">9</td></a>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15021">mob_15_001027</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Ohhh, the kid's done it again!
+More broken plates...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#13">ma15a_FLD_AutoTalk#13</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15026">mob_15_001034</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Mgh...
+I don't wanna get in trouble...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15027">mob_15_001035</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Just say sorry, please.</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#12">12</td></a>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#15">ma15a_FLD_AutoTalk#15</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15032">mob_15_001043</td></a>
+        <td>7</td>
+        <td></td>
+        <td>What about this tree here?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15033">mob_15_001044</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Not bad.
+Should get some decent sap.</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#14">14</td></a>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#17">ma15a_FLD_AutoTalk#17</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15028">mob_15_001036</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Come on, Sandflies!
+Come on out!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15029">mob_15_001037</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Come on, come on!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#16">16</td></a>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#19">ma15a_FLD_AutoTalk#19</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15036">mob_15_001052</td></a>
+        <td>7</td>
+        <td></td>
+        <td>So cute, the way it's twinkling...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15037">mob_15_001053</td></a>
+        <td>7</td>
+        <td></td>
+        <td>It's hypnotic...</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#18">18</td></a>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#21">ma15a_FLD_AutoTalk#21</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15056">mob_15_002021</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I suppose we could build
+a new storehouse...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15053">mob_15_002018</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Hmmmm...</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#20">20</td></a>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#23">ma15a_FLD_AutoTalk#23</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15058">mob_15_002023</td></a>
+        <td>7</td>
+        <td></td>
+        <td>If any of those Camill approach,
+we need to let everyone know!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#28">ma15a_FLD_AutoTalk#28</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15059">mob_15_002024</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Understood!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#22">22</td></a>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#25">ma15a_FLD_AutoTalk#25</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15044">mob_15_001062</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Here, let's share some of this...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15043">mob_15_001061</td></a>
+        <td>7</td>
+        <td></td>
+        <td>That's so sweet. Thanks!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#24">24</td></a>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma15a_FLD_AutoTalk.html#27">ma15a_FLD_AutoTalk#27</a>
+          </details>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15048">mob_15_001066</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I wonder if we'll see
+any shooting stars...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15047">mob_15_001065</td></a>
+        <td>7</td>
+        <td></td>
+        <td>There!
+I saw one!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#26">26</td></a>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td><a href="ma15a_FLD_MobPop.html#15060">mob_15_002025</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Understood!</td>
+        <td>2</td>
+        <td><a href="ma15a_FLD_AutoTalk.html#23">23</td></a>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

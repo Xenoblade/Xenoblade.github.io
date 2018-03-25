@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev020901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev020901_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev020901_SEL0011</td>
+        <td class="side">Ask Gina about the people of NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev020901_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev020901_SEL0021</td>
+        <td class="side">Ask Gina about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev020901_SEL0031</td>
+        <td class="side">Ask Gina about her experiences with the Ma-non.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev020901_SEL0041</td>
+        <td class="side">Ask Gina for her thoughts on[ST:n ]the xenoforms living in NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0001</td>
+        <td class="side">I bet that when you BLADEs return to New LA after[ST:n ]a long deployment, you're sometimes confused by[ST:n ]all the changes that have occurred in the city.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0002</td>
+        <td class="side">When that happens, you should just go for a walk and[ST:n ]listen to what people are talking about.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0003</td>
+        <td class="side">When something changes around here, the topics of[ST:n ]conversation around the city change, too. You might[ST:n ]overhear information that's important to you.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0004</td>
+        <td class="side">And of course, if you don't overhear the information[ST:n ]you were looking for, it never hurts to ask directly.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0005</td>
+        <td class="side">Civilians are usually eager to help out a BLADE,[ST:n ]so you needn't be shy. Ask whatever you want![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0008</td>
+        <td class="side">I met a guy the other day who was the biggest[ST:n ]boozehound I've ever seen.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0009</td>
+        <td class="side">And believe me, I meet a lot of heavy drinkers in my[ST:n ]line of work. But never anyone like this before.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0010</td>
+        <td class="side">The friends he was drinking with got drunk one by[ST:n ]one, and by morning there was a pile of bodies[ST:n ]around his table.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0011</td>
+        <td class="side">I was so taken aback by the pace of their drinking[ST:n ]that I never thought to ask his name.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0012</td>
+        <td class="side">But I think he mentioned that he usually does his[ST:n ]drinking at the diner in the industrial district.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0013</td>
+        <td class="side">He was a pretty interesting guy.[ST:n ]I hope he comes back to my place again.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0021</td>
+        <td class="side">We've had a lot of Ma-non customers coming in lately.[ST:n ]It's fun to have them around—they're always so lively[ST:n ]and cheerful.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0022</td>
+        <td class="side">The other day, a bunch of them got drunk and started[ST:n ]dancing in a circle.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0023</td>
+        <td class="side">They even got some nearby BLADEs to join them.[ST:n ]It's like they were holding a little dance party![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0024</td>
+        <td class="side">After all the casualties we've suffered in the fight with[ST:n ]the Ganglion, the mood around the city has darkened[ST:n ]considerably.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0025</td>
+        <td class="side">But thanks to the Ma-non, our place is still full of[ST:n ]people laughing and having a good time.[ST:n ]Xenoforms like that are always welcome here![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0041</td>
+        <td class="side">We get a lot of xenoforms in my place, and they[ST:n ]all have such different lifestyles and perspectives[ST:n ]on the world.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0042</td>
+        <td class="side">And when all those different types assemble in one[ST:n ]spot, you never know what's gonna happen![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0043</td>
+        <td class="side">The Prone start fights, the Nopon start taking wagers[ST:n ]on the outcome...[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0044</td>
+        <td class="side">Meanwhile, the Orphe nibble on grass and chat[ST:n ]amongst themselves.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0045</td>
+        <td class="side">I guess chaotic is the best word to describe it.[ST:n ]But I really love how exciting New LA has become![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev020901_SEL1021</td>
+        <td class="side">Ask Gina about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0046</td>
+        <td class="side">When I saw Lyvia abruptly transform like that,[ST:n ]it blew me away.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0047</td>
+        <td class="side">I was so stunned, I forgot all about my broken heart![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0048</td>
+        <td class="side">And besides, there are plenty of other fish in the sea.[ST:n ]Although none are quite as handsome as him...[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev020901_MSG0049</td>
+        <td class="side">Er, but don't worry about me. I hope you two are very[ST:n ]happy together.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

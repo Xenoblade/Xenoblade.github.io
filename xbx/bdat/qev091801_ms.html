@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev091801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0001</td>
+        <td class="side">...Yeah?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0002</td>
+        <td class="side">Come with us.[ST:n ]We'd like to question you about some homicides.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0010</td>
+        <td class="side">Moan</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0011</td>
+        <td class="side">Tell the Murderess you knew it would come to this.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0020</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0021</td>
+        <td class="side">Ask if the Murderess is being formally charged.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0030</td>
+        <td class="side">Confess</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0031</td>
+        <td class="side">Break down and admit that you did it.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0003</td>
+        <td class="side">Ugh, please. Can you not IMMEDIATELY jump to conclusions?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0004</td>
+        <td class="side">I haven't killed anybody...yet. Look, what's going on here?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0005</td>
+        <td class="side">Wow, keeping your cool. I'm impressed.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0006</td>
+        <td class="side">But random accusations piss me off, so start talking.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0007</td>
+        <td class="side">Er, I wasn't speaking to you.[ST:n ]Our suspect is the Murderess here.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0008</td>
+        <td class="side">Me? Widdle old me? Oh come on, that's ridiculous.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0009</td>
+        <td class="side">We have eight homicide victims, all of them BLADEs.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0010</td>
+        <td class="side">BLADEs? Which ones?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0011</td>
+        <td class="side">Otis. Yolanda. Six others. Names ring any bells?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0012</td>
+        <td class="side">...Yeah.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0013</td>
+        <td class="side">Damn. They were lowlifes, but...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0014</td>
+        <td class="side">All the deceased share a common trait—[ST:n ]they all worked with you at some point.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0015</td>
+        <td class="side">Folks claim you're grabby with mission rewards.[ST:n ]We have a stack of such complaints.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0016</td>
+        <td class="side">We also hear that you once shot someone[ST:n ]in the back during a mission.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0017</td>
+        <td class="side">It's reasonable to think all that earned you a few enemies.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0018</td>
+        <td class="side">And then there's the whole \"Murderess\" alias you go by.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0019</td>
+        <td class="side">So yeah, we're suspicious. And more than a little.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0040</td>
+        <td class="side">Argue</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0041</td>
+        <td class="side">Claim that a Definian must be behind it, like with Hope.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0050</td>
+        <td class="side">Defend</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0051</td>
+        <td class="side">Say that the Murderess would[ST:n ]never do something like that.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0020</td>
+        <td class="side">Yeah, that does seem likely, doesn't it?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0021</td>
+        <td class="side">It's a possibility we're pursuing.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0022</td>
+        <td class="side">But we still think it's best if we asked you a few questions.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0023</td>
+        <td class="side">Fair enough.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0024</td>
+        <td class="side">Thanks for the vote of confidence.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0025</td>
+        <td class="side">As for you, I've got reasons for my title. Personal ones.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0026</td>
+        <td class="side">And what kind of genius thinks a serial killer[ST:n ]would announce that fact, anyway?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0027</td>
+        <td class="side">All right. I'll ignore the moniker for now.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0028</td>
+        <td class="side">That doesn't change what's in your file, though.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0029</td>
+        <td class="side">Fair enough.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0030</td>
+        <td class="side">Then if you'll please follow me?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0031</td>
+        <td class="side">Hold it![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0032</td>
+        <td class="side">Sure, the Murderess will rob you blind,[ST:n ]and she's a generally horrible person—[ST:page p1=120 ]but there's no way she killed those people.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0033</td>
+        <td class="side">That would mean giving up on her dream,[ST:n ]and we all know she'd never do that.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0034</td>
+        <td class="side">Irina?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0035</td>
+        <td class="side">I understand your concerns.[ST:n ]Again, we're simply taking her in for questioning.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0036</td>
+        <td class="side">But she's got enemies everywhere, especially in the top brass.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0037</td>
+        <td class="side">Who's to say she won't be given[ST:n ]a permanent residence in the brig?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0038</td>
+        <td class="side">So you want us to ignore a suspect?[ST:n ]What happens when another BLADE dies?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0060</td>
+        <td class="side">Suggest</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0061</td>
+        <td class="side">Tell the officer that he needs to build a stronger case.</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev091801_JNK0070</td>
+        <td class="side">Propose</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev091801_SEL0071</td>
+        <td class="side">Offer to find the real killer yourself.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0039</td>
+        <td class="side">Exactly. You don't have the evidence.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0040</td>
+        <td class="side">These types of random interrogations[ST:n ]can easily turn into witch hunts.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0041</td>
+        <td class="side">Then we're at an impasse.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0042</td>
+        <td class="side">Not if we go catch the real murderer.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0043</td>
+        <td class="side">qev091801_MSG0043</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0043_m</td>
+        <td class="side">Boom. Perfect. Hell, we can even look for him together.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0043_f</td>
+        <td class="side">Boom. Perfect. Hell, we can even look for him together.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0044</td>
+        <td class="side">I owe Yolanda and the others that much.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0045</td>
+        <td class="side">Now just a minute! I can't let a suspect waltz off and start—[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0046</td>
+        <td class="side">What's the problem? You've got Irina.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0047</td>
+        <td class="side">Huh?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0048</td>
+        <td class="side">Oh, I see. You mean you want ME to go find the killer.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0049</td>
+        <td class="side">All right. I'll do it.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0050</td>
+        <td class="side">Please, kitten. That isn't even funny.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0051</td>
+        <td class="side">You're staying here as collateral.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0052</td>
+        <td class="side">Then if I run, Officer Friendly here[ST:n ]can throw you in prison forever.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0053</td>
+        <td class="side">What?! I do NOT remember agreeing to that![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0054</td>
+        <td class="side">You believe I'm innocent, right?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0055</td>
+        <td class="side">[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0056</td>
+        <td class="side">qev091801_MSG0056</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0056_m</td>
+        <td class="side">I MIGHT believe you.[ST:n ]But I guess if he goes along, it'll be okay.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0056_f</td>
+        <td class="side">I MIGHT believe you.[ST:n ]But I guess if she goes along, it'll be okay.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0057</td>
+        <td class="side">So there you go.[ST:n ]We'll go find the perp and be home for dinner.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0058</td>
+        <td class="side">Let's go.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev091801_MSG0058_2</td>
+        <td class="side">We need information. Let's start by hitting up Eleonora.[ST:wait ][ST:n ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

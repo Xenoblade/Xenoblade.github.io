@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102708_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102708_msg0001</td>
+        <td>84</td>
+        <td class="side">Oh, you're here.
+What are the patient's symptoms?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102708_msg0002</td>
+        <td>84</td>
+        <td class="side">A Flesh Eater?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102708_msg0003</td>
+        <td>84</td>
+        <td class="side">Fusion of man and Blade...</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102708_msg0004</td>
+        <td>84</td>
+        <td class="side">Interesting. I'll help you.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102708_msg0005</td>
+        <td>84</td>
+        <td class="side">Saw some old records about them
+when I was a military doctor.
+Didn't know they were really out there.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102708_msg0007</td>
+        <td>84</td>
+        <td class="side">Where's the patient?
+...Uraya?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102708_msg0008</td>
+        <td>84</td>
+        <td class="side">I was with the Ardainian military.
+Can't go there.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102708_msg0009</td>
+        <td>84</td>
+        <td class="side">Still, if he's half human...</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102708_msg0010</td>
+        <td>84</td>
+        <td class="side">You take care of the Blade side there.
+I'll deal with the human half.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102708_msg0011</td>
+        <td>84</td>
+        <td class="side">Details can wait.
+I'll make a medicine.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102708_msg0012</td>
+        <td>84</td>
+        <td class="side">I need three Gloomwood Roots...
+one crystal of Cloud Sea Halite...
+Oh, and one more thing.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102708_msg0013</td>
+        <td>84</td>
+        <td class="side">Gotta have some kind of vegetable.
+One that makes you feel younger
+just by eating it.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102708_msg0014</td>
+        <td>84</td>
+        <td class="side">You'll find the first two ingredients in
+Spirit Crucible Elpys and the Cliffs
+of Morytha.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102708_msg0015</td>
+        <td>84</td>
+        <td class="side">Don't know where to find that
+vegetable, though. Try asking my
+assistant.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102708_msg0101</td>
+        <td>84</td>
+        <td class="side">Roots... Roots...</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102708_msg0201</td>
+        <td>84</td>
+        <td class="side">Very good.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102708_msg0202</td>
+        <td>84</td>
+        <td class="side">Just one more thing I need now.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102708_msg0203</td>
+        <td>84</td>
+        <td class="side">Dragon Incense.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102708_msg0204</td>
+        <td>84</td>
+        <td class="side">But from the symptoms you mentioned,
+the normal stuff won't cut it.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102708_msg0205</td>
+        <td>84</td>
+        <td class="side">Got to be the pure stuff.
+True Dragon Incense from Uraya.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102708_msg0206</td>
+        <td>84</td>
+        <td class="side">Go get some for me.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst102708_msg0207</td>
+        <td>84</td>
+        <td class="side">True Dragon Incense comes from the
+Dragon's Stomach in Uraya.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst102708_msg0208</td>
+        <td>84</td>
+        <td class="side">For a single adult male...
+two samples should do.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst102708_msg0209</td>
+        <td>84</td>
+        <td class="side">Bring it quick, for the patient's sake.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst102708_msg0301</td>
+        <td>84</td>
+        <td class="side">What's Dragon Incense?
+Assistant!</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst102708_msg0302</td>
+        <td>84</td>
+        <td class="side">There. Ask him.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst102708_msg0401</td>
+        <td>84</td>
+        <td class="side">True Dragon Incense...
+Indeed.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst102708_msg0402</td>
+        <td>84</td>
+        <td class="side">Got to make an infusion, boil with
+the other ingredients and stir for
+three straight days and nights.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst102708_msg0403</td>
+        <td>84</td>
+        <td class="side">...I'd probably fall asleep.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst102708_msg0404</td>
+        <td>84</td>
+        <td class="side">Assistant has other work to do, too.
+Can't attend to this constantly.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst102708_msg0405</td>
+        <td>84</td>
+        <td class="side">Your friends will help?
+Perfect.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst102708_msg0501</td>
+        <td>84</td>
+        <td class="side">Flesh Eaters...
+Fusions of man and Blade...</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst102708_msg0502</td>
+        <td>84</td>
+        <td class="side">Just like me and roots.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst102708_msg0601</td>
+        <td>84</td>
+        <td class="side">Medicine's all finished.
+Very high quality.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst102708_msg0602</td>
+        <td>84</td>
+        <td class="side">Contains special ethocrines to improve
+the body's circulatory efficiency.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst102708_msg0603</td>
+        <td>84</td>
+        <td class="side">Ought to trigger tissue restoration
+once the Blade power has been
+normalized and... Hmm.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst102708_msg0604</td>
+        <td>84</td>
+        <td class="side">You know what? Too hard to explain.
+Just make him drink this and do your
+Blade fixing.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst102708_msg0605</td>
+        <td>84</td>
+        <td class="side">Won't be perfect, though.
+Nothing is.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst102708_msg0606</td>
+        <td>84</td>
+        <td class="side">He'll still die eventually.
+He's only human.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst102708_msg0607</td>
+        <td>84</td>
+        <td class="side">Now hurry on back to the patient.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst102708_msg0701</td>
+        <td>84</td>
+        <td class="side">I love a job well done.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

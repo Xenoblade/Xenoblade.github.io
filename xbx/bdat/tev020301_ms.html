@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev020301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev020301_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev020301_SEL0011</td>
+        <td class="side">Ask Alice about the attack on Earth.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev020301_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev020301_SEL0021</td>
+        <td class="side">Ask Alice if anything is troubling her.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev020301_SEL1011</td>
+        <td class="side">Ask Alice for her thoughts[ST:n ]on the people living in NLA.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev020301_SEL1021</td>
+        <td class="side">Ask Alice about recent developments.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev020301_SEL2021</td>
+        <td class="side">Ask Alice about recent developments.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev020301_SEL3021</td>
+        <td class="side">Ask Alice about recent developments.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0001</td>
+        <td class="side">We had a radio in the evacuation shelter that let us[ST:n ]hear daily reports about various countries and cities[ST:n ]being destroyed.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0002</td>
+        <td class="side">It was...terrifying.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0003</td>
+        <td class="side">Then one day, xenoforms appeared in the city where[ST:n ]Eliza and I lived.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0004</td>
+        <td class="side">It was over before we even knew it was happening.[ST:n ]They came in and reduced the entire city to ash.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0005</td>
+        <td class="side">I always thought that extraterrestrials would be our[ST:n ]friends, you know? Bring peace and medicine and[ST:n ]science and things like that. Not...kill everyone.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0010</td>
+        <td class="side">I have a lot of respect for Eliza.[ST:n ]I wish that everyone would go hear her speak.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0011</td>
+        <td class="side">But no one seems interested in listening to her.[ST:n ]I guess everyone's too preoccupied with survival[ST:n ]to care about such things.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0012</td>
+        <td class="side">If you ever have the chance, however,[ST:n ]you should talk with Eliza yourself.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev020301_MSG0013</td>
+        <td class="side">I know you'd be super moved by what she has to say.[ST:n ]She's so kind, and so smart![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1001</td>
+        <td class="side">I wonder if there are lots of other people like Alex?[ST:n ]You know—ones who can't accept the decisions BLADE[ST:n ]HQ has made?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1002</td>
+        <td class="side">If those sorts of people were to go on a rampage in[ST:n ]New LA, our giant defensive walls wouldn't be worth[ST:n ]diddily-poo![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1003</td>
+        <td class="side">No... I'm not going to think like that![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1004</td>
+        <td class="side">Eliza says I can't just go around distrusting everyone.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1005</td>
+        <td class="side">She says I should believe in my fellow humans[ST:n ]and be optimistic about our future.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1010</td>
+        <td class="side">Eliza's thinking about having a big public speech soon.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1011</td>
+        <td class="side">Even though it's been a while since the xenoforms came[ST:n ]to New LA, there are still loads of people who hold[ST:n ]prejudices towards them.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1012</td>
+        <td class="side">She hopes that her speech can convince everyone[ST:n ]to finally get along with each other.[ST:n ]...I wonder if that's really possible?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1013</td>
+        <td class="side">Well, if anyone can do it, Eliza can![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev020301_MSG1014</td>
+        <td class="side">I know that everyone will be moved by her words[ST:n ]and change the way they think. I just know it![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev020301_MSG2001</td>
+        <td class="side">Eliza's starting to get used to her replacement[ST:n ]mimeosome, and should be able to leave the[ST:n ]maintenance center soon. I'm so relieved![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev020301_MSG2002</td>
+        <td class="side">Listen, I'm going to find out who it was that arranged[ST:n ]the attack on Eliza.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev020301_MSG2003</td>
+        <td class="side">When I do, will you find the bastard and help[ST:n ]apprehend them?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev020301_MSG2004</td>
+        <td class="side">We don't have the power to do things like that[ST:n ]ourselves. We need your help.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev020301_MSG3001</td>
+        <td class="side">According to Cheche, Alex was in league with those[ST:n ]weirdos from the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev020301_MSG3002</td>
+        <td class="side">What do you think they were hoping to accomplish[ST:n ]by deceiving humans like that?[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev020301_MSG3003</td>
+        <td class="side">It scares me just thinking about it...[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev020301_MSG3004</td>
+        <td class="side">We all have to learn to trust each other so they can't[ST:n ]drive such wedges between us ever again.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev020301_MSG3005</td>
+        <td class="side">And I'm going to do everything I can to help Eliza[ST:n ]make that dream a reality![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

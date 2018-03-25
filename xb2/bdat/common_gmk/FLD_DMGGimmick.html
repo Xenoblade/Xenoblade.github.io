@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLD_DMGGimmick</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>Condition</th>
+          <th>DEPOP_gimmickType</th>
+          <th>DEPOP_gimmickID</th>
+          <th>DEPOP_Condition</th>
+          <th>DMG_interval</th>
+          <th>Pc_dmg</th>
+          <th>EN_dmg</th>
+          <th>effect_name</th>
+          <th>SE_name</th>
+          <th>volumeMAX</th>
+          <th>volumeMIN</th>
+          <th>effect_disp_r</th>
+          <th>effect_release_r</th>
+          <th>dmggim_nextwait</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">ma05a_dmggmk_001</td>
+        <td><a href="../common/FLD_ConditionList.html#443">443</td></a>
+        <td>1</td>
+        <td>16</td>
+        <td></td>
+        <td>0.4</td>
+        <td>34</td>
+        <td>3</td>
+        <td>ma06a_01_020</td>
+        <td>20</td>
+        <td>100</td>
+        <td>0</td>
+        <td>50</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">ma05a_dmggmk_002</td>
+        <td><a href="../common/FLD_ConditionList.html#443">443</td></a>
+        <td>1</td>
+        <td>15</td>
+        <td></td>
+        <td>0.3</td>
+        <td>34</td>
+        <td>3</td>
+        <td>ma06a_01_030</td>
+        <td>19</td>
+        <td>100</td>
+        <td>0</td>
+        <td>50</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">ma05a_dmggmk_004</td>
+        <td></td>
+        <td>1</td>
+        <td>10</td>
+        <td></td>
+        <td>1</td>
+        <td>20</td>
+        <td>3</td>
+        <td>ma05a_01_140</td>
+        <td>9</td>
+        <td>100</td>
+        <td>0</td>
+        <td>150</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">ma08a_dmggmk_001</td>
+        <td></td>
+        <td>1</td>
+        <td>123</td>
+        <td></td>
+        <td>0.3</td>
+        <td>20</td>
+        <td>3</td>
+        <td>ma09a_01_020</td>
+        <td>11</td>
+        <td>100</td>
+        <td>0</td>
+        <td>50</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">ma90a_dmggmk_001</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>2</td>
+        <td>10</td>
+        <td>3</td>
+        <td>cmn_100_103</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">ma08a_dmggmk_002</td>
+        <td></td>
+        <td>1</td>
+        <td>126</td>
+        <td></td>
+        <td>0.32</td>
+        <td>34</td>
+        <td>3</td>
+        <td>ma08a_01_150</td>
+        <td>5</td>
+        <td>100</td>
+        <td>0</td>
+        <td>150</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">ma13a_dmggmk_001</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>1</td>
+        <td>5</td>
+        <td>3</td>
+        <td>ma13a_01_140</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">ma13a_dmggmk_fire</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0.3</td>
+        <td>10</td>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">ma10a_dmggmk_001</td>
+        <td><a href="../common/FLD_ConditionList.html#2324">2324</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0.5</td>
+        <td>10</td>
+        <td>1</td>
+        <td>ma10a_01_000</td>
+        <td>3</td>
+        <td>100</td>
+        <td>0</td>
+        <td>100</td>
+        <td>10</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">ma08a_dmggmk_003</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0.5</td>
+        <td>10</td>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev036501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0011</td>
+        <td class="side">Ask Jubietta about the divisogram.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0021</td>
+        <td class="side">Ask Jubietta about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0010</td>
+        <td class="side">tev036501_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0031</td>
+        <td class="side">Ask Jubietta about squad rewards.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0020</td>
+        <td class="side">tev036501_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0021</td>
+        <td class="side">tev036501_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0010</td>
+        <td class="side">tev036501_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0041</td>
+        <td class="side">Ask Jubietta about BLADE medals.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev036501_JNK0020</td>
+        <td class="side">tev036501_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev036501_SEL0021</td>
+        <td class="side">tev036501_SEL0021</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev036501_SEL1021</td>
+        <td class="side">Ask Jubietta about recent developments.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0001</td>
+        <td class="side">A divisogram basically shows you how productive you[ST:n ]are, if that makes sense?[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0002</td>
+        <td class="side">Well, all I have to say is that I'm glad they're for[ST:n ]BLADE use only, right?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0003</td>
+        <td class="side">I make a vagabond ant look productive, you know?[ST:n ]I'm a blip on the the radar of productiveness![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0004</td>
+        <td class="side">Samanya is hard enough on me as it is, see?[ST:n ]I don't need her taking away my lunch breaks.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0008</td>
+        <td class="side">Young Dazbeno tells me his boss is an accident[ST:n ]waiting to happen, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0009</td>
+        <td class="side">...Hmm? Who's Dazbeno? Oh, he works at the[ST:n ]waste-processing units over there.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0010</td>
+        <td class="side">I think the poor Ma-non works himself silly because his[ST:n ]boss doesn't really know how to give directions?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0011</td>
+        <td class="side">I can't say I enjoy my boss's micromanaging,[ST:n ]but at least she actually knows HOW to to manage.[ST:n ]Which is something, right?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0017</td>
+        <td class="side">Did you know that you're rewarded whenever Squad[ST:n ]does a good job?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0018</td>
+        <td class="side">...Huh? What do you mean, \"Squad\" isn't a person?[ST:n ]It's somebody's name, right? ...Wait, it ISN'T?![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0019</td>
+        <td class="side">But isn't Squad some nice guy who does all the work[ST:n ]for us while we goof off?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0020</td>
+        <td class="side">Ugh. Samanya is going to give me a piece of her[ST:n ]mind if if I don't stop making silly mistakes like this,[ST:n ]isn't she?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0025</td>
+        <td class="side">You BLADEs get those nice medals from friends you've[ST:n ]scouted, right?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0026</td>
+        <td class="side">Must be nice, huh? I don't think anyone ever gave[ST:n ]me a medal in in in my life![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0027</td>
+        <td class="side">...Sorry, what? Oh, it's BLADE HQ that gives you the[ST:n ]medals? Not your friends?[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev036501_MSG0028</td>
+        <td class="side">Well, in that case, I should be able to just march in[ST:n ]there and ask for one, right? ...No? Mmm.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev036501_MSG1001</td>
+        <td class="side">Dazbeno's boss finally caused an accident.[ST:n ]It was only a matter of time, don't you think?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev036501_MSG1002</td>
+        <td class="side">Apparently she even dragged some Prone and and[ST:n ]Zaruboggan into it? Which...yeeeeesh.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev036501_MSG1003</td>
+        <td class="side">What kind of boss works her employees around the[ST:n ]clock with no pizza just because she doesn't know how[ST:n ]to manage a project? It's unbelievable, right?[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev036501_MSG1004</td>
+        <td class="side">I wish I had Dazbeno's patience. He's a better Ma-non[ST:n ]than me, don't don't you think?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

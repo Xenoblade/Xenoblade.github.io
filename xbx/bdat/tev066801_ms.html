@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev066801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev066801_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev066801_SEL0011</td>
+        <td class="side">Ask Zo Ozuchi what makes people strong.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev066801_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev066801_SEL0021</td>
+        <td class="side">Ask Zo Ozuchi what he is doing.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev066801_JNK0010</td>
+        <td class="side">tev066801_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev066801_SEL0031</td>
+        <td class="side">Ask Zo Ozuchi about Primordia.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev066801_JNK0020</td>
+        <td class="side">tev066801_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev066801_SEL0041</td>
+        <td class="side">Ask Zo Ozuchi about recent developments.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0001</td>
+        <td class="side">I see many different strengths in people. The Wrothian[ST:n ]man who quests alone and proud... The Wrothian[ST:n ]woman who thirsts to avenge her brothers...[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0002</td>
+        <td class="side">Then there is the one with the strange doppelganger[ST:n ]technique... Not to mention the Nopon woman with[ST:n ]confidence in her skills.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0003</td>
+        <td class="side">And forget not the Prone woman who betrayed her[ST:n ]Ganglion masters, or the green-skinned technician who[ST:n ]keeps our water safe. ...And then there is you![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0004</td>
+        <td class="side">My hope and desire is that these great warriors will[ST:n ]gather together in a gauntlet none will ever forget![ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0005</td>
+        <td class="side">What say you? Do you see the same strength as I?[ST:n ]Do you know whom it is I speak of?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0010</td>
+        <td class="side">This should give us enough space to stage even the[ST:n ]roughest fight without causing trouble.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0011</td>
+        <td class="side">...Hmm? What am I doing, you ask?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0012</td>
+        <td class="side">Ha ha ha! Why, I merely seek a venue for the[ST:n ]Wrothian Battle Gauntlet—one of our finest traditions.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0013</td>
+        <td class="side">The \"Outfitters,\" as you call them, use this area day[ST:n ]and night to test a whole slew of weapons.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0014</td>
+        <td class="side">It will not be easy, but provided I can convince them[ST:n ]to lend me the space, I can immediately set about[ST:n ]finding the city's strongest for the Gauntlet.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0015</td>
+        <td class="side">I trust you will compete as well, if you think you have[ST:n ]what it takes.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0016</td>
+        <td class="side">Preparations for the Wrothian Battle Gauntlet[ST:n ]are complete.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0017</td>
+        <td class="side">...Well, mostly complete. I still struggle to convince the[ST:n ]Outfitters to lend me their test hangar.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0018</td>
+        <td class="side">I originally tried asking some BLADEs face-to-face,[ST:n ]but they insisted I go through some sort of terminal[ST:n ]to make my request. What a bother![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0020</td>
+        <td class="side">Many powerful indigens still remain in the region.[ST:n ]Have you seen them?[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0021</td>
+        <td class="side">Fallshorn Isle is home to a saltat an order of magnitude[ST:n ]stronger than any I reckon you have seen.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0022</td>
+        <td class="side">And inside Talon Rock is a colony of vicious vespers![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0023</td>
+        <td class="side">I tell you, Mira is a fine planet to train on. Ha ha![ST:n ]Truly it is![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0024</td>
+        <td class="side">I will take these great foes on, better myself as a[ST:n ]warrior, and return to challenge you again one day![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0026</td>
+        <td class="side">Ah! The strongest warrior in the land returns![ST:n ]What a surprise to see you here.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0027</td>
+        <td class="side">As you see, I am training. Would you care to spar?[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0028</td>
+        <td class="side">...Ha! I jest. Mira has hordes of able opponents—[ST:n ]you need not waste your time with me.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0029</td>
+        <td class="side">We can save our rematch for the next Wrothian[ST:n ]Battle Gauntlet. I shall look forward to it![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev066801_MSG0030</td>
+        <td class="side">Now then, back to training. With rivals like you near,[ST:n ]I cannot afford to laze about a second longer![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

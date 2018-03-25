@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_SegMapInfo1001</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>infoID</th>
+          <th>type</th>
+          <th>icon</th>
+          <th>flag</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>offsetX</th>
+          <th>offsetY</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#3">Kepha Holly Characteristics</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1046053</td>
+        <td>1048532.88</td>
+        <td>6896.25</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#4">Tatsu's Whereabouts</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1046200.88</td>
+        <td>1048530.81</td>
+        <td>7042.37549</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#5">Tatsu Sighting</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1046149.19</td>
+        <td>1048541.5</td>
+        <td>7233.133</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#6">Yelv's Partner</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1046122.13</td>
+        <td>1048553.5</td>
+        <td>7487.2666</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#7">Yelv's Partner</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1046315.94</td>
+        <td>1048510.19</td>
+        <td>7243.458</td>
+        <td>0</td>
+        <td>20</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#175">Treasure Info</td></a>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1046237.81</td>
+        <td>1048505.88</td>
+        <td>7008.27734</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#21">Aerozium Location</td></a>
+        <td>3</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1046327.75</td>
+        <td>1048506.5</td>
+        <td>7256.51953</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#47">Sniper Sighting 2</td></a>
+        <td>3</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1046163.56</td>
+        <td>1048519</td>
+        <td>6941.413</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#70">Huge Thing Info</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3145</td>
+        <td>1046109.75</td>
+        <td>1048504.88</td>
+        <td>7450.577</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#71">Huge Thing Info</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3158</td>
+        <td>1046118.44</td>
+        <td>1048506.88</td>
+        <td>7268.26953</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#72">Huge Thing Info</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3159</td>
+        <td>1046259.75</td>
+        <td>1048506.25</td>
+        <td>7430.79</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#73">Senirapa Water Hint</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3177</td>
+        <td>1046308.38</td>
+        <td>1048507.5</td>
+        <td>7242.42969</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#74">ITM_INFO_074_Name</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3186</td>
+        <td>1046146</td>
+        <td>1048504.88</td>
+        <td>7551</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#75">White Whale Crash-Landing Info 1</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3187</td>
+        <td>1046196.25</td>
+        <td>1048506.88</td>
+        <td>7364.92</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#76">White Whale Crash-Landing Info 2</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3188</td>
+        <td>1046122.25</td>
+        <td>1048506.88</td>
+        <td>7411.46973</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td><a href="ITM_InfoList.html#77">White Whale Crash-Landing Info 3</td></a>
+        <td>4</td>
+        <td>5</td>
+        <td>3192</td>
+        <td>1046109.69</td>
+        <td>1048504.88</td>
+        <td>7556.75</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

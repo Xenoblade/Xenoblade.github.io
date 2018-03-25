@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma20a_FLD_CollectionPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gimmickID</th>
+          <th>Condition</th>
+          <th>POP_TIME</th>
+          <th>popWeather</th>
+          <th>FSID</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Per</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>nameRadius</th>
+          <th>rsc_paramID</th>
+          <th>initWaitTime</th>
+          <th>initWaitTimeRand</th>
+        </tr>
+      </thead>
+      <tr id="4001">
+        <td>4001</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d001</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4002">
+        <td>4002</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d002</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4003">
+        <td>4003</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d003</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30221">Leaf Coil</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4004">
+        <td>4004</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d004</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4005">
+        <td>4005</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d005</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4006">
+        <td>4006</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d006</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4007">
+        <td>4007</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d007</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30337">Modern Resistor</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4008">
+        <td>4008</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d008</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4009">
+        <td>4009</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d009</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4010">
+        <td>4010</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d010</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4011">
+        <td>4011</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d011</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30221">Leaf Coil</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4012">
+        <td>4012</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d012</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>60</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4013">
+        <td>4013</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d013</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>65</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4014">
+        <td>4014</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d014</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4015">
+        <td>4015</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d015</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4016">
+        <td>4016</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d016</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4017">
+        <td>4017</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d017</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4018">
+        <td>4018</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d018</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30337">Modern Resistor</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4019">
+        <td>4019</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d019</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30221">Leaf Coil</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4020">
+        <td>4020</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d020</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4021">
+        <td>4021</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d021</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4022">
+        <td>4022</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d022</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4023">
+        <td>4023</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d023</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4024">
+        <td>4024</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d024</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30337">Modern Resistor</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4025">
+        <td>4025</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d025</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>60</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4026">
+        <td>4026</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d026</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4027">
+        <td>4027</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d027</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4028">
+        <td>4028</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d028</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4029">
+        <td>4029</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d029</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30211">Rosary Moss</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4030">
+        <td>4030</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d030</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30337">Modern Resistor</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30214">Starry Persimmon</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30213">Nameko Gem</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4031">
+        <td>4031</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d031</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>65</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4032">
+        <td>4032</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d032</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30214">Starry Persimmon</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30213">Nameko Gem</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4033">
+        <td>4033</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d033</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4034">
+        <td>4034</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d034</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>60</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4035">
+        <td>4035</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d035</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30211">Rosary Moss</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4036">
+        <td>4036</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d036</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30211">Rosary Moss</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4037">
+        <td>4037</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d037</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30214">Starry Persimmon</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30213">Nameko Gem</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4038">
+        <td>4038</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d038</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4039">
+        <td>4039</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d039</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4040">
+        <td>4040</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d040</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>65</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4041">
+        <td>4041</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d041</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4042">
+        <td>4042</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d042</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>15</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4043">
+        <td>4043</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d043</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4044">
+        <td>4044</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d044</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>65</td>
+        <td><a href="../common/ITM_CollectionList.html#30223">Screw Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4045">
+        <td>4045</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d045</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4046">
+        <td>4046</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d046</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>60</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30338">Vortex Panel</td></a>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4047">
+        <td>4047</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d047</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4048">
+        <td>4048</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d048</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4049">
+        <td>4049</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d049</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4050">
+        <td>4050</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d050</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30211">Rosary Moss</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4051">
+        <td>4051</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d051</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30324">Black Liver Bean</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4052">
+        <td>4052</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d052</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4053">
+        <td>4053</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d053</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>55</td>
+        <td><a href="../common/ITM_CollectionList.html#30211">Rosary Moss</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4054">
+        <td>4054</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d054</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#6">Ichthyology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30217">Numbing Clownfish</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30218">Noughtilus</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30326">Robotic Placoderm</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4055">
+        <td>4055</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d055</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#7">Mineralogy</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30220">Throwing Star Rock</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30323">Jujube Silver</td></a>
+        <td>43</td>
+        <td><a href="../common/ITM_CollectionList.html#30327">Mossy Panel</td></a>
+        <td>9</td>
+        <td><a href="../common/ITM_CollectionList.html#30219">Slime Rock</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4056">
+        <td>4056</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d056</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>2</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30221">Leaf Coil</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4057">
+        <td>4057</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d057</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>25</td>
+        <td><a href="../common/ITM_CollectionList.html#30328">Art Core Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30325">Minute Mantis</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4058">
+        <td>4058</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d058</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#2">Forestry</td></a>
+        <td>3</td>
+        <td>6</td>
+        <td><a href="../common/ITM_CollectionList.html#30322">Mechanical Branch</td></a>
+        <td>50</td>
+        <td><a href="../common/ITM_CollectionList.html#30210">Elima Leaf</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30222">Hollow Lantern</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30209">World Supplement</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4059">
+        <td>4059</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d059</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#5">Entomology</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30208">Split-Hop Gizmo</td></a>
+        <td>40</td>
+        <td><a href="../common/ITM_CollectionList.html#30215">Benign Butterfly</td></a>
+        <td>10</td>
+        <td><a href="../common/ITM_CollectionList.html#30337">Modern Resistor</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="4060">
+        <td>4060</td>
+        <td>
+        </td>
+        <td class="side">colle_ma20a_d060</td>
+        <td>0</td>
+        <td></td>
+        <td>Any</td>
+        <td>255</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CollectionList.html#30216">Jabara Bug</td></a>
+        <td>45</td>
+        <td><a href="../common/ITM_CollectionList.html#30221">Leaf Coil</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30214">Starry Persimmon</td></a>
+        <td>30</td>
+        <td><a href="../common/ITM_CollectionList.html#30212">Limitless Rose</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

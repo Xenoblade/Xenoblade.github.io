@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JNL_kizunalist</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>title</th>
+          <th>flg</th>
+          <th>chara_01</th>
+          <th>chara_02</th>
+          <th>friendly</th>
+          <th>time</th>
+          <th>flag</th>
+          <th>mapID</th>
+          <th>list</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>Enduring Friendship</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>14</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>The Legend of the Spider</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>14</td>
+        <td>3</td>
+        <td>9</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>Renewed Determination</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>365</td>
+        <td>5</td>
+        <td>17</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>Sunrise in the Park</td>
+        <td>4</td>
+        <td>1</td>
+        <td>3</td>
+        <td>500</td>
+        <td>0</td>
+        <td>14</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>Sunrise in the Park</td>
+        <td>5</td>
+        <td>1</td>
+        <td>8</td>
+        <td>500</td>
+        <td>0</td>
+        <td>276</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>Just Like Old Times</td>
+        <td>6</td>
+        <td>1</td>
+        <td>8</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>304</td>
+        <td>19</td>
+        <td>53</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>Before the Final Battle</td>
+        <td>7</td>
+        <td>1</td>
+        <td>8</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>15</td>
+        <td>62</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>The Shimmering Marsh</td>
+        <td>8</td>
+        <td>1</td>
+        <td>4</td>
+        <td>1000</td>
+        <td>4</td>
+        <td>103</td>
+        <td>7</td>
+        <td>26</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>Geography Lesson</td>
+        <td>9</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>103</td>
+        <td>4</td>
+        <td>12</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>Strength of Heart</td>
+        <td>10</td>
+        <td>1</td>
+        <td>4</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>103</td>
+        <td>5</td>
+        <td>18</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>11</td>
+        <td>1</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>What Visions May Bring</td>
+        <td>12</td>
+        <td>1</td>
+        <td>5</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>101</td>
+        <td>4</td>
+        <td>13</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>A Broken Watch</td>
+        <td>13</td>
+        <td>1</td>
+        <td>5</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>70</td>
+        <td>6</td>
+        <td>24</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>The Colony Reborn</td>
+        <td>14</td>
+        <td>1</td>
+        <td>5</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>70</td>
+        <td>5</td>
+        <td>19</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>15</td>
+        <td>1</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>At the Pollen Works</td>
+        <td>16</td>
+        <td>1</td>
+        <td>6</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>145</td>
+        <td>9</td>
+        <td>32</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>A Snowy Hot Spring</td>
+        <td>17</td>
+        <td>1</td>
+        <td>6</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>16</td>
+        <td>50</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>Those Waiting For You</td>
+        <td>18</td>
+        <td>1</td>
+        <td>6</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>19</td>
+        <td>54</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>19</td>
+        <td>1</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>Fallen Brethren</td>
+        <td>20</td>
+        <td>1</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>136</td>
+        <td>8</td>
+        <td>29</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>So Close, Yet So Far</td>
+        <td>21</td>
+        <td>1</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>129</td>
+        <td>13</td>
+        <td>42</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>Hopes and Plans</td>
+        <td>22</td>
+        <td>1</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>362</td>
+        <td>11</td>
+        <td>48</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>23</td>
+        <td>1</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>24</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>Fiora's Cooking</td>
+        <td>25</td>
+        <td>2</td>
+        <td>8</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>First Sight of Snow</td>
+        <td>26</td>
+        <td>2</td>
+        <td>8</td>
+        <td>3000</td>
+        <td>4</td>
+        <td>276</td>
+        <td>16</td>
+        <td>51</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>A Scene Revisited</td>
+        <td>27</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>3</td>
+        <td>10</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>Heir to the Monado</td>
+        <td>28</td>
+        <td>2</td>
+        <td>4</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>103</td>
+        <td>4</td>
+        <td>14</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>One Year On</td>
+        <td>29</td>
+        <td>2</td>
+        <td>4</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>103</td>
+        <td>5</td>
+        <td>20</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>Watching Over Them</td>
+        <td>30</td>
+        <td>2</td>
+        <td>4</td>
+        <td>5000</td>
+        <td>4</td>
+        <td>276</td>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>31</td>
+        <td>2</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>What's on Reyn's Mind</td>
+        <td>32</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>70</td>
+        <td>4</td>
+        <td>15</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>Overlooking the Colony</td>
+        <td>33</td>
+        <td>2</td>
+        <td>5</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>111</td>
+        <td>2</td>
+        <td>6</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>A Wistful Glow</td>
+        <td>34</td>
+        <td>2</td>
+        <td>5</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>342</td>
+        <td>6</td>
+        <td>25</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>35</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>Fish Fly! Fish Fly!</td>
+        <td>36</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>12</td>
+        <td>38</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>Riki's Crazy Crystal Plan</td>
+        <td>37</td>
+        <td>2</td>
+        <td>6</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>8</td>
+        <td>30</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>Journey's End</td>
+        <td>38</td>
+        <td>2</td>
+        <td>6</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>15</td>
+        <td>63</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>39</td>
+        <td>2</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>Echoes of Ancient Times</td>
+        <td>40</td>
+        <td>2</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>183</td>
+        <td>11</td>
+        <td>49</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>Ancient Wreckage</td>
+        <td>41</td>
+        <td>2</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>167</td>
+        <td>2</td>
+        <td>7</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>A Breathtaking Sight</td>
+        <td>42</td>
+        <td>2</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>129</td>
+        <td>13</td>
+        <td>43</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>43</td>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>Brother and Sister</td>
+        <td>44</td>
+        <td>8</td>
+        <td>4</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>13</td>
+        <td>44</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>Recovery and Reflection</td>
+        <td>45</td>
+        <td>8</td>
+        <td>4</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>329</td>
+        <td>5</td>
+        <td>21</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>A Family of Two</td>
+        <td>46</td>
+        <td>8</td>
+        <td>4</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>19</td>
+        <td>55</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>47</td>
+        <td>8</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>A Night-time Chat</td>
+        <td>48</td>
+        <td>8</td>
+        <td>5</td>
+        <td>1000</td>
+        <td>4</td>
+        <td>276</td>
+        <td>19</td>
+        <td>56</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>Reawakened Memories</td>
+        <td>49</td>
+        <td>8</td>
+        <td>5</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>9</td>
+        <td>33</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>Fiora's Body</td>
+        <td>50</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>25</td>
+        <td>60</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>51</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>The Forefathers</td>
+        <td>52</td>
+        <td>8</td>
+        <td>6</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>13</td>
+        <td>45</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>Quiet Time</td>
+        <td>53</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>5</td>
+        <td>22</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>Riki Have Question</td>
+        <td>54</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>292</td>
+        <td>12</td>
+        <td>39</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>55</td>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>Overcoming the Pain</td>
+        <td>56</td>
+        <td>8</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>19</td>
+        <td>57</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>A Day Like Any Other</td>
+        <td>57</td>
+        <td>8</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>9</td>
+        <td>34</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>Melia's Imperial Villa</td>
+        <td>58</td>
+        <td>8</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>13</td>
+        <td>46</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>59</td>
+        <td>8</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>A Gift for a Loved One</td>
+        <td>60</td>
+        <td>4</td>
+        <td>5</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>12</td>
+        <td>40</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>Dunban's Right Arm</td>
+        <td>61</td>
+        <td>4</td>
+        <td>5</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>292</td>
+        <td>5</td>
+        <td>23</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>Revisiting the Past</td>
+        <td>62</td>
+        <td>4</td>
+        <td>5</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>103</td>
+        <td>4</td>
+        <td>16</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>63</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>In Ose Tower</td>
+        <td>64</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>16</td>
+        <td>52</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>Glowing in the Night</td>
+        <td>65</td>
+        <td>4</td>
+        <td>6</td>
+        <td>3000</td>
+        <td>4</td>
+        <td>138</td>
+        <td>3</td>
+        <td>11</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>Life's Hard for a Heropon</td>
+        <td>66</td>
+        <td>4</td>
+        <td>6</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>276</td>
+        <td>9</td>
+        <td>35</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>67</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>True Natures</td>
+        <td>68</td>
+        <td>4</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>167</td>
+        <td>9</td>
+        <td>36</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>High Entia History</td>
+        <td>69</td>
+        <td>4</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>167</td>
+        <td>7</td>
+        <td>27</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>Eternal Scars</td>
+        <td>70</td>
+        <td>4</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>257</td>
+        <td>19</td>
+        <td>58</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>71</td>
+        <td>4</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>Flowers of Eryth Sea</td>
+        <td>72</td>
+        <td>5</td>
+        <td>6</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>12</td>
+        <td>41</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>A Heropon's Perspective</td>
+        <td>73</td>
+        <td>5</td>
+        <td>6</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>221</td>
+        <td>2</td>
+        <td>8</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>Atop the Crown Tree</td>
+        <td>74</td>
+        <td>5</td>
+        <td>6</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>145</td>
+        <td>7</td>
+        <td>28</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>75</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>No Boys Allowed</td>
+        <td>76</td>
+        <td>5</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>129</td>
+        <td>8</td>
+        <td>31</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>Untold Feelings</td>
+        <td>77</td>
+        <td>5</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>129</td>
+        <td>15</td>
+        <td>64</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>Ancient Astrology</td>
+        <td>78</td>
+        <td>5</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>4</td>
+        <td>129</td>
+        <td>13</td>
+        <td>47</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>79</td>
+        <td>5</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>A Mysterious Sanctuary</td>
+        <td>80</td>
+        <td>6</td>
+        <td>7</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>145</td>
+        <td>9</td>
+        <td>37</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>Camping Spot</td>
+        <td>81</td>
+        <td>6</td>
+        <td>7</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>19</td>
+        <td>59</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>Kind Words</td>
+        <td>82</td>
+        <td>6</td>
+        <td>7</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>138</td>
+        <td>25</td>
+        <td>61</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>83</td>
+        <td>6</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

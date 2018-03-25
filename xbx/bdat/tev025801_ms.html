@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev025801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev025801_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev025801_SEL0011</td>
+        <td class="side">Ask Yolanda what she's doing here.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev025801_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev025801_SEL0021</td>
+        <td class="side">Ask Yolanda if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev025801_JNK0010</td>
+        <td class="side">tev025801_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev025801_SEL0011</td>
+        <td class="side">tev025801_SEL0011</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev025801_JNK0020</td>
+        <td class="side">tev025801_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev025801_SEL0031</td>
+        <td class="side">Ask Yolanda if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev025801_SEL1021</td>
+        <td class="side">Ask Yolanda about recent developments.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0001</td>
+        <td class="side">What does it look like?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0002</td>
+        <td class="side">We're having ourselves a little chitchat over drinks[ST:n ]and poker. Trying to figure out how we're gonna make[ST:n ]fat coin on our next mission.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0003</td>
+        <td class="side">You got a problem with that?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0004</td>
+        <td class="side">Don't get the quaint idea that everyone in BLADE is[ST:n ]some brainless sheep in Nagi and Vandham's flock.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0005</td>
+        <td class="side">Tomorrow we might all be dead, so anyone who's not[ST:n ]milking the moment for every sinful pleasure it's worth[ST:n ]is a class-A chump.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0010</td>
+        <td class="side">Haven't seen you around here before. You a rookie?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0011</td>
+        <td class="side">Well, let me give you a piece of advice...[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0012</td>
+        <td class="side">If you run into a blonde bombshell with daggers in[ST:n ]her eyes, steer clear![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0013</td>
+        <td class="side">If you even look at her cross-eyed...KSSSSSSSSHK![ST:n ]Right in the gut. Trust me. Happens every day.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0018</td>
+        <td class="side">Hey, you want a little tip? Course you do.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0019</td>
+        <td class="side">Watch your back around the Murderess.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0020</td>
+        <td class="side">She's taken out a bunch of BLADEs already.[ST:n ]And I don't mean on dates. Ha![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0021</td>
+        <td class="side">Some got it from behind. Some got it in their sleep.[ST:n ]Some got it at camp. But they all got the same thing...[ST:n ]A flash of steel and KSSSSSSSSHK![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0022</td>
+        <td class="side">You think she's friendly just because she's a BLADE?[ST:n ]Ha! Just keep your wits about you if you plan on[ST:n ]hanging on to all your other parts, all right?[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0027</td>
+        <td class="side">You should keep your pretty little lips shut, girl.[ST:n ]How is a reputable woman supposed to conduct[ST:n ]business with you blabbing away?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0028</td>
+        <td class="side">Be careful who you cross, or someone might come[ST:n ]along and cross YOU out![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0029</td>
+        <td class="side">Wait, you mean you know each other? ...Huh.[ST:n ]Well, that was dumb of me.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0030</td>
+        <td class="side">Er, let me revise my statement: \"The Murderess is a[ST:n ]capable and upstanding Curator, and not actually a[ST:n ]cold-blooded killer.\" ...Better?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev025801_MSG0031</td>
+        <td class="side">Better. Not great, but better. In the meantime,[ST:n ]make sure I'm the first to be apprised of any lucrative[ST:n ]opportunities, all right? Thanks, sweetie.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1001</td>
+        <td class="side">Did you know that you're the subject of everyone's[ST:n ]favorite wager around here?[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1002</td>
+        <td class="side">We're placing bets on how long you can stay mixed[ST:n ]up with the Murderess and survive.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1003</td>
+        <td class="side">My money's on \"not long,\" so do a gal a favor and[ST:n ]get stuck like a pig sometime soon, yeah?[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1009</td>
+        <td class="side">Hey, that sounds intriguing. Can I place a bet?[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1010</td>
+        <td class="side">How is that fair?! You'd set the date and time,[ST:n ]then knife the poor [ST:Gender p1=guy p2=girl ] right on schedule![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev025801_MSG1011</td>
+        <td class="side">Oh, but that's not who I was going to bet against.[ST:n ]...Oh well! Enjoy your game, ladies![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

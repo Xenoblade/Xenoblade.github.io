@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102702_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102702_msg0001</td>
+        <td>84</td>
+        <td class="side">Welcome to the Smaia Clinic.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102702_msg0002</td>
+        <td>84</td>
+        <td class="side">Ah, I see... Yes, I can see how other
+doctors might not be equipped to
+take on such an unusual case.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102702_msg0003</td>
+        <td>84</td>
+        <td class="side">Unfortunately, Doctor Smaia
+isn't in the clinic right now.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102702_msg0004</td>
+        <td>84</td>
+        <td class="side">She's on a trip to Temperantia, as part
+of her research on a new remedy.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102702_msg0005</td>
+        <td>84</td>
+        <td class="side">I believe she's currently working at
+the Ardainian military station there.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102702_msg0006</td>
+        <td>84</td>
+        <td class="side">If you're in a hurry, it might be
+quickest to travel there and
+find her yourself.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102702_msg0007</td>
+        <td>84</td>
+        <td class="side">No no, that's quite all right.
+Frankly, I'm sorry I couldn't do more
+to help after you came all this way.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102702_msg0008</td>
+        <td>84</td>
+        <td class="side">Just...try not to be too shocked
+when you do meet the Doctor.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102702_msg0009</td>
+        <td>84</td>
+        <td class="side">It's just that she's a little...eccentric.
+People tend to be somewhat
+taken aback.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102702_msg0101</td>
+        <td>84</td>
+        <td class="side">Doctor Smaia is conducting research
+at the Mor Ardain military installation
+in Temperantia.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102702_msg0102</td>
+        <td>84</td>
+        <td class="side">I wish you the best of luck finding her.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102702_msg0201</td>
+        <td>84</td>
+        <td class="side">Doctor Smaia is back from her
+research trip. I guess things are going
+to get lively around here again.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102702_msg0301</td>
+        <td>84</td>
+        <td class="side">Which ingredient would you like
+to hear about?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102702_msg0302</td>
+        <td>165</td>
+        <td class="side">(Which should I ask about?)</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102702_msg0303</td>
+        <td>165</td>
+        <td class="side">Gloomwood Root</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102702_msg0304</td>
+        <td>165</td>
+        <td class="side">Cloud Sea Halite</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102702_msg0305</td>
+        <td>165</td>
+        <td class="side">A vegetable that makes you feel young</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102702_msg0321</td>
+        <td>84</td>
+        <td class="side">Gloomwood Root can be found in
+Spirit Crucible Elpys, or so I've heard.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102702_msg0322</td>
+        <td>84</td>
+        <td class="side">As the name suggests, it's a root,
+so you'll probably find it in an area
+with plant life.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102702_msg0341</td>
+        <td>84</td>
+        <td class="side">Cloud Sea Halite is a natural salt
+found on the Cliffs of Morytha.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102702_msg0342</td>
+        <td>84</td>
+        <td class="side">You'll probably have the most luck
+in rocky areas like caves.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst102702_msg0361</td>
+        <td>84</td>
+        <td class="side">Ah yes, that's a difficult one...
+Doctor Smaia does demand the most
+oddly specific things sometimes.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst102702_msg0362</td>
+        <td>84</td>
+        <td class="side">Actually, I think I heard something
+about a farmer in Gormott trying to
+cultivate a brand-new vegetable...</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst102702_msg0363</td>
+        <td>84</td>
+        <td class="side">Maybe you should go and see
+if that would suit our purposes.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst102702_msg0401</td>
+        <td>84</td>
+        <td class="side">Would you like to hear about
+Dragon Incense?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst102702_msg0402</td>
+        <td>165</td>
+        <td class="side">What should we do?</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst102702_msg0403</td>
+        <td>165</td>
+        <td class="side">Hear the explanation.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst102702_msg0404</td>
+        <td>165</td>
+        <td class="side">Not interested.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst102702_msg0420</td>
+        <td>84</td>
+        <td class="side">Dragon Incense is a crystallized
+substance formed from the digestive
+secretions of the Urayan Titan.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst102702_msg0421</td>
+        <td>84</td>
+        <td class="side">It's hard to procure in large quantities,
+but has an exquisite aroma and medical
+properties, so it sells for a high price.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst102702_msg0422</td>
+        <td>84</td>
+        <td class="side">True Dragon Incense is the name given
+to samples of exceptionally high purity.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst102702_msg0423</td>
+        <td>84</td>
+        <td class="side">It's said that once upon a time, you
+could build a whole house for the price
+of a single True Dragon Incense crystal.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst102702_msg0424</td>
+        <td>84</td>
+        <td class="side">The secretion is unique to the Urayan
+Titan; no other Titans produce it.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst102702_msg0425</td>
+        <td>84</td>
+        <td class="side">I think that just about covers it.
+Well, good luck out there!</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst102702_msg0450</td>
+        <td>84</td>
+        <td class="side">Oh, all right. Take care, then.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst102702_msg0501</td>
+        <td>84</td>
+        <td class="side">Ah, you must have found the
+True Dragon Incense.
+I can tell from the scent.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst102702_msg0502</td>
+        <td>84</td>
+        <td class="side">Mmmmmm...the fragrance is exquisite!</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst102702_msg0601</td>
+        <td>84</td>
+        <td class="side">I always thought Flesh Eaters were
+nothing more than a legend, you know.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst102702_msg0602</td>
+        <td>84</td>
+        <td class="side">It's quite a revelation to learn that
+they actually exist! I'd like to meet
+one someday.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

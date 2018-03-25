@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev065404_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0001</td>
+        <td class="side">Um, [ST:playername ]? Why are you here...?[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0002</td>
+        <td class="side">Oh well. Doesn't matter. Take a look at this body.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0003</td>
+        <td class="side">It's Clemons. ...The real Clemons. Poor guy.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0004</td>
+        <td class="side">I'd say time of death was about a week ago. Killed by[ST:n ]the same Definian who set up the ambush, is my guess.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev065404_JNK0010</td>
+        <td class="side">Consider</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev065404_SEL0011</td>
+        <td class="side">Think about Clemons's time of death.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev065404_JNK0020</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev065404_SEL0021</td>
+        <td class="side">Ask Lara Nara how the search for the Definian is going.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0005</td>
+        <td class="side">Mmm? What is it? Something stick out to you about[ST:n ]his time of death?[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0006</td>
+        <td class="side">Judging by the body, I'm pretty confident in my guess.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0007</td>
+        <td class="side">But if not a week, then it's been here a few days at the[ST:n ]very least.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0008</td>
+        <td class="side">Still at large, I'm afraid.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0009</td>
+        <td class="side">But we've got every gate locked down completely.[ST:n ]Rank-and-file resident or leader of the BLADEs,[ST:n ]you're not getting through. She's in here somewhere.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0010</td>
+        <td class="side">...Yeeees? You're still staring at me all funny.[ST:n ]Are you coming to a realization here or what?[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0011</td>
+        <td class="side">Look, even if you're not sure yet, let's hear it.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev065404_JNK0030</td>
+        <td class="side">Declare</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev065404_SEL0031</td>
+        <td class="side">Say that you saw the suspect.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev065404_JNK0040</td>
+        <td class="side">Muse</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev065404_SEL0041</td>
+        <td class="side">Try to sum up your thoughts.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0012</td>
+        <td class="side">What? Where?![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0013</td>
+        <td class="side">Why didn't you stop her?![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0014</td>
+        <td class="side">If you keep scrunching your face up like that,[ST:n ]you're going to get wrinkles.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0015</td>
+        <td class="side">Don't worry about solving everything yourself.[ST:n ]Just tell me what you've seen and we can work out[ST:n ]what it means together.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0016</td>
+        <td class="side">...Wait, you talked to Clemons just now?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0017</td>
+        <td class="side">It has to have been that nasty Definian...[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0018</td>
+        <td class="side">She knew you hadn't seen this body yet,[ST:n ]so she turned back into Clemons to fool you![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0019</td>
+        <td class="side">Rrgh! This is SO infuriating![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0020</td>
+        <td class="side">We're going to find her! ...Er, him. Whatever![ST:n ]And then we're going to—[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0021</td>
+        <td class="side">Oops, one second. Emergency message.[ST:n ]...Huuuuuh? What the heck is THIS?![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0022</td>
+        <td class="side">Suriella and Clemons are fighting outside the city![ST:n ]That Clemons has to be our perp![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0027</td>
+        <td class="side">I'll head out as soon as I can gear up, but you go on[ST:n ]ahead. They're at the little island west of the city.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0023</td>
+        <td class="side">Suriella and Clemons are fighting on the little island to[ST:n ]the west of the city.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0024</td>
+        <td class="side">We have no idea what the Definians are capable of,[ST:n ]combat-wise, so I'm going to get some serious gear[ST:n ]together just in case.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0025</td>
+        <td class="side">Go on ahead of me. I'll meet you there![ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev065404_MSG0026</td>
+        <td class="side">And do NOT let that nasty creature get away.[ST:n ]This mess ends on that island![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

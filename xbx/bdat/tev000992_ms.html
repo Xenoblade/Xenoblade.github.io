@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev000992_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0001</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0002</td>
+        <td class="side">I've just had a revelation while looking at this dog.[ST:n ]Will you hear me out?[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0003</td>
+        <td class="side">Despite the valiant efforts of the Interceptors division,[ST:n ]indigens remain as persistent a threat as ever.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0004</td>
+        <td class="side">The gates of New LA have stood strong so far,[ST:n ]but they are by no means impregnable.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0005</td>
+        <td class="side">You know the dog guardian statues of the East?[ST:n ]I think we should install one on either side of the gates,[ST:n ]thereby warding off beasts with the Buddha's power.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev000992_JNK0010</td>
+        <td class="side">Agree</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev000992_SEL0011</td>
+        <td class="side">Say that guardian statues should be installed.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev000992_JNK0020</td>
+        <td class="side">Disagree</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev000992_SEL0021</td>
+        <td class="side">Correct his ideas about the statues.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0006</td>
+        <td class="side">I knew you would perceive the wisdom of my plan![ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0007</td>
+        <td class="side">Then our first step should be researching eastern texts[ST:n ]to learn how these statues are engineered.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0008</td>
+        <td class="side">...Hmm? Yes, engineered. Guardian dogs are powerful[ST:n ]defensive weapons that have protected temples since[ST:n ]ancient times.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0009</td>
+        <td class="side">They repel invaders by emitting blinding beams of[ST:n ]divine lights from their mouths. ...Er, right?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0010</td>
+        <td class="side">Hmm... It seems from the look on your face that I may[ST:n ]have misunderstood their specific defensive capabilities.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0011</td>
+        <td class="side">...What? The statues are mere superstition, you say?[ST:n ]And they aren't even dogs, but lions?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0012</td>
+        <td class="side">Lions... I see... Well, I suppose placing lions at[ST:n ]defensively significant locations is equally inspired.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0013</td>
+        <td class="side">Truly, the mysticism of the East is beyond compare![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0014</td>
+        <td class="side">I thank you for your correction, and bow to your[ST:n ]extensive knowledge of the subject.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0015</td>
+        <td class="side">I am always looking for ways to harness the power of[ST:n ]the Buddha to New LA's benefit.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0016</td>
+        <td class="side">Sadly, I haven't yet found a good way of doing so.[ST:n ]Perhaps this sort of thing is not my forte.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0017</td>
+        <td class="side">Ah, but it might be yours![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0018</td>
+        <td class="side">Well then? How can we illuminate this city with the[ST:n ]light and love of the Buddha?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev000992_JNK0030</td>
+        <td class="side">Propose</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev000992_SEL0031</td>
+        <td class="side">Suggest building a giant Buddha at New LA's center.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev000992_JNK0040</td>
+        <td class="side">Correct</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev000992_SEL0041</td>
+        <td class="side">Fill your heart with love and[ST:n ]tell Bozé that is not the way.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0019</td>
+        <td class="side">Oh ho! Now that is a grand idea. Better yet, let's build[ST:n ]it as a giant Skell that can move and fight as needed![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0020</td>
+        <td class="side">Then it can serve as the city's guardian both literally[ST:n ]AND figuratively![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0021</td>
+        <td class="side">I'd better go find Secretary Nagi and Commander[ST:n ]Vandham and propose this to them directly.[ST:n ]We will call it...Project N.I.R.V.A.N.A![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0022</td>
+        <td class="side">And once the mega-Buddha Skell N.I.R.V.A.N.A.[ST:n ]is complete, I want you to be my co-pilot in the[ST:n ]defense of New LA.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0023</td>
+        <td class="side">Oh... Just now, as the light cast a halo behind you,[ST:n ]I saw a vision of the Buddha upon your face.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0024</td>
+        <td class="side">But of course. That's my answer. The Buddha's path[ST:n ]is not about physical things—it's about finding[ST:n ]enlightenment within each of us.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0025</td>
+        <td class="side">What a fool I've been! We never needed such things[ST:n ]as lions and dogs and statues![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0026</td>
+        <td class="side">Thank you. I will remember this teaching of the Buddha[ST:n ]forever, and use it to protect New LA by pulverizing[ST:n ]all who would stand against us.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev000992_MSG0027</td>
+        <td class="side">And I'll be counting on you to watch over me with that[ST:n ]uncanny, Buddha-like gaze.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

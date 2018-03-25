@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev027101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev027101_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev027101_SEL0011</td>
+        <td class="side">Ask Suriella what she's doing here.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev027101_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev027101_SEL0021</td>
+        <td class="side">Ask Suriella if she's heard any interesting rumors.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev027101_SEL0031</td>
+        <td class="side">Ask Suriella what she's doing here.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0001</td>
+        <td class="side">Oh, have you come to see the town helper?[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0002</td>
+        <td class="side">...I'm sorry, what? You don't know who the town[ST:n ]helper is?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0003</td>
+        <td class="side">It's me, silly![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0004</td>
+        <td class="side">I'm a Mediator, but I started dabbling on the side—[ST:n ]I teach weapon skills, offer equipment tips,[ST:n ]deliver lost items, give life advice...[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0005</td>
+        <td class="side">Folks just started calling me the \"town helper.\"[ST:n ]I kind of like it, to be honest.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0101</td>
+        <td class="side">Hey, guess what? Now I'm doing couples therapy![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0102</td>
+        <td class="side">The two I'm helping now are clearly very upset.[ST:n ]I'm trying to give them a little perspective and calm[ST:n ]them down.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0103</td>
+        <td class="side">It's not easy to understand how someone feels—[ST:n ]like, REALLY understand them.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0104</td>
+        <td class="side">But I can still empathize, offer some grounded advice,[ST:n ]and try to get them talking civilly to each other again.[ST:n ]Really, it's the least a town helper can do.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0111</td>
+        <td class="side">I guess it's a sign the human race has finally recovered[ST:n ]from the crash and settled in, because people are[ST:n ]starting to get up to no good.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0112</td>
+        <td class="side">I've heard stories of BLADEs screwing over their[ST:n ]teammates in some really nasty ways just so they can[ST:n ]keep the rewards to themselves. Awful...[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0113</td>
+        <td class="side">You be really careful when you choose your team.[ST:n ]Don't let anyone near you that you don't trust.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0201</td>
+        <td class="side">Oh, she was just telling me about her hometown and[ST:n ]the family she had to leave behind.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0202</td>
+        <td class="side">It's sad. I may be the town helper, but one thing I[ST:n ]can't do is take people back to Earth to see the people[ST:n ]they lost.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0203</td>
+        <td class="side">Still, she says it's nice just to be able to talk about it[ST:n ]with someone now and then, so I'm happy to oblige.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev027101_MSG0204</td>
+        <td class="side">I wish I could have seen the...um...Earth town that[ST:n ]she called home.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

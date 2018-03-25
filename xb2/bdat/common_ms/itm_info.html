@@ -1,0 +1,2886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>itm_info</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Where's Falala's Son?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Rumor has it Solala may have been
+seen in Fonsa Myma in Uraya.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Switch Parts 1</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You can get the Ether Bottle at Port
+Anangham in Mor Ardain.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Broken Crane 1</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Ardainian soldiers on duty in Torigoth
+are being attacked with arrows.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Broken Crane 2</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Mischievous Tirkin showed up.
+They're causing trouble outside town.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Broken Crane 3</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Two shadowy figures were seen near
+the big tree outside Torigoth at night.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">3003用情報(内容未定)</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">3003用情報(内容未定)</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Gavyth the Merc's Info</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A man resembling him's been seen
+frequently in Torigoth in Gormott.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Noted Ardainian Doctor</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">There's a doctor in Alba Cavanich who
+can make medicine to cure any illness.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Morythan Tablet 1</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">First password for the
+Morythan Tablet: XE36</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Morythan Tablet 2</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Second password for the
+Morythan Tablet: E46S</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Morythan Tablet 3</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Third password for the
+Morythan Tablet: 19A3</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Gormotti Woman</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">The Gormotti woman held captive by
+Mor Ardain's Imperial Army is
+imprisoned on a Titan Battleship.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tornan Execution</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">The Gormotti woman held captive by
+Mor Ardain's Imperial Army will be
+executed soon as a member of Torna.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Seized Woman's Name</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">The Gormotti woman held captive by
+Mor Ardain's Imperial Army is called
+Nia.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Barrels' Destination</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Yellow and green barrels were taken to
+a facility in the Ardainian Titan's chest.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Band of Assassins</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Pupunin of the Argentum Trade Guild
+is connected to the Bloody Lobsters.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Kingdom Destroyer</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Carchal, an Ardainian soldier, saw a
+Giant Demon in the Cloud Sea.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Core Crystal Hunters</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A bandit group has been targeting folk
+transporting Core Crystals to Torigoth.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Greedy Monster</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A monster that ate a famed Driver has
+been seen in Chansagh Wastes.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Kountess Search Brief</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Tirkin king is looking for a
+"Kountess" in Tantal's Tirkin tribe.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Top Secret Papers</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">One of the Noog Skeeters looks
+rather strange.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Offering 1</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"Three Daylight Stars"</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Offering 2</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"Farlaine Waters"</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Light 1</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"Offer Light On The Journey"</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Light 2</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"The Youthful Elder"</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Journeys 1</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"To Hero's Treasure"</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shrine of Journeys 2</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"In Whose Embrace I Sleep"</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Akatsuki's Hideout</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Brionac leader is using a corner of
+the Bellyfull Canteen as a hideout.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Torigoth Murals</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Mor Ardain Murals</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Indoline Murals</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tantalese Murals</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"One in the belly of the hermit."</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"One in the left shoulder's source."</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"One in the island's shellfish cave."</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"One in the drift-covered black bridge."</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Washed-Up Titans</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Titans are washing up near the
+Torigoth Flower Patch at high tide.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き1</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き2</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き3</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き4</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き5</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き6</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き7</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き8</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き9</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き10</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き11</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き12</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き13</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き14</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き15</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き16</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き17</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き18</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き19</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き20</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き21</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">同調の導き22</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">ブレイド生成のヒント（仮）</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Harghal's Location</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Harghal supposedly intends to strike a
+deal at Tantal's Old Gelgemos Gate.</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Rumors of a Battleship</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A Gormotti Girl is imprisoned on a Titan
+battleship. Her identity is unknown.</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Rumors of Execution</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A prisoner of the Imperial Army is to
+be executed in the coming days.</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">The Name of a Tornan</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Tornan rebel held by the Ardainian
+army is a Gormotti girl called Nia.</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">An Ardainian Recipe</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">A Tantalese Recipe</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">A Gormotti Recipe</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Vasq's Recipe</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Twaina's Recipe</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Corinne's Recipe</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Tricolor Bowl.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Addam's Supercakes.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Pan-Fried Tartari.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Roast Meat Tagliata.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Sunshine Pie.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Acqua Pearl Pazza.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Blade Affinity</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>62</td>
+        <td class="side">When Trust between Driver and Blade
+is more, Affinity is also more! Meh meh!</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">The Basics of Battle</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Blade Combat</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Careful When Exploring</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Maximum Affinity</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Utilizing the Elements</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Affinity Benefits</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Reviving Teammates</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Increasing Affinity</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Boosting Arts</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Acquiring Skills</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Learning New Ideas</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Max Affinity</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Driver Combat 1</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Enemy Detection</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Sealing Effects</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Driver Combos</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Driver Class</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Raising Trust</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Leftheria Collecting 1</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Leftheria Collecting 2</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Leftheria Collecting 3</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tantal Collecting 1</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tantal Collecting 2</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tantal Collecting 3</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Tantal Collecting 4</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Strike enemy from behind in battle
+for greater chance of hitting them. Meh!</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Use Blade's Special initiate
+Blade Combo. Meh!</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">If friend is hit before your weapon is
+drawn, friend take great damage. Meh!</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Levels for Driver Arts and Specials will
+be raised by one at maximum Affinity.</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Fire and Water, Earth and Electricity
+Wind and Ice, Light and Dark...</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">As Affinity increases in battle, both
+Driver and Blade will grow stronger.</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">If the Party Gauge is partway filled up,
+you can help your fallen friends up!</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Affinity will rise while Driver and Blade
+are in close proximity to each other.</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Spend WP to boost Arts. You can earn
+WP by using the right type of weapon.</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Spend SP to learn skills. Earn SP on
+the battlefield (and elsewhere).</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">To learn more ideas, you'll need to
+foster your Blade and help them grow.</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">If you reach maximum Affinity in battle,
+you can use a powerful special move.</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Use an art to Break the enemy, then
+follow up with another to Topple them!</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Enemies in general won't notice if you
+sneak up behind them, but some will!</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Complete a Blade Combo route to
+seal off an enemy's special moves.</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Driver Combos are not very effective on
+some enemies. Sometimes not at all!</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A Driver's class is determined by the
+Blades accompanying them.</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">If you reach max Affinity with a Blade in
+combat, your Trust level will increase.</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Border Sapphire can be found
+somewhere on Island Base Lindwurm.</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Whisper Tomato is said to located
+somewhere on the Isle of Terminomni.</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Jellyfish Balsam can apparently
+be found somewhere on Daram Isle.</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Foolin' Ivy can be found
+somewhere in the Memorial Ruins.</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Icicle Marine is said to be found
+somewhere near the Amphoret Pillar.</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Gypsum Branch can be found
+somewhere in the Sacred Ice Caverns.</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The Ghost Dudl can be found
+somewhere in Yolmunder's Crevasse.</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Switch Parts 2</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You can get the Key-Shaped Lever
+at Goldmouth Flight Deck in Argentum.</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Switch Parts 3</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You can get the Filament Globe at
+Torigoth Relay Base in Gormott.</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Kountess Search Brief</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Kountess Search Brief</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Kountess Search Brief</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">It appears that the Kountess is not in
+Gormott.</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">It appears that the Kountess is not in
+Mor Ardain.</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">It appears that the Kountess is not in
+Uraya.</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Leftherian Murals</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">"One in the island's shellfish cave."
+Childishly apes Indoline murals.</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Fusion Combos 1</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A Fusion Combo occurs when a Driver
+Combo overlaps with a Blade Combo.</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Fusion Combos 2</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">It increases damage for both combos,
+extends duration, boosts Party Gauge.</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Basics of Tiger! Tiger! 1</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Basics of Tiger! Tiger! 2</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Basics of Tiger! Tiger! 3</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Ambushing Enemies</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Driver Combat 2</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Blade's Personality</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Combo Request</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Benefits of Smashing</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Hidden Landmarks</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Inns</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Number of Arts</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Core Chips</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Getting Core Chips</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Unique Monsters R.I.P.</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Types of Core Crystal</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Crystal Fortunes</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Blades and Ideas</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Blade Switch</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Heart-to-Heart Hints</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Heart-to-Hearts</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Types of Merc Mission</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Merc Mission Tip</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Merc Rewards 1</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Merc Rewards 2</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Element Orbs</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Breaking Element Orbs</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Move with direction buttons, attack
+with A, collect shinies and treasure!</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Mehmeh! Friend must attack jellyfish
+from above, turtles from the bottom!</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Mehmeh! There is power up item that
+will let friend attack on the diagonal!</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Attack an enemy unawares, from the
+rear, for a chance of an ambush.</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Launch a Toppled foe, then Smash
+them for massive damage.</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Risk/reward ratios in Heart-to-Hearts
+depend on a Blade's personality.</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A flashing Blade icon means a combo
+is ready, but not with the current Blade.</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You might get Gold or items when you
+land a Smash on an enemy.</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Secret Areas are hidden landmarks.
+You should look for them everywhere.</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">When staying at lodgings, you can
+select what level to advance to.</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Drivers can learn four Arts per weapon,
+and choose from three in battle.</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Certain Core Chips will activate
+special abilities.</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Some monsters will drop special
+Core Chips when defeated.</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Defeat a Unique Monster, and it'll leave
+a grave. Touch it to fight it again.</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">There are three grades of Core Crystal:
+Common, Rare, and Legendary.</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">The higher the quality, the more chance
+a Core Crystal will yield a rare Blade.</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">As a Driver's Ideas grow, so does their
+chance of awakening stronger Blades.</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Increase Trust, and the time between
+Blade Switches will go down.</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You might get a hint about the location
+of Heart-to-Hearts when staying at inns.</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Trust boosts vary depending on
+choices during Heart-to-Hearts.</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Some Merc Missions can only be done
+once. Others, many times.</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Send out Blades with the right skills,
+and they'll get the job done faster.</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Completing Merc Missions can be a
+good way to boost the Affinity Chart.</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Sending Blades on Merc Missions is a
+good way to build Trust.</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Three hits will break an element orb.
+Opposite element hits count as two.</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">You can extend a Chain Attack
+round by breaking an element orb.</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Stench</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Back Attack</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shackling Drivers</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Shackling Blades</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Enemy Reinforcements</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Taunt</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Stinky Drivers repel their Blades. Too
+far, and Specials become impossible.</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Some enemies aim powerful attacks at
+the back row, so be careful.</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A shackled Driver cannot attack or
+switch Blades.</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A shackled Blade cannot be switched,
+or use Arts and Specials.</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Some enemies call in support when HP
+is low. Stop them with a Driver Combo!</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">When an enemy taunts you, you won't
+be able to target a different enemy.</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Chain Attack Secrets</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Defeating a foe with a Chain Attack
+will more than double your reward.</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Salvaging Wisdom 1</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A perfectly executed dive doesn't equal
+results. Salvager, leave luck to heaven.</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Salvaging Wisdom 2</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Better cylinders mean better chance of
+a good haul, smaller chance of enemies.</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Fire Dragons Recipe</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Lhagen's Hat Pattern</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Access Code 1</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Access Code 2</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A recipe for Baked Redfish.
+Expands Pyra's cooking repertoire.</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">A pattern for sewing a kick-ass hat.
+Use Vale's Weaving to make it.</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Access code protected by a 
+Stopper Sovereign.</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Access code protected by a 
+Stopper Sovereign.</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe01</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe02</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe03</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe04</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe05</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe06</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe07</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe08</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe09</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe10</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe11</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe12</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe13</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe14</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe15</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe16</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe17</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe18</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe19</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe20</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe21</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe22</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe23</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe24</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe25</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe26</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe27</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe28</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe29</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe30</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe31</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe32</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe33</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe34</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe35</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe36</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe37</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe38</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe39</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe40</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe41</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe42</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe43</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe44</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe45</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe46</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe47</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe48</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe49</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe50</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe51</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">Recipe52</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe01_cap</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe02_cap</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe03_cap</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe04_cap</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe05_cap</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe06_cap</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe07_cap</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe08_cap</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe09_cap</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe10_cap</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe11_cap</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe12_cap</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe13_cap</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe14_cap</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe15_cap</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe16_cap</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe17_cap</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe18_cap</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe19_cap</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe20_cap</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe21_cap</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe22_cap</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe23_cap</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe24_cap</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe25_cap</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe26_cap</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe27_cap</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe28_cap</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe29_cap</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe30_cap</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe31_cap</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe32_cap</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe33_cap</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe34_cap</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe35_cap</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe36_cap</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe37_cap</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe38_cap</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe39_cap</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe40_cap</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe41_cap</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe42_cap</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe43_cap</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe44_cap</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe45_cap</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe46_cap</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe47_cap</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe48_cap</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe49_cap</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe50_cap</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe51_cap</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">Recipe52_cap</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">ああああああ</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td class="side">ああああああ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

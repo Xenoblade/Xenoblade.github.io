@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma21a_FLD_TboxPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>RSC_ID</th>
+          <th>Condition</th>
+          <th>FSID</th>
+          <th>FSID2</th>
+          <th>msgVisible</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Num</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Num</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Num</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Num</th>
+          <th>itm4Per</th>
+          <th>itm5ID</th>
+          <th>itm5Num</th>
+          <th>itm5Per</th>
+          <th>itm6ID</th>
+          <th>itm6Num</th>
+          <th>itm6Per</th>
+          <th>itm7ID</th>
+          <th>itm7Num</th>
+          <th>itm7Per</th>
+          <th>itm8ID</th>
+          <th>itm8Num</th>
+          <th>itm8Per</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>rsc_paramID</th>
+          <th>msgdigVisible</th>
+          <th>Digflg</th>
+        </tr>
+      </thead>
+      <tr id="2101">
+        <td>2101</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3853</td>
+        <td>4238</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#71">World Tree Drop</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10055">Photon Chip</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2102">
+        <td>2102</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d002</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>8546</td>
+        <td>9401</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15248">Movement Heal V</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10056">Positron Chip</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2103">
+        <td>2103</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d003</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>9807</td>
+        <td>10788</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2104">
+        <td>2104</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d004</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5604</td>
+        <td>6164</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15049">Machine Hunter IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2105">
+        <td>2105</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d005</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5954</td>
+        <td>6549</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15317">Fast Blade Switch IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2106">
+        <td>2106</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d006</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5254</td>
+        <td>5779</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15338">Specials Lv 4 Plus IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2107">
+        <td>2107</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d007</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>10157</td>
+        <td>11173</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15349">Jamming V</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2108">
+        <td>2108</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d008</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>9807</td>
+        <td>10788</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15318">Fast Blade Switch V</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2109">
+        <td>2109</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d009</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1455">Unearth</td></a>
+        <td>10</td>
+        <td>17863</td>
+        <td>19649</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_PcEquip.html#104">Revival Pod</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">Legendary Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="2110">
+        <td>2110</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d010</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>16462</td>
+        <td>18108</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_PcEquip.html#43">Galaxy Cube</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2111">
+        <td>2111</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d011</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1456">Unearth</td></a>
+        <td>10</td>
+        <td>10858</td>
+        <td>11944</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#112">Sigma Drive</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="2112">
+        <td>2112</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d012</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5254</td>
+        <td>5779</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10056">Positron Chip</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2113">
+        <td>2113</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d013</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5604</td>
+        <td>6164</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10057">Hadron Chip</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2114">
+        <td>2114</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d014</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>9457</td>
+        <td>10403</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#67">Tyrant Ring</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2115">
+        <td>2115</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d015</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>16112</td>
+        <td>17723</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_PcEquip.html#135">Master Attachment</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="2116">
+        <td>2116</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma21a_d016</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>15761</td>
+        <td>17337</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">Legendary Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

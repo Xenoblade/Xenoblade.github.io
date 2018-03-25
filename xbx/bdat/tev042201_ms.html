@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev042201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev042201_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev042201_SEL0011</td>
+        <td class="side">Ask Wazdo about the food supply.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev042201_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev042201_SEL0021</td>
+        <td class="side">Ask Wazdo about recent developments.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev042201_SEL1011</td>
+        <td class="side">Ask Wazdo about the food supply.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev042201_SEL1021</td>
+        <td class="side">Ask Wazdo about recent developments.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev042201_SEL2021</td>
+        <td class="side">Ask Wazdo about recent developments.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0001</td>
+        <td class="side">One good thing about city is plentiful food.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0002</td>
+        <td class="side">But you need more giant slabs of meat![ST:n ]Other food is distraction. Makes me miss home.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0003</td>
+        <td class="side">Though I did see tasty-looking meat slab called \"Tatsu.\"[ST:n ]It even talked to me![ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0004</td>
+        <td class="side">But when I tried to eat Tatsu, little girl yelled at me.[ST:n ]Said that she \"had dibs.\" What does this mean?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0005</td>
+        <td class="side">And how do I get talking meat slab of my own?[ST:n ]Are they sold in store?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0008</td>
+        <td class="side">Did you know beautiful Prone female named Lavina?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0009</td>
+        <td class="side">Soon she will be fit to wed![ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0010</td>
+        <td class="side">I must have her as mate. I must have wedding.[ST:n ]Then I can dine on piles of beast flesh![ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0011</td>
+        <td class="side">Have you never seen Prone wedding?[ST:n ]Whole clan devours beast flesh until we nearly burst.[ST:n ]Now that is living![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0012</td>
+        <td class="side">I remember being captive in Scabland Fortress.[ST:n ]Cavern Clan found traveling Nopon merchant.[ST:n ]Ended up eating him whole.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0013</td>
+        <td class="side">He looked delicious... Er, but that is in past![ST:n ]I know I am not permitted to eat Nopon.[ST:n ]But can I maybe take small bite from side?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0014</td>
+        <td class="side">Nopon named Tatsu is so round![ST:n ]He can spare bit of side for worthy Prone.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0015</td>
+        <td class="side">...No? Maybe just lick then?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0019</td>
+        <td class="side">Urrrrgh... So full...[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0020</td>
+        <td class="side">I like that Leroy. He bought me piles of meat![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0021</td>
+        <td class="side">...What? Lavina? It does not matter.[ST:n ]I cannot think of mates after so much meat.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0022</td>
+        <td class="side">Maybe my weakness for flesh is limited to kind[ST:n ]you eat? Not sure. I should defeat lots of enemies[ST:n ]so Loda gives me even more meat![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0030</td>
+        <td class="side">Grrrawww! Curse that puny Earth alien![ST:n ]He tries to steal Lavina from me![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0031</td>
+        <td class="side">I admit he is brave. Perhaps even worthy adversary.[ST:n ]But I will not let him prevail![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0032</td>
+        <td class="side">I will marry Lavina! Then Loda will stuff my face with[ST:n ]heaps of meat at wedding![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev042201_MSG0033</td>
+        <td class="side">...Er, and because of love. That too.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

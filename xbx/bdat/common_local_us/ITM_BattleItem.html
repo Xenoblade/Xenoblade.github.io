@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITM_BattleItem</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>Caption</th>
+          <th>RangeType</th>
+          <th>Target</th>
+          <th>CalcType</th>
+          <th>Hp</th>
+          <th>PartsHp</th>
+          <th>Tp</th>
+          <th>Fuel</th>
+          <th>DebuffClear</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>UI2</th>
+          <th>inner</th>
+          <th>doll</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>0</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>0</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>1</td>
+        <td>7</td>
+        <td>1</td>
+        <td>100</td>
+        <td>-100</td>
+        <td>-50</td>
+        <td>100</td>
+        <td>1</td>
+        <td>65535</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0001_name</td>
+        <td>ITEM_BTL_0001_Captio</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0002_name</td>
+        <td>ITEM_BTL_0002_Captio</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>60</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0003_name</td>
+        <td>ITEM_BTL_0003_Captio</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2731</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Personal Patch</td>
+        <td>Restores HP to maximum.[ST:n ]Affects all party members, but not Skells.</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2732</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">Tensifier</td>
+        <td>Raises Tension by 1000.[ST:n ]Affects all party members.</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2733</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0006_name</td>
+        <td>ITEM_BTL_0006_Captio</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2733</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">Mega Tensifier</td>
+        <td>Raises Tension by 3000.[ST:n ]Affects all party members.</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2733</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0008_name</td>
+        <td>ITEM_BTL_0008_Captio</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2734</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0009_name</td>
+        <td>ITEM_BTL_0009_Captio</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2735</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0010_name</td>
+        <td>ITEM_BTL_0010_Captio</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>30</td>
+        <td>0</td>
+        <td>2736</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0011_name</td>
+        <td>ITEM_BTL_0011_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2737</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0012_name</td>
+        <td>ITEM_BTL_0012_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>60</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2737</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">Frame Patch</td>
+        <td>Restores Skell Frame HP to maximum.[ST:n ]Affects all party Skells in operation.</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2737</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0014_name</td>
+        <td>ITEM_BTL_0014_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2738</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0015_name</td>
+        <td>ITEM_BTL_0015_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>60</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2738</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0016_name</td>
+        <td>ITEM_BTL_0016_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2738</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0017_name</td>
+        <td>ITEM_BTL_0017_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2739</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0018_name</td>
+        <td>ITEM_BTL_0018_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1000</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2740</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">ITEM_BTL_0019_name</td>
+        <td>ITEM_BTL_0019_Captio</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2000</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2740</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Fuel Re-up</td>
+        <td>Restores 3000 Fuel.[ST:n ]Affects all party Skells in operation.</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3000</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2740</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">Supreme Bonus</td>
+        <td>Can be sold for a whopping 30,000[ST:n ]credits via the Inventory.</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30000</td>
+        <td>0</td>
+        <td>2741</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td class="side">Special Bonus</td>
+        <td>Can be sold for a whopping 10,000[ST:n ]credits via the Inventory.</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10000</td>
+        <td>0</td>
+        <td>2741</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td class="side">ITEM_COM_0003_name</td>
+        <td>ITEM_COM_0003_Captio</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+        <td>0</td>
+        <td>2741</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side">ITEM_COM_0004_name</td>
+        <td>ITEM_COM_0004_Captio</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>2741</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td class="side">ITEM_COM_0005_name</td>
+        <td>ITEM_COM_0005_Captio</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>500</td>
+        <td>0</td>
+        <td>2741</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">Salvage Ticket</td>
+        <td>Salvages a single Skell after its insurance[ST:n ]has expired. Use it at the Skell Garage.</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>2742</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

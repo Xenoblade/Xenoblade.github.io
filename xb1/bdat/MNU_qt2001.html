@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt2001</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>purpose</th>
+          <th>info_prog</th>
+          <th>info_succ_A1</th>
+          <th>info_succ_A2</th>
+          <th>info_succ_A3</th>
+          <th>info_succ_B1</th>
+          <th>info_succ_B2</th>
+          <th>info_succ_B3</th>
+          <th>info_report</th>
+          <th>info_end_A</th>
+          <th>info_end_B</th>
+        </tr>
+      </thead>
+      <tr id="891">
+        <td>891</td>
+        <td>
+        </td>
+        <td>There is a troop of Mechon waiting at the Storage@Depot! Defeat the leader and reduce their attack@power.</td>
+        <td>Defeat <col=item>Beautiful Vagul<col=def3> in the Storage Depot.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You defeated the Mechon troop leader and@reduced their attack power.</td>
+        <td></td>
+      </tr>
+      <tr id="892">
+        <td>892</td>
+        <td>
+        </td>
+        <td>You discover Mechon waiting when you enter the@factory. Break through the enemy!</td>
+        <td>Defeat the <col=item>M96 Crisis Unit<col=def3> in the Mechon@Factory.</td>
+        <td>Defeat 2 <col=item>Crisis Response Units<col=def3> in the Mechon@Factory.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You crushed the enemy and forced your way@through.</td>
+        <td></td>
+      </tr>
+      <tr id="893">
+        <td>893</td>
+        <td>
+        </td>
+        <td>There is a Mechon stationed on the roof!@Defeat the troop leader.</td>
+        <td>Defeat <col=item>Venerable Focalor<col=def3> on the Training@Ground Roof.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You defeated the Mechon troop leader and@reduced the Mechon's attack power.</td>
+        <td></td>
+      </tr>
+      <tr id="894">
+        <td>894</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="895">
+        <td>895</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="896">
+        <td>896</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="897">
+        <td>897</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="898">
+        <td>898</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="899">
+        <td>899</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="900">
+        <td>900</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="901">
+        <td>901</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="902">
+        <td>902</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="903">
+        <td>903</td>
+        <td>
+        </td>
+        <td>It looks like the Weapon Creation Panel in the Central@Factory will be able to make Fiora a new weapon.@Use the materials and make a weapon.</td>
+        <td>Use the Weapon Creation Machine in the@Control Tower of the Central Factory.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You made a weapon for Fiora.</td>
+        <td></td>
+      </tr>
+      <tr id="904">
+        <td>904</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="905">
+        <td>905</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="906">
+        <td>906</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="907">
+        <td>907</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="908">
+        <td>908</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="909">
+        <td>909</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="910">
+        <td>910</td>
+        <td>
+        </td>
+        <td>The lift to the Central Tower doesn't seem to work.@Find an alternative route.</td>
+        <td>Go to Maintenance Entrance 1.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>It looks like you can get to the upper levels if@you use the lift in the Maintenance Wing.</td>
+        <td></td>
+      </tr>
+      <tr id="911">
+        <td>911</td>
+        <td>
+        </td>
+        <td>The path from the Maintenance Wing to the lift is@blocked by an electrical barrier. Release the barrier@and find a way to the lift.</td>
+        <td>Use the Barrier Control Panel to release the@electrical barrier.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You released the electrical barrier in the@Maintenance Wing.</td>
+        <td></td>
+      </tr>
+      <tr id="912">
+        <td>912</td>
+        <td>
+        </td>
+        <td>The lift to the top floor is blocked, but you should be@able to get to the upper levels through the Mechon@factory.</td>
+        <td>Find a way to infiltrate the Mechon Factory.</td>
+        <td>Collect materials for the bomb.</td>
+        <td>Use the Weapon Creation Panel in the@Maintenance Wing to make a bomb.</td>
+        <td>Use the bomb to blast open the vent.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You blasted the vent open and you can now@enter the Mechon Factory.</td>
+        <td></td>
+      </tr>
+      <tr id="913">
+        <td>913</td>
+        <td>
+        </td>
+        <td>It seems there is a way to the Mechon Factory through@the vent. You will need a bomb to blast it open. Collect@bomb components from Mechon on the second floor.</td>
+        <td>Collect an <col=item>Electrical Fuse<col=def3> from the M88@Watchtower guarding the Main Factory Gate.</td>
+        <td>Collect an <col=item>Ether Explosive<col=def3> from the M97@Commander in the Large Mechon Store.</td>
+        <td>Collect a <col=item>Timer<col=def3> from a flying Mechon in the@central container storeroom.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You have collected the materials to use the@Weapon Creation Panel and make a bomb.</td>
+        <td></td>
+      </tr>
+      <tr id="914">
+        <td>914</td>
+        <td>
+        </td>
+        <td>Your way is blocked by an electrical barrier. Turn off@the electrical barrier and head to the top of the tower.</td>
+        <td>Turn off the electrical barrier.</td>
+        <td>Reach the peak of the tower.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You have arrived at the transporter to the capital.</td>
+        <td></td>
+      </tr>
+      <tr id="915">
+        <td>915</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="916">
+        <td>916</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="917">
+        <td>917</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="918">
+        <td>918</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="919">
+        <td>919</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="920">
+        <td>920</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

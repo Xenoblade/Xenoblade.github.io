@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt0601</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>purpose</th>
+          <th>info_prog</th>
+          <th>info_succ_A1</th>
+          <th>info_succ_A2</th>
+          <th>info_succ_A3</th>
+          <th>info_succ_B1</th>
+          <th>info_succ_B2</th>
+          <th>info_succ_B3</th>
+          <th>info_report</th>
+          <th>info_end_A</th>
+          <th>info_end_B</th>
+        </tr>
+      </thead>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td>Ask a child in Frontier Village to tell you why the@Nopon Sage is so great.</td>
+        <td>Talk to Pipiki in Frontier Village.</td>
+        <td>Return to the Nopon Sage.</td>
+        <td>Talk to Pachipa in Frontier Village.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Nopon Sage.</td>
+        <td>You understand a little better why the@Nopon Sage is so great.</td>
+        <td></td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td>You have had to accept the Nopon Sage's challenge.@Go to a dangerous place and demonstrate your@courage.</td>
+        <td>Go to the Seahorse Islet in Makna Forest and@collect the <col=item>Proof of Courage<col=def3>.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Nopon Sage.</td>
+        <td>Through your successful completion of this final@test the Nopon Sage recognises your courage.</td>
+        <td></td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td>You are to take the Nopon Sage's final test. You@must go to a little island at Great Makna Falls and@demonstrate your strength.</td>
+        <td>Go to Great Makna Falls in Makna Forest and@defeat <col=item>Unreliable Rezno<col=def3>. (Only at daytime.)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Nopon Sage.</td>
+        <td>You have completed the final test. The Nopon@Sage is impressed and gives you a gift.</td>
+        <td></td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td>The broken bridge is causing problems for the Nopon.@If they had the materials, they could fix it. Help them@by collecting the materials they need to mend it.</td>
+        <td>Collect 5 <col=item>Hode Planks<col=def3> from Hodes in@Makna Forest.</td>
+        <td>Collect 3 <col=item>Rhogul Axe Crests<col=def3> from Mist Rhoguls@in Satorl Marsh.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Nopon in charge of bridge repair.</td>
+        <td>The bridge has been repaired. The Nopon of@Frontier Village are very happy.</td>
+        <td></td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td>There are lots of terrifying monsters in Makna Forest.@Clear some of them so the road is safe.</td>
+        <td>Defeat 5 <col=item>Jungle Quadwings<col=def3> in Makna Forest.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Nopon Merchant's request.@The road to Frontier Village is a little safer.</td>
+        <td></td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td>There are lots of terrifying monsters in Makna Forest.@Defeat some to stop them eating the local Nopon.</td>
+        <td>Defeat 2 <col=item>Makna Feris<col=def3> in Makna Forest.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Nopon Merchant's request.@The road to Frontier Village is a little safer.</td>
+        <td></td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td>There are lots of terrifying monsters in Makna Forest.@Clear some that attack the Nopon from the air.</td>
+        <td>Defeat 2 <col=item>Makna Ansels<col=def3> in Makna Forest.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Nopon Merchant's request.@The road to Frontier Village is a little safer.</td>
+        <td></td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td>There are lots of terrifying monsters in Makna Forest.@Clear some of them so the road is safe.</td>
+        <td>Defeat 3 <col=item>Makna Eks<col=def3> in Makna Forest.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Nopon Merchant's request.@The road to Frontier Village is a little safer.</td>
+        <td></td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td>If the Nopon dare to bathe where the Eks drink water,@they're very likely to be attacked by a horrifying@monster. Defeat it and let the Nopon wash in safety.</td>
+        <td>Defeat <col=item>Shimmering Forte<col=def3> near the Eks Watering@Hole in Makna Forest. (On a hot day.)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Nopon Merchant's request.@The Nopon can wash safely now.</td>
+        <td></td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td>High purity Water Ether Crystals are needed to save@a girl. There should be some near the large waterfall.@Find some Water Ether Crystals in Makna Forest.</td>
+        <td>Collect some <col=item>Water Ether Crystals<col=def3>.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You found some Water Ether Crystals. These@should be able to help save the girl now.</td>
+        <td></td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

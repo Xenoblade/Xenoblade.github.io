@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev065901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev065901_SEL0011</td>
+        <td class="side">Ask Da Zeulbe about the Ganglion.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev065901_SEL0021</td>
+        <td class="side">Ask Da Zeulbe if anything is troubling him.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0010</td>
+        <td class="side">tev065901_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev065901_SEL1011</td>
+        <td class="side">Ask Da Zeulbe why the Ganglion pursue humans so[ST:n ]tenaciously.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0020</td>
+        <td class="side">tev065901_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev065901_SEL1021</td>
+        <td class="side">Ask Da Zeulbe about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0010</td>
+        <td class="side">tev065901_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev065901_SEL1031</td>
+        <td class="side">Ask Da Zeulbe about Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev065901_JNK0020</td>
+        <td class="side">tev065901_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev065901_SEL1041</td>
+        <td class="side">Ask Da Zeulbe about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0001</td>
+        <td class="side">Hmph! What about them? That pathetic craven Luxaar[ST:n ]acts as though he matters in the organization,[ST:n ]but he's no better than any other Samaarian lackey.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0002</td>
+        <td class="side">And he's certainly not a leader of character like our[ST:n ]Prince Jiarg.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0003</td>
+        <td class="side">His losses to you—combined with our betrayal—[ST:n ]ought to have the maggot writhing.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0004</td>
+        <td class="side">Were our men in better shape, we would go and[ST:n ]finish him off ourselves.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0005</td>
+        <td class="side">And so we shall, once we are prepared.[ST:n ]We will infiltrate his lair and strike the life from him![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0010</td>
+        <td class="side">The Prone are determined to eradicate us.[ST:n ]Every day brings a new skirmish.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0011</td>
+        <td class="side">What they lack in wits they more than make up for in[ST:n ]toughness, and we have been struggling to thin their[ST:n ]numbers.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0012</td>
+        <td class="side">But you have fought many of them, have you not?[ST:n ]If you know any ways to dispatch them swiftly,[ST:n ]enlighten me.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0017</td>
+        <td class="side">I should ask you! Did you do something to incur their[ST:n ]never-ending wrath?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0018</td>
+        <td class="side">They have always done whatever it takes to obtain the[ST:n ]things Samaar desires.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0019</td>
+        <td class="side">But they were just lapdogs, and never showed any[ST:n ]particular investment in the work.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0020</td>
+        <td class="side">All that changed when you entered the picture.[ST:n ]Without a single order from Samaar, the Ganglion[ST:n ]targeted you with every soldier they had.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0021</td>
+        <td class="side">There is no precedent for this. Perhaps one of your[ST:n ]ancestors delivered insult to Luxaar's mother![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0026</td>
+        <td class="side">My brother Naguth and sister Girhi and I have been[ST:n ]passing the hours hunting and destroying what[ST:n ]Ganglion we can find.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0027</td>
+        <td class="side">Just the other day, we had a run-in with the Marnucks[ST:n ]gathered in the fortress above and made off with a[ST:n ]great number of weapons.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0028</td>
+        <td class="side">Heh. I never cared for the Marnucks.[ST:n ]They always acted far above their station![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0032</td>
+        <td class="side">I have tested my mettle with some mighty opponents[ST:n ]since coming here. There was Ernest, the Contemplative[ST:n ]down in King's Falls...[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0033</td>
+        <td class="side">And I shall never forget my endless clash with Bruno[ST:n ]the Iron-fisted deep in the Keegan Ridge![ST:n ]But none of these creatures were as strong as you.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0034</td>
+        <td class="side">Luxaar chose the wrong human to pick a fight with.[ST:n ]But let him agonize over that mistake in the next world![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0039</td>
+        <td class="side">My brother Naguth and sister Girhi and I have been[ST:n ]passing the hours hunting and destroying what[ST:n ]Ganglion survivors we can find.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0040</td>
+        <td class="side">Just the other day, we had a run-in with the Marnucks[ST:n ]gathered in the fortress above and made off with a[ST:n ]great number of weapons.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev065901_MSG0041</td>
+        <td class="side">Heh. I never cared for the Marnucks.[ST:n ]They always acted far above their station![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

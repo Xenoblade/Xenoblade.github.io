@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt0101</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>purpose</th>
+          <th>info_prog</th>
+          <th>info_succ_A1</th>
+          <th>info_succ_A2</th>
+          <th>info_succ_A3</th>
+          <th>info_succ_B1</th>
+          <th>info_succ_B2</th>
+          <th>info_succ_B3</th>
+          <th>info_report</th>
+          <th>info_end_A</th>
+          <th>info_end_B</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>Cheryl is mourning the loss of her son. She would@like something to remind herself of him. Find 3 items@that he took with him when he left for the Bionis' head.</td>
+        <td>Find Cheryl's son's armour.</td>
+        <td>Find Cheryl's son's gun.</td>
+        <td>Find Cheryl's son's knife.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Cheryl.</td>
+        <td>Cheryl now has some keepsakes of her son.@They will serve to ease her pain a little.</td>
+        <td></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>Dionysis has been suffering from back pains for many@years. He has recently run out of his medicine.@Collect some more medicine for him.</td>
+        <td>Collect 2 lots of <col=item>Medicinal Brog Oil<col=def3> from Brogs@in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Dionysis.</td>
+        <td>Dionysis' pains were little more than an old man's@playful humour. He's good for a few years yet!</td>
+        <td></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>The Curry Shop, well known for its tasty curries,@is running out of ingredients! Help Giorgio by@collecting the required ingredients.</td>
+        <td>Collect 5 <col=item>Dance Apples<col=def3> from Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Giorgio.</td>
+        <td>The Colony 9 Curry Shop can make its famous@curries once again!</td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>Take Marcia's biscuits to her grandson, Jiroque.@Jiroque is in the Residential District, training to win a@fight with his older brother.</td>
+        <td>Take Marcia's Biscuits to Jiroque.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Marcia.</td>
+        <td>Jiroque has his grandmother's biscuits. What@will happen when he fights his brother...?</td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>Kantz would like to make some leather shoes for his@son's birthday, but has no time to get the materials.@Collect the materials he needs to make the shoes.</td>
+        <td>Collect 2 <col=item>Azure Flamii Wings<col=def3> from Opulent Flamii@in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Kantz.</td>
+        <td>Kantz has the materials he needs, and will now@be able to make a fine pair of shoes for his son.</td>
+        <td></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>Suzanna is having trouble getting her son to study,@and wants to make some sweets to encourage him.@Collect the ingredients for her.</td>
+        <td>Collect 2 lots of <col=item>Black Nectar<col=def3> from Skeeters@in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Suzanna.</td>
+        <td>Suzanna's son has all he needs to study. He just@needs to make an effort now.</td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>Suzanna wants to stay fit and strong. She wants@something that she can do weight lifting with.</td>
+        <td>Collect 2 pieces of <col=item>Heavy Bunniv Iron<col=def3> from@Bunnivs in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Suzanna.</td>
+        <td>Looks as if 'someone' was fooled into helping@Suzanna get Moritz to study.</td>
+        <td></td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>Françoise is feeling sad because the flowers in the@garden were trampled in the raid. Find her some@Dawn Hydrangeas to cheer her up!</td>
+        <td>Collect 5 <col=item>Dawn Hydrangeas<col=def3> from Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Françoise.</td>
+        <td>Françoise is so happy, she has gone back to her@gardening with renewed vigour!</td>
+        <td></td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>A Nopon boy called Niranira is unable to summon up@the courage to deliver his letter to a local Homs boy.@Deliver the letter for Niranira.</td>
+        <td>Give Niranira's Letter to Lukas.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Niranira.</td>
+        <td>Niranira has made his first male Homs friend.@Hopefully, the two will become good friends!</td>
+        <td></td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>Désirée has broken her watch, again. Take it to the@Lab and fix it for her.</td>
+        <td>Mend the watch in Shulk's Lab.</td>
+        <td>Collect 3 <col=item>Blue Chains<col=def3> from Colony 9.</td>
+        <td>Return to the Lab and mend the watch.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Désirée.</td>
+        <td>It was no easy task repairing Désirée's watch.@Let's hope she takes good care of it this time!</td>
+        <td></td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>Jan feels that challenges are good for building up a@young person's character. Clear Jan's challenge by@defeating the monsters.</td>
+        <td>Defeat <col=item>Elder Gragus<col=def3> near the Nopon Arch in@Makna Forest.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jan.</td>
+        <td>You humoured Jan's request and he's happy!</td>
+        <td></td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>Monica wants to give Erik a Tephra Drop after hearing@that they make the recipient fall in love with whoever@gives it to them. Go look for it in Tephra Cave.</td>
+        <td>Collect a <col=item>Tephra Drop<col=def3> from near the Spring of@Grief in Tephra Cave. (Only at night.)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Monica.</td>
+        <td>Monica looks so happy now that she and Erik,@who she cares for so much, are together at last.</td>
+        <td></td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>Andreas also wants to give a Tephra Drop, to Monica.@Choose one of them to help, Andreas or Monica.</td>
+        <td>Collect a <col=item>Tephra Drop<col=def3> from near the Spring of@Grief in Tephra Cave. (Only at night.)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Andreas.</td>
+        <td>Andreas looks so happy now that he and Monica,@who he cares for so much, are together at last.</td>
+        <td></td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>In a vision, Leopold is being harassed for money@by the loan shark King Squeeze. Do something to@prevent this unhappy occurrence.</td>
+        <td>Meet King Squeeze and object to his harsh@collection methods.</td>
+        <td>Investigate what King Squeeze and Sylviane are@up to, or tell Leopold the facts.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The worst possible outcome has been prevented.@Let's hope they turn over a new leaf.</td>
+        <td></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>Talk to King Squeeze, then decide whether to press@Sylviane or reveal the truth to Leopold.</td>
+        <td>Talk to Sylviane or to Leopold.</td>
+        <td>Look for the evidence that Sylviane disposed of.</td>
+        <td>Show King Squeeze the Top-Secret Orders.</td>
+        <td></td>
+        <td>Collect 5 lots of <col=item>Caterpile Poison<col=def3> from@Caterpiles in Tephra Cave.</td>
+        <td>Talk with King Squeeze and slip some Caterpile@Poison into his pocket.</td>
+        <td>Return to Leopold.</td>
+        <td></td>
+        <td>Now that he has something on King Squeeze,@Leopold is under less pressure to pay his debt.</td>
+        <td>Thanks to Leopold's plan, King Squeeze lost his@'business' and has disappeared.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>In a vision, Giorgio had collapsed due to overworking@to support his daughter. Do something to prevent this@from happening.</td>
+        <td>Convince Giorgio or consult with a relative.</td>
+        <td>Collect 3 lots of <col=item>Fresh Armu Milk<col=def3> from Armus in@Colony 9.</td>
+        <td>Return to Giorgio.</td>
+        <td></td>
+        <td>Collect 3 pieces of <col=item>Insanity Mint<col=def3> in Tephra Cave.</td>
+        <td>Return to Paola.</td>
+        <td>Tell Giorgio about the lie.</td>
+        <td></td>
+        <td>Now that Giorgio has some nutrients, he should@be able to continue supporting his daughter.</td>
+        <td>Thanks to the little charade, Giorgio and Paola@are now closer than ever.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>Unfortunately, Giorgio is unable to play with Paola.@As he requested, spend some time with her instead,@doing whatever she likes.</td>
+        <td>Talk with Paola.</td>
+        <td>Beat the <col=item>Fiendish Bunnit<col=def3> on the hill by Cliff Lake@near Colony 9.</td>
+        <td>Return to Paola.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Giorgio.</td>
+        <td>Paola is really happy now. Her dad will find time@to play with her soon.</td>
+        <td></td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>Giorgio is spending so much time with the daughter@he adores, that the quality of his curry is suffering.@Help him to find a way out of this slump.</td>
+        <td>Collect 5 lots of <col=item>Piranhax Roe<col=def3> from Piranhaxes@on the Bionis' Leg.</td>
+        <td>Return to Giorgio.</td>
+        <td>Collect 3 pieces of <col=item>Juicy Brocolli<col=def3> from the<n>Bionis' Leg.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Giorgio.</td>
+        <td>Things are getting back to normal at Giorgio's@Curry Shop, and its future is safe for now.</td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>Two precocious young girls are incessantly disputing@the relative merits of Team Reyn and Team Shulk.@To stop them, demonstrate what friendship is.</td>
+        <td>Raise the affinity between Shulk and Reyn@to a good degree and then talk to Narine.</td>
+        <td>Raise the affinity between Shulk and Reyn@considerably more, and then talk to Paola.</td>
+        <td>Raise the affinity between two female party@members considerably and then talk to Paola.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Narine.</td>
+        <td>Narine and Paola have become good friends,@just like Shulk and Reyn.</td>
+        <td></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>Sesame and his friends are planning something@shady. Help, but keep a close eye on developments.</td>
+        <td>Collect 2 <col=item>Croaking Brog Bags<col=def3> from Singing Brogs@in Tephra Cave.</td>
+        <td>Return to Sesame.</td>
+        <td>Talk to Betty.</td>
+        <td>Hand the <col=item>Sealed Package<col=def3> to Sesame.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Sesame.</td>
+        <td>Sesame's plan is a little closer to completion.</td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>Sesame and his friends' plan is still in the preparation@stage. Help, but keep a close eye on developments.</td>
+        <td>Collect 2 <col=item>Iron Krabble Shells<col=def3> from Colony@Krabbles in Colony 9.</td>
+        <td>Return to Sesame.</td>
+        <td>Talk to Kenny Rohan.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Sesame.</td>
+        <td>Sesame's plan is another step nearer completion.</td>
+        <td></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>Sesame's plan is in its final stage. It should be@stopped if it appears to be too dangerous.</td>
+        <td>Defeat <col=item>Dark Murakmor<col=def3> near Colony 9's@Anti-Air Battery 3. (Only at night.)</td>
+        <td>Return to Sesame.</td>
+        <td>Investigate the street lights at the entrance to the@Commercial District.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Prevent Sesame's devious plan, whatever it is!</td>
+        <td>The fireworks over Colony 9 really cheered@up the residents.</td>
+        <td></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>Young Captain Emmy Leater is getting really angry@with her subordinate. Go and find that lazybones@called Miller.</td>
+        <td>Find Miller somewhere in the Commercial@District.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Emmy Leater.</td>
+        <td>This recent incident has made Miller turn over a@new leaf. Hopefully he's learnt his lesson.</td>
+        <td></td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>Young Captain Emmy Leater has hit another wall. She@really needs some help with a seek and exterminate@mission in Tephra Cave.</td>
+        <td>Defeat 5 <col=item>Wing Vangs<col=def3> in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Emmy Leater.</td>
+        <td>You really helped Emmy Leater out. She'll be@entrusted with more missions from now on.</td>
+        <td></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>Strange monsters have appeared in Tephra Cave and@the Young Captain Emmy Leater needs help@eliminating them.</td>
+        <td>Defeat either the unknown monster at the Spring@of Grief or Vilia Lake in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Emmy Leater.</td>
+        <td>You defeated the Lurker Brog to help out Emmy@get a little closer to achieving her dream.</td>
+        <td>You defeated the Lurker Krabble to help out@Emmy get a little closer to achieving her dream.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>The lieutenant colonel qualification test is about to@start! It's not looking good for Emmy Leater though...@Help her out! She needs a sword or a shield.</td>
+        <td>Find a <col=item>Nopon Claymore<col=def3> or a <col=item>Carbo Shield<col=def3>.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Collect 4 pieces <col=item>Bunnia Scent Wood<col=def3> from Ogre@Bunnias in Satorl Marsh.</td>
+        <td>Collect a <col=item>Nopon Claymore<col=def3> from a Nopon@Merchant.</td>
+        <td></td>
+        <td>Return to Emmy Leater.</td>
+        <td>Holding the Carbo Shield, she takes the test,@but fails miserably.</td>
+        <td>Holding the Nopon Claymore, she takes the test,@but wins in a dishonourable fashion.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>Emmy Leater has run off in total despair. Find her and@give her the message from the Defence Force@soldiers of Colony 9.</td>
+        <td>Find Emmy Leater and give her the letter.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The young captain is moved and returns to the@Colony 9 Defence Force.</td>
+        <td></td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>Kantz suspects the sword had poison on it. Find out@the truth and clear Emmy Leater's name.</td>
+        <td>Collect 4 <col=item>Poisonous Gourds<col=def3> from Satorl Marsh.</td>
+        <td>Listen to Emmy Leater's side of the story.</td>
+        <td>Listen to Kantz's side of the story.</td>
+        <td>Listen to the results of Raoul's investigation@of the poison-tipped sword.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Miller.</td>
+        <td>Emmy Leater's name has been cleared and she@can resume her duties in the Defence Force.</td>
+        <td></td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>Niranira has taken Moritz's bait and gone alone to@Hazzai Cape to get a Krabble shell. You must go after@him! There's no time to lose!</td>
+        <td>Go and bring back Niranira who has gone to@Hazzai Cape in Colony 9.</td>
+        <td>Return to Lukas.</td>
+        <td>Talk to Moritz.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Lukas.</td>
+        <td>Niranira and Moritz are friends now.</td>
+        <td></td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>Collect the Friendship Tokens said to symbolise@eternal friendship and give them to the children.</td>
+        <td>Collect 4 <col=item>Arachno Sickles<col=def3> from Arachno in@Tephra Cave.</td>
+        <td>Collect 4 <col=item>Lizard Moon Jewels<col=def3> from Lizards in@Tephra Cave.</td>
+        <td>Collect 4 <col=item>Bunniv Clubs<col=def3> from Bunnivs in@Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Moritz.</td>
+        <td>The three look like they will be best friends@forever.</td>
+        <td></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>The brothers' feud can finally come to an end. Find a@Red Pollen Orb that Zukazu can eat to assure his@victory.</td>
+        <td>Collect a <col=item>Red Pollen Orb<col=def3> from a location@relating to the Nopon.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Zukazu.</td>
+        <td>Zukazu has emerged victorious from the feud@with his brother and he leaves Colony 9 to travel.</td>
+        <td></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>The brothers' feud will finally come to an end. Find a@Red Pollen Orb for Jiroque and stop Zukazu from@leaving to travel around Bionis.</td>
+        <td>Collect a <col=item>Red Pollen Orb<col=def3> from a location@relating to the Nopon.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jiroque.</td>
+        <td>Jiroque and Zukazu resolve their feud and live in@Colony 9 happily together.</td>
+        <td></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>Jiroque wants to get a room ready for when Zukazu@returns. Help him make a room fit for a Nopon.</td>
+        <td>Collect 3 <col=item>Quality Antol Jaws<col=def3> from Clinger Antols@in Colony 9.</td>
+        <td>Collect 4 <col=item>Black Irises<col=def3> in Makna Forest.</td>
+        <td>Collect 2 <col=item>Forget-You-Nots<col=def3> in Satorl Marsh.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jiroque.</td>
+        <td>Zukazu's room is all ready! There won't be a@single speck of dust when he returns.</td>
+        <td></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>Zukazu has decided to make his life in Colony 9. But@there is one problem. Help him find a compromise with@his grandmother who is less than friendly to him.</td>
+        <td>Collect 3 lots of <col=item>Maternal Armu Milk <col=def3>from Plain@Armus in Colony 9</td>
+        <td>Talk to Marcia.</td>
+        <td>Return the Old Ring to Marcia.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Zukazu.</td>
+        <td>Thanks to Zukazu, Marcia no longer has a@prejudice against the Nopon.</td>
+        <td></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>Rocco can't find anyone in the Commercial District@who can help him fix his mother's keepsake that he@broke! Help him find someone who can.</td>
+        <td>Find someone who can mend the keepsake.</td>
+        <td>Give Dean the Broken Pendant.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Rocco.</td>
+        <td>The pendant has been fixed. Maybe this will@mend things between Rocco and Sonia too.</td>
+        <td></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>Dean wants to have a meal with his first love, Sonia.@In return for his earlier favour, help him by making his@dream a reality.</td>
+        <td>Talk to Sonia.</td>
+        <td>Collect 2 <col=item>Shin Geckos<col=def> in Tephra Cave.</td>
+        <td>Talk to Sonia.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Dean.</td>
+        <td>With the children no longer squabbling, Sonia@was able to make dinner for Dean.</td>
+        <td></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>Liliana doesn't seem happy about Sonia and Dean@dating. Now is the time to remind Sonia of Liliana's@father's last words.</td>
+        <td>Collect something precious from the back of the@cave at Agora Shore in Colony 9.</td>
+        <td>Give Sonia the Message in a Bottle.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Liliana.</td>
+        <td>The old recipe for cabbage parcels has helped@Sonia and Liliana patch things up.</td>
+        <td></td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>Jackson, who stares at the sky all day long, has finally@decided that it's time to get a job. Help him find@employment somewhere.</td>
+        <td>Look for someone who will take Jackson on as@an apprentice.</td>
+        <td>Defeat 5 <col=item>Tephra Lizards<col=def3> near Vilia Lake in@Tephra Cave.</td>
+        <td>Return to Kenny Rohan.</td>
+        <td></td>
+        <td>Defeat 5 <col=item>Tephra Lizards<col=def3> near Vilia Lake in@Tephra Cave.</td>
+        <td>Return to Giorgio.</td>
+        <td></td>
+        <td>Return to Jackson.</td>
+        <td>Jackson is now Kenny Rohan's student. He's@going to work as an artist drawing the sky.</td>
+        <td>Jackson is now Giorgio's assistant. He's going to@develop new curry recipes.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>Jackson has proposed a new recipe for the Curry@Shop but they don't have the right ingredients in stock.@Collect the ingredients Jackson asks for.</td>
+        <td>Collect 5 lots of <col=item>Raw Piranhax Meat<col=def3> from Colony@Piranhaxes in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jackson.</td>
+        <td>The new recipe is delicious but it's unsuitable for@regular production so it won't be on the menu!</td>
+        <td></td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>There has been a pesky bug buzzing so loudly that no@one can concentrate on their art. Go to Tephra Cave@and exterminate the bug to bring back tranquillity.</td>
+        <td>Defeat the <col=item>Dim Wisp<col=def3> near Kneecap Hill in Tephra@Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jackson.</td>
+        <td>The mysterious bug was exterminated and the@artist can return to his easel.</td>
+        <td></td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>Since her father, who was proficient with machines,@passed away, Désirée has been worried about@a future all alone. Why not try to offer some advice?</td>
+        <td>Listen to Désirée's long story.</td>
+        <td>Challenge yourself to listen to Désirée's long and@boring story.</td>
+        <td>Try not to fall asleep while listening to Désirée's@story.</td>
+        <td>Make it look like you enjoy listening to Désirée's@long story.</td>
+        <td>Challenge yourself to listen to Désirée's long and@boring story.</td>
+        <td>Try not to fall asleep while listening to Désirée's@story.</td>
+        <td>Make it look like you enjoy listening to Désirée's@long story.</td>
+        <td>Decide Désirée's future.</td>
+        <td>You recommended that Désirée join the@Defence Force.</td>
+        <td>You recommended that Désirée become@a sculptor.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>Betty wants to give Désirée a cute piece of armour@to congratulate her on her new job. Collect the@materials she needs to make it.</td>
+        <td>Collect 2 <col=item>Lucky Skeeter Wings<col=def3> from Chordy@Skeeters in Colony 9.</td>
+        <td>Collect 2 <col=item>Vang Hair Clips<col=def3> from@Shadow Vangs in Colony 9.</td>
+        <td>Collect 4 <col=item>Razor Teasels<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Betty.</td>
+        <td>With her new present, Désirée is sure to enjoy@her work with the Defence Force even more!</td>
+        <td></td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>Betty has become jealous since Désirée became a@student of Kenny Rohan. Help make a present that@should bring the two back together again.</td>
+        <td>Collect 2 <col=item>Krabble Artworks<col=def3> from Solid Krabbles@in Colony 9.</td>
+        <td>Collect 2 <col=item>Laughing Brog Bags<col=def3> from@Heavy Brogs in Colony 9.</td>
+        <td>Collect 4 <col=item>Night Lilies<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Désirée.</td>
+        <td>Désirée and Betty are friends again. Betty isn't@jealous of Désirée at all now.</td>
+        <td></td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>Raoul can't choose a lieutenant. Meet with Minnie who@has a lot of experience and Dorothy who has a lot of@potential and decide who it should be.</td>
+        <td>Meet with Minnie and see what she is like.</td>
+        <td>Meet with Dorothy and see what she is like.</td>
+        <td></td>
+        <td></td>
+        <td>Meet with Dorothy and see what she is like.</td>
+        <td>Meet with Minnie and see what she is like.</td>
+        <td></td>
+        <td>Return to Raoul.</td>
+        <td>You recommended that Minnie should be@lieutenant because of her experience.</td>
+        <td>You recommended that Dorothy should be@lieutenant because of her potential.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>Monsters have appeared under the bridge connecting@the Central Plaza with the Residential District in@Colony 9. Defeat them for Minnie.</td>
+        <td>Defeat 5 <col=item>Vicious Rhanas<col=def3> near the Residential@District of Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Minnie.</td>
+        <td>Having met with Minnie, you feel that she is a@person who would put the colony's safety first.</td>
+        <td></td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>You meet with Dorothy but she makes a request of@you. You decide to collect the fruit she has asked@for anyway.</td>
+        <td>Collect 5 <col=item>Heart Peaches<col=def3> in Alcamoth.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Dorothy.</td>
+        <td>Having met with Dorothy, you feel that she is a@person who empathises with the plight of others.</td>
+        <td></td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>The mysterious light that appeared in the lake after@the attack has disappeared and the residents miss it.@Discover the mystery behind this light.</td>
+        <td>Collect information from colony residents.</td>
+        <td>Talk to a girl that lives in the Residential District.</td>
+        <td>Talk to Arnaut.</td>
+        <td></td>
+        <td>Talk to Françoise.</td>
+        <td>Talk to Dionysis.</td>
+        <td></td>
+        <td>Return to Kenny Rohan.</td>
+        <td>The mysterious light was in fact an ether lamp@tangled up in some fallen debris.</td>
+        <td>Contrary to all the wild rumours, the mysterious@light was really just an ether lamp.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>Now that you know what the mysterious light was,@you have to decide what to do with it. Do you restore@the light? Or do you leave things as they are?</td>
+        <td>Mend the lamp or throw the Ether Cylinder@in the lake.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Collect 2 <col=item>Krabble Fixed Parts<col=def3> from Junk Krabbles@in the Ether Mine.</td>
+        <td>Talk to Arnaut.</td>
+        <td></td>
+        <td>Return to Kenny Rohan.</td>
+        <td>Lots of bad things have happened to the colony@but the residents look to the future now.</td>
+        <td>The Colony 9 residents are finding it hard. Every@night they gather at the mysterious light.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>The pendant was very precious. Why don't you try@looking for it near Vilia Lake in Tephra Cave?</td>
+        <td>Look for the <col=item>Lost Pendant<col=def3> near Vilia Lake in@Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Defence Force Soldier near the@Cylinder Hangar in Colony 9.</td>
+        <td>You found the Lost Pendant.</td>
+        <td></td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>Help protect the colony by defeating the monsters@around Anti-Air Battery 1.</td>
+        <td>Defeat 2 <col=item>Ridge Antols<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You helped the Defence Force Soldier and@Anti-Air Battery 1 is much more peaceful now.</td>
+        <td></td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>Help protect the colony by defeating a monster near@Anti-Air Battery 1.</td>
+        <td>Defeat 1 <col=item>Cute Brog<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You helped the Defence Force Soldier and@Anti-Air Battery 1 is much more peaceful now.</td>
+        <td></td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>The monsters that reside at Cliff Lake have been@attacking colony residents. Exterminate them.</td>
+        <td>Defeat 3 <col=item>Colony Krabbles<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You helped the Defence Force soldier and@Cliff Lake is much more peaceful now.</td>
+        <td></td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>Defeat the monsters on the beach to protect Anti-Air@Battery 1.</td>
+        <td>Defeat 2 <col=item>Lake Flamii<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You helped the Defence Force Soldier and@Anti-Air Battery 1 is much more peaceful now.</td>
+        <td></td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>Defeat a monster on the beach to protect Anti-Air@Battery 1.</td>
+        <td>Defeat 1 <col=item>Baby Armu<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You helped the Defence Force Soldier and@Anti-Air Battery 1 is much more peaceful now.</td>
+        <td></td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>Defeat the monsters on Agora Shore to preserve the@balance of Colony 9's ecology.</td>
+        <td>Defeat 2 <col=item>Stone Krabbles<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The Stone Krabbles' numbers are under control.@The Defence Force Soldier is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>Defeat the monsters that are threatening the safety@of Colony 9.</td>
+        <td>Defeat 2 <col=item>Hand Bunnits<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The area around Colony 9 is quieter now.@The colony resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>Defeat the monsters that are threatening the safety@of Colony 9.</td>
+        <td>Defeat 3 <col=item>Beach Krabbles<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The area around Colony 9 is quieter now.@The colony resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>Defeat the monsters that are threatening the safety@of Colony 9.</td>
+        <td>Defeat 2 <col=item>Wood Bunnits<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The area of Tephra Hill is quieter now.@The Colony 9 resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>Defeat the monsters that are threatening the safety@of Colony 9.</td>
+        <td>Defeat 3 <col=item>Light Skeeters<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The area of Anti-Air Battery 1 is quieter now.@The Colony 9 resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>Help the Defence Force Soldier by defeating the@monster threatening the safety of Tephra Cave.</td>
+        <td>Defeat 1 <col=item>Willow Bunniv<col=def3> in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tephra Cave is much safer now. The Defence@Force is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>Help the Defence Force by defeating the monsters@that are threatening the safety of Tephra Cave.</td>
+        <td>Defeat 2 <col=item>Singing Brogs<col=def3> in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tephra Cave is much safer now. The Defence@Force is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>Help the Defence Force by defeating the monsters@that are threatening the safety of Tephra Cave.</td>
+        <td>Defeat 5 <col=item>Mell Lizards<col=def3> in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tephra Cave is much safer now. The Defence@Force is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>There is a mission the Defence Force can't complete.@Take their place and defeat the terrifying monster.</td>
+        <td>Defeat <col=item>Evil Rhangrot<col=def3> near Tephra Hill in@Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The Defence Force are so happy that you@completed this near-impossible task for them.</td>
+        <td></td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>You have been asked to eliminate a gigantic monster@because it looks hard to defeat.</td>
+        <td>Defeat <col=item>Verdant Bluchal<col=def3> near Anti-Air Battery 1@in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The Colony 9 residents are very grateful that the@terrifying situation has come to an end.</td>
+        <td></td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>A curious Defence Force Soldier has asked you@to defeat a special monster.</td>
+        <td>Defeat <col=item>Lake Magdalena<col=def3> near Outlook Park in@Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The curiosity of the Defence Force Soldier has@been satisfied.</td>
+        <td></td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>You have been asked to defeat a monster@that almost ate a Nopon.</td>
+        <td>Defeat <col=item>Wallslide Gwynry<col=def3> at the Mag Mell Ruins@in Tephra Cave.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tephra Cave is much safer now. The Colony 9@resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>There aren't enough materials to proceed with the@research. Collect the required materials.</td>
+        <td>Collect 2 <col=item>Small Shells<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The research can proceed! The Colony 9@resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>A resident doesn't have enough materials to make@some armour for his son. Collect what is required.</td>
+        <td>Collect 1 <col=item>Small Scale<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The child's armour can be completed now.@The Colony 9 resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>A resident's grandmother doesn't have enough@materials for her embroidery. Help by collecting@what she needs.</td>
+        <td>Collect 2 <col=item>Vang Teeth<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The grandmother can complete her embroidery.@The Colony 9 resident is very grateful.</td>
+        <td></td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>A resident doesn't have enough ingredients to make@an omelette for his girlfriend. Help him by collecting@the missing ingredient.</td>
+        <td>Collect 1 <col=item>Yolkless Flamii Egg<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The Colony 9 resident can make his delicious@omelette now.</td>
+        <td></td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>A resident wants to find something cute for his niece.@Collect some collectables.</td>
+        <td>Collect 2 <col=item>Rabbit Diodes<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You have completed the resident's request and@made a little girl very happy.</td>
+        <td></td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>A resident wants to make a bug trap. Collect the@collectables needed.</td>
+        <td>Collect 1 portion of <col=item>Plate Snow<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request. The trap@was a success but it didn't catch any bugs.</td>
+        <td></td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>A resident wants something to brighten her shop.@Find what she needs.</td>
+        <td>Collect 2 <col=item>Rainbow Zirconias<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request and@the shop is much brighter.</td>
+        <td></td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>A resident wants to see a particular bug.@Collect it for her.</td>
+        <td>Collect 1 <col=item>Giant Hornet<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request. She@is very happy and gives it to her son.</td>
+        <td></td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>A husband has lost something precious and it will@cause an argument with his wife. Help him by finding@the thing he has lost.</td>
+        <td>Find the <col=item>Wedding Ring<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request and@prevented domestic disharmony.</td>
+        <td></td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>A resident has lost something important that helps@her sleep at night. Find the thing she lost.</td>
+        <td>Find the <col=item>Blue Glass Bead<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request and she@can rest properly at night now.</td>
+        <td></td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>A resident has lost her key and can't get back into@her house. Find the lost key for her.</td>
+        <td>Find the <col=item>Key<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request and she@can finally get into her house and her bed.</td>
+        <td></td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>A resident has lost his tool and can't make any money.@Find the lost item.</td>
+        <td>Find the <col=item>Spanner<col=def3> in Colony 9.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the resident's request. Now he@can get back to work.</td>
+        <td></td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>Shulk is finally back in the lab. He would like to make@a weapon for Reyn. He should be able to make a@great weapon with his experience and knowledge.</td>
+        <td>Collect 3 <col=item>Gogol Horns<col=def3> from Gogols somewhere@on Bionis.</td>
+        <td>Collect 3 <col=item>Thick Rhana Hides<col=def3> from Rhanas@somewhere on Bionis.</td>
+        <td>Collect 3 <col=item>Aged Chilkin Hairs<col=def3> from Chilkins@somewhere on Bionis.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Shulk's lab in Colony 9 and make a@weapon for Reyn.</td>
+        <td>Shulk put all his effort into making the best@possible weapon for Reyn.</td>
+        <td></td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>The Gem Man says that an Ultra Small Reactor is@needed to make a Mobile Furnace. Restore Colony 6@to get an Ultra Small Reactor.</td>
+        <td>Reconstruct Colony 6 to level 1 and collect an@<col=item>Ultra Small Reactor<col=def3>.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to the Gem Man.</td>
+        <td>The Mobile Furnace is complete! Now you can@craft gems no matter where you are.</td>
+        <td></td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>Fiora has made something special for Shulk.@Take it to him before it gets cold!</td>
+        <td>Find Shulk and give him the food.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Shulk says it was even more delicious than@usual.</td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

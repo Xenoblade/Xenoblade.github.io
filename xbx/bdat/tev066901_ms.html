@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev066901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0011</td>
+        <td class="side">Ask Zo Geil about his relatives.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0021</td>
+        <td class="side">Ask Zo Geil if anything is troubling him.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0010</td>
+        <td class="side">tev066901_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0011</td>
+        <td class="side">tev066901_SEL0011</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0020</td>
+        <td class="side">tev066901_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0031</td>
+        <td class="side">Ask Zo Geil about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0010</td>
+        <td class="side">tev066901_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0011</td>
+        <td class="side">tev066901_SEL0011</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev066901_JNK0020</td>
+        <td class="side">tev066901_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev066901_SEL0041</td>
+        <td class="side">Ask Zo Geil about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0001</td>
+        <td class="side">Amongst our house is a young woman named Zazhi.[ST:n ]How stubborn she is![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0002</td>
+        <td class="side">Now that she is of age, I have tried to find her a[ST:n ]respectable house to marry into.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0003</td>
+        <td class="side">But her quest for vengeance causes her to forget her[ST:n ]manners. She wore ARMOR to the last matchmaking[ST:n ]ceremony in lieu of proper attire! Pah![ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0004</td>
+        <td class="side">Will Zazhi wear armor to her wedding as well?[ST:n ]Will she fight? This is the sort of gossip she invites.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0009</td>
+        <td class="side">I have sent a soldier of mine, Gu Ladha, to your city.[ST:n ]But it sounds as though she is struggling and has[ST:n ]no one to turn to.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0010</td>
+        <td class="side">A man's troubles can be wrested away by good friends[ST:n ]and strong drink.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0011</td>
+        <td class="side">But Ladha is a woman. How do I talk to her?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0012</td>
+        <td class="side">I hope she finds some lass she can confide in.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0013</td>
+        <td class="side">But knowing her, she will push away any who try to[ST:n ]get close to her. That one likes her solitary gloom.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0018</td>
+        <td class="side">Since making Gu Ladha liaison, our deliberations with[ST:n ]humans have proceeded much more smoothly.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0019</td>
+        <td class="side">Her attentive personality works in our favor here.[ST:n ]I appreciate your sage advice.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0020</td>
+        <td class="side">Like most Wrothians, I have a habit of placing battle[ST:n ]prowess above all else.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0021</td>
+        <td class="side">But if we are to live in this city, we must avail ourselves[ST:n ]of ALL our strengths.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0022</td>
+        <td class="side">You have taught me that a leader like myself needs to[ST:n ]be able to spot these gifts amongst his soldiers.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0027</td>
+        <td class="side">Until recently, a soldier of mine, Gu Ladha,[ST:n ]was all wound up in her problems.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0028</td>
+        <td class="side">But something has snapped her out of her gloom,[ST:n ]and now she throws herself at her training with[ST:n ]abandon. I marvel at the progress she has made.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0029</td>
+        <td class="side">She always showed a gift for Skells. If she keeps it up,[ST:n ]she shall do great things on the battlefield when we[ST:n ]face off against the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev066901_MSG0030</td>
+        <td class="side">I wish I knew who put her back on such a positive[ST:n ]path so I could thank them myself.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev079101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0011</td>
+        <td class="side">Ask Feloran about the Skell discovered in Noctilum.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0021</td>
+        <td class="side">Ask Feloran about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0010</td>
+        <td class="side">tev079101_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0031</td>
+        <td class="side">Ask Feloran about the stolen Skell called \"Vita.\"[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0020</td>
+        <td class="side">tev079101_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0021</td>
+        <td class="side">tev079101_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0010</td>
+        <td class="side">tev079101_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0041</td>
+        <td class="side">Ask Feloran about the stolen Skell called \"Vita.\"[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0020</td>
+        <td class="side">tev079101_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0021</td>
+        <td class="side">tev079101_SEL0021</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0010</td>
+        <td class="side">tev079101_JNK0010</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0041</td>
+        <td class="side">tev079101_SEL0041</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0020</td>
+        <td class="side">tev079101_JNK0020</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev079101_SEL1021</td>
+        <td class="side">Ask Feloran about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0010</td>
+        <td class="side">tev079101_JNK0010</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev079101_SEL0041</td>
+        <td class="side">tev079101_SEL0041</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev079101_JNK0020</td>
+        <td class="side">tev079101_JNK0020</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev079101_SEL2021</td>
+        <td class="side">Ask Feloran about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0001</td>
+        <td class="side">We still don't have proof that it's a Skell at all. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0002</td>
+        <td class="side">In fact, it's quite possible that it was simply some sort[ST:n ]of idol they worshiped. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0003</td>
+        <td class="side">Of course, we don't know what it might be. *fsssh*[ST:n ]But in an organization as large as the Samaar[ST:n ]Federation...[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0004</td>
+        <td class="side">Well, it seems reasonable that there would be some[ST:n ]overwhelmingly powerful presence at its heart. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0005</td>
+        <td class="side">But if it is something they worship, then even if its[ST:n ]outward appearance is of a god, it's a safe bet that[ST:n ]an unspeakable demon lies within. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0010</td>
+        <td class="side">As our people are often targets of discrimination,[ST:n ]I was a little uneasy about coming to this city. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0011</td>
+        <td class="side">But when I saw that there was a church in your city,[ST:n ]I realized that you were a cultured people unlike the[ST:n ]Ganglion. *fsssh* This was a relief.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0012</td>
+        <td class="side">Even if we worship different gods, I know that evil will[ST:n ]never claim those who hold righteous beliefs. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0013</td>
+        <td class="side">Forgive me for not introducing myself sooner. *fsssh*[ST:n ]My name is Feloran, and I am a religious scholar.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0014</td>
+        <td class="side">I hope that here I might be allowed to continue my[ST:n ]research into Golbogga the Creator, our God. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0015</td>
+        <td class="side">As my research progresses, I may offer investigative[ST:n ]work to the agents of BLADE. *fsssh* I hope that you[ST:n ]will be willing to hear me out.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0020</td>
+        <td class="side">The Skell stolen by Ganglion? They may indeed have[ST:n ]called it the \"Vita.\" *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0021</td>
+        <td class="side">But I am becoming more and more convinced that it is[ST:n ]regarded as something like a god to them. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0022</td>
+        <td class="side">It is hard to conceive of any other reason they would[ST:n ]infiltrate an enemy base merely to retrieve it. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0023</td>
+        <td class="side">I wonder what sort of power this god holds in the eyes[ST:n ]of the Ganglion? *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0028</td>
+        <td class="side">The Skell stolen by the Ganglion... The \"Vita,\" was it?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0029</td>
+        <td class="side">I saw in the BLADE database that it was used by the[ST:n ]Ganglion commander. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0030</td>
+        <td class="side">A legend... The Great One's vessel... *fsssh*[ST:n ]Something vital that is missing... Hmmm.[ST:n ]As I suspected, there is a deeper meaning to this Skell.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0031</td>
+        <td class="side">Lacking both the machine and its passenger,[ST:n ]I can investigate this matter no further. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev079101_MSG0032</td>
+        <td class="side">But I suspect it may be the key to unlocking not just[ST:n ]the secret of humanity, but of everything. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev079101_MSG1001</td>
+        <td class="side">Ah! It is the second coming of Golbogga![ST:n ]I see you are busy with your usual desiring, digging,[ST:n ]and destroying. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev079101_MSG1002</td>
+        <td class="side">Sadly, it appears this material you call miranium is[ST:n ]no substitute for the voltant that covers Bedun. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev079101_MSG1003</td>
+        <td class="side">Please do try to find a better material. *fsssh*[ST:n ]One that, say, emits poison gases when mined and[ST:n ]creates toxic byproducts when used in manufacturing.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev079101_MSG1004</td>
+        <td class="side">And know that no matter how deeply it pollutes,[ST:n ]we stand at the ready to devoltanize it. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev079101_MSG2001</td>
+        <td class="side">I received word from Kiliran about Toluera. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev079101_MSG2002</td>
+        <td class="side">He said he had run away in a deranged state,[ST:n ]likely due to his inability to acknowledge the truth of[ST:n ]Golbogga. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev079101_MSG2003</td>
+        <td class="side">This can only mean that Kiliran has discovered proof of[ST:n ]Golbogga's existence and showed it to Toluera! *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev079101_MSG2004</td>
+        <td class="side">I had worried that you might have betrayed me as well,[ST:n ]but now I stand grateful for your fine work. *fsssh*[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev079101_MSG2005</td>
+        <td class="side">Ah, if only I could have seen Golbogga take physical[ST:n ]form with my own eyes! *fsssh*[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>mapobjlist1301</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>model</th>
+          <th>motion</th>
+          <th>erase</th>
+          <th>disp</th>
+          <th>pos_sflg1</th>
+          <th>pos_eflg1</th>
+          <th>pos_sflg2</th>
+          <th>pos_eflg2</th>
+          <th>pos_questID</th>
+          <th>pos_qst_sflg</th>
+          <th>pos_qst_eflg</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>rotX</th>
+          <th>rotY</th>
+          <th>rotZ</th>
+          <th>ground</th>
+          <th>gravity</th>
+          <th>scale</th>
+          <th>action</th>
+          <th>act_sflg1</th>
+          <th>act_eflg1</th>
+          <th>act_sflg2</th>
+          <th>act_eflg2</th>
+          <th>act_questID</th>
+          <th>act_qst_sflg</th>
+          <th>act_qst_eflg</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-19593820</td>
+        <td>-12333140</td>
+        <td>-8453290</td>
+        <td>0</td>
+        <td>1835</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-13579000</td>
+        <td>-10098500</td>
+        <td>-13865900</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-11119400</td>
+        <td>-10125200</td>
+        <td>-14156700</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-3948500</td>
+        <td>-3608000</td>
+        <td>-4702700</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-10444100</td>
+        <td>-10117000</td>
+        <td>-7342300</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>9</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-4264400</td>
+        <td>-3380000</td>
+        <td>1860800</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>9</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-24005600</td>
+        <td>-15924200</td>
+        <td>-4464600</td>
+        <td>0</td>
+        <td>5400</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-709100</td>
+        <td>-1128000</td>
+        <td>-3222900</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-20825400</td>
+        <td>-12870900</td>
+        <td>-8238900</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>13</td>
+        <td>15</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td>404</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-12769500</td>
+        <td>-2103100</td>
+        <td>-13437200</td>
+        <td>0</td>
+        <td>3700</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>16</td>
+        <td>17</td>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-32284000</td>
+        <td>-18480000</td>
+        <td>-4796800</td>
+        <td>1000</td>
+        <td>-1500</td>
+        <td>-1500</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>33</td>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>18</td>
+        <td>19</td>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>-32321100</td>
+        <td>-18468700</td>
+        <td>-4758400</td>
+        <td>0</td>
+        <td>-4142</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>33</td>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td><a href="../MNU_scenario.html#239">239</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

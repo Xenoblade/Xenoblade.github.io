@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst001201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst001201_msg001</td>
+        <td>84</td>
+        <td class="side">You! Hey! You!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst001201_msg002</td>
+        <td>84</td>
+        <td class="side">You over there! You've inspired
+me deeply! In a way I can scarcely
+describe!</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst001201_msg003</td>
+        <td>84</td>
+        <td class="side">Ah! What a dashing profile! I'd love to
+try and capture it with a sketch or two!</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst001201_msg004</td>
+        <td>84</td>
+        <td class="side">But as much as I'd love to immortalize
+you in art... I actually have another,
+more pressing request.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst001201_msg005</td>
+        <td>84</td>
+        <td class="side">I was working on some landscapes,
+I got a bit carried away, and before
+I knew, it, I was out of paint!</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst001201_msg006</td>
+        <td>84</td>
+        <td class="side">I can only use special paints of the
+highest quality. Actually, I concoct
+them myself.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst001201_msg007</td>
+        <td>84</td>
+        <td class="side">You need the right ingredients for really
+vivid color. It's the foundation that my
+very work is based upon.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst001201_msg009</td>
+        <td>84</td>
+        <td class="side">I asked my mercenary buddy to try and
+find some...</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst001201_msg010</td>
+        <td>84</td>
+        <td class="side">But I couldn't afford the fee. This
+conflict with Mor Ardain has really
+made things expensive.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst001201_msg011</td>
+        <td>84</td>
+        <td class="side">Too expensive for an impoverished
+artist like myself, anyhow.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst001201_msg013</td>
+        <td>84</td>
+        <td class="side">But just when I thought things were
+hopeless, you appeared before me!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst001201_msg014</td>
+        <td>84</td>
+        <td class="side">Yes! I would call it fate! Destiny is
+like the artwork of the gods!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst001201_msg015</td>
+        <td>84</td>
+        <td class="side">If I may, I would like to ask you to find
+for me the ingredients that constitute
+my paints.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst001201_msg016</td>
+        <td>84</td>
+        <td class="side">I'm afraid I cannot offer cash. But I
+will surely find you something valuable
+in return for your services.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst001201_msg017</td>
+        <td>84</td>
+        <td class="side">Does my offer please you?
+Will you accept?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst001201_msg018</td>
+        <td>84</td>
+        <td class="side">Many thanks!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst001201_msg019</td>
+        <td>84</td>
+        <td class="side">What I require is some Crustip
+Chitin and Tricolor Rock.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst001201_msg020</td>
+        <td>84</td>
+        <td class="side">I dare say Crustip Chitin can be had by
+felling a Krim Crustip at Farlaine Wells.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst001201_msg021</td>
+        <td>84</td>
+        <td class="side">Tricolor Rock can be found in rocky
+parts of Uraya.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst001201_msg022</td>
+        <td>84</td>
+        <td class="side">A thousand thanks!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst001201_msg101</td>
+        <td>84</td>
+        <td class="side">Oh, would that I had my paints already.
+Then I could sell some paintings and
+buy some food...</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst001201_msg102</td>
+        <td>84</td>
+        <td class="side">Oh! You need to hear about the
+ingredients for the paint again?</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst001201_msg103</td>
+        <td>84</td>
+        <td class="side">I dare say Crustip Chitin can be had by
+felling a Krim Crustip at Farlaine Wells.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst001201_msg104</td>
+        <td>84</td>
+        <td class="side">Tricolor Rock can be found in rocky
+parts of Uraya.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst001201_msg201</td>
+        <td>84</td>
+        <td class="side">Ah! This is exactly what I require!
+Magnificent!</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst001201_msg202</td>
+        <td>84</td>
+        <td class="side">You have assisted me greatly.
+With this, I can complete my work!</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst001201_msg203</td>
+        <td>165</td>
+        <td class="side">What should we ask?</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst001201_msg204</td>
+        <td>165</td>
+        <td class="side">Ask what she'll do when it's complete</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst001201_msg205</td>
+        <td>165</td>
+        <td class="side">Ask her what the hurry is</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst001201_msg206</td>
+        <td>84</td>
+        <td class="side">I'm hoping to sell my wares to a noble
+named Ysolde.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst001201_msg207</td>
+        <td>84</td>
+        <td class="side">Ysolde has a special love for
+landscapes, and the one I'm working on
+now will be irresistible to her.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst001201_msg208</td>
+        <td>84</td>
+        <td class="side">If she buys it, then I won't have to keep
+skipping lunch for want of coin.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst001201_msg210</td>
+        <td>84</td>
+        <td class="side">It's because I'm starving, clearly!</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst001201_msg211</td>
+        <td>84</td>
+        <td class="side">If I don't complete it, then naturally,
+I won't be able to sell it. In which
+eventuality, I can't buy food.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst001201_msg212</td>
+        <td>84</td>
+        <td class="side">But, thanks to you, I should be able to
+finish it.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst001201_msg213</td>
+        <td>84</td>
+        <td class="side">I'm sure it'll fetch a handsome price.
+I won't have to worry about where my
+next meal is coming from for a while.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst001201_msg214</td>
+        <td>84</td>
+        <td class="side">Ah... I haven't given your reward yet...</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst001201_msg215</td>
+        <td>84</td>
+        <td class="side">Here. I'm sure this'll come in handy
+one day.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst001201_msg216</td>
+        <td>84</td>
+        <td class="side">No, no, thank you. Do come back! I
+hope you'll let me paint you sometime!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

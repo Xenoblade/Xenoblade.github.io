@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev016901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev016901_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev016901_SEL0011</td>
+        <td class="side">Ask Solan about the role of support staff.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev016901_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev016901_SEL0021</td>
+        <td class="side">Ask Solan if he's heard any interesting rumors.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev016901_SEL0031</td>
+        <td class="side">Ask Solan about mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev016901_SEL0041</td>
+        <td class="side">Ask Solan about mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0001</td>
+        <td class="side">Us support staff are the ones who have to clean up[ST:n ]BLADE's messes in the maintenance center and[ST:n ]commercial district.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0002</td>
+        <td class="side">As a \"doctor\" who heals the wounds of BLADEs,[ST:n ]I actively serve in a support capacity.[ST:n ]It keeps me far busier than I would like![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0003</td>
+        <td class="side">There is no end to the foolishness of BLADEs who[ST:n ]throw themselves into battle and sustain needless[ST:n ]wounds in their every encounter![ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0004</td>
+        <td class="side">Should you end up in a combat role yourself,[ST:n ]I urge you to equip yourself properly to avoid[ST:n ]sustaining any preventable damage.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0010</td>
+        <td class="side">I can't believe a fellow alumnus of my elite university[ST:n ]chose to become a BLADE of all things![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0013</td>
+        <td class="side">And this was a man so accomplished that he stood[ST:n ]out even among the top students at our university.[ST:n ]He could have been a politician! Or a CEO![ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0014</td>
+        <td class="side">But instead he chooses to put his precious life at risk[ST:n ]with one dangerous mission after another. I cannot[ST:n ]even begin to comprehend what he is thinking.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0024</td>
+        <td class="side">So in your amnesia, you'd even forgotten that your[ST:n ]own body had been replaced with a mimeosome?[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0025</td>
+        <td class="side">That is utterly absurd! But, as a mimeosome technician,[ST:n ]I suppose I should be proud that our work could be so[ST:n ]thoroughly confused with the real thing.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0026</td>
+        <td class="side">It is the ultimate testament to how close mimeosomes[ST:n ]have come to real bodies.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0027</td>
+        <td class="side">A number of unimaginably advanced technologies[ST:n ]have been employed so that you and I can live on[ST:n ]without conscious awareness of our artificial bodies.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0028</td>
+        <td class="side">And I trust that even knowing the truth, living in a[ST:n ]mimeosome still feels comfortable? If so, thank your[ST:n ]mimeosome technicians by taking good care of it.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0033</td>
+        <td class="side">When we reclaim our real bodies, I imagine those of[ST:n ]us in BLADE's civilian support staff will be bidding[ST:n ]farewell to our mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0034</td>
+        <td class="side">But I also expect that currently active BLADEs will retain[ST:n ]their mimeosomes for the time being.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0035</td>
+        <td class="side">Given the kind of dangerous missions BLADEs undertake[ST:n ]here on Mira, regular bodies with permanent death are[ST:n ]far too great a risk.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0041</td>
+        <td class="side">So long as indigens persist here on Mira,[ST:n ]we should have plenty of use for mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0042</td>
+        <td class="side">Which means that New LA will continue to have need[ST:n ]of my prodigious intellect for the foreseeable future.[ST:n ]Hmph! What a bother.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev016901_SEL1021</td>
+        <td class="side">Ask Solan about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev016901_JNK0010</td>
+        <td class="side">tev016901_JNK0010</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev016901_SEL1041</td>
+        <td class="side">Ask Solan about the Lifehold.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev016901_SEL1021</td>
+        <td class="side">tev016901_SEL1021</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0029</td>
+        <td class="side">It is we civilians who support you BLADEs from within[ST:n ]the city as you do battle outside of it.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0030</td>
+        <td class="side">We perform a great variety of duties, from technicians[ST:n ]like myself to commercial district merchants who[ST:n ]procure and sell the items you require.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0031</td>
+        <td class="side">And as the \"doctor\" who heals your wounds,[ST:n ]my support duties keep me quite busy.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0032</td>
+        <td class="side">All I ask in return is that you prepare yourself with[ST:n ]the proper equipment and supplies, so that my time[ST:n ]is not wasted treating preventable wounds.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0036</td>
+        <td class="side">Aren't you that acquaintance of H.B.'s?[ST:n ]How is he performing as a BLADE?[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0037</td>
+        <td class="side">He and I once studied together, and he stood among[ST:n ]the best and brightest of students even by the august[ST:n ]standards of our prestigious university.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0038</td>
+        <td class="side">I expected he'd enter politics or start a corporation,[ST:n ]but instead he enrolled in the military as soon as he[ST:n ]graduated.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0039</td>
+        <td class="side">And now he serves as a BLADE. I can't help but[ST:n ]wonder what it is about such work that would stimulate[ST:n ]a genius of his caliber.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0040</td>
+        <td class="side">The pursuit of justice? The spirit of service?[ST:n ]For as long as I've known him, I have never been[ST:n ]able to fathom his motivations.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0048</td>
+        <td class="side">So in your amnesia, you'd even forgotten that your[ST:n ]own body had been replaced with a mimeosome?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0049</td>
+        <td class="side">As a mimeosome technician, I suppose I should be[ST:n ]proud that our work could be so thoroughly confused[ST:n ]with the real thing.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0050</td>
+        <td class="side">It is the ultimate testament to how close mimeosomes[ST:n ]have come to real bodies. I'll trust you'll be able to[ST:n ]continue living comfortably with it?[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0051</td>
+        <td class="side">A number of unimaginably advanced technologies[ST:n ]have been employed so that you and I can live on[ST:n ]in the cosmos without stress.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0052</td>
+        <td class="side">And those technologies carry an equally unimaginable[ST:n ]cost. So do not risk unnecessary damage to your[ST:n ]mimeosome because you think it can be \"easily fixed.\"[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0067</td>
+        <td class="side">When we find the Lifehold and reclaim our real bodies,[ST:n ]I suppose we'll be bidding farewell to our mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0068</td>
+        <td class="side">And then? Who knows? Maybe I'll quit my job as a[ST:n ]mimeosome technician and study to become a true[ST:n ]physician.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0069</td>
+        <td class="side">Playing doctor to BLADEs has left me with a newfound[ST:n ]desire to make a career out of saving lives.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0070</td>
+        <td class="side">I would be throwing away a doctorate in engineering,[ST:n ]as well as my career as a mimeosome technician.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev016901_MSG0071</td>
+        <td class="side">Heh. As well as my right to mock H.B. for having done[ST:n ]the very same thing.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

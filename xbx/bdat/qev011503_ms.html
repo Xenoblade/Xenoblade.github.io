@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev011503_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0034</td>
+        <td class="side">I need iron blades and some combat bodywear.[ST:n ]Got it? Good! Now go get it![ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0035</td>
+        <td class="side">And put a rush on that, if you can. My fever for[ST:n ]adventure is about to hit CRITICAL MASS![ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0036</td>
+        <td class="side">Hey, welcome back. You just missed my[ST:n ]best friend in the world, Walter.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0037</td>
+        <td class="side">You'd be proud. I got another big lecture about giving[ST:n ]up on becoming a BLADE operative, and I just shut up,[ST:n ]smiled real big, and listened.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0038</td>
+        <td class="side">Why bother arguing when I'm about to leave the nest?[ST:n ]That is, assuming you got the equipment I asked for.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0039</td>
+        <td class="side">First up, a weapon fit to cleave a millesaur in twain...[ST:n ]the iron blades![ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0050</td>
+        <td class="side">AWESOME.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0049</td>
+        <td class="side">Next, protective gear able to stop a charging suid in[ST:n ]its tracks...combat bodywear![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0040</td>
+        <td class="side">BEST. PRESENT. EVER![ST:n ]With these bad boys, I can handle anything[ST:n ]the indigens of Mira can dish out![ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0041</td>
+        <td class="side">Thank you SO much, um... Wait, do I still not know[ST:n ]your name? Wow, embarrassing! ...So what is it?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev011503_JNK0070</td>
+        <td class="side">Answer</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev011503_SEL0071</td>
+        <td class="side">State your name.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev011503_JNK0080</td>
+        <td class="side">Evade</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev011503_SEL0081</td>
+        <td class="side">Decline to answer.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0042</td>
+        <td class="side">Hey, cool. Strong name. I like it![ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0043</td>
+        <td class="side">But I'm terrible with names, so from today forth,[ST:n ]I'm calling you Chief![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0044</td>
+        <td class="side">That's...weirdly mysterious? But okay.[ST:n ]Looks like someone needs a nickname![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0045</td>
+        <td class="side">From now on, you're \"Chief\"![ST:n ]...And no, you don't get a say in this.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0046</td>
+        <td class="side">All right! Now that I'm all geared up, I'm off![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0047</td>
+        <td class="side">I'll put those other BLADEs to shame and have Walter[ST:n ]eating his words by the end of the week![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev011503_MSG0048</td>
+        <td class="side">Thanks for everything, Chief.[ST:n ]Catch you on the outside, yeah?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

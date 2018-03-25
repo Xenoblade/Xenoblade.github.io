@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk077_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0001</td>
+        <td>84</td>
+        <td class="side">Awww, yay!
+So awesome. Woooo!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0002</td>
+        <td>84</td>
+        <td class="side">Just lookit!
+I'm literally speechless!</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0003</td>
+        <td>84</td>
+        <td class="side">I never saw a view like this before.
+Not in my whole life!</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0004</td>
+        <td>84</td>
+        <td class="side">It gladdens me to see you so enthused.
+The view is breath-taking indeed.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0005</td>
+        <td>84</td>
+        <td class="side">I can't remember you getting so excited
+about scenery, Finch.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0006</td>
+        <td>84</td>
+        <td class="side">But you've seen a whole bunch of stuff
+like this...</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0007</td>
+        <td>84</td>
+        <td class="side">Really, Finch? But you've seen all kinds
+of vistas, without reacting like this.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0008</td>
+        <td>84</td>
+        <td class="side">C'mon, you've seen all this wind and
+water crap before. What's the big deal
+this time?</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0009</td>
+        <td>84</td>
+        <td class="side">Huh?
+Really...?</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0010</td>
+        <td>84</td>
+        <td class="side">Uh... Maybe...?
+But this one's just so crazy-awesome!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0011</td>
+        <td>84</td>
+        <td class="side">Are you sure you're not
+misremembering?</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0012</td>
+        <td>84</td>
+        <td class="side">Ah, that's the cool thing about all this
+adventuring business. Coming across
+stuff like this!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0013</td>
+        <td>84</td>
+        <td class="side">I just wanna keep doing it. I just wanna
+see everything, discover it all!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0014</td>
+        <td>165</td>
+        <td class="side">Hey, Finch...</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0015</td>
+        <td>164</td>
+        <td class="side">So what is it you want to see next?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0016</td>
+        <td>164</td>
+        <td class="side">You really like adventures, don't you?</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0017</td>
+        <td>165</td>
+        <td class="side">Hey, Finch...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0018</td>
+        <td>164</td>
+        <td class="side">Where'd you wanna to go next?</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0019</td>
+        <td>164</td>
+        <td class="side">You really like adventures, huh?</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0020</td>
+        <td>165</td>
+        <td class="side">Finch.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0021</td>
+        <td>164</td>
+        <td class="side">What would you like to see next?</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0022</td>
+        <td>164</td>
+        <td class="side">You have a penchant for adventures,
+I see.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0023</td>
+        <td>165</td>
+        <td class="side">So, Finch.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0024</td>
+        <td>164</td>
+        <td class="side">Where'd you want to go next?</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0025</td>
+        <td>164</td>
+        <td class="side">You've got a wacky craving for
+adventures, don't ya?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0101</td>
+        <td>84</td>
+        <td class="side">Hmmm.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0102</td>
+        <td>84</td>
+        <td class="side">I really want to see somewhere snowy.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0103</td>
+        <td>84</td>
+        <td class="side">Snowy, you say...</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0104</td>
+        <td>84</td>
+        <td class="side">Yup!
+I've never seen snow in real life before.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0105</td>
+        <td>84</td>
+        <td class="side">Ah, I can just imagine it. Everything all
+white, like a great big wedding cake.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0106</td>
+        <td>84</td>
+        <td class="side">But... Didn't we see rather a lot of snow
+in Tantal? We were only just there...</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0107</td>
+        <td>84</td>
+        <td class="side">Uh? Dondle...? It had snow? Seriously?</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0108</td>
+        <td>84</td>
+        <td class="side">Oh... Wait, wait...don't tell me...
+Umm...</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0109</td>
+        <td>84</td>
+        <td class="side">Did like, all you guys go on the sly, and
+leave out ol' Finch here?</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0110</td>
+        <td>84</td>
+        <td class="side">That was pretty lame of you jerks!</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0111</td>
+        <td>84</td>
+        <td class="side">Hey! We haven't kept anything from
+you, Finch. Dromarch, are you sure
+we saw some snow...?</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0112</td>
+        <td>84</td>
+        <td class="side">Hey, calm down, will you? Are you sure
+flea-bag here didn't just remember it
+wrong?</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0113</td>
+        <td>84</td>
+        <td class="side">Finch, we never leave a man behind.
+Could Dromarch be mistaken?</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0114</td>
+        <td>84</td>
+        <td class="side">Finch, we wouldn't do the dirty on you
+without a really good reason. Maybe
+Dromarch just got it wrong.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0115</td>
+        <td>84</td>
+        <td class="side">Huh? Ah, well perhaps I am mistaken.
+Think of it that way, if it makes you feel
+better.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0116</td>
+        <td>84</td>
+        <td class="side">Bah, you guys!
+I knew you wouldn't have stabbed me
+in the back like that.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0117</td>
+        <td>84</td>
+        <td class="side">And for the record, if you're going off
+somewhere, don't forget to tell 
+ol' Finch about it!</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0118</td>
+        <td>84</td>
+        <td class="side">And y'know another place I wanna
+see? A real hot place, with scorched
+earth! A fusty ol' dust bowl!</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0119</td>
+        <td>84</td>
+        <td class="side">I feel like I'd really be able to spread
+my wings and fly in a place like that.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0120</td>
+        <td>84</td>
+        <td class="side">Really... I'm not so sure.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0121</td>
+        <td>84</td>
+        <td class="side">Huh, whatever! Just make sure you tell
+me if you're about to go off to one of
+those crazy-cool places!</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0201</td>
+        <td>84</td>
+        <td class="side">Yeah! I really love 'em! It's what makes
+all this wandering about worthwhile.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0202</td>
+        <td>84</td>
+        <td class="side">Seeing new stuff... It's what it's all
+about!</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0203</td>
+        <td>84</td>
+        <td class="side">Hey... I was just saying exactly the
+same thing, like, just a minute ago...</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0204</td>
+        <td>84</td>
+        <td class="side">...Right?</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0205</td>
+        <td>84</td>
+        <td class="side">Ah who cares. I'm probably just
+overthinking it!</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0206</td>
+        <td>84</td>
+        <td class="side">Hahaha... Don't worry, Finch. We're
+used to it, and we love you all the
+same.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0207</td>
+        <td>84</td>
+        <td class="side">Huh...? You guys don't seem as
+worked up about all this new stuff as
+me. Don't you like new things?</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0208</td>
+        <td>84</td>
+        <td class="side">Nah, I mean, we like them, Finch.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0209</td>
+        <td>84</td>
+        <td class="side">We just don't get quite as excited as
+you do!</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0210</td>
+        <td>84</td>
+        <td class="side">Nah, I mean, this stuff is still kinda cool,
+Finch.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0211</td>
+        <td>84</td>
+        <td class="side">We just don't go nuts and flip a lid
+every time.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0212</td>
+        <td>84</td>
+        <td class="side">No, seeing new things builds character,
+I can't deny that.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0213</td>
+        <td>84</td>
+        <td class="side">But a soldier's got to keep their dignity.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0214</td>
+        <td>84</td>
+        <td class="side">Don't get me wrong, Finch, it's good to
+see something new.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0215</td>
+        <td>84</td>
+        <td class="side">But some of us have super-cool,
+ice-man reps to maintain.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0216</td>
+        <td>84</td>
+        <td class="side">Seriously?</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0217</td>
+        <td>84</td>
+        <td class="side">Indeed, Finch.</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0218</td>
+        <td>84</td>
+        <td class="side">You have your own...very loud...way
+of rejoicing. It's one of your
+characteristics.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0219</td>
+        <td>84</td>
+        <td class="side">Uh... I... I don't...r-really get when you...
+Eh, who cares!</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0301</td>
+        <td>84</td>
+        <td class="side">But anyhow... Let's hurry on to the
+next great discovery! I can't wait!</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0302</td>
+        <td>84</td>
+        <td class="side">Everyone good to go?</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0303</td>
+        <td>84</td>
+        <td class="side">Very much so!
+Let us venture forth!</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0304</td>
+        <td>84</td>
+        <td class="side">Yeah! Woohoo!</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0305</td>
+        <td>84</td>
+        <td class="side">Look! Lookit!</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0306</td>
+        <td>84</td>
+        <td class="side">Get a load of that scenery!
+Never seen that before!</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0307</td>
+        <td>84</td>
+        <td class="side">Huh?</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0308</td>
+        <td>84</td>
+        <td class="side">Hey, can't you see that killer view,
+Bromarch? It rocks!</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0309</td>
+        <td>84</td>
+        <td class="side">What... Did you forget already?</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0310</td>
+        <td>84</td>
+        <td class="side">Forget?
+Forget what?</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0311</td>
+        <td>84</td>
+        <td class="side">Hahaha!</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0312</td>
+        <td>84</td>
+        <td class="side">Finch, I don't think we'll ever get bored
+while you're around!</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0313</td>
+        <td>84</td>
+        <td class="side">Hahaha!</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0314</td>
+        <td>84</td>
+        <td class="side">We'll never be short of entertainment
+with you around, Finch.</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0315</td>
+        <td>84</td>
+        <td class="side">Hahaha!</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0316</td>
+        <td>84</td>
+        <td class="side">Every platoon needs someone like you,
+Finch.</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0317</td>
+        <td>84</td>
+        <td class="side">Hahaha!</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0318</td>
+        <td>84</td>
+        <td class="side">You're an absolute classic, Finch.</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>kizunatalk077_msg0319</td>
+        <td>84</td>
+        <td class="side">Wh-What are you talking about?
+You're all weird...</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104505_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104505_msg001</td>
+        <td>62</td>
+        <td class="side">LIST_QST104505の仮イベント</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104505_msg0001</td>
+        <td>84</td>
+        <td class="side">Hmm? What're you after?
+Oh right, the Metal Brooches
+I told that Nopon about.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104505_msg0002</td>
+        <td>84</td>
+        <td class="side">Yeah, those tend to get washed up
+on the shore near here, the one with
+a view of Triedge Isle.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104505_msg0003</td>
+        <td>84</td>
+        <td class="side">The cool thing about them is, you can
+use them as the ultimate piece in the
+Duelling Kingdoms board game.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104505_msg0004</td>
+        <td>84</td>
+        <td class="side">It's a local rule around here,
+not something official.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104505_msg0005</td>
+        <td>84</td>
+        <td class="side">As anyone can see, there isn't much
+civilization here on Temperantia, so
+we're starved for things to do.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104505_msg0006</td>
+        <td>84</td>
+        <td class="side">The board games we brought with
+us are one of the few forms of
+entertainment we have.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104505_msg0007</td>
+        <td>84</td>
+        <td class="side">But we'd get bored just playing them
+over and over, so we started adding
+new rules to keep things interesting.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104505_msg0008</td>
+        <td>84</td>
+        <td class="side">Anyway, if those Nopon do start
+selling Metal Brooches, I reckon
+they'll sell like nobody's business.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104505_msg0009</td>
+        <td>84</td>
+        <td class="side">But there are nasty monsters on that
+coast where they wash up, so I told
+the Nopon not to go looking.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104505_msg0010</td>
+        <td>84</td>
+        <td class="side">It'd be a right shame all round
+if they came all the way out here
+just to become monster chow.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104505_msg0011</td>
+        <td>84</td>
+        <td class="side">You seem to be able to take care of
+yourselves, so by all means head down
+to that coast and have a look around.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104505_msg0101</td>
+        <td>84</td>
+        <td class="side">You can find Metal Brooches on
+the coast just nearby.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104505_msg0102</td>
+        <td>84</td>
+        <td class="side">They're a pretty hot commodity
+among the soldiers here right now.
+We'll pay good money for them!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

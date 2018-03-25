@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201415_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201415_0010</td>
+        <td>82</td>
+        <td class="side">Hey. Looks like the sun should be up before long.
+What time is it?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201415_0020</td>
+        <td>82</td>
+        <td class="side">Uh... It's seven o'clock.
+I guess the contest is over.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201415_0030</td>
+        <td>82</td>
+        <td class="side">So it is...but we don't really
+have a clear winner yet...</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201415_0040</td>
+        <td>82</td>
+        <td class="side">Indeed.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201415_0050</td>
+        <td>82</td>
+        <td class="side">Kora... I'm starting to get the measure of you now.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201415_0060</td>
+        <td>82</td>
+        <td class="side">I hate to admit it...but you do have more Girl Power than me.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201415_0070</td>
+        <td>82</td>
+        <td class="side">Well, that's really big of you, Mythra.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201415_0080</td>
+        <td>82</td>
+        <td class="side">You're my only rival when it comes
+to Girl Power. I salute you.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201415_0090</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ]Hehehe...</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201415_0100</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ]Ahahaha!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201415_0110</td>
+        <td>82</td>
+        <td class="side">Ah, well, I'm pooped.
+But it was fun.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201415_0120</td>
+        <td>82</td>
+        <td class="side">Sure was! I had a great time.
+Maybe we should do it again sometime?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201415_0130</td>
+        <td>82</td>
+        <td class="side">Yeah!
+Pinky promise!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201415_0140</td>
+        <td>82</td>
+        <td class="side">...Ahem.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201415_0150</td>
+        <td>82</td>
+        <td class="side">A-ah... Everyone?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201415_0160</td>
+        <td>82</td>
+        <td class="side">So...how come you're all gathered together?</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201415_0170</td>
+        <td>82</td>
+        <td class="side">Well now.
+Your little contest might be over, girls...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201415_0180</td>
+        <td>82</td>
+        <td class="side">But there's one more judgment to make.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201415_0190</td>
+        <td>82</td>
+        <td class="side">It's about all your reckless gallivanting!</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201415_0200</td>
+        <td>82</td>
+        <td class="side">Time for a little court martial, I think.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201415_0210</td>
+        <td>82</td>
+        <td class="side">Huh...
+Er...well, erm...</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201415_0220</td>
+        <td>82</td>
+        <td class="side">Hey, listen...</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201415_0230</td>
+        <td>82</td>
+        <td class="side">Didn't we help you discover
+YOUR inner Girl Power, too?</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201415_0240</td>
+        <td>82</td>
+        <td class="side">Ah, yeah, that's true.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201415_0250</td>
+        <td>82</td>
+        <td class="side">No?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201415_0260</td>
+        <td>82</td>
+        <td class="side">No.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst201415_0270</td>
+        <td>82</td>
+        <td class="side">DEFINITELY no.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst201415_0280</td>
+        <td>82</td>
+        <td class="side">I think you need punishing.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst201415_0290</td>
+        <td>82</td>
+        <td class="side">Really?</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst201415_0300</td>
+        <td>82</td>
+        <td class="side">You can't go around doing stuff like that.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst201415_0310</td>
+        <td>82</td>
+        <td class="side">Sorry...</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst201415_0320</td>
+        <td>82</td>
+        <td class="side">You should think about all the hassle you've caused us.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst201415_0330</td>
+        <td>82</td>
+        <td class="side">I know, sorry.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst201415_0340</td>
+        <td>82</td>
+        <td class="side">Make sure it sinks in.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst201415_0350</td>
+        <td>82</td>
+        <td class="side">I...we will.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst201415_0360</td>
+        <td>82</td>
+        <td class="side">Is that a promise?</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst201415_0370</td>
+        <td>82</td>
+        <td class="side">It's a promise.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst201415_0380</td>
+        <td>82</td>
+        <td class="side">In that case... The epic contest concludes without a victor.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst201415_0390</td>
+        <td>82</td>
+        <td class="side">That means two losers...and two forfeits.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst201415_0400</td>
+        <td>82</td>
+        <td class="side">Ah! Great idea, Mòrag.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst201415_0410</td>
+        <td>82</td>
+        <td class="side">Huh?</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst201415_0420</td>
+        <td>82</td>
+        <td class="side">N-not so fast!</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qst201415_0430</td>
+        <td>82</td>
+        <td class="side">Something wrong?</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qst201415_0440</td>
+        <td>82</td>
+        <td class="side">...Nothing.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qst201415_0450</td>
+        <td>82</td>
+        <td class="side">Why does this stuff keep happening to me...?</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qst201415_0460</td>
+        <td>82</td>
+        <td class="side">Mythra, don't complain.
+You talked the talk, now dance the dance.</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qst201415_0470</td>
+        <td>82</td>
+        <td class="side">Gah! This is the pits!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

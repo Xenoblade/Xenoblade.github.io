@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev000694_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0001</td>
+        <td class="side">Hey there, [ST:playername ].[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0002</td>
+        <td class="side">Care to join us? I was just having a drink with my new[ST:n ]Wrothian friend here.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0003</td>
+        <td class="side">He was telling me how tough it is to be the eldest son[ST:n ]in a Wrothian family. Lots of responsibility having to[ST:n ]inherit the family name and sword and all that.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0004</td>
+        <td class="side">I had it pretty tough, too. When I was born, it was[ST:n ]just me—but then one day, all outta the blue,[ST:n ]everyone said I had to start acting like a big brother.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0005</td>
+        <td class="side">Worse still, my little brother was better than me at[ST:n ]just about everything. That's how I got all bitter and[ST:n ]ended up the way I am today.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0006</td>
+        <td class="side">So how about it? If you were in our situation,[ST:n ]which brother would you rather be? Older or younger?[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev000694_JNK0010</td>
+        <td class="side">Older</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev000694_SEL0011</td>
+        <td class="side">Say that you'd rather be an older brother.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev000694_JNK0020</td>
+        <td class="side">Younger</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev000694_SEL0021</td>
+        <td class="side">Say that you'd rather be a younger brother.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev000694_JNK0030</td>
+        <td class="side">Neither</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev000694_SEL0031</td>
+        <td class="side">Say that you'd rather be an only child.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0007</td>
+        <td class="side">Glutton for punishment, huh?[ST:n ]Just like me and my Wrothian friend here.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0008</td>
+        <td class="side">Of course, I bet younger brothers complain they got it[ST:n ]worse. But you just gotta review the history to see[ST:n ]who's actually right.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0009</td>
+        <td class="side">Let's compare grades back in school, for instance.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0010</td>
+        <td class="side">I averaged about a B-minus. Er, give or take.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0011</td>
+        <td class="side">Then Phog came along and started getting A-pluses[ST:n ]across the board! You wouldn't believe the praise they[ST:n ]lavished on him.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0012</td>
+        <td class="side">\"Look how much smarter he is than Frye!\" Pffft.[ST:n ]Buncha crap, but people just couldn't get over it.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0013</td>
+        <td class="side">You ask me, it's not really fair to compare old report[ST:n ]cards if you don't pay attention to how a person has[ST:n ]grown since, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0014</td>
+        <td class="side">And what was I supposed to do with that? Argue?[ST:n ]I'd look like an even bigger fool![ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0015</td>
+        <td class="side">So I just bottled up all that resentment instead.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0016</td>
+        <td class="side">Looking back on it, I probably should've tried to stay[ST:n ]ahead of Phog.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0017</td>
+        <td class="side">But that never really occurred to me at the time.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0018</td>
+        <td class="side">Course, that's all water under the bridge.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0019</td>
+        <td class="side">Phog is Phog and Frye is me, ya know?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0020</td>
+        <td class="side">And I don't see him being better than me. No way.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0021</td>
+        <td class="side">Taking the easy way out, huh?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0022</td>
+        <td class="side">But you know what? I bet you'd actually have made[ST:n ]a pretty awesome little brother.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0023</td>
+        <td class="side">Phog was always an indoor kind of kid.[ST:n ]We barely ever played together.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0024</td>
+        <td class="side">He was kinda sickly, too. He'd get heatstroke if we[ST:n ]ever played in direct sun for more than 10 minutes.[ST:n ]Plus migraines. And don't get me going on allergies![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0025</td>
+        <td class="side">But you and me? We'd have gone hunting and[ST:n ]kayaking and played stickball together and all that.[ST:n ]We would have had a ton of fun![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0026</td>
+        <td class="side">Luckily for Phog, he's got a mimeosome now,[ST:n ]so I guess he ain't sickly anymore. Huh...[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0027</td>
+        <td class="side">Maybe once things have settled down a bit,[ST:n ]me and him can go fishing together or something.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0028</td>
+        <td class="side">Aw, come on! You don't mean that.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0029</td>
+        <td class="side">You don't remember stuff from before you got here,[ST:n ]right? So you've probably forgotten your family.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0030</td>
+        <td class="side">Well trust me—even when you hate him,[ST:n ]it's good to have a brother.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0031</td>
+        <td class="side">Even after being dumped on this weird planet,[ST:n ]I still feel a kind of bond that can never be broken.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0032</td>
+        <td class="side">Having family just feels different from having friends.[ST:n ]It's weird. I can't explain it.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev000694_MSG0033</td>
+        <td class="side">You should give it a shot. Even if you don't have[ST:n ]siblings, you can still piece together a family from[ST:n ]folks you meet, you know?[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

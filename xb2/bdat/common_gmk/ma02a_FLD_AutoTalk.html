@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma02a_FLD_AutoTalk</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>MOBID</th>
+          <th>Range</th>
+          <th>Condition</th>
+          <th>Text</th>
+          <th>Ontime</th>
+          <th>BeforeID</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2007">mob_02_001008</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#439">439</td></a>
+        <td>Chairman Bana is superlative person!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2140">mob_02_001301</td></a>
+        <td>7</td>
+        <td></td>
+        <td>When should I go back
+to Mor Ardain...?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2020">mob_02_001025</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#431">431</td></a>
+        <td>Now that's a big boat...
+Wonder where it's from.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2021">mob_02_001026</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#432">432</td></a>
+        <td>That ship has to be the newest model
+out of Mor Ardain's shipyards.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2025">mob_02_001031</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Welcome!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#7">ma02a_FLD_AutoTalk#7</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2056">mob_02_001124</td></a>
+        <td>7</td>
+        <td></td>
+        <td>20,000G!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#8">ma02a_FLD_AutoTalk#8</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2052">mob_02_001119</td></a>
+        <td>7</td>
+        <td></td>
+        <td>40,000G!</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#6">6</td></a>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#9">ma02a_FLD_AutoTalk#9</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2051">mob_02_001118</td></a>
+        <td>7</td>
+        <td></td>
+        <td>50,000G!</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#7">7</td></a>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#10">ma02a_FLD_AutoTalk#10</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2055">mob_02_001123</td></a>
+        <td>7</td>
+        <td></td>
+        <td>70,000G!</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#8">8</td></a>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#11">ma02a_FLD_AutoTalk#11</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2053">mob_02_001120</td></a>
+        <td>7</td>
+        <td></td>
+        <td>90,000G!</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#9">9</td></a>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#12">ma02a_FLD_AutoTalk#12</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2055">mob_02_001123</td></a>
+        <td>7</td>
+        <td></td>
+        <td>100,000G!</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#10">10</td></a>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#13">ma02a_FLD_AutoTalk#13</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2051">mob_02_001118</td></a>
+        <td>7</td>
+        <td></td>
+        <td>130,000G!</td>
+        <td>3</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#11">11</td></a>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2048">mob_02_001113</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Going, going, gone!
+Sold to Urayan friend over there.</td>
+        <td>3</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#12">12</td></a>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#15">ma02a_FLD_AutoTalk#15</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2199">mob_02_001458</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Never forget the rules of salvaging!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2169">mob_02_001416</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Need treasure appraised?
+Leave it to a Nopon!</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#14">14</td></a>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2113">mob_02_001242</td></a>
+        <td>7</td>
+        <td></td>
+        <td>So...how d'you use Aux Cores again?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2065">mob_02_001134</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Me not lose even single lousy G!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2226">mob_02_002121</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Ah, what a fine day for salvage!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2108">mob_02_001227</td></a>
+        <td>5</td>
+        <td></td>
+        <td>So yummy! Too yummy!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2422">mob_02_007005</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Friend need something?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2370">mob_02_004379</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Me tired...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2156">mob_02_001322</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Not problem, meh!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2062">mob_02_001131</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Come over here, please!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2058">mob_02_001126</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Elevator going up!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2400">mob_02_004428</td></a>
+        <td>7</td>
+        <td></td>
+        <td>When elevator finally come?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2188">mob_02_001446</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Now is time for today feature product!
+Whoever want, better raise hand now!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2186">mob_02_001441</td></a>
+        <td>7</td>
+        <td></td>
+        <td>This look like it have value.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2008">mob_02_001009</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#454">454</td></a>
+        <td>Lending fee is 100G!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2008">mob_02_001009</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#453">453</td></a>
+        <td>Lending is over for today, meh!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2023">mob_02_001029</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Welcome!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2027">mob_02_001033</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Look around, meh.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2104">mob_02_001223</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Would friend care for
+delicious treat?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2174">mob_02_001424</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Why not become salvager, meh?</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2250">mob_02_003011</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Ahh, Argentum's famed Samod!
+That's what I'm talking about!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2256">mob_02_003027</td></a>
+        <td>7</td>
+        <td></td>
+        <td>I'll get some more to have at home.</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#37">ma02a_FLD_AutoTalk#37</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2309">mob_02_004112</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Meh!</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2303">mob_02_004101</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Project voice from diaphragm!</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#36">36</td></a>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#39">ma02a_FLD_AutoTalk#39</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2302">mob_02_004100</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Foundation of trade is have stamina!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2305">mob_02_004106</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Meeeh!</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#38">38</td></a>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2335">mob_02_004326</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Get big, get big, get tasty!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2369">mob_02_004378</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Business close for the day!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#43">ma02a_FLD_AutoTalk#43</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2459">mob_02_003072</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Mmm...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2460">mob_02_003039</td></a>
+        <td>7</td>
+        <td></td>
+        <td>That's a bit lame...</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#42">42</td></a>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2461">mob_02_003073</td></a>
+        <td>5</td>
+        <td></td>
+        <td>It was so hopeless until just earlier...</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2463">mob_02_003075</td></a>
+        <td>5</td>
+        <td></td>
+        <td>What a marvelous singing voice!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2465">mob_02_003077</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Me become captive of
+beautiful voice. Slave, even!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2472">mob_02_003084</td></a>
+        <td>5</td>
+        <td></td>
+        <td>Spicy Stralu is new menu item,
+and is simply divine!</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

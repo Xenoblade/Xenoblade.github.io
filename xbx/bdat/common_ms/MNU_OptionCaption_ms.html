@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_OptionCaption_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">Choose an orientation for vertical (up/down) camera movement.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">Choose an orientation for horizontal (left/right) camera movement.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">Adjust the tracking speed when manually controlling the camera.[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">Adjust the reset speed when snapping the camera to the default position.[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">Adjust the tracking speed when in auto-camera mode (i.e. when not manually controlling the camera).[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to allow the horizon to tilt when flying your Skell.[ST:n ]When set to \"Off\" the horizon will remain steady regardless of Skell movement.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">Adjust the default camera height when fully zoomed in (on foot).[ST:n ]Move the slider right to increase height.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">Adjust the default camera height when fully zoomed in (in a Skell).[ST:n ]Move the slider right to increase height.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Adjust the default camera height when fully zoomed out (on foot).[ST:n ]Move the slider right to increase height.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">Adjust the default camera height when fully zoomed out (in a Skell).[ST:n ]Move the slider right to increase height.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">Adjust the camera speed when rotating horizontally (left/right).[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">Adjust the camera speed when zooming in or out.[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">Adjust your character's default on-screen position.[ST:n ]Center the slider to orient your character in the middle of the screen.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">Adjust your Skell's default on-screen position.[ST:n ]Center the slider to orient your Skell in the middle of the screen.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">Adjust the camera speed when rotating vertically (up/down).[ST:n ]Move the slider right to increase speed.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">Choose whether the camera angle corrects itself in relation to the ground when[ST:n ]traversing slopes in auto-camera mode (i.e. when not manually controlling the camera).</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">Adjust screen brightness.[ST:n ]Move the slider left to darken, or right to brighten the screen.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display headgear on your party members.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display subtitles during voiced scenes.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display controls guidance on-screen.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display the mini-map on-screen.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">Choose whether the mini-map remains in a fixed position or rotates along with your character.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display character status effects constantly (Always) or only when taking damage (Normal).</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display the Skell Fuel gauge on-screen.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Choose a display size for Soul Voice prompts in battle.[ST:n ]Normal: Dialogue is displayed on-screen. Compact: No dialogue is displayed, but a prompt still appears. Off: No prompt appears.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display Art descriptions in battle.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display the current weather and time on-screen.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display division support effect prompts and division icons during play.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display BLADE reports during play.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display mission objectives on-screen.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display squad task target information on-screen.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td class="side">* Disable this setting if you would rather not see user-generated messages during play.[ST:n ]  When disabled, all greetings, including your own, will display preset messages instead.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to reveal your avatar's custom greetings to other players online.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td class="side">* Disable this setting if you would rather not see user-generated messages during play.[ST:n ]* BLADE reports are automatically posted to Miiverse when filed. If you don't want to post reports[ST:n ]  to Miiverse or view the reports of other players, please disable this setting.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to enable BLADE report features during play.[ST:n ]BLADE reports give squad members the means to freely communicate with each other.[ST:n ]Past reports are stored on Miiverse and can be viewed at any time.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td class="side">* Enable this setting to automatically follow players you favorite on Miiverse.[ST:n ]  (This feature requires BLADE Report Sharing to be enabled.)</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to automatically become a Miiverse follower of players you favorite in this game.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td class="side">  (This feature requires BLADE Report Sharing to be enabled.)</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td class="side">Adjust the amount of time BLADE reports remain on-screen when they appear.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td class="side">  (This feature requires BLADE Report Sharing to be enabled.)</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td class="side">Choose a display option for BLADE reports flagged as spoilers.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td class="side">* Regardless of which setting is chosen, your character name will always be visible[ST:n ]  to members of the same squad via the Squad Members list.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to reveal your online status in the various Player Lists menus.[ST:n ]When online, your presence will be visible to other players by default, so adjust this setting if you would rather appear offline.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td class="side">* Depending on your save frequency, enabling this feature may not result[ST:n ]  in an update occurring every time you save.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to automatically update your BLADE Scout avatar when saving.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td class="side">* Social notifications informing other players of your own activities will be sent out regardless of this setting.[ST:n ]* If a friend has their \"Reveal Online Status\" setting set to \"To No One\", you will not receive notifications[ST:n ]  informing you when they are online.</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display notifications about other players' in-game activity and social interactions.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td class="side">* Achievement notifications informing other players of your own feats will be sent out regardless of this setting.[ST:n ]* When set to \"Squad/Own,\" the titles of other squad members' achievements will appear on-screen,[ST:n ]  and the conditions for unlocking will be viewable in the Achievements menu.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display achievement notifications.[ST:n ]Achievements are unlocked whenever you or a fellow squad member makes a noteworthy accomplishment.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td class="side">View a list of all enemies encountered thus far.</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td class="side">View enemies according to category and subcategory.</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td class="side">View enemies according to region discovered.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td class="side">View a list of current squad members.</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td class="side">View a list of players you have friended.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td class="side">View a list of players you have favorited.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td class="side">For those who want an immersive single-player experience.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td class="side">For those who want to focus on multiplayer play.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td class="side">For those who want to play with friends or favorites.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td class="side">Purchase gear for your party members.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td class="side">Purchase gear for your Skells.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td class="side">Purchase Skells.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td class="side">Sell unwanted gear and items.</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td class="side">Buy augment slots for currently equipped ground gear.</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td class="side">Buy augment slots for currently equipped Skell gear.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td class="side">Purchase augment slots for gear in your inventory.</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td class="side">Invest miranium in New LA's arms manufacturers.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td class="side">Upgrade battle traits for your gear.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td class="side">Create various types of augments.</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td class="side">Commission development of new gear.</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td class="side">Register this Skell to a BLADE operative.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td class="side">Change this Skell's gear.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td class="side">Specify a name for this Skell.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td class="side">Customize this Skell's color scheme.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td class="side">Sell this Skell.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td class="side">Adjust the hue.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td class="side">Adjust the saturation.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td class="side">Adjust the brightness.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td class="side">Confirm the gear equipped to this Skell.</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td class="side">Sell this Skell.</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display Elma's true form or her mimeosome form during play.</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to have enemy levels display above their heads.</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to enable the Wii U console's Auto Power-Down function.</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td class="side">Replenish this Skell's fuel.</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td class="side">* Disable this setting to override the Wii U console's Auto Power-Down settings while playing this game.</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td class="side">  (This feature requires BLADE Report Sharing to be enabled.)</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td class="side">Choose whether to display BLADE reports received while menus (such as the main menu) are open.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

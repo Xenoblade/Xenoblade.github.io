@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev023301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0011</td>
+        <td class="side">Ask Sherry about the weather in Primordia.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0021</td>
+        <td class="side">Ask Sherry if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0010</td>
+        <td class="side">tev023301_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0031</td>
+        <td class="side">Ask Sherry about BLADE's[ST:n ]theater of operations on Mira.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0020</td>
+        <td class="side">tev023301_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0041</td>
+        <td class="side">Ask Sherry if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0010</td>
+        <td class="side">tev023301_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0051</td>
+        <td class="side">Ask Sherry about Sylvalum.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0020</td>
+        <td class="side">tev023301_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0061</td>
+        <td class="side">Ask Sherry if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0010</td>
+        <td class="side">tev023301_JNK0010</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0071</td>
+        <td class="side">Ask Sherry about Sylvalum.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev023301_JNK0020</td>
+        <td class="side">tev023301_JNK0020</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev023301_SEL0081</td>
+        <td class="side">Ask Sherry if she's heard any interesting rumors.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev023301_SEL1021</td>
+        <td class="side">Ask Sherry about recent developments.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0001</td>
+        <td class="side">The weather on Mira changes abruptly and often.[ST:n ]They say it's as fickle as a young lover's heart.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0002</td>
+        <td class="side">Oftentimes you'll head out on a bright, clear morning[ST:n ]and end up soaked from thunderstorms by noon.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0003</td>
+        <td class="side">Veteran BLADEs tend to carry a wide variety of[ST:n ]equipment in order to respond to changing weather.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0004</td>
+        <td class="side">For example, electrified weaponry is especially effective[ST:n ]during thunderstorms![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0010</td>
+        <td class="side">Did you hear about the BLADE who found an unusual[ST:n ]flower while she was on a mission in Primordia?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0011</td>
+        <td class="side">It turned out to be an indigen that was just[ST:n ]camouflaged as a flower. Thing attacked her out of[ST:n ]nowhere—she's lucky she wasn't killed.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0012</td>
+        <td class="side">I hear the poor girl is totally traumatized now.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0013</td>
+        <td class="side">Even the get-well flowers she's been receiving have left[ST:n ]her screaming and shaking like a leaf, poor thing.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0020</td>
+        <td class="side">What are you talking about?[ST:n ]This entire planet is BLADE's theater of operations![ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0021</td>
+        <td class="side">BLADEs are pushing through to the far corners of[ST:n ]Mira—crossing fields, climbing mountains, island[ST:n ]hopping over seas, whatever it takes![ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0022</td>
+        <td class="side">And when they hurt themselves doing it,[ST:n ]they get dragged right back here to me.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0023</td>
+        <td class="side">But when that happens, I'll take good care of you.[ST:n ]So don't be afraid to get out there and do some[ST:n ]adventuring![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0030</td>
+        <td class="side">Did you know that some particularly dangerous[ST:n ]indigens self-destruct when they're near death?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0031</td>
+        <td class="side">One indigen was chased down and surrounded by an[ST:n ]entire team of BLADEs when it detonated.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0032</td>
+        <td class="side">I know because they were all brought in here[ST:n ]afterward—one big happy family of injured![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0033</td>
+        <td class="side">So if you're a BLADE yourself, please be careful.[ST:n ]Never drop your guard until the battle is well and[ST:n ]truly over.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0040</td>
+        <td class="side">That's the continent to the far north or northeast of[ST:n ]here, right?[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0041</td>
+        <td class="side">Sounds like a pretty dangerous region. We see a lot of[ST:n ]fallen BLADEs carried back from there.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0042</td>
+        <td class="side">Though some veteran BLADEs say it's just a passage to[ST:n ]the true hell that lies even farther north.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0043</td>
+        <td class="side">Regardless, if you're going to Sylvalum,[ST:n ]make sure that you're especially well prepared.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0050</td>
+        <td class="side">Apparently some intelligent indigens sap their target's[ST:n ]will to fight before they strike.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0051</td>
+        <td class="side">Even after we patch them up, BLADEs that were struck[ST:n ]by such lethargy-inducing attacks remain languid and[ST:n ]dispirited.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0052</td>
+        <td class="side">I try to rouse them out of it by singing and dancing,[ST:n ]buuuuut...yeah. It never gets much of a reaction.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0053</td>
+        <td class="side">What do you BLADEs do out on the field to raise[ST:n ]each other's spirits?[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0060</td>
+        <td class="side">I heard there's an incredible scenic viewpoint at[ST:n ]the peak of a jagged mountain in central Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0061</td>
+        <td class="side">When the mist clears, you get a sweeping view of the[ST:n ]white earth below, dotted by beautifully shimmering[ST:n ]trees.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0062</td>
+        <td class="side">I know this because some BLADEs have become[ST:n ]entranced by the view and ended up losing their[ST:n ]balance and tumbling down the mountain.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0063</td>
+        <td class="side">That's one hell of an endorsement![ST:n ]I'd sure love to see it for myself one day.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0070</td>
+        <td class="side">Sometimes BLADEs get complacent when battling[ST:n ]indigens they've fought dozens of times before.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0071</td>
+        <td class="side">Then the battle takes a turn, the BLADE gets an[ST:n ]unexpected beating, and they end up here.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0072</td>
+        <td class="side">Any group of indigens could contain an individual[ST:n ]that's far more powerful than normal.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev023301_MSG0073</td>
+        <td class="side">So even a gifted BLADE like yourself should take every[ST:n ]battle seriously.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>tev023301_MSG1001</td>
+        <td class="side">I came to this restaurant once to escort Ni Zain back[ST:n ]to the maintenance center.[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>tev023301_MSG1002</td>
+        <td class="side">But I ended up falling madly in love with the curry they[ST:n ]sell, and now it's the only thing I eat. ...Seriously.[ST:n ]Every meal. Breakfast, lunch, AND dinner.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>tev023301_MSG1003</td>
+        <td class="side">I know I've become like a Ma-non addicted to pizza,[ST:n ]but I can't help it! It's just so damn good![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>tev023301_MSG1004</td>
+        <td class="side">I can't even describe what makes it so good.[ST:n ]It's not spicy or sweet, really. Just...exquisite![ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>tev023301_MSG1005</td>
+        <td class="side">I'm drooling just thinking about it... Mmmrrrggghhh...[ST:n ]Must...have...one more bowl...[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

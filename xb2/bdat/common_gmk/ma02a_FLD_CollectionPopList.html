@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma02a_FLD_CollectionPopList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>gimmickID</th>
+          <th>Condition</th>
+          <th>POP_TIME</th>
+          <th>popWeather</th>
+          <th>FSID</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Per</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>nameRadius</th>
+          <th>rsc_paramID</th>
+          <th>initWaitTime</th>
+          <th>initWaitTimeRand</th>
+        </tr>
+      </thead>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td class="side">colle_ma02a_c001</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30262">Sweet Wasabi</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30264">Argentum Monkfish</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30263">Wet Rat</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30013">Anchortail</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td class="side">colle_ma02a_c002</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30009">Glitterspud</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30011">Tartan Ladybird</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30014">Oil Oyster</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30012">Hexafly</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td class="side">colle_ma02a_c003</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#3">Botany</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30262">Sweet Wasabi</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30264">Argentum Monkfish</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30010">Puri Leaf Cabbage</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30012">Hexafly</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td class="side">colle_ma02a_c004</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td>Any</td>
+        <td>0</td>
+        <td><a href="../common/FLD_FieldSkillList.html#4">Agronomy</td></a>
+        <td>3</td>
+        <td>4</td>
+        <td><a href="../common/ITM_CollectionList.html#30009">Glitterspud</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30011">Tartan Ladybird</td></a>
+        <td>35</td>
+        <td><a href="../common/ITM_CollectionList.html#30014">Oil Oyster</td></a>
+        <td>20</td>
+        <td><a href="../common/ITM_CollectionList.html#30230">Melodious Melon</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0.25</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev024601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev024601_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0011</td>
+        <td class="side">Ask Lucia about the residential district.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev024601_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0021</td>
+        <td class="side">Ask Lucia about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0031</td>
+        <td class="side">Ask Lucia for her opinion of xenoforms.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0041</td>
+        <td class="side">Ask Lucia if anything is troubling her.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0051</td>
+        <td class="side">Ask Lucia for her opinion of the Prone.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev024601_SEL0061</td>
+        <td class="side">Ask Lucia for her opinion of the Nopon.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev024601_SEL1011</td>
+        <td class="side">Ask Lucia about the Ganglion attack.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev024601_SEL1021</td>
+        <td class="side">Ask Lucia about recent developments.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev024601_SEL1031</td>
+        <td class="side">Ask Lucia for her opinion of the Wrothians.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev024601_SEL1041</td>
+        <td class="side">Ask Lucia about the xenoforms living in NLA.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev024601_SEL1051</td>
+        <td class="side">Ask Lucia about recent developments.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0001</td>
+        <td class="side">They planned to build apartments in a part of the[ST:n ]district that hasn't been completed yet, but they haven't[ST:n ]made any progress.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0002</td>
+        <td class="side">That's why we still have multiple people sharing each of[ST:n ]these houses.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0003</td>
+        <td class="side">Some people hate having to live with strangers,[ST:n ]but I think it's fun![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0004</td>
+        <td class="side">After all, I haven't been able to make a real family[ST:n ]of my own yet.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0008</td>
+        <td class="side">I intend to open my home to other like-minded[ST:n ]people who would enjoy living together with me.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0009</td>
+        <td class="side">We'll stay up all night talking, we'll bake cookies[ST:n ]for each other... It'll be a blast![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0010</td>
+        <td class="side">The only hard part is finding good people to share my[ST:n ]home with.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0013</td>
+        <td class="side">If you're interested... Too bad! No dudes allowed![ST:n ]I want it to be a place where we girls can feel[ST:n ]comfortable speaking our minds.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0014</td>
+        <td class="side">I really am sorry about that. If only you had been[ST:n ]a cute girl... But alas![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0017</td>
+        <td class="side">Hey, what about you? You seem really strong,[ST:n ]and you've got a pleasant vibe about you.[ST:n ]I bet it would be a lot of fun having you around![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0018</td>
+        <td class="side">...You already have a home in the BLADE barracks?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0019</td>
+        <td class="side">Aw, that's too bad. But I suppose that's for the best.[ST:n ]I wouldn't want a BLADE parking her Skell in my[ST:n ]front yard, you know? Ha![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0025</td>
+        <td class="side">Xenoforms living with us in New LA...[ST:n ]Can you even IMAGINE?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0026</td>
+        <td class="side">I bet an influx of xenoforms would really bring this[ST:n ]city to life.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0027</td>
+        <td class="side">You know, I should go recruit some of the xenoform[ST:n ]ladies for my girl's club![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0028</td>
+        <td class="side">What will I do if the xenoforms don't even have[ST:n ]genders? Hmm... Well, I'll cross that bridge when I[ST:n ]come to it, I guess![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0035</td>
+        <td class="side">There's an older woman named Wendy who lives in[ST:n ]this neighborhood. She's been complaining that my[ST:n ]Ma-non guests are too loud.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0036</td>
+        <td class="side">That Chanty will certainly talk your ear off if you[ST:n ]let her, but her voice isn't what I'd call LOUD.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0037</td>
+        <td class="side">Okay, so maybe she does squeal a little when she tries[ST:n ]a pizza with toppings that she's never had before...[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0038</td>
+        <td class="side">Still, this whole thing is just silly.[ST:n ]Wendy should come over and join us![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0045</td>
+        <td class="side">Let me introduce the newest member of our girl's club—[ST:n ]this is Prea Slarth of the Prone![ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0046</td>
+        <td class="side">When I saw her dancing under the streetlights at night,[ST:n ]I couldn't help myself—I joined right in![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0047</td>
+        <td class="side">She said that when she dances in front of men,[ST:n ]they beg her to marry them! And since that's annoying,[ST:n ]she holds one-woman dance parties instead.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0048</td>
+        <td class="side">I told her that there were no men at our place,[ST:n ]so she could come over and dance anytime.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0049</td>
+        <td class="side">Now it's only the members of our girl's club that get[ST:n ]to watch New LA's greatest dancer strut her stuff![ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0055</td>
+        <td class="side">Let me introduce you to the newest member of our[ST:n ]girl's club—this is Pulala of the Nopon![ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0056</td>
+        <td class="side">She looked so cute standing there in front of Mission[ST:n ]Control waiting for a BLADE to help her, so I struck up[ST:n ]a conversation.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0057</td>
+        <td class="side">Pulala has the Nopon Commerce Guild bring us the[ST:n ]finest candies and gourmet sweets in all of Mira![ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev024601_MSG0058</td>
+        <td class="side">Am I the only human who's tried all 10 varieties of[ST:n ]mizaria celery? I may well be![ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1001</td>
+        <td class="side">I'm part of the tech team. I did join the evacuation,[ST:n ]but they had me analyze the data and prepare a[ST:n ]report when I got back.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1002</td>
+        <td class="side">The enemy leader was this really petite girl![ST:n ]And that squid xeno that attacked BLADE in[ST:n ]Noctilum was a woman too, right?[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1003</td>
+        <td class="side">Doesn't it seem like there are a lot of tough girls in[ST:n ]the Ganglion?[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1004</td>
+        <td class="side">I wonder if having them come over to talk would be[ST:n ]entirely out of the question? I mean, once they gave[ST:n ]up attacking us and signed a peace treaty, of course.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1009</td>
+        <td class="side">Maybe it was wrong of me to try to drag Wendy out[ST:n ]of her house like that...[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1010</td>
+        <td class="side">You see, when we got the order to evacuate, I tried to[ST:n ]force my neighbor Wendy to come along.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1011</td>
+        <td class="side">But she said she wouldn't go on the Ma-non ship.[ST:n ]She said that she'd rather be killed by xenos like her[ST:n ]son was than be saved by them.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1012</td>
+        <td class="side">When she said that, even Chanty was speechless.[ST:n ]Maybe I should have honored her wishes...[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1013</td>
+        <td class="side">I only want Wendy to understand that just because[ST:n ]they're xenoforms doesn't mean they can't be good[ST:n ]people.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1020</td>
+        <td class="side">I'd like to introduce you to the newest member of my[ST:n ]girl's club—this is Gu Ludho of the Wrothians![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1021</td>
+        <td class="side">I found her lost, confused, and at the brink of keeling[ST:n ]over right there on the street. She'd been trying to get[ST:n ]to the administrative district, but ended up here instead.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1022</td>
+        <td class="side">She's really strong. Like a ninja! But also kind of weird.[ST:n ]She thought our pool was a bath, and she freaks out[ST:n ]whenever the alarm on a comm device rings.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1023</td>
+        <td class="side">Isn't that adorable?! I used to think the Wrothians were[ST:n ]so rigid, but she's really changed my mind.[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1028</td>
+        <td class="side">Before I knew what was happening, I found myself[ST:n ]surrounded by xenoform girls![ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1029</td>
+        <td class="side">Chatty Chanty of the Ma-non, New LA's dancing queen[ST:n ]Prea Slarth, and our Nopon caterer Pulala![ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1030</td>
+        <td class="side">And of course, Gu Ludho, the strong but skittish[ST:n ]Wrothian. Together, we're the best women's social[ST:n ]circle in the entire cosmos![ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1031</td>
+        <td class="side">But the more we talk, the more the name[ST:n ][ST:playername ] comes up. Is that you?[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1032</td>
+        <td class="side">Everyone is really grateful for all you've done.[ST:n ]Thanks so much for giving me the opportunity to enjoy[ST:n ]all my new friends like this![ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1037</td>
+        <td class="side">The girl's club took a vote, and we decided to invite[ST:n ]my grumpy neighbor Wendy over.[ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1038</td>
+        <td class="side">Chanty made a pizza without burning it,[ST:n ]and Pulala hand-picked the finest Miran delicacies.[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1039</td>
+        <td class="side">Wendy just listened to us talk without saying much.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1040</td>
+        <td class="side">But as she was leaving, she promised to bring her[ST:n ]famous spaghetti and meatballs the next time she came.[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>tev024601_MSG1041</td>
+        <td class="side">She said it was her son's favorite.[ST:n ]I think she's actually starting to cheer up a bit![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

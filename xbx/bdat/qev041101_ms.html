@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev041101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0001</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0010</td>
+        <td class="side">Verify</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0011</td>
+        <td class="side">Check to see if Zazazan is alive.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0020</td>
+        <td class="side">Scout</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0021</td>
+        <td class="side">Ignore Zazazan's body and search the area.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0002</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0003</td>
+        <td class="side">Is that...[ST:playername ]?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0004</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0005</td>
+        <td class="side">...Harvey and others left.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0006</td>
+        <td class="side">Zazazan played dead. Fooled Harvey like charm.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0007</td>
+        <td class="side">Scum started shooting Zazazan in back, then took off[ST:n ]with nopopotamus and entire inventory.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0008</td>
+        <td class="side">Please! Friend must help Zazazan get goods back![ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0009</td>
+        <td class="side">If contents of shipment used for evil purposes,[ST:n ]results could be terrible...[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0030</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0031</td>
+        <td class="side">Ask which way Harvey and his men went.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0040</td>
+        <td class="side">Insist</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0041</td>
+        <td class="side">Demand to know what Zazazan was transporting.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0010</td>
+        <td class="side">Friend aims to fight them? Very impressive![ST:n ]Humans all seem to be terrible bunch,[ST:n ]but friend is clearly different.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0011</td>
+        <td class="side">Seems like Harvey headed for cave up ahead.[ST:n ]Not too long has passed, so friend should be able to[ST:n ]catch up and give them sound thrashing![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0012</td>
+        <td class="side">Zazazan cannot say. But it is something Nopon need[ST:n ]in order to survive on Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0013</td>
+        <td class="side">Please believe Zazazan![ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0014</td>
+        <td class="side">Zazazan overcome with gratitude. Remember, though,[ST:n ]Harvey and others are armed with weapons friend[ST:n ]brought them. Be careful.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0015</td>
+        <td class="side">Friend returned! Please get that shipment back,[ST:n ]whatever it takes![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0016</td>
+        <td class="side">If contents of shipment used for evil purposes,[ST:n ]results could be terrible.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0050</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0051</td>
+        <td class="side">Ask which way Harvey and his men went.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0060</td>
+        <td class="side">Insist</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0061</td>
+        <td class="side">Demand to know what Zazazan was transporting.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0017</td>
+        <td class="side">Friend aims to fight them? Very impressive![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0018</td>
+        <td class="side">Seems like Harvey headed for cave up ahead.[ST:n ]Not too long has passed, so friend should be able to[ST:n ]catch up and give them sound thrashing![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0019</td>
+        <td class="side">Zazazan cannot say. But it is something Nopon need[ST:n ]in order to survive on Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0020</td>
+        <td class="side">Please believe Zazazan![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0041</td>
+        <td class="side">Zazazan overcome with gratitude. Remember, though,[ST:n ]Harvey and others are armed with weapons friend[ST:n ]brought them. Be careful.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0021</td>
+        <td class="side">Harvey stole nopopotamus of Zazazan and headed for[ST:n ]cave up ahead.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0022</td>
+        <td class="side">Friend needs not hold back at all.[ST:n ]Give that scum beating of lifetime![ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0023</td>
+        <td class="side">Zazazan is glad to see friend back safe![ST:n ]...So then? What of the shipment?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0024</td>
+        <td class="side">Oh-ho-hooo! Zazazan saved! If that shipment was lost,[ST:n ]Zazazan would have been ruined.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0025</td>
+        <td class="side">Oh, and the nopopotamus?[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0070</td>
+        <td class="side">Explain</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0071</td>
+        <td class="side">Say that it sided with Harvey, so you killed it.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0080</td>
+        <td class="side">Regret</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0081</td>
+        <td class="side">Offer an apology for killing it without thinking.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0026</td>
+        <td class="side">...Killed? As in dead?[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0027</td>
+        <td class="side">Hmm... Well, no helping it now, but Zazazan not able[ST:n ]to carry this much by himself.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0028</td>
+        <td class="side">Is there chance friend could bring it back to New LA?[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0029</td>
+        <td class="side">Zazazan not blame friend for fighting back, but...[ST:n ]Hmmm. This is tough one.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0030</td>
+        <td class="side">Zazazan not going to be able to carry this much by[ST:n ]himself. So if friend is blaming [ST:Gender p1=himself p2=herself ] at all for this,[ST:n ]maybe [ST:Gender p1=he p2=she ] could bring shipment back to New LA?[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0031</td>
+        <td class="side">These goods extremely important, but Zazazan trust[ST:n ]friend. But whatever happens, do not peek inside![ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0032</td>
+        <td class="side">...Friend is clear on this? Absolutely no peeking![ST:n ]None! Meh-meh![ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0033</td>
+        <td class="side">Also, if flunky of elder named Loma asks about[ST:n ]shipment, just dodge the question.[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0034</td>
+        <td class="side">Loma is same as Harvey. So sneaky![ST:n ]Aims to take goods of Zazazan for himself.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0090</td>
+        <td class="side">Agree</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0091</td>
+        <td class="side">Take Zazazan's words to heart.</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev041101_JNK0100</td>
+        <td class="side">Suspect</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev041101_SEL0101</td>
+        <td class="side">Given the shady errand, ask to hear more about Loma.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0035</td>
+        <td class="side">Friend is a kind, sparkly, USEFUL human![ST:n ]Nothing like jerkface Harvey.[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0036</td>
+        <td class="side">Loma is right-hand Nopon of elder in New LA.[ST:n ]Sneaky thief always trying to steal goods of Zazazan.[ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0037</td>
+        <td class="side">If Loma finds out friend is carrying shipment for[ST:n ]Zazazan, he will try every trick in book to get it.[ST:n ]Do not be fooled![ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0038</td>
+        <td class="side">Many thanks, friend! Deliver shipment to Bodada at[ST:n ]Nopon Bazaar in New LA and the job is finished.[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0039</td>
+        <td class="side">Loma will try every trick in the book to get shipment.[ST:n ]Do not be fooled![ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev041101_MSG0040</td>
+        <td class="side">Make sure that goods reach Bodada at[ST:n ]Nopon Bazaar in New LA.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLD_maplist</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>resource</th>
+          <th>ene_disp_r</th>
+          <th>ene_release_r</th>
+          <th>ene_release_h</th>
+          <th>npc_release_r</th>
+          <th>bgimage</th>
+          <th>map_sflg</th>
+          <th>map_fileID</th>
+          <th>map_caption</th>
+          <th>minimap_rate</th>
+          <th>minimap_origin</th>
+          <th>minimap_painx</th>
+          <th>minimap_painy</th>
+          <th>minimap_x</th>
+          <th>minimap_y</th>
+          <th>index</th>
+          <th>morning_h</th>
+          <th>morning_m</th>
+          <th>daytime_h</th>
+          <th>daytime_m</th>
+          <th>evening_h</th>
+          <th>evening_m</th>
+          <th>night_h</th>
+          <th>night_m</th>
+          <th>wa_type</th>
+          <th>wa_pop_rate</th>
+          <th>wa_end_time</th>
+          <th>wa_time</th>
+          <th>wa_size_X</th>
+          <th>wa_size_Y</th>
+          <th>wa_size_Z</th>
+          <th>wa_radius</th>
+          <th>wb_type</th>
+          <th>wb_pop_rate</th>
+          <th>wb_end_time</th>
+          <th>wb_time</th>
+          <th>wb_size_X</th>
+          <th>wb_size_Y</th>
+          <th>wb_size_Z</th>
+          <th>wb_radius</th>
+          <th>e_repoptime</th>
+          <th>wind_M</th>
+          <th>wind_D</th>
+          <th>wind_E</th>
+          <th>wind_N</th>
+          <th>wind_WA</th>
+          <th>wind_WB</th>
+          <th>a_S_FLG_MIN</th>
+          <th>a_S_FLG_MAX</th>
+          <th>b_S_FLG_MIN</th>
+          <th>b_S_FLG_MAX</th>
+          <th>mapATR</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="scmarkerlist.html#1">scmarkerlist#1</a>
+            <a href="scmarkerlist.html#188">scmarkerlist#188</a>
+            <a href="scmarkerlist.html#404">scmarkerlist#404</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>ma0000</td>
+        <td>70</td>
+        <td>10</td>
+        <td>30</td>
+        <td>50</td>
+        <td>318</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>7</td>
+        <td>30</td>
+        <td>18</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>93 refs</summary>
+            <a href="FLD_valpoplist.html#1">FLD_valpoplist#1</a>
+            <a href="FLD_valpoplist.html#2">FLD_valpoplist#2</a>
+            <a href="FLD_valpoplist.html#3">FLD_valpoplist#3</a>
+            <a href="FLD_valpoplist.html#4">FLD_valpoplist#4</a>
+            <a href="FLD_valpoplist.html#5">FLD_valpoplist#5</a>
+            <a href="FLD_valpoplist.html#98">FLD_valpoplist#98</a>
+            <a href="FLD_valpoplist.html#100">FLD_valpoplist#100</a>
+            <a href="FLD_valpoplist.html#104">FLD_valpoplist#104</a>
+            <a href="FLD_valpoplist.html#106">FLD_valpoplist#106</a>
+            <a href="ITM_collectlist.html#1">ITM_collectlist#Sweet Wasabi</a>
+            <a href="ITM_collectlist.html#2">ITM_collectlist#Cool Potato</a>
+            <a href="ITM_collectlist.html#3">ITM_collectlist#Red Lettuce</a>
+            <a href="ITM_collectlist.html#4">ITM_collectlist#Chewy Radish</a>
+            <a href="ITM_collectlist.html#37">ITM_collectlist#Dance Apple</a>
+            <a href="ITM_collectlist.html#38">ITM_collectlist#Black Kiwi</a>
+            <a href="ITM_collectlist.html#73">ITM_collectlist#Strong Dandelion</a>
+            <a href="ITM_collectlist.html#74">ITM_collectlist#Moon Flower</a>
+            <a href="ITM_collectlist.html#75">ITM_collectlist#Dawn Hydrangea</a>
+            <a href="ITM_collectlist.html#145">ITM_collectlist#Prairie Dragonfly</a>
+            <a href="ITM_collectlist.html#146">ITM_collectlist#Giant Hornet</a>
+            <a href="ITM_collectlist.html#147">ITM_collectlist#White Beetle</a>
+            <a href="ITM_collectlist.html#148">ITM_collectlist#Sorrow Beetle</a>
+            <a href="ITM_collectlist.html#217">ITM_collectlist#Blue Chain</a>
+            <a href="ITM_collectlist.html#218">ITM_collectlist#Rabbit Diode</a>
+            <a href="ITM_collectlist.html#253">ITM_collectlist#Plate Snow</a>
+            <a href="ITM_collectlist.html#254">ITM_collectlist#Rainbow Zirconia</a>
+            <a href="ITM_collectlist.html#301">ITM_collectlist#10</a>
+            <a href="landmarklist.html#1">landmarklist#Gem Man's Stall</a>
+            <a href="landmarklist.html#2">landmarklist#Mechon Wreckage Site</a>
+            <a href="landmarklist.html#3">landmarklist#Main Entrance</a>
+            <a href="landmarklist.html#4">landmarklist#Ether Light</a>
+            <a href="landmarklist.html#5">landmarklist#Central Plaza</a>
+            <a href="landmarklist.html#6">landmarklist#Fortress Entrance</a>
+            <a href="landmarklist.html#7">landmarklist#Tranquil Square</a>
+            <a href="landmarklist.html#8">landmarklist#Outlook Park</a>
+            <a href="landmarklist.html#9">landmarklist#Tephra Cave Entrance</a>
+            <a href="landmarklist.html#10">landmarklist#Cylinder Hangar</a>
+            <a href="landmarklist.html#11">landmarklist#Commercial District</a>
+            <a href="landmarklist.html#12">landmarklist#Military District</a>
+            <a href="landmarklist.html#13">landmarklist#Weapon Dev. Lab</a>
+            <a href="landmarklist.html#14">landmarklist#Residential District</a>
+            <a href="landmarklist.html#15">landmarklist#Anti-Air Battery 1</a>
+            <a href="landmarklist.html#16">landmarklist#Anti-Air Battery 2</a>
+            <a href="landmarklist.html#17">landmarklist#Anti-Air Battery 3</a>
+            <a href="landmarklist.html#18">landmarklist#Tephra Hill</a>
+            <a href="landmarklist.html#19">landmarklist#Cliff Lake</a>
+            <a href="landmarklist.html#20">landmarklist#Agora Shore</a>
+            <a href="landmarklist.html#21">landmarklist#Hazzai Cape</a>
+            <a href="landmarklist.html#22">landmarklist#Dunban's House</a>
+            <a href="../MNU_mappoint.html#1">MNU_mappoint#1</a>
+            <a href="../MNU_mappoint.html#2">MNU_mappoint#2</a>
+            <a href="../MNU_mappoint.html#3">MNU_mappoint#3</a>
+            <a href="scmarkerlist.html#4">scmarkerlist#4</a>
+            <a href="scmarkerlist.html#5">scmarkerlist#5</a>
+            <a href="scmarkerlist.html#6">scmarkerlist#6</a>
+            <a href="scmarkerlist.html#7">scmarkerlist#7</a>
+            <a href="scmarkerlist.html#8">scmarkerlist#8</a>
+            <a href="scmarkerlist.html#9">scmarkerlist#9</a>
+            <a href="scmarkerlist.html#10">scmarkerlist#10</a>
+            <a href="scmarkerlist.html#11">scmarkerlist#11</a>
+            <a href="scmarkerlist.html#12">scmarkerlist#12</a>
+            <a href="scmarkerlist.html#13">scmarkerlist#13</a>
+            <a href="scmarkerlist.html#14">scmarkerlist#14</a>
+            <a href="scmarkerlist.html#15">scmarkerlist#15</a>
+            <a href="scmarkerlist.html#16">scmarkerlist#16</a>
+            <a href="scmarkerlist.html#18">scmarkerlist#18</a>
+            <a href="scmarkerlist.html#19">scmarkerlist#19</a>
+            <a href="scmarkerlist.html#20">scmarkerlist#20</a>
+            <a href="scmarkerlist.html#21">scmarkerlist#21</a>
+            <a href="scmarkerlist.html#22">scmarkerlist#22</a>
+            <a href="scmarkerlist.html#23">scmarkerlist#23</a>
+            <a href="scmarkerlist.html#24">scmarkerlist#24</a>
+            <a href="scmarkerlist.html#25">scmarkerlist#25</a>
+            <a href="scmarkerlist.html#26">scmarkerlist#26</a>
+            <a href="scmarkerlist.html#27">scmarkerlist#27</a>
+            <a href="scmarkerlist.html#28">scmarkerlist#28</a>
+            <a href="scmarkerlist.html#29">scmarkerlist#29</a>
+            <a href="scmarkerlist.html#30">scmarkerlist#30</a>
+            <a href="scmarkerlist.html#31">scmarkerlist#31</a>
+            <a href="scmarkerlist.html#32">scmarkerlist#32</a>
+            <a href="scmarkerlist.html#33">scmarkerlist#33</a>
+            <a href="scmarkerlist.html#34">scmarkerlist#34</a>
+            <a href="scmarkerlist.html#35">scmarkerlist#35</a>
+            <a href="scmarkerlist.html#36">scmarkerlist#36</a>
+            <a href="scmarkerlist.html#37">scmarkerlist#37</a>
+            <a href="scmarkerlist.html#38">scmarkerlist#38</a>
+            <a href="scmarkerlist.html#39">scmarkerlist#39</a>
+            <a href="scmarkerlist.html#40">scmarkerlist#40</a>
+            <a href="scmarkerlist.html#41">scmarkerlist#41</a>
+            <a href="scmarkerlist.html#43">scmarkerlist#43</a>
+            <a href="scmarkerlist.html#267">scmarkerlist#267</a>
+            <a href="scmarkerlist.html#272">scmarkerlist#272</a>
+            <a href="scmarkerlist.html#396">scmarkerlist#396</a>
+          </details>
+        </td>
+        <td class="side">Colony 9</td>
+        <td>ma0101</td>
+        <td>80</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>318</td>
+        <td>0</td>
+        <td>36</td>
+        <td>A Homs settlement located on the lower leg of@the Bionis. Often suffers from falling debris.</td>
+        <td>25</td>
+        <td>253</td>
+        <td>32</td>
+        <td>96</td>
+        <td>40</td>
+        <td>-58</td>
+        <td>1</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>13</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23</td>
+        <td>35</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>73 refs</summary>
+            <a href="FLD_valpoplist.html#6">FLD_valpoplist#6</a>
+            <a href="FLD_valpoplist.html#7">FLD_valpoplist#7</a>
+            <a href="FLD_valpoplist.html#8">FLD_valpoplist#8</a>
+            <a href="FLD_valpoplist.html#86">FLD_valpoplist#86</a>
+            <a href="FLD_valpoplist.html#87">FLD_valpoplist#87</a>
+            <a href="FLD_valpoplist.html#88">FLD_valpoplist#88</a>
+            <a href="FLD_valpoplist.html#89">FLD_valpoplist#89</a>
+            <a href="FLD_valpoplist.html#90">FLD_valpoplist#90</a>
+            <a href="ITM_collectlist.html#39">ITM_collectlist#Clear Almond</a>
+            <a href="ITM_collectlist.html#40">ITM_collectlist#Bright Fig</a>
+            <a href="ITM_collectlist.html#41">ITM_collectlist#Dark Grape</a>
+            <a href="ITM_collectlist.html#76">ITM_collectlist#Insanity Mint</a>
+            <a href="ITM_collectlist.html#77">ITM_collectlist#Night Tulip</a>
+            <a href="ITM_collectlist.html#109">ITM_collectlist#Shin Newt</a>
+            <a href="ITM_collectlist.html#110">ITM_collectlist#Cave Rat</a>
+            <a href="ITM_collectlist.html#111">ITM_collectlist#Shin Gecko</a>
+            <a href="ITM_collectlist.html#112">ITM_collectlist#Happy Rabbit</a>
+            <a href="ITM_collectlist.html#149">ITM_collectlist#Brown Butterfly</a>
+            <a href="ITM_collectlist.html#150">ITM_collectlist#Gold Caterpillar</a>
+            <a href="ITM_collectlist.html#151">ITM_collectlist#Rumble Stonefly</a>
+            <a href="ITM_collectlist.html#181">ITM_collectlist#Kneecap Rock</a>
+            <a href="ITM_collectlist.html#182">ITM_collectlist#Confusion Ivy</a>
+            <a href="ITM_collectlist.html#183">ITM_collectlist#Clarity Moss</a>
+            <a href="ITM_collectlist.html#255">ITM_collectlist#Leaf Mystery</a>
+            <a href="ITM_collectlist.html#256">ITM_collectlist#Steel Silk</a>
+            <a href="ITM_collectlist.html#302">ITM_collectlist#50</a>
+            <a href="landmarklist.html#23">landmarklist#Tephra Path</a>
+            <a href="landmarklist.html#24">landmarklist#Mag Mell Ruins</a>
+            <a href="landmarklist.html#25">landmarklist#Rear Entrance</a>
+            <a href="landmarklist.html#26">landmarklist#Spring of Grief</a>
+            <a href="landmarklist.html#27">landmarklist#Vilia Lake</a>
+            <a href="landmarklist.html#28">landmarklist#Leg Pass</a>
+            <a href="landmarklist.html#29">landmarklist#Bafalgar Tomb</a>
+            <a href="landmarklist.html#30">landmarklist#Heavenly Window</a>
+            <a href="landmarklist.html#31">landmarklist#Caterpile Nest</a>
+            <a href="landmarklist.html#32">landmarklist#Warehouse 2</a>
+            <a href="landmarklist.html#33">landmarklist#Hidden Warehouse</a>
+            <a href="landmarklist.html#34">landmarklist#Escape Pod Bay</a>
+            <a href="landmarklist.html#35">landmarklist#Tephra Cavern</a>
+            <a href="landmarklist.html#36">landmarklist#Arachno Queen's Nest</a>
+            <a href="landmarklist.html#37">landmarklist#Kneecap Hill</a>
+            <a href="landmarklist.html#38">landmarklist#Bone Corridor</a>
+            <a href="landmarklist.html#39">landmarklist#Trader's Stopover</a>
+            <a href="landmarklist.html#40">landmarklist#Arachno Feeding Lair</a>
+            <a href="landmarklist.html#41">landmarklist#Emergency Warehouse</a>
+            <a href="landmarklist.html#42">landmarklist#Prayer Room</a>
+            <a href="landmarklist.html#43">landmarklist#Soothsayer's Crypt</a>
+            <a href="landmarklist.html#44">landmarklist#Path of Absolution</a>
+            <a href="landmarklist.html#45">landmarklist#Forgotten Cave</a>
+            <a href="../MNU_mappoint.html#4">MNU_mappoint#4</a>
+            <a href="../MNU_mappoint.html#5">MNU_mappoint#5</a>
+            <a href="../MNU_mappoint.html#6">MNU_mappoint#6</a>
+            <a href="../MNU_mappoint.html#7">MNU_mappoint#7</a>
+            <a href="../MNU_mappoint.html#8">MNU_mappoint#8</a>
+            <a href="../MNU_mappoint.html#9">MNU_mappoint#9</a>
+            <a href="../MNU_mappoint.html#10">MNU_mappoint#10</a>
+            <a href="../MNU_mappoint.html#11">MNU_mappoint#11</a>
+            <a href="../MNU_mappoint.html#12">MNU_mappoint#12</a>
+            <a href="scmarkerlist.html#17">scmarkerlist#17</a>
+            <a href="scmarkerlist.html#44">scmarkerlist#44</a>
+            <a href="scmarkerlist.html#45">scmarkerlist#45</a>
+            <a href="scmarkerlist.html#46">scmarkerlist#46</a>
+            <a href="scmarkerlist.html#47">scmarkerlist#47</a>
+            <a href="scmarkerlist.html#48">scmarkerlist#48</a>
+            <a href="scmarkerlist.html#49">scmarkerlist#49</a>
+            <a href="scmarkerlist.html#50">scmarkerlist#50</a>
+            <a href="scmarkerlist.html#51">scmarkerlist#51</a>
+            <a href="scmarkerlist.html#52">scmarkerlist#52</a>
+            <a href="scmarkerlist.html#53">scmarkerlist#53</a>
+            <a href="scmarkerlist.html#54">scmarkerlist#54</a>
+            <a href="scmarkerlist.html#55">scmarkerlist#55</a>
+            <a href="scmarkerlist.html#56">scmarkerlist#56</a>
+            <a href="scmarkerlist.html#57">scmarkerlist#57</a>
+          </details>
+        </td>
+        <td class="side">Tephra Cave</td>
+        <td>ma0201</td>
+        <td>80</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>318</td>
+        <td>0</td>
+        <td>37</td>
+        <td>A cave located in the shin of the Bionis. Famous@as a historical site containing ancient artefacts.</td>
+        <td>12</td>
+        <td>355</td>
+        <td>416</td>
+        <td>-160</td>
+        <td>262</td>
+        <td>109</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>48</td>
+        <td>9</td>
+        <td>-544</td>
+        <td>117</td>
+        <td>-109</td>
+        <td>200</td>
+        <td>3</td>
+        <td>3</td>
+        <td>48</td>
+        <td>129</td>
+        <td>-544</td>
+        <td>117</td>
+        <td>-109</td>
+        <td>200</td>
+        <td>10</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>64</td>
+        <td>5</td>
+        <td>64</td>
+        <td>20</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>99 refs</summary>
+            <a href="FLD_valpoplist.html#9">FLD_valpoplist#9</a>
+            <a href="FLD_valpoplist.html#10">FLD_valpoplist#10</a>
+            <a href="FLD_valpoplist.html#11">FLD_valpoplist#11</a>
+            <a href="FLD_valpoplist.html#12">FLD_valpoplist#12</a>
+            <a href="FLD_valpoplist.html#13">FLD_valpoplist#13</a>
+            <a href="FLD_valpoplist.html#14">FLD_valpoplist#14</a>
+            <a href="FLD_valpoplist.html#15">FLD_valpoplist#15</a>
+            <a href="FLD_valpoplist.html#16">FLD_valpoplist#16</a>
+            <a href="FLD_valpoplist.html#17">FLD_valpoplist#17</a>
+            <a href="FLD_valpoplist.html#18">FLD_valpoplist#18</a>
+            <a href="FLD_valpoplist.html#19">FLD_valpoplist#19</a>
+            <a href="FLD_valpoplist.html#20">FLD_valpoplist#20</a>
+            <a href="FLD_valpoplist.html#107">FLD_valpoplist#107</a>
+            <a href="ITM_collectlist.html#5">ITM_collectlist#Hot Taro</a>
+            <a href="ITM_collectlist.html#6">ITM_collectlist#Juicy Broccoli</a>
+            <a href="ITM_collectlist.html#7">ITM_collectlist#Spicy Cabbage</a>
+            <a href="ITM_collectlist.html#8">ITM_collectlist#Hard Lotus</a>
+            <a href="ITM_collectlist.html#42">ITM_collectlist#Sour Gooseberry</a>
+            <a href="ITM_collectlist.html#43">ITM_collectlist#Red Durian</a>
+            <a href="ITM_collectlist.html#44">ITM_collectlist#Walnut Grape</a>
+            <a href="ITM_collectlist.html#45">ITM_collectlist#Humming Plum</a>
+            <a href="ITM_collectlist.html#152">ITM_collectlist#White Ladybird</a>
+            <a href="ITM_collectlist.html#153">ITM_collectlist#Hill Firefly</a>
+            <a href="ITM_collectlist.html#154">ITM_collectlist#Moth Crawler</a>
+            <a href="ITM_collectlist.html#155">ITM_collectlist#Queen Locust</a>
+            <a href="ITM_collectlist.html#156">ITM_collectlist#Fire Tarantula</a>
+            <a href="ITM_collectlist.html#184">ITM_collectlist#Mat Ice</a>
+            <a href="ITM_collectlist.html#185">ITM_collectlist#Bluesky Bark</a>
+            <a href="ITM_collectlist.html#186">ITM_collectlist#Pione Stone</a>
+            <a href="ITM_collectlist.html#219">ITM_collectlist#Rusty Bolt</a>
+            <a href="ITM_collectlist.html#220">ITM_collectlist#Winding Gear</a>
+            <a href="ITM_collectlist.html#257">ITM_collectlist#Gold Dust Illusion</a>
+            <a href="ITM_collectlist.html#258">ITM_collectlist#Devious Gravity</a>
+            <a href="ITM_collectlist.html#259">ITM_collectlist#White Songbird</a>
+            <a href="ITM_collectlist.html#260">ITM_collectlist#Death Bangle</a>
+            <a href="ITM_collectlist.html#303">ITM_collectlist#100</a>
+            <a href="landmarklist.html#46">landmarklist#Ragrinar Canyon Path</a>
+            <a href="landmarklist.html#47">landmarklist#Jabos Rock Rest Area</a>
+            <a href="landmarklist.html#48">landmarklist#Kamos Guidepost</a>
+            <a href="landmarklist.html#49">landmarklist#Refugee Camp</a>
+            <a href="landmarklist.html#50">landmarklist#Raguel Bridge - South</a>
+            <a href="landmarklist.html#51">landmarklist#Raguel Bridge - North</a>
+            <a href="landmarklist.html#52">landmarklist#Spiral Valley</a>
+            <a href="landmarklist.html#53">landmarklist#Zax Guidepost</a>
+            <a href="landmarklist.html#54">landmarklist#Bask Cave Passage</a>
+            <a href="landmarklist.html#55">landmarklist#Observation Platform</a>
+            <a href="landmarklist.html#56">landmarklist#Believer's Paradise</a>
+            <a href="landmarklist.html#57">landmarklist#Gaur Plain</a>
+            <a href="landmarklist.html#58">landmarklist#Rho Oasis</a>
+            <a href="landmarklist.html#59">landmarklist#Volff Lair</a>
+            <a href="landmarklist.html#60">landmarklist#Tirkin Headquarters</a>
+            <a href="landmarklist.html#61">landmarklist#Viliera Hill</a>
+            <a href="landmarklist.html#62">landmarklist#Raguel Lake</a>
+            <a href="landmarklist.html#63">landmarklist#Daksha Shrine</a>
+            <a href="landmarklist.html#64">landmarklist#Crevasse Waterfall</a>
+            <a href="landmarklist.html#65">landmarklist#Kasharpa Falls</a>
+            <a href="landmarklist.html#66">landmarklist#Maguel Road</a>
+            <a href="landmarklist.html#67">landmarklist#Tranquil Grotto</a>
+            <a href="landmarklist.html#68">landmarklist#Traveller's Rest</a>
+            <a href="landmarklist.html#69">landmarklist#Kisk Cave</a>
+            <a href="landmarklist.html#70">landmarklist#Sky Stage</a>
+            <a href="landmarklist.html#71">landmarklist#Windy Cave</a>
+            <a href="../MNU_mappoint.html#13">MNU_mappoint#13</a>
+            <a href="../MNU_mappoint.html#14">MNU_mappoint#14</a>
+            <a href="../MNU_mappoint.html#15">MNU_mappoint#15</a>
+            <a href="../MNU_mappoint.html#16">MNU_mappoint#16</a>
+            <a href="../MNU_mappoint.html#17">MNU_mappoint#17</a>
+            <a href="../MNU_mappoint.html#18">MNU_mappoint#18</a>
+            <a href="../MNU_mappoint.html#19">MNU_mappoint#19</a>
+            <a href="../MNU_mappoint.html#20">MNU_mappoint#20</a>
+            <a href="../MNU_mappoint.html#21">MNU_mappoint#21</a>
+            <a href="../MNU_mappoint.html#22">MNU_mappoint#22</a>
+            <a href="../MNU_mappoint.html#23">MNU_mappoint#23</a>
+            <a href="../MNU_mappoint.html#24">MNU_mappoint#24</a>
+            <a href="scmarkerlist.html#58">scmarkerlist#58</a>
+            <a href="scmarkerlist.html#59">scmarkerlist#59</a>
+            <a href="scmarkerlist.html#60">scmarkerlist#60</a>
+            <a href="scmarkerlist.html#61">scmarkerlist#61</a>
+            <a href="scmarkerlist.html#62">scmarkerlist#62</a>
+            <a href="scmarkerlist.html#63">scmarkerlist#63</a>
+            <a href="scmarkerlist.html#64">scmarkerlist#64</a>
+            <a href="scmarkerlist.html#65">scmarkerlist#65</a>
+            <a href="scmarkerlist.html#66">scmarkerlist#66</a>
+            <a href="scmarkerlist.html#67">scmarkerlist#67</a>
+            <a href="scmarkerlist.html#68">scmarkerlist#68</a>
+            <a href="scmarkerlist.html#69">scmarkerlist#69</a>
+            <a href="scmarkerlist.html#70">scmarkerlist#70</a>
+            <a href="scmarkerlist.html#71">scmarkerlist#71</a>
+            <a href="scmarkerlist.html#72">scmarkerlist#72</a>
+            <a href="scmarkerlist.html#73">scmarkerlist#73</a>
+            <a href="scmarkerlist.html#74">scmarkerlist#74</a>
+            <a href="scmarkerlist.html#75">scmarkerlist#75</a>
+            <a href="scmarkerlist.html#76">scmarkerlist#76</a>
+            <a href="scmarkerlist.html#77">scmarkerlist#77</a>
+            <a href="scmarkerlist.html#78">scmarkerlist#78</a>
+            <a href="scmarkerlist.html#79">scmarkerlist#79</a>
+            <a href="scmarkerlist.html#80">scmarkerlist#80</a>
+            <a href="scmarkerlist.html#81">scmarkerlist#81</a>
+            <a href="scmarkerlist.html#82">scmarkerlist#82</a>
+          </details>
+        </td>
+        <td class="side">Bionis' Leg</td>
+        <td>ma0301</td>
+        <td>100</td>
+        <td>5</td>
+        <td>100</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>38</td>
+        <td>A vast plain connecting the colonies.@Its lush landscape is teeming with wildlife.</td>
+        <td>40</td>
+        <td>267</td>
+        <td>-608</td>
+        <td>32</td>
+        <td>-388</td>
+        <td>-18</td>
+        <td>3</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>60</td>
+        <td>521</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>2</td>
+        <td>48</td>
+        <td>513</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>64</td>
+        <td>5</td>
+        <td>64</td>
+        <td>20</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>61 refs</summary>
+            <a href="FLD_valpoplist.html#21">FLD_valpoplist#21</a>
+            <a href="FLD_valpoplist.html#105">FLD_valpoplist#105</a>
+            <a href="ITM_collectlist.html#78">ITM_collectlist#Cute Orchid</a>
+            <a href="ITM_collectlist.html#79">ITM_collectlist#Sirius Anemone</a>
+            <a href="ITM_collectlist.html#80">ITM_collectlist#Spirit Clematis</a>
+            <a href="ITM_collectlist.html#113">ITM_collectlist#Pyro Lizard</a>
+            <a href="ITM_collectlist.html#114">ITM_collectlist#Amblygon Turtle</a>
+            <a href="ITM_collectlist.html#115">ITM_collectlist#Dobercorgi</a>
+            <a href="ITM_collectlist.html#261">ITM_collectlist#Verdant Eternity</a>
+            <a href="ITM_collectlist.html#262">ITM_collectlist#White Night Rod</a>
+            <a href="ITM_collectlist.html#304">ITM_collectlist#300</a>
+            <a href="landmarklist.html#72">landmarklist#Reconstruction HQ</a>
+            <a href="landmarklist.html#73">landmarklist#Supply Road</a>
+            <a href="landmarklist.html#74">landmarklist#Watchpoint Junction</a>
+            <a href="landmarklist.html#75">landmarklist#Drainage Outlet</a>
+            <a href="landmarklist.html#76">landmarklist#Freight Road</a>
+            <a href="landmarklist.html#77">landmarklist#Misty Path</a>
+            <a href="landmarklist.html#78">landmarklist#Main Entrance</a>
+            <a href="landmarklist.html#79">landmarklist#Splintered Path</a>
+            <a href="landmarklist.html#80">landmarklist#Pod Depot</a>
+            <a href="landmarklist.html#81">landmarklist#Hope Farm</a>
+            <a href="landmarklist.html#82">landmarklist#Freight Elevator</a>
+            <a href="../MNU_mappoint.html#25">MNU_mappoint#25</a>
+            <a href="../MNU_mappoint.html#26">MNU_mappoint#26</a>
+            <a href="../MNU_mappoint.html#27">MNU_mappoint#27</a>
+            <a href="../MNU_mappoint.html#28">MNU_mappoint#28</a>
+            <a href="../MNU_mappoint.html#29">MNU_mappoint#29</a>
+            <a href="../MNU_mappoint.html#30">MNU_mappoint#30</a>
+            <a href="../MNU_mappoint.html#31">MNU_mappoint#31</a>
+            <a href="../MNU_mappoint.html#32">MNU_mappoint#32</a>
+            <a href="../MNU_mappoint.html#33">MNU_mappoint#33</a>
+            <a href="../MNU_mappoint.html#34">MNU_mappoint#34</a>
+            <a href="../MNU_mappoint.html#35">MNU_mappoint#35</a>
+            <a href="../MNU_mappoint.html#36">MNU_mappoint#36</a>
+            <a href="../MNU_mappoint.html#37">MNU_mappoint#37</a>
+            <a href="../MNU_mappoint.html#38">MNU_mappoint#38</a>
+            <a href="../MNU_mappoint.html#39">MNU_mappoint#39</a>
+            <a href="../MNU_mappoint.html#40">MNU_mappoint#40</a>
+            <a href="../MNU_mappoint.html#41">MNU_mappoint#41</a>
+            <a href="../MNU_mappoint.html#42">MNU_mappoint#42</a>
+            <a href="scmarkerlist.html#83">scmarkerlist#83</a>
+            <a href="scmarkerlist.html#84">scmarkerlist#84</a>
+            <a href="scmarkerlist.html#100">scmarkerlist#100</a>
+            <a href="scmarkerlist.html#101">scmarkerlist#101</a>
+            <a href="scmarkerlist.html#102">scmarkerlist#102</a>
+            <a href="scmarkerlist.html#310">scmarkerlist#310</a>
+            <a href="scmarkerlist.html#367">scmarkerlist#367</a>
+            <a href="scmarkerlist.html#368">scmarkerlist#368</a>
+            <a href="scmarkerlist.html#369">scmarkerlist#369</a>
+            <a href="scmarkerlist.html#370">scmarkerlist#370</a>
+            <a href="scmarkerlist.html#371">scmarkerlist#371</a>
+            <a href="scmarkerlist.html#372">scmarkerlist#372</a>
+            <a href="scmarkerlist.html#374">scmarkerlist#374</a>
+            <a href="scmarkerlist.html#375">scmarkerlist#375</a>
+            <a href="scmarkerlist.html#376">scmarkerlist#376</a>
+            <a href="scmarkerlist.html#377">scmarkerlist#377</a>
+            <a href="scmarkerlist.html#378">scmarkerlist#378</a>
+            <a href="scmarkerlist.html#379">scmarkerlist#379</a>
+            <a href="scmarkerlist.html#380">scmarkerlist#380</a>
+            <a href="scmarkerlist.html#391">scmarkerlist#391</a>
+            <a href="scmarkerlist.html#403">scmarkerlist#403</a>
+          </details>
+        </td>
+        <td class="side">Colony 6</td>
+        <td>ma0401</td>
+        <td>80</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>39</td>
+        <td>Originally an ether mining settlement, little@remains after a devastating Mechon attack.</td>
+        <td>22</td>
+        <td>277</td>
+        <td>32</td>
+        <td>32</td>
+        <td>22</td>
+        <td>-7</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>48</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>60</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>83</td>
+        <td>84</td>
+        <td>100</td>
+        <td>106</td>
+        <td>4</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>82 refs</summary>
+            <a href="FLD_valpoplist.html#22">FLD_valpoplist#22</a>
+            <a href="FLD_valpoplist.html#23">FLD_valpoplist#23</a>
+            <a href="FLD_valpoplist.html#24">FLD_valpoplist#24</a>
+            <a href="FLD_valpoplist.html#31">FLD_valpoplist#31</a>
+            <a href="ITM_collectlist.html#116">ITM_collectlist#Light Bat</a>
+            <a href="ITM_collectlist.html#117">ITM_collectlist#Black Frog</a>
+            <a href="ITM_collectlist.html#118">ITM_collectlist#Yellow Cat</a>
+            <a href="ITM_collectlist.html#157">ITM_collectlist#Black Beetle</a>
+            <a href="ITM_collectlist.html#158">ITM_collectlist#Rubber Mantis</a>
+            <a href="ITM_collectlist.html#159">ITM_collectlist#Mystery Firefly</a>
+            <a href="ITM_collectlist.html#187">ITM_collectlist#Charcoal Leg</a>
+            <a href="ITM_collectlist.html#188">ITM_collectlist#Ether Pebble</a>
+            <a href="ITM_collectlist.html#189">ITM_collectlist#Rumble Coal</a>
+            <a href="ITM_collectlist.html#221">ITM_collectlist#Black Chip</a>
+            <a href="ITM_collectlist.html#222">ITM_collectlist#Ready Coil</a>
+            <a href="ITM_collectlist.html#263">ITM_collectlist#Love Crane</a>
+            <a href="ITM_collectlist.html#264">ITM_collectlist#Fire Abron</a>
+            <a href="ITM_collectlist.html#305">ITM_collectlist#500</a>
+            <a href="landmarklist.html#83">landmarklist#Drainage Tunnel</a>
+            <a href="landmarklist.html#84">landmarklist#Drainage Control Room</a>
+            <a href="landmarklist.html#85">landmarklist#Mining Base</a>
+            <a href="landmarklist.html#86">landmarklist#Central Pit - Entrance</a>
+            <a href="landmarklist.html#87">landmarklist#Personnel Lift 2</a>
+            <a href="landmarklist.html#88">landmarklist#Regulation Piston</a>
+            <a href="landmarklist.html#89">landmarklist#Personnel Lift 3</a>
+            <a href="landmarklist.html#90">landmarklist#Central Pit - Base Level</a>
+            <a href="landmarklist.html#91">landmarklist#Freight Elevator</a>
+            <a href="landmarklist.html#92">landmarklist#Glowmoss Lake</a>
+            <a href="landmarklist.html#93">landmarklist#Test Pit 1</a>
+            <a href="landmarklist.html#94">landmarklist#Test Pit 2</a>
+            <a href="landmarklist.html#95">landmarklist#Test Pit 3</a>
+            <a href="landmarklist.html#96">landmarklist#Storage Depot</a>
+            <a href="landmarklist.html#97">landmarklist#Central Terminal</a>
+            <a href="landmarklist.html#98">landmarklist#Test Pit 4</a>
+            <a href="landmarklist.html#99">landmarklist#Observation Point</a>
+            <a href="landmarklist.html#100">landmarklist#Central Pit - Level 1</a>
+            <a href="landmarklist.html#101">landmarklist#Central Pit - Level 2</a>
+            <a href="landmarklist.html#102">landmarklist#Central Pit - Level 3</a>
+            <a href="landmarklist.html#103">landmarklist#Freight Elevator</a>
+            <a href="../MNU_mappoint.html#43">MNU_mappoint#43</a>
+            <a href="../MNU_mappoint.html#44">MNU_mappoint#44</a>
+            <a href="../MNU_mappoint.html#45">MNU_mappoint#45</a>
+            <a href="../MNU_mappoint.html#46">MNU_mappoint#46</a>
+            <a href="../MNU_mappoint.html#47">MNU_mappoint#47</a>
+            <a href="../MNU_mappoint.html#48">MNU_mappoint#48</a>
+            <a href="../MNU_mappoint.html#49">MNU_mappoint#49</a>
+            <a href="../MNU_mappoint.html#50">MNU_mappoint#50</a>
+            <a href="../MNU_mappoint.html#51">MNU_mappoint#51</a>
+            <a href="../MNU_mappoint.html#52">MNU_mappoint#52</a>
+            <a href="../MNU_mappoint.html#53">MNU_mappoint#53</a>
+            <a href="../MNU_mappoint.html#54">MNU_mappoint#54</a>
+            <a href="../MNU_mappoint.html#55">MNU_mappoint#55</a>
+            <a href="../MNU_mappoint.html#56">MNU_mappoint#56</a>
+            <a href="../MNU_mappoint.html#57">MNU_mappoint#57</a>
+            <a href="../MNU_mappoint.html#58">MNU_mappoint#58</a>
+            <a href="../MNU_mappoint.html#59">MNU_mappoint#59</a>
+            <a href="../MNU_mappoint.html#60">MNU_mappoint#60</a>
+            <a href="../MNU_mappoint.html#61">MNU_mappoint#61</a>
+            <a href="../MNU_mappoint.html#62">MNU_mappoint#62</a>
+            <a href="../MNU_mappoint.html#63">MNU_mappoint#63</a>
+            <a href="../MNU_mappoint.html#64">MNU_mappoint#64</a>
+            <a href="../MNU_mappoint.html#65">MNU_mappoint#65</a>
+            <a href="../MNU_mappoint.html#66">MNU_mappoint#66</a>
+            <a href="../MNU_mappoint.html#67">MNU_mappoint#67</a>
+            <a href="../MNU_mappoint.html#68">MNU_mappoint#68</a>
+            <a href="../MNU_mappoint.html#69">MNU_mappoint#69</a>
+            <a href="../MNU_mappoint.html#70">MNU_mappoint#70</a>
+            <a href="scmarkerlist.html#85">scmarkerlist#85</a>
+            <a href="scmarkerlist.html#86">scmarkerlist#86</a>
+            <a href="scmarkerlist.html#87">scmarkerlist#87</a>
+            <a href="scmarkerlist.html#88">scmarkerlist#88</a>
+            <a href="scmarkerlist.html#89">scmarkerlist#89</a>
+            <a href="scmarkerlist.html#90">scmarkerlist#90</a>
+            <a href="scmarkerlist.html#91">scmarkerlist#91</a>
+            <a href="scmarkerlist.html#92">scmarkerlist#92</a>
+            <a href="scmarkerlist.html#93">scmarkerlist#93</a>
+            <a href="scmarkerlist.html#94">scmarkerlist#94</a>
+            <a href="scmarkerlist.html#95">scmarkerlist#95</a>
+            <a href="scmarkerlist.html#96">scmarkerlist#96</a>
+            <a href="scmarkerlist.html#97">scmarkerlist#97</a>
+            <a href="scmarkerlist.html#98">scmarkerlist#98</a>
+            <a href="scmarkerlist.html#99">scmarkerlist#99</a>
+          </details>
+        </td>
+        <td class="side">Ether Mine</td>
+        <td>ma0402</td>
+        <td>80</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>40</td>
+        <td>A focal point of the Bionis' ether energy. It has@long been exploited as a supply of minerals.</td>
+        <td>15</td>
+        <td>176</td>
+        <td>-288</td>
+        <td>288</td>
+        <td>-176</td>
+        <td>-204</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>79 refs</summary>
+            <a href="FLD_valpoplist.html#25">FLD_valpoplist#25</a>
+            <a href="FLD_valpoplist.html#26">FLD_valpoplist#26</a>
+            <a href="FLD_valpoplist.html#27">FLD_valpoplist#27</a>
+            <a href="FLD_valpoplist.html#28">FLD_valpoplist#28</a>
+            <a href="FLD_valpoplist.html#29">FLD_valpoplist#29</a>
+            <a href="FLD_valpoplist.html#30">FLD_valpoplist#30</a>
+            <a href="FLD_valpoplist.html#32">FLD_valpoplist#32</a>
+            <a href="FLD_valpoplist.html#33">FLD_valpoplist#33</a>
+            <a href="FLD_valpoplist.html#34">FLD_valpoplist#34</a>
+            <a href="FLD_valpoplist.html#35">FLD_valpoplist#35</a>
+            <a href="FLD_valpoplist.html#36">FLD_valpoplist#36</a>
+            <a href="FLD_valpoplist.html#37">FLD_valpoplist#37</a>
+            <a href="FLD_valpoplist.html#91">FLD_valpoplist#91</a>
+            <a href="FLD_valpoplist.html#97">FLD_valpoplist#97</a>
+            <a href="ITM_collectlist.html#9">ITM_collectlist#Blue Turnip</a>
+            <a href="ITM_collectlist.html#10">ITM_collectlist#Cute Parsnip</a>
+            <a href="ITM_collectlist.html#11">ITM_collectlist#Poisonous Gourd</a>
+            <a href="ITM_collectlist.html#12">ITM_collectlist#Humming Cabbage</a>
+            <a href="ITM_collectlist.html#81">ITM_collectlist#Sunflower Rogue</a>
+            <a href="ITM_collectlist.html#82">ITM_collectlist#Merry Coronation</a>
+            <a href="ITM_collectlist.html#83">ITM_collectlist#Ether Rose</a>
+            <a href="ITM_collectlist.html#84">ITM_collectlist#Orb Daisy</a>
+            <a href="ITM_collectlist.html#85">ITM_collectlist#Forget-You-Not</a>
+            <a href="ITM_collectlist.html#119">ITM_collectlist#Chimera Rabbit</a>
+            <a href="ITM_collectlist.html#120">ITM_collectlist#Venom Platypus</a>
+            <a href="ITM_collectlist.html#121">ITM_collectlist#Humming Cat</a>
+            <a href="ITM_collectlist.html#190">ITM_collectlist#Mist Tree</a>
+            <a href="ITM_collectlist.html#191">ITM_collectlist#Lemon Stone</a>
+            <a href="ITM_collectlist.html#192">ITM_collectlist#Feather Leaf</a>
+            <a href="ITM_collectlist.html#193">ITM_collectlist#Water Log</a>
+            <a href="ITM_collectlist.html#194">ITM_collectlist#Wool Rock</a>
+            <a href="ITM_collectlist.html#223">ITM_collectlist#Blue Gear Shard</a>
+            <a href="ITM_collectlist.html#224">ITM_collectlist#Rumble Part</a>
+            <a href="ITM_collectlist.html#265">ITM_collectlist#Pauper's Cup</a>
+            <a href="ITM_collectlist.html#266">ITM_collectlist#Happy Carnival</a>
+            <a href="ITM_collectlist.html#267">ITM_collectlist#Dawn Dice</a>
+            <a href="ITM_collectlist.html#306">ITM_collectlist#800</a>
+            <a href="landmarklist.html#104">landmarklist#Kelsher Wetland</a>
+            <a href="landmarklist.html#105">landmarklist#Nopon Merchant Camp</a>
+            <a href="landmarklist.html#106">landmarklist#Crown Tree</a>
+            <a href="landmarklist.html#107">landmarklist#Silent Obelisk</a>
+            <a href="landmarklist.html#108">landmarklist#Glowing Obelisk</a>
+            <a href="landmarklist.html#109">landmarklist#Sororal Statues</a>
+            <a href="landmarklist.html#110">landmarklist#Statue Summit</a>
+            <a href="landmarklist.html#111">landmarklist#Shining Pond</a>
+            <a href="landmarklist.html#112">landmarklist#Lacus Swamp</a>
+            <a href="landmarklist.html#113">landmarklist#Zaldania Waterfall</a>
+            <a href="landmarklist.html#114">landmarklist#Poison Swamp</a>
+            <a href="landmarklist.html#115">landmarklist#Barren Moor</a>
+            <a href="landmarklist.html#116">landmarklist#Dark Swamp</a>
+            <a href="landmarklist.html#117">landmarklist#Altar of Fate</a>
+            <a href="landmarklist.html#118">landmarklist#Igna Territory</a>
+            <a href="landmarklist.html#119">landmarklist#Exile Fortress</a>
+            <a href="landmarklist.html#120">landmarklist#Nopon Refuge</a>
+            <a href="landmarklist.html#121">landmarklist#Soter Ruins</a>
+            <a href="landmarklist.html#122">landmarklist#Mauk Floodgate</a>
+            <a href="landmarklist.html#123">landmarklist#Basin Cave</a>
+            <a href="landmarklist.html#124">landmarklist#Oath Sanctuary</a>
+            <a href="landmarklist.html#125">landmarklist#Place of Judgement</a>
+            <a href="../MNU_mappoint.html#71">MNU_mappoint#71</a>
+            <a href="../MNU_mappoint.html#72">MNU_mappoint#72</a>
+            <a href="../MNU_mappoint.html#73">MNU_mappoint#73</a>
+            <a href="../MNU_mappoint.html#74">MNU_mappoint#74</a>
+            <a href="../MNU_mappoint.html#75">MNU_mappoint#75</a>
+            <a href="../MNU_mappoint.html#76">MNU_mappoint#76</a>
+            <a href="../MNU_mappoint.html#77">MNU_mappoint#77</a>
+            <a href="../MNU_mappoint.html#78">MNU_mappoint#78</a>
+            <a href="../MNU_mappoint.html#79">MNU_mappoint#79</a>
+            <a href="../MNU_mappoint.html#80">MNU_mappoint#80</a>
+            <a href="scmarkerlist.html#103">scmarkerlist#103</a>
+            <a href="scmarkerlist.html#104">scmarkerlist#104</a>
+            <a href="scmarkerlist.html#105">scmarkerlist#105</a>
+            <a href="scmarkerlist.html#106">scmarkerlist#106</a>
+            <a href="scmarkerlist.html#107">scmarkerlist#107</a>
+            <a href="scmarkerlist.html#108">scmarkerlist#108</a>
+            <a href="scmarkerlist.html#109">scmarkerlist#109</a>
+            <a href="scmarkerlist.html#110">scmarkerlist#110</a>
+            <a href="scmarkerlist.html#111">scmarkerlist#111</a>
+            <a href="scmarkerlist.html#112">scmarkerlist#112</a>
+          </details>
+        </td>
+        <td class="side">Satorl Marsh</td>
+        <td>ma0501</td>
+        <td>80</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>320</td>
+        <td>0</td>
+        <td>41</td>
+        <td>Mysterious marshland scattered with High Entia@ruins. At night, it is bathed in an eerie glow.</td>
+        <td>30</td>
+        <td>150</td>
+        <td>-416</td>
+        <td>352</td>
+        <td>-260</td>
+        <td>-224</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>8</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>9</td>
+        <td>5</td>
+        <td>18</td>
+        <td>769</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>112 refs</summary>
+            <a href="FLD_valpoplist.html#38">FLD_valpoplist#38</a>
+            <a href="FLD_valpoplist.html#39">FLD_valpoplist#39</a>
+            <a href="FLD_valpoplist.html#40">FLD_valpoplist#40</a>
+            <a href="FLD_valpoplist.html#41">FLD_valpoplist#41</a>
+            <a href="FLD_valpoplist.html#42">FLD_valpoplist#42</a>
+            <a href="FLD_valpoplist.html#43">FLD_valpoplist#43</a>
+            <a href="FLD_valpoplist.html#44">FLD_valpoplist#44</a>
+            <a href="FLD_valpoplist.html#45">FLD_valpoplist#45</a>
+            <a href="FLD_valpoplist.html#46">FLD_valpoplist#46</a>
+            <a href="FLD_valpoplist.html#47">FLD_valpoplist#47</a>
+            <a href="FLD_valpoplist.html#48">FLD_valpoplist#48</a>
+            <a href="FLD_valpoplist.html#49">FLD_valpoplist#49</a>
+            <a href="FLD_valpoplist.html#50">FLD_valpoplist#50</a>
+            <a href="FLD_valpoplist.html#51">FLD_valpoplist#51</a>
+            <a href="FLD_valpoplist.html#52">FLD_valpoplist#52</a>
+            <a href="FLD_valpoplist.html#53">FLD_valpoplist#53</a>
+            <a href="FLD_valpoplist.html#54">FLD_valpoplist#54</a>
+            <a href="FLD_valpoplist.html#55">FLD_valpoplist#55</a>
+            <a href="FLD_valpoplist.html#56">FLD_valpoplist#56</a>
+            <a href="FLD_valpoplist.html#57">FLD_valpoplist#57</a>
+            <a href="FLD_valpoplist.html#58">FLD_valpoplist#58</a>
+            <a href="FLD_valpoplist.html#73">FLD_valpoplist#73</a>
+            <a href="FLD_valpoplist.html#74">FLD_valpoplist#74</a>
+            <a href="FLD_valpoplist.html#75">FLD_valpoplist#75</a>
+            <a href="FLD_valpoplist.html#103">FLD_valpoplist#103</a>
+            <a href="ITM_collectlist.html#13">ITM_collectlist#Schorl Mushroom</a>
+            <a href="ITM_collectlist.html#14">ITM_collectlist#Kelp Mushroom</a>
+            <a href="ITM_collectlist.html#15">ITM_collectlist#Honey Rhubarb</a>
+            <a href="ITM_collectlist.html#46">ITM_collectlist#Dark Mango</a>
+            <a href="ITM_collectlist.html#47">ITM_collectlist#Pure Cherry</a>
+            <a href="ITM_collectlist.html#48">ITM_collectlist#Bitter Kiwi</a>
+            <a href="ITM_collectlist.html#49">ITM_collectlist#Juicy Grape</a>
+            <a href="ITM_collectlist.html#86">ITM_collectlist#Enigma Lotus</a>
+            <a href="ITM_collectlist.html#87">ITM_collectlist#Humming Nettle</a>
+            <a href="ITM_collectlist.html#88">ITM_collectlist#Princess Daffodil</a>
+            <a href="ITM_collectlist.html#89">ITM_collectlist#Black Iris</a>
+            <a href="ITM_collectlist.html#122">ITM_collectlist#Ash Fox</a>
+            <a href="ITM_collectlist.html#123">ITM_collectlist#Soft Sea Cucumber</a>
+            <a href="ITM_collectlist.html#124">ITM_collectlist#Fossil Monkey</a>
+            <a href="ITM_collectlist.html#125">ITM_collectlist#Venomous Lizard</a>
+            <a href="ITM_collectlist.html#160">ITM_collectlist#Scarlet Ladybird</a>
+            <a href="ITM_collectlist.html#161">ITM_collectlist#Shield Bug</a>
+            <a href="ITM_collectlist.html#162">ITM_collectlist#Hades Beetle</a>
+            <a href="ITM_collectlist.html#163">ITM_collectlist#Benign Cricket</a>
+            <a href="ITM_collectlist.html#268">ITM_collectlist#Lemonade Sky</a>
+            <a href="ITM_collectlist.html#269">ITM_collectlist#Forest of Gossip</a>
+            <a href="ITM_collectlist.html#270">ITM_collectlist#Gravel Disk</a>
+            <a href="ITM_collectlist.html#307">ITM_collectlist#1000</a>
+            <a href="landmarklist.html#126">landmarklist#Makna Path</a>
+            <a href="landmarklist.html#127">landmarklist#Agni Tablet</a>
+            <a href="landmarklist.html#128">landmarklist#Waypoint Beacon</a>
+            <a href="landmarklist.html#129">landmarklist#Lakeside</a>
+            <a href="landmarklist.html#130">landmarklist#Nopon Arch</a>
+            <a href="landmarklist.html#131">landmarklist#Twisted Tree Gate</a>
+            <a href="landmarklist.html#132">landmarklist#Village Entrance</a>
+            <a href="landmarklist.html#133">landmarklist#Windmill Pavilion</a>
+            <a href="landmarklist.html#134">landmarklist#Glowmoss Trihenge</a>
+            <a href="landmarklist.html#135">landmarklist#Pod Landing Site</a>
+            <a href="landmarklist.html#136">landmarklist#Valak Pass</a>
+            <a href="landmarklist.html#137">landmarklist#Divine Sanctuary</a>
+            <a href="landmarklist.html#138">landmarklist#Seahorse Islet</a>
+            <a href="landmarklist.html#139">landmarklist#Sparkling Pool</a>
+            <a href="landmarklist.html#140">landmarklist#King Agni's Tomb</a>
+            <a href="landmarklist.html#141">landmarklist#Bridge One</a>
+            <a href="landmarklist.html#142">landmarklist#Bridge Two</a>
+            <a href="landmarklist.html#143">landmarklist#Bridge Three</a>
+            <a href="landmarklist.html#144">landmarklist#Repaired Bridge Four</a>
+            <a href="landmarklist.html#145">landmarklist#Great Makna Falls</a>
+            <a href="landmarklist.html#146">landmarklist#Sap Cave</a>
+            <a href="landmarklist.html#147">landmarklist#Contaminated Area</a>
+            <a href="landmarklist.html#148">landmarklist#Eks Watering Hole</a>
+            <a href="landmarklist.html#149">landmarklist#Clear Waterfall</a>
+            <a href="landmarklist.html#150">landmarklist#Yellow Flower Grove</a>
+            <a href="landmarklist.html#151">landmarklist#Abyss Basin</a>
+            <a href="landmarklist.html#152">landmarklist#Precipice Bridge</a>
+            <a href="landmarklist.html#153">landmarklist#Decayed Forest</a>
+            <a href="landmarklist.html#154">landmarklist#Hode Lair</a>
+            <a href="../MNU_mappoint.html#81">MNU_mappoint#81</a>
+            <a href="../MNU_mappoint.html#82">MNU_mappoint#82</a>
+            <a href="../MNU_mappoint.html#83">MNU_mappoint#83</a>
+            <a href="../MNU_mappoint.html#84">MNU_mappoint#84</a>
+            <a href="../MNU_mappoint.html#85">MNU_mappoint#85</a>
+            <a href="../MNU_mappoint.html#86">MNU_mappoint#86</a>
+            <a href="../MNU_mappoint.html#87">MNU_mappoint#87</a>
+            <a href="../MNU_mappoint.html#88">MNU_mappoint#88</a>
+            <a href="../MNU_mappoint.html#89">MNU_mappoint#89</a>
+            <a href="../MNU_mappoint.html#90">MNU_mappoint#90</a>
+            <a href="../MNU_mappoint.html#91">MNU_mappoint#91</a>
+            <a href="../MNU_mappoint.html#92">MNU_mappoint#92</a>
+            <a href="../MNU_mappoint.html#93">MNU_mappoint#93</a>
+            <a href="../MNU_mappoint.html#94">MNU_mappoint#94</a>
+            <a href="scmarkerlist.html#115">scmarkerlist#115</a>
+            <a href="scmarkerlist.html#116">scmarkerlist#116</a>
+            <a href="scmarkerlist.html#117">scmarkerlist#117</a>
+            <a href="scmarkerlist.html#118">scmarkerlist#118</a>
+            <a href="scmarkerlist.html#119">scmarkerlist#119</a>
+            <a href="scmarkerlist.html#120">scmarkerlist#120</a>
+            <a href="scmarkerlist.html#121">scmarkerlist#121</a>
+            <a href="scmarkerlist.html#122">scmarkerlist#122</a>
+            <a href="scmarkerlist.html#123">scmarkerlist#123</a>
+            <a href="scmarkerlist.html#124">scmarkerlist#124</a>
+            <a href="scmarkerlist.html#125">scmarkerlist#125</a>
+            <a href="scmarkerlist.html#126">scmarkerlist#126</a>
+            <a href="scmarkerlist.html#127">scmarkerlist#127</a>
+            <a href="scmarkerlist.html#128">scmarkerlist#128</a>
+            <a href="scmarkerlist.html#129">scmarkerlist#129</a>
+            <a href="scmarkerlist.html#138">scmarkerlist#138</a>
+            <a href="scmarkerlist.html#139">scmarkerlist#139</a>
+            <a href="scmarkerlist.html#140">scmarkerlist#140</a>
+            <a href="scmarkerlist.html#141">scmarkerlist#141</a>
+            <a href="scmarkerlist.html#142">scmarkerlist#142</a>
+            <a href="scmarkerlist.html#228">scmarkerlist#228</a>
+          </details>
+        </td>
+        <td class="side">Makna Forest</td>
+        <td>ma0601</td>
+        <td>90</td>
+        <td>5</td>
+        <td>100</td>
+        <td>50</td>
+        <td>320</td>
+        <td>0</td>
+        <td>42</td>
+        <td>Humid sub-tropical forest. The ecosystem allows@for creatures larger than those found elsewhere.</td>
+        <td>60</td>
+        <td>299</td>
+        <td>-96</td>
+        <td>-32</td>
+        <td>-69</td>
+        <td>9</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>24</td>
+        <td>16</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>7</td>
+        <td>18</td>
+        <td>513</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td>116</td>
+        <td>129</td>
+        <td>116</td>
+        <td>129</td>
+        <td>20</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>52 refs</summary>
+            <a href="FLD_valpoplist.html#66">FLD_valpoplist#66</a>
+            <a href="FLD_valpoplist.html#67">FLD_valpoplist#67</a>
+            <a href="FLD_valpoplist.html#68">FLD_valpoplist#68</a>
+            <a href="FLD_valpoplist.html#69">FLD_valpoplist#69</a>
+            <a href="FLD_valpoplist.html#70">FLD_valpoplist#70</a>
+            <a href="FLD_valpoplist.html#71">FLD_valpoplist#71</a>
+            <a href="FLD_valpoplist.html#72">FLD_valpoplist#72</a>
+            <a href="ITM_collectlist.html#50">ITM_collectlist#Spicy Nut</a>
+            <a href="ITM_collectlist.html#51">ITM_collectlist#Crimson Citrus</a>
+            <a href="ITM_collectlist.html#164">ITM_collectlist#Rainbow Bug</a>
+            <a href="ITM_collectlist.html#165">ITM_collectlist#Empress Beetle</a>
+            <a href="ITM_collectlist.html#271">ITM_collectlist#Rumble Box</a>
+            <a href="ITM_collectlist.html#272">ITM_collectlist#Black Panel</a>
+            <a href="ITM_collectlist.html#308">ITM_collectlist#1500</a>
+            <a href="landmarklist.html#155">landmarklist#Entry Bridge</a>
+            <a href="landmarklist.html#156">landmarklist#Nopon Tower</a>
+            <a href="landmarklist.html#157">landmarklist#Sacred Altar</a>
+            <a href="landmarklist.html#158">landmarklist#Pollen Works</a>
+            <a href="landmarklist.html#159">landmarklist#Riki's House</a>
+            <a href="landmarklist.html#160">landmarklist#Chief's Residence</a>
+            <a href="landmarklist.html#161">landmarklist#Prophecy Hut</a>
+            <a href="landmarklist.html#162">landmarklist#Contemplation Terrace</a>
+            <a href="landmarklist.html#163">landmarklist#Reservoir</a>
+            <a href="landmarklist.html#164">landmarklist#Pollen Orb Storehouse</a>
+            <a href="landmarklist.html#165">landmarklist#Archaeology Centre</a>
+            <a href="landmarklist.html#166">landmarklist#Nopon Kitchen</a>
+            <a href="landmarklist.html#167">landmarklist#Underground Store</a>
+            <a href="landmarklist.html#168">landmarklist#Central Plaza</a>
+            <a href="landmarklist.html#169">landmarklist#Kyn Shopping Street</a>
+            <a href="landmarklist.html#170">landmarklist#Orb Storage Level</a>
+            <a href="landmarklist.html#171">landmarklist#Middle Housing Level</a>
+            <a href="landmarklist.html#172">landmarklist#Pollen Works Level</a>
+            <a href="landmarklist.html#173">landmarklist#Archaeology Level</a>
+            <a href="landmarklist.html#174">landmarklist#Top Housing Level</a>
+            <a href="landmarklist.html#175">landmarklist#Mysterious Sanctuary</a>
+            <a href="landmarklist.html#176">landmarklist#Apex Lake</a>
+            <a href="../MNU_mappoint.html#95">MNU_mappoint#95</a>
+            <a href="../MNU_mappoint.html#96">MNU_mappoint#96</a>
+            <a href="../MNU_mappoint.html#97">MNU_mappoint#97</a>
+            <a href="../MNU_mappoint.html#98">MNU_mappoint#98</a>
+            <a href="scmarkerlist.html#130">scmarkerlist#130</a>
+            <a href="scmarkerlist.html#131">scmarkerlist#131</a>
+            <a href="scmarkerlist.html#132">scmarkerlist#132</a>
+            <a href="scmarkerlist.html#133">scmarkerlist#133</a>
+            <a href="scmarkerlist.html#134">scmarkerlist#134</a>
+            <a href="scmarkerlist.html#135">scmarkerlist#135</a>
+            <a href="scmarkerlist.html#136">scmarkerlist#136</a>
+            <a href="scmarkerlist.html#137">scmarkerlist#137</a>
+            <a href="scmarkerlist.html#143">scmarkerlist#143</a>
+            <a href="scmarkerlist.html#144">scmarkerlist#144</a>
+            <a href="scmarkerlist.html#145">scmarkerlist#145</a>
+            <a href="scmarkerlist.html#146">scmarkerlist#146</a>
+          </details>
+        </td>
+        <td class="side">Frontier Village</td>
+        <td>ma0701</td>
+        <td>100</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>320</td>
+        <td>0</td>
+        <td>43</td>
+        <td>A giant tree inhabited by the Nopon. It is a haven@of peace, far from the chaos of the world.</td>
+        <td>6</td>
+        <td>302</td>
+        <td>96</td>
+        <td>-32</td>
+        <td>44</td>
+        <td>8</td>
+        <td>9</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>ma0801</td>
+        <td>90</td>
+        <td>10</td>
+        <td>30</td>
+        <td>50</td>
+        <td>0</td>
+        <td>404</td>
+        <td>44</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>7</td>
+        <td>30</td>
+        <td>18</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>36 refs</summary>
+            <a href="FLD_valpoplist.html#59">FLD_valpoplist#59</a>
+            <a href="FLD_valpoplist.html#93">FLD_valpoplist#93</a>
+            <a href="FLD_valpoplist.html#95">FLD_valpoplist#95</a>
+            <a href="FLD_valpoplist.html#101">FLD_valpoplist#101</a>
+            <a href="ITM_collectlist.html#166">ITM_collectlist#Green Earwig</a>
+            <a href="ITM_collectlist.html#167">ITM_collectlist#Blue Ladybird</a>
+            <a href="ITM_collectlist.html#225">ITM_collectlist#White Tube</a>
+            <a href="ITM_collectlist.html#226">ITM_collectlist#Green Diode</a>
+            <a href="ITM_collectlist.html#227">ITM_collectlist#Spiral Lamp</a>
+            <a href="ITM_collectlist.html#273">ITM_collectlist#Tasty Sausage</a>
+            <a href="ITM_collectlist.html#274">ITM_collectlist#Macro Passion</a>
+            <a href="ITM_collectlist.html#309">ITM_collectlist#3000</a>
+            <a href="landmarklist.html#177">landmarklist#Tomb Approach</a>
+            <a href="landmarklist.html#178">landmarklist#Sealed Chamber</a>
+            <a href="landmarklist.html#179">landmarklist#Ceremony Hall</a>
+            <a href="landmarklist.html#180">landmarklist#Tomb Robber Pool</a>
+            <a href="landmarklist.html#181">landmarklist#Valley of Emperors</a>
+            <a href="landmarklist.html#182">landmarklist#Tower of Trials - Bridge</a>
+            <a href="landmarklist.html#183">landmarklist#Hall of Spirits</a>
+            <a href="landmarklist.html#184">landmarklist#Hall of Trials</a>
+            <a href="landmarklist.html#185">landmarklist#Second Treasury</a>
+            <a href="landmarklist.html#186">landmarklist#Imperial Treasury</a>
+            <a href="landmarklist.html#187">landmarklist#Telethia Laboratory</a>
+            <a href="../MNU_mappoint.html#99">MNU_mappoint#99</a>
+            <a href="scmarkerlist.html#147">scmarkerlist#147</a>
+            <a href="scmarkerlist.html#171">scmarkerlist#171</a>
+            <a href="scmarkerlist.html#172">scmarkerlist#172</a>
+            <a href="scmarkerlist.html#173">scmarkerlist#173</a>
+            <a href="scmarkerlist.html#174">scmarkerlist#174</a>
+            <a href="scmarkerlist.html#175">scmarkerlist#175</a>
+            <a href="scmarkerlist.html#176">scmarkerlist#176</a>
+            <a href="scmarkerlist.html#177">scmarkerlist#177</a>
+            <a href="scmarkerlist.html#178">scmarkerlist#178</a>
+            <a href="scmarkerlist.html#179">scmarkerlist#179</a>
+            <a href="scmarkerlist.html#180">scmarkerlist#180</a>
+            <a href="scmarkerlist.html#253">scmarkerlist#253</a>
+          </details>
+        </td>
+        <td class="side">High Entia Tomb</td>
+        <td>ma0901</td>
+        <td>90</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>45</td>
+        <td>Ancient sanctum where the crown prince seeks@approval from the Forefathers who slumber within.</td>
+        <td>10</td>
+        <td>292</td>
+        <td>-544</td>
+        <td>-32</td>
+        <td>-349</td>
+        <td>0</td>
+        <td>12</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>77 refs</summary>
+            <a href="FLD_valpoplist.html#60">FLD_valpoplist#60</a>
+            <a href="FLD_valpoplist.html#92">FLD_valpoplist#92</a>
+            <a href="FLD_valpoplist.html#99">FLD_valpoplist#99</a>
+            <a href="ITM_collectlist.html#16">ITM_collectlist#Pink Asparagus</a>
+            <a href="ITM_collectlist.html#17">ITM_collectlist#Tropical Radish</a>
+            <a href="ITM_collectlist.html#18">ITM_collectlist#Dolphin Carrot</a>
+            <a href="ITM_collectlist.html#19">ITM_collectlist#Gold Burdock</a>
+            <a href="ITM_collectlist.html#90">ITM_collectlist#Sea Berry</a>
+            <a href="ITM_collectlist.html#91">ITM_collectlist#Despair Clover</a>
+            <a href="ITM_collectlist.html#92">ITM_collectlist#Doomsday Poppy</a>
+            <a href="ITM_collectlist.html#93">ITM_collectlist#Night Lily</a>
+            <a href="ITM_collectlist.html#94">ITM_collectlist#Razor Teasel</a>
+            <a href="ITM_collectlist.html#126">ITM_collectlist#Sea Frog</a>
+            <a href="ITM_collectlist.html#127">ITM_collectlist#Mane Cat</a>
+            <a href="ITM_collectlist.html#195">ITM_collectlist#White Tail</a>
+            <a href="ITM_collectlist.html#196">ITM_collectlist#Marine Marble</a>
+            <a href="ITM_collectlist.html#197">ITM_collectlist#Oil Branch</a>
+            <a href="ITM_collectlist.html#198">ITM_collectlist#Dilemma Rock</a>
+            <a href="ITM_collectlist.html#275">ITM_collectlist#High Violet</a>
+            <a href="ITM_collectlist.html#276">ITM_collectlist#Steel Hauyne</a>
+            <a href="ITM_collectlist.html#310">ITM_collectlist#5000</a>
+            <a href="landmarklist.html#188">landmarklist#Latael Shore</a>
+            <a href="landmarklist.html#189">landmarklist#Centre Gate</a>
+            <a href="landmarklist.html#190">landmarklist#High Entia Tomb</a>
+            <a href="landmarklist.html#191">landmarklist#Syrath Lighthouse</a>
+            <a href="landmarklist.html#192">landmarklist#Central Seal Island</a>
+            <a href="landmarklist.html#193">landmarklist#Soltnar Seal Island</a>
+            <a href="landmarklist.html#194">landmarklist#Khatorl Seal Island</a>
+            <a href="landmarklist.html#195">landmarklist#Ether Plant</a>
+            <a href="landmarklist.html#196">landmarklist#Faras Cave</a>
+            <a href="landmarklist.html#197">landmarklist#Hovering Reef 1</a>
+            <a href="landmarklist.html#198">landmarklist#Hovering Reef 2</a>
+            <a href="landmarklist.html#199">landmarklist#Hovering Reef 3</a>
+            <a href="landmarklist.html#200">landmarklist#Hovering Reef 4</a>
+            <a href="landmarklist.html#201">landmarklist#Hovering Reef 5</a>
+            <a href="landmarklist.html#202">landmarklist#Hovering Reef 6</a>
+            <a href="landmarklist.html#203">landmarklist#Hovering Reef 7</a>
+            <a href="landmarklist.html#204">landmarklist#Hovering Reef 8</a>
+            <a href="landmarklist.html#205">landmarklist#Hovering Reef 9</a>
+            <a href="landmarklist.html#206">landmarklist#Hovering Reef 10</a>
+            <a href="landmarklist.html#207">landmarklist#Showdown Cliff</a>
+            <a href="landmarklist.html#208">landmarklist#Anu Shore</a>
+            <a href="landmarklist.html#209">landmarklist#Secluded Island</a>
+            <a href="landmarklist.html#210">landmarklist#Ether Crystal Deposit</a>
+            <a href="landmarklist.html#211">landmarklist#Sleeping Dragon Isle</a>
+            <a href="landmarklist.html#212">landmarklist#Hode Refuge</a>
+            <a href="landmarklist.html#213">landmarklist#Bionis' Occipital</a>
+            <a href="landmarklist.html#214">landmarklist#Kromar Coast</a>
+            <a href="../MNU_mappoint.html#100">MNU_mappoint#100</a>
+            <a href="../MNU_mappoint.html#101">MNU_mappoint#101</a>
+            <a href="../MNU_mappoint.html#102">MNU_mappoint#102</a>
+            <a href="../MNU_mappoint.html#103">MNU_mappoint#103</a>
+            <a href="../MNU_mappoint.html#104">MNU_mappoint#104</a>
+            <a href="../MNU_mappoint.html#105">MNU_mappoint#105</a>
+            <a href="../MNU_mappoint.html#106">MNU_mappoint#106</a>
+            <a href="../MNU_mappoint.html#107">MNU_mappoint#107</a>
+            <a href="../MNU_mappoint.html#108">MNU_mappoint#108</a>
+            <a href="../MNU_mappoint.html#109">MNU_mappoint#109</a>
+            <a href="../MNU_mappoint.html#110">MNU_mappoint#110</a>
+            <a href="../MNU_mappoint.html#111">MNU_mappoint#111</a>
+            <a href="../MNU_mappoint.html#112">MNU_mappoint#112</a>
+            <a href="scmarkerlist.html#148">scmarkerlist#148</a>
+            <a href="scmarkerlist.html#149">scmarkerlist#149</a>
+            <a href="scmarkerlist.html#150">scmarkerlist#150</a>
+            <a href="scmarkerlist.html#151">scmarkerlist#151</a>
+            <a href="scmarkerlist.html#152">scmarkerlist#152</a>
+            <a href="scmarkerlist.html#160">scmarkerlist#160</a>
+            <a href="scmarkerlist.html#162">scmarkerlist#162</a>
+            <a href="scmarkerlist.html#168">scmarkerlist#168</a>
+            <a href="scmarkerlist.html#170">scmarkerlist#170</a>
+            <a href="scmarkerlist.html#187">scmarkerlist#187</a>
+            <a href="scmarkerlist.html#193">scmarkerlist#193</a>
+            <a href="scmarkerlist.html#197">scmarkerlist#197</a>
+            <a href="scmarkerlist.html#199">scmarkerlist#199</a>
+            <a href="scmarkerlist.html#200">scmarkerlist#200</a>
+            <a href="scmarkerlist.html#226">scmarkerlist#226</a>
+            <a href="scmarkerlist.html#227">scmarkerlist#227</a>
+          </details>
+        </td>
+        <td class="side">Eryth Sea</td>
+        <td>ma1001</td>
+        <td>100</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>46</td>
+        <td>A great sea located on the head of the Bionis.@Floating islands are connected by transporters.</td>
+        <td>80</td>
+        <td>300</td>
+        <td>-32</td>
+        <td>-32</td>
+        <td>-12</td>
+        <td>5</td>
+        <td>10</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>30</td>
+        <td>513</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>11</td>
+        <td>0</td>
+        <td>48</td>
+        <td>256</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>201</td>
+        <td>215</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>74 refs</summary>
+            <a href="FLD_valpoplist.html#61">FLD_valpoplist#61</a>
+            <a href="FLD_valpoplist.html#62">FLD_valpoplist#62</a>
+            <a href="FLD_valpoplist.html#63">FLD_valpoplist#63</a>
+            <a href="FLD_valpoplist.html#64">FLD_valpoplist#64</a>
+            <a href="FLD_valpoplist.html#96">FLD_valpoplist#96</a>
+            <a href="ITM_collectlist.html#52">ITM_collectlist#Cool Lemon</a>
+            <a href="ITM_collectlist.html#53">ITM_collectlist#Heart Peach</a>
+            <a href="ITM_collectlist.html#95">ITM_collectlist#Mystic Dahlia</a>
+            <a href="ITM_collectlist.html#96">ITM_collectlist#Stardrop</a>
+            <a href="ITM_collectlist.html#277">ITM_collectlist#Ha Ha Ha</a>
+            <a href="ITM_collectlist.html#278">ITM_collectlist#Thunder Atmos</a>
+            <a href="ITM_collectlist.html#311">ITM_collectlist#8000</a>
+            <a href="landmarklist.html#215">landmarklist#Main Entrance</a>
+            <a href="landmarklist.html#216">landmarklist#Imperial Palace</a>
+            <a href="landmarklist.html#217">landmarklist#Fountain of Hope</a>
+            <a href="landmarklist.html#218">landmarklist#Fountain of Eternity</a>
+            <a href="landmarklist.html#219">landmarklist#Ascension Hall</a>
+            <a href="landmarklist.html#220">landmarklist#Whitewing Palace</a>
+            <a href="landmarklist.html#221">landmarklist#Imperial Villa</a>
+            <a href="landmarklist.html#222">landmarklist#Melfica Road</a>
+            <a href="landmarklist.html#223">landmarklist#Revelation Hall</a>
+            <a href="landmarklist.html#224">landmarklist#Great Hall</a>
+            <a href="landmarklist.html#225">landmarklist#Sky Terrace</a>
+            <a href="landmarklist.html#226">landmarklist#Audience Chamber</a>
+            <a href="../MNU_mappoint.html#113">MNU_mappoint#113</a>
+            <a href="../MNU_mappoint.html#114">MNU_mappoint#114</a>
+            <a href="../MNU_mappoint.html#115">MNU_mappoint#115</a>
+            <a href="../MNU_mappoint.html#116">MNU_mappoint#116</a>
+            <a href="../MNU_mappoint.html#117">MNU_mappoint#117</a>
+            <a href="../MNU_mappoint.html#118">MNU_mappoint#118</a>
+            <a href="../MNU_mappoint.html#119">MNU_mappoint#119</a>
+            <a href="../MNU_mappoint.html#120">MNU_mappoint#120</a>
+            <a href="../MNU_mappoint.html#121">MNU_mappoint#121</a>
+            <a href="../MNU_mappoint.html#122">MNU_mappoint#122</a>
+            <a href="scmarkerlist.html#153">scmarkerlist#153</a>
+            <a href="scmarkerlist.html#154">scmarkerlist#154</a>
+            <a href="scmarkerlist.html#155">scmarkerlist#155</a>
+            <a href="scmarkerlist.html#156">scmarkerlist#156</a>
+            <a href="scmarkerlist.html#157">scmarkerlist#157</a>
+            <a href="scmarkerlist.html#158">scmarkerlist#158</a>
+            <a href="scmarkerlist.html#159">scmarkerlist#159</a>
+            <a href="scmarkerlist.html#161">scmarkerlist#161</a>
+            <a href="scmarkerlist.html#163">scmarkerlist#163</a>
+            <a href="scmarkerlist.html#164">scmarkerlist#164</a>
+            <a href="scmarkerlist.html#165">scmarkerlist#165</a>
+            <a href="scmarkerlist.html#166">scmarkerlist#166</a>
+            <a href="scmarkerlist.html#167">scmarkerlist#167</a>
+            <a href="scmarkerlist.html#169">scmarkerlist#169</a>
+            <a href="scmarkerlist.html#181">scmarkerlist#181</a>
+            <a href="scmarkerlist.html#182">scmarkerlist#182</a>
+            <a href="scmarkerlist.html#183">scmarkerlist#183</a>
+            <a href="scmarkerlist.html#184">scmarkerlist#184</a>
+            <a href="scmarkerlist.html#185">scmarkerlist#185</a>
+            <a href="scmarkerlist.html#186">scmarkerlist#186</a>
+            <a href="scmarkerlist.html#189">scmarkerlist#189</a>
+            <a href="scmarkerlist.html#190">scmarkerlist#190</a>
+            <a href="scmarkerlist.html#191">scmarkerlist#191</a>
+            <a href="scmarkerlist.html#192">scmarkerlist#192</a>
+            <a href="scmarkerlist.html#194">scmarkerlist#194</a>
+            <a href="scmarkerlist.html#195">scmarkerlist#195</a>
+            <a href="scmarkerlist.html#196">scmarkerlist#196</a>
+            <a href="scmarkerlist.html#198">scmarkerlist#198</a>
+            <a href="scmarkerlist.html#216">scmarkerlist#216</a>
+            <a href="scmarkerlist.html#217">scmarkerlist#217</a>
+            <a href="scmarkerlist.html#218">scmarkerlist#218</a>
+            <a href="scmarkerlist.html#219">scmarkerlist#219</a>
+            <a href="scmarkerlist.html#220">scmarkerlist#220</a>
+            <a href="scmarkerlist.html#221">scmarkerlist#221</a>
+            <a href="scmarkerlist.html#222">scmarkerlist#222</a>
+            <a href="scmarkerlist.html#223">scmarkerlist#223</a>
+            <a href="scmarkerlist.html#224">scmarkerlist#224</a>
+            <a href="scmarkerlist.html#225">scmarkerlist#225</a>
+            <a href="scmarkerlist.html#266">scmarkerlist#266</a>
+            <a href="scmarkerlist.html#293">scmarkerlist#293</a>
+          </details>
+        </td>
+        <td class="side">Alcamoth</td>
+        <td>ma1101</td>
+        <td>100</td>
+        <td>5</td>
+        <td>120</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>47</td>
+        <td>The High Entia's floating city. It boasts technology@far beyond anything the Homs could imagine.</td>
+        <td>21</td>
+        <td>298</td>
+        <td>-160</td>
+        <td>-32</td>
+        <td>-108</td>
+        <td>39</td>
+        <td>11</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>30</td>
+        <td>513</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>11</td>
+        <td>0</td>
+        <td>48</td>
+        <td>256</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>186</td>
+        <td>189</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>25 refs</summary>
+            <a href="landmarklist.html#227">landmarklist#High Entia Transporter</a>
+            <a href="landmarklist.html#228">landmarklist#Prison Gate</a>
+            <a href="landmarklist.html#229">landmarklist#Prison Terrace</a>
+            <a href="landmarklist.html#230">landmarklist#Central Hall</a>
+            <a href="landmarklist.html#231">landmarklist#Great Canyon</a>
+            <a href="../MNU_mappoint.html#123">MNU_mappoint#123</a>
+            <a href="../MNU_mappoint.html#124">MNU_mappoint#124</a>
+            <a href="../MNU_mappoint.html#125">MNU_mappoint#125</a>
+            <a href="../MNU_mappoint.html#126">MNU_mappoint#126</a>
+            <a href="../MNU_mappoint.html#127">MNU_mappoint#127</a>
+            <a href="scmarkerlist.html#201">scmarkerlist#201</a>
+            <a href="scmarkerlist.html#202">scmarkerlist#202</a>
+            <a href="scmarkerlist.html#203">scmarkerlist#203</a>
+            <a href="scmarkerlist.html#204">scmarkerlist#204</a>
+            <a href="scmarkerlist.html#205">scmarkerlist#205</a>
+            <a href="scmarkerlist.html#206">scmarkerlist#206</a>
+            <a href="scmarkerlist.html#207">scmarkerlist#207</a>
+            <a href="scmarkerlist.html#208">scmarkerlist#208</a>
+            <a href="scmarkerlist.html#209">scmarkerlist#209</a>
+            <a href="scmarkerlist.html#210">scmarkerlist#210</a>
+            <a href="scmarkerlist.html#211">scmarkerlist#211</a>
+            <a href="scmarkerlist.html#212">scmarkerlist#212</a>
+            <a href="scmarkerlist.html#213">scmarkerlist#213</a>
+            <a href="scmarkerlist.html#214">scmarkerlist#214</a>
+            <a href="scmarkerlist.html#215">scmarkerlist#215</a>
+          </details>
+        </td>
+        <td class="side">Prison Island</td>
+        <td>ma1201</td>
+        <td>120</td>
+        <td>5</td>
+        <td>100</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>48</td>
+        <td>A prison said to have been sealed by the High@Entia Forefathers. Its history remains a mystery.</td>
+        <td>13</td>
+        <td>304</td>
+        <td>224</td>
+        <td>-32</td>
+        <td>135</td>
+        <td>4</td>
+        <td>13</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>30</td>
+        <td>513</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>11</td>
+        <td>0</td>
+        <td>48</td>
+        <td>256</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>201</td>
+        <td>215</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>57 refs</summary>
+            <a href="FLD_valpoplist.html#108">FLD_valpoplist#108</a>
+            <a href="ITM_collectlist.html#54">ITM_collectlist#Dry Lemon</a>
+            <a href="ITM_collectlist.html#55">ITM_collectlist#Death Lychee</a>
+            <a href="ITM_collectlist.html#56">ITM_collectlist#Hell Raspberry</a>
+            <a href="ITM_collectlist.html#57">ITM_collectlist#Deadly Kiwi</a>
+            <a href="ITM_collectlist.html#128">ITM_collectlist#Dancing Squirrel</a>
+            <a href="ITM_collectlist.html#129">ITM_collectlist#Lightning Weasel</a>
+            <a href="ITM_collectlist.html#130">ITM_collectlist#Angry Monkey</a>
+            <a href="ITM_collectlist.html#168">ITM_collectlist#Señorita Scarab</a>
+            <a href="ITM_collectlist.html#169">ITM_collectlist#Emperor Beetle</a>
+            <a href="ITM_collectlist.html#199">ITM_collectlist#Absurd Branch</a>
+            <a href="ITM_collectlist.html#200">ITM_collectlist#Insanity Moss</a>
+            <a href="ITM_collectlist.html#228">ITM_collectlist#White Cover</a>
+            <a href="ITM_collectlist.html#229">ITM_collectlist#Modern Resistor</a>
+            <a href="ITM_collectlist.html#230">ITM_collectlist#Green Cam</a>
+            <a href="ITM_collectlist.html#231">ITM_collectlist#Strong Screw</a>
+            <a href="ITM_collectlist.html#279">ITM_collectlist#Blue Glow</a>
+            <a href="ITM_collectlist.html#280">ITM_collectlist#Blue Blood</a>
+            <a href="ITM_collectlist.html#312">ITM_collectlist#10000</a>
+            <a href="landmarklist.html#232">landmarklist#Bridge of Grief</a>
+            <a href="landmarklist.html#233">landmarklist#Prison Gate</a>
+            <a href="landmarklist.html#234">landmarklist#Empty Throne</a>
+            <a href="landmarklist.html#235">landmarklist#Gondorl Cathedral</a>
+            <a href="landmarklist.html#236">landmarklist#Prison Terrace</a>
+            <a href="landmarklist.html#237">landmarklist#Damaged Transporter</a>
+            <a href="landmarklist.html#238">landmarklist#Central Hall</a>
+            <a href="landmarklist.html#239">landmarklist#First Sanctum</a>
+            <a href="landmarklist.html#240">landmarklist#Second Sanctum</a>
+            <a href="landmarklist.html#241">landmarklist#Banquet Hall</a>
+            <a href="landmarklist.html#242">landmarklist#Kitchen</a>
+            <a href="landmarklist.html#243">landmarklist#Battle Arena</a>
+            <a href="landmarklist.html#244">landmarklist#Behemoth Nest</a>
+            <a href="landmarklist.html#245">landmarklist#Arena</a>
+            <a href="landmarklist.html#246">landmarklist#Great Canyon</a>
+            <a href="landmarklist.html#247">landmarklist#Gravina Bridge</a>
+            <a href="landmarklist.html#248">landmarklist#Corridor of Silence</a>
+            <a href="landmarklist.html#249">landmarklist#Travalga Bridge</a>
+            <a href="landmarklist.html#250">landmarklist#Basverg Belfry</a>
+            <a href="../MNU_mappoint.html#128">MNU_mappoint#128</a>
+            <a href="../MNU_mappoint.html#129">MNU_mappoint#129</a>
+            <a href="../MNU_mappoint.html#130">MNU_mappoint#130</a>
+            <a href="../MNU_mappoint.html#131">MNU_mappoint#131</a>
+            <a href="../MNU_mappoint.html#132">MNU_mappoint#132</a>
+            <a href="../MNU_mappoint.html#133">MNU_mappoint#133</a>
+            <a href="../MNU_mappoint.html#134">MNU_mappoint#134</a>
+            <a href="../MNU_mappoint.html#135">MNU_mappoint#135</a>
+            <a href="../MNU_mappoint.html#136">MNU_mappoint#136</a>
+            <a href="../MNU_mappoint.html#137">MNU_mappoint#137</a>
+            <a href="../MNU_mappoint.html#138">MNU_mappoint#138</a>
+            <a href="scmarkerlist.html#387">scmarkerlist#387</a>
+            <a href="scmarkerlist.html#388">scmarkerlist#388</a>
+            <a href="scmarkerlist.html#389">scmarkerlist#389</a>
+            <a href="scmarkerlist.html#390">scmarkerlist#390</a>
+            <a href="scmarkerlist.html#392">scmarkerlist#392</a>
+            <a href="scmarkerlist.html#393">scmarkerlist#393</a>
+            <a href="scmarkerlist.html#394">scmarkerlist#394</a>
+            <a href="scmarkerlist.html#395">scmarkerlist#395</a>
+          </details>
+        </td>
+        <td class="side">Prison Island</td>
+        <td>ma1202</td>
+        <td>120</td>
+        <td>5</td>
+        <td>120</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>49</td>
+        <td>The prison that once held Zanza. It fell from the@sky into the interior of the Bionis.</td>
+        <td>13</td>
+        <td>304</td>
+        <td>224</td>
+        <td>-32</td>
+        <td>135</td>
+        <td>4</td>
+        <td>22</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>78 refs</summary>
+            <a href="FLD_valpoplist.html#65">FLD_valpoplist#65</a>
+            <a href="FLD_valpoplist.html#94">FLD_valpoplist#94</a>
+            <a href="ITM_collectlist.html#20">ITM_collectlist#Sour Radish</a>
+            <a href="ITM_collectlist.html#21">ITM_collectlist#Ice Cabbage</a>
+            <a href="ITM_collectlist.html#22">ITM_collectlist#Girl Courgette</a>
+            <a href="ITM_collectlist.html#23">ITM_collectlist#Amethyst Vanilla</a>
+            <a href="ITM_collectlist.html#58">ITM_collectlist#Ether Plum</a>
+            <a href="ITM_collectlist.html#59">ITM_collectlist#Fire Apple</a>
+            <a href="ITM_collectlist.html#60">ITM_collectlist#Ruby Mangosteen</a>
+            <a href="ITM_collectlist.html#61">ITM_collectlist#Sour Grape</a>
+            <a href="ITM_collectlist.html#97">ITM_collectlist#Fortune Mallow</a>
+            <a href="ITM_collectlist.html#98">ITM_collectlist#Black Peony</a>
+            <a href="ITM_collectlist.html#99">ITM_collectlist#Fatal Belladonna</a>
+            <a href="ITM_collectlist.html#131">ITM_collectlist#Wet Rat</a>
+            <a href="ITM_collectlist.html#132">ITM_collectlist#Ice Monkey</a>
+            <a href="ITM_collectlist.html#133">ITM_collectlist#Crystal Frog</a>
+            <a href="ITM_collectlist.html#134">ITM_collectlist#Mud Squirrel</a>
+            <a href="ITM_collectlist.html#201">ITM_collectlist#Gypsum Branch</a>
+            <a href="ITM_collectlist.html#202">ITM_collectlist#Black Ash</a>
+            <a href="ITM_collectlist.html#203">ITM_collectlist#Emerald Snow</a>
+            <a href="ITM_collectlist.html#204">ITM_collectlist#Rabbit Stone</a>
+            <a href="ITM_collectlist.html#205">ITM_collectlist#Broom Icicle</a>
+            <a href="ITM_collectlist.html#281">ITM_collectlist#Frost Glass</a>
+            <a href="ITM_collectlist.html#282">ITM_collectlist#Large Handcuffs</a>
+            <a href="ITM_collectlist.html#313">ITM_collectlist#20000</a>
+            <a href="landmarklist.html#251">landmarklist#Zokhed Pass</a>
+            <a href="landmarklist.html#252">landmarklist#Mechonis Wound</a>
+            <a href="landmarklist.html#253">landmarklist#Hollow Bone</a>
+            <a href="landmarklist.html#254">landmarklist#Nopon Camp</a>
+            <a href="landmarklist.html#255">landmarklist#Harict Chapel</a>
+            <a href="landmarklist.html#256">landmarklist#Lava Cave</a>
+            <a href="landmarklist.html#257">landmarklist#La Luz Church</a>
+            <a href="landmarklist.html#258">landmarklist#Nofol Tower</a>
+            <a href="landmarklist.html#259">landmarklist#Bionis' Wrist</a>
+            <a href="landmarklist.html#260">landmarklist#Befalgar Pedestal</a>
+            <a href="landmarklist.html#261">landmarklist#Three Sage Summit</a>
+            <a href="landmarklist.html#262">landmarklist#Nagul Waterfall</a>
+            <a href="landmarklist.html#263">landmarklist#Serik Waterfall</a>
+            <a href="landmarklist.html#264">landmarklist#Apis Lair</a>
+            <a href="landmarklist.html#265">landmarklist#Kana Peak</a>
+            <a href="landmarklist.html#266">landmarklist#Agul Mountain Range</a>
+            <a href="landmarklist.html#267">landmarklist#Bagnar Snowfield</a>
+            <a href="landmarklist.html#268">landmarklist#Bionis' Right Elbow</a>
+            <a href="landmarklist.html#269">landmarklist#Url Crevasse</a>
+            <a href="landmarklist.html#270">landmarklist#Jakt Geyser</a>
+            <a href="landmarklist.html#271">landmarklist#Sealed Tower</a>
+            <a href="landmarklist.html#272">landmarklist#Ignia Hill</a>
+            <a href="landmarklist.html#273">landmarklist#Great Glacier</a>
+            <a href="landmarklist.html#274">landmarklist#Chilkin Lair</a>
+            <a href="landmarklist.html#275">landmarklist#Antol Den</a>
+            <a href="landmarklist.html#276">landmarklist#Valak Peak</a>
+            <a href="../MNU_mappoint.html#139">MNU_mappoint#139</a>
+            <a href="../MNU_mappoint.html#140">MNU_mappoint#140</a>
+            <a href="../MNU_mappoint.html#141">MNU_mappoint#141</a>
+            <a href="../MNU_mappoint.html#142">MNU_mappoint#142</a>
+            <a href="../MNU_mappoint.html#143">MNU_mappoint#143</a>
+            <a href="../MNU_mappoint.html#144">MNU_mappoint#144</a>
+            <a href="../MNU_mappoint.html#145">MNU_mappoint#145</a>
+            <a href="../MNU_mappoint.html#146">MNU_mappoint#146</a>
+            <a href="../MNU_mappoint.html#147">MNU_mappoint#147</a>
+            <a href="../MNU_mappoint.html#148">MNU_mappoint#148</a>
+            <a href="../MNU_mappoint.html#149">MNU_mappoint#149</a>
+            <a href="../MNU_mappoint.html#150">MNU_mappoint#150</a>
+            <a href="../MNU_mappoint.html#151">MNU_mappoint#151</a>
+            <a href="../MNU_mappoint.html#152">MNU_mappoint#152</a>
+            <a href="scmarkerlist.html#42">scmarkerlist#42</a>
+            <a href="scmarkerlist.html#230">scmarkerlist#230</a>
+            <a href="scmarkerlist.html#231">scmarkerlist#231</a>
+            <a href="scmarkerlist.html#232">scmarkerlist#232</a>
+            <a href="scmarkerlist.html#233">scmarkerlist#233</a>
+            <a href="scmarkerlist.html#234">scmarkerlist#234</a>
+            <a href="scmarkerlist.html#235">scmarkerlist#235</a>
+            <a href="scmarkerlist.html#236">scmarkerlist#236</a>
+            <a href="scmarkerlist.html#237">scmarkerlist#237</a>
+            <a href="scmarkerlist.html#238">scmarkerlist#238</a>
+            <a href="scmarkerlist.html#239">scmarkerlist#239</a>
+            <a href="scmarkerlist.html#240">scmarkerlist#240</a>
+            <a href="scmarkerlist.html#315">scmarkerlist#315</a>
+          </details>
+        </td>
+        <td class="side">Valak Mountain</td>
+        <td>ma1301</td>
+        <td>100</td>
+        <td>5</td>
+        <td>70</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>50</td>
+        <td>Treacherous and snowy terrain. After nightfall@the area looks entirely different.</td>
+        <td>50</td>
+        <td>357</td>
+        <td>544</td>
+        <td>-160</td>
+        <td>353</td>
+        <td>111</td>
+        <td>14</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>4</td>
+        <td>90</td>
+        <td>48</td>
+        <td>257</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>5</td>
+        <td>48</td>
+        <td>769</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>229</td>
+        <td>233</td>
+        <td>16</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>66 refs</summary>
+            <a href="ITM_collectlist.html#24">ITM_collectlist#Fire Pepper</a>
+            <a href="ITM_collectlist.html#25">ITM_collectlist#Meaty Carrot</a>
+            <a href="ITM_collectlist.html#26">ITM_collectlist#Bitter Broccoli</a>
+            <a href="ITM_collectlist.html#62">ITM_collectlist#Bitter Melon</a>
+            <a href="ITM_collectlist.html#63">ITM_collectlist#Citron Gooseberry</a>
+            <a href="ITM_collectlist.html#64">ITM_collectlist#Juicy Melon</a>
+            <a href="ITM_collectlist.html#65">ITM_collectlist#Amethyst Melon</a>
+            <a href="ITM_collectlist.html#100">ITM_collectlist#Jujube Silver</a>
+            <a href="ITM_collectlist.html#101">ITM_collectlist#Black Blossom</a>
+            <a href="ITM_collectlist.html#102">ITM_collectlist#Abyss Heather</a>
+            <a href="ITM_collectlist.html#103">ITM_collectlist#Delerium Foxglove</a>
+            <a href="ITM_collectlist.html#232">ITM_collectlist#Gold Condenser</a>
+            <a href="ITM_collectlist.html#233">ITM_collectlist#Purple Lamp</a>
+            <a href="ITM_collectlist.html#234">ITM_collectlist#Crimson Gear</a>
+            <a href="ITM_collectlist.html#283">ITM_collectlist#Red Frontier</a>
+            <a href="ITM_collectlist.html#284">ITM_collectlist#Darkness Bottle</a>
+            <a href="ITM_collectlist.html#285">ITM_collectlist#Bud of Eternity</a>
+            <a href="ITM_collectlist.html#314">ITM_collectlist#30000</a>
+            <a href="landmarklist.html#277">landmarklist#Bionis' Thumb</a>
+            <a href="landmarklist.html#278">landmarklist#Supply Convoy</a>
+            <a href="landmarklist.html#279">landmarklist#Ged Fortress</a>
+            <a href="landmarklist.html#280">landmarklist#Dolgan Outpost</a>
+            <a href="landmarklist.html#281">landmarklist#Enalda Control Base</a>
+            <a href="landmarklist.html#282">landmarklist#Heavy Machine Depot</a>
+            <a href="landmarklist.html#283">landmarklist#Control Tower</a>
+            <a href="landmarklist.html#284">landmarklist#Radio Tower</a>
+            <a href="landmarklist.html#285">landmarklist#Fortress Rear Entrance</a>
+            <a href="landmarklist.html#286">landmarklist#Monado Wound</a>
+            <a href="landmarklist.html#287">landmarklist#6th Gate</a>
+            <a href="landmarklist.html#288">landmarklist#5th Gate</a>
+            <a href="landmarklist.html#289">landmarklist#4th Gate</a>
+            <a href="landmarklist.html#290">landmarklist#3rd Gate</a>
+            <a href="landmarklist.html#291">landmarklist#Ether Storage Area</a>
+            <a href="landmarklist.html#292">landmarklist#Port Access Pathway</a>
+            <a href="landmarklist.html#293">landmarklist#Port Maintenance Bay</a>
+            <a href="../MNU_mappoint.html#153">MNU_mappoint#153</a>
+            <a href="../MNU_mappoint.html#154">MNU_mappoint#154</a>
+            <a href="../MNU_mappoint.html#155">MNU_mappoint#155</a>
+            <a href="../MNU_mappoint.html#156">MNU_mappoint#156</a>
+            <a href="../MNU_mappoint.html#157">MNU_mappoint#157</a>
+            <a href="../MNU_mappoint.html#158">MNU_mappoint#158</a>
+            <a href="../MNU_mappoint.html#159">MNU_mappoint#159</a>
+            <a href="../MNU_mappoint.html#160">MNU_mappoint#160</a>
+            <a href="../MNU_mappoint.html#161">MNU_mappoint#161</a>
+            <a href="../MNU_mappoint.html#162">MNU_mappoint#162</a>
+            <a href="scmarkerlist.html#2">scmarkerlist#2</a>
+            <a href="scmarkerlist.html#3">scmarkerlist#3</a>
+            <a href="scmarkerlist.html#114">scmarkerlist#114</a>
+            <a href="scmarkerlist.html#241">scmarkerlist#241</a>
+            <a href="scmarkerlist.html#242">scmarkerlist#242</a>
+            <a href="scmarkerlist.html#243">scmarkerlist#243</a>
+            <a href="scmarkerlist.html#244">scmarkerlist#244</a>
+            <a href="scmarkerlist.html#245">scmarkerlist#245</a>
+            <a href="scmarkerlist.html#246">scmarkerlist#246</a>
+            <a href="scmarkerlist.html#248">scmarkerlist#248</a>
+            <a href="scmarkerlist.html#249">scmarkerlist#249</a>
+            <a href="scmarkerlist.html#250">scmarkerlist#250</a>
+            <a href="scmarkerlist.html#251">scmarkerlist#251</a>
+            <a href="scmarkerlist.html#252">scmarkerlist#252</a>
+            <a href="scmarkerlist.html#254">scmarkerlist#254</a>
+            <a href="scmarkerlist.html#256">scmarkerlist#256</a>
+            <a href="scmarkerlist.html#257">scmarkerlist#257</a>
+            <a href="scmarkerlist.html#319">scmarkerlist#319</a>
+            <a href="scmarkerlist.html#323">scmarkerlist#323</a>
+            <a href="scmarkerlist.html#333">scmarkerlist#333</a>
+            <a href="scmarkerlist.html#339">scmarkerlist#339</a>
+          </details>
+        </td>
+        <td class="side">Sword Valley</td>
+        <td>ma1401</td>
+        <td>90</td>
+        <td>5</td>
+        <td>60</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>51</td>
+        <td>The great sword of the Mechonis pierces the@Bionis. A place where Homs and Mechon clash.</td>
+        <td>48</td>
+        <td>274</td>
+        <td>-160</td>
+        <td>32</td>
+        <td>-121</td>
+        <td>-37</td>
+        <td>15</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>10</td>
+        <td>50</td>
+        <td>18</td>
+        <td>17</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>45 refs</summary>
+            <a href="FLD_valpoplist.html#102">FLD_valpoplist#102</a>
+            <a href="ITM_collectlist.html#170">ITM_collectlist#Wheel Lurker</a>
+            <a href="ITM_collectlist.html#171">ITM_collectlist#Ultramarine Ant</a>
+            <a href="ITM_collectlist.html#235">ITM_collectlist#Locust Spring</a>
+            <a href="ITM_collectlist.html#236">ITM_collectlist#Art Core Coil</a>
+            <a href="ITM_collectlist.html#237">ITM_collectlist#Tail Antenna</a>
+            <a href="ITM_collectlist.html#286">ITM_collectlist#Hunger Crash</a>
+            <a href="ITM_collectlist.html#287">ITM_collectlist#Splish Splash</a>
+            <a href="ITM_collectlist.html#315">ITM_collectlist#40000</a>
+            <a href="landmarklist.html#294">landmarklist#Ether Influx Conduit</a>
+            <a href="landmarklist.html#295">landmarklist#Main Control Room</a>
+            <a href="landmarklist.html#296">landmarklist#Ether Blast Furnace</a>
+            <a href="landmarklist.html#297">landmarklist#Preparation Bay</a>
+            <a href="landmarklist.html#298">landmarklist#Fortress Depths</a>
+            <a href="landmarklist.html#299">landmarklist#Main Maintenance Bay</a>
+            <a href="landmarklist.html#300">landmarklist#1st Fuel Supply Room</a>
+            <a href="landmarklist.html#301">landmarklist#2nd Fuel Supply Room</a>
+            <a href="landmarklist.html#302">landmarklist#3rd Fuel Supply Room</a>
+            <a href="landmarklist.html#303">landmarklist#1st Turbine Room</a>
+            <a href="landmarklist.html#304">landmarklist#2nd Turbine Room</a>
+            <a href="landmarklist.html#305">landmarklist#Blast Furnace Conduit</a>
+            <a href="landmarklist.html#306">landmarklist#Ether Input Stream</a>
+            <a href="landmarklist.html#307">landmarklist#Piston Control Room</a>
+            <a href="landmarklist.html#308">landmarklist#Face Maintenance Bay</a>
+            <a href="../MNU_mappoint.html#163">MNU_mappoint#163</a>
+            <a href="../MNU_mappoint.html#164">MNU_mappoint#164</a>
+            <a href="../MNU_mappoint.html#165">MNU_mappoint#165</a>
+            <a href="../MNU_mappoint.html#166">MNU_mappoint#166</a>
+            <a href="../MNU_mappoint.html#167">MNU_mappoint#167</a>
+            <a href="../MNU_mappoint.html#168">MNU_mappoint#168</a>
+            <a href="../MNU_mappoint.html#169">MNU_mappoint#169</a>
+            <a href="../MNU_mappoint.html#170">MNU_mappoint#170</a>
+            <a href="../MNU_mappoint.html#171">MNU_mappoint#171</a>
+            <a href="../MNU_mappoint.html#172">MNU_mappoint#172</a>
+            <a href="../MNU_mappoint.html#173">MNU_mappoint#173</a>
+            <a href="scmarkerlist.html#247">scmarkerlist#247</a>
+            <a href="scmarkerlist.html#255">scmarkerlist#255</a>
+            <a href="scmarkerlist.html#258">scmarkerlist#258</a>
+            <a href="scmarkerlist.html#259">scmarkerlist#259</a>
+            <a href="scmarkerlist.html#260">scmarkerlist#260</a>
+            <a href="scmarkerlist.html#261">scmarkerlist#261</a>
+            <a href="scmarkerlist.html#262">scmarkerlist#262</a>
+            <a href="scmarkerlist.html#263">scmarkerlist#263</a>
+            <a href="scmarkerlist.html#264">scmarkerlist#264</a>
+            <a href="scmarkerlist.html#265">scmarkerlist#265</a>
+          </details>
+        </td>
+        <td class="side">Galahad Fortress</td>
+        <td>ma1501</td>
+        <td>80</td>
+        <td>5</td>
+        <td>70</td>
+        <td>50</td>
+        <td>319</td>
+        <td>0</td>
+        <td>52</td>
+        <td>Fortress stronghold on Mechonis. Torrents of@Bionis Ether flow inward via the great sword.</td>
+        <td>9</td>
+        <td>282</td>
+        <td>352</td>
+        <td>32</td>
+        <td>215</td>
+        <td>0</td>
+        <td>16</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>98 refs</summary>
+            <a href="FLD_valpoplist.html#76">FLD_valpoplist#76</a>
+            <a href="FLD_valpoplist.html#82">FLD_valpoplist#82</a>
+            <a href="FLD_valpoplist.html#83">FLD_valpoplist#83</a>
+            <a href="FLD_valpoplist.html#84">FLD_valpoplist#84</a>
+            <a href="FLD_valpoplist.html#85">FLD_valpoplist#85</a>
+            <a href="ITM_collectlist.html#27">ITM_collectlist#Sour Turnip</a>
+            <a href="ITM_collectlist.html#28">ITM_collectlist#Golden Beetroot</a>
+            <a href="ITM_collectlist.html#66">ITM_collectlist#White Plum</a>
+            <a href="ITM_collectlist.html#67">ITM_collectlist#Ice Kiwi Fruit</a>
+            <a href="ITM_collectlist.html#68">ITM_collectlist#Spicy Papaya</a>
+            <a href="ITM_collectlist.html#69">ITM_collectlist#Large Mango</a>
+            <a href="ITM_collectlist.html#135">ITM_collectlist#Oil Oyster</a>
+            <a href="ITM_collectlist.html#136">ITM_collectlist#Dark Fish</a>
+            <a href="ITM_collectlist.html#137">ITM_collectlist#Ether Penguin</a>
+            <a href="ITM_collectlist.html#138">ITM_collectlist#Rainbow Slug</a>
+            <a href="ITM_collectlist.html#206">ITM_collectlist#Poisonous Coral</a>
+            <a href="ITM_collectlist.html#207">ITM_collectlist#Poison Ivy</a>
+            <a href="ITM_collectlist.html#208">ITM_collectlist#Amber Leaf</a>
+            <a href="ITM_collectlist.html#238">ITM_collectlist#Warning Lamp</a>
+            <a href="ITM_collectlist.html#239">ITM_collectlist#Digital Filament</a>
+            <a href="ITM_collectlist.html#288">ITM_collectlist#Star Cute</a>
+            <a href="ITM_collectlist.html#289">ITM_collectlist#Summer Star</a>
+            <a href="ITM_collectlist.html#316">ITM_collectlist#50000</a>
+            <a href="landmarklist.html#309">landmarklist#Wreckage Beach</a>
+            <a href="landmarklist.html#310">landmarklist#Ulna Passage</a>
+            <a href="landmarklist.html#311">landmarklist#Radiocarpea</a>
+            <a href="landmarklist.html#312">landmarklist#Inlet Beach</a>
+            <a href="landmarklist.html#313">landmarklist#Junks</a>
+            <a href="landmarklist.html#314">landmarklist#Giant Mechon Debris</a>
+            <a href="landmarklist.html#315">landmarklist#Black Wreckage</a>
+            <a href="landmarklist.html#316">landmarklist#Connecting Bridge</a>
+            <a href="landmarklist.html#317">landmarklist#Digit 2 Plain</a>
+            <a href="landmarklist.html#318">landmarklist#Rotating Bulkhead</a>
+            <a href="landmarklist.html#319">landmarklist#Distant Fingertip</a>
+            <a href="landmarklist.html#320">landmarklist#Silver Wreckage</a>
+            <a href="landmarklist.html#321">landmarklist#Zakt Spring</a>
+            <a href="landmarklist.html#322">landmarklist#Jifum Beach</a>
+            <a href="landmarklist.html#323">landmarklist#Transformer Area</a>
+            <a href="landmarklist.html#324">landmarklist#Power Pipe Ruins</a>
+            <a href="landmarklist.html#325">landmarklist#5th Pulse Zone</a>
+            <a href="landmarklist.html#326">landmarklist#Hidden Machina Village</a>
+            <a href="landmarklist.html#327">landmarklist#Radiocarpea Coast</a>
+            <a href="landmarklist.html#328">landmarklist#Digit 1</a>
+            <a href="landmarklist.html#329">landmarklist#Digit 1 Crevasse</a>
+            <a href="landmarklist.html#330">landmarklist#Digit 5 Beach</a>
+            <a href="landmarklist.html#331">landmarklist#Ether Exhaust System</a>
+            <a href="landmarklist.html#332">landmarklist#Digit 5</a>
+            <a href="landmarklist.html#333">landmarklist#Digit 4</a>
+            <a href="landmarklist.html#334">landmarklist#Digit 3</a>
+            <a href="landmarklist.html#335">landmarklist#Digit 2</a>
+            <a href="landmarklist.html#336">landmarklist#Ether Light</a>
+            <a href="../MNU_mappoint.html#174">MNU_mappoint#174</a>
+            <a href="../MNU_mappoint.html#175">MNU_mappoint#175</a>
+            <a href="../MNU_mappoint.html#176">MNU_mappoint#176</a>
+            <a href="../MNU_mappoint.html#177">MNU_mappoint#177</a>
+            <a href="../MNU_mappoint.html#178">MNU_mappoint#178</a>
+            <a href="../MNU_mappoint.html#179">MNU_mappoint#179</a>
+            <a href="../MNU_mappoint.html#180">MNU_mappoint#180</a>
+            <a href="../MNU_mappoint.html#181">MNU_mappoint#181</a>
+            <a href="../MNU_mappoint.html#182">MNU_mappoint#182</a>
+            <a href="scmarkerlist.html#268">scmarkerlist#268</a>
+            <a href="scmarkerlist.html#269">scmarkerlist#269</a>
+            <a href="scmarkerlist.html#270">scmarkerlist#270</a>
+            <a href="scmarkerlist.html#271">scmarkerlist#271</a>
+            <a href="scmarkerlist.html#273">scmarkerlist#273</a>
+            <a href="scmarkerlist.html#274">scmarkerlist#274</a>
+            <a href="scmarkerlist.html#275">scmarkerlist#275</a>
+            <a href="scmarkerlist.html#276">scmarkerlist#276</a>
+            <a href="scmarkerlist.html#277">scmarkerlist#277</a>
+            <a href="scmarkerlist.html#278">scmarkerlist#278</a>
+            <a href="scmarkerlist.html#279">scmarkerlist#279</a>
+            <a href="scmarkerlist.html#280">scmarkerlist#280</a>
+            <a href="scmarkerlist.html#281">scmarkerlist#281</a>
+            <a href="scmarkerlist.html#282">scmarkerlist#282</a>
+            <a href="scmarkerlist.html#283">scmarkerlist#283</a>
+            <a href="scmarkerlist.html#284">scmarkerlist#284</a>
+            <a href="scmarkerlist.html#285">scmarkerlist#285</a>
+            <a href="scmarkerlist.html#286">scmarkerlist#286</a>
+            <a href="scmarkerlist.html#287">scmarkerlist#287</a>
+            <a href="scmarkerlist.html#288">scmarkerlist#288</a>
+            <a href="scmarkerlist.html#289">scmarkerlist#289</a>
+            <a href="scmarkerlist.html#290">scmarkerlist#290</a>
+            <a href="scmarkerlist.html#291">scmarkerlist#291</a>
+            <a href="scmarkerlist.html#292">scmarkerlist#292</a>
+            <a href="scmarkerlist.html#294">scmarkerlist#294</a>
+            <a href="scmarkerlist.html#295">scmarkerlist#295</a>
+            <a href="scmarkerlist.html#296">scmarkerlist#296</a>
+            <a href="scmarkerlist.html#297">scmarkerlist#297</a>
+            <a href="scmarkerlist.html#298">scmarkerlist#298</a>
+            <a href="scmarkerlist.html#299">scmarkerlist#299</a>
+            <a href="scmarkerlist.html#300">scmarkerlist#300</a>
+            <a href="scmarkerlist.html#301">scmarkerlist#301</a>
+            <a href="scmarkerlist.html#303">scmarkerlist#303</a>
+            <a href="scmarkerlist.html#304">scmarkerlist#304</a>
+            <a href="scmarkerlist.html#340">scmarkerlist#340</a>
+            <a href="scmarkerlist.html#341">scmarkerlist#341</a>
+            <a href="scmarkerlist.html#342">scmarkerlist#342</a>
+            <a href="scmarkerlist.html#343">scmarkerlist#343</a>
+          </details>
+        </td>
+        <td class="side">Fallen Arm</td>
+        <td>ma1601</td>
+        <td>90</td>
+        <td>8</td>
+        <td>60</td>
+        <td>50</td>
+        <td>322</td>
+        <td>0</td>
+        <td>53</td>
+        <td>Arm of the Mechonis, severed by the Bionis in@the Great Battle. Rust now covers the arm.</td>
+        <td>32</td>
+        <td>233</td>
+        <td>288</td>
+        <td>160</td>
+        <td>180</td>
+        <td>-97</td>
+        <td>17</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>2</td>
+        <td>1</td>
+        <td>60</td>
+        <td>521</td>
+        <td>-551</td>
+        <td>-58</td>
+        <td>283</td>
+        <td>1000</td>
+        <td>3</td>
+        <td>1</td>
+        <td>48</td>
+        <td>641</td>
+        <td>-551</td>
+        <td>-58</td>
+        <td>283</td>
+        <td>1000</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>269</td>
+        <td>288</td>
+        <td>269</td>
+        <td>288</td>
+        <td>20</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>ma1602</td>
+        <td>90</td>
+        <td>10</td>
+        <td>30</td>
+        <td>50</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>32</td>
+        <td>233</td>
+        <td>288</td>
+        <td>160</td>
+        <td>180</td>
+        <td>-97</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>7</td>
+        <td>30</td>
+        <td>18</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>120</td>
+        <td>1025</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>3</td>
+        <td>120</td>
+        <td>33</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>76 refs</summary>
+            <a href="FLD_valpoplist.html#77">FLD_valpoplist#77</a>
+            <a href="FLD_valpoplist.html#78">FLD_valpoplist#78</a>
+            <a href="FLD_valpoplist.html#79">FLD_valpoplist#79</a>
+            <a href="FLD_valpoplist.html#80">FLD_valpoplist#80</a>
+            <a href="ITM_collectlist.html#29">ITM_collectlist#Juicy Steakplant</a>
+            <a href="ITM_collectlist.html#30">ITM_collectlist#Acerola Pea</a>
+            <a href="ITM_collectlist.html#31">ITM_collectlist#Energy Aubergine</a>
+            <a href="ITM_collectlist.html#32">ITM_collectlist#Sweet Pepper</a>
+            <a href="ITM_collectlist.html#104">ITM_collectlist#Azure Hollyhock</a>
+            <a href="ITM_collectlist.html#105">ITM_collectlist#Utopia Crocus</a>
+            <a href="ITM_collectlist.html#172">ITM_collectlist#Scarlet Crawler</a>
+            <a href="ITM_collectlist.html#173">ITM_collectlist#Shiny Scarab</a>
+            <a href="ITM_collectlist.html#174">ITM_collectlist#Water Boatman</a>
+            <a href="ITM_collectlist.html#209">ITM_collectlist#Ivy Nest</a>
+            <a href="ITM_collectlist.html#210">ITM_collectlist#Mossy Panel</a>
+            <a href="ITM_collectlist.html#211">ITM_collectlist#Bronze Wood</a>
+            <a href="ITM_collectlist.html#240">ITM_collectlist#Retro Diode</a>
+            <a href="ITM_collectlist.html#241">ITM_collectlist#Modern Blue Gear</a>
+            <a href="ITM_collectlist.html#242">ITM_collectlist#Snow Transistor</a>
+            <a href="ITM_collectlist.html#290">ITM_collectlist#Tweet Tweet</a>
+            <a href="ITM_collectlist.html#291">ITM_collectlist#Flame Frame</a>
+            <a href="ITM_collectlist.html#317">ITM_collectlist#60000</a>
+            <a href="landmarklist.html#337">landmarklist#Left Leg Cooling Outlet</a>
+            <a href="landmarklist.html#338">landmarklist#GF Main Power Switch</a>
+            <a href="landmarklist.html#339">landmarklist#1F Main Power Switch</a>
+            <a href="landmarklist.html#340">landmarklist#3F Main Power Switch</a>
+            <a href="landmarklist.html#341">landmarklist#Lower Bulkhead Bridge</a>
+            <a href="landmarklist.html#342">landmarklist#Upper Bulkhead Bridge</a>
+            <a href="landmarklist.html#343">landmarklist#4F Main Power Switch</a>
+            <a href="landmarklist.html#344">landmarklist#1st Zebrai Bulkhead</a>
+            <a href="landmarklist.html#345">landmarklist#2nd Gamalt Bulkhead</a>
+            <a href="landmarklist.html#346">landmarklist#Great Battle Scar</a>
+            <a href="landmarklist.html#347">landmarklist#Machina Refuge</a>
+            <a href="landmarklist.html#348">landmarklist#1st Lift - B1F</a>
+            <a href="landmarklist.html#349">landmarklist#1st Lift - GF</a>
+            <a href="landmarklist.html#350">landmarklist#2nd Lift - GF</a>
+            <a href="landmarklist.html#351">landmarklist#2nd Lift - 1F</a>
+            <a href="landmarklist.html#352">landmarklist#2F Observation Post</a>
+            <a href="landmarklist.html#353">landmarklist#3rd Lift - 2F</a>
+            <a href="landmarklist.html#354">landmarklist#3rd Lift Engine Room</a>
+            <a href="landmarklist.html#355">landmarklist#3rd Lift - 3F</a>
+            <a href="landmarklist.html#356">landmarklist#Bulkhead Controls</a>
+            <a href="landmarklist.html#357">landmarklist#Ether Gear Store</a>
+            <a href="landmarklist.html#358">landmarklist#Patella Exhaust</a>
+            <a href="landmarklist.html#359">landmarklist#Power Supply Area 1</a>
+            <a href="landmarklist.html#360">landmarklist#Power Supply Area 2</a>
+            <a href="landmarklist.html#361">landmarklist#High-Velocity Lift</a>
+            <a href="landmarklist.html#362">landmarklist#Spent Fuel Tank</a>
+            <a href="../MNU_mappoint.html#183">MNU_mappoint#183</a>
+            <a href="../MNU_mappoint.html#184">MNU_mappoint#184</a>
+            <a href="../MNU_mappoint.html#185">MNU_mappoint#185</a>
+            <a href="../MNU_mappoint.html#186">MNU_mappoint#186</a>
+            <a href="../MNU_mappoint.html#187">MNU_mappoint#187</a>
+            <a href="../MNU_mappoint.html#188">MNU_mappoint#188</a>
+            <a href="../MNU_mappoint.html#189">MNU_mappoint#189</a>
+            <a href="../MNU_mappoint.html#190">MNU_mappoint#190</a>
+            <a href="../MNU_mappoint.html#191">MNU_mappoint#191</a>
+            <a href="../MNU_mappoint.html#192">MNU_mappoint#192</a>
+            <a href="../MNU_mappoint.html#193">MNU_mappoint#193</a>
+            <a href="../MNU_mappoint.html#194">MNU_mappoint#194</a>
+            <a href="../MNU_mappoint.html#195">MNU_mappoint#195</a>
+            <a href="../MNU_mappoint.html#196">MNU_mappoint#196</a>
+            <a href="../MNU_mappoint.html#197">MNU_mappoint#197</a>
+            <a href="../MNU_mappoint.html#198">MNU_mappoint#198</a>
+            <a href="scmarkerlist.html#305">scmarkerlist#305</a>
+            <a href="scmarkerlist.html#306">scmarkerlist#306</a>
+            <a href="scmarkerlist.html#307">scmarkerlist#307</a>
+            <a href="scmarkerlist.html#308">scmarkerlist#308</a>
+            <a href="scmarkerlist.html#309">scmarkerlist#309</a>
+            <a href="scmarkerlist.html#311">scmarkerlist#311</a>
+            <a href="scmarkerlist.html#312">scmarkerlist#312</a>
+            <a href="scmarkerlist.html#313">scmarkerlist#313</a>
+            <a href="scmarkerlist.html#314">scmarkerlist#314</a>
+            <a href="scmarkerlist.html#317">scmarkerlist#317</a>
+            <a href="scmarkerlist.html#318">scmarkerlist#318</a>
+            <a href="scmarkerlist.html#320">scmarkerlist#320</a>
+          </details>
+        </td>
+        <td class="side">Mechonis Field</td>
+        <td>ma1701</td>
+        <td>110</td>
+        <td>5</td>
+        <td>80</td>
+        <td>50</td>
+        <td>322</td>
+        <td>0</td>
+        <td>55</td>
+        <td>Systems supporting the body of the Mechonis are@located here. Numerous lifts travel up and down.</td>
+        <td>25</td>
+        <td>180</td>
+        <td>-32</td>
+        <td>288</td>
+        <td>-23</td>
+        <td>-191</td>
+        <td>18</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>ma1801</td>
+        <td>90</td>
+        <td>10</td>
+        <td>30</td>
+        <td>50</td>
+        <td>0</td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>7</td>
+        <td>30</td>
+        <td>18</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>69 refs</summary>
+            <a href="FLD_valpoplist.html#81">FLD_valpoplist#81</a>
+            <a href="ITM_collectlist.html#70">ITM_collectlist#Juicy Blueberry</a>
+            <a href="ITM_collectlist.html#71">ITM_collectlist#Sweet Lime</a>
+            <a href="ITM_collectlist.html#72">ITM_collectlist#Spicy Banana</a>
+            <a href="ITM_collectlist.html#106">ITM_collectlist#Lewisia Silver</a>
+            <a href="ITM_collectlist.html#107">ITM_collectlist#Freesia Cyst</a>
+            <a href="ITM_collectlist.html#108">ITM_collectlist#Bellflower Crystal</a>
+            <a href="ITM_collectlist.html#175">ITM_collectlist#Electric Cricket</a>
+            <a href="ITM_collectlist.html#176">ITM_collectlist#Scissor Bug</a>
+            <a href="ITM_collectlist.html#212">ITM_collectlist#Missing Tree</a>
+            <a href="ITM_collectlist.html#213">ITM_collectlist#Fortune Feather</a>
+            <a href="ITM_collectlist.html#243">ITM_collectlist#Fancy Bolt</a>
+            <a href="ITM_collectlist.html#244">ITM_collectlist#Blue Light Amp</a>
+            <a href="ITM_collectlist.html#245">ITM_collectlist#Fairy Tale Diode</a>
+            <a href="ITM_collectlist.html#246">ITM_collectlist#Grape Spring</a>
+            <a href="ITM_collectlist.html#292">ITM_collectlist#Eryth Blue</a>
+            <a href="ITM_collectlist.html#293">ITM_collectlist#Dramatic Night</a>
+            <a href="ITM_collectlist.html#318">ITM_collectlist#65535</a>
+            <a href="landmarklist.html#363">landmarklist#Factory Transporter</a>
+            <a href="landmarklist.html#364">landmarklist#Central Tower</a>
+            <a href="landmarklist.html#365">landmarklist#1st Control Platform</a>
+            <a href="landmarklist.html#366">landmarklist#2nd Control Platform</a>
+            <a href="landmarklist.html#367">landmarklist#3rd Control Platform</a>
+            <a href="landmarklist.html#368">landmarklist#4th Control Platform</a>
+            <a href="landmarklist.html#369">landmarklist#Meyneth Statue</a>
+            <a href="landmarklist.html#370">landmarklist#Shrine Transporter</a>
+            <a href="landmarklist.html#371">landmarklist#Meyneth Shrine</a>
+            <a href="landmarklist.html#372">landmarklist#Seven Sage Cloister</a>
+            <a href="landmarklist.html#373">landmarklist#Residential District 1</a>
+            <a href="landmarklist.html#374">landmarklist#Data Centre</a>
+            <a href="landmarklist.html#375">landmarklist#Residential District 2</a>
+            <a href="landmarklist.html#376">landmarklist#Calcos Pillar</a>
+            <a href="landmarklist.html#377">landmarklist#Helas Pillar</a>
+            <a href="landmarklist.html#378">landmarklist#Dios Pillar</a>
+            <a href="landmarklist.html#379">landmarklist#Cleas Pillar</a>
+            <a href="landmarklist.html#380">landmarklist#Zedonia Plaza</a>
+            <a href="landmarklist.html#381">landmarklist#Telethia Bridge</a>
+            <a href="landmarklist.html#382">landmarklist#Legislative District</a>
+            <a href="landmarklist.html#383">landmarklist#Judicial District</a>
+            <a href="landmarklist.html#384">landmarklist#Worship Terrace</a>
+            <a href="landmarklist.html#385">landmarklist#Meyneth Cloister</a>
+            <a href="../MNU_mappoint.html#199">MNU_mappoint#199</a>
+            <a href="../MNU_mappoint.html#200">MNU_mappoint#200</a>
+            <a href="../MNU_mappoint.html#201">MNU_mappoint#201</a>
+            <a href="../MNU_mappoint.html#202">MNU_mappoint#202</a>
+            <a href="../MNU_mappoint.html#203">MNU_mappoint#203</a>
+            <a href="../MNU_mappoint.html#204">MNU_mappoint#204</a>
+            <a href="../MNU_mappoint.html#205">MNU_mappoint#205</a>
+            <a href="../MNU_mappoint.html#206">MNU_mappoint#206</a>
+            <a href="../MNU_mappoint.html#207">MNU_mappoint#207</a>
+            <a href="../MNU_mappoint.html#208">MNU_mappoint#208</a>
+            <a href="../MNU_mappoint.html#209">MNU_mappoint#209</a>
+            <a href="../MNU_mappoint.html#210">MNU_mappoint#210</a>
+            <a href="../MNU_mappoint.html#211">MNU_mappoint#211</a>
+            <a href="scmarkerlist.html#316">scmarkerlist#316</a>
+            <a href="scmarkerlist.html#324">scmarkerlist#324</a>
+            <a href="scmarkerlist.html#325">scmarkerlist#325</a>
+            <a href="scmarkerlist.html#326">scmarkerlist#326</a>
+            <a href="scmarkerlist.html#327">scmarkerlist#327</a>
+            <a href="scmarkerlist.html#328">scmarkerlist#328</a>
+            <a href="scmarkerlist.html#329">scmarkerlist#329</a>
+            <a href="scmarkerlist.html#330">scmarkerlist#330</a>
+            <a href="scmarkerlist.html#331">scmarkerlist#331</a>
+            <a href="scmarkerlist.html#332">scmarkerlist#332</a>
+            <a href="scmarkerlist.html#334">scmarkerlist#334</a>
+            <a href="scmarkerlist.html#335">scmarkerlist#335</a>
+            <a href="scmarkerlist.html#336">scmarkerlist#336</a>
+            <a href="scmarkerlist.html#337">scmarkerlist#337</a>
+            <a href="scmarkerlist.html#338">scmarkerlist#338</a>
+          </details>
+        </td>
+        <td class="side">Agniratha</td>
+        <td>ma1901</td>
+        <td>80</td>
+        <td>5</td>
+        <td>70</td>
+        <td>50</td>
+        <td>322</td>
+        <td>0</td>
+        <td>56</td>
+        <td>Once prosperous capital of the Machina. It is the@site of a shrine dedicated to Meyneth.</td>
+        <td>18</td>
+        <td>286</td>
+        <td>608</td>
+        <td>32</td>
+        <td>412</td>
+        <td>0</td>
+        <td>20</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>356</td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>74 refs</summary>
+            <a href="ITM_collectlist.html#33">ITM_collectlist#Meaty Potato</a>
+            <a href="ITM_collectlist.html#34">ITM_collectlist#Blue Root</a>
+            <a href="ITM_collectlist.html#139">ITM_collectlist#Prism Centipede</a>
+            <a href="ITM_collectlist.html#140">ITM_collectlist#Cable Mouse</a>
+            <a href="ITM_collectlist.html#141">ITM_collectlist#Oil Fox</a>
+            <a href="ITM_collectlist.html#177">ITM_collectlist#Dew Beetle</a>
+            <a href="ITM_collectlist.html#178">ITM_collectlist#Glider Cockroach</a>
+            <a href="ITM_collectlist.html#214">ITM_collectlist#White Styrene</a>
+            <a href="ITM_collectlist.html#215">ITM_collectlist#Black Styrene</a>
+            <a href="ITM_collectlist.html#216">ITM_collectlist#Blood Oil</a>
+            <a href="ITM_collectlist.html#247">ITM_collectlist#Angel Engine X</a>
+            <a href="ITM_collectlist.html#248">ITM_collectlist#Leaf Coil</a>
+            <a href="ITM_collectlist.html#249">ITM_collectlist#Warrior Screw</a>
+            <a href="ITM_collectlist.html#294">ITM_collectlist#Smoke Cylinder</a>
+            <a href="ITM_collectlist.html#295">ITM_collectlist#Sacred Panther</a>
+            <a href="ITM_collectlist.html#296">ITM_collectlist#Parts Noble</a>
+            <a href="landmarklist.html#386">landmarklist#Port Terminal</a>
+            <a href="landmarklist.html#387">landmarklist#Control Tower</a>
+            <a href="landmarklist.html#388">landmarklist#Central Warehouse Lift</a>
+            <a href="landmarklist.html#389">landmarklist#Factory Vent</a>
+            <a href="landmarklist.html#390">landmarklist#Tower Boarding Gate</a>
+            <a href="landmarklist.html#391">landmarklist#Agniratha Transporter</a>
+            <a href="landmarklist.html#392">landmarklist#Regeneration Control</a>
+            <a href="landmarklist.html#393">landmarklist#Ventilation Conduit</a>
+            <a href="landmarklist.html#394">landmarklist#Bridge to Apocrypha</a>
+            <a href="landmarklist.html#395">landmarklist#Central Gate</a>
+            <a href="landmarklist.html#396">landmarklist#Landing Strip 1</a>
+            <a href="landmarklist.html#397">landmarklist#Landing Strip 2</a>
+            <a href="landmarklist.html#398">landmarklist#Maintenance Wing</a>
+            <a href="landmarklist.html#399">landmarklist#Storage Depot</a>
+            <a href="landmarklist.html#400">landmarklist#Central Lift</a>
+            <a href="landmarklist.html#401">landmarklist#Central Tower Lift</a>
+            <a href="landmarklist.html#402">landmarklist#Main Factory Gate</a>
+            <a href="landmarklist.html#403">landmarklist#Large Mechon Store</a>
+            <a href="landmarklist.html#404">landmarklist#Training Ground Roof</a>
+            <a href="landmarklist.html#405">landmarklist#Mechon Factory</a>
+            <a href="landmarklist.html#406">landmarklist#Central Tower Roof</a>
+            <a href="landmarklist.html#407">landmarklist#Face Maintenance Bay</a>
+            <a href="landmarklist.html#408">landmarklist#Apocrypha Generator</a>
+            <a href="landmarklist.html#409">landmarklist#Maintenance Entrance 1</a>
+            <a href="../MNU_mappoint.html#212">MNU_mappoint#212</a>
+            <a href="../MNU_mappoint.html#213">MNU_mappoint#213</a>
+            <a href="../MNU_mappoint.html#214">MNU_mappoint#214</a>
+            <a href="../MNU_mappoint.html#215">MNU_mappoint#215</a>
+            <a href="../MNU_mappoint.html#216">MNU_mappoint#216</a>
+            <a href="../MNU_mappoint.html#217">MNU_mappoint#217</a>
+            <a href="../MNU_mappoint.html#218">MNU_mappoint#218</a>
+            <a href="../MNU_mappoint.html#219">MNU_mappoint#219</a>
+            <a href="../MNU_mappoint.html#220">MNU_mappoint#220</a>
+            <a href="../MNU_mappoint.html#221">MNU_mappoint#221</a>
+            <a href="../MNU_mappoint.html#222">MNU_mappoint#222</a>
+            <a href="../MNU_mappoint.html#223">MNU_mappoint#223</a>
+            <a href="../MNU_mappoint.html#224">MNU_mappoint#224</a>
+            <a href="../MNU_mappoint.html#225">MNU_mappoint#225</a>
+            <a href="../MNU_mappoint.html#226">MNU_mappoint#226</a>
+            <a href="../MNU_mappoint.html#227">MNU_mappoint#227</a>
+            <a href="../MNU_mappoint.html#228">MNU_mappoint#228</a>
+            <a href="../MNU_mappoint.html#229">MNU_mappoint#229</a>
+            <a href="../MNU_mappoint.html#230">MNU_mappoint#230</a>
+            <a href="../MNU_mappoint.html#231">MNU_mappoint#231</a>
+            <a href="../MNU_mappoint.html#232">MNU_mappoint#232</a>
+            <a href="scmarkerlist.html#229">scmarkerlist#229</a>
+            <a href="scmarkerlist.html#302">scmarkerlist#302</a>
+            <a href="scmarkerlist.html#321">scmarkerlist#321</a>
+            <a href="scmarkerlist.html#322">scmarkerlist#322</a>
+            <a href="scmarkerlist.html#347">scmarkerlist#347</a>
+            <a href="scmarkerlist.html#348">scmarkerlist#348</a>
+            <a href="scmarkerlist.html#349">scmarkerlist#349</a>
+            <a href="scmarkerlist.html#350">scmarkerlist#350</a>
+            <a href="scmarkerlist.html#351">scmarkerlist#351</a>
+            <a href="scmarkerlist.html#352">scmarkerlist#352</a>
+            <a href="scmarkerlist.html#353">scmarkerlist#353</a>
+            <a href="scmarkerlist.html#354">scmarkerlist#354</a>
+            <a href="scmarkerlist.html#362">scmarkerlist#362</a>
+          </details>
+        </td>
+        <td class="side">Central Factory</td>
+        <td>ma2001</td>
+        <td>120</td>
+        <td>5</td>
+        <td>90</td>
+        <td>50</td>
+        <td>322</td>
+        <td>0</td>
+        <td>57</td>
+        <td>Area where the Mechon are manufactured and@also where captured Homs are taken.</td>
+        <td>20</td>
+        <td>255</td>
+        <td>160</td>
+        <td>96</td>
+        <td>110</td>
+        <td>-52</td>
+        <td>19</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>40 refs</summary>
+            <a href="ITM_collectlist.html#35">ITM_collectlist#Sarsaparilla</a>
+            <a href="ITM_collectlist.html#36">ITM_collectlist#Black Liver Bean</a>
+            <a href="ITM_collectlist.html#142">ITM_collectlist#Blood Worm</a>
+            <a href="ITM_collectlist.html#143">ITM_collectlist#Azure Mouse</a>
+            <a href="ITM_collectlist.html#144">ITM_collectlist#Happy Duck</a>
+            <a href="ITM_collectlist.html#297">ITM_collectlist#Tap Tap Tap</a>
+            <a href="ITM_collectlist.html#298">ITM_collectlist#High Entia Jewel</a>
+            <a href="landmarklist.html#410">landmarklist#Terminal Trachea</a>
+            <a href="landmarklist.html#411">landmarklist#Upper Trachea</a>
+            <a href="landmarklist.html#412">landmarklist#Interior Landing Site</a>
+            <a href="landmarklist.html#413">landmarklist#Spinal Nerve Tower</a>
+            <a href="landmarklist.html#414">landmarklist#Pars Sympathica Tower</a>
+            <a href="landmarklist.html#415">landmarklist#Terminal Nerve Tower</a>
+            <a href="landmarklist.html#416">landmarklist#Heart Entrance</a>
+            <a href="landmarklist.html#417">landmarklist#First Lung</a>
+            <a href="landmarklist.html#418">landmarklist#Second Lung</a>
+            <a href="landmarklist.html#419">landmarklist#Third Lung</a>
+            <a href="landmarklist.html#420">landmarklist#Vein Crossroad</a>
+            <a href="landmarklist.html#421">landmarklist#Terminal Vein</a>
+            <a href="landmarklist.html#422">landmarklist#Venous Plexus</a>
+            <a href="landmarklist.html#423">landmarklist#Third Lung Bronchus</a>
+            <a href="landmarklist.html#424">landmarklist#Aortic Pathway</a>
+            <a href="../MNU_mappoint.html#233">MNU_mappoint#233</a>
+            <a href="../MNU_mappoint.html#234">MNU_mappoint#234</a>
+            <a href="../MNU_mappoint.html#235">MNU_mappoint#235</a>
+            <a href="../MNU_mappoint.html#236">MNU_mappoint#236</a>
+            <a href="../MNU_mappoint.html#237">MNU_mappoint#237</a>
+            <a href="../MNU_mappoint.html#238">MNU_mappoint#238</a>
+            <a href="../MNU_mappoint.html#239">MNU_mappoint#239</a>
+            <a href="../MNU_mappoint.html#240">MNU_mappoint#240</a>
+            <a href="../MNU_mappoint.html#241">MNU_mappoint#241</a>
+            <a href="../MNU_mappoint.html#242">MNU_mappoint#242</a>
+            <a href="../MNU_mappoint.html#243">MNU_mappoint#243</a>
+            <a href="scmarkerlist.html#113">scmarkerlist#113</a>
+            <a href="scmarkerlist.html#381">scmarkerlist#381</a>
+            <a href="scmarkerlist.html#382">scmarkerlist#382</a>
+            <a href="scmarkerlist.html#383">scmarkerlist#383</a>
+            <a href="scmarkerlist.html#384">scmarkerlist#384</a>
+            <a href="scmarkerlist.html#385">scmarkerlist#385</a>
+            <a href="scmarkerlist.html#386">scmarkerlist#386</a>
+          </details>
+        </td>
+        <td class="side">Bionis' Interior</td>
+        <td>ma2101</td>
+        <td>90</td>
+        <td>5</td>
+        <td>100</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>58</td>
+        <td>An area rich in organic components. Here, one@can truly feel that the Bionis is also a living being.</td>
+        <td>20</td>
+        <td>420</td>
+        <td>-32</td>
+        <td>-352</td>
+        <td>-38</td>
+        <td>220</td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>369</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>20 refs</summary>
+            <a href="ITM_collectlist.html#179">ITM_collectlist#Minute Mantis</a>
+            <a href="ITM_collectlist.html#180">ITM_collectlist#Love Beetle</a>
+            <a href="ITM_collectlist.html#250">ITM_collectlist#Golden Cog</a>
+            <a href="ITM_collectlist.html#251">ITM_collectlist#Angel Engine Y</a>
+            <a href="ITM_collectlist.html#252">ITM_collectlist#Thunder Compass</a>
+            <a href="ITM_collectlist.html#299">ITM_collectlist#Coin of Fortune</a>
+            <a href="ITM_collectlist.html#300">ITM_collectlist#Love Source</a>
+            <a href="landmarklist.html#425">landmarklist#Saturn</a>
+            <a href="landmarklist.html#426">landmarklist#Jupiter</a>
+            <a href="landmarklist.html#427">landmarklist#Mars</a>
+            <a href="landmarklist.html#428">landmarklist#Moon</a>
+            <a href="landmarklist.html#429">landmarklist#Sentient Genesis</a>
+            <a href="scmarkerlist.html#366">scmarkerlist#366</a>
+            <a href="scmarkerlist.html#373">scmarkerlist#373</a>
+            <a href="scmarkerlist.html#397">scmarkerlist#397</a>
+            <a href="scmarkerlist.html#398">scmarkerlist#398</a>
+            <a href="scmarkerlist.html#399">scmarkerlist#399</a>
+            <a href="scmarkerlist.html#400">scmarkerlist#400</a>
+            <a href="scmarkerlist.html#401">scmarkerlist#401</a>
+            <a href="scmarkerlist.html#402">scmarkerlist#402</a>
+          </details>
+        </td>
+        <td class="side">Memory Space</td>
+        <td>ma2201</td>
+        <td>90</td>
+        <td>5</td>
+        <td>50</td>
+        <td>50</td>
+        <td>321</td>
+        <td>0</td>
+        <td>59</td>
+        <td>A mysterious space etched with memories@ever since the Bionis came into existence.</td>
+        <td>20</td>
+        <td>301</td>
+        <td>32</td>
+        <td>-32</td>
+        <td>5</td>
+        <td>40</td>
+        <td>0</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>10 refs</summary>
+            <a href="landmarklist.html#430">landmarklist#Mechonis Core</a>
+            <a href="../MNU_mappoint.html#244">MNU_mappoint#244</a>
+            <a href="scmarkerlist.html#355">scmarkerlist#355</a>
+            <a href="scmarkerlist.html#356">scmarkerlist#356</a>
+            <a href="scmarkerlist.html#357">scmarkerlist#357</a>
+            <a href="scmarkerlist.html#358">scmarkerlist#358</a>
+            <a href="scmarkerlist.html#359">scmarkerlist#359</a>
+            <a href="scmarkerlist.html#360">scmarkerlist#360</a>
+            <a href="scmarkerlist.html#361">scmarkerlist#361</a>
+            <a href="scmarkerlist.html#363">scmarkerlist#363</a>
+          </details>
+        </td>
+        <td class="side">Mechonis Core</td>
+        <td>ma2301</td>
+        <td>255</td>
+        <td>5</td>
+        <td>255</td>
+        <td>50</td>
+        <td>322</td>
+        <td>0</td>
+        <td>60</td>
+        <td>Heart of the systems that control the Mechonis.@A large panoramic screen serves as its eye.</td>
+        <td>2</td>
+        <td>277</td>
+        <td>32</td>
+        <td>32</td>
+        <td>0</td>
+        <td>0</td>
+        <td>21</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>6 refs</summary>
+            <a href="landmarklist.html#431">landmarklist#Junks Deck</a>
+            <a href="scmarkerlist.html#344">scmarkerlist#344</a>
+            <a href="scmarkerlist.html#345">scmarkerlist#345</a>
+            <a href="scmarkerlist.html#346">scmarkerlist#346</a>
+            <a href="scmarkerlist.html#364">scmarkerlist#364</a>
+            <a href="scmarkerlist.html#365">scmarkerlist#365</a>
+          </details>
+        </td>
+        <td class="side">Junks</td>
+        <td>ma2401</td>
+        <td>250</td>
+        <td>5</td>
+        <td>200</td>
+        <td>50</td>
+        <td>318</td>
+        <td>404</td>
+        <td>61</td>
+        <td>Flying machine created using Mechon technology.@It also serves as the Machina control centre.</td>
+        <td>10</td>
+        <td>301</td>
+        <td>32</td>
+        <td>-32</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>17</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>344</td>
+        <td>346</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>ma0102</td>
+        <td>90</td>
+        <td>5</td>
+        <td>30</td>
+        <td>50</td>
+        <td>318</td>
+        <td>404</td>
+        <td>0</td>
+        <td></td>
+        <td>25</td>
+        <td>253</td>
+        <td>32</td>
+        <td>96</td>
+        <td>40</td>
+        <td>-58</td>
+        <td>0</td>
+        <td>5</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>19</td>
+        <td>0</td>
+        <td>13</td>
+        <td>0</td>
+        <td>120</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23</td>
+        <td>35</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

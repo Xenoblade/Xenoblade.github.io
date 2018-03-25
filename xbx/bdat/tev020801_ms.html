@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev020801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev020801_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev020801_SEL0011</td>
+        <td class="side">Ask Sarona about maps.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev020801_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev020801_SEL0021</td>
+        <td class="side">Ask Sarona if anything is troubling her.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev020801_SEL0031</td>
+        <td class="side">Ask Sarona about the Prospectors division.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev020801_SEL0051</td>
+        <td class="side">Ask Sarona for her thoughts on the Ma-non.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1011</td>
+        <td class="side">Ask Sarona for her opinion of the Ganglion.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1021</td>
+        <td class="side">Ask Sarona about recent developments.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1031</td>
+        <td class="side">Ask Sarona for her thoughts on[ST:n ]the Ganglion's weaponry.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1041</td>
+        <td class="side">Ask Sarona about conditions during the enemy attack.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1051</td>
+        <td class="side">Ask Sarona for her thoughts on the Wrothians.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1061</td>
+        <td class="side">Ask Sarona about her experiences with the Wrothians.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1071</td>
+        <td class="side">Ask Sarona about the Lifehold Core.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev020801_SEL1081</td>
+        <td class="side">Ask Sarona what she intends to do next.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0001</td>
+        <td class="side">Huh. You're that new crew member they found,[ST:n ]aren't you?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0002</td>
+        <td class="side">So what do you think? Isn't this town huge?[ST:n ]But as big as it seems, Mira is a whole lot bigger—[ST:n ]so don't go running off half-cocked.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0003</td>
+        <td class="side">That comm device you're holding can display a map[ST:n ]of the surrounding area. If you lose your bearings,[ST:n ]just fire it up and take a look.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0004</td>
+        <td class="side">The triangle is your current position, the green dots[ST:n ]are your fellow team members, and the white dots[ST:n ]are people like me. As for Skells...[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0005</td>
+        <td class="side">Well, you don't have one of those yet, so never mind![ST:n ]But when you do get one, take a look at your map[ST:n ]and see for yourself.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0008</td>
+        <td class="side">You've heard of Talon Rock, right? That big rocky[ST:n ]mountain in the northern part of Primordia? It's that[ST:n ]big spire you can even see from the city.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0009</td>
+        <td class="side">That area hasn't been fully explored yet, so Eleonora[ST:n ]is always nagging us to get out there and do a survey.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0010</td>
+        <td class="side">But the Talon Rock mountain is swarming with[ST:n ]dangerous indigens, which makes it a big hassle.[ST:n ]We've been kicking that can down the road forever.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0011</td>
+        <td class="side">But now they aren't even offering us any other missions,[ST:n ]so we basically have no choice BUT to do it.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0012</td>
+        <td class="side">That Eleonora has the face of an angel, but she's[ST:n ]doing the devil's work in that receptionist's guise.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0020</td>
+        <td class="side">As a member of the Prospectors division, my primary[ST:n ]duty is finding and collecting the minerals and other[ST:n ]resources of Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0021</td>
+        <td class="side">To do that, we explore each region, plant data probes,[ST:n ]and perform other related tasks.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0022</td>
+        <td class="side">I volunteered to join the division because I thought it[ST:n ]sounded easy—I didn't want to have to be fighting[ST:n ]dangerous indigens, like the Harriers and Interceptors.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0023</td>
+        <td class="side">But it's a heck of a lot tougher than I'd thought![ST:n ]Scientific research can't advance without resources,[ST:n ]so we have BLADE HQ on our backs constantly.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0024</td>
+        <td class="side">Although I suppose if we're gonna live on this planet[ST:n ]forever, then someone's gotta do this sort of thing.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0046</td>
+        <td class="side">Those little xenos are wandering around the[ST:n ]administrative district as we speak.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0047</td>
+        <td class="side">Is that really okay? My friend was saying they might[ST:n ]secretly be trying to conquer New LA from that big ol'[ST:n ]ship of theirs.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0048</td>
+        <td class="side">What if that friendship treaty is all a ruse?[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0049</td>
+        <td class="side">As soon as we let down our guard,[ST:n ]death could rain down from above![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev020801_MSG0050</td>
+        <td class="side">And then the survivors would be subjects for creepy[ST:n ]alien experiments and probing! So very much probing...[ST:n ]Anyway, we can't let that happen.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1001</td>
+        <td class="side">I was thinking like, maybe if we could talk to them,[ST:n ]we could come to understand each other better.[ST:n ]Just like the way Inisae and I have.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1002</td>
+        <td class="side">So when I ran into a Ganglion soldier on a mission,[ST:n ]I figured I'd walk right up and try to start a dialogue.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1003</td>
+        <td class="side">But he was just like, \"All humans must die!\" [ST:n ]Then he started shooting at me. A lot, actually.[ST:n ]Anyway, I ran the hell out of there.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1004</td>
+        <td class="side">So I don't think we're gonna be friends anytime soon.[ST:n ]I guess something about us really just bugs the crap[ST:n ]out of them.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1005</td>
+        <td class="side">Anyway, I'm satisfied now that no matter how long[ST:n ]we have to deal with them, we'll never come to any[ST:n ]sort of understanding.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1010</td>
+        <td class="side">Hey, thanks for everything you did for us back[ST:n ]on that mountain.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1011</td>
+        <td class="side">Now Inisae and I have become good friends,[ST:n ]and it's all because of you![ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1012</td>
+        <td class="side">A little while ago, the two of us went out to have [ST:n ]coffee with Eleonora at a café in the commercial[ST:n ]district.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1013</td>
+        <td class="side">And imagine my surprise when Inisae brought out[ST:n ]another one of those cinicula intestines that look like[ST:n ]chocolates.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1014</td>
+        <td class="side">Anyway, Eleonora was all, \"Wow, I can't believe their[ST:n ]viscera can be cooked like this!\" Then she just dug in[ST:n ]and gobbled it up.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1015</td>
+        <td class="side">There's a whole lot of scary lurking behind that cheery[ST:n ]smile of hers, man...[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1020</td>
+        <td class="side">I was just remembering that Skell thing the creepy[ST:n ]squid lady Goetia was riding.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1021</td>
+        <td class="side">Oh, and that idol of theirs we found in Noctilum.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1022</td>
+        <td class="side">Anyway, it made me wonder—why does everything the[ST:n ]Ganglion use have to be so creepy and disgusting?[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1023</td>
+        <td class="side">And now Meredith & Co. is selling gear that's inspired[ST:n ]by all that nasty junk, and folks are lining up to buy it![ST:n ]It's disgusting![ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1024</td>
+        <td class="side">I don't care how good it is on paper, there's no[ST:n ]way in hell I'm touching any of that awful stuff.[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1030</td>
+        <td class="side">I heard that the city's defenders slew countless[ST:n ]enemies and managed to hold the east gate.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1031</td>
+        <td class="side">And I also heard there was one super-strong BLADE[ST:n ]who even managed to take out the enemy commander![ST:n ]So I asked what [ST:Gender p1=his p2=her ] name was...[ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1032</td>
+        <td class="side">And they said it was [ST:playername ]![ST:n ]So I was like, holy crap! Because that's YOU![ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1033</td>
+        <td class="side">I mean, wow. I knew you were good and all,[ST:n ]but I had no idea that you were THAT good.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1034</td>
+        <td class="side">You gotta keep that roll of yours going. Go bring[ST:n ]down the Ganglion and find our Lifehold Core![ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1040</td>
+        <td class="side">The Wrothians told us that the Ganglion headquarters[ST:n ]is in Cauldros, right?[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1041</td>
+        <td class="side">So does that mean that those guys are cool with us[ST:n ]now? Because if they said it with the intention of[ST:n ]leaving the Ganglion...[ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1042</td>
+        <td class="side">Well, then maybe we could be friends with them,[ST:n ]the way Inisae and I are good friends now.[ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1043</td>
+        <td class="side">Personally, I LOVE cats, so I think I could really[ST:n ]get along great with xenoforms like that.[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1048</td>
+        <td class="side">After the Wrothians left the Ganglion and joined us,[ST:n ]I was pretty excited about making friends with them.[ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1049</td>
+        <td class="side">But everything I do to befriend them just makes them[ST:n ]angry at me![ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1050</td>
+        <td class="side">I've dangled Kiran catnip in front of their noses...[ST:n ]I've hit them in the face with big balls of yarn...[ST:n ]Nothing seems to work![ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1051</td>
+        <td class="side">I don't understand it. I've raised cats all my life![ST:n ]I was so sure that making friends with a catlike[ST:n ]species would be easy for me.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1052</td>
+        <td class="side">I guess I'll just need to break out the big guns.[ST:n ]Next time maybe I'll sneak up and rub their chins[ST:n ]when they aren't looking...[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1057</td>
+        <td class="side">If you and the Pathfinders hadn't traveled to the far[ST:n ]reaches of Mira to install all those data probes,[ST:n ]we would have been in big trouble.[ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1058</td>
+        <td class="side">And we sure never would have figured out that the[ST:n ]Lifehold Core had fallen into the sea near Cauldros.[ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1059</td>
+        <td class="side">I know recovering it won't be easy, but we found it,[ST:n ]so that means everyone's gonna be okay. ...Er, right?[ST:wait ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1060</td>
+        <td class="side">Let's use every resource we've found here on Mira[ST:n ]and go get our real bodies back![ST:wait ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1065</td>
+        <td class="side">Now that the Ganglion have mostly been destroyed,[ST:n ]Inisae and I were thinking about hiking across Mira[ST:n ]together.[ST:wait ]</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1066</td>
+        <td class="side">Just two girls going wherever the spirit takes them![ST:n ]Doesn't that sound like fun?[ST:wait ]</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1067</td>
+        <td class="side">We can go visit the ruins of Oblivia,[ST:n ]or see the fantastic scenery of Sylvalum...[ST:wait ]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1068</td>
+        <td class="side">Imagine actually walking around in the picturesque[ST:n ]areas we've seen on the research probes![ST:wait ]</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>tev020801_MSG1069</td>
+        <td class="side">Hey, you know a lot about Mira, right?[ST:n ]If you think of any great spots for us to visit,[ST:n ]you gotta clue me in![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

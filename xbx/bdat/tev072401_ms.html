@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev072401_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev072401_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev072401_SEL0011</td>
+        <td class="side">Ask Kan'tonam how he feels about humanity.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev072401_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev072401_SEL0021</td>
+        <td class="side">Ask Kan'tonam about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0001</td>
+        <td class="side">You crushed Goetia and fought off countless numbers[ST:n ]of Ganglion soldiers.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0002</td>
+        <td class="side">To us Orphe, you humans are both a reliable friend[ST:n ]and an object of fear.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0003</td>
+        <td class="side">We're grateful for your strength when you protect us,[ST:n ]but what if you turn that strength against us when[ST:n ]we're no longer needed?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0004</td>
+        <td class="side">We would have no power to defend ourselves.[ST:n ]You could eradicate our species in an eyeblink.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0005</td>
+        <td class="side">That is why Yin'tonam and myself are constantly[ST:n ]striving to understand what motivates humans.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0008</td>
+        <td class="side">I find something compelling about the mission of[ST:n ]the Reclaimers. To think they spend all their days[ST:n ]gathering the remains of your White Whale...[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0009</td>
+        <td class="side">This is why I have decided to join BLADE myself.[ST:n ]I look forward to working with you.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0010</td>
+        <td class="side">I have no aptitude for combat, of course,[ST:n ]but my ability to sense danger is quite keen.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0011</td>
+        <td class="side">That proved sufficient to get me past the aptitude tests.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0012</td>
+        <td class="side"></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev072401_JNK0010</td>
+        <td class="side">tev072401_JNK0010</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev072401_SEL0011</td>
+        <td class="side">tev072401_SEL0011</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev072401_JNK0020</td>
+        <td class="side">tev072401_JNK0020</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev072401_SEL1021</td>
+        <td class="side">Ask Kan'tonam about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0021</td>
+        <td class="side">I have never fully trusted humanity. I've always been[ST:n ]waiting for the other shoe to drop, as I think you say.[ST:n ]But I now feel that I have misjudged you.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0022</td>
+        <td class="side">You treat entirely different species—like we Orphe[ST:n ]and the Ma-non—just as you do your own kind.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0023</td>
+        <td class="side">My Ovah has no memory of the Orphe ever being[ST:n ]shown such kindness.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0024</td>
+        <td class="side">The idea of helping others even when you yourself are[ST:n ]in peril would never occur to the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0013</td>
+        <td class="side">Thanks to you, I managed to return here safely.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0014</td>
+        <td class="side">The experience had left me interested in attempting[ST:n ]a bath, as per Anna's impassioned recommendation.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0015</td>
+        <td class="side">But as soon as I entered the hot water,[ST:n ]my skin began to swell up.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0016</td>
+        <td class="side">If you humans bathe in order to disinfect yourselves,[ST:n ]wouldn't bathing IN disinfectant be a more efficient way[ST:n ]of reaching your goal?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev072401_MSG0017</td>
+        <td class="side">Nevertheless, I may suggest a bath to Yin'tonam.[ST:n ]His skin is especially hard, so it might be ideal for him.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

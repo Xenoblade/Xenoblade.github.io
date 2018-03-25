@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev060101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev060101_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev060101_SEL0011</td>
+        <td class="side">Ask Kupee about the caravan.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev060101_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev060101_SEL0021</td>
+        <td class="side">Ask Kupee if anything is troubling her.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0001</td>
+        <td class="side">Welcome, traveler![ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0002</td>
+        <td class="side">This is Dopang Caravan, warm and caring home of[ST:n ]Nopon who prefer quiet, peaceful life.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0003</td>
+        <td class="side">Friend should rest now after long journey.[ST:n ]Caravan can be like second home to friend![ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0004</td>
+        <td class="side">...Oh, and if friend has any questions or problems,[ST:n ]just ask Kupee.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0005</td>
+        <td class="side">Kupee take job as leader seriously and want friend[ST:n ]to feel taken care of.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0008</td>
+        <td class="side">Hmm... Kupee does have troubles, but Kupee should[ST:n ]try to figure out solution alone first. ...Hrrrrrrg![ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0009</td>
+        <td class="side">...H-hrr-hrrrRRRRG! *gasp* *wheeze* *pant*[ST:n ]Meh-meh. Maybe Kupee thinking too hard.[ST:n ]Brain about to have meltdown![ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0010</td>
+        <td class="side">Maybe Kupee should just go ahead and ask friend for[ST:n ]help instead...[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev060101_SEL1011</td>
+        <td class="side">Ask Kupee about Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev060101_SEL1021</td>
+        <td class="side">Ask Kupee about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev060101_SEL1031</td>
+        <td class="side">Ask Kupee about the humans[ST:n ]who have come to Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev060101_SEL1041</td>
+        <td class="side">Ask Kupee about the humans[ST:n ]who have come to Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0011</td>
+        <td class="side">Friend sees big round thing floating up there?[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0012</td>
+        <td class="side">That is mystic place called noctilucent sphere![ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0013</td>
+        <td class="side">Very shiny and sparkling inside, although friend might[ST:n ]not be able to get there.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0014</td>
+        <td class="side">No roads lead to it, so friend will just have to learn[ST:n ]how to fly.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0015</td>
+        <td class="side">Too bad friend does not have wings like Kupee![ST:n ]Then friend could flappity-flap right up there.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0018</td>
+        <td class="side">For some reason, Mira attracting awful lot of aliens[ST:n ]lately.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0019</td>
+        <td class="side">There are human friends, Ganglion, and Mysteroids.[ST:n ]...Er, Kupee probably forgetting some others.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0020</td>
+        <td class="side">There might even be secret aliens Kupee not meet yet![ST:n ]Friend never knows.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0021</td>
+        <td class="side">Anyway, so long as aliens here, Kupee hope they[ST:n ]enjoy time on Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0022</td>
+        <td class="side">Kupee make sure all aliens treated right and get help[ST:n ]they need at Dopang Caravan.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0030</td>
+        <td class="side">Kupee recently see lots of human friends congregating[ST:n ]near Shivering Sands.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0032</td>
+        <td class="side">Kupee warn friends that vicious Prone patrol area.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0033</td>
+        <td class="side">Sylvalum is very beautiful, but also full of danger.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0034</td>
+        <td class="side">Worst when haze sets in and friends cannot see where[ST:n ]they are going. So be careful![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0039</td>
+        <td class="side">Kupee heard sad news about human friends[ST:n ]congregating near Shivering Sands.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0040</td>
+        <td class="side">Apparently Prone did them all in. So sad![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0041</td>
+        <td class="side">Also, human friends got turned into weapons![ST:n ]Prone really are stupid jerkfaces...[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0042</td>
+        <td class="side">Prone probably turn Nopon they catch into cushions[ST:n ]and sit on them until stuffing is squished out.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0043</td>
+        <td class="side">See big round thing floating up there?[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0044</td>
+        <td class="side">That is mystic place called noctilucent sphere.[ST:n ]Kupee love it there.[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0045</td>
+        <td class="side">Kupee had not been for while, but other day decided[ST:n ]to pop in and have little bit of chill time.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0046</td>
+        <td class="side">Bad idea! Monster called Pharsis, the Everqueen[ST:n ]move in and strut around like she own place![ST:n ]Kupee not get any chill time at all.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev060101_MSG0047</td>
+        <td class="side">If Everqueen was even just a little bit adorable,[ST:n ]Kupee might have tried to make friends. But nope![ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev060101_SEL2021</td>
+        <td class="side">Ask Kupee about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev060101_MSG2001</td>
+        <td class="side">Lots of Nopon say such bad things about Elder Nan.[ST:n ]How elder is spoiled... Or coward... Or total pervert...[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev060101_MSG2002</td>
+        <td class="side">But Kupee know elder is thinking about Nopon future![ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev060101_MSG2003</td>
+        <td class="side">Elder only tell Nopon to move to New LA to protect[ST:n ]them from mean and dangerous Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev060101_MSG2004</td>
+        <td class="side">But Kupee has to stay with caravan great Dopang[ST:n ]passed down to her instead of heading into city,[ST:n ]which is kind of scary.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

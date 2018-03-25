@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev045601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev045601_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev045601_SEL0011</td>
+        <td class="side">Ask Naza about Mira's plant life.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev045601_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev045601_SEL0021</td>
+        <td class="side">Ask Naza if anything is troubling her.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev045601_SEL0031</td>
+        <td class="side">Ask Naza about the weather in Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev045601_SEL0051</td>
+        <td class="side">Ask Naza about the weather in Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0001</td>
+        <td class="side">As Cavern Clan prisoner, I was forced to mine caves[ST:n ]in Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0002</td>
+        <td class="side">Inside one cave, I saw strange cactus.[ST:n ]It turned silver when rains came.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0003</td>
+        <td class="side">Once I was freed, I did not forget cactus.[ST:n ]I asked Nopon science person what it was.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0004</td>
+        <td class="side">Plant is known as myuena cactus.[ST:n ]It is very rare. Can be sold for high price.[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0005</td>
+        <td class="side">It is worth searching for if you visit Oblivia.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0008</td>
+        <td class="side">Grr! Why do they not take in Mira's soil?[ST:n ]What must I do to gather Old Ones and...[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0009</td>
+        <td class="side">...Hmm? Is something troubling me? Bah.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0010</td>
+        <td class="side">I am grateful to you, Earth alien.[ST:n ]But this is not your concern.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0011</td>
+        <td class="side">Some matters are too secret to share.[ST:n ]You must earn my trust first.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0016</td>
+        <td class="side">Intense heat waves muddle your mind.[ST:n ]Make it harder to put power into attacks.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0017</td>
+        <td class="side">Sandstorms impair vision.[ST:n ]Make it harder to hit enemies with firearms.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0018</td>
+        <td class="side">Oblivia's weather causes many headaches.[ST:n ]But if you are prepared, you will survive.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0019</td>
+        <td class="side">Carry anticlimate augments. Wear proper gear.[ST:n ]Such preparation can save you.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0020</td>
+        <td class="side"></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0025</td>
+        <td class="side">Strong winds kick up many spores in Sylvalum.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0026</td>
+        <td class="side">Spores block out your vision.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0027</td>
+        <td class="side">It is like spores are warding off travelers.[ST:n ]Forbidding us to enter.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0028</td>
+        <td class="side">Prone have very old saying:[ST:n ]\"Heed nature's warning. Or die nature's death.\"[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0029</td>
+        <td class="side">You should heed warning of Sylvalum.[ST:n ]Or at least travel with care.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev045601_JNK0010</td>
+        <td class="side">tev045601_JNK0010</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev045601_SEL1011</td>
+        <td class="side">Ask Naza about Mira's plant life.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev045601_JNK0020</td>
+        <td class="side">tev045601_JNK0020</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev045601_SEL1021</td>
+        <td class="side">Ask Naza about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev045601_SEL1031</td>
+        <td class="side">Ask Naza about Mira.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1001</td>
+        <td class="side">I sought Mon'barac's counsel on Great Tree.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1002</td>
+        <td class="side">If we plant more Great Trees, we could create forests[ST:n ]like on Prone homeworld. Forests that are welcoming[ST:n ]havens for Old Ones.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1003</td>
+        <td class="side">This would complete my mission as Protector of[ST:n ]Great Tree.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1004</td>
+        <td class="side">Maybe I should apologize to Mon'barac for punching[ST:n ]him in face...[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1009</td>
+        <td class="side">Something here pulls at me...[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1010</td>
+        <td class="side">If Nopon are only native Miran people,[ST:n ]where did ruins come from?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1011</td>
+        <td class="side">What happened to those who built ruins?[ST:n ]Where are they now?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1012</td>
+        <td class="side">Something happened before we arrived.[ST:n ]Something that ripped this world out of history.[ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev045601_MSG1013</td>
+        <td class="side">But you have seen more of Mira than me.[ST:n ]Do you feel same?[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev045601_JNK1010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev045601_SEL1011</td>
+        <td class="side">tev045601_SEL1011</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev045601_JNK2020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev045601_SEL2021</td>
+        <td class="side">Ask Naza about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0030</td>
+        <td class="side">Foolish Yun'tonam still does not understand gravity of[ST:n ]eating Great Tree![ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0031</td>
+        <td class="side">\"Grow another,\" he says. But we have no seeds here![ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0032</td>
+        <td class="side">...Hmm? Why am I also being hard on Mon'barac?[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev045601_MSG0033</td>
+        <td class="side">Sins of one Orphean are sins of all![ST:n ]Mon'barac must also show repentance.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

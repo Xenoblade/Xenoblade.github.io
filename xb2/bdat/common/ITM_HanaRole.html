@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITM_HanaRole</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>Role</th>
+          <th>PArmor</th>
+          <th>EArmor</th>
+          <th>HpMaxRev</th>
+          <th>StrengthRev</th>
+          <th>PowEtherRev</th>
+          <th>DexRev</th>
+          <th>AgilityRev</th>
+          <th>LuckRev</th>
+          <th>AutoHate</th>
+          <th>ArtsHate</th>
+          <th>NeedPow</th>
+          <th>NeedEther</th>
+          <th>DustEther</th>
+          <th>Condition</th>
+          <th>UI</th>
+          <th>JS</th>
+          <th>JK</th>
+          <th>JD</th>
+        </tr>
+      </thead>
+      <tr id="56001">
+        <td>56001</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="BTL_HanaChipset.html#1">BTL_HanaChipset#1</a>
+            <a href="MIN_TT_Tdef.html#2">MIN_TT_Tdef#2</a>
+            <a href="MIN_TT_Tdef.html#36">MIN_TT_Tdef#36</a>
+          </details>
+        </td>
+        <td class="side">Tank Mod I</td>
+        <td>TNK</td>
+        <td>25</td>
+        <td>20</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>22</td>
+        <td>50</td>
+        <td>200</td>
+        <td>100</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56002">
+        <td>56002</td>
+        <td>
+        </td>
+        <td class="side">Tank Mod II</td>
+        <td>TNK</td>
+        <td>25</td>
+        <td>25</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>22</td>
+        <td>100</td>
+        <td>600</td>
+        <td>220</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56003">
+        <td>56003</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="FLD_QuestCollect.html#240">FLD_QuestCollect#240</a>
+            <a href="MIN_TT_Tdef.html#36">MIN_TT_Tdef#36</a>
+            <a href="MIN_TT_Tdef.html#39">MIN_TT_Tdef#39</a>
+          </details>
+        </td>
+        <td class="side">Tank Mod III</td>
+        <td>TNK</td>
+        <td>30</td>
+        <td>25</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>22</td>
+        <td>150</td>
+        <td>1200</td>
+        <td>380</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56004">
+        <td>56004</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="FLD_QuestReward.html#947">FLD_QuestReward#947</a>
+          </details>
+        </td>
+        <td class="side">Tank Mod IV</td>
+        <td>TNK</td>
+        <td>30</td>
+        <td>30</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>22</td>
+        <td>200</td>
+        <td>2000</td>
+        <td>580</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56005">
+        <td>56005</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#39">MIN_TT_Tdef#39</a>
+          </details>
+        </td>
+        <td class="side">Tank Mod V</td>
+        <td>TNK</td>
+        <td>35</td>
+        <td>30</td>
+        <td>25</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td>26</td>
+        <td>250</td>
+        <td>5000</td>
+        <td>1060</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56006">
+        <td>56006</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="BTL_HanaChipset.html#2">BTL_HanaChipset#2</a>
+            <a href="MIN_TT_Tdef.html#52">MIN_TT_Tdef#52</a>
+          </details>
+        </td>
+        <td class="side">Evasion Mod I</td>
+        <td>TNK</td>
+        <td>20</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>3</td>
+        <td>20</td>
+        <td>50</td>
+        <td>200</td>
+        <td>100</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56007">
+        <td>56007</td>
+        <td>
+        </td>
+        <td class="side">Evasion Mod II</td>
+        <td>TNK</td>
+        <td>20</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>3</td>
+        <td>20</td>
+        <td>100</td>
+        <td>600</td>
+        <td>220</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56008">
+        <td>56008</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="MIN_TT_Tdef.html#52">MIN_TT_Tdef#52</a>
+            <a href="MIN_TT_Tdef.html#56">MIN_TT_Tdef#56</a>
+          </details>
+        </td>
+        <td class="side">Evasion Mod III</td>
+        <td>TNK</td>
+        <td>25</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>3</td>
+        <td>20</td>
+        <td>150</td>
+        <td>1200</td>
+        <td>380</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56009">
+        <td>56009</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="FLD_QuestReward.html#947">FLD_QuestReward#947</a>
+          </details>
+        </td>
+        <td class="side">Evasion Mod IV</td>
+        <td>TNK</td>
+        <td>25</td>
+        <td>25</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>3</td>
+        <td>20</td>
+        <td>200</td>
+        <td>2000</td>
+        <td>580</td>
+        <td><a href="FLD_ConditionList.html#1490">1490</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56010">
+        <td>56010</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#56">MIN_TT_Tdef#56</a>
+          </details>
+        </td>
+        <td class="side">Evasion Mod V</td>
+        <td>TNK</td>
+        <td>25</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>4</td>
+        <td>24</td>
+        <td>250</td>
+        <td>5000</td>
+        <td>1060</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56011">
+        <td>56011</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#61">MIN_TT_Tdef#61</a>
+          </details>
+        </td>
+        <td class="side">Muscle Mod I</td>
+        <td>ATK</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>50</td>
+        <td>200</td>
+        <td>100</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56012">
+        <td>56012</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_HanaChipset.html#3">BTL_HanaChipset#3</a>
+          </details>
+        </td>
+        <td class="side">Muscle Mod II</td>
+        <td>ATK</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>100</td>
+        <td>600</td>
+        <td>220</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56013">
+        <td>56013</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="MIN_TT_Tdef.html#61">MIN_TT_Tdef#61</a>
+            <a href="MIN_TT_Tdef.html#64">MIN_TT_Tdef#64</a>
+          </details>
+        </td>
+        <td class="side">Muscle Mod III</td>
+        <td>ATK</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>150</td>
+        <td>1200</td>
+        <td>380</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56014">
+        <td>56014</td>
+        <td>
+        </td>
+        <td class="side">Muscle Mod IV</td>
+        <td>ATK</td>
+        <td>10</td>
+        <td>5</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>200</td>
+        <td>2000</td>
+        <td>580</td>
+        <td><a href="FLD_ConditionList.html#1490">1490</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56015">
+        <td>56015</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#64">MIN_TT_Tdef#64</a>
+          </details>
+        </td>
+        <td class="side">Muscle Mod V</td>
+        <td>ATK</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>11</td>
+        <td>250</td>
+        <td>5000</td>
+        <td>1060</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56016">
+        <td>56016</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#61">MIN_TT_Tdef#61</a>
+          </details>
+        </td>
+        <td class="side">Strike Mod I</td>
+        <td>ATK</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>45</td>
+        <td>180</td>
+        <td>90</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56017">
+        <td>56017</td>
+        <td>
+        </td>
+        <td class="side">Strike Mod II</td>
+        <td>ATK</td>
+        <td>15</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>90</td>
+        <td>540</td>
+        <td>198</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56018">
+        <td>56018</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="MIN_TT_Tdef.html#61">MIN_TT_Tdef#61</a>
+            <a href="MIN_TT_Tdef.html#64">MIN_TT_Tdef#64</a>
+          </details>
+        </td>
+        <td class="side">Strike Mod III</td>
+        <td>ATK</td>
+        <td>15</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>135</td>
+        <td>1080</td>
+        <td>342</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56019">
+        <td>56019</td>
+        <td>
+        </td>
+        <td class="side">Strike Mod IV</td>
+        <td>ATK</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>14</td>
+        <td>180</td>
+        <td>1800</td>
+        <td>522</td>
+        <td><a href="FLD_ConditionList.html#1490">1490</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56020">
+        <td>56020</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#64">MIN_TT_Tdef#64</a>
+          </details>
+        </td>
+        <td class="side">Strike Mod V</td>
+        <td>ATK</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>11</td>
+        <td>225</td>
+        <td>4500</td>
+        <td>954</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56021">
+        <td>56021</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#44">MIN_TT_Tdef#44</a>
+          </details>
+        </td>
+        <td class="side">Ether Mod I</td>
+        <td>HLR</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>50</td>
+        <td>200</td>
+        <td>100</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56022">
+        <td>56022</td>
+        <td>
+        </td>
+        <td class="side">Ether Mod II</td>
+        <td>HLR</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>100</td>
+        <td>600</td>
+        <td>220</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56023">
+        <td>56023</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="MIN_TT_Tdef.html#44">MIN_TT_Tdef#44</a>
+            <a href="MIN_TT_Tdef.html#47">MIN_TT_Tdef#47</a>
+          </details>
+        </td>
+        <td class="side">Ether Mod III</td>
+        <td>HLR</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>150</td>
+        <td>1200</td>
+        <td>380</td>
+        <td><a href="FLD_ConditionList.html#1488">1488</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56024">
+        <td>56024</td>
+        <td>
+        </td>
+        <td class="side">Ether Mod IV</td>
+        <td>HLR</td>
+        <td>10</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>200</td>
+        <td>2000</td>
+        <td>580</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56025">
+        <td>56025</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#47">MIN_TT_Tdef#47</a>
+          </details>
+        </td>
+        <td class="side">Ether Mod V</td>
+        <td>HLR</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8</td>
+        <td>250</td>
+        <td>5000</td>
+        <td>1060</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56026">
+        <td>56026</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#52">MIN_TT_Tdef#52</a>
+          </details>
+        </td>
+        <td class="side">Luck Mod I</td>
+        <td>HLR</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>8</td>
+        <td>40</td>
+        <td>160</td>
+        <td>80</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56027">
+        <td>56027</td>
+        <td>
+        </td>
+        <td class="side">Luck Mod II</td>
+        <td>HLR</td>
+        <td>15</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0</td>
+        <td>8</td>
+        <td>80</td>
+        <td>480</td>
+        <td>176</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56028">
+        <td>56028</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="MIN_TT_Tdef.html#52">MIN_TT_Tdef#52</a>
+            <a href="MIN_TT_Tdef.html#56">MIN_TT_Tdef#56</a>
+          </details>
+        </td>
+        <td class="side">Luck Mod III</td>
+        <td>HLR</td>
+        <td>15</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>8</td>
+        <td>120</td>
+        <td>960</td>
+        <td>304</td>
+        <td><a href="FLD_ConditionList.html#1489">1489</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56029">
+        <td>56029</td>
+        <td>
+        </td>
+        <td class="side">Luck Mod IV</td>
+        <td>HLR</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>8</td>
+        <td>160</td>
+        <td>1600</td>
+        <td>464</td>
+        <td><a href="FLD_ConditionList.html#1490">1490</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56030">
+        <td>56030</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MIN_TT_Tdef.html#56">MIN_TT_Tdef#56</a>
+          </details>
+        </td>
+        <td class="side">Luck Mod V</td>
+        <td>HLR</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>0</td>
+        <td>6</td>
+        <td>200</td>
+        <td>4000</td>
+        <td>848</td>
+        <td><a href="FLD_ConditionList.html#1491">1491</td></a>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56031">
+        <td>56031</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#221">FLD_AddItem#221</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Tank Mod</td>
+        <td>TNK</td>
+        <td>40</td>
+        <td>35</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td>26</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56032">
+        <td>56032</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#222">FLD_AddItem#222</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Evasion Mod</td>
+        <td>TNK</td>
+        <td>30</td>
+        <td>35</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>4</td>
+        <td>24</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56033">
+        <td>56033</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#223">FLD_AddItem#223</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Muscle Mod</td>
+        <td>ATK</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56034">
+        <td>56034</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#224">FLD_AddItem#224</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Strike Mod</td>
+        <td>ATK</td>
+        <td>20</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>10</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="56035">
+        <td>56035</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#225">FLD_AddItem#225</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Ether Mod</td>
+        <td>HLR</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>25</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>8</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="56036">
+        <td>56036</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_AddItem.html#226">FLD_AddItem#226</a>
+            <a href="MIN_TT_Tdef.html#69">MIN_TT_Tdef#69</a>
+          </details>
+        </td>
+        <td class="side">Master Luck Mod</td>
+        <td>HLR</td>
+        <td>20</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>40</td>
+        <td>0</td>
+        <td>6</td>
+        <td>300</td>
+        <td>0</td>
+        <td>1200</td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

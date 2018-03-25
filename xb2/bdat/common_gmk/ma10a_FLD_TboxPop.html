@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma10a_FLD_TboxPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>RSC_ID</th>
+          <th>Condition</th>
+          <th>FSID</th>
+          <th>FSID2</th>
+          <th>msgVisible</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Num</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Num</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Num</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Num</th>
+          <th>itm4Per</th>
+          <th>itm5ID</th>
+          <th>itm5Num</th>
+          <th>itm5Per</th>
+          <th>itm6ID</th>
+          <th>itm6Num</th>
+          <th>itm6Per</th>
+          <th>itm7ID</th>
+          <th>itm7Num</th>
+          <th>itm7Per</th>
+          <th>itm8ID</th>
+          <th>itm8Num</th>
+          <th>itm8Per</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>rsc_paramID</th>
+          <th>msgdigVisible</th>
+          <th>Digflg</th>
+        </tr>
+      </thead>
+      <tr id="1001">
+        <td>1001</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst2019_002</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1178">1178</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1058">Unearth</td></a>
+        <td>10</td>
+        <td>100000</td>
+        <td>100000</td>
+        <td>30</td>
+        <td>30</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>True</td>
+      </tr>
+      <tr id="1002">
+        <td>1002</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst2021_001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1190">1190</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1434">Open Container</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1062">Unearth</td></a>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PreciousList.html#25170">Glowing Tablet</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>True</td>
+      </tr>
+      <tr id="1003">
+        <td>1003</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst2007_001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1091">1091</td></a>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>6302</td>
+        <td>6932</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PreciousList.html#25201">Bloomshroom</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="1004">
+        <td>1004</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst2007_002</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1095">1095</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1044">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>6302</td>
+        <td>6932</td>
+        <td>3</td>
+        <td>5</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>False</td>
+      </tr>
+      <tr id="1005">
+        <td>1005</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2124</td>
+        <td>2336</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15175">Spike Defense II</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1006">
+        <td>1006</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f002</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2423</td>
+        <td>2665</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15095">Fire Def Up IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1007">
+        <td>1007</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f003</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2907</td>
+        <td>3198</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15069">Ambush Boost III</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1008">
+        <td>1008</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f004</td>
+        <td><a href="../common/RSC_TboxList.html#9">9</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1235">Unearth</td></a>
+        <td>10</td>
+        <td>9150</td>
+        <td>10065</td>
+        <td>30</td>
+        <td>30</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10052">Shining Star Chip</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">Legendary Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="1009">
+        <td>1009</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f005</td>
+        <td><a href="../common/RSC_TboxList.html#9">9</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1236">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>17513</td>
+        <td>19264</td>
+        <td>60</td>
+        <td>60</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">Legendary Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1010">
+        <td>1010</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f006</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1237">Unearth</td></a>
+        <td>10</td>
+        <td>4361</td>
+        <td>4797</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#54">Boxer Vambraces</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="1011">
+        <td>1011</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f007</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1238">Unearth</td></a>
+        <td>10</td>
+        <td>4529</td>
+        <td>4982</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="1012">
+        <td>1012</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f008</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1239">Unearth</td></a>
+        <td>10</td>
+        <td>2244</td>
+        <td>2468</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15124">Dark Def Up III</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="1013">
+        <td>1013</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f009</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1199">1199</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1240">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>4978</td>
+        <td>5476</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#57">Eraser Orb</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1014">
+        <td>1014</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f010</td>
+        <td><a href="../common/RSC_TboxList.html#9">9</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1241">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>13310</td>
+        <td>14641</td>
+        <td>30</td>
+        <td>30</td>
+        <td><a href="../common/ITM_PcEquip.html#100">Nano-Metal Gauntlet</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">Rare Core Crystal</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1015">
+        <td>1015</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f011</td>
+        <td><a href="../common/RSC_TboxList.html#8">8</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1242">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>4848</td>
+        <td>5333</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_Orb.html#15317">Fast Blade Switch IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1016">
+        <td>1016</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f012</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1243">Open Container</td></a>
+        <td></td>
+        <td>10</td>
+        <td>2666</td>
+        <td>2933</td>
+        <td>15</td>
+        <td>15</td>
+        <td><a href="../common/ITM_Orb.html#15167">Endurance IV</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1017">
+        <td>1017</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f013</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2856</td>
+        <td>3142</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15261">Sunlight Eye III</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">Common Core Crystal</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="1018">
+        <td>1018</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma10a_f014</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3072</td>
+        <td>3379</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#144">Beta Scope</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_Orb.html#15175">Spike Defense II</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

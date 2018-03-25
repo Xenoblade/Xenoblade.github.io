@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma04a_FLD_AutoTalk</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>MOBID</th>
+          <th>Range</th>
+          <th>Condition</th>
+          <th>Text</th>
+          <th>Ontime</th>
+          <th>BeforeID</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma04a_FLD_AutoTalk.html#2">ma04a_FLD_AutoTalk#2</a>
+          </details>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4003">mob_test_0703</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Who'd have thought such a massive
+ship would sink? I wonder when it
+was built...</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4005">mob_test_0705</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Doesn't look like it was a Titan-based
+vessel... That's some baffling tech
+right there.</td>
+        <td>3</td>
+        <td><a href="ma04a_FLD_AutoTalk.html#1">1</td></a>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4007">mob_test_0707</td></a>
+        <td>10</td>
+        <td></td>
+        <td>Ooh, must be some really top-notch
+goodies in there! Salvager-sense
+tingling like mad!</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma04a_FLD_AutoTalk.html#5">ma04a_FLD_AutoTalk#5</a>
+          </details>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4001">mob_test_0701</td></a>
+        <td>7</td>
+        <td></td>
+        <td>You first. That's the salvager way.
+Charging headlong into the unknown!</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4002">mob_test_0702</td></a>
+        <td>7</td>
+        <td></td>
+        <td>Nah, I'll pass. You're the one who's
+always going on about your amazing
+swordsmanship. You go first!</td>
+        <td>3</td>
+        <td><a href="ma04a_FLD_AutoTalk.html#4">4</td></a>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma04a_FLD_AutoTalk.html#7">ma04a_FLD_AutoTalk#7</a>
+          </details>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4011">mob_test_0711</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#14">14</td></a>
+        <td>Probably better to let the Drivers and
+Blades go in first... I bet it's chock-full
+of dangerous monsters.</td>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td><a href="ma04a_FLD_MobPop.html#4012">mob_test_0712</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#14">14</td></a>
+        <td>Yeah... Better leave rough stuff like that
+to the pros, eh?</td>
+        <td>3</td>
+        <td><a href="ma04a_FLD_AutoTalk.html#6">6</td></a>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

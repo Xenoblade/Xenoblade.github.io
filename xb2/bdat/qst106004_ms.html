@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst106004_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst106004_msg0001</td>
+        <td>84</td>
+        <td class="side">Dadapon! I bring materials!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst106004_msg0002</td>
+        <td>84</td>
+        <td class="side">Welcome back, Tora.
+Preparation of workshop all ready.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst106004_msg0003</td>
+        <td>84</td>
+        <td class="side">Me work on expansion parts now.
+Lila, you watch over and make sure
+nobody distract me.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst106004_msg0004</td>
+        <td>84</td>
+        <td class="side">Leave it to Lila, Masterpon!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst106004_msg0005</td>
+        <td>84</td>
+        <td class="side">Um... If Poppi's going to be all
+grown up now, isn't she going to
+need new clothes?</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst106004_msg0006</td>
+        <td>84</td>
+        <td class="side">Really? I think the ones she has
+right now look just fine...</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst106004_msg0007</td>
+        <td>84</td>
+        <td class="side">Uh, if her body size changes, they're
+not exactly going to fit, are they?</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst106004_msg0008</td>
+        <td>84</td>
+        <td class="side">If she gets bigger in the clothes
+she's wearing now, things could
+get...awkward fast.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst106004_msg0009</td>
+        <td>84</td>
+        <td class="side">Exactly!</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst106004_msg0010</td>
+        <td>84</td>
+        <td class="side">And it wouldn't be fair on her not to
+have any nice outfits to wear after
+her special upgrade, anyway!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst106004_msg0011</td>
+        <td>84</td>
+        <td class="side">Really?</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst106004_msg0012</td>
+        <td>84</td>
+        <td class="side">Mythra and Pyra both seem stylish
+with default look. Poppi is Blade too,
+so not really bothered about clothing.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst106004_msg0013</td>
+        <td>84</td>
+        <td class="side">We can't have that!
+Absolutely not!</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst106004_msg0014</td>
+        <td>84</td>
+        <td class="side">Blade or human, artificial or otherwise,
+you should at least have some sense
+of modesty!</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst106004_msg0015</td>
+        <td>84</td>
+        <td class="side">Hmmm... Poppi not really understand.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst106004_msg0016</td>
+        <td>84</td>
+        <td class="side">Tora think new costume important for
+increasing sense of cool new power-up!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst106004_msg0017</td>
+        <td>84</td>
+        <td class="side">Factor of coolness very important!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst106004_msg0018</td>
+        <td>84</td>
+        <td class="side">Very well. Lila will make new costume
+for little sister Poppi.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst106004_msg0019</td>
+        <td>84</td>
+        <td class="side">Really? Big sis Lila make costume?</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst106004_msg0020</td>
+        <td>84</td>
+        <td class="side">Yes. Lila not have many opportunity
+to do things for sweet little sister.
+Will make masterpiece costume!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst106004_msg0021</td>
+        <td>84</td>
+        <td class="side">Since Poppi become very grown-up,
+want costume that looks glamorous!</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst106004_msg0022</td>
+        <td>84</td>
+        <td class="side">But not losing sense of cute.
+Cute also important.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst106004_msg0023</td>
+        <td>84</td>
+        <td class="side">Also, needs to look cool and powerful!
+Is for power-up, after all.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst106004_msg0024</td>
+        <td>84</td>
+        <td class="side">Meh-meh... That is lot of requests.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst106004_msg0025</td>
+        <td>84</td>
+        <td class="side">How's she going to fit all that
+into one design, eh?</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst106004_msg0026</td>
+        <td>84</td>
+        <td class="side">Is not possible?</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst106004_msg0027</td>
+        <td>84</td>
+        <td class="side">For sake of little sister Poppi...
+Lila make anything possible!</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst106004_msg0028</td>
+        <td>84</td>
+        <td class="side">Thank you, big sis Lila!</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst106004_msg0029</td>
+        <td>84</td>
+        <td class="side">But to make such specific costume,
+Lila probably need more materials...</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst106004_msg0030</td>
+        <td>84</td>
+        <td class="side">What kind of things are you after?</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst106004_msg0031</td>
+        <td>84</td>
+        <td class="side">Cubic Diamond and Ambler Stigma...</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst106004_msg0032</td>
+        <td>84</td>
+        <td class="side">Oh, and Genbu-Weave Cloth
+important too.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst106004_msg0033</td>
+        <td>84</td>
+        <td class="side">That doesn't sound too hard.
+Come on, Poppi, let's go find them!</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst106004_msg0034</td>
+        <td>84</td>
+        <td class="side">Understood! Poppi will bring very
+finest materials for new costume!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

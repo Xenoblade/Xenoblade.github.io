@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_PSskil</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>icon</th>
+          <th>help</th>
+          <th>type</th>
+          <th>effect1</th>
+          <th>effect2</th>
+          <th>effect3</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows medium weight@armour to be equipped.</td>
+        <td>1</td>
+        <td>■物理防御アップ</td>
+        <td>■エーテル耐性アップ</td>
+        <td>効果値</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@More HP is restored when@reviving a party member.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Successfully completed@quests award more EXP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Boosts physical defence@and ether defence.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chain attack@damage.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Healing Arts restore@more HP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Restores HP to an@encouraged ally.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Heals the party slightly@after a chain attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Causes@Burst Affinity to fill more@of the Party Gauge.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@Chain Link.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] @Increases tension gained@from Battle Start Affinity.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Agility Up@buff at start of battle with@higher level enemies.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Reduces weight of@equipment.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Always Active]@Increases chance of@Fever when gem crafting.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Improves Arts with Bonus@Effects from behind.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants EXP when Vision@Tags are destroyed.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Always Active]@Allows low-value items to@be offered when trading.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants@Agility Up when a party@member is Incapacitated.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Boosts physical and ether@defence for the party.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Talent Gauge will be at@max after a vision.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Extends time before a@vision becomes reality.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces aggro drawn@from using Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of Burst@Affinity after evasion.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces aggro when@damage is taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants immunity to@debuffs that reduce stats.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows medium weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants Phys@Def Up at start of battle@with higher level enemies.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Prevents Incapacitation@from lowering tension.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases tension when@damage is taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts physical defence@when HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows heavy weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases aggro drawn@by Mad Taunt.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Restores HP to an@encouraged ally.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Strength Up@buff at start of battle with@higher level enemies.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Further increases aggro@drawn by Mad Taunt.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases Max HP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Agility Up@buff at start of battle with@higher level enemies.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases attack power@of equipped weapon.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases AP awarded@in battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Further increases@Max HP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@Chain Link.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Heals the party after a@chain attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Battle Start Affinity grants@Haste buff to the party.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants@Strength Up when a party@member is Incapacitated.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Boosts the@affinity gained when@encouraging an ally.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts Mad Taunt's effect@on non-targeted enemies.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Grants@Haste to the party when@an enemy is defeated.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@double attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Haste buff when@an attack misses.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Fills Talent Gauge when@damage is taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows medium weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases counterattack@rate when HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Increases amount of HP@restored when revived.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases damage of@critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Fills Party Gauge if two@allies are Incapacitated.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Strength Up buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases damage of the@first strike of a battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases movement@speed.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces physical@damage taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] All Stats Up@buff at start of battle with@higher-level monsters.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases block rate@when HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Rarely grants Haste buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases EXP awarded@from battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces Ether damage@taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Grants Haste buff to the@party after Burst Affinity.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Improves@chain attack damage@when in battle with Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Increases@Arts damage if warned@of a vision by Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Restores@HP when taking damage@when in battle with Shulk.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Prevents@tension from becoming@low if in battle with Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants@All Stats Up buff when@encouraged by Shulk.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts next Arts damage@when warned of a vision.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Turns all counterattacks@into critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Dealing@damage will occasionally@max the Talent Gauge.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Turns all double attacks@into critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Increases@tension by one level@when using Talent Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows medium weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@In battle, boosts strength@when HP is at max.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Increases@tension after successful@Battle Start Affinity.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases aggro drawn@when dealing damage.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants HP Up buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Greatly@increases aggro when@no armour is equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases agility when@HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@double attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Reduces weight of@equipment.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Greatly increases agility@with no armour equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Extends the duration of@auras.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces the effects of@Spike attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Reduces@depletion rate of Party@Gauge outside of battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Improves@physical and ether def.@of light equipment.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Restores HP when@dealing a critical hit.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Haste buff at@start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@counter-attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases tension gained@after a critical hit.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases tension gained@when using Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Fills Party Gauge when@activating an Aura.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Greatly reduces weight of@equipment.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants HP Up buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows heavy weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces physical@damage taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants immunity to@Blow-Down attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows medium weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Greatly@boosts power of Healing@Arts in chain attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Extends range of@long-distance Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases agility.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces cooldown of@Healing Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Boosts physical defence.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases ether.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Physical Defence@Up buff at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases ether when HP@is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces the duration of@Cool Off.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases damage dealt@by ether Arts attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Grants@Physical Protect to party@with Battle Start Affinity.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Improves@phys. and ether defence@of medium weight armour.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases tension when@taking damage.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows heavy weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Improves@Healing Arts after being@warned of a vision.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Healing Arts restore@more HP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Heals the@party slightly after a@successful Burst Affinity.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Grants Ether Protect buff@with Battle Start Affinity.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Heals@remaining party members@when Incapacitated.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Improves block rate.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases chance of a@counter-attack.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants@Ether Up buff when an@ally defeats an enemy.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Strength Up@and Phys Def Up when@an ally is Incapacitated.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Greatly increases ether.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases strength@during the day.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Always Active]@Allows low-value items to@be offered when trading.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces cooldown@during the day.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Improves@chance of monsters@dropping silver chests.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases EXP awarded@in battles during the day.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases movement@speed.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Awards@the same AP regardless@of participation in battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Awards more EXP when@discovering a Landmark.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Improves@Healing Arts used on an@ally with half HP.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party] Improves@chance of monsters@dropping gold chests.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Always Active]@Allows items to be sold@for a higher price.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Awards@the same EXP regardless@of participation in battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Battle Party] Lets Riki@steal AP with Yoink! and@share it with the party.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants immunity to@Strength Down debuff.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>537</td>
+        <td>[Battle Party] Lets Riki@steal EXP with Yoink! and@share it with the party.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Allows heavy weight@armour to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Greatly increases@strength.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Halves the@Party Gauge usage@when reviving allies.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases Spike damage@dealt.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases resistance to@all debuffs.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases strength during@the night.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases agility when@HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces cooldown during@the night.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Improves accuracy of@back attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases EXP awarded@in battles during the night.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases HP received@from Healing Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases HP absorbed@by water-type Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Increases@chance of finding rare@crystals from deposits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Extends Chill duration@when dealt to an enemy.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Greatly increases ether.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases agility.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts Wind damage.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Ether Up buff at@start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts electric damage.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases accuracy of@ether attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases ether.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Extends Poison duration@when dealt to an enemy.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases strength during@the night.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Prevents@reduction of accuracy@when tension falls.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants immunity to@Ether Down debuff.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces tension loss@when an attack fails.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts damage dealt to@enemies suffering Sleep.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] When an@aura is active, increases@damage dealt to Telethia.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Extends Blaze duration@when dealt to an enemy.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Greatly reduces the@effects of Spike attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Improves block rate.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Improves@ether defence the more@heavy equipment is worn.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Strength,@ether, agility and HP up@if no gems are equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces damage taken@from ether area attacks.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces aggro drawn@while an aura is active.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active] Allows@special armour from@Mechonis to be equipped.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases counter-attack@rate when HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Increases amount of HP@restored when revived.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases damage of@critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Fills Party Gauge if two@allies are Incapacitated.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Grants Strength Up buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases damage of the@first strike of a battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases movement@speed.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces physical@damage taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] All Stats Up@buff at start of battle with@higher-level monsters.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Increases block rate@when HP is at half.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Rarely grants Haste buff@at start of battle.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Always Active]@Increases EXP awarded@from battle.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Reduces Ether damage@taken.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>536</td>
+        <td>[Battle Party]@Grants Haste buff to the@party after Burst Affinity.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Improves@chain attack damage@when in battle with Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Increases@Arts damage if warned@of a vision by Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Restores@HP when taking damage@when in battle with Shulk.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Prevents@tension from becoming@low if in battle with Shulk.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Grants@All Stats Up buff when@encouraged by Shulk.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Boosts next Arts damage@when warned of a vision.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Turns all counter-attacks@into critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Dealing@damage will occasionally@max the Talent Gauge.</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party]@Turns all double attacks@into critical hits.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>535</td>
+        <td>[Battle Party] Increases@tension by one level@when using Talent Arts.</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

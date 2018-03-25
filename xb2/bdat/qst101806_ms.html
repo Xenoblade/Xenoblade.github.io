@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst101806_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst101806_msg001</td>
+        <td>62</td>
+        <td class="side">LIST_QST101806仮実装</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst101806_msg002</td>
+        <td>62</td>
+        <td class="side">借金いっぱいしちゃった</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst101806_msg003</td>
+        <td>62</td>
+        <td class="side">すぐ死ぬかなって思って</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst101806_msg004</td>
+        <td>62</td>
+        <td class="side">そんなばかなも</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst101806_msg005</td>
+        <td>62</td>
+        <td class="side">逃げたジゾーを追いかけたい
+一緒に連れてって</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst101806_msg0001</td>
+        <td>84</td>
+        <td class="side">Hey, Gamoosah! My Driver made it!</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst101806_msg0002</td>
+        <td>84</td>
+        <td class="side">Is that right?</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst101806_msg0003</td>
+        <td>84</td>
+        <td class="side">Sorry for trouble 'cos by
+my Blade Vahsah.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst101806_msg0004</td>
+        <td>84</td>
+        <td class="side">He will give back money you lend to
+him now.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst101806_msg0005</td>
+        <td>84</td>
+        <td class="side">Oh! Came back with the money, didya?
+Well, that's just splendid.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst101806_msg0006</td>
+        <td>84</td>
+        <td class="side">Indeedy!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst101806_msg0007</td>
+        <td>84</td>
+        <td class="side">Here 5,000G. This cover silly
+Vahsah's wild spending, yes?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst101806_msg0008</td>
+        <td>84</td>
+        <td class="side">5,000G? Oh, I'm sorry, dearie. That's a
+bit less than he owes.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst101806_msg0009</td>
+        <td>84</td>
+        <td class="side">Huh? Not enough? How much money
+Vahsah borrow?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst101806_msg0010</td>
+        <td>84</td>
+        <td class="side">Ah, yeah... I guess I didn't mention
+that part, did I?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst101806_msg0011</td>
+        <td>84</td>
+        <td class="side">Just add a couple zeroes, and we'll
+be sorted. 500,000G to be precise.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst101806_msg0012</td>
+        <td>84</td>
+        <td class="side">Five wha-?!!! But that like...hundred
+times hundred times hundred times...
+Budada cannot even count!</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst101806_msg0013</td>
+        <td>84</td>
+        <td class="side">You'll need to pay the whole lot off in
+cash, dearie.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst101806_msg0014</td>
+        <td>84</td>
+        <td class="side">Or, if you've got a decent lump of that
+Titan Quartz lying around, I'd accept
+that as well! Hahah!</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst101806_msg0015</td>
+        <td>84</td>
+        <td class="side">Titan Quartz? What's that?</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst101806_msg0016</td>
+        <td>84</td>
+        <td class="side">Is very very precious jewel...
+Sometimes found by salvage in
+Argentum, but only one time in million...</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst101806_msg0017</td>
+        <td>84</td>
+        <td class="side">Budada not get hands on Titan Quartz,
+except in dream.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst101806_msg0018</td>
+        <td>84</td>
+        <td class="side">Well, if this Blade can't pay me back,
+there is one other thing I'd accept.
+His Core Crystal!</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst101806_msg0019</td>
+        <td>84</td>
+        <td class="side">You'll get a pretty penny for a Core
+Crystal in somewhere like Mor Ardain.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst101806_msg0020</td>
+        <td>84</td>
+        <td class="side">But that not possible to give!</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst101806_msg0021</td>
+        <td>84</td>
+        <td class="side">Vahsah only go back to Core Crystal
+when Budada dying!</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst101806_msg0022</td>
+        <td>84</td>
+        <td class="side">You only take Core Crystal over
+Budada's dead body! Literally!</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst101806_msg0023</td>
+        <td>84</td>
+        <td class="side">Don't turn your back on reality,
+Budada my pal. We're upstanding
+people. We oughtta pay our debts.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst101806_msg0024</td>
+        <td>84</td>
+        <td class="side">And I guess in this case that
+means...uh, dying. Not a great
+outcome, I'll admit.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst101806_msg0025</td>
+        <td>84</td>
+        <td class="side">Well, well, well! These are some
+generous friends you've found
+yourselves here!</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst101806_msg0026</td>
+        <td>84</td>
+        <td class="side">I don't care who pays me,
+just as long as someone does.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst101806_msg0027</td>
+        <td>84</td>
+        <td class="side">But remember, it's 500 grand,
+or a lump of Titan Quartz!
+I won't accept anything less!</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst101806_msg0028</td>
+        <td>84</td>
+        <td class="side">Thank you so much...
+Sorry for big mess...</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev092201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0004</td>
+        <td class="side">I see. Homesickness for Earth has you crying yourself to sleep.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0005</td>
+        <td class="side">I know it's silly. I should just tough it out and get over it.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0006</td>
+        <td class="side">Not at all. I miss Earth as much as you do.[ST:n ]I think everyone here does.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0007</td>
+        <td class="side">There's no reason to feel shame or guilt about it.[ST:n ]This is a trauma we all share.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0008</td>
+        <td class="side">Really? I didn't think people as strong as you[ST:n ]still thought about it.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0009</td>
+        <td class="side">Of course we do. And I know this is hard,[ST:n ]so I appreciate your courage in bringing it up.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0010</td>
+        <td class="side">No, no, thank you. I feel bad taking up[ST:n ]so much of your time with this.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0011</td>
+        <td class="side">It's my pleasure. And any time you feel this way again,[ST:n ]come find me, all right?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0012</td>
+        <td class="side">I hope sharing this burden will help you begin[ST:n ]to heal and move forward with life.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0013</td>
+        <td class="side">It will. Thanks so much, Hope![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0014</td>
+        <td class="side">I just assumed you BLADEs were all serious, scary types.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0015</td>
+        <td class="side">I couldn't have been more off the mark.[ST:n ]I'm really glad I decided to talk to you.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0016</td>
+        <td class="side">All right, then. Next client, please![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0017</td>
+        <td class="side">I apologize for the wait.[ST:n ]Now then, how can I help you today?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0010</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0011</td>
+        <td class="side">Ask Hope what she does, exactly.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0020</td>
+        <td class="side">Confess</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0021</td>
+        <td class="side">Tell Hope you're struggling to find 10 natural pearls.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0018</td>
+        <td class="side">Oh, everything from giving directions[ST:n ]to solving crimes to life counseling.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0019</td>
+        <td class="side">It all fits under the Mediator umbrella.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0020</td>
+        <td class="side">So if anything's troubling you, feel free to share.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0021</td>
+        <td class="side">Oh, are you in this line of work as well?[ST:n ]Thank you for your service.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0022</td>
+        <td class="side">...So then. You're searching for 10 natural pearls, right?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0023</td>
+        <td class="side">I have a pearl necklace here that should suffice,[ST:n ]if you're amenable?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0024</td>
+        <td class="side">Hope, no! That necklace is a memento of your father![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0025</td>
+        <td class="side">You can't keep giving things away[ST:n ]to the first stranger who asks![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0026</td>
+        <td class="side">No, it's all right. I'm certain my father would be pleased[ST:n ]if it made someone happy.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0027</td>
+        <td class="side">Here, it's yours. And please don't worry about it.[ST:n ]I hope it helps.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0028</td>
+        <td class="side">Are you sure? Like, REALLY sure?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0029</td>
+        <td class="side">It's sweet how you always worry, Ornella.[ST:n ]You remind me of my mother.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0030</td>
+        <td class="side">You've been watching out for me ever since we landed here.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0031</td>
+        <td class="side">Oh, but we're keeping clients waiting.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0032</td>
+        <td class="side">Ah, yeah, I guess. ...All right, next please![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0033</td>
+        <td class="side">Heya, Hope. I need advice in a big bad way.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0034</td>
+        <td class="side">My, we're getting a lot of BLADEs today.[ST:n ]Do you need help with a mission?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0035</td>
+        <td class="side">No, this is more...personal.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0036</td>
+        <td class="side">So, um... Do you know if these mimeosome[ST:n ]bodies can...you know. Conceive?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0037</td>
+        <td class="side">As in...children?! I, uh... Um...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0038</td>
+        <td class="side">See, I've started living with this guy,[ST:n ]and we've been talking, and...You know.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0039</td>
+        <td class="side">Y-yes, of course. Though, I'm, uh...I'm afraid[ST:n ]that's a bit outside my...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0040</td>
+        <td class="side">Er, what about you? Do you know anything about this?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0030</td>
+        <td class="side">Suggest</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0031</td>
+        <td class="side">Say that the world must be made safe[ST:n ]before thinking about bringing children into it.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0040</td>
+        <td class="side">Lecture</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0041</td>
+        <td class="side">Say that bringing children into a[ST:n ]world like this is selfish and wrong.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0041</td>
+        <td class="side">Yes! Exactly! What an insightful observation.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0042</td>
+        <td class="side">In other words, if you focus on achieving BLADE's goals,[ST:n ]eventually everything will work out fine.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0043</td>
+        <td class="side">I...see. I guess that makes sense.[ST:n ]And it's great motivation to work hard, too.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0044</td>
+        <td class="side">All right, well...thanks to you both for the advice![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0045</td>
+        <td class="side">Phew! Thank you. I was really thrown for a loop there.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0046</td>
+        <td class="side">Oh. Wow. You're...really blunt.[ST:n ]But I see where you're coming from.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0047</td>
+        <td class="side">I suppose we do have bigger worries at the moment.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0049</td>
+        <td class="side">But every mission we do helps to change that.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0050</td>
+        <td class="side">Which means I have to do my best![ST:n ]Aw, thanks, Hope. I feel way better.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0051</td>
+        <td class="side">Er, sorry to make you be the one to handle that.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0052</td>
+        <td class="side">But I appreciate it. I just blanked on what to tell her.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0053</td>
+        <td class="side">Next in line, step up, please![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0054</td>
+        <td class="side">Lularita needs mega favor mega fast![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0055</td>
+        <td class="side">Well, this sounds serious. What can I help you with?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0056</td>
+        <td class="side">Drongo Caravan is under attack[ST:n ]from awful beasties in Cauldros![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0057</td>
+        <td class="side">BLADE lady must stop monsters and save caravan![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0058</td>
+        <td class="side">Oh, that's terrible! But I'm afraid I'm only a Mediator.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0059</td>
+        <td class="side">I don't have the training or equipment[ST:n ]to take on a mission like that by myself.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0060</td>
+        <td class="side">BLADE lady not help?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0060_02</td>
+        <td class="side">Lularita heard you solve problems for free.[ST:n ]Came long way to demand aid![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0061</td>
+        <td class="side">This total fraud![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0061_2</td>
+        <td class="side">Drongo Caravan doomed! So many Nopon die![ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0062</td>
+        <td class="side">I'm so, so sorry, but this is something[ST:n ]I just can't handle alone...[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0050</td>
+        <td class="side">Assist</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0051</td>
+        <td class="side">Offer to assist Hope with the problem.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev092201_JNK0060</td>
+        <td class="side">Watch</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev092201_SEL0061</td>
+        <td class="side">Wait and see what happens.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0063</td>
+        <td class="side">You'd do that?! Goodness, I don't know what to... Thank you.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0064</td>
+        <td class="side">I know I can't do everything,[ST:n ]but it still pains me to sit by while people suffer.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0065</td>
+        <td class="side">Lularita count on friends. Lularita explain messy details[ST:n ]when friends come to caravan.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0066</td>
+        <td class="side">Thank you again for offering to help.[ST:n ]I suppose this means we'll be traveling to Cauldros together.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0067</td>
+        <td class="side">My name is Hope Alanzi.[ST:n ]I'll do my best not to get in the way.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0068</td>
+        <td class="side">qev092201_MSG0068</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0068_m</td>
+        <td class="side">What about lazy friend?[ST:n ]Two of you together are strong enough to help.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0068_f</td>
+        <td class="side">What about lazy friend?[ST:n ]Two of you together are strong enough to help.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0069</td>
+        <td class="side">qev092201_MSG0069</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0069_m</td>
+        <td class="side">Um, us? The two of us? Help you?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0069_f</td>
+        <td class="side">Um, us? The two of us? Help you?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0070</td>
+        <td class="side">Lularita count on friends.[ST:n ]Lularita explain messy details when friends come to caravan.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0071</td>
+        <td class="side">Well that certainly escalated quickly.[ST:n ]I don't suppose you'd help, would you?[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0072</td>
+        <td class="side">Please? It seems like she's going regardless,[ST:n ]and without you, she's likely to get killed.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0073</td>
+        <td class="side">I'd really appreciate it! I promise not to get in your way.[ST:wait ][ST:n ]</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qev092201_MSG0074</td>
+        <td class="side">Together, I just know we can keep these poor Nopon safe.[ST:wait ][ST:n ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

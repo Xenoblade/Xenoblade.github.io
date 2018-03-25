@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev065701_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev065701_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev065701_SEL0011</td>
+        <td class="side">Ask Go Rogan about Wrothian duty.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev065701_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev065701_SEL0021</td>
+        <td class="side">Ask Go Rogan about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev065701_JNK0010</td>
+        <td class="side">tev065701_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev065701_SEL0011</td>
+        <td class="side">tev065701_SEL0011</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev065701_JNK0020</td>
+        <td class="side">tev065701_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev065701_SEL0031</td>
+        <td class="side">Ask Go Rogan about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0001</td>
+        <td class="side">We Wrothians draw our blades and battle our[ST:n ]adversaries to fulfill our duty to Prince Jiarg.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0002</td>
+        <td class="side">But what of you BLADEs? What is your reason for[ST:n ]risking your life to fight the Ganglion?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0003</td>
+        <td class="side">...It depends on the person, you say?[ST:n ]Some fight for the future of humanity, while others[ST:n ]complete missions for selfish gain?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0004</td>
+        <td class="side">Then you are willing to put your life on the line without[ST:n ]knowing if the person next to you is of the same mind?[ST:n ]Without so much as a common cause?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0005</td>
+        <td class="side">Perhaps that free-spirited approach is why you are able[ST:n ]to stand up to the Ganglion, whereas we were not.[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0010</td>
+        <td class="side">I am Go Rogan, commander of the Wrothian[ST:n ]Mercenaries, Third Company.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0011</td>
+        <td class="side">Of course, said company is just a ragtag bunch of[ST:n ]novices scrounged together by necessity after our[ST:n ]alliance with you.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0012</td>
+        <td class="side">But with training—and train we shall—my company will[ST:n ]be every bit as strong as the Hundred Hellions![ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0013</td>
+        <td class="side">May we meet again on some future battlefield.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0018</td>
+        <td class="side">Gi Zang has grown a shoulder or two since last I[ST:n ]saw him.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0019</td>
+        <td class="side">He will make a good rival. And I have you to thank[ST:n ]for growing as strong as I![ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0020</td>
+        <td class="side">Let me thank you on behalf of my departed brothers[ST:n ]of the Hundred Hellions.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0021</td>
+        <td class="side">If Gi Zang passes this skill and strength on to the other[ST:n ]Wrothian warriors...[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev065701_MSG0022</td>
+        <td class="side">then we may yet see a force equal to the Hundred[ST:n ]Hellions![ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1001</td>
+        <td class="side">Before the Ganglion came to our homeworld,[ST:n ]the Wrothian army had an elite covert force called the[ST:n ]Hundred Hellions.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1002</td>
+        <td class="side">Despite their small numbers, the Hellions were combat[ST:n ]elites—legends that other soldiers would speak of only[ST:n ]in awestruck tones.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1003</td>
+        <td class="side">They resisted the Ganglion to the very end,[ST:n ]and it cost nearly all of their lives.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1004</td>
+        <td class="side">Gi Zang alone survived among all the Hellions,[ST:n ]and he came here to Mira with the rest of us.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1005</td>
+        <td class="side">He has since left our ranks—to train, he said.[ST:n ]I wonder how he fares?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev065701_JNK1010</td>
+        <td class="side">Reassure[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev065701_SEL1011</td>
+        <td class="side">Tell Go Rogan about Gi Zang.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev065701_JNK1020</td>
+        <td class="side">Relate[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev065701_SEL1021</td>
+        <td class="side">Tell Go Rogan that the Hundred[ST:n ]Hellions sound fascinating.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1006</td>
+        <td class="side">What? You know him?![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1007</td>
+        <td class="side">...I see. So he has grown that strong already.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1008</td>
+        <td class="side">In that case, he should end his quest and return to us.[ST:n ]We need such strength now![ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1009</td>
+        <td class="side">They were brave and proud beyond all measure![ST:n ]Not a Wrothian draws breath who does not look upon[ST:n ]the Hellions with admiration.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev065701_MSG1010</td>
+        <td class="side">Gi Zang wanted to count himself among the best[ST:n ]of them, which is why he continues his reckless quest[ST:n ]to this day, I imagine.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

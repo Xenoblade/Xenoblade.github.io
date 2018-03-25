@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BTL_Reaction</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>DebugName</th>
+          <th>Priority</th>
+          <th>PowLv1_S</th>
+          <th>PowLv1_M</th>
+          <th>PowLv1_L</th>
+          <th>PowLv1_LL</th>
+          <th>PowLv2_S</th>
+          <th>PowLv2_M</th>
+          <th>PowLv2_L</th>
+          <th>PowLv2_LL</th>
+          <th>PowLv3_S</th>
+          <th>PowLv3_M</th>
+          <th>PowLv3_L</th>
+          <th>PowLv3_LL</th>
+          <th>PowLv4_S</th>
+          <th>PowLv4_M</th>
+          <th>PowLv4_L</th>
+          <th>PowLv4_LL</th>
+          <th>PowLv5_S</th>
+          <th>PowLv5_M</th>
+          <th>PowLv5_L</th>
+          <th>PowLv5_LL</th>
+          <th>PowLv6_S</th>
+          <th>PowLv6_M</th>
+          <th>PowLv6_L</th>
+          <th>PowLv6_LL</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="BTL_ElementalCombo.html#17">BTL_ElementalCombo#Cyclone</a>
+            <a href="BTL_ElementalCombo.html#19">BTL_ElementalCombo#Sandstorm</a>
+            <a href="BTL_ElementalCombo.html#25">BTL_ElementalCombo#Dead of Winter</a>
+          </details>
+        </td>
+        <td class="side">Knockback</td>
+        <td>ノックバック</td>
+        <td>2</td>
+        <td>99</td>
+        <td>90</td>
+        <td>81</td>
+        <td>72</td>
+        <td>117</td>
+        <td>108</td>
+        <td>99</td>
+        <td>90</td>
+        <td>135</td>
+        <td>126</td>
+        <td>117</td>
+        <td>108</td>
+        <td>153</td>
+        <td>144</td>
+        <td>135</td>
+        <td>126</td>
+        <td>171</td>
+        <td>162</td>
+        <td>153</td>
+        <td>144</td>
+        <td>189</td>
+        <td>180</td>
+        <td>171</td>
+        <td>162</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>8 refs</summary>
+            <a href="BTL_ElementalCombo.html#4">BTL_ElementalCombo#Nuclear Blast</a>
+            <a href="BTL_ElementalCombo.html#6">BTL_ElementalCombo#Steam Explosion</a>
+            <a href="BTL_ElementalCombo.html#18">BTL_ElementalCombo#Thunder Gale</a>
+            <a href="BTL_ElementalCombo.html#22">BTL_ElementalCombo#Permafrost Crash</a>
+            <a href="BTL_ElementalCombo.html#29">BTL_ElementalCombo#Volcanic Storm</a>
+            <a href="BTL_ElementalCombo.html#36">BTL_ElementalCombo#Electrofire Storm</a>
+            <a href="BTL_ElementalCombo.html#41">BTL_ElementalCombo#Meteorite</a>
+            <a href="BTL_ElementalCombo.html#49">BTL_ElementalCombo#Second Sun</a>
+          </details>
+        </td>
+        <td class="side">Blowdown</td>
+        <td>吹き飛び</td>
+        <td>3</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>170</td>
+        <td>160</td>
+        <td>150</td>
+        <td>140</td>
+        <td>190</td>
+        <td>180</td>
+        <td>170</td>
+        <td>160</td>
+        <td>210</td>
+        <td>200</td>
+        <td>190</td>
+        <td>180</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_FightCombo.html#1">BTL_FightCombo#Break</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>崩し</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_FightCombo.html#2">BTL_FightCombo#Topple</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>転倒</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_FightCombo.html#3">BTL_FightCombo#Launch</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>打ち上げ</td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_FightCombo.html#4">BTL_FightCombo#Smash</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>叩きつけ</td>
+        <td>6</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

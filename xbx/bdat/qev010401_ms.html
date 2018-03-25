@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev010401_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0001</td>
+        <td class="side">What am I going to do? This can't be all the parts...[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0002</td>
+        <td class="side">Er, y-yes! Hello! Welcome! Have a seat right here![ST:n ]I mean, um, if you want to...sit down.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0003</td>
+        <td class="side">No espresso or lattes today, I'm afraid.[ST:n ]We're, uh...sold out. Yes! That's it! So sad...[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0010</td>
+        <td class="side">Compromise</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0011</td>
+        <td class="side">Agree to drink whatever she can offer.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0020</td>
+        <td class="side">Complain</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0021</td>
+        <td class="side">Demand to know why there's no espresso.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0004</td>
+        <td class="side">Oh, w-wow! You're being really nice about this...[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0005</td>
+        <td class="side">But no. I mean, you took the time to come here and[ST:n ]whatnot, so you deserve to drink what you really want.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0006</td>
+        <td class="side">Well, aren't you one nosy customer?[ST:n ]Must reeeally need your caffeine fix, huh?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0007</td>
+        <td class="side">But yeah, I kinda can't make them today.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0008</td>
+        <td class="side">Hey, um, are you good with machines by any chance?[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0009</td>
+        <td class="side">You certainly SEEM good with machines![ST:n ]Just, you know...aura-wise? So...maybe?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0030</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0031</td>
+        <td class="side">Tell Jo that you can sling a mean wrench if need be.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0040</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0041</td>
+        <td class="side">Admit you're probably better at breaking stuff.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0010</td>
+        <td class="side">I knew it! Sometimes you can just tell.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0011</td>
+        <td class="side">Really? Well, um, I'm sure you're still better at repairing[ST:n ]stuff than me, right? I mean, you kind of have to be.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0012</td>
+        <td class="side">I'm a complete basket case when it comes to[ST:n ]mechanical stuff. Well, and most other stuff, actually.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0013</td>
+        <td class="side">Anyway, the owner just got this new espresso machine,[ST:n ]and it seems that I've somehow managed to...break it.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0014</td>
+        <td class="side">It should be okay once I get the right parts,[ST:n ]but finding them has been a nightmare.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0015</td>
+        <td class="side">Er, I don't suppose you might know where I could find[ST:n ]three heatproof inox pipes, do you?[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0016</td>
+        <td class="side">Oh, gosh! I'm so glad I asked![ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0017</td>
+        <td class="side">As soon as that machine is up and running, I'll fix[ST:n ]you the tastiest latte you've ever had! I mean it![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0018</td>
+        <td class="side">My boss begged for WEEKS to get this espresso[ST:n ]machine made for the shop.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0019</td>
+        <td class="side">As soon as it's fixed, I'll make you the best latte ever,[ST:n ]I swear. So, um, PLEASE can you go find me those[ST:n ]heatproof inox pipes?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0020</td>
+        <td class="side">My boss was asking why the espresso machine isn't[ST:n ]around. I told her it called in sick, and then she just[ST:n ]kind of looked at me funny and walked away.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0021</td>
+        <td class="side">If this thing doesn't get fixed soon, I'm so dead![ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0050</td>
+        <td class="side">Assure</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0051</td>
+        <td class="side">Tell Jo not to worry as you have the pipes she needs.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0060</td>
+        <td class="side">Chide</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0061</td>
+        <td class="side">Reprimand Jo for lying to her boss.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0022</td>
+        <td class="side">Really?! Wow, you're so dependable![ST:n ]Unlike that machine. ...Or me.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0023</td>
+        <td class="side">Can I see? Er, please?[ST:n ]I'm kinda sorta freaking out about this here.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0024</td>
+        <td class="side">It took forever to get this thing in, and I broke it[ST:n ]before it made a single cup! YOU try telling your[ST:n ]boss something like that![ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0025</td>
+        <td class="side">So, um...any luck? I don't suppose you've found those[ST:n ]heatproof inox pipes yet, have you?[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0026</td>
+        <td class="side">That's perfect, thank you! Really![ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0027</td>
+        <td class="side">Now we can start offering espresso again![ST:n ]...Or for the first time, depending on how you[ST:n ]look at it.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0028</td>
+        <td class="side">Oh, right! Hold on just ONE second! I'll be right back![ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0029</td>
+        <td class="side">I'm going to fix you the best thank-you latte EVER![ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0070</td>
+        <td class="side">Accept</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0071</td>
+        <td class="side">Enthusiastically accept Jo's offer.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0080</td>
+        <td class="side">Decline</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0081</td>
+        <td class="side">Politely decline Jo's offer.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0030</td>
+        <td class="side">Aw, you're so sweet. Believe me, it's my pleasure![ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0031</td>
+        <td class="side">Honestly, it just feels nice to be able to give someone[ST:n ]what they want. Seems like most BLADEs prefer a stiff[ST:n ]drink over a good cup of joe.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0032</td>
+        <td class="side">But I'm going to pull out all the stops and make this the[ST:n ]finest coffee creation of my career![ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0033</td>
+        <td class="side">What? No, you have to let me do this for you! I need[ST:n ]practice before making one for real custom— Er...[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0034</td>
+        <td class="side">I mean, ha! Ha ha! Don't mind me! Just be a minute.[ST:n ]...Please have a drink before you go?[ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0035</td>
+        <td class="side">Oh, I know! It's been hot lately, so why don't we make[ST:n ]it an iced latte?[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0036</td>
+        <td class="side">You hold on to your seat, now! I may be useless with[ST:n ]machines, but I'm one mean bean slinger![ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0037</td>
+        <td class="side">Eeep! Aaaaaack! NOOOOOOOOOOOO![ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0038</td>
+        <td class="side">Huh? Jo, wait! Where are you going?[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0090</td>
+        <td class="side">Ignore</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0091</td>
+        <td class="side">Ask Coco what happened to Jo.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0100</td>
+        <td class="side">Worry</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0101</td>
+        <td class="side">Ask Coco to tell you about herself.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0039</td>
+        <td class="side">Beats me. She went into the back, screamed,[ST:n ]then ran off.[ST:wait ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0040</td>
+        <td class="side">If I had to bet, I'd say she broke some kitchen[ST:n ]equipment. ...Again.[ST:wait ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0041</td>
+        <td class="side">That girl is death to electronics. The register, customers'[ST:n ]comm devices, you name it. She even managed to[ST:n ]short-circuit a light bulb once.[ST:wait ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0042</td>
+        <td class="side">Frankly, nothing that breaks around her surprises me[ST:n ]anymore.[ST:wait ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0043</td>
+        <td class="side">Me? Oh, I own the place. Nice to meet you.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0044</td>
+        <td class="side">Unlike the muddy slop other places give you,[ST:n ]we use only the purest springwater for our coffee.[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0045</td>
+        <td class="side">We even grow our own beans on actual plants.[ST:n ]No synthetics here![ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0046</td>
+        <td class="side">This café is the one place in my life where I make no[ST:n ]compromises. Well, when Jo's not tearing it down,[ST:n ]anyway.[ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0047</td>
+        <td class="side">Are you a friend of hers? Would you mind checking on[ST:n ]her and seeing if she's okay?[ST:wait ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0048</td>
+        <td class="side">I can't leave the shop, and I really need her back here[ST:n ]as soon as possible. Thanks a lot.[ST:wait ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0049</td>
+        <td class="side">Holy frother, I have sinned. It's been three days since[ST:n ]my last contraption... Augh, why do I have to wreck[ST:n ]EVERYTHING I touch?![ST:wait ]</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0050</td>
+        <td class="side">Ack, sorry, I... Oh. It's you.[ST:wait ]</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0051</td>
+        <td class="side">I'm so sorry! Your iced latte...[ST:wait ]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0052</td>
+        <td class="side">I was trying to get the ice when the stupid freezer...[ST:n ]I mean, when stupid ME broke it![ST:wait ]</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0110</td>
+        <td class="side">Boggle</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0111</td>
+        <td class="side">Ask Jo how someone can even break a freezer.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0120</td>
+        <td class="side">Console</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0121</td>
+        <td class="side">Console Jo by telling her we've all broken freezers.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0053</td>
+        <td class="side">I don't know what I did...[ST:wait ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0054</td>
+        <td class="side">Maybe I have mutant powers and give off[ST:n ]electromagnetic waves or something.[ST:wait ]</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0055</td>
+        <td class="side">That would explain why the espresso machine and the[ST:n ]freezer both died the moment I got near them...[ST:wait ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0056</td>
+        <td class="side">Curse you, machine gods! Why have you forsaken me?![ST:wait ]</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0057</td>
+        <td class="side">...R-really? You too? Gosh, you must be a real menace[ST:n ]around Skells.[ST:wait ]</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0058</td>
+        <td class="side">B-but I'm glad to hear I'm not alone. Maybe the two of[ST:n ]us destroyers need to go make some sort of offering to[ST:n ]the machine gods.[ST:wait ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0059</td>
+        <td class="side">Huh? My boss needs me back at the shop?[ST:wait ]</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0060</td>
+        <td class="side">But I CAN'T go back! Not after all this![ST:wait ]</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0061</td>
+        <td class="side">Maybe if I had a couple of L-002 fuel tanks to repair[ST:n ]the freezer... But now? I just can't...[ST:wait ]</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0062</td>
+        <td class="side">I feel TERRIBLE asking, but can you help me out again?[ST:n ]You're the only one I can turn to.[ST:wait ]</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0063</td>
+        <td class="side">I'll be here making supplications to the machine gods[ST:n ]till you get back with those L-002 fuel tanks.[ST:wait ]</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0064</td>
+        <td class="side">Maybe if I beg enough, they'll lift this curse...[ST:wait ]</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0065</td>
+        <td class="side">All I ever wanted was to make people a nice hot drink[ST:n ]and bring five minutes of peace to their day.[ST:wait ]</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0066</td>
+        <td class="side">I, um, just got a call from my boss.[ST:wait ]</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0067</td>
+        <td class="side">Coco's got to be pretty mad, right? Am I fired?[ST:n ]Super fired? I'm probably super fired, huh?[ST:wait ]</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0130</td>
+        <td class="side">Confirm</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0131</td>
+        <td class="side">Nod and tell Jo she's probably super fired.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0140</td>
+        <td class="side">Deny</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0141</td>
+        <td class="side">Reassure Jo that everything will be just fine.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0068</td>
+        <td class="side">Oh, I know you're right. But I still want to work there![ST:n ]Nowhere else on Mira takes that kind of care with their[ST:n ]coffee![ST:wait ]</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0069</td>
+        <td class="side">Plus, I just love the café! Well, the parts of it I don't[ST:n ]manage to break, anyway.[ST:wait ]</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0070</td>
+        <td class="side">You really think so? I mean, I guess I've burned through[ST:n ]a dozen coffee makers and still kept my job, so...[ST:wait ]</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0071</td>
+        <td class="side">In any case, I need to go apologize.[ST:n ]Oh! Did you happen to find those L-002 fuel tanks[ST:n ]for me, by any chance?[ST:wait ]</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0072</td>
+        <td class="side">Okay! Then it's time to woman up and give the boss[ST:n ]a call![ST:wait ]</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0073</td>
+        <td class="side">Phew... You can do this, Jo![ST:wait ]</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0074</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0075</td>
+        <td class="side">...Wait, what? Why won't this thing turn on?[ST:wait ]</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0076</td>
+        <td class="side">Oh, you have GOT to be kidding me![ST:n ]I broke my COMM DEVICE?![ST:wait ]</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0077</td>
+        <td class="side">It's like a bad dream...[ST:wait ]</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0150</td>
+        <td class="side">Assist</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0151</td>
+        <td class="side">Offer Jo use of your own device instead.</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>qev010401_JNK0160</td>
+        <td class="side">Watch</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>qev010401_SEL0161</td>
+        <td class="side">Keep your own device far, far away from this girl.</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0078</td>
+        <td class="side">What? No, I couldn't. I'd just break yours, too.[ST:wait ]</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0079</td>
+        <td class="side">That's it! I'm never touching another machine again![ST:wait ]</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0080</td>
+        <td class="side">I can tell what you're thinking, and believe me, I agree.[ST:wait ]</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0081</td>
+        <td class="side">It's true. I ruin everything.[ST:wait ]</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0082</td>
+        <td class="side">Ha! Classic Jo... Your mechanical troubles are proof[ST:n ]of the divine at this point.[ST:wait ]</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0083</td>
+        <td class="side">M-ma'am?![ST:wait ]</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0084</td>
+        <td class="side">I don't remember giving you a lunch break this long.[ST:wait ]</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0085</td>
+        <td class="side">Look, you really think blowing up a freezer or two is[ST:n ]going to faze me at this point?[ST:wait ]</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0086</td>
+        <td class="side">I want the best of everything for my coffee. Including[ST:n ]the best coffee maker: Jo, the ballista barista![ST:wait ]</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0087</td>
+        <td class="side">I don't know what to say... *sniff* How are you two[ST:n ]years younger than me and yet so much more mature?[ST:wait ]</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0088</td>
+        <td class="side">Heh. Looks like Jo put you through the wringer as well.[ST:n ]Here—this is from me. Please take it.[ST:wait ]</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0089</td>
+        <td class="side">Now c'mon, Jo! You and me have a freezer to fix.[ST:wait ]</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0090</td>
+        <td class="side">...Yes, ma'am![ST:wait ]</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0091</td>
+        <td class="side">Er, and next time—that is, if you're not TOTALLY sick[ST:n ]of me—next time, I swear, I'll make you that latte![ST:wait ]</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>qev010401_MSG0092</td>
+        <td class="side">So I hope to see you again soon at the Sunshine Café![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

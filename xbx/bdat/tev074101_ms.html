@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev074101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0011</td>
+        <td class="side">Ask Non'barac about the Ganglion's main base.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0021</td>
+        <td class="side">Ask Non'barac if anything is troubling her.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0010</td>
+        <td class="side">tev074101_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0031</td>
+        <td class="side">Ask Non'barac about the fight with the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0020</td>
+        <td class="side">tev074101_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0021</td>
+        <td class="side">tev074101_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0010</td>
+        <td class="side">tev074101_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0011</td>
+        <td class="side">tev074101_SEL0011</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0020</td>
+        <td class="side">tev074101_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev074101_SEL1021</td>
+        <td class="side">Ask Non'barac about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0010</td>
+        <td class="side">tev074101_JNK0010</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0031</td>
+        <td class="side">tev074101_SEL0031</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev074101_JNK0020</td>
+        <td class="side">tev074101_JNK0020</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev074101_SEL0021</td>
+        <td class="side">tev074101_SEL0021</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0001</td>
+        <td class="side">Ganglion's home base seems to be in Cauldros.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0002</td>
+        <td class="side">Sifting through the memories that run through my veins,[ST:n ]I do have a sense that most of the weapons we made[ST:n ]were sent north.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0003</td>
+        <td class="side">Those weapons alone would make for quite an[ST:n ]impressive concentration of artillery, so watch out[ST:n ]for that.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0004</td>
+        <td class="side">I also suspect you'll be facing defenses far beyond[ST:n ]anything you've seen in this area.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0009</td>
+        <td class="side">The miranium shortage is a serious problem,[ST:n ]but an entirely preventable one caused by the[ST:n ]inefficient way you humans are exploring Mira.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0010</td>
+        <td class="side">After all, outside of major missions, the exploration[ST:n ]is being conducted by individual teams acting on[ST:n ]their own initiative, is it not?[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0011</td>
+        <td class="side">Unlike us, you don't have an Ovah to regulate[ST:n ]your efforts.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0012</td>
+        <td class="side">Wouldn't it make more sense to expand FrontierNav[ST:n ]in a carefully planned fashion, moving each BLADE like[ST:n ]a piece on a map?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0013</td>
+        <td class="side">If you leave the planning to me, I can promise that[ST:n ]your efforts will be 3.68 times more efficient![ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0018</td>
+        <td class="side">Several of the Orphean Technologies armaments employ[ST:n ]parts that I've developed.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0019</td>
+        <td class="side">Have they served you well in your fight with the[ST:n ]Ganglion?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0020</td>
+        <td class="side">I have made a number of friends in this city,[ST:n ]and take pride in having been able to offer them[ST:n ]higher-quality items than I did to the Ganglion.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0021</td>
+        <td class="side">What do you think? Were they of use?[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev074101_MSG0022</td>
+        <td class="side">If so, I hope you will continue to use them—with my[ST:n ]deep appreciation—to maintain a lasting peace.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev074101_MSG1001</td>
+        <td class="side">After what happened, I had a long conversation with[ST:n ]a Pathfinder.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev074101_MSG1002</td>
+        <td class="side">He spoke of having to traverse unimaginably dangerous[ST:n ]areas in order to install data probes.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev074101_MSG1003</td>
+        <td class="side">Apparently he's had to install them on sheer cliffs,[ST:n ]in indigen nests, and even at the heart of Ganglion[ST:n ]fortresses![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev074101_MSG1004</td>
+        <td class="side">With the pace at which you've been installing them[ST:n ]lately, I had assumed it was a much simpler task.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev074101_MSG1005</td>
+        <td class="side">You humans certainly are incredible creatures.[ST:n ]Please keep installing those probes and bringing me[ST:n ]their miranium![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

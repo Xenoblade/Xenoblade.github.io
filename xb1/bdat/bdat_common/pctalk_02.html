@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>pctalk_02</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>type</th>
+          <th>server</th>
+          <th>receiver</th>
+          <th>low_receiver</th>
+          <th>high_receiver</th>
+          <th>high_server</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:20>Yeah. We might be able to help.<wait=key><del=this></td>
+        <td><trust=f:0:50>Go on, spill it! I'm sure Shulk'll<n>have something up his sleeve.<wait=key><del=this></td>
+        <td>You can help too, Reyn!<wait=key><del=this></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:20>Yeah. We're great listeners.<wait=key><del=this></td>
+        <td><trust=f:1:50>Shulk, I wanna know too!<wait=key><del=this></td>
+        <td>Easy, Fiora.<n>We'll get to the bottom of this!<wait=key><del=this></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:20>Yes. This could be interesting.<wait=key><del=this></td>
+        <td><trust=f:2:50>Perhaps we can help in some way.<wait=key><p>Shulk, shall we lend a hand?<wait=key><del=this></td>
+        <td>Of course! I'll help any way I can.<wait=key><del=this></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:20>I'd like to hear too.<wait=key><del=this></td>
+        <td><trust=f:3:50>Yeah. Maybe there's<n>something we can do.<wait=key><del=this></td>
+        <td>Thanks, Sharla.<wait=key><p>Let's find out more.<wait=key><del=this></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:20>Yeah! Talk in way that<n>Riki can understand!<wait=key><del=this></td>
+        <td><trust=f:4:50>But Riki thought Shulk know<n>everything about everything!<wait=key><del=this></td>
+        <td>Not this time, Riki.<n>We'll just have to listen.<wait=key><del=this></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:20>I too would be interested to hear.<wait=key><del=this></td>
+        <td><trust=f:5:50>You can speak freely.<n>Shulk is a very good listener.<wait=key><del=this></td>
+        <td>Melia! I wouldn't go that far!<wait=key><del=this></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:20>Yeah. Let's hear your story.<wait=key><del=this></td>
+        <td><trust=f:0:50>Reyn's got a hero complex.<n>He just has to help people!<wait=key><del=this></td>
+        <td>Hey! Don't make fun of me!<wait=key><p>I'm just askin' what's up!<wait=key><del=this></td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:20>Yes. Please tell us.<wait=key><del=this></td>
+        <td><trust=f:6:50>Reyn! Be more polite!<wait=key><p>Sorry about that. Reyn often<n>forgets his manners.<wait=key><del=this></td>
+        <td>Hey! I'm supposed<n>to be the tough guy!<wait=key><p>Anyway...<n>What's the matter?<wait=key><del=this></td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:20>Yes. Please enlighten us.<wait=key><del=this></td>
+        <td><trust=f:7:50>Reyn, look the other person in<n>the eye when you talk to them.<wait=key><p>The eyes are the<n>window to the soul!<wait=key><del=this></td>
+        <td><type=think>Urgh... I'm looking, I'm looking...<wait=key><p>Nope. Didn't get a thing!<wait=key><del=this></td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:20>I'd like to hear too.<wait=key><del=this></td>
+        <td><trust=f:8:50>Good boy, Reyn.<wait=key><p>Listening is an important skill.<wait=key><del=this></td>
+        <td>Hey! You're startin' to<n>sound like my mum now!<wait=key><del=this></td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:20>Reyn become all ears?<n>What that mean?<wait=key><del=this></td>
+        <td><trust=f:9:50>Will that help Reyn understand?<wait=key><del=this></td>
+        <td>C-course it will!<wait=key><del=this></td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:20>I would like to know too.<wait=key><del=this></td>
+        <td><trust=f:10:50>Reyn, are you sure we have<n>time to get involved in this?<wait=key><del=this></td>
+        <td>Why not?<wait=key><p>If we both chip in, we'll<n>be finished in no time!<wait=key><del=this></td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:20>Yes. We'd like to hear.<wait=key><del=this></td>
+        <td><trust=f:1:50>Maybe we'll be able to help.<wait=key><p>Isn't that right, Fiora?<wait=key><del=this></td>
+        <td>That's right!<wait=key><del=this></td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:20>Yeah. Maybe there's<n>something we can do.<wait=key><del=this></td>
+        <td><trust=f:6:50>Hear more? Then what?<wait=key><p>Ain't we got enough on our<n>plates looking after Shulk?<wait=key><del=this></td>
+        <td>REYN!<wait=key><del=this></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:20>Yes, please do. I too<n>would like to hear.<wait=key><del=this></td>
+        <td><trust=f:11:50>I'm sure that Shulk<n>will know what to do.<wait=key><del=this></td>
+        <td>What?!<wait=key><p>It's not exactly hard! I can do it!<wait=key><del=this></td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:20>I'd like to know as well.<wait=key><del=this></td>
+        <td><trust=f:12:50>You really like doing things for<n>other people, don't you Fiora?<wait=key><del=this></td>
+        <td>I'm getting you to help too, Sharla!<wait=key><p>Right, let's get to<n>the bottom of this!<wait=key><del=this></td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:20>So confusing! Say in way<n>that Riki can understand!<wait=key><del=this></td>
+        <td><trust=f:13:50>Fiora! Riki have problems too!<wait=key><del=this></td>
+        <td>Hehehe.<wait=key><p>We'll sit and talk later, OK?<wait=key><del=this></td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:20>Yes, do. I too would like to know.<wait=key><del=this></td>
+        <td><trust=f:14:50><type=think>She shows as much concern for<n>others as she does herself.<wait=key><p>Is this her strength?<wait=key><del=this></td>
+        <td><type=think>Melia's staring at me.<wait=key><p>Did I say something odd?<wait=key><del=this></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:20>Yes. Please tell us what you have<n>to say.<wait=key><del=this></td>
+        <td><trust=f:2:50>It's important to listen first.<n>Dunban taught me that.<wait=key><del=this></td>
+        <td>Well remembered, Shulk!<wait=key><p>So, how can we help you?<wait=key><del=this></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:20>Yeah. What's on your mind?<wait=key><del=this></td>
+        <td><trust=f:7:50>Me and Dunban'll hear you out.<wait=key><del=this></td>
+        <td>Yes. Let's hear it.<wait=key><del=this></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:20>Yeah. Please tell us all about it.<wait=key><del=this></td>
+        <td><trust=f:11:50>Dunban! You're not making extra<n>work for yourself again, are you?<wait=key><del=this></td>
+        <td>With a little sister like you,<n>I've got used to hard work.<wait=key><p>Tell us what's troubling you.<wait=key><del=this></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:20>Yeah. I want to know too.<wait=key><del=this></td>
+        <td><trust=f:15:50><type=think>Now I see.<wait=key><p>Dunban's renowned as a hero not<n>only because he saved the world.<wait=key><del=this></td>
+        <td>What are you thinking, Sharla?<wait=key><p>You want to help, don't you?<wait=key><del=this></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:20>So confusing! Say in way that Riki<n>can understand!<wait=key><del=this></td>
+        <td><trust=f:16:50>Dundun so kind!<wait=key><p>Dundun always help sad peoples.<wait=key><del=this></td>
+        <td>With the world the way it is, we all<n>have to help each other out.<wait=key><p>So, what's the problem?<wait=key><del=this></td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:20>Yes. I too would like to hear more.<wait=key><del=this></td>
+        <td><trust=f:17:50><type=think>Such concern for their fellow man.<n>Is what makes the Homs so strong.<wait=key><p>We High Entia have much to learn.<wait=key><del=this></td>
+        <td>You look worried about something.<wait=key><p>Whatever it is, just be true to<n>yourself. That's what's important.<wait=key><del=this></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:20>Yeah. Tell us what's wrong.<wait=key><del=this></td>
+        <td><trust=f:3:50>Sharla, we might be able to help.<wait=key><del=this></td>
+        <td>Good thinking, Shulk.<n>Let's hear the problem first.<wait=key><del=this></td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:20>Yeah. What's the story?<wait=key><del=this></td>
+        <td><trust=f:8:50>Yeah. I'm a good listener 'n' all.<wait=key><del=this></td>
+        <td><type=think>Only when it involves food.<wait=key><del=this></td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:20>Yes. We might be able to help.<wait=key><del=this></td>
+        <td><trust=f:12:50><type=think>Wow! Sharla's so calm!<wait=key><p>She seems so... What's the word?<n>Grown up.<wait=key><del=this></td>
+        <td>Something wrong, Fiora?<n>Let's hear what they have to say.<wait=key><del=this></td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:20>Agreed. Let's hear them out.<wait=key><del=this></td>
+        <td><trust=f:15:50>So you intend to help, Sharla?<wait=key><del=this></td>
+        <td>Don't you, Dunban?<n>Let's hear what they have to say.<wait=key><del=this></td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:20>Yeah! Riki want to listen too!<wait=key><del=this></td>
+        <td><trust=f:18:50>Riki listen for Sharla!<wait=key><del=this></td>
+        <td>Thanks, Riki, but there might be<n>something you don't understand.<wait=key><del=this></td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:20>Quite. As are we all.<wait=key><del=this></td>
+        <td><trust=f:19:50>As am I. Speak.<wait=key><del=this></td>
+        <td><type=think>'Speak'?! We're not trying to<n>scare them into talking!<wait=key><del=this></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:20>I agree. Let's listen to what they<n>have to say.<wait=key><del=this></td>
+        <td><trust=f:4:50>That's a good Heropon! You have<n>to help those in distress!<wait=key><del=this></td>
+        <td>Yes! Very good Heropon!<wait=key><p>Riki listen good! You listen too!<wait=key><del=this></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:20>Yeah. I wouldn't mind a bit of<n>clarification either.<wait=key><del=this></td>
+        <td><trust=f:9:50>Man... You do talk big.<wait=key><p>But when it's time to do some<n>work, you always leg it!<wait=key><del=this></td>
+        <td>What Reyn talking about?<wait=key><p>Riki have no legs!<wait=key><p>Heropon work hard<n>and listen harder!<wait=key><del=this></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:20>Yeah. I'd like to know more too!<wait=key><del=this></td>
+        <td><trust=f:13:50>You're amazing, Riki!<wait=key><p>You're gonna help them,<n>aren't you?<wait=key><del=this></td>
+        <td>Of course! Riki is mighty Heropon!<wait=key><del=this></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:20>Indeed. Let us hear some more.<wait=key><del=this></td>
+        <td><trust=f:16:50>I'd like to listen too. That is, if it's<n>all right with you Riki.<wait=key><del=this></td>
+        <td>Heropon and Herohom make<n>great team!<wait=key><p>Fix problem in no time!<wait=key><del=this></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:20>Yeah. I'd like to know too.<wait=key><del=this></td>
+        <td><trust=f:18:50>Riki, if you listen, you have to pay<n>attention, OK?<wait=key><p>You can't just listen and then<n>pretend to understand.<wait=key><del=this></td>
+        <td><type=anger>WHAT?!<wait=key><p>Sharla wrong! Riki never do that!<wait=key><del=this></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:20>Yes. I would also like to know.<wait=key><del=this></td>
+        <td><trust=f:20:50>As you can see, Riki is<n>a trustworthy Heropon.<wait=key><p>Please feel free to confide in him.<wait=key><del=this></td>
+        <td>Riki knew Melly understand how<n>great Riki is!<wait=key><p>Tell Riki problems! Heropon will<n>save day!<wait=key><del=this></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:20>Yeah. We'll listen to you.<wait=key><del=this></td>
+        <td><trust=f:5:50>Like Melia said, I don't think we<n>have enough to go on right now.<wait=key><del=this></td>
+        <td>Indeed.<wait=key><p>Give us more details and we will<n>help if we can.<wait=key><del=this></td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:20>Yeah. We ain't got much to go on<n>at the moment.<wait=key><del=this></td>
+        <td><trust=f:10:50><type=think>I know I ain't one to speak but she<n>could've asked more politely.<wait=key><p>She's cold as ice, that one.<wait=key><p>Oh no... Can she hear what I'm<n>thinking?<wait=key><p>Nah! No way. That's impossible.<wait=key><del=this></td>
+        <td>What is wrong? Do you too wish to<n>know in greater detail?<wait=key><p>You need not answer. Let us hear<n>what this person has to say.<wait=key><del=this></td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:20>Yeah. Please tell us more.<wait=key><del=this></td>
+        <td><trust=f:14:50>I think I know what's going on!<wait=key><p>It's...er... You know? That...um...<wait=key><del=this></td>
+        <td><type=think>Please stop embarrassing us!<wait=key><del=this></td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:20>Yes, please do. I would like some<n>more details about this too.<wait=key><del=this></td>
+        <td><trust=f:17:50>Melia, allow me to listen in.<wait=key><del=this></td>
+        <td>That is much appreciated.<wait=key><p>Perhaps we shall be able to<n>ascertain what is wrong.<wait=key><del=this></td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:20>Good idea. I'd like to hear<n>more about this too.<wait=key><del=this></td>
+        <td><trust=f:19:50>Melia, you prefer people who are<n>straight to the point, don't you?<wait=key><del=this></td>
+        <td>Wh-what do you mean?<wait=key><p>No. Now is not the time. We must<n>focus on this person's plight.<wait=key><del=this></td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>3</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:20>So confusing! Say in way that Riki<n>can understand!<wait=key><del=this></td>
+        <td><trust=f:20:50>If Melly asking, then Riki also<n>want to know!<wait=key><del=this></td>
+        <td>Yes. Continue.<wait=key><p>Riki and I will listen to what you<n>have to say.<wait=key><del=this></td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:-20>So even you have times like this?<wait=key><del=this></td>
+        <td><trust=f:0:-50>Shulk! What are you doing?<n>Let's help 'em already!<wait=key><del=this></td>
+        <td>Now isn't a good time. I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:-20>Don't worry. It can't be helped.<wait=key><del=this></td>
+        <td><trust=f:1:-50>Shulk! Come on! Let's help them!<wait=key><del=this></td>
+        <td>Sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:-20>I agree. We have a lot to do...<wait=key><del=this></td>
+        <td><trust=f:2:-50>Shulk, what's wrong?<n>Won't you help?<wait=key><del=this></td>
+        <td>I'm sorry. I can't right now.<wait=key><del=this></td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:-20>Well... I guess that's that.<wait=key><del=this></td>
+        <td><trust=f:3:-50>Listening to them and not helping.<n>That's not very nice, is it?<wait=key><del=this></td>
+        <td>You're right. I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:-20>That right. It impossible.<wait=key><del=this></td>
+        <td><trust=f:4:-50>Shulk, helping friends important<n>to Nopon.<wait=key><p>Not helping people is bad.<wait=key><del=this></td>
+        <td>I'm sorry...<wait=key><del=this></td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:-20>There are many things that we<n>must do. It cannot be helped.<wait=key><del=this></td>
+        <td><trust=f:5:-50>I know how you feel, Shulk, but<n>this is a mistake.<wait=key><del=this></td>
+        <td>I know but now's not a good time.<wait=key><del=this></td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:-20>Right. Maybe next time?<wait=key><del=this></td>
+        <td><trust=f:0:-50>Reyn, you're not yourself today.<wait=key><del=this></td>
+        <td>Sorry 'bout that...<wait=key><del=this></td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:-20>Don't worry. It happens.<wait=key><del=this></td>
+        <td><trust=f:6:-50>Reyn, that's really cold of you.<wait=key><p>Not getting at you. Just saying.<wait=key><del=this></td>
+        <td>Eh...it's fair enough.<wait=key><del=this></td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:-20>That's true. We are stretching<n>ourselves far too thin.<wait=key><del=this></td>
+        <td><trust=f:7:-50>What was that all about?<n>That wasn't like you at all!<wait=key><del=this></td>
+        <td>Yeah, I dunno...<wait=key><p>I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:-20>Well, I guess it can't be helped.<wait=key><del=this></td>
+        <td><trust=f:8:-50>Reyn, I have to say... I'm a little<n>disappointed in you.<wait=key><del=this></td>
+        <td>Hey, don't look at me like that!<n>I'm just being honest!<wait=key><p>If now's not a good time, it's just<n>not a good time!<wait=key><del=this></td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:-20>That right. It impossible.<wait=key><del=this></td>
+        <td><trust=f:9:-50>Reyn must act like man!<wait=key><p>Man never ignore those in trouble!<wait=key><del=this></td>
+        <td>I won't make any excuses...<n>I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:-20>There are many things that we<n>must do. It cannot be helped.<wait=key><del=this></td>
+        <td><trust=f:10:-50>Explain yourself.<wait=key><p>Normally, compassion is your only<n>redeeming characteristic.<wait=key><del=this></td>
+        <td>Ouch...<wait=key><p>Melia, that's really harsh.<wait=key><del=this></td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:-20>OK. Maybe next time?<wait=key><del=this></td>
+        <td><trust=f:1:-50>What's with you all of a sudden?<wait=key><p>You're not going to help them?<wait=key><del=this></td>
+        <td>Sorry. Now isn't a good time.<wait=key><del=this></td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:-20>Well, sometimes that's just how<n>it is.<wait=key><del=this></td>
+        <td><trust=f:6:-50>Hey, what was that all about?<n>You're just gonna walk off?<wait=key><del=this></td>
+        <td>I can't do everything, you know?<wait=key><p>Sometimes you get days like this!<wait=key><del=this></td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:-20>Wise. You mustn't stretch yourself<n>too far.<wait=key><del=this></td>
+        <td><trust=f:11:-50>If you say so, then I presume that<n>you have your reasons.<wait=key><p>But you must realise this is not<n>the correct course of action.<wait=key><del=this></td>
+        <td>Yes, I know.<wait=key><p>I promise I'll come back.<wait=key><del=this></td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:-20>Don't worry. It can't be helped.<wait=key><del=this></td>
+        <td><trust=f:12:-50>Quite a stark refusal.<wait=key><p>Something bothering you, Fiora?<wait=key><del=this></td>
+        <td>No. It's nothing.<wait=key><p>I'm sorry, I just don't think I can<n>be of much help right now.<wait=key><del=this></td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:-20>That right! Now not good time!<wait=key><del=this></td>
+        <td><trust=f:13:-50>Fiora, it not nice to not help.<wait=key><p>People in trouble get really sad.<wait=key><del=this></td>
+        <td>You're right, Riki.<wait=key><p>But I can't help right now.<wait=key><p>I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:-20>There are many things that we<n>must do. It cannot be helped.<wait=key><del=this></td>
+        <td><trust=f:14:-50>Do you not regret your choice?<n>I wonder what Shulk would think...<wait=key><del=this></td>
+        <td>Sh-Shulk has nothing to do<n>with this!<wait=key><p>I just made my own choice.<n>that's all.<wait=key><del=this></td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:-20><type=think>Is Dunban feeling OK?<wait=key><del=this></td>
+        <td><trust=f:2:-50>Dunban, we're gonna come back<n>and help, aren't we?<wait=key><del=this></td>
+        <td>Yes. We'll be back.<wait=key><del=this></td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:-20>I s'pose it's just like that<n>sometimes.<wait=key><del=this></td>
+        <td><trust=f:7:-50>Dunban! You never give up.<n>This ain't like you.<wait=key><del=this></td>
+        <td>Even I am just a man.<wait=key><p>My apologies.<wait=key><del=this></td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:-20>It's OK. Don't worry about it.<wait=key><del=this></td>
+        <td><trust=f:11:-50>What's that supposed to mean?<n>This isn't like you, Dunban.<wait=key><del=this></td>
+        <td>Yes. You're right, Fiora.<wait=key><p>I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:-20>Wow... Dunban...<wait=key><p>Even you say 'no' sometimes.<wait=key><del=this></td>
+        <td><trust=f:15:-50>To be absolutely honest...<wait=key><p>I'm a little relieved. It's nice to<n>know you're a normal guy.<wait=key><del=this></td>
+        <td>I'm glad you see it like that.<n>Sorry for not helping.<wait=key><del=this></td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:-20>Riki understand it too much for<n>Dundun right now.<wait=key><del=this></td>
+        <td><trust=f:16:-50>Bad Dundun! Why say no?<n>Bad Dundun!<wait=key><del=this></td>
+        <td>You shouldn't make promises you<n>can't keep. Don't you agree?<wait=key><del=this></td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:-20>It is most unfortunate but we do<n>have other matters to attend to.<wait=key><del=this></td>
+        <td><trust=f:17:-50>Is that the right choice, Dunban?<wait=key><p>Tomorrow, this world may simply...<n>disappear.<wait=key><del=this></td>
+        <td>Melia, I'll bear your words in mind.<wait=key><del=this></td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:-20>Yeah, maybe next time.<wait=key><del=this></td>
+        <td><trust=f:3:-50>Sharla! Are you just going to<n>give up?<wait=key><del=this></td>
+        <td>I'm sorry, Shulk.<wait=key><del=this></td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:-20>Don't sweat it, Sharla. It's OK.<wait=key><del=this></td>
+        <td><trust=f:8:-50>Sharla, are you giving up?<n>What about if I help out?<wait=key><del=this></td>
+        <td>Thank you, Reyn.<wait=key><p>But it's not a good time right now.<n>Forgive me.<wait=key><del=this></td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:-20>That's all right. It can't be helped.<wait=key><del=this></td>
+        <td><trust=f:12:-50>You're gonna refuse?!<wait=key><p>Wow, I thought that you'd... Wow.<wait=key><del=this></td>
+        <td>Looks like you had me wrong!<wait=key><p>I'm sorry Fiora. Please forgive me.<wait=key><del=this></td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:-20>We have a lot to do. It's probably<n>for the best.<wait=key><del=this></td>
+        <td><trust=f:15:-50>If you don't take this chance, you<n>may end up regretting it, Sharla.<wait=key><del=this></td>
+        <td>I know. But I can't right now.<n>I'm sorry.<wait=key><del=this></td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:-20>Yep. Now really bad time.<wait=key><del=this></td>
+        <td><trust=f:18:-50>Sharla! It not good to not help<n>people.<wait=key><del=this></td>
+        <td>Riki, now really isn't a good time.<n>Please try and understand.<wait=key><del=this></td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:-20>Yes. We have important duties to<n>attend to.<wait=key><del=this></td>
+        <td><trust=f:19:-50>I am disappointed, Sharla. Is this<n>the extent of Homs goodwill?<wait=key><del=this></td>
+        <td>Melia...<wait=key><del=this></td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:-20>We can help next time.<wait=key><del=this></td>
+        <td><trust=f:4:-50>Let's help them Riki!<n>What's wrong with you?<wait=key><del=this></td>
+        <td>Riki wanna help but no have<n>time now.<wait=key><del=this></td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:-20>Yeah. I know the feeling.<wait=key><del=this></td>
+        <td><trust=f:9:-50>Don't tell me... You just said<n>exactly what you felt?<wait=key><p>That ain't good, y'know?<wait=key><del=this></td>
+        <td>Riki never do that!<wait=key><p>Now just not good time for Riki!<n>That why Riki say that!<wait=key><del=this></td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:-20>Don't feel bad about it. We don't<n>want you overexerting yourself.<wait=key><del=this></td>
+        <td><trust=f:13:-50>Oh dear, Riki. What a shame.<wait=key><p>If you'd agreed to help, you might<n>have got a reward.<wait=key><del=this></td>
+        <td>Reward?!<wait=key><p>Riki want reward! Okey dokey,<n>Riki come back later!<wait=key><del=this></td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:-20>A wise choice. You have to know.<n>your limits.<wait=key><del=this></td>
+        <td><trust=f:16:-50>No? I didn't think you were like<n>that, Riki.<wait=key><del=this></td>
+        <td>Riki normally try really hard but<n>just too much to do now.<wait=key><del=this></td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:-20>Never mind. It can't be helped.<wait=key><del=this></td>
+        <td><trust=f:18:-50>Riki, don't forget. We're here to<n>help you too!<wait=key><p>Don't give up so easily!<wait=key><del=this></td>
+        <td>But...but...too much to do now.<wait=key><del=this></td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:-20>Unfortunately it is true that we<n>have much to do.<wait=key><del=this></td>
+        <td><trust=f:20:-50>Riki, I thought you were someone<n>who would help no matter what.<wait=key><p>Perhaps I overestimated you.<wait=key><del=this></td>
+        <td>Boohoo. When Melly talk like that,<n>Riki is a sad Nopon.<wait=key><del=this></td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:-20>OK. Maybe next time?<wait=key><del=this></td>
+        <td><trust=f:5:-50>Why?! Don't give up, Melia!<wait=key><del=this></td>
+        <td>Forgive me, Shulk.<wait=key><p>I am merely trying to ascertain the<n>best course of action at this time.<wait=key><del=this></td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:-20>I'm afraid I have to agree with<n>you on that one.<wait=key><del=this></td>
+        <td><trust=f:10:-50>What the...?! I'll do it if you don't<n>wanna!<wait=key><del=this></td>
+        <td>Reyn, do not forget our ultimate<n>aim. Now is simply not the time.<wait=key><del=this></td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:-20>It's OK, Melia. I understand.<wait=key><del=this></td>
+        <td><trust=f:14:-50>So if now isn't a good time, when<n>exactly will be?<wait=key><del=this></td>
+        <td>I do not know precisely. But when<n>we are on top of events.<wait=key><del=this></td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:-20>Very wise. I agree with you 100%.<wait=key><del=this></td>
+        <td><trust=f:17:-50>That is indeed correct.<wait=key><p>But maybe there's something more<n>important. Don't you think, Melia?<wait=key><del=this></td>
+        <td>I do.<wait=key><p>But now is not the time.<wait=key><del=this></td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:-20>It can't be helped. These are hard<n>times.<wait=key><del=this></td>
+        <td><trust=f:19:-50>Wait a minute! Is it really like you<n>to ignore someone in trouble?<wait=key><del=this></td>
+        <td>Of course not! You know that<n>this is not my real intent.<wait=key><p>However, we cannot afford to<n>jeopardise our higher objectives.<wait=key><del=this></td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>8</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:-20>That right! So much to do now!<wait=key><del=this></td>
+        <td><trust=f:20:-50>'Other matters' very important.<wait=key><p>But...but...Melly so cold to people.<wait=key><del=this></td>
+        <td>Perhaps you are right.<n>My apologies.<wait=key><del=this></td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:20>That's right! We can handle it!<wait=key><del=this></td>
+        <td><trust=f:0:50>Nothing can stand in the way when<n>me and Shulk are on the case!<wait=key><p>You just take it easy and sit tight.<wait=key><del=this></td>
+        <td>Let's give it all we got, Reyn!<wait=key><del=this></td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:1:50>Shulk, be careful OK? Make sure<n>you don't overdo it!<wait=key><del=this></td>
+        <td>I'll be fine! Because you're with<n>me, Fiora.<wait=key><del=this></td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:2:50>Very good, Shulk!<n>Let's get this sorted out!<wait=key><del=this></td>
+        <td>Yeah!<wait=key><del=this></td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:20>Yeah, I'll help too!<wait=key><del=this></td>
+        <td><trust=f:3:50>Yep, let's do our best, guys!<wait=key><p>If anyone grazes their knee, I'll be<n>here to patch them up!<wait=key><del=this></td>
+        <td>Thanks, Sharla! We'll be counting<n>on you!<wait=key><del=this></td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:4:50>If Shulk put his mind to it, Riki<n>know he succeed!<wait=key><del=this></td>
+        <td>I'm relying on you too, Riki.<wait=key><del=this></td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:5:50>I will do everything I can to help.<n>I will follow your lead.<wait=key><del=this></td>
+        <td>Thanks, Melia!<wait=key><del=this></td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:20>Yeah! We'll sort this for definite!<wait=key><del=this></td>
+        <td><trust=f:0:50>That's the spirit, Reyn!<wait=key><del=this></td>
+        <td>I'm gonna be needing your help<n>'n' all, Shulk!<wait=key><del=this></td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:6:50>Hahahaha! Reyn, you really get<n>carried away!<wait=key><p>But I'm gonna try just as hard<n>as you!<wait=key><del=this></td>
+        <td>Heh heh! Think you can keep up<n>with Reyn time, Fiora?<wait=key><del=this></td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:7:50>You sound very confident, Reyn.<n>But stay focused!<wait=key><del=this></td>
+        <td>I know, I know!<wait=key><del=this></td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:20>Yeah. I'll help too!<wait=key><del=this></td>
+        <td><trust=f:8:50>Reyn, I admire your spirit but we<n>have to be careful!<wait=key><del=this></td>
+        <td>Oh yeah! I totally agree.<wait=key><p>I'll leave that stuff to you.<wait=key><del=this></td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:9:50>Yay Reyn! You want get reward<n>quickly too?<wait=key><del=this></td>
+        <td>Yeah baby! That's what I'm<n>talking about!<wait=key><p>Nah, I'm just yankin' your chain!<n>This is about helping people!<wait=key><del=this></td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:10:50>We shall be relying heavily<n>upon your powers of idiocy.<wait=key><del=this></td>
+        <td>Hey, now wait a second!<n>Just 'powers' is enough, right?<wait=key><del=this></td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:20>Yeah. We'll sort this for definite!<wait=key><del=this></td>
+        <td><trust=f:1:50>Yeah! Fiora, let's solve this one<n>together!<wait=key><del=this></td>
+        <td>'Together'...<wait=key><p>Yeah! That sounds great, Shulk!<wait=key><del=this></td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:20>That's right!<n>Leave it to us!<wait=key><del=this></td>
+        <td><trust=f:6:50>That's cool, but on your own?<n>I think I'd better help you out!<wait=key><del=this></td>
+        <td>No one asked you!<wait=key><p>But thanks anyway.<wait=key><del=this></td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:11:50>As a big brother, I can't just let<n>my little sister go off on her own.<wait=key><del=this></td>
+        <td>Fine with me.<wait=key><p>There's plenty you can do to help<n>out, Dunban!<wait=key><del=this></td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:20>That's right! I'll help too.<wait=key><del=this></td>
+        <td><trust=f:12:50>Good answer, Fiora! Let's get this<n>issue sorted out!<wait=key><del=this></td>
+        <td>Yeah!<wait=key><del=this></td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:13:50><type=anger>Fiora try her bestest so Riki try<n>his bestest too!<wait=key><del=this></td>
+        <td>Thanks, Riki!<wait=key><p>Right, let's do it!<wait=key><del=this></td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:14:50>I too will give it my best...shot!<wait=key><p>I tried to copy you but...<n>never mind.<wait=key><del=this></td>
+        <td>Hee hee! It's no problem!<wait=key><p>Come on, let's get to work!<wait=key><del=this></td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:20>Yeah, let's sort this out!<wait=key><del=this></td>
+        <td><trust=f:2:50>If Dunban's helping out then this'll<n>be a walk in the park!<wait=key><del=this></td>
+        <td>I can't let everyone down, can I?<wait=key><del=this></td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:20>That's right!<n>Leave it to us!<wait=key><del=this></td>
+        <td><trust=f:7:50>That's right! Dunban'll have<n>it sorted in no time!<wait=key><del=this></td>
+        <td>Reyn, one person can only achieve<n>so much.<wait=key><p>I'll need your help as well.<wait=key><del=this></td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:11:50>That's my big brother!<wait=key><p>But don't push yourself too much!<n>I worry about you, you know?<wait=key><del=this></td>
+        <td>No need to worry about me.<wait=key><p>I have you and the others too.<n>So I'm not alone, am I?<wait=key><del=this></td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:20>That's right! I'll help too.<wait=key><del=this></td>
+        <td><trust=f:15:50>Just what I'd expect from the<n>legendary hero Dunban!<wait=key><del=this></td>
+        <td>Such flattery!<wait=key><p>I'll be needing some of that<n>recovery ether of yours!<wait=key><del=this></td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:16:50><type=anger>Now is time for Heropon and<n>Herohom combo!<wait=key><del=this></td>
+        <td>Thank you, Riki! You are truly an<n>inspiration!<wait=key><del=this></td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:17:50>I don't anticipate any problems.<wait=key><del=this></td>
+        <td>We can't afford to be careless.<n>Melia, we need your strength too!<wait=key><del=this></td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:20>Yeah. We'll sort this all out!<wait=key><del=this></td>
+        <td><trust=f:3:50>Let's just take it one step at<n>a time.<wait=key><del=this></td>
+        <td>Exactly, Shulk! Let's give it<n>our all!<wait=key><del=this></td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:20>That's right!<n>Leave it to us!<wait=key><del=this></td>
+        <td><trust=f:8:50>Don't forget about me, Sharla!<n>Now let's get this sorted, together!<wait=key><del=this></td>
+        <td>Of course!<wait=key><p>I know you'll do it or die trying!<n>Isn't that right, Reyn?<wait=key><del=this></td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:12:50>I'm getting goosebumps, Sharla.<n>I wish I was as confident as you!<wait=key><del=this></td>
+        <td>Don't be silly. Of course you are!<n>Right, you ready to help out?<wait=key><del=this></td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:15:50>I know you can handle it. I'm just<n>here to make a good impression!<wait=key><del=this></td>
+        <td>Aw...don't put yourself down!<wait=key><p>I can't do it by myself. I need your<n>help too!<wait=key><del=this></td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:18:50><type=anger>Wooow!<n>Sharla is Heropon just like Riki!<wait=key><del=this></td>
+        <td>It's an honour, Riki!<wait=key><p>But we'll need your help too,<n>oh mighty Heropon Riki!<wait=key><del=this></td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:19:50>We can do it. It may not be easy<n>but with you, I feel inspired.<wait=key><del=this></td>
+        <td>You taught me the importance of<n>seeing things through.<wait=key><del=this></td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:20>Yeah, we'll definitely solve this!<wait=key><del=this></td>
+        <td><trust=f:4:50>Yeah! Give it your best shot, Riki!<wait=key><del=this></td>
+        <td>Yes yes!<wait=key><p>Riki and sidekick Shulk together!<wait=key><del=this></td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:20>That's right! Leave it to us!<wait=key><del=this></td>
+        <td><trust=f:9:50>'Easy-peasy', huh?<wait=key><p>Well, I'll be there if things get<n>a bit too hot to handle!<wait=key><del=this></td>
+        <td>No need for Reyn to help Heropon!<wait=key><p>Well...maybe need a bit of help...<wait=key><del=this></td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:13:50>That's right! We're counting on<n>you, brave Heropon!<wait=key><del=this></td>
+        <td><type=anger>Yeah! Just leave everything<n>to Heropon!<wait=key><del=this></td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:16:50>I trust you won't go back on your<n>word. I shall assist you!<wait=key><del=this></td>
+        <td>Riki no break promise!<wait=key><p>Dundun follow Riki!<wait=key><del=this></td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:20>Right! I'll help out too!<wait=key><del=this></td>
+        <td><trust=f:18:50>Let's see just what the Heropon can do!<wait=key><del=this></td>
+        <td>Maybe Sharla fall in love with Riki<n>after she see.<wait=key><del=this></td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:20>Yes. Let us aim to resolve this<n>matter as quickly as possible.<wait=key><del=this></td>
+        <td><trust=f:20:50>It looks like I should keep out<n>of this.<wait=key><del=this></td>
+        <td><type=anger>N-no Melly!<wait=key><p>Melly has to help us! Riki no feel<n>like working hard without Melly.<wait=key><del=this></td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:20>Yeah! Let's get this sorted.<wait=key><del=this></td>
+        <td><trust=f:5:50>So you're gonna help, Melia?<wait=key><p>Then I'll help too! If you don't<n>mind, that is...<wait=key><del=this></td>
+        <td>N-no, I do not mind.<wait=key><p>I mean...thank you.<wait=key><del=this></td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:20>That's right! Leave it to us!<wait=key><del=this></td>
+        <td><trust=f:10:50>You're really kind, Melia!<wait=key><p>But I think I can do a better job of<n>this one than you!<wait=key><del=this></td>
+        <td>Very well.<wait=key><p>Let us see who can solve the issue<n>first! Let the duel begin, Reyn!<wait=key><del=this></td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:20>Yeah! Let's give it our all!<wait=key><del=this></td>
+        <td><trust=f:14:50>Two of Bionis' bravest and boldest<n>women, at your service!<wait=key><del=this></td>
+        <td><type=think>Fiora is certainly<n>high-spirited today.<wait=key><p>It appears I shall have<n>to double my efforts!<wait=key><del=this></td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:20>Yes. I too will give it my all.<wait=key><del=this></td>
+        <td><trust=f:17:50>I like your style, count me in.<wait=key><p>Dunban to the rescue!<wait=key><del=this></td>
+        <td>You are most kind! I shall be<n>relying on you, Dunban.<wait=key><del=this></td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:20>Yeah! Let me help too!<wait=key><del=this></td>
+        <td><trust=f:19:50>No, no, no. You're way too stiff.<wait=key><p>Try this: 'Gotcha! Leave it to us!'.<wait=key><del=this></td>
+        <td>I am unfamiliar with such coarse<n>phrasing. But, I shall try.<wait=key><p>G-gotcha...friendio!<n>Leave it to us...m-mate!<wait=key><p>Is that correct, Sharla?<wait=key><del=this></td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>5</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:20>Heropon show you what he can do!<wait=key><del=this></td>
+        <td><trust=f:20:50><type=anger>Yep yep!<n>Melly very clever!<wait=key><p>Riki always protect clever Melly!<wait=key><del=this></td>
+        <td>Watching over me is not enough.<n>We are in need of your efforts too.<wait=key><del=this></td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:20>Right! It was well worth<n>the effort!<wait=key><del=this></td>
+        <td><trust=f:0:50>Nice one, Shulk! Let's keep up the<n>good work!<wait=key><del=this></td>
+        <td>Of course!<wait=key><p>Nothing can stop us once we<n>get going.<wait=key><del=this></td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:20>Yeah. I'm glad too.<wait=key><del=this></td>
+        <td><trust=f:1:50>That's great, Shulk! You really did<n>a good job!<wait=key><del=this></td>
+        <td>Well I had you to help!<wait=key><del=this></td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:20>Me too. A resounding success!<wait=key><del=this></td>
+        <td><trust=f:2:50>Excellent job, Shulk. You're really<n>growing up fast.<wait=key><del=this></td>
+        <td>R-really?!<wait=key><p>That means a lot coming from you.<n>I won't let you down!<wait=key><del=this></td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:20>All's well that ends well!<wait=key><del=this></td>
+        <td><trust=f:3:50>I'd expect no less from you!<n>I just knew you could do it!<wait=key><del=this></td>
+        <td>It wasn't just me!<n>Everybody helped!<wait=key><del=this></td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:20>All done!<wait=key><p>Well done us!<wait=key><del=this></td>
+        <td><trust=f:4:50>We did good job!<wait=key><p>Let's dance! Dance Nopon dance!<wait=key><del=this></td>
+        <td><type=think>A Nopon dance? I wonder what<n>that would go like...<wait=key><del=this></td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:20>Yes. A job well done.<wait=key><del=this></td>
+        <td><trust=f:5:50><type=think>Shulk... Seeing you so happy...<wait=key><p>I know not why, but it makes me<n>feel warm.<wait=key><del=this></td>
+        <td>What's wrong, Melia?!<wait=key><p>You're kinda staring.<wait=key><del=this></td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:20>Looks like it got sorted!<wait=key><del=this></td>
+        <td><trust=f:0:50>Yeah! All that hard work and effort<n>was worth it!<wait=key><del=this></td>
+        <td>Hah! Dunno 'bout you guys but I<n>didn't even break a sweat!<wait=key><del=this></td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:20>I'm so glad we sorted all this out!<wait=key><del=this></td>
+        <td><trust=f:6:50>Reyn, I'm impressed!<n>You do have what it takes!<wait=key><del=this></td>
+        <td>Oi oi oi!<n>Don't be shy!<wait=key><p>Just say it straight:<n>'Reyn, you're the man!' Like that.<wait=key><del=this></td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:20>Yes. Our work here is done.<wait=key><del=this></td>
+        <td><trust=f:7:50>That's right!<n>Good job, Reyn!<wait=key><del=this></td>
+        <td>Cheers, Dunban.<n>Nice of you to say so!<wait=key><del=this></td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:20>Yeah! Great job, everyone!<wait=key><del=this></td>
+        <td><trust=f:8:50>You're looking very pleased<n>with yourself.<wait=key><p>I guess you do deserve some<n>of the credit!<wait=key><del=this></td>
+        <td>W-what? Really?<wait=key><p>Cheers, Sharla.<wait=key><del=this></td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:20>Finished!<wait=key><p>Well done, Riki!<wait=key><del=this></td>
+        <td><trust=f:9:50>Even rude and violent person can<n>help people when they try!<wait=key><del=this></td>
+        <td>Say what you want fuzz ball. You<n>ain't gonna stop me feeling good!<wait=key><del=this></td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:20>Yes. A satisfactory performance.<wait=key><del=this></td>
+        <td><trust=f:10:50>Well done, Reyn!<n>Your performance was excellent.<wait=key><del=this></td>
+        <td>Easy on the compliments, Melia.<n>You're gonna make me blush!<wait=key><del=this></td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:20>And not a moment too soon, Fiora!<wait=key><del=this></td>
+        <td><trust=f:1:50>That's right! Good job, Fiora!<wait=key><del=this></td>
+        <td><type=think>I'm so glad! Shulk is happy too.<wait=key><p>Maybe I really can help people!<wait=key><del=this></td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:20>Right on! Well worth the effort!<wait=key><del=this></td>
+        <td><trust=f:6:50>Yeah. That's a weight off our<n>shoulders. Nice work, Fiora.<wait=key><del=this></td>
+        <td>Stop it. I'm not used to you saying<n>nice things about me. Feels weird.<wait=key><del=this></td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:20>Yes. That takes care of that.<wait=key><del=this></td>
+        <td><trust=f:11:50>Excellent work, Fiora. You ought<n>to be proud of yourself!<wait=key><del=this></td>
+        <td>No. It's too early for that!<wait=key><p>After all, we still have lots to do!<wait=key><del=this></td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:20>Yes. It all went quite well!<wait=key><del=this></td>
+        <td><trust=f:12:50>Hehe. Seeing you like this makes<n>me feel proud, Fiora!<wait=key><del=this></td>
+        <td>H-hey...you're making me blush!<wait=key><del=this></td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:20>Riki's friends did it!<wait=key><p>Five cheers for Heropon<n>and his trusty sidekicks!<wait=key><del=this></td>
+        <td><trust=f:13:50>Now we celebrate with Fiora's<n>tasty cooking!<wait=key><del=this></td>
+        <td>Yes, sir! Today I'll make <n>something extra fancy!<wait=key><del=this></td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:20>Yes indeed! A job well done.<wait=key><del=this></td>
+        <td><trust=f:14:50>Our success is down to your<n>unwavering effort, Fiora!<wait=key><del=this></td>
+        <td>I just did what I had to do. Hehe.<n>It's still nice to hear it though.<wait=key><del=this></td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:20>Yeah. You can always count on us<n>if something comes up!<wait=key><del=this></td>
+        <td><trust=f:2:50>I've learnt a lot from watching how<n>you tackle problems, Dunban!<wait=key><del=this></td>
+        <td>Right back at you, Shulk.<wait=key><p>That is what friends are for.<wait=key><del=this></td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:20>Yeah! We eat problems like this<n>for breakfast!<wait=key><del=this></td>
+        <td><trust=f:7:50><type=think>Man, he's so cool!<wait=key><p>I gotta try that out myself<n>a couple of times too!<wait=key><del=this></td>
+        <td>What is it, Reyn?<n>You're looking pretty smug.<wait=key><del=this></td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:20>Yeah. It really wasn't a problem.<wait=key><del=this></td>
+        <td><trust=f:11:50>You're amazing, Dunban!<n>I'm not just saying that!<wait=key><del=this></td>
+        <td>What's with you all of a sudden?<wait=key><p>I don't think I can remember the<n>last time you praised me so much.<wait=key><p>I suppose I should just smile and<n>be happy.<wait=key><del=this></td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:20>That's right! You'd have done the<n>same for us.<wait=key><del=this></td>
+        <td><trust=f:15:50>That's why you're the hero of<n>Colony 9!<wait=key><p>Well done!<wait=key><del=this></td>
+        <td>Sharla, please.<wait=key><p>It's not as if I did it alone.<n>We all worked together.<wait=key><del=this></td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:20>Yep yep!<wait=key><p>No problem for Riki neither!<wait=key><del=this></td>
+        <td><trust=f:16:50>No! It was 'something', not<n>'nothing'!<wait=key><p>Riki know it was really hard work!<wait=key><del=this></td>
+        <td>Really?<wait=key><p>To me it looked like you had much<n>less of a problem than I did.<wait=key><del=this></td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:20>That puts this matter to rest.<wait=key><del=this></td>
+        <td><trust=f:17:50>'It was nothing', you say...<wait=key><p>Only a man of your skill<n>could truly say that.<wait=key><del=this></td>
+        <td>Are you sure, Melia?<wait=key><p>I am not a good judge of myself,<n>but I'll gladly take your word for it.<wait=key><del=this></td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:20>Yeah. It feels good<n>to do a good deed!<wait=key><del=this></td>
+        <td><trust=f:3:50>Sharla, you're a medic, right? No<n>wonder you like helping people!<wait=key><del=this></td>
+        <td>Yes but that's not the only reason!<n>I just like making people happy.<wait=key><del=this></td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:20>Right! It was well worth<n>the effort!<wait=key><del=this></td>
+        <td><trust=f:8:50>Right! We're helping make things<n>better - a bit at a time!<wait=key><del=this></td>
+        <td>I couldn't agree more, Reyn! Now<n>I think about it, you're actually...<wait=key><p>Erm...never mind.<wait=key><del=this></td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:20>Yeah! I'm glad it worked out!<wait=key><del=this></td>
+        <td><trust=f:12:50>Yeah. We did a good thing,<n>didn't we?<wait=key><del=this></td>
+        <td>That's right, Fiora. We should be<n>proud of ourselves.<wait=key><del=this></td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:20>Yes. Mission complete.<wait=key><del=this></td>
+        <td><trust=f:15:50>Indeed. Otharon too will be glad<n>when he hears about your efforts.<wait=key><del=this></td>
+        <td>You're right!<wait=key><p>He raised me like a daughter.<n>I should send him some news.<wait=key><del=this></td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:20>Friends did it!<n>We the bestest!<wait=key><del=this></td>
+        <td><trust=f:18:50>Riki no surprised we do so good!<n>Sharla work really really hard!<wait=key><del=this></td>
+        <td>Aw, thank you Riki!<n>You helped out too!<wait=key><del=this></td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:20>We performed our task admirably.<wait=key><del=this></td>
+        <td><trust=f:19:50>I am sure they can see the<n>extent of your compassion.<wait=key><p>Having myself been saved by you,<n>I am certain of this.<wait=key><del=this></td>
+        <td>What a sweet thing to say.<wait=key><p>Thank you, Melia.<wait=key><del=this></td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:20>Yeah, we got it all sorted!<wait=key><del=this></td>
+        <td><trust=f:4:50>You're really kind, Riki!<wait=key><p>Just what I would expect from<n>the Heropon!<wait=key><del=this></td>
+        <td>Heropon is strong and kind!<wait=key><p>Teehee!<wait=key><del=this></td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:20>Yeah! Good job, everyone!<wait=key><del=this></td>
+        <td><trust=f:9:50><type=think>Is...is he...crying?!<wait=key><del=this></td>
+        <td>REYN! N-no look at Riki!<wait=key><del=this></td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:20>Yeah! I'm happy too, Riki!<wait=key><del=this></td>
+        <td><trust=f:13:50>I guess all this is just a walk in<n>the park for a Heropon like you.<wait=key><del=this></td>
+        <td>Yep! Fiora right! Walk in park!<wait=key><p>Er...Riki no understand...<n>Why for walk in park?<wait=key><del=this></td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:20>Well, that takes care of that.<wait=key><del=this></td>
+        <td><trust=f:16:50>Well done, Riki! I must try harder<n>so you don't outshine me!<wait=key><del=this></td>
+        <td><type=anger>Heropon versus Herohom!<n>Who will win?!<wait=key><del=this></td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:20>You should be! We did a good job!<wait=key><del=this></td>
+        <td><trust=f:18:50>Me too!<wait=key><p>You were amazing, Riki.<wait=key><del=this></td>
+        <td><type=anger>A-a-amazing?!<wait=key><p>That make Riki even more happy!<wait=key><del=this></td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:20><type=think>How adorable!<wait=key><del=this></td>
+        <td><trust=f:20:50>You did a good thing, Riki. That is<n>what makes you the Heropon.<wait=key><del=this></td>
+        <td><type=anger>Melly say nice things about Riki!<wait=key><p>Riki try twice as hard next time!<wait=key><del=this></td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:20>Of course you were.<wait=key><del=this></td>
+        <td><trust=f:5:50>You're more help than you realise.<n>Have some confidence in yourself.<wait=key><del=this></td>
+        <td>If you say so, Shulk, then<n>I shall endeavour to do so.<wait=key><del=this></td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:20>You were! That was a brilliant job.<n>And that ain't no lie!<wait=key><del=this></td>
+        <td><trust=f:10:50>You were a help all right!<wait=key><p>See for yourself! Look how happy<n>they are now!<wait=key><del=this></td>
+        <td>They do indeed seem to be happy.<wait=key><p>I suppose that is all that matters.<wait=key><del=this></td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:20>You were a great help, Melia!<wait=key><del=this></td>
+        <td><trust=f:14:50>Melia, it's OK to be happy. You<n>put in a lot of effort after all.<wait=key><del=this></td>
+        <td>My apologies. I am not used to<n>such behaviour.<wait=key><p>You are most kind, Fiora.<wait=key><del=this></td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:20>Don't worry. You were a great help.<wait=key><del=this></td>
+        <td><trust=f:17:50>Don't fret. You're doing<n>a great job.<wait=key><p>You have my word.<wait=key><del=this></td>
+        <td><type=think>This pleasant feeling rising within<n>me... Could it be...friendship?<wait=key><del=this></td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:20>You were a major help! We did<n>a great job!<wait=key><del=this></td>
+        <td><trust=f:19:50>You couldn't have been more help!<wait=key><p>Come on, Melia!<n>Be proud of yourself, girl!<wait=key><del=this></td>
+        <td>Be proud, you say...<wait=key><p>You are correct, Sharla.<n>I am proud of the job I did!<wait=key><del=this></td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>7</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:20>Yeah! Melly was big help!<wait=key><del=this></td>
+        <td><trust=f:20:50>Melly's help was biggest<n>and bestest!<wait=key><p>Riki watch Melly closely<n>so Riki knows!<wait=key><del=this></td>
+        <td><type=think>Aizel, Hogard, Garan, Damil...<wait=key><p>I pray that you can see my efforts.<wait=key><del=this></td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:20>All right, let's hear this problem<n>of yours!<wait=key><del=this></td>
+        <td><trust=f:0:50>You're not gettin' us mixed up in<n>someone else's problems again?!<wait=key><p>You're too soft, you are!<n>Still, Shulk's gotta be Shulk!<wait=key><del=this></td>
+        <td>Reyn! I know you want to help just<n>as much as I do.<wait=key><p>So, let's hear what's up.<wait=key><del=this></td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:20>It's good to help each other out.<n>Tell us what's wrong.<wait=key><del=this></td>
+        <td><trust=f:1:50>Let's hear them out, Shulk.<n>They might need our help.<wait=key><del=this></td>
+        <td>I think you're right, Fiora.<wait=key><p>So... Tell us what the problem is.<wait=key><del=this></td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:20>We'll hear you out.<n>Tell us what's wrong.<wait=key><del=this></td>
+        <td><trust=f:2:50>Well Shulk, is this our cue?<wait=key><del=this></td>
+        <td>Yep! We should do whatever<n>we can!<wait=key><del=this></td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:20>Tell us what's the matter.<n>We might be able to help.<wait=key><del=this></td>
+        <td><trust=f:3:50>I agree. They look like they could<n>use our help.<wait=key><del=this></td>
+        <td>You really think so, Sharla?<wait=key><p>Right, then let's hear them out!<wait=key><del=this></td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:20>Heropon can fix any problem!<wait=key><del=this></td>
+        <td><trust=f:4:50>Heropon Riki can help!<wait=key><p>Shulk! Open your Hom Hom ears!<wait=key><del=this></td>
+        <td>Yes, Riki! Right away!<wait=key><del=this></td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:20>What is wrong?<n>State the nature of your problem.<wait=key><del=this></td>
+        <td><trust=f:5:50>Shulk, we must do something.<n>We should make the time to help.<wait=key><del=this></td>
+        <td>Thanks, Melia.<n>I'll ask what the problem is.<wait=key><del=this></td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:20>Is something bothering you?<n>We can help you!<wait=key><del=this></td>
+        <td><trust=f:0:50>Reyn, you think so too? Looks like<n>something is bothering them.<wait=key><del=this></td>
+        <td>Yeah. We can't just leave 'em.<n>Let's ask what's up.<wait=key><del=this></td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:20>We have to help each other out.<n>Let us know what's wrong.<wait=key><del=this></td>
+        <td><trust=f:6:50>Reyn, you're really concerned<n>about other people now!<wait=key><p>You're really maturing!<wait=key><del=this></td>
+        <td>That's pretty patronising y'know?<n>But I'm glad I'm improving.<wait=key><p>Anyway, let's see what's up.<wait=key><del=this></td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:20>We'll hear you out. Tell us what's<n>bothering you.<wait=key><del=this></td>
+        <td><trust=f:7:50>Very perceptive of you, Reyn.<n>So, what's the next step?<wait=key><del=this></td>
+        <td>Right...yeah...uh... First, let's<n>hear their story!<wait=key><del=this></td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:20>Tell us what the problem is.<n>We might be able to help.<wait=key><del=this></td>
+        <td><trust=f:8:50>There does seem to be something<n>wrong. Will you ask what it is?<wait=key><del=this></td>
+        <td>Yeah. At times like this there's<n>almost always a problem!<wait=key><del=this></td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:20>Heropon will solve all problems!<wait=key><del=this></td>
+        <td><trust=f:9:50>Riki smell big problem! Reyn, ask<n>what wrong! Ask ask ask ask!<wait=key><del=this></td>
+        <td>OK, OK! Don't cough up a hairball!<wait=key><p>I'll ask right away!<n>Just gimme a sec!<wait=key><del=this></td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:20>What is troubling you?<n>Tell us your problem.<wait=key><del=this></td>
+        <td><trust=f:10:50>I do not approve of your speech,<n>but I see your concern is genuine.<wait=key><p>Reyn, it seems that you do have<n>some good characteristics.<wait=key><del=this></td>
+        <td>You're a bit slow on the uptake,<n>aren't ya?<wait=key><p>Right, let's see what's making<n>them look so glum.<wait=key><del=this></td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:20>Is something the matter?<n>We can help you!<wait=key><del=this></td>
+        <td><trust=f:1:50>It's true. There's definitely<n>something bothering them.<wait=key><del=this></td>
+        <td>You think so too, Shulk?<wait=key><p>Let's ask what's wrong.<wait=key><del=this></td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:20>Don't be shy now.<n>We're here to help!<wait=key><del=this></td>
+        <td><trust=f:6:50>You're pretty sharp, Fiora! There's<n>definitely something up!<wait=key><p>Let's try and get some more info.<wait=key><del=this></td>
+        <td><type=think>A compliment? From Reyn?<n>Maybe I had him all wrong...<wait=key><del=this></td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:20>We'll hear you out. Tell us what's<n>bothering you.<wait=key><del=this></td>
+        <td><trust=f:11:50>What's the matter Fiora?<n>Have you noticed something?<wait=key><del=this></td>
+        <td>Stop pretending you don't know!<wait=key><p>This person has a problem, so<n>I'm gonna talk to them. OK?<wait=key><del=this></td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:20>Tell us what the problem is.<n>We might be able to help.<wait=key><del=this></td>
+        <td><trust=f:12:50>You're very caring, Fiora.<wait=key><p>I think, that you'll make a great<n>mother one day.<wait=key><del=this></td>
+        <td>W-what's that got to do with it?!<wait=key><p>L-let's just ask what's wrong...<wait=key><del=this></td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:20>Heropon will solve all problems!<wait=key><del=this></td>
+        <td><trust=f:13:50>Riki think same!<n>Think same as Fiora!<wait=key><del=this></td>
+        <td>Really? Great! Shall we ask<n>what's wrong?<wait=key><del=this></td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:20>What bothers you?<n>You may tell us your woes.<wait=key><del=this></td>
+        <td><trust=f:14:50>We should listen to their problem.<n>I presume that is your intention.<wait=key><del=this></td>
+        <td>Yep! That's right, Melia.<wait=key><del=this></td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:20>Is something wrong?<n>We can help you!<wait=key><del=this></td>
+        <td><trust=f:2:50>Why don't we ask what's wrong?<n>I'm sure we can help in some way.<wait=key><del=this></td>
+        <td>I thought you might say that.<n>Very well, let's get the details.<wait=key><del=this></td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:20>Don't be shy now.<n>We're here to help!<wait=key><del=this></td>
+        <td><trust=f:7:50>Let me guess. Next, you're gonna<n>say 'Let us aid this person'.<wait=key><p>Am I right or am I right?<wait=key><del=this></td>
+        <td>That's exactly right, Reyn. Let's<n>ask what the problem is.<wait=key><del=this></td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:20>We have to help each other out.<n>Let us know what's wrong.<wait=key><del=this></td>
+        <td><trust=f:11:50>You really understand people.<n>Shame you don't know yourself!<wait=key><del=this></td>
+        <td>You worried about me?<n>Don't be, I'll be fine!<wait=key><p>But right now, we focus on this<n>person who needs help.<wait=key><del=this></td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:20>Hey, try and talk about it!<n>It'll make you feel better.<wait=key><del=this></td>
+        <td><trust=f:15:50>Then let's make them smile!<n>What do you say, Dunban?<wait=key><del=this></td>
+        <td>Agreed. Let's ask for more details<n>without delay.<wait=key><del=this></td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:20>Heropon will solve all problems!<wait=key><del=this></td>
+        <td><trust=f:16:50>Sad people make Riki sad! Riki<n>and Herohom make them happy!<wait=key><del=this></td>
+        <td>Quite right, Riki. So let's do<n>something about it.<wait=key><del=this></td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:20>What is the matter? You may state<n>your problem.<wait=key><del=this></td>
+        <td><trust=f:17:50>The solution is obvious. We simply<n>remove the source of distress.<wait=key><del=this></td>
+        <td>Typical Melia! Of course I have no<n>objections to that.<wait=key><del=this></td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:20>Is something wrong?<n>We can help you!<wait=key><del=this></td>
+        <td><trust=f:3:50>Let's hear them out, Sharla!<n>It won't delay us that much, right?<wait=key><del=this></td>
+        <td>Of course it's no problem. I really<n>like that about you, Shulk!<wait=key><p>Right, let's get the details!<wait=key><del=this></td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:20>Don't be shy now.<n>We're here to help!<wait=key><del=this></td>
+        <td><trust=f:8:50>If it's like that, we gotta help 'em!<n>Sharla, let's get more info!<wait=key><del=this></td>
+        <td><type=think>He's really frank about things.<n>That's not bad, not bad at all.<wait=key><del=this></td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:20>We have to help each other out.<n>Let us know what's wrong.<wait=key><del=this></td>
+        <td><trust=f:12:50>Wow! Sharla, you're so good at<n>reading people.<wait=key><del=this></td>
+        <td>Well, I was trained in counselling<n>by the Defence Force.<wait=key><p>But now, to really help, we need<n>more information.<wait=key><del=this></td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:20>We'll hear you out. Tell us what's<n>bothering you.<wait=key><del=this></td>
+        <td><trust=f:15:50>You noticed too, Sharla?<wait=key><p>So, what do you propose?<wait=key><del=this></td>
+        <td>It's obvious. Listen to the problem.<n>Basic Defence Force training.<wait=key><del=this></td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:20>Heropon will solve all problems!<wait=key><del=this></td>
+        <td><trust=f:18:50>Riki want Sharla to ask reason.<wait=key><p>They no tell little Riki. *sniffle*<wait=key><del=this></td>
+        <td>That's not the Heropon I know!<wait=key><p>Come now, Riki.<n>We'll listen together.<wait=key><del=this></td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:20>What is the matter? State the<n>nature of your problem.<wait=key><del=this></td>
+        <td><trust=f:19:50>Resolving one or two problems<n>should be a small matter for you.<wait=key><del=this></td>
+        <td>Hehe! I'm happy even if you're<n>just saying that to be nice.<wait=key><p>Right, let's give them some hope!<wait=key><del=this></td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:20>Is there anything we can do<n>to help?<wait=key><del=this></td>
+        <td><trust=f:4:50>Yes, something's definitely wrong.<n>Can't we do anything to help?<wait=key><del=this></td>
+        <td>Riki ask about problem.<n>Listen carefully.<wait=key><del=this></td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:20>Don't be shy now.<n>We're here to help!<wait=key><del=this></td>
+        <td><trust=f:9:50>I know! So chill out!<wait=key><p>Right, so what do we do?<n>Ask what's wrong?<wait=key><del=this></td>
+        <td>Yep!<wait=key><p>Reyn! Go ask what wrong!<wait=key><del=this></td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:20>We have to help each other out.<n>Let us know what's wrong.<wait=key><del=this></td>
+        <td><trust=f:13:50>I've heard of this! It must be that<n>special Nopon instinct, right?!<wait=key><del=this></td>
+        <td>Yes yes! Learnt from Chief Dunga!<wait=key><p>Fiora ask about problem now!<wait=key><del=this></td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:20>We'll help you out. Tell us what's<n>bothering you.<wait=key><del=this></td>
+        <td><trust=f:16:50>They're clearly worried about<n>something.<wait=key><p>What do you think Riki? Shall we<n>ask them about it?<wait=key><del=this></td>
+        <td>Wow... Dundun! Riki think same<n>thing! Really!<wait=key><del=this></td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:20>Want to talk about it? A problem<n>shared is a problem halved.<wait=key><del=this></td>
+        <td><trust=f:18:50>I wonder what the reason is.<n>Try asking for a few more details.<wait=key><del=this></td>
+        <td>Not 'few', many many details!<n>That Heropon's job!<wait=key><del=this></td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:20>What is the matter? You may tell<n>us your problem.<wait=key><del=this></td>
+        <td><trust=f:20:50>Do not get overexcited, Riki.<wait=key><p>I shall ask for more details.<n>So let us ask together, Riki.<wait=key><del=this></td>
+        <td>Melly so kind! Riki listen good!<wait=key><del=this></td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:20>Is something the matter?<n>We can help you!<wait=key><del=this></td>
+        <td><trust=f:5:50>What's is it, Melia?<n>You look pretty worried.<wait=key><del=this></td>
+        <td>I wish to know what troubles<n>this person.<wait=key><p>Shulk, please assist me in asking.<wait=key><del=this></td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:20>Don't be shy now.<n>We're here to help!<wait=key><del=this></td>
+        <td><trust=f:10:50>Yo Melia, they look like they've<n>got a problem, don't they?<wait=key><p>I reckon we should ask what's up.<wait=key><del=this></td>
+        <td>Hush. There is no need to let<n>everyone know.<wait=key><p>Very well Reyn, let us see what<n>the problem is.<wait=key><del=this></td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:20>We all have problems sometimes.<n>Won't you tell us what's wrong?<wait=key><del=this></td>
+        <td><trust=f:14:50>Melia, what are you thinking?<n>Wait, let me guess...<wait=key><p>You think we should help them.<n>Is that right?<wait=key><del=this></td>
+        <td>I cannot compete with you, Fiora.<wait=key><del=this></td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:20>We'll hear you out. Tell us what's<n>bothering you.<wait=key><del=this></td>
+        <td><trust=f:17:50>It's clear that something's<n>troubling you.<wait=key><p>Just tell us what it is. We'll listen.<wait=key><del=this></td>
+        <td><type=think>So Dunban noticed too?!<wait=key><del=this></td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:20>You want to talk about it?<n>You'll feel better if you do.<wait=key><del=this></td>
+        <td><trust=f:19:50>It's not enough to just think it,<n>Melia. You have to ask.<wait=key><p>This goes for everything.<wait=key><del=this></td>
+        <td>I-I know!<n>I was about to inquire.<wait=key><del=this></td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:20>Heropon will solve all problems!<wait=key><del=this></td>
+        <td><trust=f:20:50>Can Riki and friends help!<n>Riki feel sorry for them.<wait=key><del=this></td>
+        <td><type=think>Riki! How is it that you can know<n>my thoughts?<wait=key><del=this></td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:0:20>Yeah. Sounds like a pain.<wait=key><del=this></td>
+        <td><trust=f:0:50>I think we should get this<n>sorted as soon as possible!<wait=key><del=this></td>
+        <td>Yeah. We have to do something.<wait=key><del=this></td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:1:20>Yeah. It's a problem.<wait=key><del=this></td>
+        <td><trust=f:1:50>I agree, Shulk! So why<n>don't we try to help?<wait=key><del=this></td>
+        <td>Yeah. I don't want to just leave<n>them like this, you know?<wait=key><del=this></td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:2:20>It is indeed a problem.<wait=key><del=this></td>
+        <td><trust=f:2:50>True, but I'm sure you can<n>find a solution, Shulk.<wait=key><del=this></td>
+        <td>You're right, Dunban.<n>I'm sure we'll work it out!<wait=key><del=this></td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:3:20>That is quite a problem.<wait=key><del=this></td>
+        <td><trust=f:3:50>Thinking of helping out, Shulk?<wait=key><del=this></td>
+        <td>Yeah. If you could help, Sharla,<n>that'd be really cool!<wait=key><del=this></td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:4:20>That a big big problem!<wait=key><del=this></td>
+        <td><trust=f:4:50><type=anger>Riki scared! Big problem too<n>difficult! Riki no can fix!<wait=key><del=this></td>
+        <td>Calm down Riki! If we keep cool<n>we can sort it out.<wait=key><del=this></td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:5:20>We must do something to help.<wait=key><del=this></td>
+        <td><trust=f:5:50>I think we ought to resolve<n>this issue quickly.<wait=key><p>Do you not agree, Shulk?<wait=key><del=this></td>
+        <td>I completely agree.<wait=key><p>I just hope that it'll be easy<n>to sort out.<wait=key><del=this></td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:0:20>Yeah. That's bad.<wait=key><del=this></td>
+        <td><trust=f:0:50>Reyn, which is worse?<n>This, or arguing with me?<wait=key><del=this></td>
+        <td>You know what?<wait=key><p>I can't decide which one is more<n>of a pain, so let's get this sorted!<wait=key><del=this></td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:6:20>You're telling me!<wait=key><del=this></td>
+        <td><trust=f:6:50>Why are you acting cool, Reyn?<n>We know you're panicking inside.<wait=key><del=this></td>
+        <td>I ain't acting! I'm just thinking<n>about what we should do!<wait=key><del=this></td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:7:20>It is indeed a problem.<wait=key><del=this></td>
+        <td><trust=f:7:50>This should be no problem for you<n>with your Defence Force training.<wait=key><del=this></td>
+        <td>This is even worse than the 1000<n>press-ups Vangarre makes us do!<wait=key><del=this></td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:8:20>It is a problem.<wait=key><del=this></td>
+        <td><trust=f:8:50>But it doesn't sound like anything<n>you can't handle, Reyn.<wait=key><del=this></td>
+        <td>I guess so...<wait=key><p>Still, we should try and get<n>it sorted fast, right Sharla?<wait=key><del=this></td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:9:20>That a big big problem!<wait=key><del=this></td>
+        <td><trust=f:9:50>This problem worse than all Riki's<n>debt times gazillion!<wait=key><del=this></td>
+        <td>You said it, old man.<n>Both problems we can't ignore.<wait=key><del=this></td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:10:20>We cannot just stand by and do<n>nothing.<wait=key><del=this></td>
+        <td><trust=f:10:50><type=think>Does this oaf really feel pain<n>when hearing of suffering?<p>Perhaps he has more cerebral<n>activity than I previously thought.<wait=key><del=this></td>
+        <td><type=think>Melia seems really serious...<wait=key><p>I wonder what's for dinner tonight?<wait=key><del=this></td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:1:20>Yeah. It doesn't sound good.<wait=key><del=this></td>
+        <td><trust=f:1:50>Let's try and help them out, Fiora.<n>Then they can get back on track.<wait=key><del=this></td>
+        <td>You're right. It's a problem,<n>but definitely one we can fix!<wait=key><del=this></td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:6:20>Yeah. Definitely not good.<wait=key><del=this></td>
+        <td><trust=f:6:50>This is news to me! I thought you<n>only ever worried about Shulk!<wait=key><del=this></td>
+        <td>T-that's not fair! I'm worried about<n>this too!<wait=key><p>Well...a bit.<wait=key><del=this></td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:11:20>That it does.<wait=key><del=this></td>
+        <td><trust=f:11:50>But if you want to hear something<n>really bad; when Fiora turned six—<wait=key><del=this></td>
+        <td>If you say another word I'll...<n>I'll... I dunno what I'll do!<wait=key><p>Th-this is much more of a problem<n>than that ever was!<wait=key><del=this></td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:12:20>Yes. This is a problem.<wait=key><del=this></td>
+        <td><trust=f:12:50>Well, let's do something!<n>Just worrying about it won't help!<wait=key><del=this></td>
+        <td>I agree! Let's sort it out!<wait=key><del=this></td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:13:20>That a big big problem!<wait=key><del=this></td>
+        <td><trust=f:13:50><type=think>Now is perfect chance! Riki make<n>everyone smile with Nopon dance!<wait=key><del=this></td>
+        <td>Riki, what are you thinking about?<wait=key><p>This is important, you know?<wait=key><del=this></td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:14:20>Indeed. We ought to<n>try and help out.<wait=key><del=this></td>
+        <td><trust=f:14:50>So should we stay here looking<n>concerned or should we act?<wait=key><del=this></td>
+        <td>Melia, you're right! Let's solve<n>this problem!<wait=key><del=this></td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:2:20>Yeah. I couldn't agree more.<wait=key><del=this></td>
+        <td><trust=f:2:50>But we can do something, right<n>Dunban?<wait=key><del=this></td>
+        <td>I admire your spirit, Shulk!<wait=key><p>Right! Let's try and get this<n>problem sorted out.<wait=key><del=this></td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:7:20>Yeah. It's bad all right.<wait=key><del=this></td>
+        <td><trust=f:7:50>We can't just abandon them!<n>Ain't that right, Dunban?<wait=key><del=this></td>
+        <td>That's right, Reyn. No matter how<n>tough things might get.<wait=key><del=this></td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:11:20>Yep. That's a problem.<wait=key><del=this></td>
+        <td><trust=f:11:50>I'm sure you can help them<n>sort it out, Dunban.<wait=key><del=this></td>
+        <td>I'm not so sure, Fiora.<wait=key><p>There may be complex factors we<n>aren't aware of yet.<wait=key><del=this></td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:15:20>Yes. I agree.<wait=key><del=this></td>
+        <td><trust=f:15:50>Let's try and stem the problem<n>before it gets out of hand.<wait=key><del=this></td>
+        <td>Agreed, Sharla. We should strike<n>before it's too late.<wait=key><del=this></td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:16:20>Big big problem!<wait=key><del=this></td>
+        <td><trust=f:16:50>Person definitely sad!<n>Dundun! Do something!<wait=key><del=this></td>
+        <td>Believe me, I want to. But I've<n>never dealt with anything like this.<wait=key><del=this></td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:17:20>One that we cannot ignore.<wait=key><del=this></td>
+        <td><trust=f:17:50>I shall enjoy watching how you<n>deal with this.<wait=key><del=this></td>
+        <td>I hope I don't disappoint you.<wait=key><del=this></td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:3:20>Yeah. It does sound quite bad.<wait=key><del=this></td>
+        <td><trust=f:3:50>Sharla, do you think there's<n>anything we can do?<wait=key><del=this></td>
+        <td>It must be fate. We should really<n>try to help out.<wait=key><del=this></td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:8:20>Yeah. It definitely ain't good.<wait=key><del=this></td>
+        <td><trust=f:8:50>Let's sort this out. It'll only be<n>a little bit of a detour for us.<wait=key><del=this></td>
+        <td>You're on, Reyn!<wait=key><p>I couldn't have just left this.<wait=key><del=this></td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:12:20>Yeah. Poor you!<wait=key><del=this></td>
+        <td><trust=f:12:50>Right, how about we sort it out?<wait=key><del=this></td>
+        <td>That's just like you, Fiora!<wait=key><p>I'm sure we'll get it sorted<n>no matter what.<wait=key><del=this></td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:15:20>A problem indeed.<wait=key><del=this></td>
+        <td><trust=f:15:50>But we aren't going to let it go,<n>right Sharla?<wait=key><del=this></td>
+        <td>You said it.<wait=key><p>Although it won't be easy.<wait=key><del=this></td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:18:20>That a big big problem!<wait=key><del=this></td>
+        <td><trust=f:18:50>Can Riki help? Can Riki do<n>anything?<wait=key><del=this></td>
+        <td>I'm sure you can!<wait=key><p>Everyone's waiting for a Heropon!<wait=key><del=this></td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:19:20>We cannot afford to simply<n>ignore this problem!<wait=key><del=this></td>
+        <td><trust=f:19:50>It sounds like there is more to this.<n>Sharla, shall we inquire further?<wait=key><del=this></td>
+        <td>Sure. I think I can see where this<n>is going, though.<wait=key><p>Problems like this one can be<n>such a bother!<wait=key><del=this></td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:4:20>Yeah. It sounds bad.<wait=key><del=this></td>
+        <td><trust=f:4:50>If they're in trouble, then let's<n>work together to help them out!<wait=key><del=this></td>
+        <td>OK but Shulk no get careless!<n>Heropon Riki always careful!<wait=key><del=this></td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:9:20>Yeah. Sounds bad all right.<wait=key><del=this></td>
+        <td><trust=f:9:50>Hey! Calm down already! That's<n>no way for a Heropon to act!<wait=key><del=this></td>
+        <td><type=anger>Riki is Heropon so he know that<n>this is big problem!<wait=key><del=this></td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:13:20>Yeah. It sounds bad.<wait=key><del=this></td>
+        <td><trust=f:13:50>But no crisis is too much for a<n>mighty Heropon like you, right?<wait=key><del=this></td>
+        <td>Fiora really think Riki mighty?<wait=key><p>Riki no wanna let Fiora down.<wait=key><del=this></td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:16:20>Well, Riki, it's definitely<n>a problem at any rate.<wait=key><del=this></td>
+        <td><trust=f:16:50>Riki, I assume you intend to do<n>something about it.<wait=key><del=this></td>
+        <td>O-of course! It Heropon's job to<n>help people in trouble!<wait=key><del=this></td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:18:20>Yeah. That's a problem.<wait=key><del=this></td>
+        <td><trust=f:18:50>We really ought to do something.<n>Don't you agree, Riki?<wait=key><del=this></td>
+        <td><type=anger>Yeah! Now time for Heropon to<n>shine!<wait=key><del=this></td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><trust=f:20:20>It does indeed. We cannot simply<n>ignore this.<wait=key><del=this></td>
+        <td><trust=f:20:50>Shall I think about how we can<n>resolve this trouble?<wait=key><del=this></td>
+        <td>Yay! Melly think hard so Riki<n>no have to!<wait=key><del=this></td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#1">Shulk</td></a>
+        <td><trust=f:5:20>Yeah. That sounds bad.<wait=key><del=this></td>
+        <td><trust=f:5:50>Melia, you normally have good<n>ideas. Any thoughts?<wait=key><del=this></td>
+        <td>I am flattered that you think so but<n>this is no ordinary problem.<wait=key><del=this></td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#2">Reyn</td></a>
+        <td><trust=f:10:20>Yeah. I wouldn't much fancy being<n>in that situation.<wait=key><del=this></td>
+        <td><trust=f:10:50>You're looking pretty relaxed.<n>You got a plan already?<wait=key><del=this></td>
+        <td>Let us ascertain all the facts first.<n>Only then can I find a solution.<wait=key><del=this></td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#3">Fiora</td></a>
+        <td><trust=f:14:20>Yeah. It's terrible!<wait=key><del=this></td>
+        <td><trust=f:14:50>But you can't abandon them, right<n>Melia? I can see it on your face.<wait=key><del=this></td>
+        <td>As I can you, Fiora.<wait=key><p>It seems we are both of a curious<n>nature even when facing adversity.<wait=key><del=this></td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#4">Dunban</td></a>
+        <td><trust=f:17:20>Yes. That is indeed a problem.<wait=key><del=this></td>
+        <td><trust=f:17:50>Yes, one that requires attention.<wait=key><del=this></td>
+        <td>I agree, but this matter could be<n>somewhat difficult to resolve.<wait=key><del=this></td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#5">Sharla</td></a>
+        <td><trust=f:19:20>Yeah. That sounds awful.<wait=key><del=this></td>
+        <td><trust=f:19:50>I wonder... Isn't this type of thing<n>easy for you, Melia?<wait=key><del=this></td>
+        <td>You gravely overestimate me.<n>This is little short of a disaster.<wait=key><del=this></td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>2</td>
+        <td><a href="BTL_pclist.html#7">Melia</td></a>
+        <td><a href="BTL_pclist.html#6">Riki</td></a>
+        <td><trust=f:20:20>That a big big problem!<wait=key><del=this></td>
+        <td><trust=f:20:50>Everything OK! Riki here!<wait=key><p>Melly no have to worry!<wait=key><del=this></td>
+        <td>Riki, I appreciate your sympathy<n>but this person needs it more.<wait=key><del=this></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

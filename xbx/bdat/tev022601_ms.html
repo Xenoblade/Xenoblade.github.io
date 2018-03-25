@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev022601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0010</td>
+        <td class="side">Inquire</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0011</td>
+        <td class="side">Ask Liviana about ground gear.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0020</td>
+        <td class="side">Discuss</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0021</td>
+        <td class="side">Ask Liviana about recent developments.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0010</td>
+        <td class="side">tev022601_JNK0010</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0031</td>
+        <td class="side">Ask Liviana about her experiences with the Ma-non.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0020</td>
+        <td class="side">tev022601_JNK0020</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0021</td>
+        <td class="side">tev022601_SEL0021</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0010</td>
+        <td class="side">tev022601_JNK0010</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0041</td>
+        <td class="side">Ask Liviana about conditions during the enemy attack.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0020</td>
+        <td class="side">tev022601_JNK0020</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0021</td>
+        <td class="side">tev022601_SEL0021</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0010</td>
+        <td class="side">tev022601_JNK0010</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0051</td>
+        <td class="side">Ask Liviana for her thoughts on Elma.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev022601_JNK0020</td>
+        <td class="side">tev022601_JNK0020</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev022601_SEL0021</td>
+        <td class="side">tev022601_SEL0021</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev022601_SEL1021</td>
+        <td class="side">Ask Liviana about recent developments.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev022601_SEL1031</td>
+        <td class="side">Ask Liviana about recent developments.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0001</td>
+        <td class="side">My shop sells a wide variety of men's and women's[ST:n ]attire.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0002</td>
+        <td class="side">However, it's merely conventional clothing.[ST:n ]We don't carry the protective armor or \"ground gear\"[ST:n ]worn by BLADE operatives like yourself.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0003</td>
+        <td class="side">If that's what you're in the market for, you should[ST:n ]go to Armory Alley in the administrative district.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0004</td>
+        <td class="side">I went there once myself out of curiosity—they were[ST:n ]selling items from a wide variety of manufacturers.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0005</td>
+        <td class="side">I was impressed at how risqué a lot of the ground gear[ST:n ]for women was! Not that I could hope to pull it off...[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0008</td>
+        <td class="side">Lately I have been thinking a lot about my family.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0009</td>
+        <td class="side">My daughter will turn 20 this year,[ST:n ]although she's currently asleep in the Lifehold Core.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0010</td>
+        <td class="side">Ever since she was a little girl, she always took such[ST:n ]good care of the clothes and jewelry I bought her.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0011</td>
+        <td class="side">On her birthday, she'd always ask me to pick out[ST:n ]a present that I thought looked nice. Isn't that sweet?[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0012</td>
+        <td class="side">So I bought a lovely outfit here for her 20th birthday.[ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0013</td>
+        <td class="side">But if we don't find the Lifehold Core, I'll never be able[ST:n ]to give it to her...[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0014</td>
+        <td class="side">Oh, please go out and find the Core![ST:n ]You must bring my daughter home to New LA![ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0019</td>
+        <td class="side">I've had Ma-non coming into my shop recently.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0020</td>
+        <td class="side">The women were quite disappointed that none of our[ST:n ]clothes fit them.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0021</td>
+        <td class="side">And the men didn't show interest in our clothes at all.[ST:n ]They said they were \"so so weak and flimsy, with no[ST:n ]protective value.\" ...Although rather more meekly.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0022</td>
+        <td class="side">They may be xenoforms, but it's funny how they're[ST:n ]no different from humans in that way.[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0027</td>
+        <td class="side">I don't need to ask what it was like here during the[ST:n ]attack, because I played back the footage from the[ST:n ]store's outer security camera.[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0028</td>
+        <td class="side">I've never seen enemies like that before.[ST:n ]The way they walked through the streets was terrifying.[ST:n ]And whenever they saw a BLADE operative...[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0029</td>
+        <td class="side">I just can't imagine hell being any worse than the[ST:n ]streets of New LA during that attack.[ST:wait ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0030</td>
+        <td class="side">We're truly lucky to have survived.[ST:n ]And not just me and you, but this entire city![ST:wait ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0035</td>
+        <td class="side">I saw those two famous BLADE operatives, Elma and[ST:n ]Irina, shopping at a store near here.[ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0036</td>
+        <td class="side">I was shocked at how drastically Elma had changed[ST:n ]her image![ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>tev022601_MSG0037</td>
+        <td class="side">It made me wonder if maybe she has a secret?[ST:n ]Perhaps she used the Lifepod that strange man in the[ST:n ]administrative district's lowest level was talking about?[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1001</td>
+        <td class="side">One of my saleswomen, Dorothy, has found herself a[ST:n ]boyfriend.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1002</td>
+        <td class="side">They seem to be very happy together,[ST:n ]and they're already talking about marriage![ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1003</td>
+        <td class="side">Still, I can't help but think of my daughter, who is[ST:n ]sleeping in the Lifehold Core, when I see Dorothy so[ST:n ]happy. They're the same age, you see.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1004</td>
+        <td class="side">But of course I'm happy for Dorothy! And if they do get[ST:n ]married, I'll make sure to give her the best wedding[ST:n ]dress in the shop.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1005</td>
+        <td class="side">Hopefully this will be the start of a lovely family...[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1011</td>
+        <td class="side">Dorothy is so miserable that it hurts to even think about[ST:n ]her situation.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1012</td>
+        <td class="side">She said she and her boyfriend wanted to get married,[ST:n ]so I put aside a wedding dress for her.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1013</td>
+        <td class="side">But then her beau... He died in the line of duty.[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>tev022601_MSG1014</td>
+        <td class="side">She reminds me so much of my daughter who's[ST:n ]asleep in the Lifehold Core. I just wanted her to[ST:n ]be happy.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

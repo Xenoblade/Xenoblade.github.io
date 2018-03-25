@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst002801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst002801_msg0001</td>
+        <td>84</td>
+        <td class="side">It's a pleasure. You may not know me,
+but I certainly know of you.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst002801_msg0002</td>
+        <td>84</td>
+        <td class="side">You're the ones who defeated the
+terrible Aeshma, aren't you?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst002801_msg0003</td>
+        <td>84</td>
+        <td class="side">Given your apparent skill, there is
+something I would like to ask of you.
+Will you hear me out?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst002801_msg0004</td>
+        <td>84</td>
+        <td class="side">I am a member of the
+Technological Research Center.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst002801_msg0005</td>
+        <td>84</td>
+        <td class="side">And the object you see beside me
+is the remains of a weapon used in a
+great war, in an age long past.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst002801_msg0006</td>
+        <td>84</td>
+        <td class="side">I intend to research how it operated
+and the functions it served.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst002801_msg0007</td>
+        <td>84</td>
+        <td class="side">With any luck, we can use it as
+inspiration to develop modern
+weapons for the Ardainian army!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst002801_msg0008</td>
+        <td>84</td>
+        <td class="side">There are similar weapons strewn
+all across Temperantia.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst002801_msg0009</td>
+        <td>84</td>
+        <td class="side">I would appreciate it if you could
+help me to collect them.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst002801_msg0010</td>
+        <td>84</td>
+        <td class="side">I believe there are a large number of
+these weapon relics out there, but
+four should be plenty for my purposes.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst002801_msg0011</td>
+        <td>84</td>
+        <td class="side">I'm counting on you to bring me
+some excellent research samples!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst002801_msg0101</td>
+        <td>84</td>
+        <td class="side">Beside me is the remains of a weapon
+used in a great war in an age long past.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst002801_msg0102</td>
+        <td>84</td>
+        <td class="side">I would like you to retrieve four
+others like it.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst002801_msg0103</td>
+        <td>84</td>
+        <td class="side">They're strewn all across Temperantia,
+so you'll likely need to hunt high and
+low for them!</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst002801_msg0201</td>
+        <td>84</td>
+        <td class="side">Ah, I see you have finished collecting
+the ancient weapons. Very impressive.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst002801_msg0202</td>
+        <td>84</td>
+        <td class="side">You have my gratitude.
+With these, my research should
+progress by leaps and bounds!</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst002801_msg0203</td>
+        <td>84</td>
+        <td class="side">I'm sorry I had to bother you all
+with such a menial task.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst002801_msg0204</td>
+        <td>84</td>
+        <td class="side">All the soldiers stationed here
+are from Division One of the
+Second Imperial Guard, you know.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst002801_msg0205</td>
+        <td>84</td>
+        <td class="side">I tried asking them for help, but they
+have their hands full guarding Aeshma,
+so I was sadly rejected.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst002801_msg0206</td>
+        <td>84</td>
+        <td class="side">So we have a fair bit of research
+funds to spare. I'll be sure to pay
+you handsomely!</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst002801_msg0207</td>
+        <td>84</td>
+        <td class="side">You have tax gold from the Ardainian
+people to spare?</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst002801_msg0208</td>
+        <td>84</td>
+        <td class="side">N-no! That's not what I meant at all...</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst002801_msg0209</td>
+        <td>84</td>
+        <td class="side">But...perhaps you are right to admonish
+me, Special Inquisitor. I should have
+more respect for Ardainian gold.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst002801_msg0210</td>
+        <td>84</td>
+        <td class="side">It was foolish of me to suggest
+wantonly giving away money just
+because we have a generous budget.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst002801_msg0211</td>
+        <td>84</td>
+        <td class="side">To demonstrate my repentance, I will
+reduce your reward for this task to 0G.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst002801_msg0212</td>
+        <td>84</td>
+        <td class="side">I hope that will suffice.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst002801_msg0213</td>
+        <td>84</td>
+        <td class="side">V...very good.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

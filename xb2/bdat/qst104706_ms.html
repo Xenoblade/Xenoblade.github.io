@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104706_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104706_msg001</td>
+        <td>62</td>
+        <td class="side">男達は救助を求めにイヤサキ港に行ったけど
+一向に戻ってこないの――
+様子を見に行ってきてもらえないかしら？(仮)</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104706_msg101</td>
+        <td>62</td>
+        <td class="side">男達を助けてくれてありがとう(仮)</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104706_msg0001</td>
+        <td>84</td>
+        <td class="side">That was a close shave.
+Thank you for your assistance.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104706_msg0002</td>
+        <td>84</td>
+        <td class="side">Why did you decide to fight alone?</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104706_msg0003</td>
+        <td>84</td>
+        <td class="side">Without a Driver, you mean?
+It was rather reckless of me.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104706_msg0004</td>
+        <td>84</td>
+        <td class="side">Tell me, Dromarch. Do you never
+wish that your form was something
+closer to human?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104706_msg0005</td>
+        <td>84</td>
+        <td class="side">What do you mean, ma'am?</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104706_msg0006</td>
+        <td>84</td>
+        <td class="side">If you were shaped like a human,
+you could hold a weapon.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104706_msg0007</td>
+        <td>84</td>
+        <td class="side">You could provide first aid
+to injured people.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104706_msg0008</td>
+        <td>84</td>
+        <td class="side">Not being able to use tools of any
+kind... It frustrates me, Dromarch.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104706_msg0009</td>
+        <td>84</td>
+        <td class="side">You have a kind soul, Sophora.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104706_msg0010</td>
+        <td>84</td>
+        <td class="side">I had not considered
+such things before.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104706_msg0101</td>
+        <td>165</td>
+        <td class="side">How should I follow up?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104706_msg0102</td>
+        <td>165</td>
+        <td class="side">We can let people ride on our backs</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst104706_msg0103</td>
+        <td>165</td>
+        <td class="side">We can comfort people</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst104706_msg0201</td>
+        <td>84</td>
+        <td class="side">Well, the advantage of this form is that
+we can let people ride on our backs.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst104706_msg0202</td>
+        <td>84</td>
+        <td class="side">My Driver is awfully big. I wonder
+if I'd be able to carry him...</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst104706_msg0203</td>
+        <td>84</td>
+        <td class="side">My Driver Nia always says that
+galloping along with the wind in her
+face makes her feel truly alive.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst104706_msg0204</td>
+        <td>84</td>
+        <td class="side">Besides, we are much stronger
+than humans! A heavy load is
+no burden for us.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst104706_msg0205</td>
+        <td>84</td>
+        <td class="side">Oi, who you calling heavy?</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst104706_msg0206</td>
+        <td>84</td>
+        <td class="side">Ah, no-
+I did not mean to imply that you
+were heavy, my lady.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst104706_msg0301</td>
+        <td>84</td>
+        <td class="side">You know, one of the advantages of
+a form like ours is that we can
+provide great comfort to people.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst104706_msg0302</td>
+        <td>84</td>
+        <td class="side">If I was shaped like a human male, and
+Nia found my appearance distasteful,
+we couldn't be as close as we are now.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst104706_msg0303</td>
+        <td>84</td>
+        <td class="side">That is true...</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst104706_msg0304</td>
+        <td>84</td>
+        <td class="side">If I were a human woman, Oswalt
+wouldn't be able to brush my fur as he
+does now. Women make him nervous.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst104706_msg0401</td>
+        <td>84</td>
+        <td class="side">Thank you, Dromarch, for
+helping me see that this
+form isn't so bad after all.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst104706_msg0402</td>
+        <td>84</td>
+        <td class="side">I'm happy I could be of assistance.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst104706_msg0403</td>
+        <td>84</td>
+        <td class="side">Will you return to the ship?</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst104706_msg0404</td>
+        <td>84</td>
+        <td class="side">You have injured people to tend to.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst104706_msg0405</td>
+        <td>84</td>
+        <td class="side">We will pass word of your safety
+to your Driver in Ysheva Harbor.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst104706_msg0406</td>
+        <td>84</td>
+        <td class="side">Um, Dromarch?</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst104706_msg0407</td>
+        <td>84</td>
+        <td class="side">Thank you.
+You have been most kind.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst104706_msg0408</td>
+        <td>84</td>
+        <td class="side">I will see you later at the Torigoth
+Relay Base...</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst104706_msg0409</td>
+        <td>84</td>
+        <td class="side">No, actually, would you be so
+kind as to meet me directly at
+the Mor Ardain Consulate?</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst104706_msg0410</td>
+        <td>84</td>
+        <td class="side">Of course, ma'am.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst104706_msg0411</td>
+        <td>84</td>
+        <td class="side">Then farewell for now.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

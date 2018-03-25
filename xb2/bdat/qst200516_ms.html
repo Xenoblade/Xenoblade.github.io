@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst200516_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst200516_msg026</td>
+        <td>84</td>
+        <td class="side">Hey. We're back with your paintings!</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst200516_msg027</td>
+        <td>84</td>
+        <td class="side">Oh, no kidding! Thanks, you lot!
+You're one in a million!</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst200516_msg001</td>
+        <td>84</td>
+        <td class="side">Yes, indeed, they all seem to be safe
+and accounted for!</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst200516_msg002</td>
+        <td>84</td>
+        <td class="side">...But now that I look at it, they're
+pretty poor, aren't they? I'd be
+embarrassed to show these in public.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst200516_msg003</td>
+        <td>84</td>
+        <td class="side">Nothing to be ashamed of,
+in my opinion.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst200516_msg004</td>
+        <td>84</td>
+        <td class="side">There's a saying: "Passion is the road
+to betterment".</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst200516_msg005</td>
+        <td>84</td>
+        <td class="side">As long as you hold a passion for
+painting, there's no limit to what
+you can achieve.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst200516_msg006</td>
+        <td>84</td>
+        <td class="side">You think? Yeah...maybe you're right!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst200516_msg007</td>
+        <td>84</td>
+        <td class="side">You've started getting my creative
+juices flowing again.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst200516_msg008</td>
+        <td>84</td>
+        <td class="side">I'm busy enough with my restaurant
+chain as it is, but maybe I can set
+aside some time to get back into it.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst200516_msg009</td>
+        <td>84</td>
+        <td class="side">Mm? Did you just say
+"restaurant chain"?</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst200516_msg010</td>
+        <td>84</td>
+        <td class="side">I did. What about it?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst200516_msg011</td>
+        <td>84</td>
+        <td class="side">Are you interested in the food?
+Or maybe the cooking?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst200516_msg028</td>
+        <td>84</td>
+        <td class="side">Well...</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst200516_msg012</td>
+        <td>84</td>
+        <td class="side">As it happens, I'm sort of a...
+confectioner-cum-pâtissier, you
+could say. An enthusiast, at least.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst200516_msg013</td>
+        <td>84</td>
+        <td class="side">I try not to give it much thought,
+though, being a Blade and all.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst200516_msg014</td>
+        <td>84</td>
+        <td class="side">Oh, come on! After everything you
+just said, now you tell me you're
+trying to hide your own hobbies?</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst200516_msg015</td>
+        <td>84</td>
+        <td class="side">What happened to "Passion is the road
+to betterment"?</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst200516_msg016</td>
+        <td>84</td>
+        <td class="side">As long as you've got the passion,
+anything's possible, no?</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst200516_msg017</td>
+        <td>84</td>
+        <td class="side">Heh, too true. You've got me there.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst200516_msg018</td>
+        <td>84</td>
+        <td class="side">Now, about your reward...
+How about I lend out one of my shops
+to you? Tentatively, of course.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst200516_msg029</td>
+        <td>84</td>
+        <td class="side">As it so happens, one of them's
+unoccupied at the moment.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst200516_msg030</td>
+        <td>84</td>
+        <td class="side">You manage the shop itself and I'll
+handle the upkeep. But I will have to
+take a percentage of your earnings...</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst200516_msg031</td>
+        <td>84</td>
+        <td class="side">Well? Whadda ya say?</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst200516_msg019</td>
+        <td>84</td>
+        <td class="side">Wow. I have to say, it's an incredibly
+tempting offer, but I'm afraid I'd have
+to decline, because, well...</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst200516_msg020</td>
+        <td>84</td>
+        <td class="side">Now, slow down. Why don't you take
+a look and see for yourself first?</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst200516_msg021</td>
+        <td>84</td>
+        <td class="side">If you like the look of the place,
+my offer still stands.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst200516_msg022</td>
+        <td>84</td>
+        <td class="side">But, I...</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst200516_msg023</td>
+        <td>84</td>
+        <td class="side">Come on, Gorg, we can at least go
+and see it, can't we?</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst200516_msg024</td>
+        <td>84</td>
+        <td class="side">If you still don't like it, you can always
+turn down his offer later on.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst200516_msg025</td>
+        <td>84</td>
+        <td class="side">Well...if you insist. Let's see it then.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst200516_msg032</td>
+        <td>84</td>
+        <td class="side">It's at the plaza near the Fonsa Myma
+Gate. Take your time, look around.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

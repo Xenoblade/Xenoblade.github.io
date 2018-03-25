@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev030601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0010</td>
+        <td class="side">Inquire[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0011</td>
+        <td class="side">Ask Staccata about his work.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0020</td>
+        <td class="side">Discuss[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0021</td>
+        <td class="side">Ask Staccata if anything is troubling him.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0001</td>
+        <td class="side">I perform corporeal maintenance on on the Ma-non.[ST:n ]In layman's terms, I'm basically a doctor?[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0002</td>
+        <td class="side">Did you come here for a checkup?[ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0003</td>
+        <td class="side">I don't have any experience with mechanical bodies like[ST:n ]yours, you understand?[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0004</td>
+        <td class="side">If you are feeling under the weather, perhaps you[ST:n ]should seek out a mechanic instead?[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0012</td>
+        <td class="side">Lately, I've had a surge in patients complaining about[ST:n ]stomach pains, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0013</td>
+        <td class="side">Well, even after numerous rigorous examinations,[ST:n ]I don't think I'm any closer to pinpointing the cause?[ST:n ]However...[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0014</td>
+        <td class="side">Many of my patients claim to have been cured by[ST:n ]something called the Bringer of Miracles?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0017</td>
+        <td class="side">So in the interest of medical research, I took it upon[ST:n ]myself to visit this Mr. Bringer—and you know what?[ST:n ]It it it turns out he's not human![ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0018</td>
+        <td class="side">They really believe some invisible being cured them?[ST:n ]...Perhaps more than stomachs ail them, am I right?[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0010</td>
+        <td class="side">tev030601_JNK0010</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0031</td>
+        <td class="side">Ask Staccata about Ma-non life cycles.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0020</td>
+        <td class="side">tev030601_JNK0020</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0041</td>
+        <td class="side">Ask Staccata about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev030601_SEL1031</td>
+        <td class="side">Ask Staccata about mimeosomes.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0019</td>
+        <td class="side">We Ma-non live a great number of years,[ST:n ]but we produce very few children, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0020</td>
+        <td class="side">Surely you've noted their absence from our ship?[ST:n ]That's because they're being cared for and and[ST:n ]protected on our homeworld...[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0021</td>
+        <td class="side">Of course, if we fail to find a way to escape the[ST:n ]confines of Mira, we'll have to more seriously consider[ST:n ]extending our species here, you understand?[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0022</td>
+        <td class="side">But we would just as soon wait until the Ganglion[ST:n ]threat has passed, I imagine? That's one advantage of[ST:n ]living long lives—we're never in a rush...[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0028</td>
+        <td class="side">When Fraisie left, I saw several Ma-non go with her...[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0031</td>
+        <td class="side">I know the fiend has been declawed, but it it still[ST:n ]doesn't sit right with me, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0032</td>
+        <td class="side">Once I'm done treating the Ma-non she inflicted that[ST:n ]poison of hers on, maybe I'll try to track them down?[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev030601_MSG0033</td>
+        <td class="side">And if I find anything unsavory is going on, I hope you[ST:n ]will be there to to help me?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0010</td>
+        <td class="side">tev030601_JNK0010</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0031</td>
+        <td class="side">tev030601_SEL0031</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev030601_JNK0020</td>
+        <td class="side">tev030601_JNK0020</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev030601_SEL0041</td>
+        <td class="side">tev030601_SEL0041</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2010</td>
+        <td class="side">It seems Fraisie believed the Bringer of Miracles would[ST:n ]come to her rescue until the very end, don't you think?[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2011</td>
+        <td class="side">It should have been plain as day that the xenoform was[ST:n ]tricking her, right?[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2012</td>
+        <td class="side">The villain might even be hiding among us as we[ST:n ]speak, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2013</td>
+        <td class="side">And and and who knows what form it's taken?[ST:n ]We must take care not to miss even the tiniest detail![ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2018</td>
+        <td class="side">Are you still in your mechanical body?[ST:wait ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2019</td>
+        <td class="side">Since you'd gone to the Lifehold Core, I just assumed[ST:n ]you would return with your real body, you know?[ST:wait ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>tev030601_MSG2020</td>
+        <td class="side">There go my hopes of carefully dissecting every last[ST:n ]limb and lymph node you possess, I suppose?[ST:n ]Er, figuratively speaking, of course...[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

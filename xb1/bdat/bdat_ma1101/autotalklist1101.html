@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>autotalklist1101</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>auto_mes</th>
+          <th>scenario_s</th>
+          <th>scenario_e</th>
+          <th>OCLOCK_0</th>
+          <th>OCLOCK_3</th>
+          <th>OCLOCK_6</th>
+          <th>OCLOCK_9</th>
+          <th>OCLOCK_12</th>
+          <th>OCLOCK_15</th>
+          <th>OCLOCK_18</th>
+          <th>OCLOCK_21</th>
+          <th>quest_no</th>
+          <th>relate_no</th>
+          <th>relate</th>
+          <th>select_no</th>
+          <th>select</th>
+          <th>popular_no</th>
+          <th>popular</th>
+          <th>npcmeet_no</th>
+          <th>col6_h_no</th>
+          <th>col6_h</th>
+          <th>col6_k_no</th>
+          <th>col6_k</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>What will become of us all?</td>
+        <td></td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>Don't worry about it so much.</td>
+        <td></td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>There's nothing but bad news<n>recently.</td>
+        <td></td>
+        <td>404</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>I hear those Ministry of Research<n>people are involved in something.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>That Kallian really is all right.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>Hmm... Someone who knows about<n>the Mag Mell Ruins, eh?</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>We not getting anywhere. Me just<n>head back to Frontier Village.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>Can't you feel some kind of<n>mysterious attraction?</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>There's no point in going on.<n>There'll be nobody there at this hour.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>I wonder what Melia looks like.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>Could it be that our people have<n>devolved over the millennia?</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>What I wouldn't give to see<n>the Lady Melia's face...!</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>I hope the three of us will always<n>be able to talk together like this.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>I agree.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>Me not want to go anywhere<n>near danger.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>Yes. Thank you for your help.<n>I'll pass the information on.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>Have you noted down all the<n>possible locations?</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>An ancient High Entia mystery<n>that will never be solved.</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>I'm happy that Talia make progress<n>with research!</td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>538</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td>404</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt1001</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>purpose</th>
+          <th>info_prog</th>
+          <th>info_succ_A1</th>
+          <th>info_succ_A2</th>
+          <th>info_succ_A3</th>
+          <th>info_succ_B1</th>
+          <th>info_succ_B2</th>
+          <th>info_succ_B3</th>
+          <th>info_report</th>
+          <th>info_end_A</th>
+          <th>info_end_B</th>
+        </tr>
+      </thead>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td>One of the wind turbines was attacked by Hodes.@Help resolve the Ether Plant problem.</td>
+        <td>Teach the head of the Hodes a lesson.</td>
+        <td>Use the Turbine Access Panel in the@Ether Plant at Eryth Sea to fix the plant.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jarack.</td>
+        <td>The Ether Plant is working again. Now Jarack@should be able to fix the lighthouse.</td>
+        <td></td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td>Find the Hode Refuge and teach the Hode leader@a lesson.</td>
+        <td>Defeat <col=item>Funeral Gozra<col=def3> at the Hode Refuge in@Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You have defeated the Hode leader and ensured@the safety of the wind turbine.</td>
+        <td></td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td>Fix the wind turbine that the Hodes broke.</td>
+        <td>Collect 3 pieces of <col=item>Luxury Hode Wood<col=def3> from@Hodes at Eryth Sea.</td>
+        <td>Return to Jarack.</td>
+        <td>Use the Turbine Access Panel in the@Ether Plant at Eryth Sea to fix the plant.</td>
+        <td>Return to Jarack.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The wind turbine has been fixed with the@materials you collected and is working fine now.</td>
+        <td></td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td>Cronies of the defeated Hode leader want revenge.</td>
+        <td>Defeat 2 <col=item>Confusion Ekidnos<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Jarack.</td>
+        <td>You defeated the cronies of the Hode leader so@the Ether Plant should be safe...finally!</td>
+        <td></td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td>There are more problems with the lighthouse. The@light won't come on. When darkness falls, monsters@will attack. Defend the lighthouse.</td>
+        <td>Defeat 3 <col=item>Decay Ekidnos<col=def3> near Syrath Lighthouse@at Eryth Sea. (Only at night.)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Shalen.</td>
+        <td>The lighthouse is safe and has been fixed. Now@it lights up the whole area.</td>
+        <td></td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td>Miriall tried to stop Talia but Talia didn't listen and@went off to Satorl all alone. Talia could be in grave@danger. Go and help her.</td>
+        <td>Defeat <col=item>Dogmatic Gogol<col=def3> near the@Place of Judgement in Satorl Marsh.</td>
+        <td>Talk to Talia who is at the Place of Judgement@in Satorl Marsh.</td>
+        <td>Talk to Talia who is on the Ether Plant@at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Talia wanted to complete the research into@the War God faith for her lost friends.</td>
+        <td></td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td>It seems that there is a statue of the War God in Valak@Mountain. Complete the research into the War God@faith for Ruthan and Naroth.</td>
+        <td>Investigate the War God statue at La Luz Church@in Valak Mountain.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Talk to Talia.</td>
+        <td>The birthplace of the War God faith must be@Valak Mountain. Their research is complete.</td>
+        <td></td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td>Miriall fled the capital with Teelan, but at some point@seems to have lost sight of him. Find Teelan to ease@her worried heart.</td>
+        <td>Talk to Teelan.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Miriall.</td>
+        <td>Teelan was hiding in the imperial capital. You@rescued him, and put Miriall's worries to rest.</td>
+        <td></td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td>When Vidian fled the imperial capital, she was helped@by Telethia. She feels it must be some good friends.@Try and find out if this is the truth.</td>
+        <td>Defeat 10 <col=item>Arel Telethia<col=def3> in Alcamoth.</td>
+        <td>Defeat <col=item>Telethia Arielle<col=def3> near the Fountain of@Eternity in Alcamoth.</td>
+        <td>Defeat <col=item>Telethia Lesunia<col=def3> near Melfica Road@in Alcamoth.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Vidian.</td>
+        <td>It really was Vidian's friends who saved her.@Vidian offers up a tearful prayer for her friends.</td>
+        <td></td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td>When Vidian was fleeing the Imperial City, she was@saved by some Telethia who turned out to be her@friends. It will be sad, but you should put them to rest.</td>
+        <td>Defeat 10 <col=item>Arel Telethia<col=def3> in Alcamoth.</td>
+        <td>Defeat <col=item>Telethia Arielle<col=def3> near the Fountain of@Eternity in Alcamoth.</td>
+        <td>Defeat <col=item>Telethia Lesunia<col=def3> near Melfica Road@in Alcamoth.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Vidian.</td>
+        <td>Vidian's two friends are at peace now.@Vidian offers up a tearful prayer for her friends.</td>
+        <td></td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td>There is a Telethia research facility within the@High Entia Tomb. Go to the High Entia Tomb and@find the research facility.</td>
+        <td>Collect the <col=item>Telethia Research<col=def3> from the Telethia@Laboratory in the High Entia Tomb</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Return to Teelan.</td>
+        <td>You found the Telethia Research. Perhaps the@Telethia will return to their original forms one day.</td>
+        <td></td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td>There are lots of monsters at Eryth Sea.@Clear some so it's safer.</td>
+        <td>Defeat 5 <col=item>Palti Kromars<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the lighthouse keeper's request.@Eryth Sea should be a little safer now.</td>
+        <td></td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td>There are lots of monsters at Eryth Sea.@Clear some so it's safer.</td>
+        <td>Defeat 5 <col=item>Maleza Kromars<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the lighthouse keeper's request.@Eryth Sea should be a little safer now.</td>
+        <td></td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td>Eryth Sea is very dangerous. There is a particularly@terrifying monster that should be exterminated.</td>
+        <td>Defeat <col=item>Flabbergasted Jerome<col=def3> in the area of@Hovering Reef 5 at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the lighthouse keeper's request.@Eryth Sea should be a little safer now.</td>
+        <td></td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td>The Alcamoth resident wants to research Eryth Sea@but she can't find the things she needs. Collect some@items and materials for her.</td>
+        <td>Collect 3 <col=item>Hiln Coin Purses<col=def3> from Eryth Hilns in@Eryth Sea.</td>
+        <td>Collect 5 <col=item>Doomsday Poppies<col=def3> from Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Alcamoth resident's request.@Now she should be able to start her investigation.</td>
+        <td></td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td>The Alcamoth resident wants to research Eryth Sea@but she can't find the things she needs. Collect some@items and materials for her.</td>
+        <td>Collect 3 <col=item>Andos Antennae<col=def3> from Andos in the@High Entia Tomb.</td>
+        <td>Collect 3 <col=item>Old Dragon Spines<col=def3> from Racti Lexos at@Eryth Sea.</td>
+        <td>Collect 3 spears of <col=item>Pink Asparagus<col=def3> at Eryth Sea.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You completed the Alcamoth resident's request.@Now she should be able to start her investigation.</td>
+        <td></td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td>There has been a support request from a worker who@is fixing a transporter near Syrath Lighthouse at Eryth@Sea. He may be in danger. Hurry to help him!</td>
+        <td>Go to Hovering Reef 4 where Syrath Lighthouse@is situated and ask where the worker is.</td>
+        <td>Go from the back of Syrath Lighthouse to the@Ether Crystal Deposit.</td>
+        <td>Help the worker that is being attacked@by Kromars.</td>
+        <td>Talk to the worker.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>You saved the worker. Now he should be able@to continue repairing the transporter.</td>
+        <td></td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td>Prison Island is accessible via a transporter from@Central Seal Island. Open the sister gates, Khatorl and@Soltnar which protect it to open the transporter's seal.</td>
+        <td>Open the sister gates Khatorl and Soltnar.</td>
+        <td>Unlock the seal that has appeared to be able@to reach Prison Island.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The transporter's seal has been broken. You@can now go to Prison Island.</td>
+        <td></td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td>To open the gates that protect the transporter to@Prison Island, you will need to release the seals on@Khatorl Seal Island and Soltnar Seal Island.</td>
+        <td>Release the seal on Khatorl Seal Island.</td>
+        <td>Release the seal on Soltnar Seal Island.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>The Khatorl and Soltnar gates are open.</td>
+        <td></td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

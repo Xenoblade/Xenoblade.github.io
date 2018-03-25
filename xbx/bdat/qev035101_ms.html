@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qev035101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0001</td>
+        <td class="side">You seem strong for Earth alien.[ST:n ]Maybe strong enough to withstand...his training.[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0002</td>
+        <td class="side">I have been looking for fiercest of warriors.[ST:n ]Are you stronger than beast?[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0010</td>
+        <td class="side">Boast</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0011</td>
+        <td class="side">Claim you're the strongest BLADE in the land.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0020</td>
+        <td class="side">Downplay</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0021</td>
+        <td class="side">Murmur a negative reply.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0003</td>
+        <td class="side">Ah! I knew from one look![ST:n ]I can tell true warrior by glint of [ST:Gender p1=his p2=her ] fangs.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0004</td>
+        <td class="side">Mmm. Then we are done speaking.[ST:n ]This job is death to all but finest of fighters.[ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0005</td>
+        <td class="side">His is uncommon strength. Coward who calls [ST:Gender p1=himself p2=herself ][ST:n ]weak can only expect painful demise.[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0006</td>
+        <td class="side">You may well prove match for Odsent.[ST:n ]Will you spar with suid under my command?[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0030</td>
+        <td class="side">Ask about Odsent</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0031</td>
+        <td class="side">Inquire about this \"Odsent\" character.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0040</td>
+        <td class="side">Ask about Commanding</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0041</td>
+        <td class="side">Inquire about what the Prone means[ST:n ]by \"commanding\" an indigen.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0007</td>
+        <td class="side">To defeat enemy, first know enemy.[ST:n ]This is wisdom of seasoned warrior.[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0008</td>
+        <td class="side">I came here to tame fearsome suid.[ST:n ]I worked many suns. Bent him to my will.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0009</td>
+        <td class="side">It was long journey. Difficult. But finally, I am master![ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0010</td>
+        <td class="side">He is my fiercest servant. Fulfiller of my dreams.[ST:n ]He is Odsent![ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0011</td>
+        <td class="side">Odsent must grow strong. For this he needs combat.[ST:n ]I ask that you spar with him.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0012</td>
+        <td class="side">Have you never faced Prone beastmaster in battle?[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0013</td>
+        <td class="side">Then luck is with you! Tree Clan masters wild beasts.[ST:n ]Uses them as living weapons to destroy our foes.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0014</td>
+        <td class="side">We train our beast servants daily.[ST:n ]Push their abilities far past those of feral kin.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0015</td>
+        <td class="side">You are warrior. Yet even you would struggle to defeat[ST:n ]well-trained beast.[ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0016</td>
+        <td class="side">Odsent is my servant. I would have you spar with him.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0017</td>
+        <td class="side">He has potential. But it is hidden deep inside.[ST:n ]I hope combat will unleash it.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0018</td>
+        <td class="side">I have dream. But first Odsent must grow stronger.[ST:n ]Will you aid me?[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0019</td>
+        <td class="side">You are great help! This is best done in open space.[ST:n ]I will send Odsent to cape on Janpath Lake.[ST:wait ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0020</td>
+        <td class="side">Show Odsent full force of your strength there![ST:wait ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0021</td>
+        <td class="side">Battle him as you would any feral beast.[ST:n ]Only by cheating death can he learn to fight for life.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0022</td>
+        <td class="side">Odsent is no coward. He should not flee.[ST:n ]But if he does, inform me at once.[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0023</td>
+        <td class="side">May your strength make Odsent great![ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0024</td>
+        <td class="side">I will send Odsent to cape on Janpath Lake in[ST:n ]Primordia.[ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0025</td>
+        <td class="side">Heh heh. You will find him to be no common beast.[ST:n ]Take fight lightly, and it will be your last.[ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0026</td>
+        <td class="side">You live! How was it? Did you find my Odsent strong?[ST:wait ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0050</td>
+        <td class="side">Nod</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0051</td>
+        <td class="side">Admit that the beast was a mighty foe.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0060</td>
+        <td class="side">Laugh</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0061</td>
+        <td class="side">Boast that the beast posed no challenge[ST:n ]to one as mighty as you.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0027</td>
+        <td class="side">Of course. Because of all beasts in Mira,[ST:n ]he was one I chose![ST:wait ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0028</td>
+        <td class="side">...Wait. He fled? Toward mountains?[ST:wait ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0029</td>
+        <td class="side">Mmm. Perhaps he needs more experience to face[ST:n ]warrior of your skill.[ST:wait ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0030</td>
+        <td class="side">I will train him. One day he will overpower even you![ST:n ]But for now, he needs easier prey.[ST:wait ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0031</td>
+        <td class="side">...What? He fled? Toward mountains?[ST:wait ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0032</td>
+        <td class="side">But...I commanded him to fight to end.[ST:n ]My mastery over him is incomplete.[ST:wait ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0033</td>
+        <td class="side">This is dire news.[ST:wait ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0034</td>
+        <td class="side">I have another request, Earth alien.[ST:wait ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0035</td>
+        <td class="side">I fear Odsent may break his mental training.[ST:n ]Return to feral state.[ST:wait ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0036</td>
+        <td class="side">He could attack any who climb northern mountains.[ST:n ]BLADEs. Prone. Other alien foragers. All are fair game.[ST:wait ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0037</td>
+        <td class="side">I can bring him back to heel. But I need white iron[ST:n ]sand and noranlilies. Will you bring them to me?[ST:wait ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0038</td>
+        <td class="side">This time, he will yield to my will. I swear it![ST:wait ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0039</td>
+        <td class="side">Prone use incense to tame beasts.[ST:wait ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0040</td>
+        <td class="side">White iron sand and noranlilies make potent one.[ST:n ]Please hurry, Earth alien.[ST:wait ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0041</td>
+        <td class="side">Have you found what I need? We must hurry.[ST:n ]Someone will be hurt soon.[ST:wait ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0042</td>
+        <td class="side">That is it! They will make powerful training incense.[ST:wait ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0043</td>
+        <td class="side">Now we must track down Odsent.[ST:wait ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0074</td>
+        <td class="side">He may be feral. If so, he will be nesting in cave.[ST:wait ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0044</td>
+        <td class="side">Will you help me search caves around northern[ST:n ]mountains? If I search alone, it takes time.[ST:n ]Lives may be lost.[ST:wait ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0045</td>
+        <td class="side">This is for dream I have held since childhood.[ST:n ]Please lend me your aid.[ST:wait ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0070</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0071</td>
+        <td class="side">Ask Zarch about his dream.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0080</td>
+        <td class="side">Assist</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0081</td>
+        <td class="side">Promise to help Zarch.</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0046</td>
+        <td class="side">Long tales must wait until Odsent is found.[ST:n ]Besides, it is dream that cannot be without him.[ST:n ]To tell it now is meaningless.[ST:wait ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0047</td>
+        <td class="side">But is has to do with Odsent name.[ST:n ]In old Prone tongue, it means \"he who opens future.\"[ST:wait ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0048</td>
+        <td class="side">I have no path forward without Odsent.[ST:n ]Please help me find him.[ST:wait ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0049</td>
+        <td class="side">It is good that I met you.[ST:wait ]</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0050</td>
+        <td class="side">Odsent is my most powerful servant.[ST:n ]His name means \"he who opens future.\"[ST:wait ]</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0051</td>
+        <td class="side">My future is lost without him. And my dream.[ST:n ]You must help me find him.[ST:wait ]</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0052</td>
+        <td class="side">Curse his bones! Why would chieftain stand in way[ST:n ]of my dream?![ST:wait ]</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0090</td>
+        <td class="side">Query</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0091</td>
+        <td class="side">Ask Zarch what happened.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0100</td>
+        <td class="side">Soothe</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0101</td>
+        <td class="side">Tell Zarch that revenge won't accomplish anything.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0053</td>
+        <td class="side">Oh! Hello, friend. Will you hear my troubles?[ST:wait ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0054</td>
+        <td class="side">Our chieftain is Sevvy Belgazus.[ST:n ]He forbids conflict with Cavern Clan in New LA.[ST:wait ]</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0055</td>
+        <td class="side">Rrrgh! Weakling! Coward! Pacifist![ST:wait ]</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0056</td>
+        <td class="side">Our chieftain, Sevvy Belgazus, thinks as you do.[ST:n ]He refuses to meet Cavern Clan in battle.[ST:n ]Where has pride of Tree Clan gone?![ST:wait ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0057</td>
+        <td class="side">At last I have power to fight. But he demands I hold![ST:n ]Watch our oppressors live in comfort![ST:wait ]</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0058</td>
+        <td class="side">Cavern scum captured my family. Killed my mother.[ST:n ]What of her memory?! Her honor?![ST:wait ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0059</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0060</td>
+        <td class="side">...Forgive me, Earth alien. I owe you debt.[ST:n ]And Prone always settle debts.[ST:wait ]</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0061</td>
+        <td class="side">Thanks to you, I still have my Odsent.[ST:n ]But chieftain's orders are absolute.[ST:wait ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0062</td>
+        <td class="side">Someday I will leave New LA. And on that day,[ST:n ]I will kill all Cavern scum![ST:wait ]</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0063</td>
+        <td class="side">...You killed Odsent.[ST:wait ]</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0064</td>
+        <td class="side">Nothing matters now. My dream is shattered.[ST:n ]By your hand![ST:wait ]</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0065</td>
+        <td class="side">Life holds no meaning. Kill me if you wish.[ST:n ]Just as Cavern Clan cut down my mother.[ST:wait ]</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0110</td>
+        <td class="side">Accept</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0111</td>
+        <td class="side">Make clear your murderous intent.</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qev035101_JNK0120</td>
+        <td class="side">Refuse</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qev035101_SEL0121</td>
+        <td class="side">Explain that you are not siding with the Cavern Clan.</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0066</td>
+        <td class="side">...You really mean to do it?[ST:wait ]</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0067</td>
+        <td class="side">......[ST:wait ]</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0068</td>
+        <td class="side">P-please. I am not ready to die.[ST:wait ]</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0069</td>
+        <td class="side">Take this. Just leave me to live in shame.[ST:n ]At least then my dream will still remain.[ST:wait ]</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0070</td>
+        <td class="side">Hollow words![ST:wait ]</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0071</td>
+        <td class="side">...But I do thank you for finding Odsent.[ST:wait ]</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0072</td>
+        <td class="side">Prone repay debts. Both to enemy and friend.[ST:n ]Here. Take this.[ST:wait ]</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>qev035101_MSG0073</td>
+        <td class="side">Now go. Stand in my way no longer.[ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

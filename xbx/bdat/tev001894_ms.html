@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev001894_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0001</td>
+        <td class="side">How's it going, Chief?[ST:wait ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0002</td>
+        <td class="side">This is your kitty cat, right?[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0003</td>
+        <td class="side">Aw, man! Lucky! I wish I had a pet.[ST:wait ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0004</td>
+        <td class="side">I've never had one. Not even when I was a kid.[ST:n ]But I guess there's nothing stopping me now, huh?[ST:n ]So what do you think I should get?[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev001894_JNK0010</td>
+        <td class="side">Say \"Cat\"</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev001894_SEL0011</td>
+        <td class="side">Tell Mia that a cat would suit her perfectly.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev001894_JNK0020</td>
+        <td class="side">Say \"Dog\"</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev001894_SEL0021</td>
+        <td class="side">Suggest Mia get a good and faithful dog.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev001894_JNK0030</td>
+        <td class="side">Say \"Nopon\"</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev001894_SEL0031</td>
+        <td class="side">Tell Mia that Nopon are all the rage now.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0005</td>
+        <td class="side">Huh? What do you mean, a cat would \"suit me\"?[ST:n ]Is it because I like playing with yarn? Because I do.[ST:n ]But really, who doesn't enjoy a nice ball of yarn?[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0006</td>
+        <td class="side">Or is it because of my name? You know. Mia? Meow?[ST:n ]All the mechanics used to think it was soooooo funny[ST:n ]to say \"Well, Mia-YOOOOW!\" whenever I got angry.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0007</td>
+        <td class="side">Yeah, no. I think a cat is too predictable.[ST:n ]Although I guess we'd have a lot in common...[ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0008</td>
+        <td class="side">A dog, huh? Yeah, dogs are cool.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0009</td>
+        <td class="side">I could throw a tennis ball for it on my day off...[ST:n ]It would lick my face when I got up in the morning...[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0010</td>
+        <td class="side">That might be the perfect partner for a lonely girl[ST:n ]living all by herself on a strange weirdo planet.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0011</td>
+        <td class="side">Nopon aren't pets, Chief.[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0012</td>
+        <td class="side">Although I did give that \"Tatsu\" Nopon of yours a[ST:n ]can of tuna once—thing followed me around for the[ST:n ]rest of the day.[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0013</td>
+        <td class="side">Still, you can't treat Nopon like pets.[ST:n ]They're people just like us! Er, for the most part.[ST:wait ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0014</td>
+        <td class="side">Still, I hear that I can't get ANY pet without official[ST:n ]permission first.[ST:wait ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0015</td>
+        <td class="side">You've done all sorts of great things, Chief, so you[ST:n ]probably didn't even need to apply for permission.[ST:wait ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0016</td>
+        <td class="side">But ol' Mia is starting from square one.[ST:wait ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0017</td>
+        <td class="side">That means I have to complete 1,000 BLADE missions[ST:n ]AND own a house. And that just gets me an interview![ST:wait ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0018</td>
+        <td class="side">Not to mention that this little kitten is a state-of-the-art,[ST:n ]precision piece of machinery.[ST:wait ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0019</td>
+        <td class="side">These things cost more than a car, right?[ST:n ]I probably can't even afford one.[ST:wait ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0020</td>
+        <td class="side">You know what? When I feel lonely, I'm just gonna[ST:n ]come bug you at your floor of the barracks and ask[ST:n ]to pet your cat.[ST:wait ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev001894_MSG0021</td>
+        <td class="side">Be seeing you, Chief. Probably more than you'd like![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

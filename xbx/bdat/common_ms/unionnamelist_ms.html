@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>unionnamelist_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">none</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">Pathfinders</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">Interceptors</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">Harriers</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">Reclaimers</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">Curators</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">Prospectors</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">Outfitters</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">Mediators</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">union_pathfinder_E</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">union_interceptor_E</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">union_avalanche_E</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">union_testament_E</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">union_collepedian_E</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">union_landbank_E</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">union_arms_E</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">union_companion_E</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">union_none_cap</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">The Pathfinders' main task is to place data[ST:n ]probes that expand BLADE's info network.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Planting data probes[ST:n ]- Discovering locations[ST:n ][ST:n ]Division Support Effect[ST:n ]- HP Support</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">The Interceptors' primary duty is to protect the[ST:n ]people of New LA from indigen threats.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Defeating enemies[ST:n ]- Completing missions[ST:n ][ST:n ]Division Support Effect[ST:n ]- Ranged Master</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">The Harriers are in charge of eliminating[ST:n ]threats from Mira's most dangerous creatures.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Defeating tyrants[ST:n ]- Defeating enemies[ST:n ][ST:n ]Division Support Effect[ST:n ]- Melee Master</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">The Reclaimers' task is to locate and retrieve[ST:n ]pieces of wreckage from the White Whale.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Retrieving White Whale wreckage[ST:n ]- Planting data probes[ST:n ][ST:n ]Division Support Effect[ST:n ]- Drop Sensor</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">Curators are charged with scouting unexplored[ST:n ]territories and collecting materials found there.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Obtaining collectibles[ST:n ]- Defeating tyrants[ST:n ][ST:n ]Division Support Effect[ST:n ]- Critical Master</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">Prospectors mainly focus on using FrontierNav[ST:n ]to mine for minerals and resources.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Mining precious resources[ST:n ]- Discovering locations[ST:n ][ST:n ]Division Support Effect[ST:n ]- Defense Support</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td class="side">Outfitters help the arms manufacturers to[ST:n ]develop new weapons and equipment.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Leveling up arms manufacturers[ST:n ]- Earning R&D points[ST:n ][ST:n ]Division Support Effect[ST:n ]- R&D Support</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td class="side">Mediators solve problems that arise between[ST:n ]residents of New LA.[ST:n ][ST:n ]Actions that Boost Division Points[ST:n ]- Completing missions[ST:n ]- Training scouted BLADEs[ST:n ][ST:n ]Division Support Effect[ST:n ]- TP Support</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst101413_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst101413_msg001</td>
+        <td>62</td>
+        <td class="side">グーラにあるブノの果実を使えば
+楽に倒せるよ(仮)</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst101413_msg0001</td>
+        <td>84</td>
+        <td class="side">Oh, hello.
+Are you biology enthusiasts?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst101413_msg0002</td>
+        <td>84</td>
+        <td class="side">Crops have been failing recently...
+That's why I'm researching how to
+increase agricultural...</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst101413_msg0003</td>
+        <td>84</td>
+        <td class="side">Oh. He's...
+Oh my...</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst101413_msg0004</td>
+        <td>84</td>
+        <td class="side">When we were both young, we'd
+often team up to work in the field...</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst101413_msg0005</td>
+        <td>84</td>
+        <td class="side">A Rampaging Sauros, huh...?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst101413_msg0006</td>
+        <td>84</td>
+        <td class="side">I'm just a humble biologist, but...</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst101413_msg0007</td>
+        <td>84</td>
+        <td class="side">Hold on. There's one plant with
+properties that may be of use here.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst101413_msg0008</td>
+        <td>84</td>
+        <td class="side">You see, a few years back I published
+a research paper on Benoît Nuts and
+the Rampaging Sauros.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst101413_msg0009</td>
+        <td>84</td>
+        <td class="side">You see, when a Rampaging Sauros
+ingests Benoît Nuts...</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst101413_msg0010</td>
+        <td>84</td>
+        <td class="side">it becomes greatly intoxicated,
+which impairs its motor skills.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst101413_msg0011</td>
+        <td>84</td>
+        <td class="side">In other words...
+It's as if it's drunk.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst101413_msg0012</td>
+        <td>84</td>
+        <td class="side">You may be able to use this fact
+to more easily deal with even the most
+ferocious of specimens.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst101413_msg0013</td>
+        <td>84</td>
+        <td class="side">Rampaging Sauros normally like to
+hide in their roosts, making them
+hard to track down.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst101413_msg0014</td>
+        <td>84</td>
+        <td class="side">But they do mark their territory
+by leaving claw marks around the area.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst101413_msg0015</td>
+        <td>84</td>
+        <td class="side">Place a Benoît Nut inside the marked
+territory to lure the beast out. If it
+takes the bait, it'll be all yours.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst101413_msg0016</td>
+        <td>84</td>
+        <td class="side">Benoît Nuts come from a rare plant
+which grows in Mor Ardain.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst101413_msg0017</td>
+        <td>84</td>
+        <td class="side">I remember hearing you can gather
+them near Turbine Tower.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst101413_msg0018</td>
+        <td>84</td>
+        <td class="side">Best of luck on your search.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst101413_msg0019</td>
+        <td>84</td>
+        <td class="side">I wish I'd gone with them...
+I might have noticed the danger
+and warned them...</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst101413_msg0020</td>
+        <td>84</td>
+        <td class="side">At least by advising you, I can put my
+mind at ease a little. Best of luck.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst101413_msg0101</td>
+        <td>84</td>
+        <td class="side">Benoît Nuts should be growing
+near Turbine Tower.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst101413_msg0102</td>
+        <td>84</td>
+        <td class="side">Place one inside the beast's territory
+and wait for a good chance to strike.
+Got it?</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tev057801_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0010</td>
+        <td class="side">Inquire[ST:wait]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tev057801_SEL0011</td>
+        <td class="side">Ask Gotsu about the secrets of Noctilum's indigens.[ST:wait ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0020</td>
+        <td class="side">Discuss[ST:wait]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tev057801_SEL0021</td>
+        <td class="side">Ask Gotsu about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tev057801_SEL0031</td>
+        <td class="side">Ask Gotsu about the secrets of Noctilum's indigens.[ST:wait ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0001</td>
+        <td class="side">Simius are seen in pairs, right? Well, once upon time,[ST:n ]those simius were Nopon![ST:wait ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0002</td>
+        <td class="side">Two Nopon lovers not get permission to marry[ST:n ]because one family think they better than other family.[ST:wait ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0003</td>
+        <td class="side">And so lovers promise to be reborn as simius because[ST:n ]all simius are equal. Then lovers throw selves off[ST:n ]Everwhelm Falls to end it all! Kerplunge![ST:wait ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0004</td>
+        <td class="side">...What does friend think? Does friend like sad and[ST:n ]moving tale that springs from brain of Gotsu?[ST:wait ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0008</td>
+        <td class="side">Gotsu never got to know real dadapon very well...[ST:wait ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0009</td>
+        <td class="side">Brotherpon Tatsu is the one Gotsu really ought to[ST:n ]call dadapon.[ST:wait ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0010</td>
+        <td class="side">Gotsu want to tell dadapon all the fairy tales that[ST:n ]Gotsu make up.[ST:wait ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0011</td>
+        <td class="side">Then dadapon can sell them as book,[ST:n ]rake in huge coin, and live on easy street![ST:wait ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0012</td>
+        <td class="side">THEN rich dadapon not have to worry about getting[ST:n ]smacked around by human friends and... Oh, meh![ST:n ]Gotsu starting to lose track of plot.[ST:wait ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0021</td>
+        <td class="side">Lot of creatures in Noctilum look like flowers and trees,[ST:n ]but does friend know why?[ST:wait ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0022</td>
+        <td class="side">Because they are all playing hide-and-seek![ST:n ]Critters are cursed to play hide-and-seek forever until[ST:n ]someone find them.[ST:wait ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0023</td>
+        <td class="side">Can friend hear their doomed voices echoing through[ST:n ]forest now? \"Find critter... Set critter free...\"[ST:wait ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0024</td>
+        <td class="side">...What does friend think? Does friend like the eerie,[ST:n ]chilling tale of Gotsu?[ST:wait ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0010</td>
+        <td class="side">tev057801_JNK0010</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tev057801_SEL0011</td>
+        <td class="side">tev057801_SEL0011</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0020</td>
+        <td class="side">tev057801_JNK0020</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tev057801_SEL1021</td>
+        <td class="side">tev057801_SEL1021</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0013</td>
+        <td class="side">tev057801_MSG0013</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0014</td>
+        <td class="side">tev057801_MSG0014</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0015</td>
+        <td class="side">tev057801_MSG0015</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0010</td>
+        <td class="side">tev057801_JNK0010</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tev057801_SEL0011</td>
+        <td class="side">tev057801_SEL0011</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tev057801_JNK0020</td>
+        <td class="side">tev057801_JNK0020</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tev057801_SEL2021</td>
+        <td class="side">Ask Gotsu about recent developments.[ST:wait ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0016</td>
+        <td class="side">Gotsu headed right to Sunlit Spring after Satsu went[ST:n ]missing. Does friend know why?[ST:wait ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0017</td>
+        <td class="side">Because Gotsu heard about strange box that is[ST:n ]supposed to be there! Not because of worry for Satsu.[ST:n ]...Apologies to brotherpon.[ST:wait ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0018</td>
+        <td class="side">Anyway, Gotsu get there and found strange box,[ST:n ]but it was burnt to crisp and broken![ST:wait ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0019</td>
+        <td class="side">What happened to big box? Who is strong and mean[ST:n ]and growly enough to do that kind of damage?[ST:n ]Gotsu smell something fishy![ST:wait ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>tev057801_MSG0020</td>
+        <td class="side">Meh heh. Now Gotsu just have to come up with[ST:n ]epic tale so someone can turn it into bestselling book[ST:n ]and make Gotsu crazy rich![ST:wait ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
