@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201408_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201408_msg0001</td>
+        <td>84</td>
+        <td class="side">你们吵死了！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201408_msg0002</td>
+        <td>84</td>
+        <td class="side">就算你们是惹人怜爱的少女
+也不能这么晚还大吵大闹
+妨碍本小姐安眠！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201408_msg0003</td>
+        <td>84</td>
+        <td class="side">熬夜不利于美容！
+为了本小姐 你们也快去睡吧！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201408_msg0004</td>
+        <td>84</td>
+        <td class="side">凛音！</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201408_msg0005</td>
+        <td>84</td>
+        <td class="side">我正在和光
+比试谁更有女人味呢！</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201408_msg0006</td>
+        <td>84</td>
+        <td class="side">你们根本就没听本小姐在说什么啊[ML:Dash ]
+不过 要比女人味啊 听起来很有意思嘛</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201408_msg0007</td>
+        <td>84</td>
+        <td class="side">凛音你愿意
+来判别一下我和石榴
+谁更有女人味吗？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201408_msg0008</td>
+        <td>84</td>
+        <td class="side">这样吗[ML:Dash ]
+好
+本小姐来为你们分出高下！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201408_msg0023</td>
+        <td>84</td>
+        <td class="side">那再聊聊恋爱八卦吧</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201408_msg0024</td>
+        <td>84</td>
+        <td class="side">你可真喜欢聊这个啊[ML:Dash ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201408_msg0009</td>
+        <td>84</td>
+        <td class="side">凛音你认为什么样的男人最理想？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201408_msg0010</td>
+        <td>84</td>
+        <td class="side">这个问题问得不错
+凛音总是想着女孩子
+我很在意你对男性的看法</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201408_msg0011</td>
+        <td>84</td>
+        <td class="side">男人最重要的
+就是要有钱！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201408_msg0012</td>
+        <td>84</td>
+        <td class="side">有 有钱[ML:Dash ]？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201408_msg0013</td>
+        <td>84</td>
+        <td class="side">有钱养活女人 才配叫男人啊！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201408_msg0014</td>
+        <td>84</td>
+        <td class="side">不过也不是光有这点出息
+就够了的</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201408_msg0015</td>
+        <td>84</td>
+        <td class="side">男人还必须能帅气地护送女性
+好好遵守礼节
+否则是没有资格与本小姐交往的</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201408_msg0016</td>
+        <td>84</td>
+        <td class="side">打个比方 泡出好喝的红茶是必备技能
+还有 本小姐还希望男人能把浴缸擦得亮闪闪
+还有在风景优美的湖畔买一座别墅</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201408_msg0017</td>
+        <td>84</td>
+        <td class="side">怎么说呢 这也[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201408_msg0018</td>
+        <td>84</td>
+        <td class="side">难度太高了
+我有点跟不上她的思路了[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201408_msg0019</td>
+        <td>84</td>
+        <td class="side">本小姐身为淑女的修养可是无可挑剔的
+所以身边的男性也必须得是超一流才行[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201408_msg0020</td>
+        <td>84</td>
+        <td class="side">感觉好难聊起来[ML:Dash ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201408_msg0021</td>
+        <td>84</td>
+        <td class="side">找错人了啊[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201408_msg0022</td>
+        <td>84</td>
+        <td class="side">期待下一个人吧[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

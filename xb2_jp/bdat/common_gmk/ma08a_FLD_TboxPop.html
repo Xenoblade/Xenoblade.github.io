@@ -1,0 +1,3209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma08a_FLD_TboxPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>RSC_ID</th>
+          <th>Condition</th>
+          <th>FSID</th>
+          <th>FSID2</th>
+          <th>msgVisible</th>
+          <th>goldMin</th>
+          <th>goldMax</th>
+          <th>goldPopMin</th>
+          <th>goldPopMax</th>
+          <th>itm1ID</th>
+          <th>itm1Num</th>
+          <th>itm1Per</th>
+          <th>itm2ID</th>
+          <th>itm2Num</th>
+          <th>itm2Per</th>
+          <th>itm3ID</th>
+          <th>itm3Num</th>
+          <th>itm3Per</th>
+          <th>itm4ID</th>
+          <th>itm4Num</th>
+          <th>itm4Per</th>
+          <th>itm5ID</th>
+          <th>itm5Num</th>
+          <th>itm5Per</th>
+          <th>itm6ID</th>
+          <th>itm6Num</th>
+          <th>itm6Per</th>
+          <th>itm7ID</th>
+          <th>itm7Num</th>
+          <th>itm7Per</th>
+          <th>itm8ID</th>
+          <th>itm8Num</th>
+          <th>itm8Per</th>
+          <th>randitmPopMin</th>
+          <th>randitmPopMax</th>
+          <th>rsc_paramID</th>
+          <th>msgdigVisible</th>
+          <th>Digflg</th>
+        </tr>
+      </thead>
+      <tr id="801">
+        <td>801</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst1029_001</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td><a href="../common/FLD_ConditionList.html#898">898</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1001">1001</td></a>
+        <td>10</td>
+        <td>3251</td>
+        <td>3576</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PreciousList.html#25067">ゴミ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="802">
+        <td>802</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst1016_002</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td><a href="../common/FLD_ConditionList.html#620">620</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1027">トレジャーオープン</td></a>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1023">ディグアップ</td></a>
+        <td>10</td>
+        <td>5814</td>
+        <td>6395</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PreciousList.html#25035">謎のパーツB</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="803">
+        <td>803</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst1007_007</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2469</td>
+        <td>2716</td>
+        <td>2</td>
+        <td>2</td>
+        <td><a href="../common/ITM_PreciousList.html#25027">ノポンコイン</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="804">
+        <td>804</td>
+        <td>
+        </td>
+        <td class="side">tbox_qst2020_002</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td><a href="../common/FLD_ConditionList.html#1814">1814</td></a>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3694</td>
+        <td>4063</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PreciousList.html#25126">黄金の小手右手</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="805">
+        <td>805</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>972</td>
+        <td>1069</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15295">キズナMAX攻撃Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PcEquip.html#118">オートバランサー</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="806">
+        <td>806</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d002</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>6480</td>
+        <td>7128</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#107">師範に学ぶABC</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="807">
+        <td>807</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d003</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4248</td>
+        <td>4673</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15155">移動回避Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="808">
+        <td>808</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d004</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4212</td>
+        <td>4633</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15103">地属性ダメージ減少Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="809">
+        <td>809</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d005</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3596</td>
+        <td>3956</td>
+        <td>20</td>
+        <td>25</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="810">
+        <td>810</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d006</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1230">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>2916</td>
+        <td>3208</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15007">物理防御アップⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="811">
+        <td>811</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d007</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3175</td>
+        <td>3493</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_BoosterList.html#50001">勇気のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50002">誠実のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50003">慈悲のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50004">正義のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="812">
+        <td>812</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d008</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3499</td>
+        <td>3849</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_BoosterList.html#50001">勇気のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50002">誠実のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50003">慈悲のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50004">正義のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="813">
+        <td>813</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d009</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1296</td>
+        <td>1426</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15225">ヘイト上昇Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="814">
+        <td>814</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d010</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1944</td>
+        <td>2138</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15190">ライジング抵抗Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="815">
+        <td>815</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d011</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3532</td>
+        <td>3885</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_BoosterList.html#50001">勇気のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50002">誠実のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50003">慈悲のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50004">正義のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="816">
+        <td>816</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d012</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3208</td>
+        <td>3529</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_BoosterList.html#50001">勇気のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50002">誠実のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50003">慈悲のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_BoosterList.html#50004">正義のブースター</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="817">
+        <td>817</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d013</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3564</td>
+        <td>3920</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_PcEquip.html#69">アサルトストーン</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="818">
+        <td>818</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d014</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1231">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>2851</td>
+        <td>3136</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15250">ダメージヒールⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="819">
+        <td>819</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d015</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3208</td>
+        <td>3529</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15150">集中回避Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_PreciousList.html#25219">人工ブレイド開発記録</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="820">
+        <td>820</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2478</td>
+        <td>2726</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15290">キズナMAXバリアⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="821">
+        <td>821</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c002</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1196">ディグアップ</td></a>
+        <td>10</td>
+        <td>5378</td>
+        <td>5916</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="822">
+        <td>822</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c003</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1773</td>
+        <td>1950</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15083">室内攻撃アップⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="823">
+        <td>823</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c004</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3251</td>
+        <td>3576</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="824">
+        <td>824</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c005</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1202">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>1773</td>
+        <td>1950</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15275">開幕アーツⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="825">
+        <td>825</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c006</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2124</td>
+        <td>2336</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15321">必殺技Lv1強化Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="826">
+        <td>826</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c007</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1197">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>3280</td>
+        <td>3608</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="827">
+        <td>827</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c008</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1478</td>
+        <td>1626</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15118">氷属性ダメージ減少Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="828">
+        <td>828</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c009</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1198">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>9690</td>
+        <td>10659</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15246">ムーブヒールⅢ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="829">
+        <td>829</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c010</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2040</td>
+        <td>2244</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15104">地属性ダメージ減少Ⅲ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="830">
+        <td>830</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c011</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1199">バレルブレイク</td></a>
+        <td></td>
+        <td>10</td>
+        <td>2364</td>
+        <td>2600</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15170">高HP攻撃アップⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="831">
+        <td>831</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c012</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3876</td>
+        <td>4264</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15023">ビーストハンターⅢ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="832">
+        <td>832</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c013</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3672</td>
+        <td>4039</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10031">モーターチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="833">
+        <td>833</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f001</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1208</td>
+        <td>1329</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#47">剣戟の旗</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="834">
+        <td>834</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f002</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2417</td>
+        <td>2659</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15240">アーツヒールⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="835">
+        <td>835</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f003</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1221">トレジャーオープン</td></a>
+        <td></td>
+        <td>10</td>
+        <td>17513</td>
+        <td>19264</td>
+        <td>20</td>
+        <td>20</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45013">エピック・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="836">
+        <td>836</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f004</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1477</td>
+        <td>1625</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#109">シルバーピアス</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="837">
+        <td>837</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f005</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1222">ディグアップ</td></a>
+        <td>10</td>
+        <td>4956</td>
+        <td>5452</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10033">トライチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="838">
+        <td>838</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f006</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1223">ディグアップ</td></a>
+        <td>10</td>
+        <td>5370</td>
+        <td>5907</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#105">0からバトル講座</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>True</td>
+      </tr>
+      <tr id="839">
+        <td>839</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f007</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3456</td>
+        <td>3802</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15270">射撃距離アップⅡ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="840">
+        <td>840</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f008</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3222</td>
+        <td>3544</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15220">ヘイト低下Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="841">
+        <td>841</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f009</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2148</td>
+        <td>2363</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15315">スイッチ短縮Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="842">
+        <td>842</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f010</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>940</td>
+        <td>1034</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_Orb.html#15063">フュージョンコンボ強化Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="843">
+        <td>843</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f011</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2954</td>
+        <td>3249</td>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="844">
+        <td>844</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f012</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1343</td>
+        <td>1477</td>
+        <td>3</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#44">機械化レガース</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="845">
+        <td>845</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f013</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3088</td>
+        <td>3397</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#8">ボルトハット</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="846">
+        <td>846</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f014</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3186</td>
+        <td>3505</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15235">アーツヘイト上昇Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="847">
+        <td>847</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f015</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4248</td>
+        <td>4673</td>
+        <td>3</td>
+        <td>3</td>
+        <td><a href="../common/ITM_PreciousList.html#25305">ポーチ拡張キット</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="848">
+        <td>848</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f016</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2819</td>
+        <td>3101</td>
+        <td>5</td>
+        <td>5</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="849">
+        <td>849</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f017</td>
+        <td><a href="../common/RSC_TboxList.html#3">3</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>5907</td>
+        <td>6498</td>
+        <td>7</td>
+        <td>7</td>
+        <td><a href="../common/ITM_Orb.html#15251">ダメージヒールⅢ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_Orb.html#15241">アーツヒールⅢ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="850">
+        <td>850</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f018</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3491</td>
+        <td>3840</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#149">ラベンダーポプリ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="851">
+        <td>851</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f019</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4137</td>
+        <td>4551</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#151">賢者の護符</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="852">
+        <td>852</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f020</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>1921</td>
+        <td>2113</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10027">マグネットチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="853">
+        <td>853</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f021</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3251</td>
+        <td>3576</td>
+        <td>5</td>
+        <td>5</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="854">
+        <td>854</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f022</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2069</td>
+        <td>2276</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10026">チェーンチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="855">
+        <td>855</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f023</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2216</td>
+        <td>2438</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcEquip.html#132">刀アタッチメント</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="856">
+        <td>856</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f024</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3398</td>
+        <td>3738</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15215">ブレイド封鎖抵抗Ⅱ</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="857">
+        <td>857</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f025</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3842</td>
+        <td>4226</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10013">ウッドチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="858">
+        <td>858</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f026</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3694</td>
+        <td>4063</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#152">穏やかな香水</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="859">
+        <td>859</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f027</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2216</td>
+        <td>2438</td>
+        <td>5</td>
+        <td>5</td>
+        <td><a href="../common/ITM_PcWpnChip.html#10026">チェーンチップ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="860">
+        <td>860</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f028</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4137</td>
+        <td>4551</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#14">シェルシューズ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="861">
+        <td>861</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f029</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2955</td>
+        <td>3251</td>
+        <td>5</td>
+        <td>5</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="862">
+        <td>862</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f030</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3694</td>
+        <td>4063</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_PcEquip.html#98">ガントレット</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="863">
+        <td>863</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d016</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2106</td>
+        <td>2317</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_PcEquip.html#133">ボールアタッチメント</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="864">
+        <td>864</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d017</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2268</td>
+        <td>2495</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15351">属性玉優先破壊</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="865">
+        <td>865</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d018</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>4374</td>
+        <td>4811</td>
+        <td>10</td>
+        <td>10</td>
+        <td><a href="../common/ITM_Orb.html#15300">キズナMAX回避Ⅱ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="866">
+        <td>866</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d019</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2106</td>
+        <td>2317</td>
+        <td>1</td>
+        <td>2</td>
+        <td><a href="../common/ITM_Orb.html#15103">地属性ダメージ減少Ⅱ</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="867">
+        <td>867</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d020</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2430</td>
+        <td>2673</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15093">火属性ダメージ減少Ⅱ</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="868">
+        <td>868</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_d021</td>
+        <td><a href="../common/RSC_TboxList.html#1">1</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2268</td>
+        <td>2495</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_Orb.html#15047">マシーンハンターⅡ</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="869">
+        <td>869</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c014</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2478</td>
+        <td>2726</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_PreciousList.html#25408">オーバードライブ</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="870">
+        <td>870</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_f031</td>
+        <td><a href="../common/RSC_TboxList.html#7">7</td></a>
+        <td><a href="../common/FLD_ConditionList.html#2765">2765</td></a>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>2592</td>
+        <td>2851</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_PreciousList.html#25409">点検用はしごの鍵</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+      <tr id="871">
+        <td>871</td>
+        <td>
+        </td>
+        <td class="side">tbox_ma08a_c015</td>
+        <td><a href="../common/RSC_TboxList.html#2">2</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>10</td>
+        <td>3251</td>
+        <td>3576</td>
+        <td>5</td>
+        <td>8</td>
+        <td><a href="../common/ITM_CrystalList.html#45012">レア・コアクリスタル</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="../common/ITM_CrystalList.html#45011">コモン・コアクリスタル</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td><a href="../common/ITM_Orb.html#15084">室内攻撃アップⅢ</td></a>
+        <td>2</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

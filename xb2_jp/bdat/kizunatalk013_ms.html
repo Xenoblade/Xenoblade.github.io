@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk013_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0001</td>
+        <td>84</td>
+        <td class="side">すごいも！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0002</td>
+        <td>84</td>
+        <td class="side">こんな場所にこれるのも
+ドライバーになったおかげも！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0003</td>
+        <td>84</td>
+        <td class="side">やっぱりブレイドとドライバーって
+すごいも！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0004</td>
+        <td>84</td>
+        <td class="side">そうも！　</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0005</td>
+        <td>84</td>
+        <td class="side">アニキ　ニア
+ちょっと相談に乗って欲しいも</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0006</td>
+        <td>84</td>
+        <td class="side">アタシ達に相談したいこと？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0007</td>
+        <td>84</td>
+        <td class="side">トラ　今とっても悩んでることがあるも</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0008</td>
+        <td>84</td>
+        <td class="side">実は[ML:Dash ]　トラは
+気づいてしまったんだも</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0009</td>
+        <td>84</td>
+        <td class="side">トラは[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0010</td>
+        <td>84</td>
+        <td class="side">トラは[ML:Dash ]？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0011</td>
+        <td>84</td>
+        <td class="side">実は戦闘ではあまり役に立っていないも！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0012</td>
+        <td>84</td>
+        <td class="side">……</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0013</td>
+        <td>84</td>
+        <td class="side">……</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0014</td>
+        <td>84</td>
+        <td class="side">どうしたも　二人共？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0015</td>
+        <td>84</td>
+        <td class="side">あ　いや[ML:Dash ]
+ちょっと驚いただけ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0016</td>
+        <td>84</td>
+        <td class="side">まさかそんな疑問を持つとは
+思ってなかったからな</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0017</td>
+        <td>84</td>
+        <td class="side">ひどいも！？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0018</td>
+        <td>84</td>
+        <td class="side">トラだって
+よく戦ってると思うけどね</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0019</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]それは全部
+ハナのおかげなんだも</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0020</td>
+        <td>84</td>
+        <td class="side">武器を投げ渡したり受け取ったり
+トラが本物のドライバーみたいに戦うように
+行動してくれてるんだも</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0021</td>
+        <td>84</td>
+        <td class="side">だから本当はそのプログラムをなくして
+トラ抜きでハナが一人で戦うのが
+一番効率的で強いも</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0022</td>
+        <td>84</td>
+        <td class="side">へぇー　ハナって
+すごいんだな</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0023</td>
+        <td>84</td>
+        <td class="side">だから　トラ自身は
+足を引っ張る存在というわけも！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0024</td>
+        <td>84</td>
+        <td class="side">いやトラ[ML:Dash ]
+そこは誇るところじゃないぞ</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0025</td>
+        <td>84</td>
+        <td class="side">それでトラはこのままドライバーを
+続けていいかどうかちょっと迷ってるも[ML:Dash ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0026</td>
+        <td>84</td>
+        <td class="side">引退して監督として
+ハナを指揮した方がいいんじゃないかと
+思う時もあるも</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0027</td>
+        <td>84</td>
+        <td class="side">トラ[ML:Dash ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0028</td>
+        <td>84</td>
+        <td class="side">ニアはどう思う？</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0029</td>
+        <td>165</td>
+        <td class="side">トラに何て尋ねようか？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0030</td>
+        <td>164</td>
+        <td class="side">どうしてトラはドライバーになりたいと
+思ったんだ？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0031</td>
+        <td>164</td>
+        <td class="side">ドライバーにとって大切なことは
+何だと思う？</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0101</td>
+        <td>84</td>
+        <td class="side">実はすごくぼんやりしてるも[ML:Dash ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0102</td>
+        <td>84</td>
+        <td class="side">じいちゃんの代から
+人工ブレイドを完成させることが
+悲願だったも</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0103</td>
+        <td>84</td>
+        <td class="side">だからトラも当然
+そうなるべきだと思ってたも</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0104</td>
+        <td>84</td>
+        <td class="side">じゃあ　トラのおじいさんは
+どうして人工ブレイドを作ろうとしたんだろ</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0105</td>
+        <td>84</td>
+        <td class="side">それはきっと[ML:Dash ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0106</td>
+        <td>84</td>
+        <td class="side">モテたいからも！！</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0107</td>
+        <td>84</td>
+        <td class="side">何かしょーもない理由だな</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0108</td>
+        <td>84</td>
+        <td class="side">ノポンのドライバーなんて数少ないも！</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0109</td>
+        <td>84</td>
+        <td class="side">ドライバーになれば
+絶対にモテモテになるも！</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0110</td>
+        <td>84</td>
+        <td class="side">なら　トラの動機もそれなんじゃないか？</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0111</td>
+        <td>84</td>
+        <td class="side">もももー
+ちょっと違う気もするも</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0112</td>
+        <td>84</td>
+        <td class="side">トラはアニキのようになりたいも</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0113</td>
+        <td>84</td>
+        <td class="side">オレのように？</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0114</td>
+        <td>84</td>
+        <td class="side">トラは最初　わけも考えずに
+ドライバーに憧れていただけだったも</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0115</td>
+        <td>84</td>
+        <td class="side">でも　アニキ達と旅をして
+考えが変わったも！</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0116</td>
+        <td>84</td>
+        <td class="side">困っている人を助け
+どんな困難にも立ち向かう[ML:Dash ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0117</td>
+        <td>84</td>
+        <td class="side">まさにアニキはトラの理想のドライバーも！</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0118</td>
+        <td>84</td>
+        <td class="side">何だか面と向かって言われると
+照れくさいなあ[ML:Dash ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0119</td>
+        <td>84</td>
+        <td class="side">なるほど
+何か微妙な感じもするけど
+目標はきちんとあるってことだよな</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0120</td>
+        <td>84</td>
+        <td class="side">微妙って[ML:Dash ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0121</td>
+        <td>84</td>
+        <td class="side">だったら　大丈夫だよ！
+トラはドライバーを続けていい</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0122</td>
+        <td>84</td>
+        <td class="side">やりたいことがあるなら
+ドライバーでありつづけていいんだ</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0123</td>
+        <td>84</td>
+        <td class="side">ブレイドってそれを助ける存在なんだからさ</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0124</td>
+        <td>84</td>
+        <td class="side">ハナが一人だけ戦ってちゃダメなんだよ
+トラも一緒に戦わなきゃな</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0125</td>
+        <td>84</td>
+        <td class="side">確かにそうも[ML:Dash ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0126</td>
+        <td>84</td>
+        <td class="side">ありがとうも
+アニキ　ニア！</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0127</td>
+        <td>84</td>
+        <td class="side">トラもドライバーとして
+これまで以上にがんばるも！</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0201</td>
+        <td>84</td>
+        <td class="side">それはちゃんと考えているも[ML:Dash ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0202</td>
+        <td>84</td>
+        <td class="side">ブレイドへの愛が大切も！</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0203</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]あ　愛？</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0204</td>
+        <td>84</td>
+        <td class="side">意外な回答がきたな[ML:Dash ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0205</td>
+        <td>84</td>
+        <td class="side">トラは観察して　分析もしたも[ML:Dash ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0206</td>
+        <td>84</td>
+        <td class="side">そして　ドライバーには皆
+ブレイドへの愛があるとわかったも！</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0207</td>
+        <td>84</td>
+        <td class="side">アニキはホムラを
+ニアはビャッコを愛しているも！</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0208</td>
+        <td>84</td>
+        <td class="side">オレがホムラを愛してる！？</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0209</td>
+        <td>84</td>
+        <td class="side">レ　レックスがホムラを！？</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0210</td>
+        <td>84</td>
+        <td class="side">トラも　ハナに対する愛は
+他の誰にも負けはしないも</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0211</td>
+        <td>84</td>
+        <td class="side">けど　愛さえあれば
+ドライバーでいてもいいってことには
+ならないと思うも</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0212</td>
+        <td>84</td>
+        <td class="side">それはそうだろうけど[ML:Dash ]</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0213</td>
+        <td>84</td>
+        <td class="side">待ってよ　レックス</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0214</td>
+        <td>84</td>
+        <td class="side">何か話がこじれてきそうだから
+ハナにストレートに言ってもらった方が
+手っ取り早いんじゃないか？</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0215</td>
+        <td>84</td>
+        <td class="side">確かにそうだな[ML:Dash ]
+ハナを呼んで来よう</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0216</td>
+        <td>84</td>
+        <td class="side">ハナ[ML:Dash ]
+トラがドライバーをやめるって
+言い出したらどうする？</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0217</td>
+        <td>84</td>
+        <td class="side">いてもらわないと困りますも！</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0218</td>
+        <td>84</td>
+        <td class="side">もももっ！
+トラ　ドライバーとしてがんばるも！！</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0220</td>
+        <td>84</td>
+        <td class="side">一瞬で決着だったな[ML:Dash ]</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>kizunatalk013_msg0221</td>
+        <td>84</td>
+        <td class="side">そ　そうだな　良かった良かった[ML:Dash ]
+はぁ[ML:Dash ]　レックスがホムラを[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma18a_FLD_NpcPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>NpcID</th>
+          <th>ScenarioFlagMin</th>
+          <th>ScenarioFlagMax</th>
+          <th>QuestFlag</th>
+          <th>QuestFlagMin</th>
+          <th>QuestFlagMax</th>
+          <th>TimeRange</th>
+          <th>Condition</th>
+          <th>Group</th>
+          <th>Mot</th>
+          <th>MountPoint</th>
+          <th>MountObject</th>
+          <th>MountPoint2</th>
+          <th>MountObject2</th>
+          <th>EventID</th>
+          <th>NpcTurn</th>
+          <th>LookAt</th>
+          <th>LookAtRange</th>
+          <th>QuestID</th>
+          <th>ShopID</th>
+          <th>CloseRange</th>
+          <th>MoveSpeed</th>
+          <th>ReactionRange</th>
+          <th>ReactionPercent</th>
+          <th>ReactionMot</th>
+          <th>BattleReaction</th>
+          <th>BattleMot</th>
+          <th>Visible_XZ</th>
+          <th>Visible_Y</th>
+          <th>Invisible_XZ</th>
+          <th>Invisible_Y</th>
+          <th>FSID1</th>
+          <th>FSID2</th>
+          <th>FSID3</th>
+          <th>Talkable</th>
+        </tr>
+      </thead>
+      <tr id="18001">
+        <td>18001</td>
+        <td>
+        </td>
+        <td class="side">npc00003091_01</td>
+        <td><a href="../common/RSC_NpcList.html#3190">古びた機械</td></a>
+        <td><a href="../flags/FLG_Scenario.html#8002">8002</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1139">動き続けるシステム</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#20122">20122</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListMini.html#1139">動き続けるシステム</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18002">
+        <td>18002</td>
+        <td>
+        </td>
+        <td class="side">npc00000399_01</td>
+        <td><a href="../common/RSC_NpcList.html#3191">メノウの鉱石探し</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5333">5333</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#1279">1279</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21169">21169</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListBlade.html#5333">5333</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td><a href="../common/FLD_FieldSkillSetting.html#1395">メノウの鉱石探し</td></a>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18003">
+        <td>18003</td>
+        <td>
+        </td>
+        <td class="side">blade_satahiko18_01</td>
+        <td>1045</td>
+        <td><a href="../flags/FLG_Scenario.html#9018">9018</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2035">2035</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#1">C_idle</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41565">41565</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18004">
+        <td>18004</td>
+        <td>
+        </td>
+        <td class="side">blade_satahiko18_02</td>
+        <td>1045</td>
+        <td><a href="../flags/FLG_Scenario.html#9018">9018</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2840">2840</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#1">C_idle</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listTlk01.html#41565">41565</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18005">
+        <td>18005</td>
+        <td>
+        </td>
+        <td class="side">npc00000615_01</td>
+        <td><a href="../common/RSC_NpcList.html#3356">古代の石板</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2812">謎の起動コード</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2896">2896</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21463">21463</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2812">謎の起動コード</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18006">
+        <td>18006</td>
+        <td>
+        </td>
+        <td class="side">npc00000615_02</td>
+        <td><a href="../common/RSC_NpcList.html#3356">古代の石板</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2814">2814</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#2896">2896</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21465">21465</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="../common/FLD_QuestListNormal.html#2814">2814</td></a>
+        <td></td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>150</td>
+        <td>150</td>
+        <td>160</td>
+        <td>160</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18007">
+        <td>18007</td>
+        <td>
+        </td>
+        <td class="side">npc42320392_01</td>
+        <td><a href="../common/RSC_NpcList.html#3645">戦いの吟遊詩人</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#3172">3172</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#34">C_schedule_30_00</td></a>
+        <td>2</td>
+        <td>28</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21782">21782</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td>4</td>
+        <td></td>
+        <td><a href="../common/MNU_ShopList.html#222">222</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>50</td>
+        <td>50</td>
+        <td>60</td>
+        <td>60</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+      <tr id="18008">
+        <td>18008</td>
+        <td>
+        </td>
+        <td class="side">npc42370291_01</td>
+        <td><a href="../common/RSC_NpcList.html#3646">戦いの吟遊詩人</td></a>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/FLD_ConditionList.html#3172">3172</td></a>
+        <td></td>
+        <td><a href="FLD_NpcMobMotionId.html#35">C_schedule_31_00</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/EVT_listQst01.html#21783">21783</td></a>
+        <td>3</td>
+        <td>0</td>
+        <td>4</td>
+        <td></td>
+        <td><a href="../common/MNU_ShopList.html#222">222</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>50</td>
+        <td>50</td>
+        <td>60</td>
+        <td>60</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>True</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

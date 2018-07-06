@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202101_0010</td>
+        <td>82</td>
+        <td class="side">好厉害 好厉害啊
+这可是大发现啊</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202101_0020</td>
+        <td>82</td>
+        <td class="side">呜哇
+[ML:Dash ]吓死我了</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202101_0030</td>
+        <td>82</td>
+        <td class="side">听我说啊
+这简直是世纪大发现啊</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202101_0040</td>
+        <td>82</td>
+        <td class="side">等 等等啊
+冷静点 式</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202101_0050</td>
+        <td>82</td>
+        <td class="side">到底发生什么事了？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202101_0060</td>
+        <td>82</td>
+        <td class="side">啊？哦[ML:Dash ] 抱歉
+我有点太兴奋了[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202101_0070</td>
+        <td>82</td>
+        <td class="side">其实啊 我调查了一下
+之前收集来的莫尔斯古文献[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202101_0080</td>
+        <td>82</td>
+        <td class="side">把4本全都解读出来之后 居然[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202101_0090</td>
+        <td>82</td>
+        <td class="side">居然？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202101_0100</td>
+        <td>82</td>
+        <td class="side">居然</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202101_0110</td>
+        <td>82</td>
+        <td class="side">弄清楚了
+古代石板是藏在哪里的</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202101_0120</td>
+        <td>82</td>
+        <td class="side">你也够毛毛躁躁的了啊[ML:Dash ]
+解读完书之后就搞清楚了这个？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202101_0130</td>
+        <td>82</td>
+        <td class="side">哎呀呀 别计较啦
+过去的人就是这样的</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202101_0140</td>
+        <td>82</td>
+        <td class="side">那个 所谓的古代石板
+到底是什么东西呢？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202101_0150</td>
+        <td>82</td>
+        <td class="side">既然书是被叫成
+莫尔斯古文献的</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202101_0160</td>
+        <td>82</td>
+        <td class="side">那应该是记载着莫尔斯的事情的吧</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202101_0170</td>
+        <td>82</td>
+        <td class="side">也就是蕴含着古代知识的石板
+正可谓人类的珍宝啊</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202101_0180</td>
+        <td>82</td>
+        <td class="side">怎么样 你有兴趣了吧？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202101_0190</td>
+        <td>82</td>
+        <td class="side">和我一起去寻找石板吧</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202101_0200</td>
+        <td>82</td>
+        <td class="side">[ML:Dash ]好像挺有意思的
+一起去吧 莱克斯</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202101_0210</td>
+        <td>82</td>
+        <td class="side">焰也对石板有兴趣吗？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202101_0220</td>
+        <td>82</td>
+        <td class="side">嗯 寻宝这种事情
+很让人热血偾张对吧？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202101_0230</td>
+        <td>82</td>
+        <td class="side">是啊
+那就等做好准备就上路吧[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202101_0240</td>
+        <td>82</td>
+        <td class="side">好啊</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202101_0250</td>
+        <td>82</td>
+        <td class="side">嗯 嗯
+我就知道你们肯定会这么说的</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202101_0260</td>
+        <td>82</td>
+        <td class="side">好了 事不宜迟
+赶快出发吧</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202101_0270</td>
+        <td>82</td>
+        <td class="side">不对 都说了要先做准备啊[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst300403_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst300403_msg001</td>
+        <td>62</td>
+        <td class="side">タスク２</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst300403_msg002</td>
+        <td>62</td>
+        <td class="side">タスク２受注後</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst300403_msg003</td>
+        <td>62</td>
+        <td class="side">タスク８報告</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst300403_msg0001</td>
+        <td>84</td>
+        <td class="side">お待ちしておりました</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst300403_msg0002</td>
+        <td>84</td>
+        <td class="side">あなた方に名乗る必要は
+ないかもしれませんが
+礼儀として[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst300403_msg0003</td>
+        <td>84</td>
+        <td class="side">インヴィディア烈王国　現女王
+ラゲルトにございます
+[ML:Dash ]驚かせてしまいましたね</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst300403_msg0004</td>
+        <td>84</td>
+        <td class="side">一国の主として　表立って動けず[ML:Dash ]
+このような形の依頼になってしまい
+申しわけございません</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst300403_msg0005</td>
+        <td>84</td>
+        <td class="side">ありがとう
+フレースヴェルグ傭兵団の活躍は
+私の耳にも届いています</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst300403_msg0006</td>
+        <td>84</td>
+        <td class="side">あなた方の確かな腕前と
+自由に動ける立場に期待して
+依頼させていただきました</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst300403_msg0007</td>
+        <td>84</td>
+        <td class="side">インヴィディアには　国の始祖となる
+六つの貴族[ML:Dash ]
+六大貴族と呼ばれるものがあります</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst300403_msg0008</td>
+        <td>84</td>
+        <td class="side">我がセーロスア家も
+そのうちのひとつです</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst300403_msg0009</td>
+        <td>84</td>
+        <td class="side">各家には　玉印の指輪というものが
+代々伝えられており[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst300403_msg0010</td>
+        <td>84</td>
+        <td class="side">玉印の指輪を　六つ組み合わせると
+ひとつの印となり　それが我が国の
+国印となるのですが[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst300403_msg0011</td>
+        <td>84</td>
+        <td class="side">そのうちのひとつが盗まれてしまい
+行方知れずになっていると
+知らせがありました</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst300403_msg0012</td>
+        <td>84</td>
+        <td class="side">玉印の指輪を盗んだのは
+グーラ人の　ガルロという傭兵</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst300403_msg0013</td>
+        <td>84</td>
+        <td class="side">その者から　玉印の指輪を
+取り戻していただきたいのです</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst300403_msg0014</td>
+        <td>84</td>
+        <td class="side">受けていただけるのですね
+感謝いたします</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst300403_msg0015</td>
+        <td>84</td>
+        <td class="side">不安定な情勢の中
+この件を公にし　兵を動かすのは
+得策ではないのです</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst300403_msg0016</td>
+        <td>84</td>
+        <td class="side">玉印の指輪を失ったことが火種に
+混乱を招いてしまうかも
+しれませんから[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst300403_msg0017</td>
+        <td>84</td>
+        <td class="side">良い報告を待っています</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst300403_msg0101</td>
+        <td>84</td>
+        <td class="side">ありがとうございます
+期待通りの働きでしたよ</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst300403_msg0102</td>
+        <td>84</td>
+        <td class="side">私も水面下で
+調べておりました</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst300403_msg0103</td>
+        <td>84</td>
+        <td class="side">継承戦争を利用した
+スペルビア幹部の作戦だったようですね</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst300403_msg0104</td>
+        <td>84</td>
+        <td class="side">ご安心を</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst300403_msg0105</td>
+        <td>84</td>
+        <td class="side">主犯の幹部は　帝国脱出後に
+あなたの仲間が確保しました</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst300403_msg0106</td>
+        <td>84</td>
+        <td class="side">玉印の指輪も　もどりました
+この件はこれで解決です</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst300403_msg0107</td>
+        <td>84</td>
+        <td class="side">報酬は　フレースヴェルグ傭兵団へ
+まとめてお送りします</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst300403_msg0108</td>
+        <td>84</td>
+        <td class="side">本当に助かりました
+感謝しております</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst300403_msg0109</td>
+        <td>84</td>
+        <td class="side">これからも　より良い活動を
+期待していますよ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

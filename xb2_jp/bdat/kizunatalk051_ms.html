@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk051_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg001</td>
+        <td>84</td>
+        <td class="side">すっごーい
+こんな場所があったんだ！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg002</td>
+        <td>84</td>
+        <td class="side">宿屋の主人も
+中々おしゃれな場所を知ってるにゃ～</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg003</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]なるほど
+確かに素晴らしい景色ですね</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg004</td>
+        <td>84</td>
+        <td class="side">僕の創作意欲も刺激されますよ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg005</td>
+        <td>84</td>
+        <td class="side">何だヨシツネ
+また新しい物語を書くのかにゃ？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg006</td>
+        <td>84</td>
+        <td class="side">えぇ　この景色を見ていると
+様々なアイデアが浮かんできます</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg007</td>
+        <td>84</td>
+        <td class="side">そう　例えば[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg008</td>
+        <td>84</td>
+        <td class="side">自由の翼を手に入れ
+大空へ羽ばたいた女性の話とか</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg009</td>
+        <td>84</td>
+        <td class="side">何それ！
+面白そうにゃ！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg010</td>
+        <td>84</td>
+        <td class="side">早く書くにゃ！
+今すぐ書くにゃ！</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg011</td>
+        <td>84</td>
+        <td class="side">いや[ML:Dash ]　そう簡単には書けませんよ
+まずはしっかりアイデアを練らないとね</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg012</td>
+        <td>84</td>
+        <td class="side">そうだ　カムイ
+あなたモデルになってみませんか？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg013</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]モデルにゃ？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg014</td>
+        <td>84</td>
+        <td class="side">そうです[ML:Dash ]　自由の翼をもつ女性</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg015</td>
+        <td>84</td>
+        <td class="side">自由奔放なあなたにピッタリじゃないですか
+羽も生えてるし</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg016</td>
+        <td>84</td>
+        <td class="side">そ　そうかにゃ～？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg017</td>
+        <td>84</td>
+        <td class="side">ではまず[ML:Dash ]
+ここから飛んでみましょうか？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg018</td>
+        <td>84</td>
+        <td class="side">うん！
+わかったにゃ！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg019</td>
+        <td>165</td>
+        <td class="side">カムイに何て声をかけよう？</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg020</td>
+        <td>164</td>
+        <td class="side">飛ぶ！？　ここから？
+っていうか　カムイって飛べるの！？</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg021</td>
+        <td>164</td>
+        <td class="side">[ML:Dash ]確かに
+カムイはいつも自由に生きてるよね</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg022</td>
+        <td>165</td>
+        <td class="side">カムイに何て声をかける？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg023</td>
+        <td>164</td>
+        <td class="side">飛ぶ！？　ここから？
+っていうか　カムイって飛べるの！？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg024</td>
+        <td>164</td>
+        <td class="side">[ML:Dash ]確かに
+カムイはいつでも自由に生きてるな</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg025</td>
+        <td>165</td>
+        <td class="side">カムイに何て声をかけるかな？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg026</td>
+        <td>164</td>
+        <td class="side">まさかここから飛ぶ気なのか？
+いやそれよりも　カムイは飛べたのか！？</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg027</td>
+        <td>164</td>
+        <td class="side">[ML:Dash ]確かに
+カムイはいつも自由に生きているな</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg028</td>
+        <td>165</td>
+        <td class="side">カムイに何て声をかけるかな？</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg029</td>
+        <td>164</td>
+        <td class="side">はぁ！？　ここから飛ぶ気かいな？
+ちゅうか　カムイって飛べるんか！？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg030</td>
+        <td>164</td>
+        <td class="side">[ML:Dash ]ほんま
+カムイはいつも自由に生きとるしな</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg031</td>
+        <td>84</td>
+        <td class="side">え？　飛べるけど？
+[ML:Dash ]知らなかったかにゃ？</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg032</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg033</td>
+        <td>84</td>
+        <td class="side">あぁ　飛ぶといっても
+鳥のように羽ばたいているわけでは
+ありませんよ</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg034</td>
+        <td>84</td>
+        <td class="side">正しくは翼に模した器官でエーテルを制御し
+浮遊しているといった感じですね</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg035</td>
+        <td>84</td>
+        <td class="side">でもさ　その代わり
+天気や風の影響も受けないし
+好きなように飛び回れるんだよね</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg036</td>
+        <td>84</td>
+        <td class="side">だから自由の翼なのにゃ～</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg037</td>
+        <td>84</td>
+        <td class="side">そうだ　カムイ
+ドライバーと一緒に
+飛んでみるというのはどうでしょうか？</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg038</td>
+        <td>84</td>
+        <td class="side">一緒に？
+でも　普通の人は飛べないにゃ？</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg039</td>
+        <td>84</td>
+        <td class="side">カムイが抱えて飛ぶのですよ</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg040</td>
+        <td>84</td>
+        <td class="side">主人公の女性が無二の親友を抱え
+共に大空を翔る</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg041</td>
+        <td>84</td>
+        <td class="side">素晴らしい演出だと思いませんか？</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg042</td>
+        <td>84</td>
+        <td class="side">なるほど
+それはいいかも！</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg043</td>
+        <td>84</td>
+        <td class="side">さぁ　どんと来い！
+カムイはいつでも準備OKにゃ！</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg044</td>
+        <td>84</td>
+        <td class="side">いや[ML:Dash ]　やめとくよ</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg045</td>
+        <td>84</td>
+        <td class="side">いや[ML:Dash ]　やめとく</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg046</td>
+        <td>84</td>
+        <td class="side">今日のところは[ML:Dash ]　遠慮しておこう</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg047</td>
+        <td>84</td>
+        <td class="side">ありがたいけど[ML:Dash ]　遠慮しとくわ</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg048</td>
+        <td>84</td>
+        <td class="side">はぁ？　何でさ？
+[ML:Dash ]もしかして怖いの？</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg049</td>
+        <td>84</td>
+        <td class="side">落としたりなんかしないよ？
+カムイはそんなドジっ子じゃないにゃ～</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg050</td>
+        <td>84</td>
+        <td class="side">いや　ちょっと待ってください</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg051</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]手を放し友人を落としてしまう主人公
+なるほど　その演出もいいですね！</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg052</td>
+        <td>84</td>
+        <td class="side">それで行きましょう！</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg053</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ][ML:Dash ]！？</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg054</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]落とすの？</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg055</td>
+        <td>84</td>
+        <td class="side">えぇ　落とします</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg056</td>
+        <td>84</td>
+        <td class="side">さぁ　カムイ
+すぐにドライバーと一緒に飛んでください！</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg057</td>
+        <td>84</td>
+        <td class="side">そして思いっきり
+雲海の中に放り投げるのです！</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg058</td>
+        <td>84</td>
+        <td class="side">よし　
+わかったにゃ！</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg059</td>
+        <td>84</td>
+        <td class="side">それは絶対やめたほうがいいって！</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg060</td>
+        <td>84</td>
+        <td class="side">待って待って！
+ビャッコも一緒じゃないと
+アタシはイヤだからな！</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg061</td>
+        <td>84</td>
+        <td class="side">いくらカムイでも
+二人分は持ち上げられないだろ？</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg062</td>
+        <td>84</td>
+        <td class="side">待ってくれ！　</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg063</td>
+        <td>84</td>
+        <td class="side">急用を思い出した[ML:Dash ]
+皇帝陛下に報告しなければ
+ならないことがあるんだ</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg064</td>
+        <td>84</td>
+        <td class="side">ちょ　ちょい待ち！</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg065</td>
+        <td>84</td>
+        <td class="side">ワイよりもヨシツネと一緒に飛んだ方が
+おもろいんとちゃうか？</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg066</td>
+        <td>84</td>
+        <td class="side">今更　拒否はできませんよ
+最高のコメディができ上がりそうなんです
+ぜひ協力してください</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg067</td>
+        <td>84</td>
+        <td class="side">そうそう　カムイの物語のためにゃ
+絶対に逃がさないにゃ～</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg101</td>
+        <td>84</td>
+        <td class="side">当然だよ！
+カムイは常に自由に生きてるのにゃ</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg102</td>
+        <td>84</td>
+        <td class="side">でも[ML:Dash ]　それは本当の自由なのかなって
+この前　考えたりしたんだよね</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg103</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ][ML:Dash ]？</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg104</td>
+        <td>84</td>
+        <td class="side">あのさ　ドライバーとブレイドって
+一心同体だよね？</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg105</td>
+        <td>84</td>
+        <td class="side">それってある意味
+ブレイドはドライバーに
+縛られてるってことじゃないかにゃ？</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg106</td>
+        <td>84</td>
+        <td class="side">それは本当の自由とは言えないよね[ML:Dash ]？</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg107</td>
+        <td>84</td>
+        <td class="side">ほう　意外ですね[ML:Dash ]</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg108</td>
+        <td>84</td>
+        <td class="side">何が？</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg109</td>
+        <td>84</td>
+        <td class="side">あなたが　そんなに真面目に
+物事を考えていることがですよ</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg110</td>
+        <td>84</td>
+        <td class="side">僕はてっきり　ノリと勢いだけで
+生きてるのかと思っていました</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg111</td>
+        <td>84</td>
+        <td class="side">ヨシツネ　失礼だにゃー！</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg112</td>
+        <td>84</td>
+        <td class="side">カムイだって
+ものすごく考えて生きてるんだにゃ！</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg113</td>
+        <td>84</td>
+        <td class="side">例えば　ここにカムイの大好きな
+オーチェシャがあるとするよね</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg114</td>
+        <td>84</td>
+        <td class="side">で　それをレックスが食べようとしている</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg115</td>
+        <td>84</td>
+        <td class="side">で　それをニアが食べようとしている</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg116</td>
+        <td>84</td>
+        <td class="side">で　それをメレフが食べようとしている</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg117</td>
+        <td>84</td>
+        <td class="side">で　それをジークが食べようとしている</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg118</td>
+        <td>84</td>
+        <td class="side">カムイはものすごくオーチェシャが
+食べたいけど　カムイのドライバーのために
+我慢しなきゃとも思うにゃ</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg119</td>
+        <td>84</td>
+        <td class="side">本当に自由なら　そのまま黙って
+見守るのもいいし　お願いして
+譲ってもらうこともできる</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg120</td>
+        <td>84</td>
+        <td class="side">どの選択をするかは　カムイ次第だし
+結果がどうなろうと
+それもカムイが決めたこと</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg121</td>
+        <td>84</td>
+        <td class="side">それが選択の自由ってモノだにゃ</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg122</td>
+        <td>84</td>
+        <td class="side">確かに　どのように選択し
+その結果をどう受け入れるのか</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg123</td>
+        <td>84</td>
+        <td class="side">全てはあなたの自由です</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg124</td>
+        <td>84</td>
+        <td class="side">ただ[ML:Dash ]　カムイが取る選択は
+どちらでもありませんよね？</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg125</td>
+        <td>84</td>
+        <td class="side">僕の予想だと　あなたは我慢できずに
+ドライバーを殴り倒してオーチェシャを奪う</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg126</td>
+        <td>84</td>
+        <td class="side">その一択だと思いますが？</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg127</td>
+        <td>84</td>
+        <td class="side">あ　わかっちゃう？
+カムイも悩んだ結果
+それしかないって思ったんだよね</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg128</td>
+        <td>84</td>
+        <td class="side">それって結局
+ワガママを通してるだけじゃないか[ML:Dash ]</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg129</td>
+        <td>84</td>
+        <td class="side">それって結局
+ワガママを通してるだけじゃないか[ML:Dash ]</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg130</td>
+        <td>84</td>
+        <td class="side">結局
+ワガママを通してるだけではないか[ML:Dash ]</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg131</td>
+        <td>84</td>
+        <td class="side">なんやねん　それって結局
+ワガママを通してるだけやないか[ML:Dash ]</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg132</td>
+        <td>84</td>
+        <td class="side">いやいや
+ワガママもまた自由ということにゃ</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg133</td>
+        <td>84</td>
+        <td class="side">何物にも縛られず
+在るがままの自分を生きる</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg134</td>
+        <td>84</td>
+        <td class="side">キライなことはしない！
+好きなことしかしない！</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg135</td>
+        <td>84</td>
+        <td class="side">それがカムイの目指す自由な生き方にゃ！</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg136</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg137</td>
+        <td>84</td>
+        <td class="side">なるほど　自由を生きる
+女性の物語ですか[ML:Dash ]
+うん　それもありですね</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg138</td>
+        <td>84</td>
+        <td class="side">最高のコメディができそうですよ</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>kizunatalk051_msg139</td>
+        <td>84</td>
+        <td class="side">というわけで　
+カムイの物語を完成させるためにも
+これからも自由に付き合ってもらうにゃ！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

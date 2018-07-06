@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst103903_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst103903_msg0001</td>
+        <td>84</td>
+        <td class="side">哟 你要寄生活费吗？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst103903_msg0002</td>
+        <td>84</td>
+        <td class="side">生活费的金额
+少了很多？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst103903_msg0003</td>
+        <td>84</td>
+        <td class="side">什么意思 难不成
+你觉得我蒙骗手续费？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst103903_msg0004</td>
+        <td>84</td>
+        <td class="side">莱克斯准备的生活费
+每攒到9万G左右
+就会寄出去</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst103903_msg0005</td>
+        <td>84</td>
+        <td class="side">弥先村很远[ML:Dash ]
+频繁寄送的话
+得花不少手续费</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst103903_msg0006</td>
+        <td>84</td>
+        <td class="side">阿伐利缇亚商会通告的
+手续费是2%[ML:Dash ]
+所以寄9万G要花1800G</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst103903_msg0007</td>
+        <td>84</td>
+        <td class="side">也就是说 这里
+应该寄出了88200G</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst103903_msg0008</td>
+        <td>84</td>
+        <td class="side">我交给了托里格港口的
+叫修的运输商</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst103903_msg0009</td>
+        <td>84</td>
+        <td class="side">因为没有直达利贝拉里塔斯的航线
+所以只能转运</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst103903_msg0010</td>
+        <td>84</td>
+        <td class="side">看来跟托里格的修
+确认一下手续费的问题
+比较稳妥</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst103903_msg0011</td>
+        <td>84</td>
+        <td class="side">要是出了什么事
+我会帮你一把的</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst103903_msg0012</td>
+        <td>84</td>
+        <td class="side">再怎么说 莱克斯你们
+都是老顾客嘛</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst103903_msg0101</td>
+        <td>84</td>
+        <td class="side">虽然你们可能会觉得
+手续费很高</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst103903_msg0102</td>
+        <td>84</td>
+        <td class="side">但便宜又好的东西就意味着
+会有人在什么地方哭鼻子</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst103903_msg0103</td>
+        <td>84</td>
+        <td class="side">这样
+可不能算是做生意</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst103903_msg0201</td>
+        <td>84</td>
+        <td class="side">希望开通
+从阿伐利缇亚到弥先村的定期航班？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst103903_msg0202</td>
+        <td>84</td>
+        <td class="side">唔[ML:Dash ]
+可是送往弥先村的货物
+并没有多到要每天都运一趟</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst103903_msg0203</td>
+        <td>84</td>
+        <td class="side">不过既然是莱克斯你们的请求[ML:Dash ]
+我去商量看看吧</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst103903_msg0204</td>
+        <td>84</td>
+        <td class="side">说是要是每周一次的航线的话
+可以开通前往
+伊谢巴港的路线！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst103903_msg0205</td>
+        <td>84</td>
+        <td class="side">不不 稍等一下
+有个问题</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst103903_msg0206</td>
+        <td>84</td>
+        <td class="side">很不巧 这边准备不了
+能长距离运送的巨神兽船呢</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst103903_msg0207</td>
+        <td>84</td>
+        <td class="side">说是只要莱克斯你们能准备好船只
+就开始营运定期航班</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst103903_msg0208</td>
+        <td>84</td>
+        <td class="side">想要买船的话
+可以去找住在格尔特蒙特飞行甲板的
+诺彭族噗卡噗</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst103903_msg0209</td>
+        <td>84</td>
+        <td class="side">想要租借的话
+听说在古拉有个叫乌摩恩的诺彭族
+能提供租赁服务</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst103903_msg0210</td>
+        <td>84</td>
+        <td class="side">这事做起来不容易啊[ML:Dash ]
+不过也是为了故乡
+好好干吧</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst103903_msg0301</td>
+        <td>84</td>
+        <td class="side">想要买船的话
+可以去找住在格尔特蒙特飞行甲板的
+诺彭族噗卡噗</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst103903_msg0302</td>
+        <td>84</td>
+        <td class="side">想要租借的话
+听说在古拉有个叫乌摩恩的诺彭族
+能提供租赁服务</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst103903_msg0303</td>
+        <td>84</td>
+        <td class="side">我相信
+莱克斯你们一定能办到的</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

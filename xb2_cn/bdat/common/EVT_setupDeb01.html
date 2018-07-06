@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EVT_setupDeb01</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>setupName</th>
+          <th>objName</th>
+          <th>objType</th>
+          <th>objID</th>
+          <th>objModel</th>
+          <th>wpnBlade</th>
+        </tr>
+      </thead>
+      <tr id="60001">
+        <td>60001</td>
+        <td>
+        </td>
+        <td>queTgt</td>
+        <td>対象</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60002">
+        <td>60002</td>
+        <td>
+          <details>
+            <summary>5 refs</summary>
+            <a href="EVT_listDeb01.html#60011">EVT_listDeb01#60011</a>
+            <a href="EVT_listDeb01.html#60012">EVT_listDeb01#60012</a>
+            <a href="EVT_listDeb01.html#60013">EVT_listDeb01#60013</a>
+            <a href="EVT_listDeb01.html#60014">EVT_listDeb01#60014</a>
+            <a href="EVT_listDeb01.html#60015">EVT_listDeb01#60015</a>
+          </details>
+        </td>
+        <td>queTgt_Pc</td>
+        <td>対象</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60003">
+        <td>60003</td>
+        <td>
+        </td>
+        <td></td>
+        <td>レックス</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60004">
+        <td>60004</td>
+        <td>
+        </td>
+        <td>queTgt_Pc_Bl</td>
+        <td>対象</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60005">
+        <td>60005</td>
+        <td>
+        </td>
+        <td></td>
+        <td>レックス</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60006">
+        <td>60006</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ブレイド１</td>
+        <td>5</td>
+        <td>RSC_NP000501</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60007">
+        <td>60007</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60001">EVT_listDeb01#60001</a>
+          </details>
+        </td>
+        <td>dev999971</td>
+        <td>グーラ女性</td>
+        <td>5</td>
+        <td>RSC_NP714002</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60008">
+        <td>60008</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60002">EVT_listDeb01#60002</a>
+          </details>
+        </td>
+        <td>dev999972</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60009">
+        <td>60009</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60010">
+        <td>60010</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60003">EVT_listDeb01#60003</a>
+          </details>
+        </td>
+        <td>dev999973</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60011">
+        <td>60011</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60012">
+        <td>60012</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60004">EVT_listDeb01#60004</a>
+          </details>
+        </td>
+        <td>dev999974</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60013">
+        <td>60013</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60014">
+        <td>60014</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60005">EVT_listDeb01#60005</a>
+          </details>
+        </td>
+        <td>dev999975</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60015">
+        <td>60015</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60016">
+        <td>60016</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60006">EVT_listDeb01#60006</a>
+          </details>
+        </td>
+        <td>dev999981</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60017">
+        <td>60017</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60018">
+        <td>60018</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60007">EVT_listDeb01#60007</a>
+          </details>
+        </td>
+        <td>dev999982</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60019">
+        <td>60019</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60020">
+        <td>60020</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60008">EVT_listDeb01#60008</a>
+          </details>
+        </td>
+        <td>deb999983</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60021">
+        <td>60021</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60022">
+        <td>60022</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60009">EVT_listDeb01#60009</a>
+          </details>
+        </td>
+        <td>dev999984</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60023">
+        <td>60023</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60024">
+        <td>60024</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60010">EVT_listDeb01#60010</a>
+          </details>
+        </td>
+        <td>dev999985</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60025">
+        <td>60025</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60026">
+        <td>60026</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60016">EVT_listDeb01#60016</a>
+          </details>
+        </td>
+        <td>dev999995</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60027">
+        <td>60027</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60028">
+        <td>60028</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60017">EVT_listDeb01#60017</a>
+          </details>
+        </td>
+        <td>dev999996</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td>BLADE_SUZAKU</td>
+      </tr>
+      <tr id="60029">
+        <td>60029</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60030">
+        <td>60030</td>
+        <td>
+        </td>
+        <td></td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td>BLADE_HANA_2</td>
+      </tr>
+      <tr id="60031">
+        <td>60031</td>
+        <td>
+        </td>
+        <td></td>
+        <td>オブジェ</td>
+        <td>7</td>
+        <td></td>
+        <td>model/oj/oj900101</td>
+        <td></td>
+      </tr>
+      <tr id="60032">
+        <td>60032</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ＴＶ画面</td>
+        <td>7</td>
+        <td></td>
+        <td>model/oj/oj101011</td>
+        <td></td>
+      </tr>
+      <tr id="60033">
+        <td>60033</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ジーク</td>
+        <td>12</td>
+        <td>DRIVER_SIEG</td>
+        <td></td>
+        <td>BLADE_HIKARI</td>
+      </tr>
+      <tr id="60034">
+        <td>60034</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60018">EVT_listDeb01#60018</a>
+          </details>
+        </td>
+        <td>deb999997</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60035">
+        <td>60035</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60036">
+        <td>60036</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60019">EVT_listDeb01#60019</a>
+          </details>
+        </td>
+        <td>dev999998</td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60037">
+        <td>60037</td>
+        <td>
+        </td>
+        <td></td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60038">
+        <td>60038</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ＮＰＣ</td>
+        <td>5</td>
+        <td>RSC_NP000501</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60039">
+        <td>60039</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60020">EVT_listDeb01#60020</a>
+          </details>
+        </td>
+        <td>dev999999</td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60040">
+        <td>60040</td>
+        <td>
+        </td>
+        <td></td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60041">
+        <td>60041</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ＮＰＣ</td>
+        <td>5</td>
+        <td>RSC_NP000501</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60042">
+        <td>60042</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ＰＣ（１番目）</td>
+        <td>8</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60043">
+        <td>60043</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ブレイド（１番目）</td>
+        <td>10</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60044">
+        <td>60044</td>
+        <td>
+        </td>
+        <td></td>
+        <td>カグツチのオーナー</td>
+        <td>9</td>
+        <td>BLADE_KAGUTSUCHI</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60045">
+        <td>60045</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ジーク</td>
+        <td>12</td>
+        <td>DRIVER_SIEG</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60046">
+        <td>60046</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60048">EVT_listDeb01#60048</a>
+          </details>
+        </td>
+        <td>dev999980</td>
+        <td>ファーザー</td>
+        <td>5</td>
+        <td>RSC_NP001301</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60047">
+        <td>60047</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラコアクリスタル</td>
+        <td>7</td>
+        <td></td>
+        <td>model/oj/oj160103</td>
+        <td></td>
+      </tr>
+      <tr id="60048">
+        <td>60048</td>
+        <td>
+        </td>
+        <td></td>
+        <td>メツコアクリスタル</td>
+        <td>7</td>
+        <td></td>
+        <td>model/oj/oj160104</td>
+        <td></td>
+      </tr>
+      <tr id="60049">
+        <td>60049</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60050">EVT_listDeb01#60050</a>
+          </details>
+        </td>
+        <td>cm00000001</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td>BLADE_HOMURA</td>
+      </tr>
+      <tr id="60050">
+        <td>60050</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60051">
+        <td>60051</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ニア</td>
+        <td>3</td>
+        <td>DRIVER_NIA</td>
+        <td></td>
+        <td>BLADE_BYAKKO</td>
+      </tr>
+      <tr id="60052">
+        <td>60052</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ビャッコ</td>
+        <td>4</td>
+        <td>BLADE_BYAKKO</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60053">
+        <td>60053</td>
+        <td>
+        </td>
+        <td></td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td>BLADE_HANA_1</td>
+      </tr>
+      <tr id="60054">
+        <td>60054</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ハナ（JS)</td>
+        <td>4</td>
+        <td>BLADE_HANA_1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60055">
+        <td>60055</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60051">EVT_listDeb01#60051</a>
+          </details>
+        </td>
+        <td>cm00000002</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td>BLADE_HOMURA</td>
+      </tr>
+      <tr id="60056">
+        <td>60056</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60057">
+        <td>60057</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ニア</td>
+        <td>3</td>
+        <td>DRIVER_NIA</td>
+        <td></td>
+        <td>BLADE_BYAKKO</td>
+      </tr>
+      <tr id="60058">
+        <td>60058</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ビャッコ</td>
+        <td>4</td>
+        <td>BLADE_BYAKKO</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60059">
+        <td>60059</td>
+        <td>
+        </td>
+        <td></td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td>BLADE_HANA_1</td>
+      </tr>
+      <tr id="60060">
+        <td>60060</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ハナ（JS)</td>
+        <td>4</td>
+        <td>BLADE_HANA_1</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60061">
+        <td>60061</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="EVT_listDeb01.html#60052">EVT_listDeb01#60052</a>
+          </details>
+        </td>
+        <td>cm00000003</td>
+        <td>レックス</td>
+        <td>3</td>
+        <td>DRIVER_REX</td>
+        <td></td>
+        <td>BLADE_HOMURA</td>
+      </tr>
+      <tr id="60062">
+        <td>60062</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ホムラ</td>
+        <td>4</td>
+        <td>BLADE_HOMURA</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60063">
+        <td>60063</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ニア</td>
+        <td>3</td>
+        <td>DRIVER_NIA</td>
+        <td></td>
+        <td>BLADE_BYAKKO</td>
+      </tr>
+      <tr id="60064">
+        <td>60064</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ビャッコ</td>
+        <td>4</td>
+        <td>BLADE_BYAKKO</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="60065">
+        <td>60065</td>
+        <td>
+        </td>
+        <td></td>
+        <td>トラ</td>
+        <td>3</td>
+        <td>DRIVER_TORA</td>
+        <td></td>
+        <td>BLADE_HANA_1</td>
+      </tr>
+      <tr id="60066">
+        <td>60066</td>
+        <td>
+        </td>
+        <td></td>
+        <td>ハナ（JS)</td>
+        <td>4</td>
+        <td>BLADE_HANA_1</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

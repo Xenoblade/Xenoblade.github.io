@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst100606_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst100606_msg0001</td>
+        <td>84</td>
+        <td class="side">ハヒ[ML:Dash ]　ハヒ[ML:Dash ]！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst100606_msg0032</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]バーン様は！　何もッ！
+しゃべらないもッ！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst100606_msg0002</td>
+        <td>165</td>
+        <td class="side">どう聞こう？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst100606_msg0003</td>
+        <td>165</td>
+        <td class="side">たしなめる</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst100606_msg0004</td>
+        <td>165</td>
+        <td class="side">おだてる</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst100606_msg0005</td>
+        <td>165</td>
+        <td class="side">おどす</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst100606_msg0006</td>
+        <td>84</td>
+        <td class="side">ハヒッ[ML:Dash ]
+ツミを全てコクハク？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst100606_msg0011</td>
+        <td>84</td>
+        <td class="side">さっぱり意味がッ
+わからないもッ！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst100606_msg0007</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]ツミは今　まさに
+つぐなってる最中もッ！！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst100606_msg0008</td>
+        <td>84</td>
+        <td class="side">ハフ[ML:Dash ]
+滑車を回してる姿が
+カッコイイ？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst100606_msg0009</td>
+        <td>84</td>
+        <td class="side">ふっふーんッ！
+お前もやっと　理解したもッ？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst100606_msg0010</td>
+        <td>84</td>
+        <td class="side">この滑車は　バーン様のコダワリもッ！
+自分で回して　より素晴らしさを
+実感したも！　わははッ！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst100606_msg0030</td>
+        <td>84</td>
+        <td class="side">滑車を回すのを　やめさせる？
+どういうこともッ！？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst100606_msg0033</td>
+        <td>84</td>
+        <td class="side">滑車を止めて　別の刑にするッ！？
+筋骨隆々の男達に　モフモフされる刑ッ！？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst100606_msg0041</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]いやだ！
+いやだもッ！！
+ハヒーーッ！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst100606_msg0034</td>
+        <td>84</td>
+        <td class="side">ちょびっとだけ　回すのが
+楽しくなってきたのにッ[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst100606_msg0012</td>
+        <td>84</td>
+        <td class="side">ハヒィ[ML:Dash ]
+滑車はスナオに回るのに
+バーン様はスナオじゃない！？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst100606_msg0027</td>
+        <td>84</td>
+        <td class="side">お前なんかに　言われなくてもッ
+バーン様がひねくれてるのはッ
+知ってるもッ！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst100606_msg0028</td>
+        <td>84</td>
+        <td class="side">ハヒ　ハヒ　ハヒ[ML:Dash ]
+しんどい　も！
+じゃまするな　もッ！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst100606_msg0029</td>
+        <td>84</td>
+        <td class="side">ハヒッ[ML:Dash ]
+宝箱の開け方を教えてくれたら
+もっと誠実で　カッコイイ？</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst100606_msg0013</td>
+        <td>84</td>
+        <td class="side">誠実なんてコトバッ
+バーン様の頭には　存在しないから
+こうなってッ[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst100606_msg0031</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]モハッ！
+げふげふッ[ML:Dash ]
+じゃまするな　もッ！</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst100606_msg0014</td>
+        <td>84</td>
+        <td class="side">はひぃ[ML:Dash ]？
+すぐに　回せなくなるって
+どういうこともッ！？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst100606_msg0015</td>
+        <td>84</td>
+        <td class="side">宝箱の開け方を言わないと
+この滑車を解体するもッ？？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst100606_msg0016</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]刑なのに　実は少しずつ
+楽しくなってきてたんだもッ！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst100606_msg0019</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]やめたくないもッ！
+た　宝箱のことは教えるから
+回させて欲しいもッ！</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst100606_msg0018</td>
+        <td>84</td>
+        <td class="side">エーテルボトル　フィラメント球
+それに　カギ型レバーを
+宝箱にはめれば開くもッ！</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst100606_msg0017</td>
+        <td>84</td>
+        <td class="side">教えたんだから
+この滑車のソンゾクは守れもッ！
+ハヒィ[ML:Dash ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst100606_msg0020</td>
+        <td>84</td>
+        <td class="side">ヒィ[ML:Dash ]　フゥ[ML:Dash ]
+ツミを全てコクハクすれば
+滑車を回す刑のまま？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst100606_msg0036</td>
+        <td>84</td>
+        <td class="side">むもも[ML:Dash ]
+くやひぃけど[ML:Dash ]
+ハヒッ！</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst100606_msg0037</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]やめたくないもッ！
+た　宝箱のことは教えるから
+回させて欲しいもッ！</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst100606_msg0039</td>
+        <td>84</td>
+        <td class="side">エーテルボトル　フィラメント球
+それに　カギ型レバーを
+宝箱にはめれば開くもッ！</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst100606_msg0038</td>
+        <td>84</td>
+        <td class="side">教えたんだから　他の刑じゃなくて
+このまま回させろもッ！
+フヒィ[ML:Dash ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst100606_msg0021</td>
+        <td>84</td>
+        <td class="side">ハヒ[ML:Dash ]　ハヒ[ML:Dash ]
+スナオに回る滑車のように
+バーン様もスナオになれ？</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst100606_msg0040</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]バーン様がスナオになったら
+バーン様じゃなくなるもッ！！</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst100606_msg0042</td>
+        <td>84</td>
+        <td class="side">自分らしさのためには[ML:Dash ]
+筋骨隆々男のモフモフも
+耐えてやるもッ！！　フンゴも！</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst100606_msg0022</td>
+        <td>84</td>
+        <td class="side">筋骨隆々男達にモフモフさせた後は
+筋骨隆々男達にモフモフされながら
+滑車を回すもッ！？</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst100606_msg0023</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]この滑車は　一人用だもッ！！
+重い野郎どもが乗ったら
+ぶっこわれるもッ！</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst100606_msg0024</td>
+        <td>84</td>
+        <td class="side">滑車を大事にしない奴らに
+何も言うことは　ないッ[ML:Dash ]
+ゲッホ！　ゲホッ！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst001805_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst106101_msg0001</td>
+        <td>84</td>
+        <td class="side">ペルーニベジタブルって店
+知ってるか？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst106101_msg0002</td>
+        <td>84</td>
+        <td class="side">あそこのテナって女の子は
+明るくて気前のいい娘なんだが
+先月　父親を亡くしたんだ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst106101_msg0003</td>
+        <td>84</td>
+        <td class="side">母親は随分前に病に倒れて
+父娘で切り盛りしてたんだが
+今じゃ一人で心細い思いをしてるんだ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst106101_msg0004</td>
+        <td>84</td>
+        <td class="side">新商品を作り出す腕前はあるが
+一人で店を続けるには経験が浅いし
+不安でいっぱいだろう</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst106101_msg0005</td>
+        <td>84</td>
+        <td class="side">そこでだ
+あんたにあの店を救ってほしいんだ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst106101_msg0006</td>
+        <td>84</td>
+        <td class="side">まずはあそこの商品を
+1つずつ買ってやってくれ</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst106101_msg0007</td>
+        <td>84</td>
+        <td class="side">そうすれば　テナはあんたのことを
+認めてくれるだろう</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst106101_msg0008</td>
+        <td>84</td>
+        <td class="side">ペルーニベジタブルの権利書を
+売ってくれるようになる</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst106101_msg0009</td>
+        <td>84</td>
+        <td class="side">それを買えば
+あんたはあの店のオーナーになるってわけだ</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst106101_msg0010</td>
+        <td>84</td>
+        <td class="side">収益がもらえるってわけじゃあないが
+メリットは大きい</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst106101_msg0011</td>
+        <td>84</td>
+        <td class="side">テナはあんたという後ろ盾を得て
+これから自信を持って
+やっていくことができるし[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst106101_msg0012</td>
+        <td>84</td>
+        <td class="side">あんた達も特別な恩恵を受けられる
+例えば　物を拾いやすくなったり
+足が速くなったりな</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst106101_msg0013</td>
+        <td>84</td>
+        <td class="side">どうだ？
+手助けしたくなっただろ？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst106101_msg0014</td>
+        <td>84</td>
+        <td class="side">いい返事だ</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst106101_msg0015</td>
+        <td>84</td>
+        <td class="side">さっきも言ったが
+まずはテナの店のものを
+一通り買ってやってくれ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst106101_msg0016</td>
+        <td>84</td>
+        <td class="side">新商品のぷりリーフキャベツサラダもな
+頼んだぞ</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst106101_msg0101</td>
+        <td>84</td>
+        <td class="side">まずはペルーニベジタブルで
+商品を一通り買ってやってくれ</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst106101_msg0102</td>
+        <td>84</td>
+        <td class="side">カリカリソテーと
+トリゴ風野菜マリネ</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst106101_msg0103</td>
+        <td>84</td>
+        <td class="side">それからミートパプリカの野菜詰めと
+新商品のぷりリーフキャベツサラダだ</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst106101_msg0105</td>
+        <td>84</td>
+        <td class="side">1つずつ買うだけでいいからな</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst106101_msg0201</td>
+        <td>84</td>
+        <td class="side">ペルーニベジタブルで
+ペルーニ店権利書ってのが
+買えるようになっただろ？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst106101_msg0202</td>
+        <td>84</td>
+        <td class="side">ちょっと値が張るが
+次はそれを買ってやってほしい</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst106101_msg0203</td>
+        <td>84</td>
+        <td class="side">頼んだぞ</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst106101_msg0301</td>
+        <td>84</td>
+        <td class="side">ありがとう</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst106101_msg0302</td>
+        <td>84</td>
+        <td class="side">久しぶりにテナの喜んだ顔を見たよ</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst106101_msg0303</td>
+        <td>84</td>
+        <td class="side">あの子は明るく気前はいいが
+頑固なとこもあってな</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst106101_msg0304</td>
+        <td>84</td>
+        <td class="side">幼馴染の俺の助力も
+いらないっていうんだ</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst106101_msg0305</td>
+        <td>84</td>
+        <td class="side">でも　心配にならないわけがないだろ？
+少しは手伝ってやりたかったんだ</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst106101_msg0306</td>
+        <td>84</td>
+        <td class="side">あんたのおかげで
+テナは自信を持って両親から
+引き継いだ店をやっていけるだろう</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst106101_msg0308</td>
+        <td>84</td>
+        <td class="side">そうそうテナの店だけじゃなく
+他のヤツの店だって同じだ</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst106101_msg0309</td>
+        <td>84</td>
+        <td class="side">商品を一種類ずつ買えば
+権利書が買えるようになる</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst106101_msg0310</td>
+        <td>84</td>
+        <td class="side">それを買えば　大きなメリットがあるんだ
+しかもそれは店によって違う</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst106101_msg0311</td>
+        <td>84</td>
+        <td class="side">ただひとつ注意がある</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst106101_msg0312</td>
+        <td>84</td>
+        <td class="side">テナの店のように
+最初からすべての商品が並んでいる
+店は少ない</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst106101_msg0313</td>
+        <td>84</td>
+        <td class="side">発展度を上げたりして
+商品をすべて買えるようにならないと
+権利書は売ってくれないからな</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst106101_msg0314</td>
+        <td>84</td>
+        <td class="side">ま　なかなか権利書を
+売ってくれないなと思ったら
+出直すといい</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst106101_msg0315</td>
+        <td>84</td>
+        <td class="side">っと長くなったな
+俺のおせっかいはこれくらいだ</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst106101_msg0316</td>
+        <td>84</td>
+        <td class="side">謝礼を渡すよ
+本当にありがとう</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst200908_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst200908_msg001</td>
+        <td>84</td>
+        <td class="side">大丈夫か？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst200908_msg002</td>
+        <td>84</td>
+        <td class="side">はぁ～　た　助かったも～</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst200908_msg003</td>
+        <td>84</td>
+        <td class="side">じゃあ　クポンはこれで[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst200908_msg004</td>
+        <td>84</td>
+        <td class="side">ちょっと待ってください！</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst200908_msg005</td>
+        <td>84</td>
+        <td class="side">クポンさん
+私のことを知ってるんですよね？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst200908_msg007</td>
+        <td>84</td>
+        <td class="side">し[ML:Dash ]　知らないも！
+お前のことなんか
+思い出したくもないも！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst200908_msg008</td>
+        <td>84</td>
+        <td class="side">思い出したくないってことは
+知ってるってことか[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst200908_msg009</td>
+        <td>84</td>
+        <td class="side">何やようわからんけど
+焦って支離滅裂になっとるんやな[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst200908_msg010</td>
+        <td>84</td>
+        <td class="side">昔の私と何かあったんですか？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst200908_msg038</td>
+        <td>84</td>
+        <td class="side">……</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst200908_msg039</td>
+        <td>84</td>
+        <td class="side">白状しないと後々怖そうだから
+教えてやるも</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst200908_msg011</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]あれは今から20年前のことも</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst200908_msg012</td>
+        <td>84</td>
+        <td class="side">クポンは商談で
+カサネとそのドライバーに会ったも</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst200908_msg013</td>
+        <td>84</td>
+        <td class="side">その商談の時に何かあったのか？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst200908_msg014</td>
+        <td>84</td>
+        <td class="side">いや　商談自体は順調にいったも</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst200908_msg015</td>
+        <td>84</td>
+        <td class="side">問題はその帰り[ML:Dash ]
+そいつらと別れた直後に起きたも</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst200908_msg016</td>
+        <td>84</td>
+        <td class="side">転がってきた大岩の下敷きになり
+抜け出したら足元が崩れて雲海に落ち[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst200908_msg017</td>
+        <td>84</td>
+        <td class="side">ようやく雲海から陸に辿り着いたと思ったら
+モンスターの巣だったりと散々も！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst200908_msg018</td>
+        <td>84</td>
+        <td class="side">そ　それはまた[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst200908_msg019</td>
+        <td>84</td>
+        <td class="side">災難やったなぁ[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst200908_msg020</td>
+        <td>84</td>
+        <td class="side">かわいそうに　クポンさん
+すごく運が悪かったんですねぇ[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst200908_msg021</td>
+        <td>84</td>
+        <td class="side">でも　もう大丈夫です！</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst200908_msg022</td>
+        <td>84</td>
+        <td class="side">この幸せいっぱいの私に
+再会できたんですから　これからは
+たくさんの幸福が舞い込みますよ！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst200908_msg023</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst200908_msg024</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst200908_msg025</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst200908_msg026</td>
+        <td>84</td>
+        <td class="side">えっと[ML:Dash ]
+他にも尋ねたいことがあったんでした</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst200908_msg027</td>
+        <td>84</td>
+        <td class="side">オットさんを見ませんでしたか？
+ノキルア伐採場に
+向かったらしいんですけど[ML:Dash ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst200908_msg028</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]オットなら知り合いも
+軽く挨拶も交わしたも</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst200908_msg029</td>
+        <td>84</td>
+        <td class="side">本当に！？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst200908_msg030</td>
+        <td>84</td>
+        <td class="side">ただ　別れた直後にターキン族に捕まって
+連れて行かれていたも</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst200908_msg040</td>
+        <td>84</td>
+        <td class="side">ええっ！？</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst200908_msg041</td>
+        <td>84</td>
+        <td class="side">それは一大事ですね！</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst200908_msg031</td>
+        <td>84</td>
+        <td class="side">双樹の丘の近くにあるターキンの占領地で
+囚われているに違いないも</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst200908_msg032</td>
+        <td>84</td>
+        <td class="side">まさかターキン族が
+このあたりまで出張ってくるとは
+思ってもいなかったも[ML:Dash ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst200908_msg033</td>
+        <td>84</td>
+        <td class="side">最近　この辺りも物騒になったも[ML:Dash ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst200908_msg034</td>
+        <td>84</td>
+        <td class="side">って　話はもう十分も？
+クポンはこれでおいとまさせてもらうも！</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst200908_msg035</td>
+        <td>84</td>
+        <td class="side">まさかターキン族に
+さらわれていただなんて[ML:Dash ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst200908_msg036</td>
+        <td>84</td>
+        <td class="side">早くオットさんを助けに行きましょう！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma02a_FLD_EventPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>ScenarioFlagMin</th>
+          <th>ScenarioFlagMax</th>
+          <th>QuestFlag</th>
+          <th>QuestFlagMin</th>
+          <th>QuestFlagMax</th>
+          <th>Condition</th>
+          <th>EventID</th>
+          <th>Icon</th>
+          <th>Name</th>
+          <th>UIOffset</th>
+        </tr>
+      </thead>
+      <tr id="2001">
+        <td>2001</td>
+        <td>
+        </td>
+        <td class="side">evt_01_060_100</td>
+        <td><a href="../flags/FLG_Scenario.html#1004">1004</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1004">1004</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10005">10005</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2002">
+        <td>2002</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#3">FLD_QuestReach#3</a>
+          </details>
+        </td>
+        <td class="side">evt_01_090_101</td>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10008">10008</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2003">
+        <td>2003</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#2">FLD_QuestReach#2</a>
+          </details>
+        </td>
+        <td class="side">evt_01_090_100</td>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10008">10008</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2004">
+        <td>2004</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#4">FLD_QuestReach#4</a>
+          </details>
+        </td>
+        <td class="side">evt_01_090_102</td>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10008">10008</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2005">
+        <td>2005</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#5">FLD_QuestReach#5</a>
+          </details>
+        </td>
+        <td class="side">evt_01_090_103</td>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1007">1007</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10008">10008</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2006">
+        <td>2006</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#6">FLD_QuestReach#6</a>
+          </details>
+        </td>
+        <td class="side">evt_01_100_100</td>
+        <td><a href="../flags/FLG_Scenario.html#1008">1008</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1008">1008</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10009">10009</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2007">
+        <td>2007</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#7">FLD_QuestReach#7</a>
+          </details>
+        </td>
+        <td class="side">evt_01_110_100</td>
+        <td><a href="../flags/FLG_Scenario.html#1009">1009</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1010">1010</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10011">10011</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2008">
+        <td>2008</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#8">FLD_QuestReach#8</a>
+          </details>
+        </td>
+        <td class="side">evt_01_120_100</td>
+        <td><a href="../flags/FLG_Scenario.html#1011">1011</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1011">1011</td></a>
+        <td><a href="../common/FLD_QuestList.html#14">14</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10012">10012</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2009">
+        <td>2009</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#43">FLD_QuestReach#43</a>
+          </details>
+        </td>
+        <td class="side">evt_04_120_110</td>
+        <td><a href="../flags/FLG_Scenario.html#4014">4014</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4014">4014</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10145">10145</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2010">
+        <td>2010</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#44">FLD_QuestReach#44</a>
+          </details>
+        </td>
+        <td class="side">evt_04_120_120</td>
+        <td><a href="../flags/FLG_Scenario.html#4015">4015</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4015">4015</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10146">10146</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2011">
+        <td>2011</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#41">FLD_QuestReach#41</a>
+          </details>
+        </td>
+        <td class="side">evt_04_090_100</td>
+        <td><a href="../flags/FLG_Scenario.html#4010">4010</td></a>
+        <td><a href="../flags/FLG_Scenario.html#4010">4010</td></a>
+        <td><a href="../common/FLD_QuestList.html#87">87</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td></td>
+        <td><a href="../common/EVT_listBf.html#10141">10141</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2012">
+        <td>2012</td>
+        <td>
+        </td>
+        <td class="side">evt_qst100201</td>
+        <td><a href="../flags/FLG_Scenario.html#10047">10047</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2071">誰がために</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#1983">1983</td></a>
+        <td><a href="../common/EVT_listQst01.html#20197">20197</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2013">
+        <td>2013</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#152">FLD_QuestReach#152</a>
+          </details>
+        </td>
+        <td class="side">evt_qst100202</td>
+        <td><a href="../flags/FLG_Scenario.html#2001">2001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2073">2073</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/EVT_listQst01.html#20198">20198</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2014">
+        <td>2014</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#207">FLD_QuestReach#207</a>
+          </details>
+        </td>
+        <td class="side">evt_qst105707</td>
+        <td><a href="../flags/FLG_Scenario.html#10001">10001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2551">2551</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td><a href="../common/EVT_listQst01.html#20696">20696</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2015">
+        <td>2015</td>
+        <td>
+        </td>
+        <td class="side">evt_qst202101</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5261">識閾</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#1192">1192</td></a>
+        <td><a href="../common/EVT_listQst01.html#21069">21069</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2016">
+        <td>2016</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListMini.html#1215">1215</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2017">
+        <td>2017</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#223">FLD_QuestReach#223</a>
+          </details>
+        </td>
+        <td class="side">evt_qst200701</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5071">5071</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#1093">1093</td></a>
+        <td><a href="../common/EVT_listQst01.html#20823">20823</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2018">
+        <td>2018</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#224">FLD_QuestReach#224</a>
+          </details>
+        </td>
+        <td class="side">evt_qst200707</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5074">5074</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#1093">1093</td></a>
+        <td><a href="../common/EVT_listQst01.html#20828">20828</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2019">
+        <td>2019</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#257">FLD_QuestReach#257</a>
+          </details>
+        </td>
+        <td class="side">evt_qst201905</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5234">5234</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#2364">2364</td></a>
+        <td><a href="../common/EVT_listQst01.html#21040">21040</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2020">
+        <td>2020</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#258">FLD_QuestReach#258</a>
+          </details>
+        </td>
+        <td class="side">evt_qst201908</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5238">5238</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#2364">2364</td></a>
+        <td><a href="../common/EVT_listQst01.html#21043">21043</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2021">
+        <td>2021</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#259">FLD_QuestReach#259</a>
+          </details>
+        </td>
+        <td class="side">evt_qst201911</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5240">5240</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#2364">2364</td></a>
+        <td><a href="../common/EVT_listQst01.html#21046">21046</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2022">
+        <td>2022</td>
+        <td>
+        </td>
+        <td class="side">evt_qst202301</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5276">最凶</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#1739">1739</td></a>
+        <td><a href="../common/EVT_listQst01.html#21090">21090</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2023">
+        <td>2023</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#245">FLD_QuestReach#245</a>
+          </details>
+        </td>
+        <td class="side">evt_qst501401</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2636">2636</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#167">167</td></a>
+        <td><a href="../common/EVT_listTlk01.html#40992">40992</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2024">
+        <td>2024</td>
+        <td>
+        </td>
+        <td class="side">evt_qst501501</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#169">169</td></a>
+        <td><a href="../common/EVT_listFev01.html#30160">30160</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2025">
+        <td>2025</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#304">FLD_QuestReach#304</a>
+          </details>
+        </td>
+        <td class="side">evt_qst202410</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5294">5294</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#1689">1689</td></a>
+        <td><a href="../common/EVT_listQst01.html#21119">21119</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2026">
+        <td>2026</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#306">FLD_QuestReach#306</a>
+          </details>
+        </td>
+        <td class="side">evt_qst201618</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListBlade.html#5184">5184</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#1160">1160</td></a>
+        <td><a href="../common/EVT_listQst01.html#21329">21329</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2027">
+        <td>2027</td>
+        <td>
+        </td>
+        <td class="side">evt_01_070_110</td>
+        <td><a href="../flags/FLG_Scenario.html#1006">1006</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1012">1012</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="../common/FLD_ConditionList.html#2094">2094</td></a>
+        <td><a href="../common/EVT_listFev01.html#30167">30167</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2028">
+        <td>2028</td>
+        <td>
+        </td>
+        <td class="side">evt_01_070_120</td>
+        <td><a href="../flags/FLG_Scenario.html#1001">1001</td></a>
+        <td><a href="../flags/FLG_Scenario.html#1032">1032</td></a>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td><a href="../common/EVT_listFev01.html#30168">30168</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="2029">
+        <td>2029</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_QuestReach.html#331">FLD_QuestReach#331</a>
+          </details>
+        </td>
+        <td class="side">evt_qst620104</td>
+        <td></td>
+        <td><a href="../flags/FLG_Scenario.html#10048">10048</td></a>
+        <td><a href="../common/FLD_QuestListNormal.html#2747">2747</td></a>
+        <td>1</td>
+        <td>1</td>
+        <td><a href="../common/FLD_ConditionList.html#2813">2813</td></a>
+        <td><a href="../common/EVT_listQst01.html#21408">21408</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst103106_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst103106_msg001</td>
+        <td>62</td>
+        <td class="side">調査ありがとう。
+どうやら天候によって内容が変わるようだ
+すべての天候の時の壁画を調べてくれ（仮）</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst103106_msg002</td>
+        <td>62</td>
+        <td class="side">どうやら天候によって内容が変わるようだ
+すべての天候の時の壁画を調べてくれ（仮）</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst103106_msg0001</td>
+        <td>84</td>
+        <td class="side">怎么样
+壁画解读出来了吗？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst103106_msg0002</td>
+        <td>84</td>
+        <td class="side">什么！？
+白天和黑夜读出来的文字
+不一样吗？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst103106_msg0003</td>
+        <td>84</td>
+        <td class="side">嗯[ML:Dash ]
+感觉看起来各有各的含义
+但是搞不懂想表达什么啊</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst103106_msg0004</td>
+        <td>84</td>
+        <td class="side">特别是这句
+『化身为白昼之星』[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst103106_msg0005</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]对了！！
+说到星星！！
+唔[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst103106_msg0006</td>
+        <td>84</td>
+        <td class="side">不好意思
+不知不觉就兴奋起来了</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst103106_msg0007</td>
+        <td>84</td>
+        <td class="side">古代诺彭族不会在一个地方定居
+而是以船为家 四处漂泊</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst103106_msg0008</td>
+        <td>84</td>
+        <td class="side">他们解读星象
+由此学会了
+极为准确的航海法[ML:Dash ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst103106_msg0009</td>
+        <td>84</td>
+        <td class="side">也就是说 『白昼之星』可能
+是指某个目的地[ML:Dash ]
+如果是这样[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst103106_msg0010</td>
+        <td>84</td>
+        <td class="side">说起来[ML:Dash ]
+壁画上的某处
+有写地名</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst103106_msg0011</td>
+        <td>84</td>
+        <td class="side">『统率之遗迹』
+『强韧之遗迹』
+『知识之遗迹』</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst103106_msg0012</td>
+        <td>84</td>
+        <td class="side">『知识是强韧的统率』
+这意味着阅读的顺序啊！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst103106_msg0013</td>
+        <td>84</td>
+        <td class="side">嗯 稍等片刻[ML:Dash ]
+我记得夜晚是[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst103106_msg0014</td>
+        <td>84</td>
+        <td class="side">『化身为白昼之星
+ 知识是强韧的统率
+ 那么就授予你英雄之宝吧』</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst103106_msg0015</td>
+        <td>84</td>
+        <td class="side">然后白天是[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst103106_msg0016</td>
+        <td>84</td>
+        <td class="side">『法凌的润泽
+ 受养育的小罗尼
+ 拥此身而眠』</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst103106_msg0017</td>
+        <td>84</td>
+        <td class="side">夜晚是白天的解读方法的话
+白天就表示某种所在位置[ML:Dash ]吧</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst103106_msg0018</td>
+        <td>84</td>
+        <td class="side">对不起
+我对英维迪亚的土地
+并不熟悉</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst103106_msg0019</td>
+        <td>84</td>
+        <td class="side">能请你们去白天的文章
+指示的地方看看吗？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst103106_msg0020</td>
+        <td>84</td>
+        <td class="side">我只能解出这些谜题了
+之后就拜托你们了</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst103106_msg0101</td>
+        <td>84</td>
+        <td class="side">『法凌的润泽
+ 受养育的小罗尼
+ 拥此身而眠』</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst103106_msg0102</td>
+        <td>84</td>
+        <td class="side">去找出这段文字指出的地方
+拜托了</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

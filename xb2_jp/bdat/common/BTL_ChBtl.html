@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BTL_ChBtl</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>DebugName</th>
+          <th>ListNum</th>
+          <th>Difficult</th>
+          <th>Wave</th>
+          <th>Caption</th>
+          <th>MapJump</th>
+          <th>Weather</th>
+          <th>Type</th>
+          <th>NeedDefeat</th>
+          <th>MaxLevel</th>
+          <th>MaxWpnRank</th>
+          <th>WpnRevTable</th>
+          <th>TimeLimit</th>
+          <th>JoinNumber</th>
+          <th>Driver1</th>
+          <th>Driver2</th>
+          <th>Driver3</th>
+          <th>Condition</th>
+          <th>ConditionCap</th>
+          <th>ClearReward</th>
+          <th>TresureSet1</th>
+          <th>TresureSet2</th>
+          <th>TresureSet3</th>
+          <th>TresureNeed1</th>
+          <th>TresureNeed2</th>
+          <th>TresureNeed3</th>
+          <th>TresureResource1</th>
+          <th>TresureResource2</th>
+          <th>TresureResource3</th>
+          <th>Voice1</th>
+          <th>Voice2</th>
+          <th>Voice3</th>
+          <th>Voice4</th>
+          <th>Hide</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">草食の群れ</td>
+        <td>草食の群れ</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>グーラに草食獣の大群が現れたも
+いつもと違って非常に狂暴な状態も
+トリゴの街が被害を受ける前に退治するも</td>
+        <td><a href="SYS_MapJumpList.html#227">227</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>7</td>
+        <td><a href="BTL_ChBtlWpnRev.html#1">1</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#1">1</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#2">2</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#3">3</td></a>
+        <td>290</td>
+        <td>580</td>
+        <td>860</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480101</td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">畑の害虫駆除</td>
+        <td>畑の害虫駆除</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>トリゴの街の畑が荒らされているも
+みんなのお腹がペコペコになる前に
+悪さをしている連中をやっつけるも</td>
+        <td><a href="SYS_MapJumpList.html#228">228</td></a>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>7</td>
+        <td><a href="BTL_ChBtlWpnRev.html#1">1</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#4">4</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#5">5</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#6">6</td></a>
+        <td>250</td>
+        <td>490</td>
+        <td>740</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480101</td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">ソルジャードリーム</td>
+        <td>ソルジャードリーム</td>
+        <td>3</td>
+        <td>5</td>
+        <td>4</td>
+        <td>いつもはやられてしまう帝国の一兵卒
+そんな彼らも最強を夢見ていたも…
+いつもとは一味違う本気の彼らが相手も</td>
+        <td><a href="SYS_MapJumpList.html#229">229</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>7</td>
+        <td><a href="BTL_ChBtlWpnRev.html#1">1</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#7">7</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#8">8</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#9">9</td></a>
+        <td>290</td>
+        <td>580</td>
+        <td>870</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">妖艶乱舞</td>
+        <td>妖艶乱舞</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>いつの世も美しいものには害虫がたかるも
+さっさと倒さないと　次々に現れるから
+注意して戦うも</td>
+        <td><a href="SYS_MapJumpList.html#230">230</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>7</td>
+        <td><a href="BTL_ChBtlWpnRev.html#1">1</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#10">10</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#11">11</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#12">12</td></a>
+        <td>220</td>
+        <td>430</td>
+        <td>650</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">黒い空</td>
+        <td>黒い空</td>
+        <td>5</td>
+        <td>6</td>
+        <td>6</td>
+        <td>空を黒く染める飛行モンスターと戦うも
+地面に叩き落とせば何とかなる…
+ノポン・ダイセンニンは　そう思うも</td>
+        <td><a href="SYS_MapJumpList.html#231">231</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3067">3067</td></a>
+        <td>54</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#13">13</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#14">14</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#15">15</td></a>
+        <td>330</td>
+        <td>650</td>
+        <td>880</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">御神木</td>
+        <td>御神木</td>
+        <td>6</td>
+        <td>6</td>
+        <td>1</td>
+        <td>ターキンが御神木のように崇めるトーテムを
+打ち壊すのが目的も　容赦は禁物も
+信者はどんどん集まってくるも　羨ましいも</td>
+        <td><a href="SYS_MapJumpList.html#232">232</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#16">16</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#17">17</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#18">18</td></a>
+        <td>360</td>
+        <td>720</td>
+        <td>1080</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">三竦み</td>
+        <td>三竦み</td>
+        <td>7</td>
+        <td>4</td>
+        <td>1</td>
+        <td>この挑戦は少し頭を捻る必要があるも
+ノポン・ダイセンニンには簡単だけども
+オマエ達はどうかも？</td>
+        <td><a href="SYS_MapJumpList.html#233">233</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3065">3065</td></a>
+        <td>52</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#19">19</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#20">20</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#21">21</td></a>
+        <td>180</td>
+        <td>360</td>
+        <td>540</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">恐怖の感染道路</td>
+        <td>恐怖の感染道路</td>
+        <td>8</td>
+        <td>8</td>
+        <td>3</td>
+        <td>何度見ても文明の終焉は切ないも
+変わり果てた姿になってしまった生命を
+大地に還してあげる時がきたんだも</td>
+        <td><a href="SYS_MapJumpList.html#234">234</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3069">3069</td></a>
+        <td>56</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#22">22</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#23">23</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#24">24</td></a>
+        <td>340</td>
+        <td>680</td>
+        <td>1010</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">ビーチパニック</td>
+        <td>ビーチパニック</td>
+        <td>9</td>
+        <td>6</td>
+        <td>5</td>
+        <td>イヤサキ村の雲海浴場にディブロが現れたも
+ビーチの平和をオマエ達が取り戻すんだも
+赤いディブロはスケベだって噂も</td>
+        <td><a href="SYS_MapJumpList.html#235">235</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3066">3066</td></a>
+        <td>53</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#25">25</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#26">26</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#27">27</td></a>
+        <td>320</td>
+        <td>640</td>
+        <td>960</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">REAL TIGER! TIGER!</td>
+        <td>REAL TIGER!TIGER!</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td>あのTIGER! TIGER!のリアルバージョンも
+こんな経験は滅多なことではできないも
+行くも　トラ！　オマエは選ばれし者も！</td>
+        <td><a href="SYS_MapJumpList.html#236">236</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>1</td>
+        <td><a href="CHR_Dr.html#4">トラ</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3067">3067</td></a>
+        <td>54</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#28">28</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#29">29</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#30">30</td></a>
+        <td>380</td>
+        <td>750</td>
+        <td>1130</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480109</td>
+        <td>650480107</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">イーラドライバー</td>
+        <td>イーラドライバー</td>
+        <td>11</td>
+        <td>8</td>
+        <td>2</td>
+        <td>ノポン・ダイセンニンの力で特訓も！
+オマエ達が苦戦したイーラのドライバーと
+再戦できるも　勝利を期待しているも</td>
+        <td><a href="SYS_MapJumpList.html#237">237</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3065">3065</td></a>
+        <td>52</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#31">31</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#32">32</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#33">33</td></a>
+        <td>530</td>
+        <td>1060</td>
+        <td>1580</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">真剣勝負</td>
+        <td>真剣勝負</td>
+        <td>12</td>
+        <td>9</td>
+        <td>1</td>
+        <td>力を極限まで出した漢と漢の真剣勝負
+ノポン・ダイセンニンはそれが見たいも
+ゆめゆめ油断することなかれも</td>
+        <td><a href="SYS_MapJumpList.html#238">238</td></a>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3069">3069</td></a>
+        <td>56</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#34">34</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#35">35</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#36">36</td></a>
+        <td>300</td>
+        <td>600</td>
+        <td>1000</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td class="side">恐竜戦線</td>
+        <td>恐竜戦線</td>
+        <td>13</td>
+        <td>7</td>
+        <td>5</td>
+        <td>恐竜は大きいも　恐竜は強いも
+そんな恐竜が集まったら…どれだけ強いも？
+…でも　小さい提灯持ちが一番危険も</td>
+        <td><a href="SYS_MapJumpList.html#239">239</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#37">37</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#38">38</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#39">39</td></a>
+        <td>380</td>
+        <td>760</td>
+        <td>1130</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td class="side">亜人連合軍</td>
+        <td>亜人連合軍</td>
+        <td>14</td>
+        <td>8</td>
+        <td>7</td>
+        <td>ターキン　イグーナ　ガルウス　の3種族が
+手を結んでオマエ達を狙っているも
+どちらの結束が強いかの勝負になるも！</td>
+        <td><a href="SYS_MapJumpList.html#240">240</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#40">40</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#41">41</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#42">42</td></a>
+        <td>900</td>
+        <td>1800</td>
+        <td>2700</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td class="side">逃亡軍団</td>
+        <td>逃亡軍団</td>
+        <td>15</td>
+        <td>6</td>
+        <td>1</td>
+        <td>モンスターからの挑戦状が届いたも！
+逃亡戦士ダークロッドが仲間と共に登場も
+逃亡者の反撃ほど恐ろしいものはないも</td>
+        <td><a href="SYS_MapJumpList.html#241">241</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3173">3173</td></a>
+        <td>60</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#43">43</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#44">44</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#45">45</td></a>
+        <td>240</td>
+        <td>480</td>
+        <td>710</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td class="side">雲海大王の逆襲</td>
+        <td>雲海大王の逆襲</td>
+        <td>16</td>
+        <td>8</td>
+        <td>1</td>
+        <td>オマエ達は雲海大王の怒りを買ったも
+怒りのあまり大王は赤くなるところだったも
+逆襲のコロッサル　激闘の始まりも！</td>
+        <td><a href="SYS_MapJumpList.html#242">242</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3174">3174</td></a>
+        <td>60</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#46">46</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#47">47</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#48">48</td></a>
+        <td>320</td>
+        <td>630</td>
+        <td>950</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td class="side">ゴゴールのニューフェイス</td>
+        <td>ゴゴールのニューフェイス</td>
+        <td>17</td>
+        <td>8</td>
+        <td>5</td>
+        <td>ゴゴールの古兵としては縄張りバルバロッサ
+それと不動のゴンザレスが有名だけども
+乱世はついに新たな英雄を生み出したも…</td>
+        <td><a href="SYS_MapJumpList.html#243">243</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#49">49</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#50">50</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#51">51</td></a>
+        <td>590</td>
+        <td>1170</td>
+        <td>1760</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td class="side">第八世代</td>
+        <td>第八世代</td>
+        <td>18</td>
+        <td>9</td>
+        <td>5</td>
+        <td>一度誕生した超知能は創造主の手を離れても
+進化することを止めないも
+オマエ達はその恐怖を味わうことになるも</td>
+        <td><a href="SYS_MapJumpList.html#244">244</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#52">52</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#53">53</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#54">54</td></a>
+        <td>610</td>
+        <td>1220</td>
+        <td>2030</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td class="side">最強流派</td>
+        <td>最強流派</td>
+        <td>19</td>
+        <td>8</td>
+        <td>1</td>
+        <td>強さをひたすらに求めるのが武道も
+その流派は星の数ほどあるけども
+今日…その最強が決まることになるも！</td>
+        <td><a href="SYS_MapJumpList.html#245">245</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#55">55</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#56">56</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#57">57</td></a>
+        <td>300</td>
+        <td>600</td>
+        <td>900</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side">帝国軍第九装甲師団</td>
+        <td>帝国軍第九装甲師団</td>
+        <td>20</td>
+        <td>10</td>
+        <td>4</td>
+        <td>第九装甲師団は帝国軍最強…
+さらに禁断の巨神獣兵器の運用を始めたも
+厳しい戦いが予想されるも…興奮するも…</td>
+        <td><a href="SYS_MapJumpList.html#246">246</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>99</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#58">58</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#59">59</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#60">60</td></a>
+        <td>450</td>
+        <td>890</td>
+        <td>1490</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480105</td>
+        <td>650480106</td>
+        <td>False</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td class="side">バグズバスター</td>
+        <td>バグズバスター</td>
+        <td>21</td>
+        <td>4</td>
+        <td>9</td>
+        <td>この挑戦はいわゆるスコアアタックも
+出てくるモンスターをただ倒すだけじゃなく
+スコアの稼ぎ方を考えながら倒して欲しいも</td>
+        <td><a href="SYS_MapJumpList.html#247">247</td></a>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3068">3068</td></a>
+        <td>55</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#61">61</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#62">62</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#63">63</td></a>
+        <td>930</td>
+        <td>1850</td>
+        <td>2780</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side">アングアタック</td>
+        <td>アングアタック</td>
+        <td>22</td>
+        <td>4</td>
+        <td>1</td>
+        <td>この挑戦ではアングを成長させてもらうも
+生かさず殺さず…どこかの権力者のように
+上手くアングと戦い続けるも</td>
+        <td><a href="SYS_MapJumpList.html#248">248</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3068">3068</td></a>
+        <td>55</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#64">64</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#65">65</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#66">66</td></a>
+        <td>500</td>
+        <td>550</td>
+        <td>625</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480107</td>
+        <td>650480108</td>
+        <td>650480103</td>
+        <td>650480104</td>
+        <td>False</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td class="side">巨神獣戦艦強襲</td>
+        <td>巨神獣戦艦強襲</td>
+        <td>23</td>
+        <td>4</td>
+        <td>1</td>
+        <td>巨神獣戦艦を一人で攻め落とした男　シン
+ノポン・ダイセンニンの力で　その戦いを
+追体験することができるも　戦慄するも！</td>
+        <td><a href="SYS_MapJumpList.html#249">249</td></a>
+        <td>1</td>
+        <td>3</td>
+        <td>100</td>
+        <td>50</td>
+        <td>20</td>
+        <td></td>
+        <td>3600</td>
+        <td>1</td>
+        <td><a href="CHR_Dr.html#12">シン</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3588">3588</td></a>
+        <td>51</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#67">67</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#68">68</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#69">69</td></a>
+        <td>1500</td>
+        <td>3500</td>
+        <td>6000</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480111</td>
+        <td>650480107</td>
+        <td></td>
+        <td></td>
+        <td>False</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td class="side">今年の選ばれし勇者</td>
+        <td>今年の選ばれし勇者</td>
+        <td>24</td>
+        <td>6</td>
+        <td>13</td>
+        <td>ついにまた　この時がやってきたも！
+今年のノポンの勇者を決める日も！
+癖の強い挑戦者がトラを待っているも！</td>
+        <td><a href="SYS_MapJumpList.html#250">250</td></a>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>60</td>
+        <td>14</td>
+        <td><a href="BTL_ChBtlWpnRev.html#2">2</td></a>
+        <td>3600</td>
+        <td>1</td>
+        <td><a href="CHR_Dr.html#4">トラ</td></a>
+        <td></td>
+        <td></td>
+        <td><a href="FLD_ConditionList.html#3071">3071</td></a>
+        <td>58</td>
+        <td></td>
+        <td><a href="BTL_ChBtlRewardSet.html#70">70</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#71">71</td></a>
+        <td><a href="BTL_ChBtlRewardSet.html#72">72</td></a>
+        <td>1800</td>
+        <td>3600</td>
+        <td>5400</td>
+        <td><a href="RSC_TboxList.html#4">4</td></a>
+        <td><a href="RSC_TboxList.html#5">5</td></a>
+        <td><a href="RSC_TboxList.html#6">6</td></a>
+        <td>650480110</td>
+        <td>650480107</td>
+        <td>650480104</td>
+        <td></td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

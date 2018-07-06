@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_MainOrder</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>layer</th>
+          <th>useCond</th>
+          <th>guide</th>
+          <th>title</th>
+          <th>titleIcon</th>
+          <th>subTitle</th>
+          <th>resName</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#39">39</td></a>
+        <td><a href="MNU_Condition.html#1">1</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#47">对角色进行定制</td></a>
+        <td>角色</td>
+        <td>0</td>
+        <td><a href="MNU_Msg_SubContents.html#1">角色选择</td></a>
+        <td>mnu076_char_menu</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#49">49</td></a>
+        <td><a href="MNU_Condition.html#2">2</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#48">返回去过的地标</td></a>
+        <td>传送</td>
+        <td>1</td>
+        <td><a href="MNU_Msg_SubContents.html#11">传送</td></a>
+        <td>mnu018_world_map</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#47">47</td></a>
+        <td><a href="MNU_Condition.html#4">4</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#49">查看任务</td></a>
+        <td>任务日志</td>
+        <td>3</td>
+        <td><a href="MNU_Msg_SubContents.html#13">任务日志</td></a>
+        <td>mnu020_quest_list</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#64">64</td></a>
+        <td><a href="MNU_Condition.html#6">6</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#50">进行异刃调谐和管理</td></a>
+        <td>异刃管理</td>
+        <td>5</td>
+        <td><a href="MNU_Msg_SubContents.html#15">异刃管理</td></a>
+        <td>mnu094_submenu_crystal</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#51">51</td></a>
+        <td><a href="MNU_Condition.html#7">7</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#51">派遣异刃去佣兵团</td></a>
+        <td>佣兵团</td>
+        <td>6</td>
+        <td><a href="MNU_Msg_SubContents.html#16">佣兵团</td></a>
+        <td>mnu090_mercenary_root</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#57">57</td></a>
+        <td><a href="MNU_Condition.html#3">3</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#52">确认道具</td></a>
+        <td>道具列表</td>
+        <td>2</td>
+        <td><a href="MNU_Msg_SubContents.html#12">道具列表</td></a>
+        <td>mnu048_itemlist_main</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#67">67</td></a>
+        <td><a href="MNU_Condition.html#8">8</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#54">保存游戏及进行各种设定</td></a>
+        <td>系统</td>
+        <td>7</td>
+        <td><a href="MNU_Msg_SubContents.html#17">系统</td></a>
+        <td>mnu094_submenu_system</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#70">70</td></a>
+        <td><a href="MNU_Condition.html#36">36</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#69">收取已发布的内容</td></a>
+        <td>Ex Pass</td>
+        <td>4</td>
+        <td><a href="MNU_Msg_SubContents.html#29">Expansion Pass</td></a>
+        <td>mnu104_gift_box</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td><a href="MNU_Layer.html#71">71</td></a>
+        <td><a href="MNU_Condition.html#36">36</td></a>
+        <td><a href="MNU_Msg_OperationGuide.html#73">Expansion Pass的通知</td></a>
+        <td>通知</td>
+        <td>8</td>
+        <td><a href="MNU_Msg_SubContents.html#30">通知</td></a>
+        <td>mnu105_announce</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

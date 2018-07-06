@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202510_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202510_msg0001</td>
+        <td>84</td>
+        <td class="side">哥哥！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202510_msg0002</td>
+        <td>84</td>
+        <td class="side">怎么了？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202510_msg0003</td>
+        <td>84</td>
+        <td class="side">我说呀 工作已经做好了吧？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202510_msg0004</td>
+        <td>84</td>
+        <td class="side">是啊
+汇报算是做完了吧</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202510_msg0005</td>
+        <td>84</td>
+        <td class="side">那就带我去莫尔斯之地吧</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202510_msg0006</td>
+        <td>84</td>
+        <td class="side">不行</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202510_msg0007</td>
+        <td>84</td>
+        <td class="side">为什么啊？
+已经可以自由行动了吧？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202510_msg0008</td>
+        <td>84</td>
+        <td class="side">怎么能带你去
+那么危险的地方呢！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202510_msg0009</td>
+        <td>84</td>
+        <td class="side">再说 你求老爸没能得逞
+不是已经放弃了吗？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202510_msg0010</td>
+        <td>84</td>
+        <td class="side">我才没有放弃呢</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202510_msg0011</td>
+        <td>84</td>
+        <td class="side">我说想游遍整个幽界
+已经获得允许了</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202510_msg0012</td>
+        <td>84</td>
+        <td class="side">其中当然也包括了
+莫尔斯之地对吧？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202510_msg0013</td>
+        <td>84</td>
+        <td class="side">你这是什么歪理[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202510_msg0014</td>
+        <td>84</td>
+        <td class="side">小小年纪倒很会动脑筋啊</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202510_msg0015</td>
+        <td>84</td>
+        <td class="side">还真是前途不可限量嗼</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202510_msg0016</td>
+        <td>84</td>
+        <td class="side">我说呀 可以吧？
+带我去莫尔斯之地嘛</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202510_msg0017</td>
+        <td>84</td>
+        <td class="side">不行！
+就算你摆出这些歪理来
+不行就是不行！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202510_msg0018</td>
+        <td>84</td>
+        <td class="side">呜 你这个讲不通道理的！
+顽固的放浪老头！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202510_msg0019</td>
+        <td>84</td>
+        <td class="side">啊！？
+这些话
+还轮不到你来说！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202510_msg0020</td>
+        <td>84</td>
+        <td class="side">你为什么
+这么想去莫尔斯之地啊？</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202510_msg0021</td>
+        <td>84</td>
+        <td class="side">那里可没有
+那么好玩的东西哦</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202510_msg0022</td>
+        <td>84</td>
+        <td class="side">你真是一点都不懂啊
+光去看看那个地方 就已经很有价值了</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202510_msg0023</td>
+        <td>84</td>
+        <td class="side">而且那里还是个宝库！
+有很多只有在那里
+才能弄到的东西！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202510_msg0024</td>
+        <td>84</td>
+        <td class="side">本来还想着看看就好的
+但是现在我想去找个东西</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202510_msg0025</td>
+        <td>84</td>
+        <td class="side">阿丝特尔 你完全不知道
+那里是个什么地方啊！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202510_msg0026</td>
+        <td>84</td>
+        <td class="side">那里可是有很多
+可怕的怪物的哦</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202510_msg0027</td>
+        <td>84</td>
+        <td class="side">没带着异刃的小孩子走进去
+不到一分钟就会被吃掉的</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202510_msg0028</td>
+        <td>84</td>
+        <td class="side">再说了 像那种地方
+哪能找到什么东西啊</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202510_msg0029</td>
+        <td>84</td>
+        <td class="side">既然这样的话 就让KOS-MOS Re:来保护我啊</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202510_msg0030</td>
+        <td>84</td>
+        <td class="side">和她在一起就安全了吧？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202510_msg0031</td>
+        <td>84</td>
+        <td class="side">你自顾自说什么呢！</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst202510_msg0032</td>
+        <td>84</td>
+        <td class="side">国王陛下
+不是吩咐你要保护好我嘛！</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst202510_msg0033</td>
+        <td>84</td>
+        <td class="side">他可没说
+要我听凭你耍性子！</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst202510_msg0034</td>
+        <td>84</td>
+        <td class="side">我一定要去！
+叔叔你拦我也没用！</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst202510_msg0035</td>
+        <td>84</td>
+        <td class="side">我决不会同意的！</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst202510_msg0036</td>
+        <td>84</td>
+        <td class="side">我说呀 KOS-MOS Re:你觉得怎么样啊？
+肯定愿意跟我一起去的吧？</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst202510_msg0037</td>
+        <td>84</td>
+        <td class="side">如果是命令的话
+我便服从</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst202510_msg0038</td>
+        <td>84</td>
+        <td class="side">你看
+KOS-MOS Re:都答应了哦？</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst202510_msg0039</td>
+        <td>84</td>
+        <td class="side">但是 
+保护主人才是最优先事项</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst202510_msg0040</td>
+        <td>84</td>
+        <td class="side">阿丝特尔的优先度
+是次于主人的
+这样子你可以接受吗？</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst202510_msg0041</td>
+        <td>84</td>
+        <td class="side">咦？</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst202510_msg0042</td>
+        <td>84</td>
+        <td class="side">怎么样 你都听到了吧！</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qst202510_msg0043</td>
+        <td>84</td>
+        <td class="side">再说
+你又不是KOS-MOS Re:的御刃者</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qst202510_msg0044</td>
+        <td>84</td>
+        <td class="side">别再耍性子了
+快乖乖回洛修利亚去！</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qst202510_msg0045</td>
+        <td>84</td>
+        <td class="side">才 才没这回事呢！</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qst202510_msg0046</td>
+        <td>84</td>
+        <td class="side">虽然不是御刃者
+但我和KOS-MOS Re:是朋友嘛！</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qst202510_msg0047</td>
+        <td>84</td>
+        <td class="side">KOS-MOS Re:一定
+会保护我的！</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qst202510_msg0048</td>
+        <td>84</td>
+        <td class="side">别再胡闹了！</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qst202510_msg0049</td>
+        <td>84</td>
+        <td class="side">简直就像小孩子吵架啊[ML:Dash ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qst202510_msg0050</td>
+        <td>84</td>
+        <td class="side">我说啊 齐格
+在这里吵也没有用啊</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qst202510_msg0051</td>
+        <td>84</td>
+        <td class="side">我看阿丝特尔也不打算妥协[ML:Dash ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qst202510_msg0052</td>
+        <td>84</td>
+        <td class="side">大家一起前往莫尔斯之地
+然后快点回来不就好了吗？</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qst202510_msg0053</td>
+        <td>84</td>
+        <td class="side">可是 也不能让大家
+陪着这种任性女孩瞎胡闹[ML:Dash ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qst202510_msg0054</td>
+        <td>84</td>
+        <td class="side">没关系啦
+毕竟也受了国王陛下不少照顾嘛</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qst202510_msg0055</td>
+        <td>84</td>
+        <td class="side">阿丝特尔[ML:Dash ]
+作为条件
+一旦我认为有危险 就要立即撤退</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qst202510_msg0056</td>
+        <td>84</td>
+        <td class="side">嗯
+就这样吧！</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qst202510_msg0057</td>
+        <td>84</td>
+        <td class="side">那我们走吧
+KOS-MOS Re:！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

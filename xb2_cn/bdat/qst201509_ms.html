@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201509_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201509_msg0035</td>
+        <td>84</td>
+        <td class="side">她说是敲16次门呢[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201509_msg0036</td>
+        <td>84</td>
+        <td class="side">我一直用心监视着这里
+却没注意到这一点呢[ML:Dash ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201509_msg0037</td>
+        <td>84</td>
+        <td class="side">别在意
+再优秀的异刃也不可能
+一天二十四小时都集中注意力啦</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201509_msg0038</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]谢谢</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201509_msg0039</td>
+        <td>84</td>
+        <td class="side">那我要敲门了</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201509_msg0040</td>
+        <td>84</td>
+        <td class="side">咚咚咚咚咚咚咚咚
+咚咚咚咚咚咚咚咚[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201509_msg0041</td>
+        <td>84</td>
+        <td class="side">唉[ML:Dash ]
+敲得我胳膊好累[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201509_msg0001</td>
+        <td>84</td>
+        <td class="side">你就是拉帕考尔啊？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201509_msg0002</td>
+        <td>84</td>
+        <td class="side">我就是拉帕考尔[ML:Dash ]
+你们是[ML:Dash ]？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201509_msg0003</td>
+        <td>84</td>
+        <td class="side">希望你能说出[ML:Dash ]
+你收集的西斯杜鹃花的用途</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201509_msg0004</td>
+        <td>84</td>
+        <td class="side">西斯杜鹃花！？
+跟 跟我 没关系[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201509_msg0005</td>
+        <td>84</td>
+        <td class="side">哦 是这样吗？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201509_msg0010</td>
+        <td>84</td>
+        <td class="side">你在收集西斯杜鹃花
+制作毒药吧？
+而且还是剧毒的毒药[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201509_msg0011</td>
+        <td>84</td>
+        <td class="side">你怎么知道的[ML:Dash ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201509_msg0012</td>
+        <td>84</td>
+        <td class="side">没有什么能逃过我的眼睛</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201509_msg0042</td>
+        <td>84</td>
+        <td class="side">你知道运你做出来的毒药
+的那艘船已经沉了吗？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201509_msg0043</td>
+        <td>84</td>
+        <td class="side">还有啊 你知道收集花草的那两个人
+已经离开了吗？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201509_msg0044</td>
+        <td>84</td>
+        <td class="side">你已经没有同伴了[ML:Dash ]
+真寂寞啊[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201509_msg0013</td>
+        <td>84</td>
+        <td class="side">我不会害你的
+快认命 告诉我你的目的吧</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201509_msg0014</td>
+        <td>84</td>
+        <td class="side">谁 谁要告诉你啊[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201509_msg0015</td>
+        <td>84</td>
+        <td class="side">你还是不要乱抵抗的好</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201509_msg0016</td>
+        <td>84</td>
+        <td class="side">有我的千里邪眼在 一切小动作都毫无意义
+在你动手之前 我会先阻止你的</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201509_msg0017</td>
+        <td>84</td>
+        <td class="side">唔[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201509_msg0018</td>
+        <td>84</td>
+        <td class="side">好了 快认命
+然后全都老实交代了吧？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201509_msg0019</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ][ML:Dash ]我是受人所托
+对方是个男性古拉人</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201509_msg0020</td>
+        <td>84</td>
+        <td class="side">我做的毒药[ML:Dash ]
+西斯阿斯汀会被船运至国外
+送到委托人手上</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst201509_msg0021</td>
+        <td>84</td>
+        <td class="side">本来运两次应该就够了才对</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst201509_msg0034</td>
+        <td>84</td>
+        <td class="side">可是之前安排的船
+跟货物一起沉进云海里了</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst201509_msg0022</td>
+        <td>84</td>
+        <td class="side">就是蓟击沉的船吗[ML:Dash ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst201509_msg0023</td>
+        <td>84</td>
+        <td class="side">所以[ML:Dash ]
+我才接着做西斯阿斯汀[ML:Dash ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst201509_msg0024</td>
+        <td>84</td>
+        <td class="side">结果我们闯进来了对吧[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst201509_msg0025</td>
+        <td>84</td>
+        <td class="side">用那么多的毒药
+是要做什么呢？</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst201509_msg0026</td>
+        <td>84</td>
+        <td class="side">西斯阿斯汀有麻痹巨神兽的神经
+使其衰弱的效果</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst201509_msg0027</td>
+        <td>84</td>
+        <td class="side">什么！？</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst201509_msg0028</td>
+        <td>84</td>
+        <td class="side">委托人的目的是
+将西斯阿斯汀直接运入巨神兽体内
+使其衰弱</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst201509_msg0045</td>
+        <td>84</td>
+        <td class="side">一开始运走的那批西斯阿斯汀
+还可以使用吧？</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst201509_msg0046</td>
+        <td>84</td>
+        <td class="side">嗯[ML:Dash ]
+那批药已经送到委托人手上了</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst201509_msg0029</td>
+        <td>84</td>
+        <td class="side">运到哪里去了？</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst201509_msg0030</td>
+        <td>84</td>
+        <td class="side">这个我也不知道[ML:Dash ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst201509_msg0031</td>
+        <td>84</td>
+        <td class="side">将毒药运上船之后 就没我的事了
+所以我也不知道船开去哪里</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst201509_msg0032</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]哦</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst201509_msg0033</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]这可不好办了
+没有线索也就无从找起了[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

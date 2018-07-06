@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104505_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104505_msg001</td>
+        <td>62</td>
+        <td class="side">LIST_QST104505の仮イベント</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104505_msg0001</td>
+        <td>84</td>
+        <td class="side">ん？　何だ？
+ああ　ノポンに教えた
+メタルブローチのことだな</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104505_msg0002</td>
+        <td>84</td>
+        <td class="side">ここからすぐ近くの海岸[ML:Dash ]
+三剣の孤島が見える所に
+よく打ち上げられてるんだ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104505_msg0003</td>
+        <td>84</td>
+        <td class="side">あれな　ボードゲームの
+デュエルキングダムで
+最強のコマとして使えるんだよ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104505_msg0004</td>
+        <td>84</td>
+        <td class="side">ただし　この基地だけの
+特殊ルールだ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104505_msg0005</td>
+        <td>84</td>
+        <td class="side">見ての通り　テンペランティアには
+街も村もないから
+娯楽ってものが少なくてね</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104505_msg0006</td>
+        <td>84</td>
+        <td class="side">持ってきたボードゲームが
+唯一の楽しみなんだ</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104505_msg0007</td>
+        <td>84</td>
+        <td class="side">だけど　何度かやってると飽きちまうんで
+新しいルールを追加して
+さらに面白くしてるのさ</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104505_msg0008</td>
+        <td>84</td>
+        <td class="side">メタルブローチを
+ノポン達が売ってくれたら
+皆こぞって買にくるだろうが[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104505_msg0009</td>
+        <td>84</td>
+        <td class="side">落ちてる海岸には
+手ごわいモンスターがいるから
+ノポン達に　行くなって伝えたんだよ</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104505_msg0010</td>
+        <td>84</td>
+        <td class="side">せっかく来てくれたのに
+やられちまったら
+かわいそうだからなぁ</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104505_msg0011</td>
+        <td>84</td>
+        <td class="side">あんた達　腕に自信がありそうだし
+三剣の孤島の海岸で
+取ってきてみなよ</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104505_msg0101</td>
+        <td>84</td>
+        <td class="side">メタルブローチなら
+すぐ近くの海岸で取れるよ</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104505_msg0102</td>
+        <td>84</td>
+        <td class="side">今　俺達の中で
+一番欲しいお宝だからな
+売ってくれるなら　金を出すぜ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

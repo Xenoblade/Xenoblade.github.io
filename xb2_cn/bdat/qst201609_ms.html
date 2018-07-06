@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201609_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201609_msg0001</td>
+        <td>84</td>
+        <td class="side">好了 演唱会总算正式开始了嗼！
+七冰小姐 准备好了嗼？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201609_msg0002</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ][ML:Dash ]呜呜</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201609_msg0003</td>
+        <td>84</td>
+        <td class="side">七冰？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201609_msg0004</td>
+        <td>84</td>
+        <td class="side">怎么了嗼？
+肚子疼嗼？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201609_msg0005</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]呜呜 不是的
+[ML:Dash ][ML:Dash ]不过我可能不行了</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201609_msg0006</td>
+        <td>84</td>
+        <td class="side">她好像紧张过头
+搞得身体不舒服了</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201609_msg0007</td>
+        <td>84</td>
+        <td class="side">糟了嗼！？
+这下没法举行演唱会了嗼！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201609_msg0008</td>
+        <td>84</td>
+        <td class="side">不 距离演唱会开始还有点时间
+在开始之前 先让七冰恢复平静吧</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201609_msg0009</td>
+        <td>84</td>
+        <td class="side">虎在这种时候
+就会吃点好吃的 放松心情嗼</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201609_msg0010</td>
+        <td>84</td>
+        <td class="side">虎会大口吃甜甜小香肠嗼！</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201609_msg0011</td>
+        <td>84</td>
+        <td class="side">这样胃里会不舒服吧[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201609_msg0012</td>
+        <td>84</td>
+        <td class="side">不过 吃也能转换心情
+我认为是个好主意</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201609_msg0013</td>
+        <td>84</td>
+        <td class="side">那就给七冰吃她喜欢吃的东西
+让她冷静下来吧</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201609_msg0014</td>
+        <td>84</td>
+        <td class="side">七冰小姐 你喜欢吃什么嗼？
+我这就去弄来嗼！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201609_msg0015</td>
+        <td>84</td>
+        <td class="side">啊？你这么突然问我 我也想不出来[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201609_msg0016</td>
+        <td>84</td>
+        <td class="side">有没有什么想吃的东西？
+什么都行 想到什么就说什么吧</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201609_msg0017</td>
+        <td>84</td>
+        <td class="side">呃 呃
+我想尝尝之前在剧场前看到的
+胜利吉事果</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201609_msg0018</td>
+        <td>84</td>
+        <td class="side">加上熊熊的份
+可以给我10个吗[ML:Dash ]？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201609_msg0019</td>
+        <td>84</td>
+        <td class="side">熊熊真贪吃嗼[ML:Dash ]
+我们这就去买回来嗼！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201609_msg0020</td>
+        <td>84</td>
+        <td class="side">那在大家回来之前
+就靠库玛琳的谈话技巧
+来逗观众开心嗼</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

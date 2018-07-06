@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_AnnounceSchedule</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>title</th>
+          <th>summary</th>
+          <th>schedule</th>
+          <th>available</th>
+          <th>new</th>
+          <th>order</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>全新的原创剧情</td>
+        <td>Coming Soon</td>
+        <td>2018 秋</td>
+        <td>0</td>
+        <td>0</td>
+        <td>50</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>挑战战斗 ～诺彭的挑战书～</td>
+        <td>除了挑战战斗模式
+还在选项画面中追加了
+自动战斗、按键挑战自动成功
+和被指定类型敌人侦察
+这3项的ON&#183;OFF切换功能</td>
+        <td>2018.6.15</td>
+        <td>1</td>
+        <td>1</td>
+        <td>40</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>崭新的稀有异刃</td>
+        <td>达成任务「全新的力量」后
+即可使用花巴斯塔！</td>
+        <td>2018.4.27</td>
+        <td>1</td>
+        <td>0</td>
+        <td>30</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>主线追加任务&#183;第1弹</td>
+        <td>&#183;工匠受难
+&#183;下落不明的诺彭
+&#183;废弃工厂探险游
+&#183;深夜食堂
+&#183;侦察兵</td>
+        <td>2018.1.19</td>
+        <td>1</td>
+        <td>0</td>
+        <td>20</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>主线追加任务&#183;第2弹</td>
+        <td>&#183;这样就好嗼
+&#183;光天化日
+&#183;繁星之夜
+&#183;改造云海罗盘
+&#183;紧急情况！？</td>
+        <td>2018.3.30</td>
+        <td>1</td>
+        <td>0</td>
+        <td>21</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>主线追加任务&#183;第3弹</td>
+        <td>&#183;铁匠的爱好
+&#183;名流帽
+&#183;制作迷恋药
+&#183;佣兵的规矩
+&#183;梅尔可利贝的强敌</td>
+        <td>2018.5.25</td>
+        <td>1</td>
+        <td>0</td>
+        <td>22</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>冒险辅助道具&#183;第1弹</td>
+        <td>&#183;巴恩寄来的追加军用资金
+&#183;十分便利的收纳包道具
+&#183;来自伊鲁伊鲁的礼物
+&#183;新手御刃者专用核心水晶</td>
+        <td>2017.12.1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>10</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>冒险辅助道具&#183;第2弹</td>
+        <td>&#183;御刃者必需品套装
+&#183;花的强化材料
+&#183;焰的喜爱之物
+&#183;尼娅的喜爱之物</td>
+        <td>2017.12.22</td>
+        <td>1</td>
+        <td>0</td>
+        <td>11</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>冒险辅助道具&#183;第3弹</td>
+        <td>&#183;御刃者必需品套装2
+&#183;虎的喜爱之物
+&#183;花JS的喜爱之物
+&#183;迷人的御刃者装备</td>
+        <td>2018.1.19</td>
+        <td>1</td>
+        <td>0</td>
+        <td>12</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>冒险辅助道具&#183;第4弹</td>
+        <td>&#183;花的强化材料2
+&#183;御刃者必需品套装3</td>
+        <td>2018.3.2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>13</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

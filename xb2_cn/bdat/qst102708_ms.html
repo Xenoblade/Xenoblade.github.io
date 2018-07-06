@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102708_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102708_msg0001</td>
+        <td>84</td>
+        <td class="side">你来了啊[ML:Dash ]
+说说患者的症状吧</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102708_msg0002</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]食人种？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102708_msg0003</td>
+        <td>84</td>
+        <td class="side">是人和异刃融合后的
+一种存在[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102708_msg0004</td>
+        <td>84</td>
+        <td class="side">有意思
+我就帮他一把吧</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102708_msg0005</td>
+        <td>84</td>
+        <td class="side">我当军医的时候
+在旧资料里看到的东西
+居然真的存在[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102708_msg0007</td>
+        <td>84</td>
+        <td class="side">患者呢？
+[ML:Dash ]英维迪亚？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102708_msg0008</td>
+        <td>84</td>
+        <td class="side">我曾经是斯佩比亚的军医啊
+所以去不了那里[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102708_msg0009</td>
+        <td>84</td>
+        <td class="side">话虽如此 但他有一半是人类</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102708_msg0010</td>
+        <td>84</td>
+        <td class="side">异刃的调整
+由你们负责的话
+人的那部分就让我来想想办法吧</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102708_msg0011</td>
+        <td>84</td>
+        <td class="side">详情之后再说
+先做药</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102708_msg0012</td>
+        <td>84</td>
+        <td class="side">3个黄昏树的根
+1个云海岩盐
+另外再有[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102708_msg0013</td>
+        <td>84</td>
+        <td class="side">要是有食用后能打起精神
+延年益寿的根菜
+就能做出完美的药物了</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102708_msg0014</td>
+        <td>84</td>
+        <td class="side">采集地点在[ML:Dash ]
+艾尔皮斯灵洞
+莫尔斯断崖</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102708_msg0015</td>
+        <td>84</td>
+        <td class="side">还有一种根菜的情况还不清楚
+具体你去问助手吧</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102708_msg0101</td>
+        <td>84</td>
+        <td class="side">树根 树根[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102708_msg0201</td>
+        <td>84</td>
+        <td class="side">太棒了</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102708_msg0202</td>
+        <td>84</td>
+        <td class="side">希望你能再准备
+1种东西</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102708_msg0203</td>
+        <td>84</td>
+        <td class="side">龙尽香[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102708_msg0204</td>
+        <td>84</td>
+        <td class="side">只不过 根据我听你们描述的症状
+光是普通的东西还不够</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102708_msg0205</td>
+        <td>84</td>
+        <td class="side">英维迪亚能采到
+纯度很高的真龙尽香</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102708_msg0206</td>
+        <td>84</td>
+        <td class="side">去帮我把那个采来吧</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst102708_msg0207</td>
+        <td>84</td>
+        <td class="side">真龙尽香可以在
+英维迪亚的龙之胃
+采集到</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst102708_msg0208</td>
+        <td>84</td>
+        <td class="side">只要有2个
+就能做出1名成人所需的量</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst102708_msg0209</td>
+        <td>84</td>
+        <td class="side">为了患者 快点采来吧</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst102708_msg0301</td>
+        <td>84</td>
+        <td class="side">龙尽香是什么？
+[ML:Dash ]助手！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst102708_msg0302</td>
+        <td>84</td>
+        <td class="side">接下来的问他吧</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst102708_msg0401</td>
+        <td>84</td>
+        <td class="side">真龙尽香[ML:Dash ]
+嗯</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst102708_msg0402</td>
+        <td>84</td>
+        <td class="side">把这个煎一下
+然后和其他材料一起煮
+搅拌三天三夜</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst102708_msg0403</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]人手不足啊</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst102708_msg0404</td>
+        <td>84</td>
+        <td class="side">我和助手也还有工作
+不太可能一直守着</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst102708_msg0405</td>
+        <td>84</td>
+        <td class="side">提供人才？
+[ML:Dash ]那可真要谢谢你们了</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst102708_msg0501</td>
+        <td>84</td>
+        <td class="side">食人种[ML:Dash ]
+人与异刃的融合[ML:Dash ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst102708_msg0502</td>
+        <td>84</td>
+        <td class="side">就像我和树根的
+关系一样</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst102708_msg0601</td>
+        <td>84</td>
+        <td class="side">高精度的药物
+做好了</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst102708_msg0602</td>
+        <td>84</td>
+        <td class="side">这药有促进
+循环机能的效果</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst102708_msg0603</td>
+        <td>84</td>
+        <td class="side">调整了异刃的力量之后
+对人类的部分产生修复的效果
+[ML:Dash ]嗯</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst102708_msg0604</td>
+        <td>84</td>
+        <td class="side">要详细说明太麻烦了[ML:Dash ]
+总之立刻让患者喝下去
+然后调整异刃的部分</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst102708_msg0605</td>
+        <td>84</td>
+        <td class="side">只不过 这也不是万全之策</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst102708_msg0606</td>
+        <td>84</td>
+        <td class="side">总有一天会死的
+毕竟是人类嘛</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst102708_msg0607</td>
+        <td>84</td>
+        <td class="side">好了 快去患者身边吧</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst102708_msg0701</td>
+        <td>84</td>
+        <td class="side">做得不错[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

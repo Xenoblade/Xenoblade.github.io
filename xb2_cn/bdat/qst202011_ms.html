@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202011_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202011_msg001</td>
+        <td>84</td>
+        <td class="side">已经把蜜豆牡丹饼送给结小姐了哦</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202011_msg002</td>
+        <td>84</td>
+        <td class="side">她还说之后会狠狠训你一顿嗼</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202011_msg003</td>
+        <td>84</td>
+        <td class="side">不过她真的很高兴</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202011_msg004</td>
+        <td>84</td>
+        <td class="side">是吗 暴露了啊
+这下可就有我好受的了
+哈哈哈[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202011_msg005</td>
+        <td>84</td>
+        <td class="side">唔[ML:Dash ]
+咳咳</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202011_msg006</td>
+        <td>84</td>
+        <td class="side">喂！
+老爷子 你没事吧？！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202011_msg007</td>
+        <td>84</td>
+        <td class="side">咳！咳！唔！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202011_msg008</td>
+        <td>84</td>
+        <td class="side">我去叫结嗼！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202011_msg009</td>
+        <td>84</td>
+        <td class="side">等[ML:Dash ]等等！
+咳 咳
+呼[ML:Dash ]呼[ML:Dash ]呼[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202011_msg010</td>
+        <td>84</td>
+        <td class="side">我不想让结担心
+能不能请你们别把这件事告诉她啊</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202011_msg011</td>
+        <td>84</td>
+        <td class="side">可是[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202011_msg012</td>
+        <td>84</td>
+        <td class="side">没事的
+我可没有那么弱不禁风</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202011_msg013</td>
+        <td>84</td>
+        <td class="side">哦 反正是顺便
+能再求你们一件事吗？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202011_msg014</td>
+        <td>84</td>
+        <td class="side">把药拿来就行了吗？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202011_msg015</td>
+        <td>84</td>
+        <td class="side">哎呀呀
+那是在我年轻力壮的时候[ML:Dash ]
+大概就是30年前吧[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202011_msg016</td>
+        <td>84</td>
+        <td class="side">我和结找到了一对
+黄金手甲</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202011_msg017</td>
+        <td>84</td>
+        <td class="side">黄金！？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202011_msg018</td>
+        <td>84</td>
+        <td class="side">没错 很少见吧？
+那可是很珍贵的宝物</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202011_msg019</td>
+        <td>84</td>
+        <td class="side">当时我们也不缺钱
+也不方便带着 所以就藏起来了</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202011_msg020</td>
+        <td>84</td>
+        <td class="side">希望你们
+把这几个充满回忆的东西挖出来</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202011_msg021</td>
+        <td>84</td>
+        <td class="side">原来如此
+那护手是藏在什么地方的呢？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202011_msg022</td>
+        <td>84</td>
+        <td class="side">是在斯佩比亚帝国的
+遗忘封地吧</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202011_msg023</td>
+        <td>84</td>
+        <td class="side">不过 根据结的说法[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202011_msg024</td>
+        <td>84</td>
+        <td class="side">什么？
+我怎么了吗？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202011_msg025</td>
+        <td>84</td>
+        <td class="side">哦 你来得正好
+我正想让莱克斯他们
+去帮忙把当年埋下去的护手拿回来呢</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202011_msg026</td>
+        <td>84</td>
+        <td class="side">是埋在斯佩比亚的
+遗忘封地对吧？</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202011_msg027</td>
+        <td>84</td>
+        <td class="side">不是啦～</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202011_msg028</td>
+        <td>84</td>
+        <td class="side">我记得是在英维迪亚烈王国的
+佩尔拉喷泉公园遗址
+应该是埋在那里了</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202011_msg029</td>
+        <td>84</td>
+        <td class="side">是吗？
+我怎么记得不对啊？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202011_msg030</td>
+        <td>84</td>
+        <td class="side">不 就是在英维迪亚</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202011_msg031</td>
+        <td>84</td>
+        <td class="side">嗯[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst202011_msg032</td>
+        <td>84</td>
+        <td class="side">唉 已经想不起来了
+两个地方都去帮我找找吧！</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst202011_msg033</td>
+        <td>84</td>
+        <td class="side">你这也太不负责了吧[ML:Dash ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst202011_msg034</td>
+        <td>84</td>
+        <td class="side">没办法
+只能两边都去找找了</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201711_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201711_msg0001</td>
+        <td>84</td>
+        <td class="side">陛下！
+您没有受伤吧！？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201711_msg1001</td>
+        <td>84</td>
+        <td class="side">嗯[ML:Dash ] 我没事
+各位呢？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201711_msg2001</td>
+        <td>84</td>
+        <td class="side">没问题！
+所有人都没事！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201711_msg2002</td>
+        <td>84</td>
+        <td class="side">是吗[ML:Dash ]
+那就好</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201711_msg0002</td>
+        <td>84</td>
+        <td class="side">不过 没想到
+会有真正的歹徒混进训练里[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201711_msg0003</td>
+        <td>84</td>
+        <td class="side">这次的事件
+让许多问题都浮出水面了</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201711_msg0004</td>
+        <td>84</td>
+        <td class="side">必须尽快重新评估
+帝都防卫了</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201711_msg0005</td>
+        <td>84</td>
+        <td class="side">是！在下愿意
+为此略尽绵薄之力！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201711_msg0006</td>
+        <td>84</td>
+        <td class="side">谢谢你</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201711_msg0007</td>
+        <td>84</td>
+        <td class="side">有你这句话
+我就放心多了</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201711_msg0008</td>
+        <td>84</td>
+        <td class="side">不 请不必多礼！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201711_msg0009</td>
+        <td>84</td>
+        <td class="side">在下不过是
+做了该做的事罢了！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201711_msg0010</td>
+        <td>84</td>
+        <td class="side">但是 能不能请你尽量
+不要做出这次这种鲁莽的举动呢？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201711_msg0011</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]这话是什么意思？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201711_msg0012</td>
+        <td>84</td>
+        <td class="side">难道 在下[ML:Dash ]
+做了什么让您感到不快的事情吗？</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201711_msg0013</td>
+        <td>84</td>
+        <td class="side">不 并非如此</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201711_msg0014</td>
+        <td>84</td>
+        <td class="side">只是 如果你一直这么鲁莽
+于是不小心丢掉性命的话[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201711_msg0015</td>
+        <td>84</td>
+        <td class="side">会有人为此感到伤心的
+请千万不要忘记这点</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201711_msg0016</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]陛下</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201711_msg0017</td>
+        <td>84</td>
+        <td class="side">救人很重要
+但同样也要珍惜自己的生命</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201711_msg0018</td>
+        <td>84</td>
+        <td class="side">在下明白了！</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201711_msg0019</td>
+        <td>84</td>
+        <td class="side">在下纽兹
+会将陛下的话语铭刻于心[ML:Dash ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201711_msg0020</td>
+        <td>84</td>
+        <td class="side">在此发誓
+将会对皇帝陛下更加忠诚！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201711_msg0021</td>
+        <td>84</td>
+        <td class="side">不对 这种时候
+应该是对御刃者发誓吧？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201711_msg0022</td>
+        <td>84</td>
+        <td class="side">不不
+这时候不是应该对御刃者发誓吗？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201711_msg0023</td>
+        <td>84</td>
+        <td class="side">不 纽兹可是异刃啊
+应该对御刃者发誓才对吧</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst201711_msg0024</td>
+        <td>84</td>
+        <td class="side">不 要尽忠的话
+应该是对御刃者发誓才对吧？</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst201711_msg0025</td>
+        <td>84</td>
+        <td class="side">啊？
+那个[ML:Dash ]
+呃</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst201711_msg0026</td>
+        <td>84</td>
+        <td class="side">当然是会对御刃者发誓啦
+但在下总觉得也要对皇帝陛下发誓[ML:Dash ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst201711_msg0027</td>
+        <td>84</td>
+        <td class="side">啊 不过 并不是说
+两边有一个高下啦[ML:Dash ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst201711_msg0028</td>
+        <td>84</td>
+        <td class="side">啊 呃 那个[ML:Dash ]
+我会对双方都尽心尽力的！</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst201711_msg0029</td>
+        <td>84</td>
+        <td class="side">哈哈！
+什么嘛
+虽然很像纽兹的作风 但这也太随便了吧[ML:Dash ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst201711_msg0030</td>
+        <td>84</td>
+        <td class="side">噗！
+什么嘛
+虽然很像纽兹的作风 但这也太随便吧[ML:Dash ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst201711_msg0031</td>
+        <td>84</td>
+        <td class="side">呵呵[ML:Dash ]
+这种随便的回答
+可是很难让人满意的啊</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst201711_msg0032</td>
+        <td>84</td>
+        <td class="side">哇哈哈 这算什么嘛？
+纽兹实在太随便啦</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst201711_msg0033</td>
+        <td>84</td>
+        <td class="side">不 在下可
+绝对没有什么随便的意思啊[ML:Dash ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst201711_msg0034</td>
+        <td>84</td>
+        <td class="side">呵呵呵[ML:Dash ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst201711_msg0035</td>
+        <td>84</td>
+        <td class="side">啊 连陛下都在取笑在下
+实在是太过分啦！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

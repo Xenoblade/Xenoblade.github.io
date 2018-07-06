@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202011_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202011_msg001</td>
+        <td>84</td>
+        <td class="side">ムスビさんに蜜豆おはぎを渡したよ</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202011_msg002</td>
+        <td>84</td>
+        <td class="side">後できつく叱るって言ってたも</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202011_msg003</td>
+        <td>84</td>
+        <td class="side">でも　すごく嬉しそうだったよ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202011_msg004</td>
+        <td>84</td>
+        <td class="side">そうか　バレてしまったか
+こりゃ後が怖いのぉ
+ハハハ[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202011_msg005</td>
+        <td>84</td>
+        <td class="side">うっ[ML:Dash ]
+ゲフッゲフッ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202011_msg006</td>
+        <td>84</td>
+        <td class="side">おい！
+じいさん　大丈夫か？！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202011_msg007</td>
+        <td>84</td>
+        <td class="side">ゲホッ！　ゲフッ！　グフ！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202011_msg008</td>
+        <td>84</td>
+        <td class="side">ムスビ　呼んでくるも！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202011_msg009</td>
+        <td>84</td>
+        <td class="side">ま[ML:Dash ]　待て！
+ゲフッ　ゴホッ
+ハァ[ML:Dash ]　ハァ[ML:Dash ]　ハァ[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202011_msg010</td>
+        <td>84</td>
+        <td class="side">ムスビには心配をかけたくない
+どうかこのことは黙っていてくれないか</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202011_msg011</td>
+        <td>84</td>
+        <td class="side">でも[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202011_msg012</td>
+        <td>84</td>
+        <td class="side">大丈夫だ
+わしはそんなにヤワではないわい</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202011_msg013</td>
+        <td>84</td>
+        <td class="side">ああ　ことはついでじゃ
+もう一つ頼まれてくれないか？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202011_msg014</td>
+        <td>84</td>
+        <td class="side">薬を取ってくればいい？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202011_msg015</td>
+        <td>84</td>
+        <td class="side">いやいや
+わしが現役時代[ML:Dash ]
+30年程前だったか[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202011_msg016</td>
+        <td>84</td>
+        <td class="side">わしとムスビは一対の黄金の小手を
+見つけたんじゃ</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202011_msg017</td>
+        <td>84</td>
+        <td class="side">黄金！？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202011_msg018</td>
+        <td>84</td>
+        <td class="side">そう　珍しいじゃろう？
+かなりのお宝じゃ</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202011_msg019</td>
+        <td>84</td>
+        <td class="side">当時は金に困っておらんかったし
+手に余ったから　隠すことにしたんじゃ</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202011_msg020</td>
+        <td>84</td>
+        <td class="side">その思い出の品を
+掘り出してきて欲しいのじゃ</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202011_msg021</td>
+        <td>84</td>
+        <td class="side">なるほどね
+それはどこに隠したの？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202011_msg022</td>
+        <td>84</td>
+        <td class="side">スペルビア帝国にある
+忘却の封地じゃな</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202011_msg023</td>
+        <td>84</td>
+        <td class="side">ただ　ムスビが言うには[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202011_msg024</td>
+        <td>84</td>
+        <td class="side">何です？
+わたしがどうかしましたか？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202011_msg025</td>
+        <td>84</td>
+        <td class="side">おおちょうどいい
+レックス達に昔埋めた
+小手を取ってきてもらおうと思ってな</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202011_msg026</td>
+        <td>84</td>
+        <td class="side">あれはスペルビアの
+忘却の封地じゃったよな？</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202011_msg027</td>
+        <td>84</td>
+        <td class="side">違いますよ～</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202011_msg028</td>
+        <td>84</td>
+        <td class="side">あれは確かインヴィディア烈王国の
+ペルラ噴水公園跡地に
+埋めたんですよ</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202011_msg029</td>
+        <td>84</td>
+        <td class="side">そうじゃったか？
+そんなことはないだろう？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202011_msg030</td>
+        <td>84</td>
+        <td class="side">いいえ　確かにインヴィディアでした</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202011_msg031</td>
+        <td>84</td>
+        <td class="side">うーん[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst202011_msg032</td>
+        <td>84</td>
+        <td class="side">ああ　もう思い出せんから
+どっちも探してきてくれ！</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst202011_msg033</td>
+        <td>84</td>
+        <td class="side">何て投げやりな[ML:Dash ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst202011_msg034</td>
+        <td>84</td>
+        <td class="side">しかたない
+両方共探しに行ってみよう</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

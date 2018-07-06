@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITM_SalvageList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>Caption</th>
+          <th>Rarity</th>
+          <th>Price</th>
+          <th>Quest</th>
+          <th>NoSell</th>
+          <th>Protect</th>
+        </tr>
+      </thead>
+      <tr id="20001">
+        <td>20001</td>
+        <td>
+          <details>
+            <summary>8 refs</summary>
+            <a href="FLD_AddItem.html#181">FLD_AddItem#181</a>
+            <a href="MNU_ShopNormal.html#18">MNU_ShopNormal#18</a>
+            <a href="MNU_ShopNormal.html#31">MNU_ShopNormal#31</a>
+            <a href="MNU_ShopNormal.html#52">MNU_ShopNormal#52</a>
+            <a href="MNU_ShopNormal.html#66">MNU_ShopNormal#66</a>
+            <a href="MNU_ShopNormal.html#78">MNU_ShopNormal#78</a>
+            <a href="MNU_ShopNormal.html#93">MNU_ShopNormal#93</a>
+            <a href="MNU_ShopNormal.html#102">MNU_ShopNormal#102</a>
+          </details>
+        </td>
+        <td class="side">普通气瓶</td>
+        <td>面对大众的普通气瓶
+难以打捞好东西</td>
+        <td>普通</td>
+        <td>500</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="20002">
+        <td>20002</td>
+        <td>
+          <details>
+            <summary>14 refs</summary>
+            <a href="FLD_AddItem.html#3">FLD_AddItem#3</a>
+            <a href="FLD_AddItem.html#4">FLD_AddItem#4</a>
+            <a href="FLD_AddItem.html#9">FLD_AddItem#9</a>
+            <a href="FLD_AddItem.html#101">FLD_AddItem#101</a>
+            <a href="MNU_DlcGift.html#3">MNU_DlcGift#3</a>
+            <a href="MNU_ShopChangeTask.html#617">MNU_ShopChangeTask#极品气瓶</a>
+            <a href="MNU_ShopChangeTask.html#626">MNU_ShopChangeTask#增幅气瓶</a>
+            <a href="MNU_ShopNormal.html#18">MNU_ShopNormal#18</a>
+            <a href="MNU_ShopNormal.html#31">MNU_ShopNormal#31</a>
+            <a href="MNU_ShopNormal.html#52">MNU_ShopNormal#52</a>
+            <a href="MNU_ShopNormal.html#66">MNU_ShopNormal#66</a>
+            <a href="MNU_ShopNormal.html#78">MNU_ShopNormal#78</a>
+            <a href="MNU_ShopNormal.html#93">MNU_ShopNormal#93</a>
+            <a href="MNU_ShopNormal.html#102">MNU_ShopNormal#102</a>
+          </details>
+        </td>
+        <td class="side">白银气瓶</td>
+        <td>针对熟练者的较高性能气瓶
+提升打捞到好东西的几率</td>
+        <td>普通</td>
+        <td>2000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="20003">
+        <td>20003</td>
+        <td>
+          <details>
+            <summary>11 refs</summary>
+            <a href="FLD_AddItem.html#4">FLD_AddItem#4</a>
+            <a href="FLD_AddItem.html#102">FLD_AddItem#102</a>
+            <a href="FLD_ConditionItem.html#55">FLD_ConditionItem#55</a>
+            <a href="MNU_ShopChangeTask.html#617">MNU_ShopChangeTask#极品气瓶</a>
+            <a href="MNU_ShopNormal.html#18">MNU_ShopNormal#18</a>
+            <a href="MNU_ShopNormal.html#31">MNU_ShopNormal#31</a>
+            <a href="MNU_ShopNormal.html#52">MNU_ShopNormal#52</a>
+            <a href="MNU_ShopNormal.html#66">MNU_ShopNormal#66</a>
+            <a href="MNU_ShopNormal.html#78">MNU_ShopNormal#78</a>
+            <a href="MNU_ShopNormal.html#93">MNU_ShopNormal#93</a>
+            <a href="MNU_ShopNormal.html#102">MNU_ShopNormal#102</a>
+          </details>
+        </td>
+        <td class="side">黄金气瓶</td>
+        <td>在关键时起作用的高性能高价格气瓶
+可以以较高的几率打捞到极佳的物品</td>
+        <td>稀有</td>
+        <td>10000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="20004">
+        <td>20004</td>
+        <td>
+          <details>
+            <summary>11 refs</summary>
+            <a href="FLD_AddItem.html#4">FLD_AddItem#4</a>
+            <a href="FLD_AddItem.html#103">FLD_AddItem#103</a>
+            <a href="FLD_AddItem.html#104">FLD_AddItem#104</a>
+            <a href="FLD_QuestReward.html#944">FLD_QuestReward#944</a>
+            <a href="MNU_ShopNormal.html#18">MNU_ShopNormal#18</a>
+            <a href="MNU_ShopNormal.html#31">MNU_ShopNormal#31</a>
+            <a href="MNU_ShopNormal.html#52">MNU_ShopNormal#52</a>
+            <a href="MNU_ShopNormal.html#66">MNU_ShopNormal#66</a>
+            <a href="MNU_ShopNormal.html#78">MNU_ShopNormal#78</a>
+            <a href="MNU_ShopNormal.html#93">MNU_ShopNormal#93</a>
+            <a href="MNU_ShopNormal.html#102">MNU_ShopNormal#102</a>
+          </details>
+        </td>
+        <td class="side">极品气瓶</td>
+        <td>非常少见的终极气瓶
+能保障最佳的打捞结果</td>
+        <td>史诗</td>
+        <td>50000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="20005">
+        <td>20005</td>
+        <td>
+        </td>
+        <td class="side">Special Cylinder (Prov.)</td>
+        <td></td>
+        <td>普通</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="20006">
+        <td>20006</td>
+        <td>
+        </td>
+        <td class="side">Special Cylinder (Prov.)</td>
+        <td></td>
+        <td>普通</td>
+        <td>5000</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="20007">
+        <td>20007</td>
+        <td>
+        </td>
+        <td class="side">Special Cylinder (Prov.)</td>
+        <td></td>
+        <td>普通</td>
+        <td>6000</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="20008">
+        <td>20008</td>
+        <td>
+        </td>
+        <td class="side">Special Cylinder (Prov.)</td>
+        <td></td>
+        <td>普通</td>
+        <td>7000</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="20009">
+        <td>20009</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="FLD_QuestCollect.html#122">FLD_QuestCollect#122</a>
+            <a href="MNU_ShopNormal.html#52">MNU_ShopNormal#52</a>
+          </details>
+        </td>
+        <td class="side">Special Cylinder (Prov.)</td>
+        <td></td>
+        <td>普通</td>
+        <td>10000</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="20010">
+        <td>20010</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="FLD_QuestCollect.html#252">FLD_QuestCollect#252</a>
+            <a href="FLD_QuestReward.html#1026">FLD_QuestReward#1026</a>
+            <a href="../common_gmk/FLD_SalvagePointList.html#9">FLD_SalvagePointList#sal_ma05_03</a>
+          </details>
+        </td>
+        <td class="side">增幅气瓶</td>
+        <td>希索索制作的特殊气瓶
+可以打捞增幅器</td>
+        <td>普通</td>
+        <td>2000</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

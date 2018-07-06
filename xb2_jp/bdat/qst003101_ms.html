@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst003101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst003101_msg0001</td>
+        <td>84</td>
+        <td class="side">今ちょっと手が離せないんだ
+何か用があるなら後にしてくれないか？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst003101_msg0002</td>
+        <td>84</td>
+        <td class="side">大丈夫なもんか
+最近　配給所はてんやわんやの事態だ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst003101_msg0003</td>
+        <td>84</td>
+        <td class="side">ただでさえ人手が足りてなかったのに
+アーケディアの難民もやってきたんだぞ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst003101_msg0004</td>
+        <td>84</td>
+        <td class="side">インヴィディアの民間人はもちろん
+俺達軍人にも不満が募るばかりだ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst003101_msg0005</td>
+        <td>84</td>
+        <td class="side">あんな事件の後だ
+手を取り合わなければとは思うが[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst003101_msg0006</td>
+        <td>84</td>
+        <td class="side">多くの民　中でも日々の生活さえも
+厳しい者は特にアーケディアからの難民が
+気にくわないだろうな</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst003101_msg0007</td>
+        <td>84</td>
+        <td class="side">フォンス・マイムには
+3つの配給所があるんだが
+ほとんどの場所で問題を抱えてる[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst003101_msg0008</td>
+        <td>84</td>
+        <td class="side">俺達にもう少し余裕が
+あればいいのだが[ML:Dash ]
+目の前のことを対処するのに必死なんだ</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst003101_msg0009</td>
+        <td>84</td>
+        <td class="side">お前さん達が手伝ってくれると？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst003101_msg0010</td>
+        <td>84</td>
+        <td class="side">確かにそうしてくれると
+俺達に余裕が生まれる</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst003101_msg0011</td>
+        <td>84</td>
+        <td class="side">民間人の不満の対策もできるかもしれん</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst003101_msg0012</td>
+        <td>84</td>
+        <td class="side">だが　食材も少ないから
+そこから頼むことになるぞ[ML:Dash ]
+任せられるか？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst003101_msg0013</td>
+        <td>84</td>
+        <td class="side">ありがたい</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst003101_msg0014</td>
+        <td>84</td>
+        <td class="side">さっきも言ったが配給所は3か所あってな</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst003101_msg0015</td>
+        <td>84</td>
+        <td class="side">こことクヴェレ戦艦整備場と
+フォンス・マイム港にあるんだ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst003101_msg0016</td>
+        <td>84</td>
+        <td class="side">それぞれ抱えている問題点は違うはずだ
+詳しくは担当者に聞いてみてくれ
+ここは隣にいるヴェルモが担当だ</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst003101_msg0017</td>
+        <td>84</td>
+        <td class="side">では　よろしく頼む
+大した礼はできんかもしれんが
+期待しているぞ</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst003101_msg0101</td>
+        <td>84</td>
+        <td class="side">配給を手伝ってくれるんだろ？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst003101_msg0102</td>
+        <td>84</td>
+        <td class="side">配給所はここ以外には
+クヴェレ戦艦整備場と
+フォンス・マイム港にある</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst003101_msg0103</td>
+        <td>84</td>
+        <td class="side">よろしく頼むぞ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

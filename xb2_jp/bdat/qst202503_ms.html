@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202503_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202503_msg0001</td>
+        <td>84</td>
+        <td class="side">敵戦力の92%を無力化
+残りも戦闘継続は不可能と判断します</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202503_msg0002</td>
+        <td>84</td>
+        <td class="side">敵の増援は？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202503_msg0003</td>
+        <td>84</td>
+        <td class="side">周囲を索敵しましたが
+新たな敵の出現はありません</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202503_msg0004</td>
+        <td>84</td>
+        <td class="side">す　すごいも[ML:Dash ]
+ほんとにやっつけちゃったも</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202503_msg0005</td>
+        <td>84</td>
+        <td class="side">まぁ　ほとんどKOS-MOS Re:が
+吹き飛ばしちまったんだけどな</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202503_msg0006</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]ほんま
+恐ろしい威力やな　こりゃ</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202503_msg0007</td>
+        <td>84</td>
+        <td class="side">現状　選択可能な行動の中で
+最適なものを選択したつもりなのですが</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202503_msg0008</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]少しやり過ぎたでしょうか？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202503_msg0009</td>
+        <td>84</td>
+        <td class="side">あ　いや大丈夫だよ</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202503_msg0010</td>
+        <td>84</td>
+        <td class="side">そうや
+KOS-MOS Re:のおかげで助かったで</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202503_msg0011</td>
+        <td>84</td>
+        <td class="side">ありがとうございます</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202503_msg0012</td>
+        <td>84</td>
+        <td class="side">しかし　あのKOS-MOS Re:の攻撃は
+近隣の国でも確認されただろうな</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202503_msg0013</td>
+        <td>84</td>
+        <td class="side">確かにルクスリアやスペルビアからも
+あの攻撃の光は見えとるやろうな</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202503_msg0014</td>
+        <td>84</td>
+        <td class="side">下手をすれば
+大騒ぎになってるかもしれんで</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202503_msg0015</td>
+        <td>84</td>
+        <td class="side">これらの人工ブレイドへの
+注意喚起の必要もあるな</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202503_msg0016</td>
+        <td>84</td>
+        <td class="side">まずはゼーリッヒ王に
+報告をしておいた方がいいだろう</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202503_msg0017</td>
+        <td>84</td>
+        <td class="side">そうやね　さっさと報告せんと
+心配するやろね</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202503_msg0018</td>
+        <td>84</td>
+        <td class="side">心配性やさかいな
+ルクスリアの王宮テオスカルディアへ急ごか</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

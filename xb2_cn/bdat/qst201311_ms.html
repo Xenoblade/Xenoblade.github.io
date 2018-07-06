@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201311_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201311_msg0001</td>
+        <td>84</td>
+        <td class="side">您就是达利斯先生吧</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201311_msg0002</td>
+        <td>84</td>
+        <td class="side">嗯 我就是达利斯
+你们想知道什么？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201311_msg0003</td>
+        <td>84</td>
+        <td class="side">我想打听一下
+冯斯麦姆发生的[ML:Dash ]
+儿童失踪案的情报</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201311_msg0005</td>
+        <td>84</td>
+        <td class="side">那个案件啊[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201311_msg0006</td>
+        <td>84</td>
+        <td class="side">我也接到委托做了很多调查
+可是完全找不到情报 这很不正常</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201311_msg0007</td>
+        <td>84</td>
+        <td class="side">搞得大家甚至都以为是
+神隐之类的神秘现象了</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201311_msg0008</td>
+        <td>84</td>
+        <td class="side">所以
+我也没找到任何情报
+不好意思</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201311_msg0010</td>
+        <td>84</td>
+        <td class="side">是吗[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201311_msg0011</td>
+        <td>84</td>
+        <td class="side">打扰了
+您刚刚说了神隐吧？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201311_msg0012</td>
+        <td>84</td>
+        <td class="side">嗯 是啊</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201311_msg0013</td>
+        <td>84</td>
+        <td class="side">其实 我女儿玛尔琪娜出门去玩之后
+就再也没有回来了[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201311_msg0014</td>
+        <td>84</td>
+        <td class="side">和她一起玩的孩子们也是[ML:Dash ]
+怎么找也找不到[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201311_msg0015</td>
+        <td>84</td>
+        <td class="side">我想这应该和最近发生的
+神隐有关[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201311_msg0019</td>
+        <td>84</td>
+        <td class="side">您知道女儿
+去哪里玩了吗？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201311_msg0020</td>
+        <td>84</td>
+        <td class="side">这个 抱歉
+我也不是很清楚[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201311_msg0021</td>
+        <td>84</td>
+        <td class="side">我正在和其他孩子的家长
+一起找</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201311_msg0022</td>
+        <td>84</td>
+        <td class="side">说不定他们已经打探到
+什么新情报了[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201311_msg0023</td>
+        <td>84</td>
+        <td class="side">我想跟他们打听一下
+去哪里可以见到他们呢？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201311_msg0024</td>
+        <td>84</td>
+        <td class="side">呃 拉库扎住在剧场区
+赛尔迪住在商业区</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201311_msg0025</td>
+        <td>84</td>
+        <td class="side">多利亚斯应该在
+塞斯罗亚水田
+请各位直接去问他们吧[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201311_msg0026</td>
+        <td>84</td>
+        <td class="side">谢谢您
+我知道了</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201311_msg0027</td>
+        <td>84</td>
+        <td class="side">请放心
+我们一定会找到孩子们的</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201311_msg0028</td>
+        <td>84</td>
+        <td class="side">真的吗！？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201311_msg0029</td>
+        <td>84</td>
+        <td class="side">嗯[ML:Dash ]
+请您在这里
+等着孩子们回来吧</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201311_msg0030</td>
+        <td>84</td>
+        <td class="side">谢谢您
+拜托您了！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201311_msg0031</td>
+        <td>84</td>
+        <td class="side">首先去拜访其他家长
+寻找线索吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

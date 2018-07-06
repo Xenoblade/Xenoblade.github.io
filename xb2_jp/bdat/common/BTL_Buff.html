@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BTL_Buff</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">Name</th>
+          <th>DebugName</th>
+          <th>Caption</th>
+          <th>BaseNum</th>
+          <th>BaseTime</th>
+          <th>BaseRecast</th>
+          <th>BaseProb</th>
+          <th>Interval</th>
+          <th>Effect</th>
+          <th>VoiceNum</th>
+          <th>Icon</th>
+          <th>Buff</th>
+          <th>SE</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>210 refs</summary>
+            <a href="BTL_Arts_Bl.html#240">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#241">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#242">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#243">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#244">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#245">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#246">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#247">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#248">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#249">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#250">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#251">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#252">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#253">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#254">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#255">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#256">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#257">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#258">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#259">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#260">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#261">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#262">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#263">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_Bl.html#264">BTL_Arts_Bl#必殺技1</a>
+            <a href="BTL_Arts_Bl.html#265">BTL_Arts_Bl#必殺技2</a>
+            <a href="BTL_Arts_Bl.html#266">BTL_Arts_Bl#必殺技3</a>
+            <a href="BTL_Arts_BlSp.html#1">BTL_Arts_BlSp#ユニオンソード</a>
+            <a href="BTL_Arts_BlSp.html#2">BTL_Arts_BlSp#ネクサスフォース</a>
+            <a href="BTL_Arts_BlSp.html#3">BTL_Arts_BlSp#バーニングソード</a>
+            <a href="BTL_Arts_BlSp.html#4">BTL_Arts_BlSp#セイクリッドアロー</a>
+            <a href="BTL_Arts_BlSp.html#5">BTL_Arts_BlSp#インフィニットブレイド</a>
+            <a href="BTL_Arts_BlSp.html#6">BTL_Arts_BlSp#ディバインソード</a>
+            <a href="BTL_Arts_BlSp.html#7">BTL_Arts_BlSp#メイルシュトローム</a>
+            <a href="BTL_Arts_BlSp.html#8">BTL_Arts_BlSp#メイルシュトローム</a>
+            <a href="BTL_Arts_BlSp.html#9">BTL_Arts_BlSp#ジェットカムカム</a>
+            <a href="BTL_Arts_BlSp.html#10">BTL_Arts_BlSp#ジャスティスフルバースト</a>
+            <a href="BTL_Arts_BlSp.html#11">BTL_Arts_BlSp#ジャッジメントスペシャル</a>
+            <a href="BTL_Arts_BlSp.html#12">BTL_Arts_BlSp#蒼炎剣・参の型・不知火</a>
+            <a href="BTL_Arts_BlSp.html#13">BTL_Arts_BlSp#蒼炎剣・参の型・不知火</a>
+            <a href="BTL_Arts_BlSp.html#14">BTL_Arts_BlSp#超音速雷神皇帝剣</a>
+            <a href="BTL_Arts_BlSp.html#15">BTL_Arts_BlSp#超音速雷神皇帝剣</a>
+            <a href="BTL_Arts_BlSp.html#16">BTL_Arts_BlSp#クリムゾンストーム</a>
+            <a href="BTL_Arts_BlSp.html#17">BTL_Arts_BlSp#クリムゾンストーム</a>
+            <a href="BTL_Arts_BlSp.html#18">BTL_Arts_BlSp#デッドリーディバイド</a>
+            <a href="BTL_Arts_BlSp.html#19">BTL_Arts_BlSp#デッドリードライブ</a>
+            <a href="BTL_Arts_BlSp.html#20">BTL_Arts_BlSp#デッドリーディバイド</a>
+            <a href="BTL_Arts_BlSp.html#21">BTL_Arts_BlSp#覆滅ノ業風</a>
+            <a href="BTL_Arts_BlSp.html#22">BTL_Arts_BlSp#彼岸花</a>
+            <a href="BTL_Arts_BlSp.html#23">BTL_Arts_BlSp#ラストナイトクロウ</a>
+            <a href="BTL_Arts_BlSp.html#24">BTL_Arts_BlSp#ミダレザキ</a>
+            <a href="BTL_Arts_BlSp.html#25">BTL_Arts_BlSp#ワールドエンド</a>
+            <a href="BTL_Arts_BlSp.html#26">BTL_Arts_BlSp#金剛焦熱</a>
+            <a href="BTL_Arts_BlSp.html#27">BTL_Arts_BlSp#百機炎武</a>
+            <a href="BTL_Arts_BlSp.html#28">BTL_Arts_BlSp#スタークラッシャー</a>
+            <a href="BTL_Arts_BlSp.html#29">BTL_Arts_BlSp#スターエクスプロージョン</a>
+            <a href="BTL_Arts_BlSp.html#30">BTL_Arts_BlSp#海神剣術・五百重波</a>
+            <a href="BTL_Arts_BlSp.html#31">BTL_Arts_BlSp#ファイナルホワイトアウト</a>
+            <a href="BTL_Arts_BlSp.html#32">BTL_Arts_BlSp#アポカリプス</a>
+            <a href="BTL_Arts_BlSp.html#33">BTL_Arts_BlSp#抜刀・四鬼神</a>
+            <a href="BTL_Arts_BlSp.html#34">BTL_Arts_BlSp#RMW</a>
+            <a href="BTL_Arts_BlSp.html#35">BTL_Arts_BlSp#ブレイズコンクエスト</a>
+            <a href="BTL_Arts_BlSp.html#36">BTL_Arts_BlSp#ブレイズコンクエスト</a>
+            <a href="BTL_Arts_BlSp.html#37">BTL_Arts_BlSp#フルコース食べちゃうッポ</a>
+            <a href="BTL_Arts_BlSp.html#38">BTL_Arts_BlSp#リーサルラベンダー</a>
+            <a href="BTL_Arts_BlSp.html#39">BTL_Arts_BlSp#メランコリーブレイカー</a>
+            <a href="BTL_Arts_BlSp.html#40">BTL_Arts_BlSp#レーゲングスレイド</a>
+            <a href="BTL_Arts_BlSp.html#41">BTL_Arts_BlSp#グレンツェンウィンター</a>
+            <a href="BTL_Arts_BlSp.html#42">BTL_Arts_BlSp#断罪の氷華</a>
+            <a href="BTL_Arts_BlSp.html#43">BTL_Arts_BlSp#スイートエモーション</a>
+            <a href="BTL_Arts_BlSp.html#44">BTL_Arts_BlSp#ホリブルアンサンブル</a>
+            <a href="BTL_Arts_BlSp.html#45">BTL_Arts_BlSp#クマリンファンタズム</a>
+            <a href="BTL_Arts_BlSp.html#46">BTL_Arts_BlSp#ハイパー爆砕フィニッシュ</a>
+            <a href="BTL_Arts_BlSp.html#47">BTL_Arts_BlSp#アースプリーステス</a>
+            <a href="BTL_Arts_BlSp.html#48">BTL_Arts_BlSp#ロイヤルティーパーティー</a>
+            <a href="BTL_Arts_BlSp.html#49">BTL_Arts_BlSp#セイントプラズマ</a>
+            <a href="BTL_Arts_BlSp.html#50">BTL_Arts_BlSp#ワザリングハイツ</a>
+            <a href="BTL_Arts_BlSp.html#51">BTL_Arts_BlSp#バチバチリサイタル</a>
+            <a href="BTL_Arts_BlSp.html#52">BTL_Arts_BlSp#天来・羅刹大連撃</a>
+            <a href="BTL_Arts_BlSp.html#53">BTL_Arts_BlSp#ばっちりハリケーン</a>
+            <a href="BTL_Arts_BlSp.html#54">BTL_Arts_BlSp#X・BUSTER</a>
+            <a href="BTL_Arts_BlSp.html#55">BTL_Arts_BlSp#天覆地載</a>
+            <a href="BTL_Arts_BlSp.html#56">BTL_Arts_BlSp#ドゥンケル・テアーター</a>
+            <a href="BTL_Arts_BlSp.html#57">BTL_Arts_BlSp#不撓のモルダバイト</a>
+            <a href="BTL_Arts_BlSp.html#58">BTL_Arts_BlSp#銀雪の栄華</a>
+            <a href="BTL_Arts_BlSp.html#59">BTL_Arts_BlSp#アブソリュートスラッシュ</a>
+            <a href="BTL_Arts_BlSp.html#60">BTL_Arts_BlSp#イモータルスパイク</a>
+            <a href="BTL_Arts_BlSp.html#61">BTL_Arts_BlSp#ワイズマンシュート</a>
+            <a href="BTL_Arts_BlSp.html#62">BTL_Arts_BlSp#インビンシブルラッシュ</a>
+            <a href="BTL_Arts_BlSp.html#63">BTL_Arts_BlSp#スペリオールストライク</a>
+            <a href="BTL_Arts_BlSp.html#64">BTL_Arts_BlSp#カオティックブロー</a>
+            <a href="BTL_Arts_BlSp.html#65">BTL_Arts_BlSp#ハーキュリアンブレイク</a>
+            <a href="BTL_Arts_BlSp.html#66">BTL_Arts_BlSp#メガトンチャージ</a>
+            <a href="BTL_Arts_BlSp.html#67">BTL_Arts_BlSp#ジャイアントスティング</a>
+            <a href="BTL_Arts_BlSp.html#68">BTL_Arts_BlSp#ラディカルバレット</a>
+            <a href="BTL_Arts_BlSp.html#69">BTL_Arts_BlSp#ライオットハンマー</a>
+            <a href="BTL_Arts_BlSp.html#70">BTL_Arts_BlSp#オーバーパワーエッジ</a>
+            <a href="BTL_Arts_BlSp.html#71">BTL_Arts_BlSp#コロッサルストライク</a>
+            <a href="BTL_Arts_BlSp.html#72">BTL_Arts_BlSp#インクレディブルビート</a>
+            <a href="BTL_Arts_BlSp.html#73">BTL_Arts_BlSp#シュプリームアックス</a>
+            <a href="BTL_Arts_BlSp.html#74">BTL_Arts_BlSp#インペリアルランス</a>
+            <a href="BTL_Arts_BlSp.html#75">BTL_Arts_BlSp#ドラグーンシュート</a>
+            <a href="BTL_Arts_BlSp.html#76">BTL_Arts_BlSp#カーディナルスイング</a>
+            <a href="BTL_Arts_BlSp.html#77">BTL_Arts_BlSp#トライアンフエッジ</a>
+            <a href="BTL_Arts_BlSp.html#78">BTL_Arts_BlSp#アステロイドスロー</a>
+            <a href="BTL_Arts_BlSp.html#79">BTL_Arts_BlSp#アメイジングラッシュ</a>
+            <a href="BTL_Arts_BlSp.html#80">BTL_Arts_BlSp#サベージチャクラム</a>
+            <a href="BTL_Arts_BlSp.html#81">BTL_Arts_BlSp#81</a>
+            <a href="BTL_Arts_BlSp.html#82">BTL_Arts_BlSp#82</a>
+            <a href="BTL_Arts_BlSp.html#83">BTL_Arts_BlSp#83</a>
+            <a href="BTL_Arts_BlSp.html#84">BTL_Arts_BlSp#84</a>
+            <a href="BTL_Arts_BlSp.html#85">BTL_Arts_BlSp#85</a>
+            <a href="BTL_Arts_BlSp.html#86">BTL_Arts_BlSp#86</a>
+            <a href="BTL_Arts_BlSp.html#87">BTL_Arts_BlSp#87</a>
+            <a href="BTL_Arts_BlSp.html#88">BTL_Arts_BlSp#88</a>
+            <a href="BTL_Arts_BlSp.html#89">BTL_Arts_BlSp#89</a>
+            <a href="BTL_Arts_BlSp.html#90">BTL_Arts_BlSp#90</a>
+            <a href="BTL_Arts_BlSp.html#91">BTL_Arts_BlSp#91</a>
+            <a href="BTL_Arts_BlSp.html#92">BTL_Arts_BlSp#92</a>
+            <a href="BTL_Arts_BlSp.html#93">BTL_Arts_BlSp#93</a>
+            <a href="BTL_Arts_BlSp.html#94">BTL_Arts_BlSp#94</a>
+            <a href="BTL_Arts_BlSp.html#95">BTL_Arts_BlSp#95</a>
+            <a href="BTL_Arts_BlSp.html#96">BTL_Arts_BlSp#96</a>
+            <a href="BTL_Arts_BlSp.html#97">BTL_Arts_BlSp#97</a>
+            <a href="BTL_Arts_BlSp.html#98">BTL_Arts_BlSp#98</a>
+            <a href="BTL_Arts_BlSp.html#99">BTL_Arts_BlSp#99</a>
+            <a href="BTL_Arts_BlSp.html#100">BTL_Arts_BlSp#100</a>
+            <a href="BTL_Arts_BlSp.html#101">BTL_Arts_BlSp#101</a>
+            <a href="BTL_Arts_BlSp.html#102">BTL_Arts_BlSp#102</a>
+            <a href="BTL_Arts_BlSp.html#103">BTL_Arts_BlSp#103</a>
+            <a href="BTL_Arts_BlSp.html#104">BTL_Arts_BlSp#104</a>
+            <a href="BTL_Arts_BlSp.html#105">BTL_Arts_BlSp#105</a>
+            <a href="BTL_Arts_BlSp.html#106">BTL_Arts_BlSp#106</a>
+            <a href="BTL_Arts_BlSp.html#107">BTL_Arts_BlSp#107</a>
+            <a href="BTL_Arts_BlSp.html#108">BTL_Arts_BlSp#108</a>
+            <a href="BTL_Arts_BlSp.html#109">BTL_Arts_BlSp#109</a>
+            <a href="BTL_Arts_BlSp.html#110">BTL_Arts_BlSp#110</a>
+            <a href="BTL_Arts_BlSp.html#111">BTL_Arts_BlSp#111</a>
+            <a href="BTL_Arts_BlSp.html#112">BTL_Arts_BlSp#112</a>
+            <a href="BTL_Arts_BlSp.html#113">BTL_Arts_BlSp#113</a>
+            <a href="BTL_Arts_BlSp.html#114">BTL_Arts_BlSp#114</a>
+            <a href="BTL_Arts_BlSp.html#115">BTL_Arts_BlSp#115</a>
+            <a href="BTL_Arts_BlSp.html#116">BTL_Arts_BlSp#116</a>
+            <a href="BTL_Arts_BlSp.html#117">BTL_Arts_BlSp#117</a>
+            <a href="BTL_Arts_BlSp.html#118">BTL_Arts_BlSp#U・TENERITAS</a>
+            <a href="BTL_Arts_BlSp.html#119">BTL_Arts_BlSp#バスター・インパクト</a>
+            <a href="BTL_Arts_BlSp.html#120">BTL_Arts_BlSp#モナド解放</a>
+            <a href="BTL_Arts_BlSp.html#121">BTL_Arts_BlSp#バタフライステップ</a>
+            <a href="BTL_Arts_BlSp.html#122">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#123">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#124">BTL_Arts_BlSp#124</a>
+            <a href="BTL_Arts_BlSp.html#125">BTL_Arts_BlSp#125</a>
+            <a href="BTL_Arts_BlSp.html#126">BTL_Arts_BlSp#126</a>
+            <a href="BTL_Arts_BlSp.html#127">BTL_Arts_BlSp#127</a>
+            <a href="BTL_Arts_BlSp.html#128">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#129">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#130">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#131">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#132">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#133">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_BlSp.html#134">BTL_Arts_BlSp#必殺技4</a>
+            <a href="BTL_Arts_Dr.html#628">BTL_Arts_Dr#アーツ</a>
+            <a href="CHR_Bl.html#1002">CHR_Bl#ヒカリ</a>
+            <a href="CHR_Bl.html#1003">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1016">CHR_Bl#ヂカラオ</a>
+            <a href="CHR_Bl.html#1017">CHR_Bl#ヴァサラ</a>
+            <a href="CHR_Bl.html#1018">CHR_Bl#メイ</a>
+            <a href="CHR_Bl.html#1019">CHR_Bl#メノウ</a>
+            <a href="CHR_Bl.html#1022">CHR_Bl#クビラ</a>
+            <a href="CHR_Bl.html#1024">CHR_Bl#ミクマリ</a>
+            <a href="CHR_Bl.html#1032">CHR_Bl#リンネ</a>
+            <a href="CHR_Bl.html#1036">CHR_Bl#ヤエギリ</a>
+            <a href="CHR_Bl.html#1039">CHR_Bl#KOS-MOS Re:</a>
+            <a href="CHR_Bl.html#1040">CHR_Bl#テンイ</a>
+            <a href="CHR_Bl.html#1042">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1044">CHR_Bl#ベンケイ</a>
+            <a href="CHR_Bl.html#1047">CHR_Bl#ラゴウ</a>
+            <a href="CHR_Bl.html#1049">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1050">CHR_Bl#クビラ</a>
+            <a href="CHR_Bl.html#1051">CHR_Bl#男・トマホーク</a>
+            <a href="CHR_Bl.html#1055">CHR_Bl#男・日本刀</a>
+            <a href="CHR_Bl.html#1058">CHR_Bl#屈強・トマホーク</a>
+            <a href="CHR_Bl.html#1062">CHR_Bl#屈強・日本刀</a>
+            <a href="CHR_Bl.html#1065">CHR_Bl#女・トマホーク</a>
+            <a href="CHR_Bl.html#1069">CHR_Bl#女・日本刀</a>
+            <a href="CHR_Bl.html#1074">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1077">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1080">CHR_Bl#ラゴウ</a>
+            <a href="CHR_Bl.html#1083">CHR_Bl#1083</a>
+            <a href="CHR_Bl.html#1084">CHR_Bl#1084</a>
+            <a href="CHR_Bl.html#1086">CHR_Bl#1086</a>
+            <a href="CHR_Bl.html#1087">CHR_Bl#1087</a>
+            <a href="CHR_Bl.html#1089">CHR_Bl#1089</a>
+            <a href="CHR_Bl.html#1090">CHR_Bl#1090</a>
+            <a href="CHR_Bl.html#1093">CHR_Bl#1093</a>
+            <a href="CHR_Bl.html#1094">CHR_Bl#1094</a>
+            <a href="CHR_Bl.html#1096">CHR_Bl#1096</a>
+            <a href="CHR_Bl.html#1097">CHR_Bl#1097</a>
+            <a href="CHR_Bl.html#1099">CHR_Bl#1099</a>
+            <a href="CHR_Bl.html#1100">CHR_Bl#1100</a>
+            <a href="CHR_Bl.html#1102">CHR_Bl#テンイ</a>
+            <a href="CHR_Bl.html#1104">CHR_Bl#T-elos Re:</a>
+            <a href="CHR_Bl.html#1107">CHR_Bl#フィオルン</a>
+            <a href="CHR_Bl.html#1109">CHR_Bl#ブレイド4</a>
+            <a href="CHR_Bl.html#1111">CHR_Bl#ブレイド</a>
+            <a href="ITM_HanaNArtsSet.html#59001">ITM_HanaNArtsSet#AC会心アップⅠ</a>
+            <a href="ITM_HanaNArtsSet.html#59002">ITM_HanaNArtsSet#AC会心アップⅡ</a>
+            <a href="ITM_HanaNArtsSet.html#59003">ITM_HanaNArtsSet#AC会心アップⅢ</a>
+            <a href="ITM_HanaNArtsSet.html#59004">ITM_HanaNArtsSet#AC会心アップⅣ</a>
+            <a href="ITM_HanaNArtsSet.html#59005">ITM_HanaNArtsSet#AC会心アップⅤ</a>
+          </details>
+        </td>
+        <td class="side">会心アップ</td>
+        <td>会心アップ</td>
+        <td>クリティカル率がアップする</td>
+        <td>25</td>
+        <td>450</td>
+        <td>600</td>
+        <td>75</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>1</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>76 refs</summary>
+            <a href="BTL_Arts_Dr.html#55">BTL_Arts_Dr#ばらばらミサイル</a>
+            <a href="BTL_Arts_Dr.html#73">BTL_Arts_Dr#ファントムフレイム</a>
+            <a href="BTL_Arts_Dr.html#77">BTL_Arts_Dr#蒼炎剣・弐の型・閻魔</a>
+            <a href="BTL_Arts_Dr.html#99">BTL_Arts_Dr#ワイルドサイス</a>
+            <a href="BTL_Arts_Dr.html#103">BTL_Arts_Dr#クイックマッスル</a>
+            <a href="BTL_Arts_Dr.html#233">BTL_Arts_Dr#デュアルスラッシュ</a>
+            <a href="BTL_Arts_Dr.html#235">BTL_Arts_Dr#スコーピオンテイル</a>
+            <a href="BTL_Arts_Dr.html#239">BTL_Arts_Dr#無月刃</a>
+            <a href="BTL_Arts_Dr.html#242">BTL_Arts_Dr#残影ストライク</a>
+            <a href="BTL_Arts_Dr.html#372">BTL_Arts_Dr#ロックスラスト</a>
+            <a href="BTL_Arts_Dr.html#377">BTL_Arts_Dr#マーシレスツイスター</a>
+            <a href="BTL_Arts_Dr.html#381">BTL_Arts_Dr#鬼薊</a>
+            <a href="BTL_Arts_Dr.html#385">BTL_Arts_Dr#本気スピン</a>
+            <a href="BTL_Arts_Dr.html#636">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#640">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#666">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#671">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#676">BTL_Arts_Dr#刹那</a>
+            <a href="BTL_Arts_En.html#98">BTL_Arts_En#ピットフォール</a>
+            <a href="BTL_Arts_En.html#99">BTL_Arts_En#ピットフォール</a>
+            <a href="BTL_Arts_En.html#192">BTL_Arts_En#ビーウィッチング</a>
+            <a href="BTL_Arts_En.html#197">BTL_Arts_En#ビーウィッチング</a>
+            <a href="BTL_Arts_En.html#278">BTL_Arts_En#インメルマンターン</a>
+            <a href="BTL_Arts_En.html#348">BTL_Arts_En#モグロケット</a>
+            <a href="BTL_Arts_En.html#443">BTL_Arts_En#ピョンピョン</a>
+            <a href="BTL_Arts_En.html#446">BTL_Arts_En#マスターアーツ</a>
+            <a href="BTL_Arts_En.html#530">BTL_Arts_En#チャージカウント</a>
+            <a href="BTL_Arts_En.html#549">BTL_Arts_En#朧月夜</a>
+            <a href="BTL_Arts_En.html#616">BTL_Arts_En#チャージカウント</a>
+            <a href="BTL_Arts_En.html#627">BTL_Arts_En#クイックマッスル</a>
+            <a href="BTL_Arts_En.html#768">BTL_Arts_En#刹那</a>
+            <a href="BTL_Arts_En.html#777">BTL_Arts_En#無刃剣</a>
+            <a href="BTL_Arts_En.html#812">BTL_Arts_En#ワース</a>
+            <a href="BTL_Arts_En.html#836">BTL_Arts_En#戦闘警戒</a>
+            <a href="BTL_Arts_En.html#837">BTL_Arts_En#戦闘警戒</a>
+            <a href="BTL_Arts_En.html#881">BTL_Arts_En#881</a>
+            <a href="BTL_Arts_En.html#905">BTL_Arts_En#フォトンエッジ</a>
+            <a href="BTL_Arts_En.html#918">BTL_Arts_En#スネークバイト</a>
+            <a href="BTL_Arts_En.html#964">BTL_Arts_En#964</a>
+            <a href="BTL_Arts_En.html#971">BTL_Arts_En#971</a>
+            <a href="CHR_Bl.html#1001">CHR_Bl#ホムラ</a>
+            <a href="CHR_Bl.html#1004">CHR_Bl#ビャッコ</a>
+            <a href="CHR_Bl.html#1014">CHR_Bl#ワダツミ</a>
+            <a href="CHR_Bl.html#1019">CHR_Bl#メノウ</a>
+            <a href="CHR_Bl.html#1021">CHR_Bl#イダテン</a>
+            <a href="CHR_Bl.html#1024">CHR_Bl#ミクマリ</a>
+            <a href="CHR_Bl.html#1025">CHR_Bl#セオリ</a>
+            <a href="CHR_Bl.html#1026">CHR_Bl#トキハ</a>
+            <a href="CHR_Bl.html#1028">CHR_Bl#アザミ</a>
+            <a href="CHR_Bl.html#1031">CHR_Bl#ウカ</a>
+            <a href="CHR_Bl.html#1034">CHR_Bl#シキ</a>
+            <a href="CHR_Bl.html#1041">CHR_Bl#ツキ</a>
+            <a href="CHR_Bl.html#1047">CHR_Bl#ラゴウ</a>
+            <a href="CHR_Bl.html#1052">CHR_Bl#男・ランス</a>
+            <a href="CHR_Bl.html#1053">CHR_Bl#男・キャノン</a>
+            <a href="CHR_Bl.html#1059">CHR_Bl#屈強・ランス</a>
+            <a href="CHR_Bl.html#1060">CHR_Bl#屈強・キャノン</a>
+            <a href="CHR_Bl.html#1066">CHR_Bl#女・ランス</a>
+            <a href="CHR_Bl.html#1067">CHR_Bl#女・エーテルキャノン</a>
+            <a href="CHR_Bl.html#1072">CHR_Bl#四足・ツインリング</a>
+            <a href="CHR_Bl.html#1075">CHR_Bl#ホムラ</a>
+            <a href="CHR_Bl.html#1080">CHR_Bl#ラゴウ</a>
+            <a href="CHR_Bl.html#1082">CHR_Bl#1082</a>
+            <a href="CHR_Bl.html#1085">CHR_Bl#1085</a>
+            <a href="CHR_Bl.html#1088">CHR_Bl#1088</a>
+            <a href="CHR_Bl.html#1091">CHR_Bl#1091</a>
+            <a href="CHR_Bl.html#1092">CHR_Bl#1092</a>
+            <a href="CHR_Bl.html#1095">CHR_Bl#1095</a>
+            <a href="CHR_Bl.html#1098">CHR_Bl#1098</a>
+            <a href="CHR_Bl.html#1101">CHR_Bl#1101</a>
+            <a href="CHR_Bl.html#1106">CHR_Bl#シュルク</a>
+            <a href="ITM_HanaNArtsSet.html#59006">ITM_HanaNArtsSet#AC命中アップⅠ</a>
+            <a href="ITM_HanaNArtsSet.html#59007">ITM_HanaNArtsSet#AC命中アップⅡ</a>
+            <a href="ITM_HanaNArtsSet.html#59008">ITM_HanaNArtsSet#AC命中アップⅢ</a>
+            <a href="ITM_HanaNArtsSet.html#59009">ITM_HanaNArtsSet#AC命中アップⅣ</a>
+            <a href="ITM_HanaNArtsSet.html#59010">ITM_HanaNArtsSet#AC命中アップⅤ</a>
+          </details>
+        </td>
+        <td class="side">命中アップ</td>
+        <td>命中アップ</td>
+        <td>命中率がアップする</td>
+        <td>25</td>
+        <td>450</td>
+        <td>600</td>
+        <td>75</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>2</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>76 refs</summary>
+            <a href="BTL_Arts_Dr.html#49">BTL_Arts_Dr#がちがちシールド</a>
+            <a href="BTL_Arts_Dr.html#202">BTL_Arts_Dr#アイアンウォール</a>
+            <a href="BTL_Arts_Dr.html#217">BTL_Arts_Dr#鉄壁シールド</a>
+            <a href="BTL_Arts_Dr.html#538">BTL_Arts_Dr#モナドシールド</a>
+            <a href="BTL_Arts_Dr.html#550">BTL_Arts_Dr#神剣シールド</a>
+            <a href="BTL_Arts_Dr.html#638">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#646">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#165">BTL_Arts_En#レベルアップ</a>
+            <a href="BTL_Arts_En.html#166">BTL_Arts_En#レベルアップ</a>
+            <a href="BTL_Arts_En.html#167">BTL_Arts_En#レベルアップ</a>
+            <a href="BTL_Arts_En.html#168">BTL_Arts_En#レベルアップ</a>
+            <a href="BTL_Arts_En.html#179">BTL_Arts_En#バトルコクーン</a>
+            <a href="BTL_Arts_En.html#183">BTL_Arts_En#キングクロウラー</a>
+            <a href="BTL_Arts_En.html#184">BTL_Arts_En#キングクロウラー</a>
+            <a href="BTL_Arts_En.html#205">BTL_Arts_En#バックシュート</a>
+            <a href="BTL_Arts_En.html#288">BTL_Arts_En#バルーンガス</a>
+            <a href="BTL_Arts_En.html#304">BTL_Arts_En#シェルガード</a>
+            <a href="BTL_Arts_En.html#405">BTL_Arts_En#エンチャントソード</a>
+            <a href="BTL_Arts_En.html#476">BTL_Arts_En#トゲトゲガード</a>
+            <a href="BTL_Arts_En.html#486">BTL_Arts_En#デストロイギア</a>
+            <a href="BTL_Arts_En.html#499">BTL_Arts_En#ウォーボイス</a>
+            <a href="BTL_Arts_En.html#521">BTL_Arts_En#ストームディフェンス</a>
+            <a href="BTL_Arts_En.html#531">BTL_Arts_En#スピニングボーイ</a>
+            <a href="BTL_Arts_En.html#588">BTL_Arts_En#チャクラバースト</a>
+            <a href="BTL_Arts_En.html#622">BTL_Arts_En#ブラストウォー</a>
+            <a href="BTL_Arts_En.html#645">BTL_Arts_En#ライオネルシールド</a>
+            <a href="BTL_Arts_En.html#757">BTL_Arts_En#モナドアーマー</a>
+            <a href="BTL_Arts_En.html#808">BTL_Arts_En#がちがちシールド</a>
+            <a href="BTL_Arts_En.html#834">BTL_Arts_En#暴走列車</a>
+            <a href="BTL_Arts_En.html#835">BTL_Arts_En#暴走列車</a>
+            <a href="BTL_Arts_En.html#848">BTL_Arts_En#ゴッドローブ</a>
+            <a href="BTL_Arts_En.html#890">BTL_Arts_En#890</a>
+            <a href="BTL_Arts_En.html#924">BTL_Arts_En#バトルウォー</a>
+            <a href="BTL_Arts_En.html#957">BTL_Arts_En#モナドアーマー</a>
+            <a href="CHR_Bl.html#1001">CHR_Bl#ホムラ</a>
+            <a href="CHR_Bl.html#1003">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1008">CHR_Bl#スザク</a>
+            <a href="CHR_Bl.html#1010">CHR_Bl#サイカ</a>
+            <a href="CHR_Bl.html#1015">CHR_Bl#グレン</a>
+            <a href="CHR_Bl.html#1016">CHR_Bl#ヂカラオ</a>
+            <a href="CHR_Bl.html#1018">CHR_Bl#メイ</a>
+            <a href="CHR_Bl.html#1022">CHR_Bl#クビラ</a>
+            <a href="CHR_Bl.html#1023">CHR_Bl#カサネ</a>
+            <a href="CHR_Bl.html#1028">CHR_Bl#アザミ</a>
+            <a href="CHR_Bl.html#1032">CHR_Bl#リンネ</a>
+            <a href="CHR_Bl.html#1036">CHR_Bl#ヤエギリ</a>
+            <a href="CHR_Bl.html#1039">CHR_Bl#KOS-MOS Re:</a>
+            <a href="CHR_Bl.html#1040">CHR_Bl#テンイ</a>
+            <a href="CHR_Bl.html#1041">CHR_Bl#ツキ</a>
+            <a href="CHR_Bl.html#1044">CHR_Bl#ベンケイ</a>
+            <a href="CHR_Bl.html#1045">CHR_Bl#サタヒコ</a>
+            <a href="CHR_Bl.html#1048">CHR_Bl#オオツチ</a>
+            <a href="CHR_Bl.html#1050">CHR_Bl#クビラ</a>
+            <a href="CHR_Bl.html#1051">CHR_Bl#男・トマホーク</a>
+            <a href="CHR_Bl.html#1058">CHR_Bl#屈強・トマホーク</a>
+            <a href="CHR_Bl.html#1065">CHR_Bl#女・トマホーク</a>
+            <a href="CHR_Bl.html#1074">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1075">CHR_Bl#ホムラ</a>
+            <a href="CHR_Bl.html#1076">CHR_Bl#サイカ</a>
+            <a href="CHR_Bl.html#1081">CHR_Bl#オオツチ</a>
+            <a href="CHR_Bl.html#1083">CHR_Bl#1083</a>
+            <a href="CHR_Bl.html#1086">CHR_Bl#1086</a>
+            <a href="CHR_Bl.html#1089">CHR_Bl#1089</a>
+            <a href="CHR_Bl.html#1093">CHR_Bl#1093</a>
+            <a href="CHR_Bl.html#1096">CHR_Bl#1096</a>
+            <a href="CHR_Bl.html#1099">CHR_Bl#1099</a>
+            <a href="CHR_Bl.html#1102">CHR_Bl#テンイ</a>
+            <a href="CHR_Bl.html#1104">CHR_Bl#T-elos Re:</a>
+            <a href="CHR_Bl.html#1107">CHR_Bl#フィオルン</a>
+            <a href="CHR_Bl.html#1109">CHR_Bl#ブレイド4</a>
+            <a href="CHR_Bl.html#1111">CHR_Bl#ブレイド</a>
+            <a href="ITM_HanaNArtsSet.html#59011">ITM_HanaNArtsSet#ACアーツ強化Ⅰ</a>
+            <a href="ITM_HanaNArtsSet.html#59012">ITM_HanaNArtsSet#ACアーツ強化Ⅱ</a>
+            <a href="ITM_HanaNArtsSet.html#59013">ITM_HanaNArtsSet#ACアーツ強化Ⅲ</a>
+            <a href="ITM_HanaNArtsSet.html#59014">ITM_HanaNArtsSet#ACアーツ強化Ⅳ</a>
+            <a href="ITM_HanaNArtsSet.html#59015">ITM_HanaNArtsSet#ACアーツ強化Ⅴ</a>
+          </details>
+        </td>
+        <td class="side">アーツ強化</td>
+        <td>アーツ強化</td>
+        <td>次のドライバーアーツの威力がアップする</td>
+        <td>50</td>
+        <td>0</td>
+        <td>750</td>
+        <td>50</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>3</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>47 refs</summary>
+            <a href="BTL_Arts_Dr.html#630">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#581">BTL_Arts_En#チャクラバースト</a>
+            <a href="BTL_Arts_En.html#646">BTL_Arts_En#ライオネルシールド</a>
+            <a href="BTL_Arts_En.html#662">BTL_Arts_En#エーテルバリア</a>
+            <a href="BTL_Arts_En.html#833">BTL_Arts_En#超級殲滅光弾</a>
+            <a href="BTL_Arts_En.html#850">BTL_Arts_En#ゴッドレイジ</a>
+            <a href="BTL_Arts_En.html#858">BTL_Arts_En#フレームギア</a>
+            <a href="BTL_Arts_En.html#970">BTL_Arts_En#970</a>
+            <a href="CHR_Bl.html#1002">CHR_Bl#ヒカリ</a>
+            <a href="CHR_Bl.html#1003">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1010">CHR_Bl#サイカ</a>
+            <a href="CHR_Bl.html#1021">CHR_Bl#イダテン</a>
+            <a href="CHR_Bl.html#1036">CHR_Bl#ヤエギリ</a>
+            <a href="CHR_Bl.html#1039">CHR_Bl#KOS-MOS Re:</a>
+            <a href="CHR_Bl.html#1042">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1046">CHR_Bl#カムイ</a>
+            <a href="CHR_Bl.html#1049">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1053">CHR_Bl#男・キャノン</a>
+            <a href="CHR_Bl.html#1055">CHR_Bl#男・日本刀</a>
+            <a href="CHR_Bl.html#1057">CHR_Bl#男・ナックルー</a>
+            <a href="CHR_Bl.html#1060">CHR_Bl#屈強・キャノン</a>
+            <a href="CHR_Bl.html#1062">CHR_Bl#屈強・日本刀</a>
+            <a href="CHR_Bl.html#1064">CHR_Bl#屈強・ナックル</a>
+            <a href="CHR_Bl.html#1067">CHR_Bl#女・エーテルキャノン</a>
+            <a href="CHR_Bl.html#1069">CHR_Bl#女・日本刀</a>
+            <a href="CHR_Bl.html#1071">CHR_Bl#女・ナックルクロー</a>
+            <a href="CHR_Bl.html#1072">CHR_Bl#四足・ツインリング</a>
+            <a href="CHR_Bl.html#1074">CHR_Bl#[ML:HomuriName ]</a>
+            <a href="CHR_Bl.html#1076">CHR_Bl#サイカ</a>
+            <a href="CHR_Bl.html#1078">CHR_Bl#カムイ</a>
+            <a href="CHR_Bl.html#1079">CHR_Bl#カムイ</a>
+            <a href="CHR_Bl.html#1084">CHR_Bl#1084</a>
+            <a href="CHR_Bl.html#1087">CHR_Bl#1087</a>
+            <a href="CHR_Bl.html#1090">CHR_Bl#1090</a>
+            <a href="CHR_Bl.html#1091">CHR_Bl#1091</a>
+            <a href="CHR_Bl.html#1094">CHR_Bl#1094</a>
+            <a href="CHR_Bl.html#1097">CHR_Bl#1097</a>
+            <a href="CHR_Bl.html#1100">CHR_Bl#1100</a>
+            <a href="CHR_Bl.html#1101">CHR_Bl#1101</a>
+            <a href="CHR_Bl.html#1105">CHR_Bl#ハナバスター</a>
+            <a href="CHR_Bl.html#1107">CHR_Bl#フィオルン</a>
+            <a href="CHR_Bl.html#1108">CHR_Bl#ブレイド3</a>
+            <a href="ITM_HanaNArtsSet.html#59016">ITM_HanaNArtsSet#ACリキャストアップⅠ</a>
+            <a href="ITM_HanaNArtsSet.html#59017">ITM_HanaNArtsSet#ACリキャストアップⅡ</a>
+            <a href="ITM_HanaNArtsSet.html#59018">ITM_HanaNArtsSet#ACリキャストアップⅢ</a>
+            <a href="ITM_HanaNArtsSet.html#59019">ITM_HanaNArtsSet#ACリキャストアップⅣ</a>
+            <a href="ITM_HanaNArtsSet.html#59020">ITM_HanaNArtsSet#ACリキャストアップⅤ</a>
+          </details>
+        </td>
+        <td class="side">リキャストアップ</td>
+        <td>リキャストアップ</td>
+        <td>オートアタックのリキャスト増加値がアップ</td>
+        <td>50</td>
+        <td>450</td>
+        <td>900</td>
+        <td>50</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>4</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>19 refs</summary>
+            <a href="BTL_Arts_Dr.html#670">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#552">BTL_Arts_En#真・白刃返し</a>
+            <a href="BTL_Arts_En.html#867">BTL_Arts_En#バリアフィールド</a>
+            <a href="CHR_Bl.html#1009">CHR_Bl#カグツチ</a>
+            <a href="CHR_Bl.html#1011">CHR_Bl#ニア</a>
+            <a href="CHR_Bl.html#1020">CHR_Bl#ユウオウ</a>
+            <a href="CHR_Bl.html#1030">CHR_Bl#ニューツ</a>
+            <a href="CHR_Bl.html#1033">CHR_Bl#ムスビ</a>
+            <a href="CHR_Bl.html#1035">CHR_Bl#ライコ</a>
+            <a href="CHR_Bl.html#1043">CHR_Bl#ヨシツネ</a>
+            <a href="CHR_Bl.html#1056">CHR_Bl#男・ボール</a>
+            <a href="CHR_Bl.html#1063">CHR_Bl#屈強・ボール</a>
+            <a href="CHR_Bl.html#1070">CHR_Bl#女・ビットボール</a>
+            <a href="CHR_Bl.html#1108">CHR_Bl#ブレイド3</a>
+            <a href="ITM_HanaNArtsSet.html#59021">ITM_HanaNArtsSet#ACダメージ吸収Ⅰ</a>
+            <a href="ITM_HanaNArtsSet.html#59022">ITM_HanaNArtsSet#ACダメージ吸収Ⅱ</a>
+            <a href="ITM_HanaNArtsSet.html#59023">ITM_HanaNArtsSet#ACダメージ吸収Ⅲ</a>
+            <a href="ITM_HanaNArtsSet.html#59024">ITM_HanaNArtsSet#ACダメージ吸収Ⅳ</a>
+            <a href="ITM_HanaNArtsSet.html#59025">ITM_HanaNArtsSet#ACダメージ吸収Ⅴ</a>
+          </details>
+        </td>
+        <td class="side">ダメージ吸収</td>
+        <td>ダメージ吸収</td>
+        <td>一定ダメージを吸収するバリアを張る</td>
+        <td>10</td>
+        <td>0</td>
+        <td>900</td>
+        <td>50</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>5</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>22 refs</summary>
+            <a href="BTL_Arts_Dr.html#315">BTL_Arts_Dr#朧燕</a>
+            <a href="BTL_Arts_Dr.html#329">BTL_Arts_Dr#朧燕</a>
+            <a href="BTL_Arts_Dr.html#668">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#548">BTL_Arts_En#白刃返し</a>
+            <a href="BTL_Arts_En.html#553">BTL_Arts_En#真・朧月夜</a>
+            <a href="BTL_Arts_En.html#747">BTL_Arts_En#クロウダンサー</a>
+            <a href="CHR_Bl.html#1014">CHR_Bl#ワダツミ</a>
+            <a href="CHR_Bl.html#1020">CHR_Bl#ユウオウ</a>
+            <a href="CHR_Bl.html#1025">CHR_Bl#セオリ</a>
+            <a href="CHR_Bl.html#1026">CHR_Bl#トキハ</a>
+            <a href="CHR_Bl.html#1030">CHR_Bl#ニューツ</a>
+            <a href="CHR_Bl.html#1037">CHR_Bl#イブキ</a>
+            <a href="CHR_Bl.html#1045">CHR_Bl#サタヒコ</a>
+            <a href="CHR_Bl.html#1054">CHR_Bl#男・シールド</a>
+            <a href="CHR_Bl.html#1061">CHR_Bl#屈強・シールド</a>
+            <a href="CHR_Bl.html#1068">CHR_Bl#女・シールドハンマー</a>
+            <a href="CHR_Bl.html#1105">CHR_Bl#ハナバスター</a>
+            <a href="ITM_HanaNArtsSet.html#59026">ITM_HanaNArtsSet#ACリアクション無効Ⅰ</a>
+            <a href="ITM_HanaNArtsSet.html#59027">ITM_HanaNArtsSet#ACリアクション無効Ⅱ</a>
+            <a href="ITM_HanaNArtsSet.html#59028">ITM_HanaNArtsSet#ACリアクション無効Ⅲ</a>
+            <a href="ITM_HanaNArtsSet.html#59029">ITM_HanaNArtsSet#ACリアクション無効Ⅳ</a>
+            <a href="ITM_HanaNArtsSet.html#59030">ITM_HanaNArtsSet#ACリアクション無効Ⅴ</a>
+          </details>
+        </td>
+        <td class="side">リアクション無効</td>
+        <td>リアクション無効</td>
+        <td>リアクションを一度だけ無効化する</td>
+        <td>0</td>
+        <td>450</td>
+        <td>900</td>
+        <td>75</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>6</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>22 refs</summary>
+            <a href="BTL_Arts_Dr.html#608">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#650">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_Dr.html#675">BTL_Arts_Dr#朧燕</a>
+            <a href="BTL_Arts_En.html#769">BTL_Arts_En#朧燕</a>
+            <a href="CHR_Bl.html#1004">CHR_Bl#ビャッコ</a>
+            <a href="CHR_Bl.html#1011">CHR_Bl#ニア</a>
+            <a href="CHR_Bl.html#1026">CHR_Bl#トキハ</a>
+            <a href="CHR_Bl.html#1029">CHR_Bl#ナナコオリ</a>
+            <a href="CHR_Bl.html#1034">CHR_Bl#シキ</a>
+            <a href="CHR_Bl.html#1037">CHR_Bl#イブキ</a>
+            <a href="CHR_Bl.html#1038">CHR_Bl#ホタル</a>
+            <a href="CHR_Bl.html#1043">CHR_Bl#ヨシツネ</a>
+            <a href="CHR_Bl.html#1045">CHR_Bl#サタヒコ</a>
+            <a href="CHR_Bl.html#1056">CHR_Bl#男・ボール</a>
+            <a href="CHR_Bl.html#1063">CHR_Bl#屈強・ボール</a>
+            <a href="CHR_Bl.html#1070">CHR_Bl#女・ビットボール</a>
+            <a href="CHR_Bl.html#1106">CHR_Bl#シュルク</a>
+            <a href="ITM_HanaNArtsSet.html#59031">ITM_HanaNArtsSet#AC弱体リセットⅠ</a>
+            <a href="ITM_HanaNArtsSet.html#59032">ITM_HanaNArtsSet#AC弱体リセットⅡ</a>
+            <a href="ITM_HanaNArtsSet.html#59033">ITM_HanaNArtsSet#AC弱体リセットⅢ</a>
+            <a href="ITM_HanaNArtsSet.html#59034">ITM_HanaNArtsSet#AC弱体リセットⅣ</a>
+            <a href="ITM_HanaNArtsSet.html#59035">ITM_HanaNArtsSet#AC弱体リセットⅤ</a>
+          </details>
+        </td>
+        <td class="side">デバフ消去</td>
+        <td>弱体リセット</td>
+        <td>敵に受けたデバフを消去する</td>
+        <td>0</td>
+        <td>0</td>
+        <td>600</td>
+        <td>50</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>7</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>33 refs</summary>
+            <a href="BTL_Arts_Dr.html#590">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#100">BTL_Arts_En#ブラッドアンカー</a>
+            <a href="BTL_Arts_En.html#182">BTL_Arts_En#アースローラー</a>
+            <a href="BTL_Arts_En.html#316">BTL_Arts_En#ダイビングプレス</a>
+            <a href="BTL_Arts_En.html#322">BTL_Arts_En#ダイビングプレス</a>
+            <a href="BTL_Arts_En.html#323">BTL_Arts_En#ダイビングプレス</a>
+            <a href="BTL_Arts_En.html#329">BTL_Arts_En#ダイビングプレス</a>
+            <a href="CHR_Bl.html#1008">CHR_Bl#スザク</a>
+            <a href="CHR_Bl.html#1018">CHR_Bl#メイ</a>
+            <a href="CHR_Bl.html#1027">CHR_Bl#ザクロ</a>
+            <a href="CHR_Bl.html#1031">CHR_Bl#ウカ</a>
+            <a href="CHR_Bl.html#1032">CHR_Bl#リンネ</a>
+            <a href="CHR_Bl.html#1038">CHR_Bl#ホタル</a>
+            <a href="CHR_Bl.html#1052">CHR_Bl#男・ランス</a>
+            <a href="CHR_Bl.html#1057">CHR_Bl#男・ナックルー</a>
+            <a href="CHR_Bl.html#1059">CHR_Bl#屈強・ランス</a>
+            <a href="CHR_Bl.html#1064">CHR_Bl#屈強・ナックル</a>
+            <a href="CHR_Bl.html#1066">CHR_Bl#女・ランス</a>
+            <a href="CHR_Bl.html#1071">CHR_Bl#女・ナックルクロー</a>
+            <a href="CHR_Bl.html#1077">CHR_Bl#ザンテツ</a>
+            <a href="CHR_Bl.html#1082">CHR_Bl#1082</a>
+            <a href="CHR_Bl.html#1085">CHR_Bl#1085</a>
+            <a href="CHR_Bl.html#1088">CHR_Bl#1088</a>
+            <a href="CHR_Bl.html#1092">CHR_Bl#1092</a>
+            <a href="CHR_Bl.html#1095">CHR_Bl#1095</a>
+            <a href="CHR_Bl.html#1098">CHR_Bl#1098</a>
+            <a href="CHR_Bl.html#1106">CHR_Bl#シュルク</a>
+            <a href="CHR_Bl.html#1111">CHR_Bl#ブレイド</a>
+            <a href="ITM_HanaNArtsSet.html#59036">ITM_HanaNArtsSet#AC背面攻撃アップⅠ</a>
+            <a href="ITM_HanaNArtsSet.html#59037">ITM_HanaNArtsSet#AC背面攻撃アップⅡ</a>
+            <a href="ITM_HanaNArtsSet.html#59038">ITM_HanaNArtsSet#AC背面攻撃アップⅢ</a>
+            <a href="ITM_HanaNArtsSet.html#59039">ITM_HanaNArtsSet#AC背面攻撃アップⅣ</a>
+            <a href="ITM_HanaNArtsSet.html#59040">ITM_HanaNArtsSet#AC背面攻撃アップⅤ</a>
+          </details>
+        </td>
+        <td class="side">背面攻撃アップ</td>
+        <td>背面攻撃アップ</td>
+        <td>背面攻撃のダメージが増加　ヘイトが半減</td>
+        <td>50</td>
+        <td>450</td>
+        <td>600</td>
+        <td>75</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>8</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>21 refs</summary>
+            <a href="BTL_Arts_Dr.html#648">BTL_Arts_Dr#アーツ</a>
+            <a href="BTL_Arts_En.html#580">BTL_Arts_En#スパイラルソバット</a>
+            <a href="BTL_Arts_En.html#587">BTL_Arts_En#スパイラルソバット</a>
+            <a href="CHR_Bl.html#1009">CHR_Bl#カグツチ</a>
+            <a href="CHR_Bl.html#1015">CHR_Bl#グレン</a>
+            <a href="CHR_Bl.html#1023">CHR_Bl#カサネ</a>
+            <a href="CHR_Bl.html#1030">CHR_Bl#ニューツ</a>
+            <a href="CHR_Bl.html#1035">CHR_Bl#ライコ</a>
+            <a href="CHR_Bl.html#1037">CHR_Bl#イブキ</a>
+            <a href="CHR_Bl.html#1048">CHR_Bl#オオツチ</a>
+            <a href="CHR_Bl.html#1054">CHR_Bl#男・シールド</a>
+            <a href="CHR_Bl.html#1061">CHR_Bl#屈強・シールド</a>
+            <a href="CHR_Bl.html#1068">CHR_Bl#女・シールドハンマー</a>
+            <a href="CHR_Bl.html#1103">CHR_Bl#カグツチ</a>
+            <a href="CHR_Bl.html#1105">CHR_Bl#ハナバスター</a>
+            <a href="CHR_Bl.html#1108">CHR_Bl#ブレイド3</a>
+            <a href="ITM_HanaNArtsSet.html#59041">ITM_HanaNArtsSet#ACヘイト獲得Ⅰ</a>
+            <a href="ITM_HanaNArtsSet.html#59042">ITM_HanaNArtsSet#ACヘイト獲得Ⅱ</a>
+            <a href="ITM_HanaNArtsSet.html#59043">ITM_HanaNArtsSet#ACヘイト獲得Ⅲ</a>
+            <a href="ITM_HanaNArtsSet.html#59044">ITM_HanaNArtsSet#ACヘイト獲得Ⅳ</a>
+            <a href="ITM_HanaNArtsSet.html#59045">ITM_HanaNArtsSet#ACヘイト獲得Ⅴ</a>
+          </details>
+        </td>
+        <td class="side">ヘイト獲得</td>
+        <td>ヘイト獲得</td>
+        <td>戦闘参加エネミーのヘイトを獲得する</td>
+        <td>50</td>
+        <td>0</td>
+        <td>600</td>
+        <td>75</td>
+        <td>90</td>
+        <td>cmn_009_000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">無敵</td>
+        <td>無敵</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>18 refs</summary>
+            <a href="BTL_Arts_Bl.html#39">BTL_Arts_Bl#デスマッチ</a>
+            <a href="BTL_Arts_Bl.html#172">BTL_Arts_Bl#デストラクション</a>
+            <a href="BTL_Arts_En.html#338">BTL_Arts_En#マインプレス</a>
+            <a href="BTL_Arts_En.html#402">BTL_Arts_En#ライノキャノン</a>
+            <a href="BTL_Arts_En.html#415">BTL_Arts_En#アサルトウィリー</a>
+            <a href="BTL_Arts_En.html#433">BTL_Arts_En#フロントセンサー</a>
+            <a href="BTL_Arts_En.html#477">BTL_Arts_En#ボヨヨンハンマー</a>
+            <a href="BTL_Arts_En.html#478">BTL_Arts_En#トゲトゲハンマー</a>
+            <a href="BTL_Arts_En.html#486">BTL_Arts_En#デストロイギア</a>
+            <a href="BTL_Arts_En.html#497">BTL_Arts_En#ライトチャージ</a>
+            <a href="BTL_Arts_En.html#498">BTL_Arts_En#レフトチャージ</a>
+            <a href="BTL_Arts_En.html#499">BTL_Arts_En#ウォーボイス</a>
+            <a href="BTL_Arts_En.html#558">BTL_Arts_En#バトルスタンプ</a>
+            <a href="BTL_Arts_En.html#647">BTL_Arts_En#ライオネルロア</a>
+            <a href="BTL_Arts_En.html#746">BTL_Arts_En#クロウタウント</a>
+            <a href="BTL_Arts_En.html#775">BTL_Arts_En#魔装剣</a>
+            <a href="BTL_Arts_En.html#776">BTL_Arts_En#魔装剣</a>
+            <a href="BTL_Arts_En.html#807">BTL_Arts_En#ぐるぐるカッター</a>
+          </details>
+        </td>
+        <td class="side">挑発</td>
+        <td>挑発</td>
+        <td></td>
+        <td>0</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_000_003</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>26 refs</summary>
+            <a href="BTL_Arts_En.html#26">BTL_Arts_En#ポイズンブレス</a>
+            <a href="BTL_Arts_En.html#38">BTL_Arts_En#ワイルドガス</a>
+            <a href="BTL_Arts_En.html#39">BTL_Arts_En#ワイルドガス</a>
+            <a href="BTL_Arts_En.html#55">BTL_Arts_En#ミニストーム</a>
+            <a href="BTL_Arts_En.html#58">BTL_Arts_En#ガストリックジューシー</a>
+            <a href="BTL_Arts_En.html#79">BTL_Arts_En#アイスダンク</a>
+            <a href="BTL_Arts_En.html#80">BTL_Arts_En#ロックダンク</a>
+            <a href="BTL_Arts_En.html#86">BTL_Arts_En#ロックダンク</a>
+            <a href="BTL_Arts_En.html#95">BTL_Arts_En#コープスブレイク</a>
+            <a href="BTL_Arts_En.html#149">BTL_Arts_En#ベンバースト</a>
+            <a href="BTL_Arts_En.html#150">BTL_Arts_En#ベンバースト</a>
+            <a href="BTL_Arts_En.html#154">BTL_Arts_En#ベンバースト</a>
+            <a href="BTL_Arts_En.html#162">BTL_Arts_En#スネークホッピング</a>
+            <a href="BTL_Arts_En.html#163">BTL_Arts_En#スネークホッピング</a>
+            <a href="BTL_Arts_En.html#164">BTL_Arts_En#スネークホッピング</a>
+            <a href="BTL_Arts_En.html#188">BTL_Arts_En#キラーマイン</a>
+            <a href="BTL_Arts_En.html#288">BTL_Arts_En#バルーンガス</a>
+            <a href="BTL_Arts_En.html#356">BTL_Arts_En#クラウドブレス</a>
+            <a href="BTL_Arts_En.html#357">BTL_Arts_En#クラウドブレス</a>
+            <a href="BTL_Arts_En.html#358">BTL_Arts_En#クラウドブレス</a>
+            <a href="BTL_Arts_En.html#359">BTL_Arts_En#クラウドブレス</a>
+            <a href="BTL_Arts_En.html#360">BTL_Arts_En#クラウドブレス</a>
+            <a href="BTL_Arts_En.html#363">BTL_Arts_En#スィートジュース</a>
+            <a href="BTL_Arts_En.html#479">BTL_Arts_En#スィートガス</a>
+            <a href="BTL_Arts_En.html#713">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#721">BTL_Arts_En#エレメントガス</a>
+          </details>
+        </td>
+        <td class="side">悪臭</td>
+        <td>悪臭</td>
+        <td></td>
+        <td>100</td>
+        <td>600</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_020_002</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>17 refs</summary>
+            <a href="BTL_Arts_En.html#43">BTL_Arts_En#ドラム・ザ・ワイルド</a>
+            <a href="BTL_Arts_En.html#93">BTL_Arts_En#ブラストハウリング</a>
+            <a href="BTL_Arts_En.html#115">BTL_Arts_En#サイミンランタン</a>
+            <a href="BTL_Arts_En.html#161">BTL_Arts_En#スネークアイズ</a>
+            <a href="BTL_Arts_En.html#218">BTL_Arts_En#エーテルドレイン</a>
+            <a href="BTL_Arts_En.html#228">BTL_Arts_En#クライサウンド</a>
+            <a href="BTL_Arts_En.html#252">BTL_Arts_En#催眠術</a>
+            <a href="BTL_Arts_En.html#273">BTL_Arts_En#バタフライパウダー</a>
+            <a href="BTL_Arts_En.html#281">BTL_Arts_En#ドラゴンボイス</a>
+            <a href="BTL_Arts_En.html#364">BTL_Arts_En#スィートジュース</a>
+            <a href="BTL_Arts_En.html#515">BTL_Arts_En#ホーリーサークル</a>
+            <a href="BTL_Arts_En.html#516">BTL_Arts_En#ジャッジメントサークル</a>
+            <a href="BTL_Arts_En.html#559">BTL_Arts_En#バトルスタンプ</a>
+            <a href="BTL_Arts_En.html#637">BTL_Arts_En#チェックメイト</a>
+            <a href="BTL_Arts_En.html#712">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#720">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#883">BTL_Arts_En#883</a>
+          </details>
+        </td>
+        <td class="side">ドライバー封鎖</td>
+        <td>金縛り</td>
+        <td></td>
+        <td>100</td>
+        <td>180</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_020_003</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>14 refs</summary>
+            <a href="BTL_Arts_Bl.html#54">BTL_Arts_Bl#ソウハンセカイ</a>
+            <a href="BTL_Arts_En.html#406">BTL_Arts_En#ブレイドジャミング</a>
+            <a href="BTL_Arts_En.html#543">BTL_Arts_En#クールタイム</a>
+            <a href="BTL_Arts_En.html#717">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#725">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#729">BTL_Arts_En#黒ノ波動</a>
+            <a href="BTL_Arts_En.html#755">BTL_Arts_En#モナドジェイル</a>
+            <a href="BTL_Arts_En.html#756">BTL_Arts_En#モナドジェイル</a>
+            <a href="BTL_Arts_En.html#833">BTL_Arts_En#超級殲滅光弾</a>
+            <a href="BTL_Arts_En.html#841">BTL_Arts_En#レーザースレッド</a>
+            <a href="BTL_Arts_En.html#849">BTL_Arts_En#ドミネーション</a>
+            <a href="BTL_Arts_En.html#859">BTL_Arts_En#アントローポス</a>
+            <a href="BTL_Arts_En.html#892">BTL_Arts_En#892</a>
+            <a href="BTL_Arts_En.html#956">BTL_Arts_En#モナドジェイル</a>
+          </details>
+        </td>
+        <td class="side">ブレイド封鎖</td>
+        <td>ブレイド封鎖</td>
+        <td></td>
+        <td>100</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_020_000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>11 refs</summary>
+            <a href="BTL_Arts_En.html#25">BTL_Arts_En#アイスブレス</a>
+            <a href="BTL_Arts_En.html#96">BTL_Arts_En#カースハウリング</a>
+            <a href="BTL_Arts_En.html#274">BTL_Arts_En#バタフライパウダー</a>
+            <a href="BTL_Arts_En.html#350">BTL_Arts_En#アナホリ</a>
+            <a href="BTL_Arts_En.html#421">BTL_Arts_En#サイコシールド</a>
+            <a href="BTL_Arts_En.html#542">BTL_Arts_En#クールタイム</a>
+            <a href="BTL_Arts_En.html#714">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#722">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#773">BTL_Arts_En#零圏</a>
+            <a href="BTL_Arts_En.html#774">BTL_Arts_En#零圏</a>
+            <a href="BTL_Arts_En.html#854">BTL_Arts_En#ブリザード</a>
+          </details>
+        </td>
+        <td class="side">回復無効</td>
+        <td>回復無効</td>
+        <td></td>
+        <td>100</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_020_004</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>3 refs</summary>
+            <a href="BTL_Arts_En.html#420">BTL_Arts_En#サイコバスター</a>
+            <a href="BTL_Arts_En.html#757">BTL_Arts_En#モナドアーマー</a>
+            <a href="BTL_Arts_En.html#957">BTL_Arts_En#モナドアーマー</a>
+          </details>
+        </td>
+        <td class="side">モナドアーマー</td>
+        <td>モナドアーマー</td>
+        <td></td>
+        <td>20</td>
+        <td>900</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_020_001</td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="BTL_Arts_Bl.html#220">BTL_Arts_Bl#金剛飛天</a>
+            <a href="BTL_Arts_En.html#847">BTL_Arts_En#リンカーネイション</a>
+          </details>
+        </td>
+        <td class="side">金剛力</td>
+        <td>金剛力</td>
+        <td></td>
+        <td>150</td>
+        <td>900</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_009_000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>True</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>9 refs</summary>
+            <a href="BTL_Arts_En.html#72">BTL_Arts_En#バックキック</a>
+            <a href="BTL_Arts_En.html#74">BTL_Arts_En#バックキック</a>
+            <a href="BTL_Arts_En.html#219">BTL_Arts_En#エーテルマイン</a>
+            <a href="BTL_Arts_En.html#260">BTL_Arts_En#ダイブスラッシュ</a>
+            <a href="BTL_Arts_En.html#417">BTL_Arts_En#サンダードライブ</a>
+            <a href="BTL_Arts_En.html#440">BTL_Arts_En#リミットボム</a>
+            <a href="BTL_Arts_En.html#654">BTL_Arts_En#武踏阿修羅</a>
+            <a href="BTL_Arts_En.html#748">BTL_Arts_En#ファイナルクロウ</a>
+            <a href="BTL_Arts_En.html#777">BTL_Arts_En#無刃剣</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>スタンプＡ</td>
+        <td></td>
+        <td>100</td>
+        <td>150</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_En.html#741">BTL_Arts_En#水月滅刀</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>スタンプＢ</td>
+        <td></td>
+        <td>100</td>
+        <td>150</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>スタンプＣ</td>
+        <td></td>
+        <td>100</td>
+        <td>150</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>5 refs</summary>
+            <a href="BTL_Arts_En.html#40">BTL_Arts_En#ワイルドガス</a>
+            <a href="BTL_Arts_En.html#716">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#724">BTL_Arts_En#エレメントガス</a>
+            <a href="BTL_Arts_En.html#828">BTL_Arts_En#殺人光線</a>
+            <a href="BTL_Arts_En.html#829">BTL_Arts_En#殺人光線</a>
+          </details>
+        </td>
+        <td class="side">即死</td>
+        <td>効果終了時に死亡</td>
+        <td></td>
+        <td>0</td>
+        <td>150</td>
+        <td>0</td>
+        <td>80</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td>ダメージ時リキャスト回復</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#660">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side">物理防御ダウン</td>
+        <td>物理防御ダウン</td>
+        <td></td>
+        <td>25</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_009_001</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#610">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side">エーテル防御ダウン</td>
+        <td>エーテル防御ダウン</td>
+        <td></td>
+        <td>25</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_009_001</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#588">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side">レジストダウン</td>
+        <td>レジストダウン</td>
+        <td></td>
+        <td>25</td>
+        <td>450</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>cmn_009_001</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>True</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#678">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（ラウラ）</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#681">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（アデル）</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#684">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（ユーゴ）</td>
+        <td></td>
+        <td>0</td>
+        <td>900</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#679">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（シン）</td>
+        <td></td>
+        <td>10</td>
+        <td>900</td>
+        <td>0</td>
+        <td>100</td>
+        <td>300</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#680">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（カスミ）</td>
+        <td></td>
+        <td>0</td>
+        <td>150</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+        <td>False</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#682">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（ヒカリ）</td>
+        <td></td>
+        <td>15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#683">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（ミノチ）</td>
+        <td></td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>300</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#685">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（カグツチ）</td>
+        <td></td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="BTL_Arts_Dr.html#686">BTL_Arts_Dr#アーツ</a>
+          </details>
+        </td>
+        <td class="side"></td>
+        <td>タレント効果（ワダツミ）</td>
+        <td></td>
+        <td>500</td>
+        <td>900</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>True</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

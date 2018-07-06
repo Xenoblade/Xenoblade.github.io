@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLG_16bit</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+        </tr>
+      </thead>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>4 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#917">FLD_ConditionFlag#917</a>
+            <a href="../common/FLD_ConditionFlag.html#918">FLD_ConditionFlag#918</a>
+            <a href="../common/FLD_ConditionFlag.html#919">FLD_ConditionFlag#919</a>
+            <a href="../common/FLD_ConditionFlag.html#920">FLD_ConditionFlag#920</a>
+          </details>
+        </td>
+      </tr>
+      <tr id="1550">
+        <td>1550</td>
+        <td>
+          <details>
+            <summary>9 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#903">FLD_ConditionFlag#903</a>
+            <a href="../common/FLD_ConditionFlag.html#904">FLD_ConditionFlag#904</a>
+            <a href="../common/FLD_ConditionFlag.html#905">FLD_ConditionFlag#905</a>
+            <a href="../common/FLD_ConditionFlag.html#906">FLD_ConditionFlag#906</a>
+            <a href="../common/FLD_ConditionFlag.html#907">FLD_ConditionFlag#907</a>
+            <a href="../common/FLD_ConditionFlag.html#908">FLD_ConditionFlag#908</a>
+            <a href="../common/FLD_ConditionFlag.html#909">FLD_ConditionFlag#909</a>
+            <a href="../common/FLD_ConditionFlag.html#910">FLD_ConditionFlag#910</a>
+            <a href="../common/FLD_ConditionFlag.html#939">FLD_ConditionFlag#939</a>
+          </details>
+        </td>
+      </tr>
+      <tr id="1551">
+        <td>1551</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#1012">FLD_ConditionFlag#1012</a>
+          </details>
+        </td>
+      </tr>
+      <tr id="1552">
+        <td>1552</td>
+        <td>
+          <details>
+            <summary>2 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#1391">FLD_ConditionFlag#1391</a>
+            <a href="../common/FLD_ConditionFlag.html#1392">FLD_ConditionFlag#1392</a>
+          </details>
+        </td>
+      </tr>
+      <tr id="1553">
+        <td>1553</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#1410">FLD_ConditionFlag#1410</a>
+          </details>
+        </td>
+      </tr>
+      <tr id="2121">
+        <td>2121</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="../common/FLD_ConditionFlag.html#492">FLD_ConditionFlag#492</a>
+          </details>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

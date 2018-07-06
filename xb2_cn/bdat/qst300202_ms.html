@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst300202_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst300202_msg001</td>
+        <td>62</td>
+        <td class="side">(仮)受注前</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst300202_msg002</td>
+        <td>62</td>
+        <td class="side">(仮)受注後</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst300202_msg003</td>
+        <td>62</td>
+        <td class="side">(仮)バトル前</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst300202_msg004</td>
+        <td>62</td>
+        <td class="side">(仮)バトル後</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst300202_msg0001</td>
+        <td>84</td>
+        <td class="side">你来了啊！
+来 跟我决一胜负！！</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst300202_msg0011</td>
+        <td>165</td>
+        <td class="side">问他什么？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst300202_msg0012</td>
+        <td>165</td>
+        <td class="side">我们为什么要较量？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst300202_msg0013</td>
+        <td>165</td>
+        <td class="side">你不服我吗？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst300202_msg0031</td>
+        <td>84</td>
+        <td class="side">当然了 你很强这一点
+我已经听勇和周说过了</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst300202_msg0032</td>
+        <td>84</td>
+        <td class="side">你竟然能与凡达姆团长并肩作战
+这可是我们佣兵的梦想[ML:Dash ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst300202_msg0033</td>
+        <td>84</td>
+        <td class="side">佣兵凭实力说话！
+我如果不亲手确认一下
+就咽不下这口气！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst300202_msg0051</td>
+        <td>84</td>
+        <td class="side">我也是不是不服你
+毕竟你是得到凡达姆团长肯定的人啊</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst300202_msg0052</td>
+        <td>84</td>
+        <td class="side">我们之所以认同凡达姆团长
+是因为他在我们面前
+完成了一桩桩出色的工作</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst300202_msg0053</td>
+        <td>84</td>
+        <td class="side">希望你也让我们见识见识！
+你是否拥有
+能让我们点头的身手！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst300202_msg0071</td>
+        <td>84</td>
+        <td class="side">来 开始吧！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst300202_msg0101</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]我服了！
+你的实力确实足以令凡达姆团长
+对你另眼相看</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst300202_msg0102</td>
+        <td>84</td>
+        <td class="side">真想和你一直打下去！
+要不要再来一回合！？
+哈哈哈！ 我开玩笑的！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst300202_msg0111</td>
+        <td>84</td>
+        <td class="side">你不仅答应了
+我们任性的请求
+还如此迁就我们[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst300202_msg0112</td>
+        <td>84</td>
+        <td class="side">简直就像是
+在和凡达姆团长说话一样啊！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst300202_msg0113</td>
+        <td>84</td>
+        <td class="side">他是胸怀如同云海一般
+宽广的人[ML:Dash ]
+你 很像他啊</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst300202_msg0121</td>
+        <td>84</td>
+        <td class="side">让你无语了啊！
+[ML:Dash ]抱歉做了很多对不住你的事啊！</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst300202_msg0131</td>
+        <td>84</td>
+        <td class="side">好了 我们虽然已经肯定了你
+可是那家伙好像还没有啊</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst300202_msg0132</td>
+        <td>84</td>
+        <td class="side">就是那边那个顽固的家伙[ML:Dash ]
+拉德克啦
+你去和他较量较量吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

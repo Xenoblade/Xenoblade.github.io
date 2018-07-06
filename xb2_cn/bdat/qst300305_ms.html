@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst300305_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst300305_msg001</td>
+        <td>62</td>
+        <td class="side">面接１後　FEV</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst300305_msg002</td>
+        <td>62</td>
+        <td class="side">スパイだと思うならクロ。潔白ならシロを選んでくれ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst300305_msg003</td>
+        <td>62</td>
+        <td class="side">クロ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst300305_msg004</td>
+        <td>62</td>
+        <td class="side">シロ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst300305_msg005</td>
+        <td>62</td>
+        <td class="side">そうか、お前はそう感じたんだな</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst300305_msg006</td>
+        <td>62</td>
+        <td class="side">俺が思うに、グーラ人かどうかも怪しいぜ</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst300305_msg007</td>
+        <td>62</td>
+        <td class="side">よし、次々いこうか</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst300305_msg0001</td>
+        <td>84</td>
+        <td class="side">那个[ML:Dash ]
+你好嗼</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst300305_msg0002</td>
+        <td>84</td>
+        <td class="side">我是出生于阿伐利缇亚
+名叫波娃波娃嗼</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst300305_msg0003</td>
+        <td>84</td>
+        <td class="side">我想从事非战斗方面的工作
+就前来应聘了嗼</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst300305_msg0004</td>
+        <td>84</td>
+        <td class="side">请允许我提几个问题</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst300305_msg0005</td>
+        <td>84</td>
+        <td class="side">好的好的～</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst300305_msg0051</td>
+        <td>165</td>
+        <td class="side">要问什么？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst300305_msg0052</td>
+        <td>165</td>
+        <td class="side">申请的动机</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst300305_msg0053</td>
+        <td>165</td>
+        <td class="side">自信之处</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst300305_msg0054</td>
+        <td>165</td>
+        <td class="side">将来的目标</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst300305_msg0055</td>
+        <td>165</td>
+        <td class="side">没什么特别要问的</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst300305_msg0101</td>
+        <td>84</td>
+        <td class="side">我虽然想在
+佣兵团工作
+但是一天到晚净是战斗 很伤脑筋嗼</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst300305_msg0102</td>
+        <td>84</td>
+        <td class="side">我听说这里需要
+帮忙的人
+就来看看了嗼</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst300305_msg0103</td>
+        <td>84</td>
+        <td class="side">为什么想在
+佣兵团工作？</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst300305_msg0104</td>
+        <td>84</td>
+        <td class="side">那个 波娃波娃啊
+喜欢大个子的人嗼</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst300305_msg0105</td>
+        <td>84</td>
+        <td class="side">我就想啊
+也许能让佣兵们
+用大手摸摸我嗼</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst300305_msg0201</td>
+        <td>84</td>
+        <td class="side">呃
+要说自信之处的话[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst300305_msg0202</td>
+        <td>84</td>
+        <td class="side">波娃波娃最自信的就是这身毛发！
+蓬松柔软 摸上去很舒服嗼</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst300305_msg0203</td>
+        <td>84</td>
+        <td class="side">你不反感
+大家碰你吗？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst300305_msg0204</td>
+        <td>84</td>
+        <td class="side">摸摸波娃波娃的话
+就会变得幸福
+大家都这么对我说嗼</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst300305_msg0205</td>
+        <td>84</td>
+        <td class="side">如果能靠抚摸波娃波娃来治愈
+因战斗而感到疲惫的佣兵们
+那我非常欢迎嗼</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst300305_msg0301</td>
+        <td>84</td>
+        <td class="side">虽然没有什么
+远大的目标[ML:Dash ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst300305_msg0302</td>
+        <td>84</td>
+        <td class="side">但希望悲伤的人 寂寞的人
+能够通过摸摸波娃波娃
+变得幸福起来嗼</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst300305_msg0303</td>
+        <td>84</td>
+        <td class="side">要保持毛发蓬松柔软
+很不容易吧？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst300305_msg0304</td>
+        <td>84</td>
+        <td class="side">是这样的嗼
+每天的护理
+是必不可少的嗼</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst300305_msg0305</td>
+        <td>84</td>
+        <td class="side">所以 这个村庄可以在干净水里洗澡
+正适合波娃波娃嗼</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst300305_msg0401</td>
+        <td>84</td>
+        <td class="side">那么面试就到这里</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst300305_msg0402</td>
+        <td>84</td>
+        <td class="side">之后会告诉你结果的
+你现在可以离开了</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst300305_msg0403</td>
+        <td>84</td>
+        <td class="side">知道了嗼
+我期待
+会有个好结果嗼</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst300305_msg0404</td>
+        <td>84</td>
+        <td class="side">那我叫下一个候补了</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst300305_msg0501</td>
+        <td>84</td>
+        <td class="side">还有什么想问的吗？</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

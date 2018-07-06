@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst202829_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst202829_msg0001</td>
+        <td>84</td>
+        <td class="side">要鉴定嗼？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst202829_msg0002</td>
+        <td>84</td>
+        <td class="side">要委托鉴定吗？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst202829_msg0003</td>
+        <td>84</td>
+        <td class="side">委托鉴定</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst202829_msg0004</td>
+        <td>84</td>
+        <td class="side">拒绝</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst202829_msg0005</td>
+        <td>84</td>
+        <td class="side">是嗼？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst202829_msg0006</td>
+        <td>84</td>
+        <td class="side">需要帮忙鉴定的话
+随时来找米罗罗嗼</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst202829_msg0007</td>
+        <td>84</td>
+        <td class="side">那么就开始鉴定了嗼！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst202829_msg0008</td>
+        <td>84</td>
+        <td class="side">让米罗罗看看[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst202829_msg0009</td>
+        <td>84</td>
+        <td class="side">嗼嗼！
+这是希玛希玛石嗼！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst202829_msg0010</td>
+        <td>84</td>
+        <td class="side">是莫格莫格找到的矿石嗼</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst202829_msg0011</td>
+        <td>84</td>
+        <td class="side">这个希玛希玛
+据说是莫格莫格女友的名字嗼</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst202829_msg0012</td>
+        <td>84</td>
+        <td class="side">祈祷他今后不会因为跟女友分了手
+而后悔嗼[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst202829_msg0013</td>
+        <td>84</td>
+        <td class="side">这是古拉的代表性宝石
+翠绿海蓝石嗼</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst202829_msg0014</td>
+        <td>84</td>
+        <td class="side">是浸入水中就会浮现出绿叶模样的
+美丽宝石嗼</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst202829_msg0015</td>
+        <td>84</td>
+        <td class="side">它深受妇女喜爱
+买卖的价格都很高嗼</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst202829_msg0016</td>
+        <td>84</td>
+        <td class="side">这 这是回廊宝石嗼！？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst202829_msg0017</td>
+        <td>84</td>
+        <td class="side">它现在因为数量稀少 都被称为梦幻之石了
+你竟然能找到 真是太厉害了嗼！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst202829_msg0018</td>
+        <td>84</td>
+        <td class="side">人们说它比任何宝石都要美丽
+石头里可以看到光明之路嗼！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst202829_msg0019</td>
+        <td>84</td>
+        <td class="side">你要好好珍惜嗼</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst202829_msg0020</td>
+        <td>84</td>
+        <td class="side">嗼嗼～
+这是巨魔晶石嗼</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst202829_msg0021</td>
+        <td>84</td>
+        <td class="side">挖出来的
+形状都像巨人一样嗼</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst202829_msg0022</td>
+        <td>84</td>
+        <td class="side">虽然说不上漂亮
+却是一块很有趣味的石头嗼</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst202829_msg0023</td>
+        <td>84</td>
+        <td class="side">原来如此
+这是暴风石嗼</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst202829_msg0024</td>
+        <td>84</td>
+        <td class="side">会定期刮起一阵小小的龙卷风
+是一块不可思议的石头嗼</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst202829_msg0025</td>
+        <td>84</td>
+        <td class="side">听说喜欢温泉的斯佩比亚人会将它放入浴池中
+享受按摩浴缸一般的感觉嗼</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst202829_msg0026</td>
+        <td>84</td>
+        <td class="side">嚯
+这是水晶球嗼</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst202829_msg0027</td>
+        <td>84</td>
+        <td class="side">是一种纤细易碎的矿石
+挖掘时需要非常小心嗼</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst202829_msg0028</td>
+        <td>84</td>
+        <td class="side">里面有着很多的水以及零碎宝石
+摇晃起来仿佛雪花飞舞一般非常漂亮嗼</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst202829_msg0029</td>
+        <td>84</td>
+        <td class="side">是既可卖出
+亦可留着观赏的绝品嗼！</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst202829_msg0030</td>
+        <td>84</td>
+        <td class="side">这是绿水晶嗼</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst202829_msg0031</td>
+        <td>84</td>
+        <td class="side">因为它通体呈现出美丽的绿色
+所以有着宝石森林的别名嗼</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst202829_msg0032</td>
+        <td>84</td>
+        <td class="side">这种矿石经常会被比比鼠偷走
+所以要小心管理嗼</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst202829_msg0033</td>
+        <td>84</td>
+        <td class="side">嗼嗼～
+这是见泪珍珠嗼</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst202829_msg0034</td>
+        <td>84</td>
+        <td class="side">这种矿石因水母型的巨神兽遭到雷击而诞生
+所以被称为巨神兽之泪嗼</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst202829_msg0035</td>
+        <td>84</td>
+        <td class="side">它刚刚诞生的几日内带着电 无法触碰
+所以就算找到了</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst202829_msg0036</td>
+        <td>84</td>
+        <td class="side">也不能随意触碰嗼</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst202829_msg0037</td>
+        <td>84</td>
+        <td class="side">哼哼
+这个味道[ML:Dash ] 是哈欠青金石嗼</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst202829_msg0038</td>
+        <td>84</td>
+        <td class="side">是一种散发着太阳味道的
+有点奇怪的宝石嗼</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst202829_msg0039</td>
+        <td>84</td>
+        <td class="side">据说在弥先村常常会让婴儿带着
+好让婴儿能够安心嗼</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst202829_msg0040</td>
+        <td>84</td>
+        <td class="side">这是暗夜光石嗼</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst202829_msg0041</td>
+        <td>84</td>
+        <td class="side">是一种在暗处会散发淡淡光芒的
+罕见宝石嗼</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst202829_msg0042</td>
+        <td>84</td>
+        <td class="side">暗夜光石是一种热门的
+辟邪宝石嗼</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qst202829_msg0043</td>
+        <td>84</td>
+        <td class="side">这 这是！
+发光石英嗼！？</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qst202829_msg0044</td>
+        <td>84</td>
+        <td class="side">这颗神奇的宝石
+可以吸收光芒嗼</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qst202829_msg0045</td>
+        <td>84</td>
+        <td class="side">由于较难发现
+可以卖得高价</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qst202829_msg0046</td>
+        <td>84</td>
+        <td class="side">但是相传它是不吉之物
+只有一部分狂热者才会愿意买嗼</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qst202829_msg0047</td>
+        <td>84</td>
+        <td class="side">这个是怒吼结晶嗼</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qst202829_msg0048</td>
+        <td>84</td>
+        <td class="side">这个结晶时不时会发出声音
+只要听见了就很容易发现嗼</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qst202829_msg0049</td>
+        <td>84</td>
+        <td class="side">如果想象成结晶里面装着声音
+会有些浪漫的感觉嗼</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qst202829_msg0050</td>
+        <td>84</td>
+        <td class="side">嚯
+这是暗化珍珠嗼</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qst202829_msg0051</td>
+        <td>84</td>
+        <td class="side">是一种根据土地环境
+而变色的矿石嗼</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qst202829_msg0052</td>
+        <td>84</td>
+        <td class="side">这块是黑色的
+一定是檀佩兰提亚产的嗼</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qst202829_msg0053</td>
+        <td>84</td>
+        <td class="side">很遗憾这次这块不是新矿石嗼
+如果再发现其它需要鉴定的矿石
+就带过来嗼</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qst202829_msg0054</td>
+        <td>84</td>
+        <td class="side">任何矿石都有它的价值嗼
+请好好对待它们嗼</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qst202829_msg0055</td>
+        <td>84</td>
+        <td class="side">呃[ML:Dash ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qst202829_msg0056</td>
+        <td>84</td>
+        <td class="side">果然新矿石
+不是那么好找的嗼</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qst202829_msg0057</td>
+        <td>84</td>
+        <td class="side">这么一来
+果然只能去没有开垦过的地方找了啊</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qst202829_msg0058</td>
+        <td>84</td>
+        <td class="side">跟大家在一个地方找
+也是找不到新矿石的嗼</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qst202829_msg0059</td>
+        <td>84</td>
+        <td class="side">比如说 那块从没有人去过的
+巨神兽的土地[ML:Dash ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qst202829_msg0060</td>
+        <td>84</td>
+        <td class="side">就很有可能发现新矿石嗼</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qst202829_msg0061</td>
+        <td>84</td>
+        <td class="side">如果到了一个新天地的话
+就试着挖掘看看嗼</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qst202829_msg0062</td>
+        <td>84</td>
+        <td class="side">你如果发现了前所未见的新矿石
+米罗罗来帮你鉴定嗼</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

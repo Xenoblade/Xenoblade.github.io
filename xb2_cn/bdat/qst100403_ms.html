@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst100403_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst100403_msg0001</td>
+        <td>84</td>
+        <td class="side">在药完成之前
+先进行自主练习嗼！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst100403_msg0002</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]哼吼～～♪
+哼嘎～♪ 哼嘎～♪
+哼嘎[ML:Dash ][ML:Dash ]♪</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst100403_msg0003</td>
+        <td>84</td>
+        <td class="side">药熬出来了嗼！？
+好厉害嗼！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst100403_msg0004</td>
+        <td>84</td>
+        <td class="side">这就是
+传说中的灵歌妙药[ML:Dash ]
+让我试试看嗼！</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst100403_msg0005</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]咕嘟！
+咕嘟！
+咕嘟！</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst100403_msg0006</td>
+        <td>84</td>
+        <td class="side">有点苦 又有点甜
+这味道真是形容不好[ML:Dash ]
+总之我先唱唱看嗼！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst100403_msg0007</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]啊啊～♪ 哼嘎～♪
+啾嘭～～～～♪</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst100403_msg0008</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]怎么样嗼？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst100403_msg0101</td>
+        <td>84</td>
+        <td class="side">要怎么表述感想？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst100403_msg0102</td>
+        <td>84</td>
+        <td class="side">说实话</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst100403_msg0103</td>
+        <td>84</td>
+        <td class="side">恭维一下</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst100403_msg0201</td>
+        <td>84</td>
+        <td class="side">呜呜呜～～ 果然～～
+就算喝了药 也还是很糟糕嗼！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst100403_msg0301</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]你的乐感
+是不是有问题嗼？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst100403_msg0302</td>
+        <td>84</td>
+        <td class="side">我自己都听得出来
+还是那么荒腔走板嗼[ML:Dash ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst100403_msg0401</td>
+        <td>84</td>
+        <td class="side">难道说 是材料
+还没找到最好的配比嗼</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst100403_msg0402</td>
+        <td>84</td>
+        <td class="side">请不要道歉嗼！
+都是
+法拉拉太难为你们了嗼[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst100403_msg0403</td>
+        <td>84</td>
+        <td class="side">不好意思[ML:Dash ]
+能不能改一下配比
+再做一次药嗼？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst100403_msg0404</td>
+        <td>84</td>
+        <td class="side">为了法拉拉的梦想[ML:Dash ]
+为了不让索拉拉
+感到寂寞[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst100403_msg0405</td>
+        <td>84</td>
+        <td class="side">请你们多多帮忙嗼！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst100403_msg0501</td>
+        <td>84</td>
+        <td class="side">药滑过了喉咙[ML:Dash ]
+肚子里感觉热烘烘的嗼[ML:Dash ]
+再让我唱一次看看嗼！</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst100403_msg0502</td>
+        <td>84</td>
+        <td class="side">噜噜噜～♪ 噜噜噜～♪
+噜哩啦啦啦～～～～♪</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst100403_msg0503</td>
+        <td>84</td>
+        <td class="side">嗼嗼嗼嗼～！？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst100403_msg0504</td>
+        <td>84</td>
+        <td class="side">唱出了
+非常动听的歌声嗼～♪</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst100403_msg0505</td>
+        <td>84</td>
+        <td class="side">我要到舞台上去表演一番嗼～♪</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst100403_msg0601</td>
+        <td>84</td>
+        <td class="side">要制作这种药 需要从古拉
+把铃铛蔓越莓和熊猫三色堇
+采回来[ML:Dash ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst100403_msg0602</td>
+        <td>84</td>
+        <td class="side">按照绝妙的配比 精心熬煮
+应该就能做出那味药嗼</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst100403_msg0603</td>
+        <td>84</td>
+        <td class="side">熬药的时候
+借用食堂的厨房就行嗼</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

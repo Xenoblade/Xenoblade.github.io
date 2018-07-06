@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst300102_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst300102_msg001</td>
+        <td>84</td>
+        <td class="side">哦 你来了啊
+那我这就介绍一下吧</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst300102_msg002</td>
+        <td>84</td>
+        <td class="side">在佣兵团的任务中所需要的物品[ML:Dash ]
+那就是 远征用的干粮！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst300102_msg003</td>
+        <td>84</td>
+        <td class="side">远征的目的地不一定能搞到食材
+所以必须保证
+有带上足够干粮</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst300102_msg004</td>
+        <td>84</td>
+        <td class="side">干粮的筹备与管理
+之前都是凡达姆老大
+一个人完成的</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst300102_msg005</td>
+        <td>84</td>
+        <td class="side">如今他不在了
+事情落到我们头上
+我们也是在摸索着进行[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst300102_msg006</td>
+        <td>84</td>
+        <td class="side">可是一直找不到
+比较好的方法啊</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst300102_msg007</td>
+        <td>84</td>
+        <td class="side">在我们抱头苦思的这段时间里
+仓库的存粮也是有减无增</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst300102_msg008</td>
+        <td>84</td>
+        <td class="side">必须在现有的干粮见底之前
+弄到更多才行啊</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst300102_msg009</td>
+        <td>84</td>
+        <td class="side">就是这么回事
+我想将收集食材与制作干粮的任务
+交给你来完成</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst300102_msg010</td>
+        <td>84</td>
+        <td class="side">怎么样 你愿意帮忙吗？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst300102_msg011</td>
+        <td>84</td>
+        <td class="side">好！那我会安排好
+让你能用
+休憩广场的锅子</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst300102_msg012</td>
+        <td>84</td>
+        <td class="side">收集到食材之后
+就在那里做成干粮吧</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst300102_msg013</td>
+        <td>84</td>
+        <td class="side">只要是能够保存下来的食物
+用什么食材都行哦</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst300102_msg014</td>
+        <td>84</td>
+        <td class="side">就靠你啦！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst300102_msg101</td>
+        <td>84</td>
+        <td class="side">收集到食材之后
+就用休憩广场的锅子
+制作干粮吧！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst300102_msg102</td>
+        <td>84</td>
+        <td class="side">你去过萨迪科特蔬菜店了吗？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst300102_msg103</td>
+        <td>84</td>
+        <td class="side">店里的梅梅拉
+刚才正找你呢
+你去看看有什么事吧</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst300102_msg201</td>
+        <td>84</td>
+        <td class="side">多亏了你
+收集到的干粮已经多得过头啦！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst300102_msg202</td>
+        <td>84</td>
+        <td class="side">嗯 这样一来
+就能给更多的团员分派任务了</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst300102_msg203</td>
+        <td>84</td>
+        <td class="side">我得去整理仓库
+所以你去把完成的事情汇报给勇吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst106021_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst106021_msg0001</td>
+        <td>84</td>
+        <td class="side">お帰りなさいも
+新しい衣装の材料は
+集まりましたも？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst106021_msg0002</td>
+        <td>84</td>
+        <td class="side">はい
+必要なものは全部集めました</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst106021_msg0003</td>
+        <td>84</td>
+        <td class="side">姉様　これで最高の衣装をお願いしますも！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst106021_msg0004</td>
+        <td>84</td>
+        <td class="side">任せてくださいも
+ハナの希望通りの衣装を作って見せますも</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst106021_msg0005</td>
+        <td>84</td>
+        <td class="side">では　キクは服を作るため
+別室へ移らせて頂きますも</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst106021_msg0006</td>
+        <td>84</td>
+        <td class="side">そうそう　ご主人様が
+用があると仰られておりましたも</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst106021_msg0007</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]まさか　もう
+アダルトな身体が完成したんですも！？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst106021_msg0008</td>
+        <td>84</td>
+        <td class="side">それはちょっと気が
+早すぎるんじゃないでしょうか
+ハナちゃん</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst106021_msg0009</td>
+        <td>84</td>
+        <td class="side">いくらご主人様でも
+そんなに早くは完成させられませんも</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst106021_msg0010</td>
+        <td>84</td>
+        <td class="side">ハナ自身にも改造前の準備をしてもらうと
+言ってたですも</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst106021_msg0011</td>
+        <td>84</td>
+        <td class="side">準備ですも？
+体操でもして身体を
+ほぐせばいいのですも？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst106021_msg0012</td>
+        <td>84</td>
+        <td class="side">それなら　心配要りませんも</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst106021_msg0013</td>
+        <td>84</td>
+        <td class="side">ハナはこう見えて　あらゆる関節を
+自由自在に曲げることができますも！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst106021_msg0014</td>
+        <td>84</td>
+        <td class="side">ハナの得意技の一つも！
+ここで披露してもいいも？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst106021_msg0015</td>
+        <td>84</td>
+        <td class="side">いえ　その必要はありませんも
+とにかく　忘れずにご主人様に
+声をかけるのですも</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

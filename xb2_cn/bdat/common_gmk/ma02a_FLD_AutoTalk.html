@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma02a_FLD_AutoTalk</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>MOBID</th>
+          <th>Range</th>
+          <th>Condition</th>
+          <th>Text</th>
+          <th>Ontime</th>
+          <th>BeforeID</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2007">mob_02_001008</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#439">439</td></a>
+        <td>巴恩会长很了不起的嗼</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2140">mob_02_001301</td></a>
+        <td>7</td>
+        <td></td>
+        <td>什么时候回
+斯佩比亚？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2020">mob_02_001025</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#431">431</td></a>
+        <td>好大的船啊[ML:Dash ]
+从哪里来的呢？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2021">mob_02_001026</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#432">432</td></a>
+        <td>那艘船肯定是
+斯佩比亚帝国的新型船啦</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2025">mob_02_001031</td></a>
+        <td>7</td>
+        <td></td>
+        <td>欢迎嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#7">ma02a_FLD_AutoTalk#7</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2056">mob_02_001124</td></a>
+        <td>7</td>
+        <td></td>
+        <td>2万G！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#8">ma02a_FLD_AutoTalk#8</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2052">mob_02_001119</td></a>
+        <td>7</td>
+        <td></td>
+        <td>4万G！</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#6">6</td></a>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#9">ma02a_FLD_AutoTalk#9</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2051">mob_02_001118</td></a>
+        <td>7</td>
+        <td></td>
+        <td>5万G！</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#7">7</td></a>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#10">ma02a_FLD_AutoTalk#10</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2055">mob_02_001123</td></a>
+        <td>7</td>
+        <td></td>
+        <td>7万G！</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#8">8</td></a>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#11">ma02a_FLD_AutoTalk#11</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2053">mob_02_001120</td></a>
+        <td>7</td>
+        <td></td>
+        <td>9万G！</td>
+        <td>1</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#9">9</td></a>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#12">ma02a_FLD_AutoTalk#12</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2055">mob_02_001123</td></a>
+        <td>7</td>
+        <td></td>
+        <td>10万G！</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#10">10</td></a>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#13">ma02a_FLD_AutoTalk#13</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2051">mob_02_001118</td></a>
+        <td>7</td>
+        <td></td>
+        <td>13万G！</td>
+        <td>3</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#11">11</td></a>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2048">mob_02_001113</td></a>
+        <td>7</td>
+        <td></td>
+        <td>没有其他人了嗼？
+那么 那边的英维迪亚的客人中标嗼</td>
+        <td>3</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#12">12</td></a>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#15">ma02a_FLD_AutoTalk#15</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2199">mob_02_001458</td></a>
+        <td>7</td>
+        <td></td>
+        <td>不要忘记打捞员心得！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2169">mob_02_001416</td></a>
+        <td>7</td>
+        <td></td>
+        <td>宝藏鉴定
+就交给诺彭嗼！</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#14">14</td></a>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2113">mob_02_001242</td></a>
+        <td>7</td>
+        <td></td>
+        <td>辅助核心
+该怎么用呢？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2065">mob_02_001134</td></a>
+        <td>7</td>
+        <td></td>
+        <td>一个子儿都不会让的嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2226">mob_02_002121</td></a>
+        <td>7</td>
+        <td></td>
+        <td>今天也是个打捞的好天气啊</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2108">mob_02_001227</td></a>
+        <td>5</td>
+        <td></td>
+        <td>太美味了嗼[ML:Dash ]！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2422">mob_02_007005</td></a>
+        <td>7</td>
+        <td></td>
+        <td>有什么事嗼？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2370">mob_02_004379</td></a>
+        <td>7</td>
+        <td></td>
+        <td>累死了嗼～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2156">mob_02_001322</td></a>
+        <td>7</td>
+        <td></td>
+        <td>没问题嗼</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2062">mob_02_001131</td></a>
+        <td>7</td>
+        <td></td>
+        <td>英维迪亚的客人请往这边嗼～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2058">mob_02_001126</td></a>
+        <td>7</td>
+        <td></td>
+        <td>用电梯运到上面嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2400">mob_02_004428</td></a>
+        <td>7</td>
+        <td></td>
+        <td>电梯还没有来嗼？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2188">mob_02_001446</td></a>
+        <td>7</td>
+        <td></td>
+        <td>各位请看 今天的特选商品
+想要的客人请赶快举起手嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2186">mob_02_001441</td></a>
+        <td>7</td>
+        <td></td>
+        <td>这绝对物有所值嗼</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2008">mob_02_001009</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#454">454</td></a>
+        <td>出租费100G嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2008">mob_02_001009</td></a>
+        <td>7</td>
+        <td><a href="../common/FLD_ConditionList.html#453">453</td></a>
+        <td>今天的出租时间结束了嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2023">mob_02_001029</td></a>
+        <td>7</td>
+        <td></td>
+        <td>欢迎嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2027">mob_02_001033</td></a>
+        <td>7</td>
+        <td></td>
+        <td>来看看嗼～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2104">mob_02_001223</td></a>
+        <td>7</td>
+        <td></td>
+        <td>要不要来一份
+香甜美味的甜品嗼？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2174">mob_02_001424</td></a>
+        <td>7</td>
+        <td></td>
+        <td>要不要来当打捞员嗼？</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2250">mob_02_003011</td></a>
+        <td>7</td>
+        <td></td>
+        <td>是阿伐利缇亚的名产包子！
+果然该吃这个～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2256">mob_02_003027</td></a>
+        <td>7</td>
+        <td></td>
+        <td>也带些回家吃吧～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#37">ma02a_FLD_AutoTalk#37</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2309">mob_02_004112</td></a>
+        <td>5</td>
+        <td></td>
+        <td>嗼！</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2303">mob_02_004101</td></a>
+        <td>5</td>
+        <td></td>
+        <td>要用丹田的力量发声嗼！</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#36">36</td></a>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#39">ma02a_FLD_AutoTalk#39</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2302">mob_02_004100</td></a>
+        <td>5</td>
+        <td></td>
+        <td>商人的基本就是体力嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2305">mob_02_004106</td></a>
+        <td>5</td>
+        <td></td>
+        <td>嗼～！</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#38">38</td></a>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2335">mob_02_004326</td></a>
+        <td>7</td>
+        <td></td>
+        <td>快长大嗼～
+快变美味嗼～</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2369">mob_02_004378</td></a>
+        <td>7</td>
+        <td></td>
+        <td>今天的工作结束了嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="ma02a_FLD_AutoTalk.html#43">ma02a_FLD_AutoTalk#43</a>
+          </details>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2459">mob_02_003072</td></a>
+        <td>7</td>
+        <td></td>
+        <td>嗯[ML:Dash ]</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2460">mob_02_003039</td></a>
+        <td>7</td>
+        <td></td>
+        <td>还差一点啊[ML:Dash ]</td>
+        <td>2</td>
+        <td><a href="ma02a_FLD_AutoTalk.html#42">42</td></a>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2461">mob_02_003073</td></a>
+        <td>5</td>
+        <td></td>
+        <td>之前明明还是那么的五音不全[ML:Dash ]</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2463">mob_02_003075</td></a>
+        <td>5</td>
+        <td></td>
+        <td>真是美妙的歌声！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2465">mob_02_003077</td></a>
+        <td>5</td>
+        <td></td>
+        <td>完全被这美妙的歌声
+俘虏了嗼</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td><a href="ma02a_FLD_MobPop.html#2472">mob_02_003084</td></a>
+        <td>5</td>
+        <td></td>
+        <td>新菜单的辛辣尖嘴龙奶油浓汤
+太棒了嗼！</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

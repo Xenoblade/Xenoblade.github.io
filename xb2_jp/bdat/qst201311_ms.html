@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201311_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201311_msg0001</td>
+        <td>84</td>
+        <td class="side">貴方がダリスさんですね</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201311_msg0002</td>
+        <td>84</td>
+        <td class="side">ああ　俺がダリスだ
+何か知りたいことがあるのかい？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201311_msg0003</td>
+        <td>84</td>
+        <td class="side">フォンス・マイムで起こっている
+子供の行方不明事件について[ML:Dash ]
+情報をいただきたいのです</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201311_msg0005</td>
+        <td>84</td>
+        <td class="side">あの事件か[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201311_msg0006</td>
+        <td>84</td>
+        <td class="side">俺も頼まれて色々調べてんだが
+いっそ不自然なくらい情報が掴めねぇ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201311_msg0007</td>
+        <td>84</td>
+        <td class="side">皆　神隠しとか言って
+摩訶不思議な現象だと思ってるくらいだ</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201311_msg0008</td>
+        <td>84</td>
+        <td class="side">だから　俺も全く情報が
+掴めてないんだよ
+すまないな</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201311_msg0010</td>
+        <td>84</td>
+        <td class="side">そうですか[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201311_msg0011</td>
+        <td>84</td>
+        <td class="side">すみません
+今　神隠しの話をしていましたか？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201311_msg0012</td>
+        <td>84</td>
+        <td class="side">ええ　そうですが？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201311_msg0013</td>
+        <td>84</td>
+        <td class="side">実は　娘のマルキナが遊びにいくって
+出ていったきり　帰ってこないんです[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201311_msg0014</td>
+        <td>84</td>
+        <td class="side">一緒に遊んでいた子供達も皆[ML:Dash ]
+どこを探しても見つからず[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201311_msg0015</td>
+        <td>84</td>
+        <td class="side">最近起こっている神隠しと
+関係しているのでは　と思いまして[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201311_msg0019</td>
+        <td>84</td>
+        <td class="side">貴方の娘は
+どこで遊んでいたのか知っているか？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201311_msg0020</td>
+        <td>84</td>
+        <td class="side">それが　すみません
+私もそこまではわからなくて[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201311_msg0021</td>
+        <td>84</td>
+        <td class="side">今　他の親御さんと一緒に
+探しているんです</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201311_msg0022</td>
+        <td>84</td>
+        <td class="side">もしかしたら何か新しい情報を
+掴んでいるかもしれませんが[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201311_msg0023</td>
+        <td>84</td>
+        <td class="side">その方々に話を聞きたいのだが
+どこへ行けば会えるのだろうか？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201311_msg0024</td>
+        <td>84</td>
+        <td class="side">ええと　ラクーザさんは劇場区に
+セルディさんは商業区に住んでいますよ</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201311_msg0025</td>
+        <td>84</td>
+        <td class="side">ドリアスさんは
+セースロア水田にいると思いますので
+そちらで直接聞いていただければ[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201311_msg0026</td>
+        <td>84</td>
+        <td class="side">ありがとうございます
+承知しました</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201311_msg0027</td>
+        <td>84</td>
+        <td class="side">安心してください
+子供は私達が必ず見つけ出します</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201311_msg0028</td>
+        <td>84</td>
+        <td class="side">本当ですか！？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201311_msg0029</td>
+        <td>84</td>
+        <td class="side">ええ[ML:Dash ]
+貴方はここで
+子供達の帰りを待っていてください</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201311_msg0030</td>
+        <td>84</td>
+        <td class="side">ありがとうございます
+どうかよろしくお願いします！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201311_msg0031</td>
+        <td>84</td>
+        <td class="side">まずは　手がかりを見つけるために
+他の親御さんの所に行ってみましょう</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

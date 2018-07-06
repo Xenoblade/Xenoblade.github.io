@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst001201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst001201_msg001</td>
+        <td>84</td>
+        <td class="side">喂喂！ 那边那位！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst001201_msg002</td>
+        <td>84</td>
+        <td class="side">就是在说你
+你让我产生了惊人的创作欲望啊！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst001201_msg003</td>
+        <td>84</td>
+        <td class="side">啊啊 你的身姿实在太美了！
+简直让我想用你当模特画上一幅画啊</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst001201_msg004</td>
+        <td>84</td>
+        <td class="side">可是很遗憾
+现在我还有其他事情想拜托你</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst001201_msg005</td>
+        <td>84</td>
+        <td class="side">我本来在像往常那样画风景画呢
+可是颜料却用完了！</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst001201_msg006</td>
+        <td>84</td>
+        <td class="side">我的颜料是特制的
+是我自己调出来的</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst001201_msg007</td>
+        <td>84</td>
+        <td class="side">只有用优质的素材才能调出好看的颜色
+只有做什么都一丝不苟
+才能画出优秀的画作来啊！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst001201_msg009</td>
+        <td>84</td>
+        <td class="side">以前这事我都是拜托
+相熟的佣兵去做的[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst001201_msg010</td>
+        <td>84</td>
+        <td class="side">不过 现在他好像在忙着准备
+跟斯佩比亚的战争
+所以委托费用也跟着水涨船高了</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst001201_msg011</td>
+        <td>84</td>
+        <td class="side">我区区一介画家
+实在付不起这么高的价</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst001201_msg013</td>
+        <td>84</td>
+        <td class="side">我正头疼该怎么做才好呢
+你就出现在了我的面前！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst001201_msg014</td>
+        <td>84</td>
+        <td class="side">在此相会也是一种缘分！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst001201_msg015</td>
+        <td>84</td>
+        <td class="side">我想请你们帮我收集
+用来做颜料的原材料！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst001201_msg016</td>
+        <td>84</td>
+        <td class="side">我给不了钱
+但是我可以给你有用的工具呀</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst001201_msg017</td>
+        <td>84</td>
+        <td class="side">怎么样
+你愿意答应我的请求吗？</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst001201_msg018</td>
+        <td>84</td>
+        <td class="side">谢谢！</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst001201_msg019</td>
+        <td>84</td>
+        <td class="side">我想让你带来的是
+铠虾的甲壳和
+三色岩石啊</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst001201_msg020</td>
+        <td>84</td>
+        <td class="side">要找铠虾的甲壳的话
+去打败法凌水域附近的罪恶铠虾就行了</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst001201_msg021</td>
+        <td>84</td>
+        <td class="side">要找三色岩石的话去英维迪亚岩山
+就能挖到哦</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst001201_msg022</td>
+        <td>84</td>
+        <td class="side">那就拜托你了哦！</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst001201_msg101</td>
+        <td>84</td>
+        <td class="side">好想赶快调好颜料继续画画啊[ML:Dash ]
+然后把画卖掉 去吃好吃的[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst001201_msg102</td>
+        <td>84</td>
+        <td class="side">对了对了 你是想问
+颜料的事是吧？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst001201_msg103</td>
+        <td>84</td>
+        <td class="side">要找铠虾的甲壳的话
+去打败法凌水域附近的罪恶铠虾就行了</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst001201_msg104</td>
+        <td>84</td>
+        <td class="side">要找三色岩石的话去英维迪亚岩山
+就能挖到哦</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst001201_msg201</td>
+        <td>84</td>
+        <td class="side">喔！就是这个啊这个！
+没错 我想要的就是这个！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst001201_msg202</td>
+        <td>84</td>
+        <td class="side">你真是帮了我一个大忙啊
+这样我就可以画完这幅画了！</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst001201_msg203</td>
+        <td>165</td>
+        <td class="side">要问什么呢？</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst001201_msg204</td>
+        <td>165</td>
+        <td class="side">询问画完后画师想干什么</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst001201_msg205</td>
+        <td>165</td>
+        <td class="side">询问为什么这么着急</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst001201_msg206</td>
+        <td>84</td>
+        <td class="side">我要卖给一位名叫伊佐尔迪的贵族</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst001201_msg207</td>
+        <td>84</td>
+        <td class="side">伊佐尔迪喜欢风景画
+这次的成品感觉应该能画出不错的水平
+我想他一定会喜欢的</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst001201_msg208</td>
+        <td>84</td>
+        <td class="side">这样一来 我就暂时
+不用饿肚子了</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst001201_msg210</td>
+        <td>84</td>
+        <td class="side">那当然是因为我
+肚子饿了啊！</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst001201_msg211</td>
+        <td>84</td>
+        <td class="side">如果我不画完的话
+就不能把这幅画卖出去
+也就没钱买东西吃了啊！</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst001201_msg212</td>
+        <td>84</td>
+        <td class="side">不过多亏你的帮忙 这下应该能画完了</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst001201_msg213</td>
+        <td>84</td>
+        <td class="side">这次一定能卖个好价钱
+应该暂时不用过饿肚子的生活了</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst001201_msg214</td>
+        <td>84</td>
+        <td class="side">说起来我还没谢谢你呢</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst001201_msg215</td>
+        <td>84</td>
+        <td class="side">来 这个给你[ML:Dash ]
+肯定能派上用场的</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst001201_msg216</td>
+        <td>84</td>
+        <td class="side">该道谢的是我
+下次见面的时候要当我的模特儿哦！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

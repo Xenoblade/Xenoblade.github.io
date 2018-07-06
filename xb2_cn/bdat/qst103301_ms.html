@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst103301_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst103301_msg001</td>
+        <td>62</td>
+        <td class="side">おぼえてますか？(仮)</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst103301_msg002</td>
+        <td>62</td>
+        <td class="side">弟たちにこれ届けて(仮)</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst103301_msg101</td>
+        <td>62</td>
+        <td class="side">届けてくれた？(仮)</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst103301_msg0001</td>
+        <td>84</td>
+        <td class="side">是什么呢 
+[ML:Dash ]嗯？ 哎呀？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst103301_msg0002</td>
+        <td>84</td>
+        <td class="side">你们
+我好像见过你们[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst103301_msg0003</td>
+        <td>84</td>
+        <td class="side">啊！你们是那个时候的！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst103301_msg0004</td>
+        <td>84</td>
+        <td class="side">不记得了吗？
+我是在托里格镇接受
+御刃者选拔的艾尔诺斯！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst103301_msg0005</td>
+        <td>165</td>
+        <td class="side">还记得见过我吗？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst103301_msg0006</td>
+        <td>165</td>
+        <td class="side">记得很清楚</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst103301_msg0007</td>
+        <td>165</td>
+        <td class="side">忘记了</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst103301_msg0021</td>
+        <td>84</td>
+        <td class="side">你还记得我呢！
+谢谢啦</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst103301_msg0041</td>
+        <td>84</td>
+        <td class="side">竟然忘了[ML:Dash ]
+我还记得哦</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst103301_msg0042</td>
+        <td>84</td>
+        <td class="side">见证了我与核心水晶调谐
+那个值得纪念的瞬间
+的人的长相[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst103301_msg0043</td>
+        <td>84</td>
+        <td class="side">我怎么可能忘记！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst103301_msg0101</td>
+        <td>84</td>
+        <td class="side">那之后
+我就来帝都阿尔巴马格
+接受训练</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst103301_msg0102</td>
+        <td>84</td>
+        <td class="side">总算是当上军队所属的
+御刃者了</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst103301_msg0103</td>
+        <td>84</td>
+        <td class="side">多亏我加入了军队
+可以给弟弟他们
+寄生活费了</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst103301_msg0104</td>
+        <td>84</td>
+        <td class="side">只不过 虽然日子比以前好了
+可是父母不在 让弟弟们
+感到寂寞了[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst103301_msg0105</td>
+        <td>84</td>
+        <td class="side">不过我的父母
+讨厌斯佩比亚帝国军
+他们要是知道了会生气的吧[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst103301_msg0106</td>
+        <td>84</td>
+        <td class="side">嗯 总之[ML:Dash ]
+发生了很多事[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst103301_msg0107</td>
+        <td>84</td>
+        <td class="side">对了 在阿尔巴马格
+有各式各样的东西呢！</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst103301_msg0108</td>
+        <td>84</td>
+        <td class="side">比如弟弟们没有见过的
+食物呀 玩具呀
+我想把这些带给他们</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst103301_msg0109</td>
+        <td>84</td>
+        <td class="side">但我请不到长假
+总是回不了托里格</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst103301_msg0110</td>
+        <td>84</td>
+        <td class="side">我买了小点心
+但是感觉等不到送出去就要变质了</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst103301_msg0111</td>
+        <td>84</td>
+        <td class="side">你要帮我送吗？
+太感谢了！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst103301_msg0112</td>
+        <td>84</td>
+        <td class="side">我去把要送的东西
+打包收拾好！</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst103301_msg0113</td>
+        <td>84</td>
+        <td class="side">塞了太多东西
+变得有点重了[ML:Dash ]
+不过还是拜托你了</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst103301_msg0114</td>
+        <td>84</td>
+        <td class="side">弟弟们住在托里格镇的
+加雷德居住区</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst103301_msg0115</td>
+        <td>84</td>
+        <td class="side">是尼罗 泽兰 摩丽肯 这三个人！
+请不要弄错！</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst103301_msg0116</td>
+        <td>0</td>
+        <td class="side"></td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst103301_msg0117</td>
+        <td>84</td>
+        <td class="side">满天宝石挞[ML:Dash ]
+要是母亲也能尝尝就好了[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst103301_msg0118</td>
+        <td>84</td>
+        <td class="side">虽然没有放什么容易坏的东西
+不过还是希望你
+可以尽快送到！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

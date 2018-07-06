@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BLD_CommonList</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>QuestRace</th>
+          <th>Gender</th>
+          <th>Weapon</th>
+          <th>Atr</th>
+          <th>ModelTable</th>
+          <th>IdeaType</th>
+          <th>IdeaMin</th>
+          <th>IdeaMax</th>
+          <th>Ratio</th>
+          <th>RarityMin</th>
+          <th>RarityMax</th>
+          <th>Fskill</th>
+          <th>ArtsAchievementSet1</th>
+          <th>ArtsAchievementSet2</th>
+          <th>ArtsAchievementSet3</th>
+          <th>SkillAchievementSet1</th>
+          <th>SkillAchievementSet2</th>
+          <th>SkillAchievementSet3</th>
+          <th>FskillAchivementSet1</th>
+          <th>FskillAchivementSet2</th>
+          <th>FskillAchivementSet3</th>
+          <th>KeyAchievementSet</th>
+          <th>FavoriteCategoryMax</th>
+          <th>FavoriteItemMax</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Bravery</td>
+        <td>0</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Truth</td>
+        <td>0</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Compassion</td>
+        <td>0</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Justice</td>
+        <td>0</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>0</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>191</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Bravery</td>
+        <td>0</td>
+        <td>15</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Truth</td>
+        <td>0</td>
+        <td>15</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Compassion</td>
+        <td>0</td>
+        <td>15</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Justice</td>
+        <td>0</td>
+        <td>15</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>0</td>
+        <td>15</td>
+        <td>10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#1">1</td></a>
+        <td><a href="FLD_AchievementSet.html#10">10</td></a>
+        <td><a href="FLD_AchievementSet.html#19">19</td></a>
+        <td><a href="FLD_AchievementSet.html#4">4</td></a>
+        <td><a href="FLD_AchievementSet.html#13">13</td></a>
+        <td><a href="FLD_AchievementSet.html#22">22</td></a>
+        <td><a href="FLD_AchievementSet.html#7">7</td></a>
+        <td><a href="FLD_AchievementSet.html#16">16</td></a>
+        <td><a href="FLD_AchievementSet.html#25">25</td></a>
+        <td><a href="FLD_AchievementSet.html#28">28</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Bravery</td>
+        <td>6</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Truth</td>
+        <td>6</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Compassion</td>
+        <td>6</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Justice</td>
+        <td>6</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>6</td>
+        <td>15</td>
+        <td>20</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Bravery</td>
+        <td>6</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Truth</td>
+        <td>6</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Compassion</td>
+        <td>6</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Justice</td>
+        <td>6</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>6</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>2</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#2">2</td></a>
+        <td><a href="FLD_AchievementSet.html#11">11</td></a>
+        <td><a href="FLD_AchievementSet.html#20">20</td></a>
+        <td><a href="FLD_AchievementSet.html#5">5</td></a>
+        <td><a href="FLD_AchievementSet.html#14">14</td></a>
+        <td><a href="FLD_AchievementSet.html#23">23</td></a>
+        <td><a href="FLD_AchievementSet.html#8">8</td></a>
+        <td><a href="FLD_AchievementSet.html#17">17</td></a>
+        <td><a href="FLD_AchievementSet.html#26">26</td></a>
+        <td><a href="FLD_AchievementSet.html#29">29</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Bravery</td>
+        <td>9</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Truth</td>
+        <td>9</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Compassion</td>
+        <td>9</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>4</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Justice</td>
+        <td>9</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>9</td>
+        <td>15</td>
+        <td>40</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Bravery</td>
+        <td>9</td>
+        <td>15</td>
+        <td>80</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Truth</td>
+        <td>9</td>
+        <td>15</td>
+        <td>80</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Compassion</td>
+        <td>9</td>
+        <td>15</td>
+        <td>80</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Justice</td>
+        <td>9</td>
+        <td>15</td>
+        <td>80</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>8</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>9</td>
+        <td>15</td>
+        <td>80</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>16</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Bravery</td>
+        <td>15</td>
+        <td>15</td>
+        <td>100</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>16</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Truth</td>
+        <td>15</td>
+        <td>15</td>
+        <td>100</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#2">動物</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>16</td>
+        <td><a href="BLD_BladeModelList.html#10">10</td></a>
+        <td>Compassion</td>
+        <td>15</td>
+        <td>15</td>
+        <td>100</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#1">男性型</td></a>
+        <td>0</td>
+        <td>16</td>
+        <td><a href="BLD_BladeModelList.html#4">4</td></a>
+        <td>Justice</td>
+        <td>15</td>
+        <td>15</td>
+        <td>100</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td><a href="MNU_Msg_Race.html#1">人型</td></a>
+        <td><a href="MNU_Msg_Gender.html#2">女性型</td></a>
+        <td>0</td>
+        <td>16</td>
+        <td><a href="BLD_BladeModelList.html#7">7</td></a>
+        <td>Bravery, Truth, Compassion, Justice</td>
+        <td>15</td>
+        <td>15</td>
+        <td>100</td>
+        <td>1</td>
+        <td>3</td>
+        <td>Collection, Mercenary</td>
+        <td><a href="FLD_AchievementSet.html#3">3</td></a>
+        <td><a href="FLD_AchievementSet.html#12">12</td></a>
+        <td><a href="FLD_AchievementSet.html#21">21</td></a>
+        <td><a href="FLD_AchievementSet.html#6">6</td></a>
+        <td><a href="FLD_AchievementSet.html#15">15</td></a>
+        <td><a href="FLD_AchievementSet.html#24">24</td></a>
+        <td><a href="FLD_AchievementSet.html#9">9</td></a>
+        <td><a href="FLD_AchievementSet.html#18">18</td></a>
+        <td><a href="FLD_AchievementSet.html#27">27</td></a>
+        <td><a href="FLD_AchievementSet.html#30">30</td></a>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>menu_tutorial</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チュートリアル用テキスト
+０１２３４５６７８９０１２３４５６７８９０１２３４５６７８
+０１２３４５６７８９０１２３４５６７８９０１２３４５６７８</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さあ　目の前に『今日の昼飯』が現れました
+レックスがエネミーと戦うには武器を使わなくてはなりません
+武器を構えることを[System:Color name=tutorial ]抜刀[/System:Color]といいます</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">抜刀は　エネミーに[System:Color name=tutorial ]ターゲット[/System:Color]が表示されている時に
+[System:Color name=tutorial ][ML:icon icon=A ]ボタン[/System:Color]を押すだけでOKです
+ターゲットを表示するには[System:Color name=tutorial ][ML:icon icon=R ]ボタン[/System:Color]を押してください</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ターゲット[/System:Color]とは
+エネミーの頭の上に表示されたピンクのマークのことです</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ちなみに武器をしまうことを[System:Color name=tutorial ]納刀[/System:Color]といいます
+[System:Color name=tutorial ]納刀[/System:Color]したい場合は[System:Color name=tutorial ][ML:icon icon=R ]ボタン[/System:Color]を押しながら
+[System:Color name=tutorial ][ML:icon icon=B ]ボタン[/System:Color]を押してください</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]抜刀[/System:Color]した後に　[System:Color name=tutorial ]ターゲット[/System:Color]が表示されたエネミーに近づくと
+自動的に攻撃を仕掛けます
+これを[System:Color name=tutorial ]オートアタック[/System:Color]といいます</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さっそく[System:Color name=tutorial ]抜刀[/System:Color]して『今日の昼飯』を仕留めてみましょう</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">オートアタックは[System:Color name=tutorial ]3連撃で1セット[/System:Color]になっています
+１撃目よりも[System:Color name=tutorial ]2撃目[/System:Color]　2撃目よりも[System:Color name=tutorial ]3撃目[/System:Color]のほうが[System:Color name=tutorial ]強力[/System:Color]です</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">またオートアタックには[System:Color name=tutorial ]適正距離[/System:Color]が設定されています
+適正距離で戦えば　エネミーへのダメージも高くなります</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">画面[System:Color name=tutorial ]右下[/System:Color]のアイコンが点灯しました
+このアイコンは[System:Color name=tutorial ]アーツアイコン[/System:Color]といいます
+[System:Color name=tutorial ]アーツアイコン[/System:Color]が点灯したのは[System:Color name=tutorial ]アーツ[/System:Color]が撃てる合図です</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]アーツ[/System:Color]とはオートアタックとは異なる[System:Color name=tutorial ]特殊な技[/System:Color]で
+アイコンの位置に[System:Color name=tutorial ]対応したボタンを押すだけ[/System:Color]で
+撃つことができます</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]アーツは[/System:Color]一度撃ってしまうと　[System:Color name=tutorial ]アーツアイコン[/System:Color]を囲っている
+[System:Color name=tutorial ]リキャストゲージ[/System:Color]が満タンになるまで
+撃つことができなくなってしまいます</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]リキャストゲージ[/System:Color]はエネミーに
+オートアタックを与えることによって
+どんどんたまっていきます</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">試しに[System:Color name=tutorial ][ML:icon icon=X ]ボタン[/System:Color]を押して
+[System:Color name=tutorial ]アーツ[/System:Color]：[System:Color name=tutorial ]アンカーショット[/System:Color]を撃ってみましょう</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　エネミーから緑色の物体がドロップしました
+これは[System:Color name=tutorial ]回復ポット[/System:Color]というアイテムです</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスを操作して[System:Color name=tutorial ]回復ポット[/System:Color]を拾うと
+[System:Color name=tutorial ]HPを回復させる[/System:Color]ことができます</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]アーツ[/System:Color]には[System:Color name=tutorial ]アンカーショット[/System:Color]のように
+確実にエネミーから　[System:Color name=tutorial ]回復ポット[/System:Color]をドロップさせる能力が
+付いているものがあります</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]アーツ[/System:Color]を連発して　最大火力でエネミーを倒すか
+HPが減ってきた時のために[System:Color name=tutorial ]アーツ[/System:Color]を温存しておくか
+状況を考えながら　[System:Color name=tutorial ]アーツ[/System:Color]を撃つことも大切な戦術になります</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　エネミーの周りに
+オーラのようなエフェクトが発生しました
+これはエネミーが[System:Color name=tutorial ]怒り状態[/System:Color]になったことを表します</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一部のエネミーは
+[System:Color name=tutorial ]HPが一定の値を下回る[/System:Color]と怒り状態になります</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">怒り状態になったエネミーは能力値が上がり
+通常の状態よりも強くなるので注意が必要になります</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">いよいよレックスが
+天の聖杯のドライバーとして生まれ変わりました</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　ゲージがたまったのが[System:Color name=tutorial ]必殺技[/System:Color]アイコンです</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">お待たせしました
+[System:Color name=tutorial ]ブレイドコンボ[/System:Color]の説明です</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ボタンチャレンジ】
+</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　ホムラが[System:Color name=tutorial ]命中率UP[/System:Color]の[System:Color name=tutorial ]特殊効果[/System:Color]をかけてくれました
+このホムラのバトル中のサポートを[System:Color name=tutorial ]ブレイドアーツ[/System:Color]といいます</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【必殺技①】</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]火属性[/System:Color]の必殺技から[System:Color name=tutorial ]水属性[/System:Color]の必殺技につながる
+ブレイドコンボを試してみましょう
+まずは　ホムラの[System:Color name=tutorial ]レベル1[/System:Color]の必殺技を撃ってみてください</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドとのキズナ】</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【属性コンボ②】
+</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">そろそろ仲間のドライバーとの戦いにも慣れてきたと思います
+ここでパーティ全体でエネミーに大ダメージを与えられる
+[System:Color name=tutorial ]チェインアタック[/System:Color]の説明をしたいと思います</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ついにホムラが本当の力を解放しました
+ここではホムラ覚醒時の操作方法を説明します</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">手強そうなエネミーがたくさん出てきましたね
+ここでは複数のエネミーと戦う際の
+ちょっとしたテクニックを教えてあげます</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ヴァンダムからアンカーの使い方をレクチャーされましたね
+これでレックスの[System:Color name=tutorial ]アンカーショット[/System:Color]に[System:Color name=tutorial ]ダウン[/System:Color]の効果が付きました</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスだけが使える[System:Color name=tutorial ]三人技[/System:Color]の説明をいたします</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【エネミーの怒り状態】</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【抜刀/納刀/おびき寄せ】
+</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【回復ポット】
+</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【戦闘不能】
+</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ブレイク[/System:Color]が決まったようですね</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ロール】
+</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ついに[System:Color name=tutorial ]レベル4の必殺技[/System:Color]の説明をする時がやってきました</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ボタンチャレンジ】</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ブレイドコンボ[/System:Color]は[System:Color name=tutorial ]1レベル上の必殺技[/System:Color]をつなげることが出来ます
+次にニアの[System:Color name=tutorial ]必殺技ゲージ[/System:Color]を[System:Color name=tutorial ]レベル2[/System:Color]までサービスするので
+[System:Color name=tutorial ][ML:icon icon=ZL ]ボタン[/System:Color]を押してニアの必殺技を撃ってみてください</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドアーツ】</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すでにご存じだとは思いますが
+あらためて[System:Color name=tutorial ]ブレイドコンボ[/System:Color]の説明をさせていただきます</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">バトルメンバーが3人になったところで
+あらためて[System:Color name=tutorial ]ブレイドコンボ[/System:Color]による[System:Color name=tutorial ]封印効果[/System:Color]の説明をいたします</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ニアの手助けをする前に
+少しだけ仲間のドライバーがいる場合の戦い方を説明します</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドチェンジ】</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【特殊ブレイドチェンジ・ヒカリ】
+</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで耳寄りな情報をひとつ
+まずは通常画面の説明をしたいと思います</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは通常画面の説明をしたいと思います</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　矢印が示しているのは[System:Color name=tutorial ]コンパス[/System:Color]といいます</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">コンパスの中にはマークが描かれていて
+レックスが次にどこに行けばいいのかを示しています</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">マークの上には[System:Color name=tutorial ]数字[/System:Color]が書かれていますが
+これは[System:Color name=tutorial ]目的地までの距離[/System:Color]を表しています</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また目的地がレックスのいる場所よりも
+上にある場合はマークの[System:Color name=tutorial ]上[/System:Color]に小さな矢印が表示され</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスのいる場所よりも
+下にある場合はマークの[System:Color name=tutorial ]下[/System:Color]に小さな矢印が表示されます</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次に矢印が示しているのが[System:Color name=tutorial ]環境情報[/System:Color]といいます</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">環境情報を見ることで今いる場所
+[System:Color name=tutorial ]天候[/System:Color]　[System:Color name=tutorial ]時間[/System:Color]を把握することができます</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">環境は冒険の進み方に合わせて刻々と変化します</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">環境が変化することによって
+レックスの命がすぐさま危なくなるということはありませんが</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーの生息パターンや街の人の生活パターンが変化するので
+注意深く見守る必要があります</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次は[System:Color name=tutorial ]ミニマップ[/System:Color]
+これはレックスの周りの情報を
+いち早く確認するための仕組みです</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">中央の黄色いマークが今いる場所と向いている方向です</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ][ML:icon icon=L3 ][/System:Color]を押し込めば　画面いっぱいにマップを出したり
+ミニマップを消すこともできます</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒険に自信がある人は
+ミニマップを表示せずにプレイしてみても良いかもしれません</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最後は[System:Color name=tutorial ]現在の目的[/System:Color]
+これは今レックスが何をすればいいのかを説明しています</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ][ML:icon icon=ZR ][/System:Color]で表示を切り替えられるので
+必要に応じて確認してみてください</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは今お伝えした情報を頼りに
+[System:Color name=tutorial ]中央交易所[/System:Color]にいる[System:Color name=tutorial ]メロロ[/System:Color]のもとを訪れてみましょう</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さて　いよいよ冒険の始まりです
+新しいシステムが使えるようになった時は
+タイミングごとにシステムの説明をいたします</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">この後　画面の真ん中に[System:Color name=tutorial ]ゴルトムント帰還の港[/System:Color]と表示されます
+これは[System:Color name=tutorial ]ランドマーク[/System:Color]を発見したことを表しています</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エリアにはランドマークの他にも
+[System:Color name=tutorial ]秘境[/System:Color]と[System:Color name=tutorial ]ロケーション[/System:Color]があります</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">発見したランドマークへは[System:Color name=tutorial ]スキップトラベル[/System:Color]でいつでも戻れます</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">スキップトラベルは一度行ったことがある場所なら
+[System:Color name=tutorial ]メインメニューからいつでも瞬時に移動できる[/System:Color]という
+とても便利な機能です</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それともうひとつ
+ランドマークと秘境にはスキップトラベル以外の役目があります</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">残念ながらバトルで負けてしまった時にも
+最後に通ったランドマークへと戻されることになります</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストにはたくさんのランドマークがありますので
+色んなところへ足を運んでみましょう</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここでは[System:Color name=tutorial ]サルベージ[/System:Color]を紹介します
+今　レックスの前方に見えるのは
+[System:Color name=tutorial ]サルベージポイント[/System:Color]といいます</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]シリンダ[/System:Color]を持っている時に
+サルベージポイントに行くことで
+サルベージをすることができます</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">サルベージをすると[System:Color name=tutorial ]ボタンチャレンジ[/System:Color]が始まります</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ボタンチャレンジに成功すると
+良いお宝を手に入れやすくなりますので
+上手くタイミングを見てボタンを押しましょう</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">凶悪なエネミーを釣り上げてしまうことがありますので
+ご注意ください</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">サルベージポイントはアルストのいたる所に存在します
+サルベージポイントごとに獲得できるお宝も違うので
+新しいポイントを見つけたら　ぜひサルベージを試してください</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それと　シリンダはアルストの各地にある
+[System:Color name=tutorial ]サルベージショップ[/System:Color]で買うことができます</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">高価なシリンダほど良いお宝を入手しやすいですが
+最初のうちは安いシリンダでも十分でしょう</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それではイルイルからもらったシリンダを使って
+早速サルベージにトライしてみましょう</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ひとつ大切なことをお伝えし忘れていました
+[System:Color name=tutorial ]カメラ[/System:Color]の扱い方です</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">カメラには[System:Color name=tutorial ]マニュアルカメラ[/System:Color]と[System:Color name=tutorial ]オートカメラ[/System:Color]の
+2種類があります</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ][ML:icon icon=R3 ]を上下左右に操作[/System:Color]することによって
+カメラを見たい方向に変えることができます
+これが[System:Color name=tutorial ]マニュアルカメラ[/System:Color]といいます</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">マニュアルカメラを操作中に[System:Color name=tutorial ][ML:icon icon=R3 ]を押し込む[/System:Color]と
+カメラはレックスの背後に回り込み　そのままレックスの後を
+追いかけます</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">これを[System:Color name=tutorial ]オートカメラ[/System:Color]といいます</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">カメラは[System:Color name=tutorial ]寄り引きの具合と高さ[/System:Color]を調整することができます
+[System:Color name=tutorial ][ML:icon icon=L ]を押しながら[ML:icon icon=R3 ]の左右[/System:Color]でカメラの高さ
+[System:Color name=tutorial ][ML:icon icon=L ]を押しながら[ML:icon icon=R3 ]の上下[/System:Color]でカメラの寄り引きが変わります</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">カメラを調整すると
+今まで見えなかったものが見つかるかもしれません
+ぜひ色々と試してみてください</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]宿泊施設[/System:Color]についてちょっと説明です
+宿泊施設で[System:Color name=tutorial ]軽く休む[/System:Color]と[System:Color name=tutorial ]ボーナスEXP[/System:Color]を使って
+[System:Color name=tutorial ]レベルを上げる[/System:Color]ことができます</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ボーナスEXPは　クエストを達成したり
+ランドマークを発見することで手に入る経験値の事で
+宿泊施設で使うことができます</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レベルの上げ方は
+【すべてオート】【選択オート】【マニュアル】の
+3種類があります</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すべてオートを選ぶと
+ボーナス経験値を使い切るまで　レベルアップします</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">選択オートを選ぶと　キャラクターごとにオートかマニュアルかを
+選ぶことができます</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ボーナスEXPの範囲内で　上げたいレベルを調整しながら
+レベルアップをすることができます</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">どうしても勝てないエネミーが出てきたら
+貯まったボーナスEXPでレベルアップするのも良いでしょう</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レベルが上がりすぎると手応えがなくなってしまうという方は
+宿泊施設ではレベルアップをしないという
+プレイスタイルもありかもしれません</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">あと　宿屋では【雲海の満ち引きが変わるまで休む】
+という役割もあります</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストには雲海の満ち引きによって
+行ける場所　行けなくなる場所があるので
+そんな時は　宿屋で一休みすると良いでしょう</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは　明日の大仕事に備えて　ゆっくりお休みください</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　目の前に見えているのは[System:Color name=tutorial ]採集ポイント[/System:Color]です
+採集ポイントを調べると[System:Color name=tutorial ]コレクションアイテム[/System:Color]を
+見つけることができます</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">採集ポイントはアルストのいたる所に存在し
+その土地によって手に入れることができる
+コレクションアイテムも多種多様です</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　採集ポイントの中には
+ブレイドの[System:Color name=tutorial ]フィールドスキル[/System:Color]によって　普段は手に入らない
+アイテムを手に入れることができる場所もあるようです</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">手に入れたコレクションアイテムは
+この先の冒険できっとレックス達の役に立つので
+採集ポイントを発見したら　積極的に調べてみましょう</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">前方に障害物が見えてきましたね
+一見通れなさそうに見える場所も
+ブレイドの[System:Color name=tutorial ]フィールドスキル[/System:Color]を使えば　通れる場合もあります</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]折れた大樹[/System:Color]を調べてみましょう</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">無事ホムラの[System:Color name=tutorial ]火属性の力[/System:Color]を使って
+折れた大樹を取り除けたようですね</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ホムラのフィールドスキルは　[System:Color name=tutorial ]メインメニュー[/System:Color]＞
+[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]＞[System:Color name=tutorial ]詳細[/System:Color]
+で確認することができます</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストにはフィールドスキルを使わないと
+移動できないような場所が数多く存在します</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">行けなさそうな場所があっても
+近づいて　調べてみることが重要になります</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは　早くニアを探しにいきましょう</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【スキップタイム】が使えるようになりました
+スキップタイムは自分の好きな時間帯に
+時間を変更できるという　大変便利なシステムです</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">時間が変わると　エネミーの状態や
+街の人の状態が変化します</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">色々と試して　新しい発見をしてみてください</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一部のショップで買い物をすることができるようになりました
+アルストの世界には色々なショップがあります</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">手に入れたお宝を物々交換できる[System:Color name=tutorial ]交易ショップ[/System:Color]
+お金で情報を手に入れることができる[System:Color name=tutorial ]情報ショップ[/System:Color]
+お気に入りのアイテムを手に入れられる[System:Color name=tutorial ]生活ショップ[/System:Color]</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">シリンダを買うことができる[System:Color name=tutorial ]サルベージショップ[/System:Color]
+身に着けるものを買うことができる[System:Color name=tutorial ]アクセサリーショップ[/System:Color]
+などなど</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すでに使ったことがあるショップがあるかもしれませんが
+今お伝えしたショップは　これから自由に使うことができます</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">とくにアルストの交易の要ともいえる
+ここアヴァリティア商会には
+たくさんのショップが集まっています</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒険に出かける前に
+ショップで買い物してみるのもいいかもしれません</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">肝心なことを言い忘れていました
+レックスが持っている[System:Color name=tutorial ]ポーチ[/System:Color]のことです</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスは普段からポーチを持ち歩いています
+ポーチにはレックスのお気に入りの[System:Color name=tutorial ]ポーチアイテム[/System:Color]を入れて
+持ち歩くことができます</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ポーチにはポーチアイテムを
+ひとつだけセットすることができます</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ポーチアイテムは生活ショップに売っています
+どのアイテムをポーチに入れるかによって
+冒険の途中で様々な効果を発揮します</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストには全部で12種類の生活ショップがあるので
+新しい生活ショップを見つけたら
+立ち寄ってみてください</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ようやく念願の[System:Color name=tutorial ]アビスベスト[/System:Color]を手に入れることができましたね
+[System:Color name=tutorial ]アビスベスト[/System:Color]には最大HPが24%上昇する効果が付いています</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今はまだアビスベストしか持っていませんが
+この先の冒険で
+もっとたくさんのアクセサリーを手に入れることでしょう</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アクセサリーは手に入れただけでは効果を発揮しません
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]キャラクターセットアップ[/System:Color]＞
+[System:Color name=tutorial ]アクセサリー装備[/System:Color]の項目で装備できます</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]クエスト[/System:Color]を受注しましたね
+クエストには[System:Color name=tutorial ]メインストーリークエスト[/System:Color]と
+[System:Color name=tutorial ]通常クエスト[/System:Color]があります</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　受注したのはメインストーリークエストで
+メインストーリーを進めるのに必須なクエストです
+コンパス上では[System:Color name=tutorial ]ピンクの！アイコン[/System:Color]で行き先が表示されます</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストには困っている人たちが大勢います
+そんな人の頭の上には[System:Color name=tutorial ]青い？アイコン[/System:Color]が表示されています</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">話しかけてみると　悩みを打ち明けて
+何かお仕事をお願いしてくるでしょう
+これがクエストです</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">見事悩みを解決すれば
+きっとステキなプレゼントをくれるに違いありません</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通常のクエストは
+メインストーリーを進めるのに必須ではありません
+コンパス上では[System:Color name=tutorial ]青いアイコン[/System:Color]で表示されます</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで大切な情報です
+コンパスには[System:Color name=tutorial ]アクティブ[/System:Color]に設定している
+クエストのアイコンだけが表示されます</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アクティブの切り替えは
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]クエストログ[/System:Color]から
+行うことができます</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それとアクティブに設定できるクエストは
+ひとつだけになります</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">クエストを受注できる数には制限がないので
+冒険の途中で青い【？】アイコンを見つけたら
+どんどん話しかけてみましょう</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスに冒険を共にする仲間ができました
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]隊列変更[/System:Color]から
+仲間の編成を組み換えることができます</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">仲間が増えてもバトルに参加することができる仲間は
+[System:Color name=tutorial ]最大3人[/System:Color]までとなりますのでご注意ください</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　隊列変更で[System:Color name=tutorial ]1[/System:Color]に設定したキャラクターが
+[System:Color name=tutorial ]操作するキャラクター[/System:Color]になります</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キャラクターによってバトルのスタイルも様々なので
+自分のプレイスタイルに合ったキャラクターを
+探してみてください</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">早くじっちゃんやニア達を探しにいかなくては
+ならないところですが
+ここから先は未知のエネミーと遭遇するかもしれません</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">その前に備えあれば憂いなし
+レックスの成長について説明いたします</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">バトルの終了後に獲得できるポイントに
+[System:Color name=tutorial ]WP[/System:Color]と[System:Color name=tutorial ]SP[/System:Color]というものがあります</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">WPは[System:Color name=tutorial ]ウェポンポイント[/System:Color]
+レックスの[System:Color name=tutorial ]武器の習熟度[/System:Color]とでも言いましょうか
+ポイントを使って[System:Color name=tutorial ]アーツのレベルを上げる[/System:Color]ことができます</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同じアーツでもレベルがアップすれば
+エネミーに与えるダメージはケタ違いに高くなります</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]キャラクターセットアップ[/System:Color]＞
+[System:Color name=tutorial ]アーツ強化[/System:Color]からアーツを強化してみてください</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ひとつ注意が必要なのは
+アーツの強化にはレベルが設定されていることです</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスが設定されているレベル以上になっていないと
+アーツを強化することができません</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　アーツ強化の項目では
+使用するアーツのボタンを変更することもできます</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPは[System:Color name=tutorial ]スキルポイント[/System:Color]
+レックスの[System:Color name=tutorial ]バトルテクニックの練度[/System:Color]とでも言いましょうか
+ポイントを使って色々な[System:Color name=tutorial ]スキルを習得する[/System:Color]ことができます</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]キャラクターセットアップ[/System:Color]＞
+[System:Color name=tutorial ]キズナリング[/System:Color]からスキルを習得してみてください</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスの[System:Color name=tutorial ]ブレイド同調[/System:Color]の能力が解放されました</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]ブレイド管理[/System:Color]＞[System:Color name=tutorial ]ブレイド同調[/System:Color]からいつでも
+新たなブレイドを仲間にすることができます</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">コアクリスタルには
+[System:Color name=tutorial ]コモンコアクリスタル[/System:Color]・[System:Color name=tutorial ]レアコアクリスタル[/System:Color]・
+[System:Color name=tutorial ]エピックコアクリスタル[/System:Color]の3段階が存在します</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同調するコアクリスタルのグレードが高くなると
+珍しい外見のブレイドが誕生する確率も高くなります</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">新しいコアクリスタルを手に入れたら
+まずは同調してみると良いでしょう</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　新しく誕生したブレイドは
+[System:Color name=tutorial ]ブレイドエンゲージ[/System:Color]を行うことで
+バトルに参加してくれるようになります</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]キャラクターセットアップ[/System:Color]＞
+[System:Color name=tutorial ]ブレイドエンゲージ[/System:Color]から
+誕生したブレイドをエンゲージしてみましょう</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今までバトル中にレックスを
+サポートしてくれるブレイドはホムラだけでしたが</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">これからはエンゲージしたブレイドも
+レックスをサポートしてくれるようになります</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">バトル中に表示される
+ブレイドの顔アイコンに対応したボタンを押すと
+[System:Color name=tutorial ]ブレイドスイッチ[/System:Color]をすることができます</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドスイッチとはバトル中にサポートしてくれるブレイドを
+変更することです</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドスイッチを行うと
+使っている[System:Color name=tutorial ]武器はもちろん　アーツも変化[/System:Color]します</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">武器によってエネミーへの攻撃も変化するので
+戦況に応じてブレイドスイッチしてみましょう</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで注意をひとつ　一度ブレイドスイッチをしてしまうと
+次にバトルをサポートしてくれるようになるまで
+少しだけ時間がかかってしまうのでご注意ください</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　レックスとブレイドには[System:Color name=tutorial ]信頼度[/System:Color]があります
+信頼度が上がれば
+再サポートしてくれるまでの時間も短くなります</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ブレイドのキズナギフトを獲得すると信頼度も上がる[/System:Color]ので
+新しいブレイドを誕生させたら
+積極的にキズナギフトを獲得してみましょう</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">史上初の人工ブレイドハナJSが誕生しました
+ハナJSは人工ブレイドなので
+[System:Color name=tutorial ]アシストコア[/System:Color]を装備することができないのです</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">史上初の人工ブレイド　ハナが誕生しました
+ハナはアシストコアを装備できない代わりに
+[System:Color name=tutorial ]ハナライズ[/System:Color]でカスタマイズすることができます</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ハナライズは　[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞
+[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]（[System:Color name=tutorial ]ハナJS[/System:Color]）＞[System:Color name=tutorial ]ハナライズ[/System:Color]で確認可能です</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ハナライズするためには
+[System:Color name=tutorial ]TIGER! TIGER![/System:Color]で獲得したアイテムが必要となります</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">TIGER! TIGER!をたくさんプレイして
+どんどんハナJSを強くしていきましょう</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">無事ニアを救出できたようですね
+メンバーが3人そろったところで
+[System:Color name=tutorial ]ロール[/System:Color]と[System:Color name=tutorial ]クラス[/System:Color]の説明をいたします</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドの生まれ持った役割　それが[System:Color name=tutorial ]ロール[/System:Color]です
+[System:Color name=tutorial ]ロール[/System:Color]には　[System:Color name=tutorial ]攻撃[/System:Color]・[System:Color name=tutorial ]回復[/System:Color]・[System:Color name=tutorial ]防御[/System:Color]の3種類があり
+例えば　ホムラのロールは攻撃　ビャッコは回復です</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">どんなロールのブレイドとエンゲージしているかで
+ドライバーの戦闘スタイルが決まります
+それをドライバーの[System:Color name=tutorial ]クラス[/System:Color]と呼びます</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]攻撃重視[/System:Color]のクラス　[System:Color name=tutorial ]防御重視[/System:Color]のクラス
+ロールの組み合わせによって様々なクラスがあり
+クラスはそれぞれ　[System:Color name=tutorial ]特殊な効果[/System:Color]を持っています</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">好きなブレイドとただエンゲージするのか
+強い効果を持つクラスになれるよう　工夫してみるのか
+自分のプレイスタイルにあわせて試してみましょう</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドのロールは変えることができませんが
+なんと人工ブレイドである[System:Color name=tutorial ]ハナ[/System:Color]は　
+[System:Color name=tutorial ]ハナライズ[/System:Color]で[System:Color name=tutorial ]ロールを変更[/System:Color]することができます</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ハナのロールは[System:Color name=tutorial ]TIGER! TIGER![/System:Color]で獲得できます
+色々な[System:Color name=tutorial ]ロールCPU[/System:Color]をGETするために
+TIGER! TIGER!を攻略してみましょう</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side"></td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ロールとクラスの説明はこれで終わりです
+それでは　ここから脱出しましょう</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここでちょっとしたバトルのコツを説明します
+エネミーの[System:Color name=tutorial ]おびき寄せ[/System:Color]です</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーから少し離れた場所にいる時でも
+ターゲット状態であれば　[System:Color name=tutorial ]納刀したままで[ML:icon icon=down ]ボタンを押す[/System:Color]と
+エネミーをおびき寄せることができます</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">群れをなしているエネミーを一体ずつ倒したい場合や
+広い場所で戦いたい場合などに　役立ててください</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">試しに目の前にいるエネミーを
+[System:Color name=tutorial ][ML:icon icon=R ]ボタン[/System:Color]でターゲットしてから
+[System:Color name=tutorial ][ML:icon icon=down ]ボタン[/System:Color]でおびき寄せてみましょう</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">グーラ領で最も大きな街　[System:Color name=tutorial ]トリゴの街[/System:Color]に到着しました
+ここで[System:Color name=tutorial ]街の発展[/System:Color]に関して説明します</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アヴァリティアやグーラ　その他　アルストの街には
+[System:Color name=tutorial ]5段階の発展度[/System:Color]というものがあります</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">発展度は[System:Color name=tutorial ]発展ポイント[/System:Color]を稼ぐことによって
+どんどん上がっていきます</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">街の発展度が上がると
+色々なショップの[System:Color name=tutorial ]商品の売り値が安くなっていきます[/System:Color]</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">場合によってはショップに新しい商品が
+並ぶこともあるかもしれません</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]クエストを達成[/System:Color]したりして　街の人の悩みを解決すると
+街の[System:Color name=tutorial ]発展ポイントを上げる[/System:Color]ことができます</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　[System:Color name=tutorial ]人に話しかける[/System:Color]ことでも
+ほんの少しだけ[System:Color name=tutorial ]ポイントを稼ぐ[/System:Color]ことができます</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">街の発展度はショップで買い物をする時にも確認できますが
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]スキップトラベル[/System:Color]でも
+確認することができます</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストで暮らす人間の一人として
+街の発展に貢献してみては　いかがでしょう？</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここアルストは雲海に囲まれた世界です
+レックス達が言っていたように
+[System:Color name=tutorial ]雲海には満ち引きがあります[/System:Color]</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">雲海の満ち引きによって行ける場所が行けなくなったり
+行けなかった場所にも行けるようになったりするので
+雲海の変化に応じて冒険の幅を広げてみましょう</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで肝心なことを忘れていたので　説明いたします
+[System:Color name=tutorial ]ブレイドの成長[/System:Color]に関してです</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドは大きく分けて3種類の成長要素があります
+[System:Color name=tutorial ]武器強化[/System:Color]・[System:Color name=tutorial ]キズナリング[/System:Color]・[System:Color name=tutorial ]アシストコア[/System:Color]装備です</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">武器強化とは生まれ持ったブレイドの武器を
+[System:Color name=tutorial ]コアチップ[/System:Color]で強化することです</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]＞
+[System:Color name=tutorial ]武器強化[/System:Color]からコアチップを武器に埋め込むことができます</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストのいたる所に存在する
+コアチップショップを見つけたら
+まずは新しいコアチップを買ってみるといいでしょう</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">コアチップの中には基本的な性能を上げるだけでなく
+特別な能力を発動させるものもあると　噂されています</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　アルストにいるエネミーの中には
+特別なコアチップを持っているエネミーもいるそうです</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]＞
+[System:Color name=tutorial ]武器強化[/System:Color]からコアチップを武器に埋め込むことができます</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次にキズナリング
+キズナリングとはブレイドの持つ様々な能力を表すものです</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">フィールドの障害を解決する[System:Color name=tutorial ]フィールドスキル[/System:Color]を獲得したり
+バトルで使う[System:Color name=tutorial ]必殺技[/System:Color]を強化することができます</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナリングの能力は[System:Color name=tutorial ]キズナギフト[/System:Color]を獲得すると解放されます
+キズナギフトを獲得するためには
+色々な課題を達成しなくてはなりません</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最後に[System:Color name=tutorial ]アシストコア[/System:Color]
+これはブレイドが装備できるアクセサリーのようなものです</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アシストコアは冒険の途中　色々な場面で
+手に入れることができます</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　手に入れただけでは
+アシストコアを装備することはできません</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">街の中にある[System:Color name=tutorial ]アシストコアショップ[/System:Color]で[System:Color name=tutorial ]ビルド[/System:Color]（[System:Color name=tutorial ]精製[/System:Color]）を
+しなくてはなりません
+詳しい話はアシストコアショップで聞いてみましょう</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さて　いよいよ大仕事が始まるわけですが
+その前にショップに関してもうひとつ説明いたします
+[System:Color name=tutorial ]交易ショップ[/System:Color]に関してです</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">交易ショップではサルベージで手に入れた[System:Color name=tutorial ]トレジャー[/System:Color]を
+セットで引き取ってくれます</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">セットで交易すれば
+ひとつずつ売るより沢山のお金がもらえます</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">交易ショップが普通のショップと違うところは
+[System:Color name=tutorial ]まとめ買いをしている[/System:Color]という点と
+[System:Color name=tutorial ]トレジャーに重点を置いている[/System:Color]という2点です</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">たとえば　サルベージをして手に入れたトレジャーを
+普通のショップに持っていっても
+20Gでしか買い取ってくれなかったとします</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同じアイテムを交易ショップに持っていくと
+3つで100Gで買い取ってくれることがあるのです</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">注意したいのは　交易ショップの買い取りラインナップには
+それぞれ課題が設定されていて
+その課題ごとでしかアイテムを売ることができないという点です</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　トレードが成立すると売却価格が上がる他にも
+アイテムをもらえる場合もあるのです</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">サルベージでトレジャーを見つけた場合は
+すぐに普通のショップで売ってしまうのではなく
+交易ショップを上手く使うようにしましょう</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここでアシストコアについておさらいをさせていただきます
+レックス達の前に[System:Color name=tutorial ]アシストコアショップ[/System:Color]がありますが
+ここで[System:Color name=tutorial ]未錬成のアシストコアをビルドする[/System:Color]ことができます</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アシストコアをビルドするには
+[System:Color name=tutorial ]コレクションアイテム[/System:Color]が必要になります</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アシストコアにはそれぞれ錬成に必要となる
+コレクションアイテムの数が決められています</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">その数だけのコレクションアイテムさえ持っていれば
+ショップでビルドすることができるのです</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　アシストコアの価値が高ければ高いほど
+要求されるコレクションアイテムの
+集めやすさも難しくなります</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">未錬成のアシストコアを早めにビルドしたいのであれば
+日ごろから採集ポイントで
+コレクションアイテムを集めておくことを心がけましょう</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">目の前に宝箱があるようですが
+ちょっと普通の宝箱とは様子が違います</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">宝箱の上のアイコンを見る限り
+どうやらあの宝箱を開けるには
+ブレイドの[System:Color name=tutorial ]フィールドスキル[/System:Color]が必要なようですね</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今開けることができなかったとしても
+あきらめる必要はありません</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナリングでブレイドのフィールドスキルを成長させれば
+いつかきっとあの宝箱を開けることができる日がやってきます</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]宿泊施設[/System:Color]で[System:Color name=tutorial ]ぐっすり休む[/System:Color]ことができるようになりました
+ぐっすり休むを選ぶと
+[System:Color name=tutorial ]雲海が変化するまで[/System:Color]お休みすることになります</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒険の途中　雲海の満ち引きのせいで身動きが取れなくなったら
+細かいことは考えずに一度街に戻って
+宿泊施設を使うことをオススメします</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">雲海の満ち引きはぐっすり休むごとに入れ替わるので
+ぐっすり休む前に
+[System:Color name=tutorial ]環境情報[/System:Color]に表示してある[System:Color name=tutorial ]雲海の状態[/System:Color]を確認するようにしましょう</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それともうひとつ
+アルストにあるすべての宿泊施設で
+ぐっすり休める訳ではないようです</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">少なくとも雲海の影響を受けやすいトリゴの宿泊施設では
+ぐっすり休むことができるみたいですね</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">晴れて[System:Color name=tutorial ]フレースヴェルグ傭兵団[/System:Color]の団長になれたようですね
+ここでもう一度ユウが伝えてくれたことを
+おさらいしておきましょう</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">傭兵団には　日々様々な[System:Color name=tutorial ]任務[/System:Color]が舞い込んできます</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">新しい任務が追加されたときは
+ポップアップアナウンスでお知らせしますので
+メニューから確認してみてください</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">その他にも　街の中で困っている人がいるような場合は
+その人から直接任務を請け負うことがあるかもしれません</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">傭兵団の任務の中には[System:Color name=tutorial ]一度しか請け負うことができないもの[/System:Color]と
+[System:Color name=tutorial ]何回でも請け負うことができるもの[/System:Color]があるので
+ご注意ください</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">傭兵団の任務を達成するには
+ブレイドの部隊を[System:Color name=tutorial ]編成[/System:Color]しなくてはなりません</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">任務によって
+ブレイドの持つ[System:Color name=tutorial ]特定のスキル[/System:Color]が必要となりますので
+ふさわしいブレイドを編成して任務に当たらせましょう</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">任務に適したブレイドを派遣する部隊に組み込むことで
+任務の達成にかかる時間を大幅に短縮することもできます</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">傭兵団の部隊に組み込まれたブレイドは
+[System:Color name=tutorial ]任務を達成[/System:Color]することによって
+[System:Color name=tutorial ]キズナリングのアチーブメントを達成[/System:Color]します</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒険を共にしない間でも
+傭兵団の任務を任せておくことで
+強いブレイドに成長させることができるのです</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それと傭兵団には[System:Color name=tutorial ]傭兵団レベル[/System:Color]があります
+これは特定の任務を達成することによって
+レベルアップさせることができます</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">そろそろ傭兵団のレベルアップができそうかな？
+と思ったらユウのもとに戻ってきて
+話を聞いてみるといいでしょう</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">傭兵団のレベルが上がれば
+より難易度の高い任務を請け負うことが
+できるようになります</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　街が発展すると特別任務が発生し
+それを達成することで
+お店のラインナップが変わることがあるかもしれません</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ポイントをまとめると傭兵団がやるべきことは
+・[System:Color name=tutorial ]任務を請け負う[/System:Color]
+・[System:Color name=tutorial ]ブレイドで部隊を編成する[/System:Color]</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">・[System:Color name=tutorial ]任務を達成する
+[/System:Color]・[System:Color name=tutorial ]報酬を受け取る[/System:Color]
+といった感じになります</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは　健闘を祈るッス</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">あそこに見えてきたのは
+[System:Color name=tutorial ]キズナトーク[/System:Color]の発生を知らせるサインです</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナトークとは仲間との絆を深めるための
+大切な出来事のことです</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">このサインは
+アルストの世界各地にちりばめられているので
+冒険の途中で見つけたらぜひアクセスしてみましょう</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナトークをクリアすると
+ブレイドとの[System:Color name=tutorial ]信頼度[/System:Color]が格段に[System:Color name=tutorial ]上昇[/System:Color]すること
+間違いなしです</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　出来事の最中に現れる
+選択肢によって信頼度の上昇率が変化してくるので
+選択を迫られた際は　細心の注意を払って答えを決めましょう</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナトークを見るには　その時の編成や時間が大事です
+サインにアクセスすると情報がわかりますので
+うまく条件を揃えてみましょう</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一緒にいる仲間の編成や時間によって
+発生する時もあれば　何も起こらない場合もあります</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">忘れてはならないのは
+[System:Color name=tutorial ]キズナトーク[/System:Color]がブレイドのキズナリングの
+[System:Color name=tutorial ]アチーブメント[/System:Color]になっている場合があることです</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">やっぱりブレイドを成長させたい場合には
+キズナトークは必要不可欠というわけですね</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それともうひとつ
+キズナトークのサインがある場所は
+宿泊施設で一休みした後に教えてもらえる場合があるそうです</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナトークを見ると
+ブレイドとの信頼度が大きくあがります
+たくさん体験して絆をどんどん深めましょう</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここではドライバーとしての　基本的な戦い方を説明します</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは[System:Color name=tutorial ]キズナ[/System:Color]の説明です
+[System:Color name=tutorial ]レックスとホムラの間を結ぶ光の帯[/System:Color]が見えるはずです
+これがキズナです</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ドライバーとブレイドの心が通い合うと
+キズナが[System:Color name=tutorial ]金色[/System:Color]に輝き始めます</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キズナが金色に輝くと　心が通い合った証
+バトル中のレックスの[System:Color name=tutorial ]移動速度[/System:Color]や
+[System:Color name=tutorial ]アーツのリキャスト速度[/System:Color]があがります</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　基本的な攻撃力もどんどん上がっていきます</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">心を通い合わせてキズナを強くするには
+ブレイドの近くで戦い
+連続で攻撃を決めるようにしましょう</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">その他にも連続して攻撃を加えるなど
+上手に戦うことでもキズナは深まっていきます</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">逆にブレイドと離れすぎると
+キズナが弱まり　ドライバーの力も下がります
+ホムラとのキズナを意識してメツと戦いましょう</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">そうなってしまうと
+レックスの戦う力はどんどん失われてしまうでしょう</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ホムラとのキズナを意識してメツと戦いましょう</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]必殺技[/System:Color]とはアーツの威力をはるかに超えた攻撃力をもつ
+攻撃方法のことです</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ゲージをため続ける[/System:Color]ことで
+必殺技のレベルも威力も上がっていきます</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">必殺技はアーツを撃って[System:Color name=tutorial ]ゲージ[/System:Color]をためれば使えます</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ゲージをたくさんため続けることで
+必殺技の[System:Color name=tutorial ]レベル[/System:Color]も[System:Color name=tutorial ]Ⅰ[/System:Color]＜[System:Color name=tutorial ]Ⅱ[/System:Color]＜[System:Color name=tutorial ]Ⅲ[/System:Color]とあがっていきます</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">オートアタックが[System:Color name=tutorial ]ヒットしたタイミングでアーツを使う[/System:Color]と
+[System:Color name=tutorial ]よりたくさんのゲージをためる[/System:Color]ことができます
+成功すると丸いサインが出ますので目安にしましょう</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　必殺技を撃つと[System:Color name=tutorial ]ボタンチャレンジ[/System:Color]が発生します</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">画面の指示に従って
+[System:Color name=tutorial ]タイミング良くボタンを押しましょう[/System:Color]
+上手くいけばダメージ倍増です</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">必殺技をエネミーに与えると
+[System:Color name=tutorial ]ブレイドコンボ[/System:Color]を狙うチャンスがやってきますが
+ブレイドコンボのことは　またの機会で説明します</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーに必殺技をキメると
+画面上にブレイドコンボの
+[System:Color name=tutorial ]有効時間を表すゲージ[/System:Color]が表示されます</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">またそれと同時にブレイドコンボの
+[System:Color name=tutorial ]ルート[/System:Color]も表示されます</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ゲージが[System:Color name=tutorial ]0[/System:Color]になる前に
+[System:Color name=tutorial ]もう一段階上の必殺技[/System:Color]をキメることによって
+単体の必殺技よりもより強大なダメージを与えられるのです</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">必殺技がエネミーにヒットしたようですね
+それでは必殺技のレベルをサービスしますので
+ブレイドコンボをキメてみましょう</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ブレイドアーツ[/System:Color]はブレイドが持つ特殊能力のひとつで
+バトル中に[System:Color name=tutorial ]自動的にドライバーをサポートしてくれる[/System:Color]能力です</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドとの信頼度が上がることで
+サポートしてくれる確率が上がっていきます</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信頼度のお話は
+もう少しドライバーとしての経験をつんだら
+説明いたしましょう</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今はメツを倒すことに集中してください</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">仲間がそろってきたところで
+[System:Color name=tutorial ]ヘイトシステム[/System:Color]について説明させていただきます</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すでにお気付きの方もいるかもしれませんが
+エネミーから攻撃を受けている間は
+ドライバーの周囲に[System:Color name=tutorial ]赤いリング[/System:Color]が表示されます</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">このリングのことを[System:Color name=tutorial ]ヘイトリング[/System:Color]と呼びます
+リングに重なって表示されている[System:Color name=tutorial ]クサビ形のアイコン[/System:Color]は
+攻撃を受けている[System:Color name=tutorial ]エネミーの方向[/System:Color]を意味しています</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ヘイトとはエネミーが強力な攻撃を受けると
+その攻撃を与えたドライバーに向かって
+お返しをしたくなる　文字通り『憎しみ』の気持ちです</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ヒーラー系クラスのドライバーがヘイトを集めてしまうと
+それだけ戦闘不能になりやすくなってしまいます
+今だと　ニアはヘイトを集めないほうが良いでしょう</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ガード系クラスのドライバーであれば
+ヘイトを集めてもしばらくは攻撃に耐えることができます
+今だと　トラはヘイトを集めたほうが良いでしょう</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ファイター系クラスのドライバーは
+たくさんのダメージを与えることが役割です
+今だと　レックスは攻撃に専念するのが良いでしょう</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ガードが敵のヘイトを集め　
+ヒーラーはガードのHPを回復する
+その間にファイターが敵のHPを減らす</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">矢印の示している場所に注目してください
+ここには[System:Color name=tutorial ]ブレイドコンボ[/System:Color]を[System:Color name=tutorial ]ステージ3[/System:Color]までキメた時の
+色々な[System:Color name=tutorial ]封印効果[/System:Color]が表示されています</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最後にキメた必殺技によって
+コンボルート上に表示されている封印効果を
+エネミーに与えることができます</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーに与えた封印効果は
+[System:Color name=tutorial ]別の封印効果が与えられるまで[/System:Color]継続します</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">封印効果を与えるとバトルが圧倒的に有利になるので
+是非ともブレイドコンボでステージ3をキメられるように
+がんばってください</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし注意しなくてはいけないのが
+ステージ3のブレイドコンボをキメると
+エネミーはその属性に対しての[System:Color name=tutorial ]耐性[/System:Color]を持ってしまうという事です</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">つまり　同じコンボルートをたどっても
+与えられるダメージは少なくなってしまうのです</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドコンボも色々なルートを試すことが
+重要になってきます</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストの世界にはまだまだ未知の生物が
+存在しているようです</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">色々なエネミーをターゲットしてみると
+[System:Color name=tutorial ]通常のエネミーとは異なるターゲットアイコン[/System:Color]が
+表示されるエネミーが見つかるはずです</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それこそが[System:Color name=tutorial ]ユニークモンスター[/System:Color]と呼ばれる
+モンスターです</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルスト中の名うてのドライバーですら
+手を焼いているといわれています</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ユニークモンスターを討伐すれば
+きっとアルストの誰もがあなたを認めてくれるでしょう</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　普通のモンスターとは違って
+かなり強力な攻撃を仕掛けてくるので
+準備を整えてから戦いを挑むといいでしょう</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　ユニークモンスターを討伐すると
+モンスターが生きていた証として
+その場所にお墓が残ります</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">お墓に向かって[ML:icon icon=A ]ボタンを押すと
+もう一度ユニークモンスターを
+呼び起こすことができるというウワサがあるようです</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスが本当の意味での天の聖杯のドライバー
+[System:Color name=tutorial ]マスタードライバー[/System:Color]の力に目覚めました</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ニアが本来の姿を明かしました
+レックスは[System:Color name=tutorial ]ブレイドのニア[/System:Color]とエンゲージすることができます</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスの求めに応じてヒカリを呼び出したり
+逆にホムラを呼び出したりできるようになりました</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　矢印が示しているアイコンは
+エネミーの[System:Color name=tutorial ]弱点[/System:Color]を意味しています</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]火のアイコン[/System:Color]が表示されているので
+このエネミーは[System:Color name=tutorial ]火に弱い[/System:Color]
+つまりホムラが有利ということになります</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次に仲間を[System:Color name=tutorial ]助け起こす[/System:Color]方法です
+ドライバーのHPが0になってしまうと
+ドライバーは戦闘不能状態になってしまいます</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">矢印が示している[System:Color name=tutorial ]パーティゲージ[/System:Color]がたまっている時に
+戦闘不能の仲間に近づき[ML:icon icon=A ]ボタンを押すと
+1ゲージを消費して仲間を回復することができます</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">自分が戦闘不能になってしまった時も
+パーティゲージのたまった分があれば
+仲間が近づいてきて助けてくれます</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さらに仲間ドライバーとの[System:Color name=tutorial ]ブレイドコンボ[/System:Color]を説明します
+その前に　また必殺技ゲージをサービスするので
+必殺技を撃ってみてください</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　やみくもにアンカーショットを使っても
+エネミーをダウンさせられるわけではありません</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーが[System:Color name=tutorial ]ブレイク[/System:Color]したタイミングを狙って
+アンカーショットを使ってみましょう</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーを[System:Color name=tutorial ]ブレイク[/System:Color]させるアーツを[System:Color name=tutorial ]ニア[/System:Color]が持っていたはずです
+ニアがエネミーをブレイクさせるまで
+アンカーショットを温存しておきましょう</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エネミーに[System:Color name=tutorial ]ブレイク[/System:Color]が発生すると
+矢印の場所にゲージが表示されます
+これを[System:Color name=tutorial ]ドライバーコンボゲージ[/System:Color]といいます</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ゲージが0になる前にダウン効果のあるアーツを
+エネミーに叩き込むと　大ダメージを与えることができます
+これを[System:Color name=tutorial ]ドライバーコンボ[/System:Color]といいます</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ドライバーコンボは
+[System:Color name=tutorial ]ブレイク[/System:Color]＞[System:Color name=tutorial ]ダウン[/System:Color]＞[System:Color name=tutorial ]ライジング[/System:Color]＞[System:Color name=tutorial ]スマッシュ[/System:Color]の
+4段階までつなげることができます</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックス達が使うことができるアーツの中には
+ドライバーコンボをつなげられる
+効果をもったアーツもあるので色々と試してはいかがでしょう</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">っとその前に　まずは[System:Color name=tutorial ]アンカーショット[/System:Color]でアルドンを
+[System:Color name=tutorial ]ダウン[/System:Color]させて[System:Color name=tutorial ]ブレイク[/System:Color]からつないでみましょう</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">もうすでに使った人もいるかもしれませんが
+今　矢印が示しているアイコンは
+[System:Color name=tutorial ]集中アイコン[/System:Color]といいます</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">複数のエネミーと戦っている最中に　ターゲットを変更しても
+操作キャラクター以外のキャラクター達は
+ターゲット変更前のエネミーを攻撃し続けます</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ちょっと不利な戦況だなと思った時は
+集中アイコンに対応した[System:Color name=tutorial ][ML:icon icon=left ]ボタン[/System:Color]を押せば
+すぐに操作キャラクターに加勢してくれます</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">混戦になった時は
+どんな順番でエネミーを倒していくかを冷静に見極めて</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ターゲットの切り替え[/System:Color]と[System:Color name=tutorial ]集中命令[/System:Color]を上手く使えば
+思いの他簡単に窮地を乗り越えられるはずです
+天の聖杯を狙う悪漢達から　ホムラを守りましょう</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスは　他の誰が同調したブレイドだろうと
+[System:Color name=tutorial ]自由にエンゲージ[/System:Color]することができます</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ちょうど今は　カグツチとエンゲージした状態です
+メレフに負けないよう
+カグツチの力を最大限に引き出してください</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">もちろん[System:Color name=tutorial ]ドライバーとしてのニア[/System:Color]と旅を続けることもできます</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドであるニアとエンゲージするなら
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞
+[System:Color name=tutorial ]ドライバーのニアを選んで[ML:icon icon=Y ]ボタン[/System:Color]</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ドライバーとしてのニアと旅をするなら
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞
+[System:Color name=tutorial ]ブレイドのニアを選んで[ML:icon icon=Y ]ボタン[/System:Color]で変更できます</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">フィールド中に呼び出したい時は
+メインメニュー＞[System:Color name=tutorial ]キャラクター[/System:Color]＞
+[System:Color name=tutorial ]ホムラ[/System:Color]（[System:Color name=tutorial ]ヒカリ[/System:Color]）＞[System:Color name=tutorial ][ML:icon icon=Y ]ボタン[/System:Color]</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">バトル中に呼び出したい時は
+[System:Color name=tutorial ]ブレイドスイッチ[/System:Color]用の[System:Color name=tutorial ]ホムラ（ヒカリ）アイコン[/System:Color]に対応する
+ボタンを押せば切り替えることができます</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通常のブレイドスイッチとは違って
+ブレイドスイッチ後の[System:Color name=tutorial ]クールタイムがない[/System:Color]ので
+状況に応じて自由に呼び出してみましょう</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今　矢印が示しているのは
+[System:Color name=tutorial ]操作キャラ[/System:Color]がエンゲージしているブレイドからの[System:Color name=tutorial ]コンボ申請[/System:Color]です</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">これは　操作キャラがエンゲージしているブレイドの必殺技で
+[System:Color name=tutorial ]ブレイドコンボを開始できる場合[/System:Color]や</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すでにブレイドコンボが発生中でも
+操作キャラがエンゲージしているブレイドの必殺技で
+[System:Color name=tutorial ]ブレイドコンボをつなぐことができる場合[/System:Color]に表示されます</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドコンボは戦局を左右する大事な技なので
+お見逃しのないように</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは[System:Color name=tutorial ]パーティゲージ[/System:Color]
+これは前に説明したと思いますが
+戦闘不能の仲間を助け起こす以外にも重要な役割があるのです</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">このゲージが3までたまっている時に
+[System:Color name=tutorial ][ML:icon icon=plus ]ボタン[/System:Color]を押すことで[System:Color name=tutorial ]チェインアタック[/System:Color]が発動します</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チェインアタックが発動すると
+ドライバーが[System:Color name=tutorial ]エンゲージしているブレイドの必殺技[/System:Color]を
+順番に選んでいくことになります</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">たとえばレックスがエンゲージしているホムラの必殺技を選び
+次はニアがエンゲージしているビャッコ
+その次はトラがエンゲージしているハナといった具合です</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">この一巡を[System:Color name=tutorial ]ラウンド[/System:Color]といいます</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チェインアタック中は
+ブレイドの必殺技を選ぶことによって
+エネミーについてしまった[System:Color name=tutorial ]属性玉[/System:Color]を[System:Color name=tutorial ]割る[/System:Color]ことができます</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">属性玉の[System:Color name=tutorial ]反属性の必殺技[/System:Color]を使うと
+玉はより割れやすく
+割れれば[System:Color name=tutorial ]大ダメージ[/System:Color]を与えられます</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">どのブレイドを　どの順番で呼び出すのか
+よく考えて必殺技を選びましょう</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また属性玉の[System:Color name=tutorial ]反属性のブレイド以外[/System:Color]のブレイドでも
+攻撃をすればエネミーについている属性玉の中から
+[System:Color name=tutorial ]ランダム[/System:Color]で属性玉の[System:Color name=tutorial ]どれか[/System:Color]に[System:Color name=tutorial ]1ポイント[/System:Color]の[System:Color name=tutorial ]ダメージ[/System:Color]を与えます</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドは必殺技を撃ってしまうと
+クールタイムを消費してしまいますが
+[System:Color name=tutorial ]属性玉[/System:Color]を[System:Color name=tutorial ]Burst[/System:Color]させると[System:Color name=tutorial ]クールタイム[/System:Color]が[System:Color name=tutorial ]半分回復[/System:Color]します</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ラウンド中に属性玉をBurstさせることができれば
+[System:Color name=tutorial ]チェインアタックのラウンドを延長させる[/System:Color]ことができます</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">より多く属性玉をBurstさせることで
+チェインアタック終了時のエネミーに対する[System:Color name=tutorial ]ダメージ倍率[/System:Color]が
+劇的に[System:Color name=tutorial ]変化[/System:Color]します</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ラウンドが延長する際には[System:Color name=tutorial ]ボタンチャレンジ[/System:Color]が発生します
+ボタンチャレンジに[System:Color name=tutorial ]成功[/System:Color]することでも
+ブレイドの[System:Color name=tutorial ]クールタイム[/System:Color]を[System:Color name=tutorial ]回復[/System:Color]することができます</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">このボタンチャレンジにはもう一つ重要な役割があります
+通常　ブレイドの必殺技を選ぶと
+[System:Color name=tutorial ]Lv.1[/System:Color]の[System:Color name=tutorial ]必殺技[/System:Color]が発動しますが</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ボタンチャレンジに[System:Color name=tutorial ]成功[/System:Color]すると
+必殺技の[System:Color name=tutorial ]Lv.[/System:Color]が[System:Color name=tutorial ]上昇[/System:Color]して[System:Color name=tutorial ]最大Lv.3[/System:Color]の必殺技まで
+使えるようになります</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただしボタンチャレンジに[System:Color name=tutorial ]失敗[/System:Color]してしまうと
+必殺技の[System:Color name=tutorial ]Lv.[/System:Color]は[System:Color name=tutorial ]一段階ずつ下がって[/System:Color]しまいます</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チェインアタックを発動すると
+[System:Color name=tutorial ]パーティゲージ[/System:Color]は[System:Color name=tutorial ]0[/System:Color]になってしまうのでご注意ください</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　チェインアタック中は[System:Color name=tutorial ]エネミー[/System:Color]が[System:Color name=tutorial ]攻撃してこない[/System:Color]ので
+どうすれば効率よく属性玉をBurstさせることができるかを
+じっくり考えることができます</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さらにキズナが[System:Color name=tutorial ]MAX状態[/System:Color]になると
+ブレイドからの[System:Color name=tutorial ]信頼度[/System:Color]が上がります</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信頼度が上がるといいことがたくさんあるのですが
+それはまたの機会に説明することにしましょう</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さて　これからトリゴの街を目指すわけですが
+冒険していく中で今よりもっとブレイドからの[System:Color name=tutorial ]信頼度[/System:Color]が
+重要になってきます</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信頼度はブレイドの[System:Color name=tutorial ]キズナリングのレベルを解放[/System:Color]するために
+必要不可欠な要素になってくるので</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドをより強力な冒険のサポーターにしたいのであれば
+ブレイドからの信頼を勝ち取ることを忘れてはいけません</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドからの[System:Color name=tutorial ]信頼度[/System:Color]を上げる方法はいくつかあるのですが
+まず一つ目に[System:Color name=tutorial ]クエストを達成する[/System:Color]というものがあります</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">クエストをクリアすると
+一緒にいたブレイドとの信頼度があがります</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">戦闘でキズナをMAXにすることでも信頼度があがります
+キズナがMAXになると金色に輝きますので　目安にしましょう</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">そして二つ目はバトル中にキズナを[System:Color name=tutorial ]MAX状態[/System:Color]にすることです</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">以前メツと戦った時にちょっとだけお知らせしましたが
+これも信頼度を上げるための重要な要素なので
+エネミーと戦う時は常に[System:Color name=tutorial ]キズナ[/System:Color]に気を付けておきましょう</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信頼度を上げるための方法はあといくつかあるのですが
+一度には覚えきれないと思うので
+ちょっとずつ説明することにしましょう</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは[System:Color name=tutorial ]トリゴの街[/System:Color]目指して出発です</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さらに[System:Color name=tutorial ]キズナトーク[/System:Color]を見ることによって
+ブレイドからの[System:Color name=tutorial ]信頼度[/System:Color]が[System:Color name=tutorial ]アップ[/System:Color]するのです
+これが信頼度を上げるための三つ目の方法です</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さらに傭兵団の任務を達成することによって
+ブレイドからの[System:Color name=tutorial ]信頼度[/System:Color]が[System:Color name=tutorial ]アップ[/System:Color]するのです
+これが信頼度を上げるための四つ目の方法です</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドからの信頼度を上げる方法をまとめると
+1.[System:Color name=tutorial ]クエストを達成する[/System:Color][System:Color name=tutorial ]
+[/System:Color]2.[System:Color name=tutorial ]バトル中にキズナをMAX状態にする[/System:Color]</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">3.[System:Color name=tutorial ]キズナトークを見る[/System:Color]
+4.[System:Color name=tutorial ]傭兵団任務を達成する[/System:Color]
+という四つの方法があることが分かりましたね</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レベル4の必殺技は通常の必殺技とは違って
+アーツでゲージをためることはできません</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ではどうすれば使うことができるのかというと
+[System:Color name=tutorial ]ブレイドと寄り添うこと[/System:Color]が大切になってきます</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ブレイドとの距離が近づくと
+レベル4の必殺技ゲージがたまっていきます</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ゲージが満タンになったときに必殺技を使用すれば
+ブレイドとドライバーの心と身体が一つになった
+最高の必殺技を見ることができるでしょう</td>
+      </tr>
+      <tr id="391">
+        <td>391</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">と　まあ長々と説明してしまいましたが
+『習うより慣れろ』という言葉もあることです</td>
+      </tr>
+      <tr id="392">
+        <td>392</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それでは　パーティゲージをMAXまでサービスしますので
+まずは[System:Color name=tutorial ][ML:icon icon=plus ]ボタン[/System:Color]を押してチェインアタックを開始してみましょう</td>
+      </tr>
+      <tr id="393">
+        <td>393</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ホムラは覚醒すると圧倒的な攻撃力を見せます
+また　ブレイドコンボが発動した時に
+[System:Color name=tutorial ]次の属性に依存せずにコンボルートを選ぶことが出来ます[/System:Color]</td>
+      </tr>
+      <tr id="394">
+        <td>394</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次のコンボルートは
+[System:Color name=tutorial ][ML:icon icon=up ][ML:icon icon=down ]ボタン[/System:Color]を使ってワンタッチで切り替えることができます</td>
+      </tr>
+      <tr id="395">
+        <td>395</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">普段のバトルでは　[System:Color name=tutorial ]ホムラ（ヒカリ）とのキズナがMAX[/System:Color]で
+さらに　[System:Color name=tutorial ]パーティゲージがMAX[/System:Color]になった時
+ホムラを覚醒させることができます</td>
+      </tr>
+      <tr id="396">
+        <td>396</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">この条件を満たしている時
+[System:Color name=tutorial ][ML:icon icon=R ]ボタン[/System:Color]を押しながら[System:Color name=tutorial ][ML:icon icon=X ]ボタン[/System:Color]でホムラが覚醒します</td>
+      </tr>
+      <tr id="397">
+        <td>397</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">覚醒したホムラは　ブレイドコンボが発動した時に
+思い描いたままを形にできる力として
+[System:Color name=tutorial ]好きなコンボルート[/System:Color]を選んで放つことができます</td>
+      </tr>
+      <tr id="398">
+        <td>398</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">コンボルートを選ぶには
+コンボ申請時に[System:Color name=tutorial ][ML:icon icon=up ][ML:icon icon=down ]ボタン[/System:Color]で選択してください</td>
+      </tr>
+      <tr id="399">
+        <td>399</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">非常に強力な覚醒ホムラですが
+[System:Color name=tutorial ]一定の時間が過ぎると覚醒が解けてしまいます[/System:Color]
+時間はゲージで確認できますので注意して見てみましょう</td>
+      </tr>
+      <tr id="400">
+        <td>400</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　このバトルでは覚醒時間の制限がないので
+思う存分に真の力を発揮しましょう</td>
+      </tr>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レックスが[System:Color name=tutorial ]ホムラとニアをエンゲージ[/System:Color]した状態で
+[System:Color name=tutorial ]二人とのキズナがMAX[/System:Color]になっている時に
+[System:Color name=tutorial ]レベル4の必殺技[/System:Color]を使用すると</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通常のブレイドでは見ることができない
+三人技を繰り出すことが出来ます</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">普通に必殺技を使うよりも威力が高いので
+ホムラとニアをエンゲージした際は積極的に
+使ってみましょう</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アシストコアについては
+手に入れたタイミングで説明させてもらいます</td>
+      </tr>
+      <tr id="405">
+        <td>405</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">買い物はしてみましたか？
+新しい街に到着した時は
+新しいショップに立ち寄ってみてください</td>
+      </tr>
+      <tr id="406">
+        <td>406</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">新しい街ならではのアイテムを
+買うことができるかもしれません</td>
+      </tr>
+      <tr id="407">
+        <td>407</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アシストコアは[System:Color name=tutorial ]メインメニュー[/System:Color]＞
+[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]＞[System:Color name=tutorial ]アシストコア装備[/System:Color]から
+ブレイドに装備させることができます</td>
+      </tr>
+      <tr id="408">
+        <td>408</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　この機会にスキップトラベルで
+アヴァリティア商会に戻って　売られているアイテムを
+比べてみるのもいいですね</td>
+      </tr>
+      <tr id="409">
+        <td>409</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]キャンセル[/System:Color]攻撃についての説明をいたします</td>
+      </tr>
+      <tr id="410">
+        <td>410</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]オートアタック[/System:Color]がエネミーに当たった瞬間に
+[System:Color name=tutorial ]アーツで攻撃を加える[/System:Color]と
+プレイヤーの周りに[System:Color name=tutorial ]光の輪[/System:Color]が広がります</td>
+      </tr>
+      <tr id="411">
+        <td>411</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">この光の輪はキャンセル攻撃が成功したしるしです
+</td>
+      </tr>
+      <tr id="412">
+        <td>412</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">キャンセル攻撃が成功すると
+普通にアーツを発動させるよりも
+攻撃力がアップします</td>
+      </tr>
+      <tr id="413">
+        <td>413</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">他にも必殺技のリキャストゲージが
+急速にたまるようになるので
+より一層バトルを有利に進めることができます</td>
+      </tr>
+      <tr id="414">
+        <td>414</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">また　キャンセル攻撃の効果は
+オートアタックの段階が進むほどに
+高くなっていきます</td>
+      </tr>
+      <tr id="415">
+        <td>415</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">これがヘイトシステムです
+ドライバーのクラスを理解して
+上手くモーフを倒しましょう</td>
+      </tr>
+      <tr id="416">
+        <td>416</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">この時　エネミーの周りに
+[System:Color name=tutorial ]耐性が付いたことを表す玉[/System:Color]が回り始めます
+この玉の事を[System:Color name=tutorial ]属性玉[/System:Color]といいます</td>
+      </tr>
+      <tr id="417">
+        <td>417</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">属性玉は玉の種類と同じ属性の攻撃をしても
+ダメージが与えづらくなっていることを
+意味しています</td>
+      </tr>
+      <tr id="418">
+        <td>418</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで注意が必要です
+コンパス上のピンクのアイコンは
+クエストを[System:Color name=tutorial ]アクティブに設定しないと表示されません[/System:Color]</td>
+      </tr>
+      <tr id="419">
+        <td>419</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒険になれないうちは
+クエストをアクティブに設定することをオススメします</td>
+      </tr>
+      <tr id="420">
+        <td>420</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それと基本的な操作に困ったときのために
+簡単ではございますが　操作方法をまとめておきました</td>
+      </tr>
+      <tr id="421">
+        <td>421</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">操作方法に困ったときは[System:Color name=tutorial ][ML:icon icon=left ][ML:icon icon=up ][ML:icon icon=right ][/System:Color]のボタンのどれかを
+押してみてください</td>
+      </tr>
+      <tr id="422">
+        <td>422</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ][ML:icon icon=left ]ボタン[/System:Color]を押せば[System:Color name=tutorial ]バトル操作[/System:Color]の説明
+[System:Color name=tutorial ][ML:icon icon=up ]ボタン[/System:Color]を押せば[System:Color name=tutorial ]カメラ操作[/System:Color]の説明
+[System:Color name=tutorial ][ML:icon icon=right ]ボタン[/System:Color]を押せば[System:Color name=tutorial ]フィールド操作[/System:Color]の説明を見ることができます</td>
+      </tr>
+      <tr id="423">
+        <td>423</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">雲海の満ち引きは[System:Color name=tutorial ]環境情報[/System:Color]で
+確認することができます</td>
+      </tr>
+      <tr id="424">
+        <td>424</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">環境情報の一番左に追加されたアイコンの
+[System:Color name=tutorial ]中央のライン[/System:Color]よりも
+雲海面が[System:Color name=tutorial ]上[/System:Color]にある時は[System:Color name=tutorial ]雲海が満ちている[/System:Color]状態</td>
+      </tr>
+      <tr id="425">
+        <td>425</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">逆に[System:Color name=tutorial ]中央のライン[/System:Color]よりも雲海面が[System:Color name=tutorial ]下[/System:Color]にある時は
+[System:Color name=tutorial ]雲海が引いている[/System:Color]状態となります</td>
+      </tr>
+      <tr id="426">
+        <td>426</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さて　ここからはしばらくの間はホムラはお休みして
+[System:Color name=tutorial ]ヒカリ[/System:Color]が活躍するようです</td>
+      </tr>
+      <tr id="427">
+        <td>427</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ヒカリはホムラをも超える力を発揮しますが
+[System:Color name=tutorial ]Lv.4の必殺技セイクリッドアロー[/System:Color]は
+天空から光の矢を降り注がせる技</td>
+      </tr>
+      <tr id="428">
+        <td>428</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">つまり　[System:Color name=tutorial ]屋根のある場所など[/System:Color]では
+[System:Color name=tutorial ]使用が制限される[/System:Color]のでご注意ください</td>
+      </tr>
+      <tr id="429">
+        <td>429</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここで　ドライバーステータスの詳細について触れておきます
+ドライバーの基本的なステータスには
+[System:Color name=tutorial ]HP[/System:Color]・[System:Color name=tutorial ]筋力[/System:Color]・[System:Color name=tutorial ]エーテル力[/System:Color]・[System:Color name=tutorial ]器用さ[/System:Color]・[System:Color name=tutorial ]素早さ[/System:Color]・[System:Color name=tutorial ]運[/System:Color]があります</td>
+      </tr>
+      <tr id="430">
+        <td>430</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]HP[/System:Color]：ドライバーの体力です　0になると戦闘不能になります
+[System:Color name=tutorial ]筋力[/System:Color]：筋力系のアーツダメージに影響
+[System:Color name=tutorial ]エーテル力[/System:Color]：エーテル系アーツのダメージ・回復値に影響</td>
+      </tr>
+      <tr id="431">
+        <td>431</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]器用さ[/System:Color]：攻撃の命中に影響
+[System:Color name=tutorial ]素早さ[/System:Color]： 敵からの攻撃の回避に影響
+[System:Color name=tutorial ]運[/System:Color]：敵からのデバフ・リアクションに抵抗しやすくなります</td>
+      </tr>
+      <tr id="432">
+        <td>432</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ドライバーステータス[/System:Color]の[System:Color name=tutorial ]運[/System:Color]の数値を上げておくと
+一風変わったブレイドが誕生する確率が上がるようです</td>
+      </tr>
+      <tr id="433">
+        <td>433</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">前に属性玉はブレイドコンボを3段階目までキメないと
+付けることができないとお伝えしましたが
+今回は特別にヨシツネに[System:Color name=tutorial ]水の属性玉[/System:Color]を付けてみます</td>
+      </tr>
+      <tr id="434">
+        <td>434</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">水の属性玉を効率よく割るために
+まずは　[System:Color name=tutorial ]反属性である火の属性の必殺技でダメージを与える[/System:Color]
+と　ここまで言えばもうお分かりでしょう</td>
+      </tr>
+      <tr id="435">
+        <td>435</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]傭兵団メニュー[/System:Color]が解放されました
+傭兵団に関する事は
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]傭兵団[/System:Color]で確認できます</td>
+      </tr>
+      <tr id="436">
+        <td>436</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それと　チェインアタックを開始すると
+パーティゲージが[System:Color name=tutorial ]フルバーストゲージ[/System:Color]に変化します</td>
+      </tr>
+      <tr id="437">
+        <td>437</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">フルバーストゲージは
+属性玉を割るごとに少しずつたまり
+満タンになると[System:Color name=tutorial ]フルバースト[/System:Color]が発生します</td>
+      </tr>
+      <tr id="438">
+        <td>438</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">フルバーストが発生すれば
+エネミーに大ダメージを与えることができます</td>
+      </tr>
+      <tr id="439">
+        <td>439</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">どんなキズナギフトがあるかは
+[System:Color name=tutorial ]メインメニュー[/System:Color]＞[System:Color name=tutorial ]キャラクター[/System:Color]＞[System:Color name=tutorial ]ブレイドセットアップ[/System:Color]＞
+[System:Color name=tutorial ]キズナリング[/System:Color]で確認することができます</td>
+      </tr>
+      <tr id="440">
+        <td>440</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">二択式のクエストが発生しました
+このタイプのクエストは
+クリア方法が複数あるクエストになります</td>
+      </tr>
+      <tr id="441">
+        <td>441</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは足跡を調べてみましょう
+調査に必要なフィールドスキルを持っているブレイドと
+同調していた場合は楽にクエストを進めることができます</td>
+      </tr>
+      <tr id="442">
+        <td>442</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まだそんなブレイドとは同調していない！という方は
+もう一度オットさんに話しかけて
+ヒントをもらってクエストを進めてください</td>
+      </tr>
+      <tr id="443">
+        <td>443</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">デビルキング・グルドゥは普通に戦うと
+かなり手強い相手になります</td>
+      </tr>
+      <tr id="444">
+        <td>444</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">そんな時はホムラ（ヒカリ）を覚醒させると
+有利にバトルを進めることができます</td>
+      </tr>
+      <tr id="445">
+        <td>445</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">パーティゲージと
+ブレイドのクールタイムをサービスするので
+是非覚醒したホムラ（ヒカリ）と共に戦ってみてください</td>
+      </tr>
+      <tr id="446">
+        <td>446</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ホムラ（ヒカリ）は[System:Color name=tutorial ]パーティゲージがMAXの時[/System:Color]に
+[System:Color name=tutorial ][ML:icon icon=R ]ボタン[/System:Color]を押しながら[System:Color name=tutorial ][ML:icon icon=X ]ボタン[/System:Color]を押すことで
+覚醒させる事ができます</td>
+      </tr>
+      <tr id="447">
+        <td>447</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]Advanced New Game[/System:Color]では宿泊施設で
+[System:Color name=tutorial ]レベルを下げる[/System:Color]ことができるようになりました</td>
+      </tr>
+      <tr id="448">
+        <td>448</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レベルを下げた分の経験値は[System:Color name=tutorial ]ボーナスEXP[/System:Color]にプールされます
+[System:Color name=tutorial ]戦いの吟遊詩人[/System:Color]に話しかけると
+[System:Color name=tutorial ]ボーナスEXPをアイテムと交換[/System:Color]することができます</td>
+      </tr>
+      <tr id="449">
+        <td>449</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]戦いの吟遊詩人[/System:Color]がいる場所は
+ミニマップ上に[System:Color name=tutorial ]緑のショップアイコン[/System:Color]が表示されます</td>
+      </tr>
+      <tr id="450">
+        <td>450</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ショップアイコンが非表示設定の場合は
+スキップトラベル画面で表示設定を切り替えてみましょう</td>
+      </tr>
+      <tr id="451">
+        <td>451</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]ハナバスター[/System:Color]とブレイドエンゲージが
+できるようになりました
+現在ハナバスターは[System:Color name=tutorial ]レックス[/System:Color]とエンゲージしています</td>
+      </tr>
+      <tr id="452">
+        <td>452</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ハナバスターは[System:Color name=tutorial ]オーバードライブを使わず[/System:Color]に
+[System:Color name=tutorial ]トラ以外[/System:Color]のドライバーとなら誰でも
+エンゲージすることができるのです</td>
+      </tr>
+      <tr id="453">
+        <td>453</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エンゲージは各ドライバーの
+[System:Color name=tutorial ]ブレイドエンゲージ画面[/System:Color]から行うことができます</td>
+      </tr>
+      <tr id="454">
+        <td>454</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">戦況に合わせて
+新たなる力[System:Color name=tutorial ]ハナバスター[/System:Color]を役立てましょう</td>
+      </tr>
+      <tr id="455">
+        <td>455</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]シュルク[/System:Color]　そして[System:Color name=tutorial ]フィオルン[/System:Color]とブレイドエンゲージが
+できるようになりました</td>
+      </tr>
+      <tr id="456">
+        <td>456</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">現在シュルクは[System:Color name=tutorial ]レックス[/System:Color]
+フィオルンは[System:Color name=tutorial ]ニア[/System:Color]とエンゲージしています</td>
+      </tr>
+      <tr id="457">
+        <td>457</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">シュルクとフィオルンは[System:Color name=tutorial ]オーバードライブを使わず[/System:Color]に
+[System:Color name=tutorial ]トラ以外[/System:Color]のドライバーとなら誰でも
+エンゲージすることができるのです</td>
+      </tr>
+      <tr id="458">
+        <td>458</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エンゲージは各ドライバーの
+[System:Color name=tutorial ]ブレイドエンゲージ画面[/System:Color]から行うことができます
+戦況に合わせて[System:Color name=tutorial ]シュルク[/System:Color]と[System:Color name=tutorial ]フィオルン[/System:Color]を役立てましょう</td>
+      </tr>
+      <tr id="459">
+        <td>459</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ただし　シュルクとフィオルンは挑戦の地から外へは
+連れて行くことが出来ないのです</td>
+      </tr>
+      <tr id="460">
+        <td>460</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ポータルから[System:Color name=tutorial ]アルストに戻る[/System:Color]と
+[System:Color name=tutorial ]シュルクとフィオルンがパーティから離脱[/System:Color]してしまうので
+ご注意ください</td>
+      </tr>
+      <tr id="461">
+        <td>461</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ノポン・ダイセンニンからの挑戦の報酬の中には
+シュルクとフィオルンをアルストに連れ出すことが出来る
+アイテムがあるという噂もあります</td>
+      </tr>
+      <tr id="462">
+        <td>462</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ノポン・ダイセンニンからの挑戦に
+どんどんチャレンジしてみましょう！</td>
+      </tr>
+      <tr id="463">
+        <td>463</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">見事[System:Color name=tutorial ]シュルク[/System:Color]と[System:Color name=tutorial ]フィオルン[/System:Color]を
+アルストに連れて行けるようになりました</td>
+      </tr>
+      <tr id="464">
+        <td>464</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">新しい仲間の新しい力を
+是非アルストの地でも役立ててください！</td>
+      </tr>
+      <tr id="465">
+        <td>465</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チャレンジバトルに関しての注意です</td>
+      </tr>
+      <tr id="466">
+        <td>466</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ストーリーの進行上　カラムの遺跡に行けるようになるまで
+チャレンジバトル用のポータルは
+アヴァリティア商会に配置されます</td>
+      </tr>
+      <tr id="467">
+        <td>467</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">カラムの遺跡にポータルが配置されるようになった後は
+アヴァリティア商会のポータルは無くなってしまうので
+ご注意ください</td>
+      </tr>
+      <tr id="468">
+        <td>468</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">いよいよチャレンジバトルの始まりです
+画面上に[System:Color name=tutorial ]CHALLENGE　BATTLE　START[/System:Color]の文字が
+表示されたらチャレンジスタート！</td>
+      </tr>
+      <tr id="469">
+        <td>469</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは画面の説明です</td>
+      </tr>
+      <tr id="470">
+        <td>470</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">矢印が指しているのはチャレンジの[System:Color name=tutorial ]経過時間[/System:Color]です
+[System:Color name=tutorial ]制限時間に達する前に[/System:Color]お題をクリアしましょう</td>
+      </tr>
+      <tr id="471">
+        <td>471</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">制限時間は選んだチャレンジバトルによって違いますので
+お気を付けください</td>
+      </tr>
+      <tr id="472">
+        <td>472</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">次に矢印が指しているのは[System:Color name=tutorial ]エーテルキューブを集めた量[/System:Color]です</td>
+      </tr>
+      <tr id="473">
+        <td>473</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エーテルキューブを集めると
+この[System:Color name=tutorial ]箱[/System:Color]にどんどんたまっていきます</td>
+      </tr>
+      <tr id="474">
+        <td>474</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">満タンになった[System:Color name=tutorial ]箱[/System:Color]の数に応じて
+チャレンジバトル終了後に宝箱がもらえます</td>
+      </tr>
+      <tr id="475">
+        <td>475</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今ドロップしたオレンジ色のキューブ
+これが[System:Color name=tutorial ]エーテルキューブ[/System:Color]です</td>
+      </tr>
+      <tr id="476">
+        <td>476</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エーテルキューブは一定時間で消えてしまうので
+拾いながら戦いましょう</td>
+      </tr>
+      <tr id="477">
+        <td>477</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑戦に失敗してしまいました！
+[System:Color name=tutorial ]制限時間内にクリアできなかった[/System:Color]り
+[System:Color name=tutorial ]途中でバトルに負けてしまう[/System:Color]とチャレンジ失敗です！</td>
+      </tr>
+      <tr id="478">
+        <td>478</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">それと　チャレンジ中に
+[System:Color name=tutorial ]納刀[/System:Color]→[System:Color name=tutorial ][ML:icon icon=plus ]ボタン[/System:Color]で挑戦を諦めたときも失敗となります</td>
+      </tr>
+      <tr id="479">
+        <td>479</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑戦に成功しました！</td>
+      </tr>
+      <tr id="480">
+        <td>480</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑戦に成功すると少しの間だけ
+エーテルキューブを集める時間があります</td>
+      </tr>
+      <tr id="481">
+        <td>481</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">エーテルキューブの回収時間が経過すると
+自動的に挑戦の地に戻ります</td>
+      </tr>
+      <tr id="482">
+        <td>482</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">制限時間に達してしまいました</td>
+      </tr>
+      <tr id="483">
+        <td>483</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チャレンジバトルにはそれぞれ制限時間が設けられているので
+挑戦を受ける時には注意して確認しておきましょう</td>
+      </tr>
+      <tr id="484">
+        <td>484</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">さあ[System:Color name=tutorial ]WAVE[/System:Color]のサインです</td>
+      </tr>
+      <tr id="485">
+        <td>485</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">WAVEは戦っている敵をすべて倒したり
+時間経過で発生します
+WAVEに含まれる敵の数はチャレンジによって異なります</td>
+      </tr>
+      <tr id="486">
+        <td>486</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+『バグズバスター』が始まりました</td>
+      </tr>
+      <tr id="487">
+        <td>487</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">このバトルは[System:Color name=tutorial ]ハイスコアに挑戦[/System:Color]するモードです
+[System:Color name=tutorial ]チェインアタック[/System:Color]を使ったり[System:Color name=tutorial ]各種コンボ[/System:Color]をきめると
+スコアが高くなります</td>
+      </tr>
+      <tr id="488">
+        <td>488</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+『アングアタック』が始まりました</td>
+      </tr>
+      <tr id="489">
+        <td>489</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アングはHPを減らすとレベルが上がります</td>
+      </tr>
+      <tr id="490">
+        <td>490</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アングのレベルをできるだけ上げてから倒しましょう！
+（アングのレベルは最大Lv.200まで上がります）</td>
+      </tr>
+      <tr id="491">
+        <td>491</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+『巨神獣戦艦強襲』が始まりました</td>
+      </tr>
+      <tr id="492">
+        <td>492</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">巨神獣戦艦の中には100人の敵が存在します
+シンを操作して　なるべく早く100人の敵を倒してください</td>
+      </tr>
+      <tr id="493">
+        <td>493</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ここでは[System:Color name=tutorial ]ノポンクリスタル[/System:Color]を
+珍しいアイテムや特殊なアイテムと交換することができます</td>
+      </tr>
+      <tr id="494">
+        <td>494</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]耳付きポンチョのホムラ[/System:Color]などの特殊なアイテムは
+アイテム名に名前が含まれるキャラクターが装備することで
+見た目を変更することができます</td>
+      </tr>
+      <tr id="495">
+        <td>495</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">名前がついてないキャラクターが装備することもできますが
+その場合は通常のアイテムと変わらずに
+見た目への影響はありません</td>
+      </tr>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">様々なチャレンジバトルをクリアして
+ノポンクリスタルをどんどん集めてみましょう！</td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">ニアをブレイドにしているプレイヤーはドライバーに戻すことで
+フィオルンがブレイドとして扱えるようになりますので
+ご注意ください</td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">現在シュルクとフィオルンは
+控えとしてパーティーに参加しています</td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="531">
+        <td>531</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="532">
+        <td>532</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="533">
+        <td>533</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="534">
+        <td>534</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="535">
+        <td>535</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="536">
+        <td>536</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="537">
+        <td>537</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="538">
+        <td>538</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="539">
+        <td>539</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="540">
+        <td>540</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="541">
+        <td>541</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="542">
+        <td>542</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="543">
+        <td>543</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="544">
+        <td>544</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">行けなさそうな場所があっても
+近づいて　調べてみることが重要になります</td>
+      </tr>
+      <tr id="545">
+        <td>545</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="546">
+        <td>546</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="547">
+        <td>547</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="548">
+        <td>548</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="549">
+        <td>549</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="550">
+        <td>550</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="551">
+        <td>551</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="552">
+        <td>552</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="553">
+        <td>553</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="554">
+        <td>554</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="555">
+        <td>555</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="556">
+        <td>556</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="557">
+        <td>557</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="558">
+        <td>558</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="559">
+        <td>559</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="560">
+        <td>560</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="561">
+        <td>561</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="562">
+        <td>562</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="563">
+        <td>563</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="564">
+        <td>564</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="565">
+        <td>565</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="566">
+        <td>566</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="567">
+        <td>567</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="568">
+        <td>568</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="569">
+        <td>569</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="570">
+        <td>570</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="571">
+        <td>571</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="572">
+        <td>572</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="573">
+        <td>573</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="574">
+        <td>574</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="575">
+        <td>575</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="576">
+        <td>576</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="577">
+        <td>577</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="578">
+        <td>578</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="579">
+        <td>579</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="580">
+        <td>580</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="581">
+        <td>581</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="582">
+        <td>582</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="583">
+        <td>583</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="584">
+        <td>584</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="585">
+        <td>585</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="586">
+        <td>586</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="587">
+        <td>587</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="588">
+        <td>588</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="589">
+        <td>589</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="590">
+        <td>590</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="591">
+        <td>591</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="592">
+        <td>592</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="593">
+        <td>593</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="594">
+        <td>594</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="595">
+        <td>595</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="596">
+        <td>596</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="597">
+        <td>597</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="598">
+        <td>598</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="599">
+        <td>599</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="600">
+        <td>600</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="601">
+        <td>601</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="602">
+        <td>602</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="603">
+        <td>603</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="604">
+        <td>604</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="605">
+        <td>605</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="606">
+        <td>606</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="607">
+        <td>607</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="608">
+        <td>608</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="609">
+        <td>609</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="610">
+        <td>610</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="611">
+        <td>611</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="612">
+        <td>612</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="613">
+        <td>613</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="614">
+        <td>614</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="615">
+        <td>615</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="616">
+        <td>616</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="617">
+        <td>617</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="618">
+        <td>618</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="619">
+        <td>619</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="620">
+        <td>620</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="621">
+        <td>621</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="622">
+        <td>622</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="623">
+        <td>623</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="624">
+        <td>624</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="625">
+        <td>625</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="626">
+        <td>626</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="627">
+        <td>627</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="628">
+        <td>628</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="629">
+        <td>629</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="630">
+        <td>630</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="631">
+        <td>631</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="632">
+        <td>632</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="633">
+        <td>633</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="634">
+        <td>634</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="635">
+        <td>635</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="636">
+        <td>636</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="637">
+        <td>637</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="638">
+        <td>638</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="639">
+        <td>639</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="640">
+        <td>640</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="641">
+        <td>641</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="642">
+        <td>642</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="643">
+        <td>643</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="644">
+        <td>644</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="645">
+        <td>645</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

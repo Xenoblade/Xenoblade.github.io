@@ -1,0 +1,5250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>menu_tutorial</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">チュートリアル用テキスト
+０１２３４５６７８９０１２３４５６７８９０１２３４５６７８
+０１２３４５６７８９０１２３４５６７８９０１２３４５６７８</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看 『今天的午饭』出现了
+莱克斯和敌人战斗时必须使用武器
+摆出武器攻击架势称为[System:Color name=tutorial ]拔刀[/System:Color]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当敌人显示为[System:Color name=tutorial ]目标[/System:Color]时
+按下[System:Color name=tutorial ][ML:icon icon=A ]键[/System:Color]即可完成拔刀
+要显示目标请按下[System:Color name=tutorial ][ML:icon icon=R ]键[/System:Color]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">所谓[System:Color name=tutorial ]目标[/System:Color]
+是指敌人头上显示的粉色标记</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">顺带一提 将收起武器称为[System:Color name=tutorial ]收刀[/System:Color]
+想[System:Color name=tutorial ]收刀[/System:Color]的时候请按住[System:Color name=tutorial ][ML:icon icon=R ]键[/System:Color]
+再按下[System:Color name=tutorial ][ML:icon icon=B ]键[/System:Color]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]拔刀[/System:Color]后 当角色接近显示为[System:Color name=tutorial ]目标[/System:Color]的敌人时
+便会自动发起攻击
+这称为[System:Color name=tutorial ]自动攻击[/System:Color]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">赶快[System:Color name=tutorial ]拔刀[/System:Color] 解决掉『今天的午饭』吧</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">每[System:Color name=tutorial ]1组[/System:Color]自动攻击由[System:Color name=tutorial ]3次[/System:Color]攻击组成
+[System:Color name=tutorial ]第2击[/System:Color]比第1击[System:Color name=tutorial ]强力[/System:Color] [System:Color name=tutorial ]第3击[/System:Color]比第2击[System:Color name=tutorial ]强力[/System:Color]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 自动攻击有自己的[System:Color name=tutorial ]适当距离[/System:Color]
+在适当距离上战斗 可对敌人造成更高的伤害</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">画面[System:Color name=tutorial ]右下角[/System:Color]的图标变亮了
+该图标叫作[System:Color name=tutorial ]武技图标[/System:Color]
+[System:Color name=tutorial ]武技图标[/System:Color]变亮是可以使用[System:Color name=tutorial ]武技[/System:Color]的信号</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]武技[/System:Color]是有别于自动攻击的[System:Color name=tutorial ]特殊招式[/System:Color]
+只需按下[System:Color name=tutorial ]与图标位置对应的按键[/System:Color]
+即可发动</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">使用过一次[System:Color name=tutorial ]武技[/System:Color]后
+只有等[System:Color name=tutorial ]武技图标[/System:Color]周围的[System:Color name=tutorial ]填充槽[/System:Color]蓄满
+才能再度使用</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过对敌人
+进行自动攻击
+可渐渐累积[System:Color name=tutorial ]填充槽[/System:Color]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">试着按下[System:Color name=tutorial ][ML:icon icon=X ]键[/System:Color]
+来发动[System:Color name=tutorial ]武技[/System:Color]：[System:Color name=tutorial ]钩锚发射[/System:Color]吧</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">刚才敌人身上掉落了一件绿色物体
+这是一种名为[System:Color name=tutorial ]回复瓶[/System:Color]的道具</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">操作莱克斯捡起[System:Color name=tutorial ]回复瓶[/System:Color]
+可[System:Color name=tutorial ]回复HP[/System:Color]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">某些[System:Color name=tutorial ]武技[/System:Color]
+拥有像[System:Color name=tutorial ]钩锚发射[/System:Color]一样
+能百分百使敌人掉落[System:Color name=tutorial ]回复瓶[/System:Color]的能力</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">是连续使用[System:Color name=tutorial ]武技[/System:Color] 以最大火力打倒敌人
+还是将[System:Color name=tutorial ]武技[/System:Color]保留到HP不足时才使用
+随机应变地使用[System:Color name=tutorial ]武技[/System:Color]也是一种重要的战术</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在 敌人四周
+产生了类似气场的效果
+这表示敌人进入了[System:Color name=tutorial ]愤怒状态[/System:Color]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有一部分敌人
+[System:Color name=tutorial ]当其HP降到一定数值以下[/System:Color]时便会进入愤怒状态</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当敌人进入愤怒状态时 其能力值会上升
+比通常状态要强一些 故需要多加注意</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯终于
+重生成为了天之圣杯的御刃者</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在计量槽积满的是[System:Color name=tutorial ]必杀技[/System:Color]图标</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">让你久等了
+下面是[System:Color name=tutorial ]异刃连击[/System:Color]的说明</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ボタンチャレンジ】
+</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在 焰为角色施加了[System:Color name=tutorial ]命中率提升[/System:Color]的[System:Color name=tutorial ]特殊效果[/System:Color]
+焰在战斗中提供的这种支援称为[System:Color name=tutorial ]异刃武技[/System:Color]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【必殺技①】</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尝试一下[System:Color name=tutorial ]火属性[/System:Color]必杀技连接[System:Color name=tutorial ]水属性[/System:Color]必杀技的
+异刃连击吧
+首先 试着发动焰的[System:Color name=tutorial ]等级1[/System:Color]必杀技</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドとのキズナ】</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【属性コンボ②】
+</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想必你已经逐渐习惯了与同伴御刃者共同作战
+此处想为你说明的是整支队伍对敌人造成高伤害的
+[System:Color name=tutorial ]连锁攻击[/System:Color]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">焰终于释放出真正的力量了
+这里我们来说明一下焰觉醒时的操作方法</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同时出现了好多似乎很强大的敌人啊
+此处教给你的
+是与多个敌人战斗时的一些小技巧</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">从凡达姆那里借鉴了钩锚的使用方法呢
+ 这样莱克斯的[System:Color name=tutorial ]钩锚发射[/System:Color]就附加了[System:Color name=tutorial ]倒地[/System:Color]效果</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">说明一下只有莱克斯才能使用的[System:Color name=tutorial ]三人必杀技[/System:Color]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【エネミーの怒り状態】</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【抜刀/納刀/おびき寄せ】
+</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【回復ポット】
+</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【戦闘不能】
+</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看来成功[System:Color name=tutorial ]破防[/System:Color]了呢</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ロール】
+</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">终于到说明[System:Color name=tutorial ]等级4必杀技[/System:Color]的一刻了</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ボタンチャレンジ】</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]异刃连击[/System:Color]可以连接[System:Color name=tutorial ]高1级的必杀技[/System:Color]
+下面将尼娅的[System:Color name=tutorial ]必杀技槽[/System:Color]累积到[System:Color name=tutorial ]2级[/System:Color]
+请按下[System:Color name=tutorial ][ML:icon icon=ZL ][/System:Color]发动尼娅的必杀技吧</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドアーツ】</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然想必你已经有所了解
+不过这里还是打算再次说明一下[System:Color name=tutorial ]异刃连击[/System:Color]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">由于队伍的成员增加到了3人
+这里需要再次说明由[System:Color name=tutorial ]异刃连击[/System:Color]造成的[System:Color name=tutorial ]封印效果[/System:Color]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在帮助尼娅之前
+先对有御刃者同伴在场时的战斗方式稍作说明</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【ブレイドチェンジ】</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">【特殊ブレイドチェンジ・ヒカリ】
+</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里有一条值得一听的情报
+首先对通常画面进行说明</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">まずは通常画面の説明をしたいと思います</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在箭头所指的是[System:Color name=tutorial ]罗盘[/System:Color]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">罗盘上画有一个标记
+它显示出莱克斯接下来该前往的地方</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">标记上写着[System:Color name=tutorial ]数字[/System:Color]
+该数字表示[System:Color name=tutorial ]与目的地之间的距离[/System:Color]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 当目的地在莱克斯所处位置的上方时
+标记[System:Color name=tutorial ]上方[/System:Color]就会显示出一个小箭头</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当目的地在莱克斯所处位置的下方时
+标记[System:Color name=tutorial ]下方[/System:Color]就会显示出一个小箭头</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来箭头指向的是[System:Color name=tutorial ]环境情报[/System:Color]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过查看环境情报 玩家可掌握
+此刻身处地点的[System:Color name=tutorial ]天气[/System:Color]和[System:Color name=tutorial ]时间[/System:Color]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">环境会配合冒险的进行时刻发生变化</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然莱克斯的生命
+并不会因为环境变化而立即遭遇危险</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过敌人的栖息模式以及镇上居民的生活模式会因此发生改变
+所以有必要对其多加关注</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来是[System:Color name=tutorial ]迷你地图[/System:Color]
+通过该系统可以迅速了解
+莱克斯周围的情报</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">中央的黄色标记表示的是
+当前的位置与面向的方向</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过按下[System:Color name=tutorial ][ML:icon icon=L3 ][/System:Color]
+可以切换全屏显示或隐藏迷你地图</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">对冒险有自信的人
+可以尝试在关闭迷你地图的状态下进行游戏</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最后要介绍的是[System:Color name=tutorial ]现在的目的[/System:Color]
+通过该系统 可了解莱克斯此时应该做什么</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可按[System:Color name=tutorial ][ML:icon icon=ZR ][/System:Color]切换显示的内容
+请根据需要进行确认</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在就请依据刚才了解到的情报
+尝试来到位于[System:Color name=tutorial ]中央交易所[/System:Color]的[System:Color name=tutorial ]梅洛洛[/System:Color]的身旁吧</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">好了 终于要开始冒险了
+每当有新系统可以使用时
+便会对系统进行说明</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来 画面正中央会显示[System:Color name=tutorial ]格尔特蒙特返航港[/System:Color]
+这表示发现了[System:Color name=tutorial ]地标[/System:Color]</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">区域中除了地标
+还存在[System:Color name=tutorial ]秘境[/System:Color]和[System:Color name=tutorial ]场所[/System:Color]</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可通过[System:Color name=tutorial ]传送[/System:Color]随时返回已发现的地标</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">传送是指只要是曾经去过的地点都可以
+[System:Color name=tutorial ]通过主菜单的选项随时瞬间移动[/System:Color]
+是一项非常方便的功能</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">此外 除了传送外
+地标和秘境另有作用</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当角色在战斗中全军覆没时
+就会回到最近通过的那个地标</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在这个幽界中存在各式各样的地标
+请多多前往各种场所</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里要介绍的是[System:Color name=tutorial ]打捞
+[/System:Color]现在位于莱克斯前方的是
+[System:Color name=tutorial ]打捞点[/System:Color]</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">持有[System:Color name=tutorial ]气瓶[/System:Color]时
+来到打捞点
+就可以进行打捞</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">进行打捞会触发[System:Color name=tutorial ]按键挑战[/System:Color]
+</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">按键挑战成功
+可获得高价的宝物
+好好把握时机进行按键</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">还有可能钓到凶恶的敌人
+请多多小心</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">打捞点存在于整个幽界
+每个打捞点能获得的宝物有所不同
+发现新的打捞点后 请务必要尝试一下打捞</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 气瓶可以在位于幽界地的
+[System:Color name=tutorial ]打捞商店[/System:Color]处购买</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">用高价气瓶可以得到好道具
+最开始的时候低价气瓶应该也已经足够</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">下面 就请使用从伊鲁伊鲁那里得到的气瓶
+立刻尝试一下打捞吧</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有件重要的事忘记说了
+就是关于[System:Color name=tutorial ]视角[/System:Color]的调整方法</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">视角分为[System:Color name=tutorial ]手动视角[/System:Color]和
+[System:Color name=tutorial ]自动视角[/System:Color]2种</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过[System:Color name=tutorial ]上下左右推动[ML:icon icon=R3 ][/System:Color]
+可以使视角转向想看的方向
+这称为[System:Color name=tutorial ]手动视角[/System:Color]</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在操作手动视角时[System:Color name=tutorial ]按下[ML:icon icon=R3 ][/System:Color]
+可使视角移动到莱克斯身后
+并保持追踪莱克斯的状态</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这称为[System:Color name=tutorial ]自动视角[/System:Color]</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">视角可以调整[System:Color name=tutorial ]远近和高低[/System:Color]
+[System:Color name=tutorial ]按住[ML:icon icon=L ]再向左右推动[ML:icon icon=R3 ][/System:Color]可以调整视角的高低
+[System:Color name=tutorial ]按住[ML:icon icon=L ]再向上下推动[ML:icon icon=R3 ][/System:Color]可以调整视角的远近</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过调整视角
+或许能发现之前无法看到的事物
+请务必尝试一下各种视角</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来对[System:Color name=tutorial ]住宿设施[/System:Color]做一些说明
+可以在住宿设施[System:Color name=tutorial ]稍作休憩[/System:Color]
+以及使用[System:Color name=tutorial ]奖励EXP提升等级[/System:Color]</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">奖励EXP是
+通过完成任务发现地标而获得的经验值
+能在住宿设施使用</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">レベルの上げ方は
+【すべてオート】【選択オート】【マニュアル】の
+3種類があります</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">すべてオートを選ぶと
+ボーナス経験値を使い切るまで　レベルアップします</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">選択オートを選ぶと　キャラクターごとにオートかマニュアルかを
+選ぶことができます</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以在奖励EXP的范围内
+调整想要提升的等级 然后再进行升级</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当遇到实在难以打倒的敌人时
+建议使用积累的奖励EXP提升等级</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">如果觉得等级升得过高战斗会丧失乐趣
+刻意不在住宿设施提升等级
+也不失为一种游玩风格</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">あと　宿屋では【雲海の満ち引きが変わるまで休む】
+という役割もあります</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">アルストには雲海の満ち引きによって
+行ける場所　行けなくなる場所があるので
+そんな時は　宿屋で一休みすると良いでしょう</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">好了 为了明天的重要工作 请尽情休息吧</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在出现在眼前的是[System:Color name=tutorial ]采集点[/System:Color]
+调查采集点可以发现
+[System:Color name=tutorial ]收藏道具[/System:Color]</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">采集点存在于幽界全境
+不同地区可获得的收藏道具
+也各有不同</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 似乎某些采集点
+可以用异刃的[System:Color name=tutorial ]场景技能
+[/System:Color]获得平常无法得到的道具</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">获得的收藏道具
+必定会在之后的冒险中对莱克斯他们起到帮助
+所以一旦发现采集点就积极地调查吧</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">前方出现了障碍物
+某些看上去无法通过的地点
+使用异刃的[System:Color name=tutorial ]场景技能[/System:Color]便可通过</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">调查一下[System:Color name=tutorial ]折断的大树[/System:Color]吧</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看来你已经成功使用焰的[System:Color name=tutorial ]火属性之力[/System:Color]
+清除了折断的大树</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">焰的场景技能可以通过
+[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]异刃设置[/System:Color]&gt;[System:Color name=tutorial ]详细信息[/System:Color]进行确认</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">幽界
+存在着大量必须使用场景技能才能通过的地点</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">即使遇到看上去仿佛无法通过的地点
+也要靠近并尝试调查
+</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">好了 快去找寻尼娅吧</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以使用「跳过时间」了
+跳过时间可以将时间调整为自己喜欢的时间段
+是一种非常便利的系统</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">时间改变后 敌人的状态
+以及镇上居民的状态会发生变化</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请多多尝试 一定会有新的发现</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以在一部分商店购买物品了
+幽界里存在着各式各样的商店</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">能用获得的宝物进行物物交换的[System:Color name=tutorial ]交易商店[/System:Color]
+能用钱买到情报的[System:Color name=tutorial ]情报商店[/System:Color]
+能买到钟意的道具的[System:Color name=tutorial ]生活商店[/System:Color]</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">能买到气瓶的[System:Color name=tutorial ]打捞商店[/System:Color]
+能买到配饰物件的[System:Color name=tutorial ]饰品商店[/System:Color]
+等等</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然这其中有些商店也许已经光顾过了
+不过这些商店今后可以自由使用了</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里是被称作幽界交易核心的
+阿伐利缇亚商会
+在这里聚集着众多商店</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">外出冒险之前
+尝试来商店购物一番或许是个好主意</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有一件重要的事情忘记说了
+那就是莱克斯持有的[System:Color name=tutorial ]收纳包[/System:Color]</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯平常就随身带着收纳包
+可以将莱克斯喜欢的[System:Color name=tutorial ]收纳包道具[/System:Color]
+装在收纳包里随身携带</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">收纳包内只能设置一个收纳包道具</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">收纳包道具可以在生活商店买到
+收纳包内所装的每种道具
+在冒险旅途中发挥的效果各有不同</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">幽界境内共存在12种生活商店
+请在发现新的生活商店后
+立即前往</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">终于获得了向往已久的[System:Color name=tutorial ]深渊背心[/System:Color]
+[System:Color name=tutorial ]深渊背心[/System:Color]拥有使最大HP值上升24%的附加效果</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然现在只拥有深渊背心
+不过想必玩家在之后的冒险中
+一定能获得更多的饰品</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">饰品并非只要获得就能发挥效果
+玩家需要通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]角色设置[/System:Color]&gt;[System:Color name=tutorial ]饰品装备
+[/System:Color]来进行装备</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接到[System:Color name=tutorial ]任务[/System:Color]了嘛
+任务分为[System:Color name=tutorial ]主线任务
+[/System:Color]和[System:Color name=tutorial ]普通任务[/System:Color]</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">刚才接到的任务是主线任务
+是推动主线剧情所必须完成的任务
+目的地会在罗盘上以[System:Color name=tutorial ]粉色的！图标[/System:Color]标出</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">幽界有大量遇到烦恼的人们
+这些人头顶会显示出[System:Color name=tutorial ]蓝色的？图标[/System:Color]</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">与他们聊天可以得知他们的烦恼
+然后他们就会委托玩家做一些事
+这就是任务</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">假如玩家能成功解决他们的烦恼
+必定能获得价值不菲的礼物</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">普通任务
+与推动主线剧情没有关系
+目的地会在罗盘上以[System:Color name=tutorial ]蓝色的！图标[/System:Color]标出</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里有个重要信息！
+罗盘上只能显示设定为
+[System:Color name=tutorial ]当前任务[/System:Color]的任务图标</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当前任务的切换
+可以在[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]任务记录[/System:Color]中进行</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外
+只能设定一个当前任务</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同时接受的任务没有数量限制
+建议在冒险中发现「？」图标后
+多多搭话</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯遇到了可以一同冒险的同伴
+可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]队列变更[/System:Color]
+对队伍的编组进行调整</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然同伴增加了 但能够参加战斗的人数
+限定为[System:Color name=tutorial ]最多3人[/System:Color] 这一点还请注意</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 在队列变更中设定为[System:Color name=tutorial ]1[/System:Color]的角色
+将成为[System:Color name=tutorial ]操作角色[/System:Color]</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不同角色有不同的战斗风格
+请玩家尝试找到适合自己游玩风格的角色</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">得快去找爷爷和尼娅他们才行
+然而还有个问题
+莱克斯接下来也许会遭遇未知的敌人</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在那之前防患于未然
+先对莱克斯的成长做一些说明</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">战斗结束后获得的点数
+包括[System:Color name=tutorial ]WP[/System:Color]和[System:Color name=tutorial ]SP[/System:Color]</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">WP是[System:Color name=tutorial ]武器点数[/System:Color]
+换种说法就是莱克斯[System:Color name=tutorial ]武器的熟练度[/System:Color]
+可用该点数[System:Color name=tutorial ]提升武技的等级[/System:Color]</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当一种武技提升等级之后
+其给敌人造成的伤害将大幅度提升</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请尝试通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]角色设置[/System:Color]&gt;
+[System:Color name=tutorial ]武技强化[/System:Color]对武技进行强化</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有一点需要注意的是
+武技的强化存在等级限制</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">只有当莱克斯升到设定的等级以上
+才能对武技进行强化</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 在武技强化菜单中
+还可以变更使用武技所对应的按键</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SP是[System:Color name=tutorial ]技能点数[/System:Color]
+换种说法就是莱克斯[System:Color name=tutorial ]战斗技巧的熟练度[/System:Color]
+可用该点数[System:Color name=tutorial ]学习各种技能[/System:Color]</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请尝试通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]角色设置[/System:Color]&gt;
+[System:Color name=tutorial ]牵绊圆环[/System:Color]学习技能</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯的[System:Color name=tutorial ]异刃调谐[/System:Color]能力已解锁</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]异刃管理[/System:Color]&gt;[System:Color name=tutorial ]异刃调谐[/System:Color]
+随时使新的异刃成为同伴</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">核心水晶存在3个等级
+[System:Color name=tutorial ]普通核心水晶[/System:Color]&#183;[System:Color name=tutorial ]稀有核心水晶[/System:Color]&#183;
+[System:Color name=tutorial ]史诗核心水晶[/System:Color]</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">打算调谐的核心水晶的等级越高
+拥有罕见外表的异刃的诞生几率也会越高</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">获得新的核心水晶后
+先试着进行调谐吧</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 新诞生的异刃
+可以通过[System:Color name=tutorial ]异刃绑定[/System:Color]
+来令其参加战斗</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尝试通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]角色设置[/System:Color]&gt;
+[System:Color name=tutorial ]异刃绑定[/System:Color]
+对新诞生的异刃进行绑定吧</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在至今为止的战斗中
+为莱克斯提供援助的异刃只有焰一人</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">今后和莱克斯绑定的异刃
+也会对他进行援助</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过按下与战斗中显示的
+异刃头像图标相对应的按键
+可以进行[System:Color name=tutorial ]异刃切换[/System:Color]</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">所谓异刃切换
+就是变更战斗中为角色提供支援的异刃</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一旦进行异刃切换
+不仅使用的[System:Color name=tutorial ]武器会改变 就连武技也会发生变化[/System:Color]</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">随着武器的改变 对敌人的攻击也会发生变化
+根据战况尝试一下异刃切换吧</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有一点需要注意的是 一旦异刃切换
+此异刃需要等一段时间才能再次提供战斗支援
+请玩家注意这一点</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过 莱克斯和异刃之间存在[System:Color name=tutorial ]信赖度[/System:Color]的设定
+信赖度提升后
+异刃能再次提供支援的间隔也会缩短</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]获得异刃的牵绊奖励 可提升信赖度[/System:Color]
+新的异刃诞生后
+就尝试积极地获得牵绊奖励吧</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">史上第一把人造异刃花JS诞生了
+由于花JS是人造异刃
+所以无法装备[System:Color name=tutorial ]辅助核心[/System:Color]</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">史上第一个人造异刃 花诞生了
+花虽然不能装备辅助核心
+但可通过[System:Color name=tutorial ]花的定制[/System:Color]进行自定义改造</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">花的定制可通过[System:Color name=tutorial ]主菜单[/System:Color] &gt; [System:Color name=tutorial ]角色[/System:Color] &gt;
+[System:Color name=tutorial ]异刃设置[/System:Color]（[System:Color name=tutorial ]花JS[/System:Color]） &gt; [System:Color name=tutorial ]花的定制[/System:Color]进行确认</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">进行花的定制
+必须要有在任务[System:Color name=tutorial ]TIGER! TIGER![/System:Color]中获得的道具</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">多玩TIGER! TIGER!
+让花JS迅速强大起来吧</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看来已经顺利救出了尼娅
+队伍成员凑满了3人
+现在我们可以说明[System:Color name=tutorial ]战斗类别[/System:Color]和[System:Color name=tutorial ]位阶[/System:Color]了</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃都拥有天生的[System:Color name=tutorial ]战斗类别[/System:Color]
+[System:Color name=tutorial ]战斗类别[/System:Color]有 [System:Color name=tutorial ]攻击[/System:Color]&#183;[System:Color name=tutorial ]回复[/System:Color]&#183;[System:Color name=tutorial ]防御[/System:Color]3种
+例如 焰的战斗类别是攻击 白虎的是回复</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">与哪种战斗类别的异刃绑定
+决定了御刃者的战斗风格
+这被称为御刃者的[System:Color name=tutorial ]位阶[/System:Color]</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">像是[System:Color name=tutorial ]重视攻击[/System:Color]的位阶 [System:Color name=tutorial ]重视防御[/System:Color]的位阶
+根据战斗类别的组合会产生各种各样的位阶
+每种位阶都分别具有 [System:Color name=tutorial ]特殊效果[/System:Color]</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">是和喜欢的异刃仅仅进行绑定
+还是下工夫钻研 得到具有强力效果的位阶
+配合自己的游戏风格进行尝试吧</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然异刃的战斗类别无法改变
+但身为人造异刃的[System:Color name=tutorial ]花[/System:Color]却可以通过 
+[System:Color name=tutorial ]花的定制[/System:Color]来[System:Color name=tutorial ]改变战斗风格[/System:Color]</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">花的战斗类别可以在[System:Color name=tutorial ]TIGER! TIGER![/System:Color]处获得
+为了GET各种各样的[System:Color name=tutorial ]战斗类别CPU[/System:Color]
+试着玩玩TIGER! TIGER!吧</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">Different [System:Color name=tutorial ]classes [/System:Color]will impart certain [System:Color name=tutorial ]advantages[/System:Color] on
+Drivers, so experiment with different combinations of
+Blades to get the best effect!</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">战斗类别和位阶的说明就到此为止
+好了 快点离开这里吧</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里介绍一些战斗中的小窍门
+比如[System:Color name=tutorial ]引诱[/System:Color]敌人</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">即使是在敌人与角色离得较远的情况下
+只要对方处于目标状态 也可以[System:Color name=tutorial ]在收刀的状态下
+按[ML:icon icon=down ] [/System:Color]将敌人引诱过来</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请在想将成群的敌人逐一打倒
+或是想将敌人引到广阔地带战斗的时候活用这个技巧</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">来试着对眼前的敌人
+按下[System:Color name=tutorial ][ML:icon icon=R ]键[/System:Color]将它设定为目标
+然后按下[System:Color name=tutorial ][ML:icon icon=down ]键[/System:Color]把它引诱过来吧</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">抵达古拉领地内最大的城镇[System:Color name=tutorial ]托里格镇[/System:Color]了
+这里要说明的是[System:Color name=tutorial ]城镇的发展[/System:Color]</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">阿伐利缇亚和古拉 以及其他幽界的城镇
+拥有[System:Color name=tutorial ]5个阶段的发展度[/System:Color]</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">发展度可以通过获得[System:Color name=tutorial ]发展点数[/System:Color]
+来不断提升</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">城镇的发展度一旦提升
+各种商店内贩卖的[System:Color name=tutorial ]商品价格会变得便宜[/System:Color]</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有时商店内
+也许会增加新的商品</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]完成任务[/System:Color]或解决居民的烦恼
+都能[System:Color name=tutorial ]提升城镇的发展点数[/System:Color]</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">除此之外 就连[System:Color name=tutorial ]与人交谈[/System:Color]
+也可以[System:Color name=tutorial ]获得少许点数[/System:Color]</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">城镇的发展度
+既可以在去商店买东西时确认
+也可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]传送[/System:Color]进行确认</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">作为幽界的居民之一
+要不要尝试一下为城镇的发展做些贡献呢？</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">幽界是一个被云海包围的世界
+正如莱克斯他们所说的
+[System:Color name=tutorial ]云海有涨落潮的设定[/System:Color]</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">随着云海的涨落潮 某些原本能去的地方变得不能去
+某些原本不能去的地方变得能去
+让我们依据云海的变化来拓宽冒险的范围吧</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有件重要的事忘记说了 在此补充 
+就是有关[System:Color name=tutorial ]异刃的成长[/System:Color]</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃的成长要素大体分为3类
+[System:Color name=tutorial ]武器强化[/System:Color]&#183;[System:Color name=tutorial ]牵绊圆环[/System:Color]&#183;装备[System:Color name=tutorial ]辅助核心[/System:Color]</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">武器强化是指使用[System:Color name=tutorial ]核心晶片[/System:Color]
+对异刃与生俱来的武器进行强化</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]异刃设置[/System:Color]&gt;
+[System:Color name=tutorial ]武器强化[/System:Color]将核心晶片嵌入武器</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">建议在找到位于幽界各地的
+核心晶片商店后
+先买入新的核心晶片</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">传言某些核心晶片不仅能提升基本性能
+还可以发动特殊能力</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 据说幽界的某些敌人
+带有特别的核心晶片</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]异刃设置[/System:Color]&gt;
+[System:Color name=tutorial ]武器强化[/System:Color]把核心晶片嵌入武器</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接着讲一下牵绊圆环
+牵绊圆环是表示异刃各种能力的东西</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可学会消除场景中障碍的[System:Color name=tutorial ]场景技能[/System:Color]
+也可对战斗中使用的[System:Color name=tutorial ]必杀技[/System:Color]进行强化</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">获得[System:Color name=tutorial ]牵绊奖励[/System:Color] 可解锁牵绊圆环上的能力
+而想要获得牵绊奖励
+必须达成各种各样的课题</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最后来讲一下[System:Color name=tutorial ]辅助核心[/System:Color]
+它就相当于一种异刃可以装备的饰品</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">辅助核心可以在冒险途中的
+各种情形下获得</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">但并不是只要得到了
+就可以将辅助核心装备在身上</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">必须在位于城镇中的[System:Color name=tutorial ]辅助核心商店[/System:Color]内
+对其进行[System:Color name=tutorial ]构建[/System:Color]（[System:Color name=tutorial ]精炼[/System:Color]）
+具体细节请到辅助核心商店打听</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">好了 重要工作终于要开始了
+不过在此之前 还需要对商店进行一些说明
+就是有关[System:Color name=tutorial ]交易商店[/System:Color]的一些事项</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">交易商店中可以批量收购
+打捞中获得的[System:Color name=tutorial ]宝藏[/System:Color]</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">批量出售
+会比单个出售获得更多的金钱</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">交易商店与普通商店不同之处在于以下2点
+它可以[System:Color name=tutorial ]批量收购[/System:Color]
+以及[System:Color name=tutorial ]将宝藏作为收购的重点[/System:Color]</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">举例来说
+假设一件通过打捞获得的宝藏
+拿去普通商店只能卖20G</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同样的道具拿去交易商店
+3个一起卖就能卖100G</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想要提醒一下的是 交易商店的收购单
+设定有各式各样的条件
+玩家只能卖出与条件内容相符的道具</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">然而一旦成交 不仅出售价格会提高
+有时还能得到道具</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">打捞中获得宝藏后
+建议不要立即卖给普通商店
+要利用好交易商店</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里来复习一下辅助核心
+莱克斯一行人面前出现了[System:Color name=tutorial ]辅助核心商店[/System:Color]
+那里可以[System:Color name=tutorial ]对未炼制的辅助核心进行构建[/System:Color]</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">构建辅助核心
+需要用到[System:Color name=tutorial ]收藏道具[/System:Color]</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">各种辅助核心炼制时
+对所需收藏道具的数量要求也各不相同</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">只要玩家持有所需数量的收藏道具
+就可在商店内对辅助核心进行打造</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过 辅助核心的价值越高
+其精炼时所需的收藏道具的
+收集难度也越大</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想尽快构建未炼制的辅助核心
+就需要平日里留心
+在采集点多收集收藏道具</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">眼前似乎出现了一个宝箱
+不过看上去和普通的宝箱有所不同</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">从宝箱上的图标可以得知
+看来要打开这个宝箱
+似乎要用到异刃的[System:Color name=tutorial ]场景技能[/System:Color]啊</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">即使现在打不开
+也没必要放弃</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">只要在牵绊圆环中提升异刃的场景技能
+打开此宝箱的那天迟早会到来</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在可以在[System:Color name=tutorial ]住宿设施 [/System:Color]里[System:Color name=tutorial ]好好休息[/System:Color]了
+选择好好休息
+就会一直休息到[System:Color name=tutorial ]云海发生变化为止[/System:Color]</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">冒险途中 假如遇到因云海涨落潮而无法行动的情况
+建议玩家不要想太多 先回镇上
+使用住宿设施</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">每当好好休息时 云海的涨落潮情况就会产生交替
+好好休息前
+先确认一下[System:Color name=tutorial ]环境情报[/System:Color]中显示的[System:Color name=tutorial ]云海状态[/System:Color]吧</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外还有一点
+似乎并不是幽界所有的住宿设施 
+都有好好休息的选项</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">至少在容易受云海影响的托里格的住宿设施里
+应该是可以好好休息的</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">终于成为[System:Color name=tutorial ]弗雷斯贝古佣兵团[/System:Color]的团长了呀
+这里再来复习一遍
+勇告知的事项吧</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">佣兵团每天都会收到各种各样的[System:Color name=tutorial ]任务[/System:Color]委托</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当佣兵团收到新的任务时
+会以弹出信息进行提示
+请打开菜单进行确认</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">其他诸如镇上居民遇到烦恼之类的情况下
+玩家有可能需要直接从当事人那里接受任务</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">佣兵团的任务分为[System:Color name=tutorial ]只能接受一次的任务[/System:Color]
+和[System:Color name=tutorial ]可以多次接受的任务[/System:Color]
+这一点请多加注意</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">要达成佣兵团任务
+必须要对异刃部队进行[System:Color name=tutorial ]编组[/System:Color]</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">有一部分任务
+需要用到异刃的[System:Color name=tutorial ]特定技能[/System:Color]
+选择合适的异刃进行编组去执行任务</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过将适合该任务的异刃编入派遣部队
+甚至可以大幅缩短完成任务所需的时间</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">编入佣兵团的异刃可以通过
+[System:Color name=tutorial ]完成任务[/System:Color]
+来[System:Color name=tutorial ]达成牵绊圆环的成就[/System:Color]</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">即使不与异刃共同冒险
+玩家也可通过派遣异刃参加佣兵团任务
+来令其成长为强大的异刃</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 佣兵团有[System:Color name=tutorial ]佣兵团等级[/System:Color]的设定
+玩家可以通过完成特定任务
+来提升佣兵团等级</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">觉得差不多可以提升
+佣兵团等级了
+就请回到勇那里听听他的说明吧</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">佣兵团的等级提升后
+玩家就可以接到难度更高的任务了</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 城镇得到发展后 便会发生特别任务
+完成该任务后
+商店内的商品列表也许会发生变化</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">总结起来 佣兵团需要做的事有几下几点
+&#183;[System:Color name=tutorial ]接受任务[/System:Color]
+&#183;[System:Color name=tutorial ]编成异刃部队[/System:Color]</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">&#183;[System:Color name=tutorial ]完成任务[/System:Color]
+&#183;[System:Color name=tutorial ]领取报酬[/System:Color]
+大概就是这些</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那么 祝你武运昌隆</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那边出现的是
+通知发生[System:Color name=tutorial ]牵绊对话[/System:Color]的信号</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">牵绊对话是加深同伴间
+牵绊的重要对话</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这种信号
+分散在幽界的各个角落
+在冒险途中发现后 请务必尝试与之接触</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">达成牵绊对话后
+御刃者与异刃的[System:Color name=tutorial ]信赖度
+[/System:Color]必定会大幅[System:Color name=tutorial ]上升[/System:Color]</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 牵绊对话达成后的信赖度的上升率
+会因为对话中出现的选项的选择而发生变化
+面临选择时 小心谨慎地选择答案吧</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">要观看牵绊对话 当时的队伍组成和时间是重点
+只要接触显示信号就能明白具体信息
+好好筹齐条件</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">根据同行的同伴与时间的不同
+有时会触发 有时什么都不会发生</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不可忘记的是
+有时[System:Color name=tutorial ]牵绊对话[/System:Color]
+刚好就是异刃牵绊圆环的[System:Color name=tutorial ]成就[/System:Color]</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">要想使异刃成长的话
+牵绊对话果然是不可或缺的</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">还有一点
+有时当在住宿设施 休息过后
+便会得知牵绊对话的信号所在</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">观看牵绊对话
+将大大加深与异刃之间的信赖度
+多多体验对话 不断加深牵绊</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">此处将说明御刃者的基本战斗方法</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">先来说明[System:Color name=tutorial ]牵绊[/System:Color]
+应该可以看到连接[System:Color name=tutorial ]莱克斯和焰的光之纽带[/System:Color]
+这就是牵绊</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">御刃者与异刃心意相通时
+牵绊就会发出[System:Color name=tutorial ]金色[/System:Color]的光芒</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当牵绊闪耀金色光芒时就是心灵相通的证明
+战斗中的莱克斯的[System:Color name=tutorial ]移动速度[/System:Color]
+和[System:Color name=tutorial ]武技填充速度[/System:Color]会变快</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 其基本攻击力也会逐渐上升</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">为了加深牵绊使心灵相通
+需要在异刃附近
+连续对敌人发动攻击</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">其他还有诸如对敌人发出连续攻击之类的
+高明战斗方式也会令牵绊加深</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">相反 如果离开异刃太远
+牵绊将会变弱 御刃者的能力也会下降
+一边留意和焰的牵绊一边和灭战斗</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一旦出现这种情况
+莱克斯的战斗力就会逐渐丧失</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">为了维持与焰的牵绊 尽全力战斗吧</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]必杀技[/System:Color]是拥有远超武技威力的
+攻击力的攻击方法</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过[System:Color name=tutorial ]不断累积必杀槽[/System:Color]
+可以提升必杀技的等级和威力</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">必杀技可以通过
+使用武技积蓄[System:Color name=tutorial ]必杀槽[/System:Color]来发动</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过不断累积必杀槽
+必杀技的[System:Color name=tutorial ]等级[/System:Color]也会如同[System:Color name=tutorial ]1[/System:Color]&gt;[System:Color name=tutorial ]2[/System:Color]&gt;[System:Color name=tutorial ]3[/System:Color]这样不断增加</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在自动攻击[System:Color name=tutorial ]击中敌人时使用武技[/System:Color]
+可[System:Color name=tutorial ]累积更多的必杀槽[/System:Color]
+看到出现圆形标记就代表获得成功</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 发动必杀技时会触发[System:Color name=tutorial ]按键挑战[/System:Color]</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">依据画面中的指示
+[System:Color name=tutorial ]看准时机按下按键吧[/System:Color]
+顺利的话可使伤害加倍</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">用必杀技攻击敌人后
+会出现可以触发[System:Color name=tutorial ]异刃连击[/System:Color]的机会
+异刃连击的相关内容以后再进行说明</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">玩家对敌人打出必杀技后
+画面中就会显示出
+表示异刃连击[System:Color name=tutorial ]有效时间的连击槽[/System:Color]</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外与此同时也会
+显示出异刃连击[System:Color name=tutorial ]路线[/System:Color]</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在连击槽变为[System:Color name=tutorial ]0[/System:Color]之前
+再发起[System:Color name=tutorial ]下一阶段的必杀技[/System:Color]
+便可给敌人造成远超单次必杀技的伤害</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看来必杀技已经命中了敌人
+接下来赠送你必杀技等级
+尝试打出漂亮的异刃连击吧</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]异刃武技[/System:Color]是异刃拥有的特殊能力之一
+这是一种可以在战斗中[System:Color name=tutorial ]自动为御刃者提供支援[/System:Color]的能力</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">随着御刃者与异刃的信赖度提升
+异刃为其提供支援的概率也会提升</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">等你再积累一些作为御刃者的经验后
+我们再来说明
+信赖度的相关问题</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在请将注意力放在如何打倒灭身上</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">同伴们都到齐了
+我们可以来讲[System:Color name=tutorial ]仇恨值系统[/System:Color]了</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">也许有人已经注意到了
+当人物受到敌人攻击时
+御刃者周围会显示出[System:Color name=tutorial ]红色圆环[/System:Color]</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">该圆环称为[System:Color name=tutorial ]仇恨值圆环[/System:Color]
+与圆环重合显示的[System:Color name=tutorial ]楔形图标[/System:Color]
+表示受到攻击的[System:Color name=tutorial ]敌人的方向[/System:Color]</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">所谓仇恨值 是指敌人在受到强力攻击后
+想要向发出此攻击的御刃者复仇
+就如字面意思那般的『仇恨』的感情</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">治疗师系位阶的御刃者聚集到仇恨值时
+会非常容易进入无法战斗状态
+现在还是不要让尼娅聚集仇恨值</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">守卫系位阶的御刃者
+即使聚集到仇恨值也能暂时抵挡攻击
+现在让虎来聚集仇恨值较好</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">斗士系位阶的御刃者的责任是
+对敌人造成大量伤害
+现在让莱克斯专心攻击为好</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">由守卫聚集敌人的仇恨值
+治疗师回复守卫的HP
+此时斗士负责减少敌人的HP</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请注意箭头所指的位置
+当完成[System:Color name=tutorial ]异刃连击[/System:Color]的[System:Color name=tutorial ]第3阶段[/System:Color]时
+会触发的各种[System:Color name=tutorial ]封印效果[/System:Color]</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">最后打出的必杀技
+可以对敌人造成
+其在连击路线上显示出的封印效果</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">对敌人施加的封印效果
+会一直持续到其[System:Color name=tutorial ]被施加另一种封印效果为止[/System:Color]</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">发动了封印效果的战斗会极为有利
+请务必要努力
+在战斗中触发异刃连击的第3阶段</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过有一点需要注意
+一旦完成第三阶段的异刃连击
+敌人便会对该封印属性产生[System:Color name=tutorial ]抗性[/System:Color]</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">就是说 即使采用相同的连击路线
+给敌人造成的伤害也会降低</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃连击也需要
+尝试各种不同的路线</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看来幽界还存在着很多
+不为人知的生物呢</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尝试锁定各种各样的敌人
+应该就能找到
+显示[System:Color name=tutorial ]和普通敌人不同的锁定图标[/System:Color]的敌人</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那就是被称为[System:Color name=tutorial ]珍稀种怪物
+[/System:Color]的怪物</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">据说即使是幽界有名的御刃者
+也对它感到头疼</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">相信只要成功讨伐珍稀种怪物
+就能获得幽界所有人的认可</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">然而 和普通的怪物不同
+它会发出非常强力的攻击
+建议做好准备工作再向它发出挑战</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 珍稀种怪物被打倒后
+会在原地留下一座墓碑
+作为它曾经生存过的证明</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">传说只要对墓碑按下[ML:icon icon=A ]
+就能再次唤醒
+珍稀种怪物</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">作为真正意义上天之圣杯的御刃者
+莱克斯觉醒了[System:Color name=tutorial ]主控御刃者[/System:Color]的力量</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尼娅展现了真正的形态
+莱克斯可与作为[System:Color name=tutorial ]异刃的尼娅[/System:Color]进行绑定了</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以根据莱克斯的要求呼唤出光
+或反过来呼唤出焰了</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在箭头所指的图标
+表示的是敌人的[System:Color name=tutorial ]弱点[/System:Color]</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">由于显示的是[System:Color name=tutorial ]火焰图标[/System:Color]
+说明这个敌人[System:Color name=tutorial ]弱点为火[/System:Color]
+就是说选择焰会比较有利</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接着是[System:Color name=tutorial ]救助[/System:Color]同伴的方法
+当御刃者的HP变成0时
+御刃者会陷入无法战斗状态</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在箭头所指的[System:Color name=tutorial ]队伍槽[/System:Color]累积1条以上的情况下
+接近无法战斗的同伴并按下[ML:icon icon=A ]
+即可以1条槽的代价令同伴回复</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">自己陷入无法战斗状态时
+只要队伍槽累积1条以上
+同伴就会靠近并救活自己</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来说明玩家与御刃者同伴之间的[System:Color name=tutorial ]异刃连击[/System:Color]
+在那之前 先赠送必杀槽
+请施展必杀技看看</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">但并不是只要打出钩锚发射
+就能令敌人倒地</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尝试看准敌人被[System:Color name=tutorial ]破防[/System:Color]的瞬间
+打出钩锚发射吧</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]尼娅[/System:Color]应该拥有能使敌人[System:Color name=tutorial ]破防[/System:Color]的武技
+在尼娅使敌人破防之前
+先不要使用钩锚发射</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当敌人被[System:Color name=tutorial ]破防[/System:Color]时
+箭头所指的位置就会显示一个计量槽
+这在游戏中称为[System:Color name=tutorial ]御刃者连击槽[/System:Color]</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在槽值变为0之前 向敌人发出带有倒地效果的武技
+可以对敌人造成很大的伤害
+这在游戏中称为[System:Color name=tutorial ]御刃者连击[/System:Color]</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">御刃者连击
+最多可以按以下顺序连击4次
+[System:Color name=tutorial ]破防[/System:Color]&gt;[System:Color name=tutorial ]倒地[/System:Color]&gt;[System:Color name=tutorial ]浮空[/System:Color]&gt;[System:Color name=tutorial ]猛击[/System:Color]</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯他们能使用的武技中
+有一部分带有可用于御刃者连击的效果
+请多做尝试</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在那之前 先用[System:Color name=tutorial ]钩锚发射[/System:Color]让角甲兽
+[System:Color name=tutorial ]倒地[/System:Color]来与[System:Color name=tutorial ]破防[/System:Color]组成连击吧</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在箭头所指的图标
+叫做[System:Color name=tutorial ]集中图标[/System:Color]
+也许有些玩家已经使用过了</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在与多个敌人作战时 即使改变攻击目标
+除操作角色之外的其余角色们
+仍会继续攻击之前的目标</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当感到战况稍有不利时
+就可以按下与集中图标对应的[System:Color name=tutorial ][ML:icon icon=left ][/System:Color]
+其余的角色便会立即前来帮助</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">陷入混战时
+只要能冷静分析该以何种顺序打倒敌人</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">巧妙运用[System:Color name=tutorial ]目标切换[/System:Color]与[System:Color name=tutorial ]集中命令[/System:Color]
+应该就能比预料情况更轻松地跨越困境
+从觊觎天之圣杯的恶徒手中守护好焰吧</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">莱克斯不管异刃的调谐御刃者是谁
+都可与之[System:Color name=tutorial ]自由地进行绑定[/System:Color]</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在正好是和迦具土绑定的状态
+为了不输给梅勒芙
+最大限度引出迦具土的力量</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当然 和作为[System:Color name=tutorial ]御刃者的尼娅[/System:Color]的旅行还将继续</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想要与作为异刃的尼娅进行绑定
+可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]选择御刃者尼娅
+按下[ML:icon icon=Y ]键[/System:Color]进行操作</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想要和作为御刃者的尼娅继续旅行
+可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]选择异刃尼娅
+按下[ML:icon icon=Y ]键[/System:Color]进行变更</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想在野外呼唤的话
+只需按下主菜单&gt;[System:Color name=tutorial ]角色[/System:Color]
+[System:Color name=tutorial ]焰[/System:Color]（[System:Color name=tutorial ]光[/System:Color]）&gt;[System:Color name=tutorial ][ML:icon icon=Y ]键[/System:Color]</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想在战斗中呼唤的话
+只需按下用于[System:Color name=tutorial ]异刃切换[/System:Color]中与[System:Color name=tutorial ]焰（光）图标[/System:Color]对应的键
+即可完成切换</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">和普通的异刃切换不同
+异刃切换后[System:Color name=tutorial ]没有冷却时间[/System:Color]
+因此可以视情况自由召唤</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在箭头所指的是
+[System:Color name=tutorial ]操作角色[/System:Color]绑定中的异刃发出的[System:Color name=tutorial ]连击申请[/System:Color]</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">该图标会在以下2种情况下显示
+操作角色绑定中的异刃可通过必杀技发动[System:Color name=tutorial ]异刃连击的情况[/System:Color]以及</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃连击已经发生状态下
+也可操作角色绑定中的异刃通过必杀技
+[System:Color name=tutorial ]继续异刃连击的情况[/System:Color]</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃连击是左右战局的重要技巧
+请玩家注意不要漏看该图标</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">首先说明[System:Color name=tutorial ]队伍槽[/System:Color]
+之前已经说明过一部分内容
+但除了救助无法战斗的队友外还有一个重要的作用</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当该槽值积满3条时
+按下[System:Color name=tutorial ][ML:icon icon=plus ][/System:Color]即可触发[System:Color name=tutorial ]连锁攻击[/System:Color]</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">连锁攻击一旦触发
+就可以自由选择排列
+御刃者绑定中的[System:Color name=tutorial ]异刃的必杀技[/System:Color]</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">比如先选莱克斯绑定中的焰的必杀技
+再选尼娅绑定中的白虎的必杀技
+接着选虎绑定中的花的必杀技这样</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这一系列的行动称为[System:Color name=tutorial ]连锁回合
+[/System:Color]</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在连锁攻击的过程中
+玩家可以通过选择异刃的必杀技
+来[System:Color name=tutorial ]破坏[/System:Color]敌人身上的[System:Color name=tutorial ]属性球[/System:Color]</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">使用和属性球[System:Color name=tutorial ]相反属性的必杀技[/System:Color]
+更容易破坏属性球
+破坏后将造成[System:Color name=tutorial ]大量伤害[/System:Color]</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">以何种顺序呼叫哪个异刃
+需要好好考虑来选择必杀技</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 即使不是用与属性球[System:Color name=tutorial ]属性相反的异刃[/System:Color]发起攻击
+也可以从敌人身上的属性球中
+[System:Color name=tutorial ]随机[/System:Color]挑选[System:Color name=tutorial ]其中1个[/System:Color] 造成[System:Color name=tutorial ]1点[/System:Color][System:Color name=tutorial ]伤害[/System:Color]</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">异刃使用必杀技
+会消耗冷却时间
+然而通过使[System:Color name=tutorial ]属性球[/System:Color][System:Color name=tutorial ]Burst[/System:Color]可以令[System:Color name=tutorial ]冷却时间[/System:Color][System:Color name=tutorial ]回复一半[/System:Color]</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">回合内成功使属性球Burst
+便能[System:Color name=tutorial ]延长连锁攻击的连锁回合
+[/System:Color]</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过使尽可能多的属性球Burst
+可令连锁攻击结束后对敌人的[System:Color name=tutorial ]伤害倍率[/System:Color]
+发生惊人[System:Color name=tutorial ]变化[/System:Color]</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">连锁回合延长的一瞬间会触发[System:Color name=tutorial ]按键挑战[/System:Color]
+在按键挑战中取得[System:Color name=tutorial ]成功[/System:Color]
+也可令异刃的[System:Color name=tutorial ]冷却时间[/System:Color]获得[System:Color name=tutorial ]回复[/System:Color]</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">按键挑战还有一项重要作用
+通常情况下 选择异刃的必杀技后
+只会触发[System:Color name=tutorial ]等级1[/System:Color]的[System:Color name=tutorial ]必杀技[/System:Color]</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">而在按键挑战中取得[System:Color name=tutorial ]成功[/System:Color]后
+必杀技的[System:Color name=tutorial ]等级[/System:Color]就会提升
+[System:Color name=tutorial ]最高上升[/System:Color]至[System:Color name=tutorial ]等级3[/System:Color]</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过 一旦在按键挑战中[System:Color name=tutorial ]失败[/System:Color]
+必杀技的[System:Color name=tutorial ]等级[/System:Color]就会[System:Color name=tutorial ]每次下降1级[/System:Color]</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">连锁攻击一旦触发
+[System:Color name=tutorial ]队伍槽[/System:Color]便会变为[System:Color name=tutorial ]0[/System:Color] 请注意这一点</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过 由于使用连锁攻击的过程中[System:Color name=tutorial ]敌人[/System:Color][System:Color name=tutorial ]不会攻击我方[/System:Color]
+所以可以慢慢考虑
+如何更有效率地使敌方属性球Burst</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">假如牵绊进入[System:Color name=tutorial ]MAX状态[/System:Color]
+那么异刃对御刃者的[System:Color name=tutorial ]信赖度[/System:Color]就会上升</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信赖度的上升会带来许多好处
+关于这个将另寻机会说明</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那么 接下来的目标是托里格镇
+在今后的冒险中 异刃的[System:Color name=tutorial ]信赖度[/System:Color]
+会变得越来越重要</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">信赖度是[System:Color name=tutorial ]解锁[/System:Color]异刃的[System:Color name=tutorial ]牵绊圆环等级[/System:Color]
+所必不可少的要素</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">如果想令异刃成为强力的冒险支援者
+就绝不可忘记赢取异刃的信赖</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">使异刃的[System:Color name=tutorial ]信赖度[/System:Color]上升的方法有很多
+首先第一个方法是[System:Color name=tutorial ]完成任务[/System:Color]</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">完成任务时
+和当时在场的异刃之间的信赖度会提升</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在战斗中将牵绊提升到MAX也能提升信赖度
+显示金色光芒是牵绊达到MAX的标志</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">然后第二个方法是在战斗中使牵绊变成[System:Color name=tutorial ]MAX状态[/System:Color]</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">之前和灭战斗时我们已经提过了
+这也是提升信赖度的重要要素之一
+和敌人战斗时要时刻留心[System:Color name=tutorial ]牵绊[/System:Color]</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">提升信赖度的方法有很多
+一次讲完恐怕会记不住
+还是分几次来说明吧</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那么 就朝着[System:Color name=tutorial ]托里格镇[/System:Color]出发吧</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 通过观看[System:Color name=tutorial ]牵绊对话[/System:Color]
+也可[System:Color name=tutorial ]提升[/System:Color]异刃的[System:Color name=tutorial ]信赖度[/System:Color]
+这是提升信赖度的第三个方法</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">还有就是 通过完成佣兵团的任务
+也可[System:Color name=tutorial ]提升[/System:Color]异刃的[System:Color name=tutorial ]信赖度[/System:Color]
+这是提升信赖度的第四个方法</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">总结一下提升异刃信赖度的几种方法
+1.[System:Color name=tutorial ]完成任务[/System:Color][System:Color name=tutorial ]
+[/System:Color]2.[System:Color name=tutorial ]在战斗中使牵绊变成MAX状态[/System:Color]</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">3.[System:Color name=tutorial ]观看牵绊对话[/System:Color]
+4.[System:Color name=tutorial ]完成佣兵团任务[/System:Color]
+以上四种方法记清楚了吧</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">等级4的必杀技和通常的必杀技不同
+不能靠使用武技来累积必杀槽</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">那么究竟怎样才能使用它呢
+最重要的是[System:Color name=tutorial ]和异刃紧紧相依[/System:Color]这点</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接近异刃
+等级4的必杀技槽便会累积</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">等该槽蓄满之时 使用必杀技
+玩家将目睹异刃与御刃者身心合一的
+最棒必杀技</td>
+      </tr>
+      <tr id="391">
+        <td>391</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">说了这么多 其实还得靠练习
+俗话说得好 『熟能生巧』嘛</td>
+      </tr>
+      <tr id="392">
+        <td>392</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这次已经直接将队伍槽蓄满了
+首先 请按下[System:Color name=tutorial ][ML:icon icon=plus ]键[/System:Color]触发连锁攻击吧</td>
+      </tr>
+      <tr id="393">
+        <td>393</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">焰一旦觉醒就会展现出压倒性的攻击力
+并且 当玩家发动异刃连击时
+[System:Color name=tutorial ]可以不按照如下属性 自由选择连击路线[/System:Color]</td>
+      </tr>
+      <tr id="394">
+        <td>394</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来的连击路线
+可以按[System:Color name=tutorial ][ML:icon icon=up ][ML:icon icon=down ][/System:Color]轻松切换</td>
+      </tr>
+      <tr id="395">
+        <td>395</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在普通战斗中 当与[System:Color name=tutorial ]焰（光）的牵绊达到MAX[/System:Color]
+加上[System:Color name=tutorial ]队伍槽达到MAX[/System:Color]时
+可以使焰觉醒</td>
+      </tr>
+      <tr id="396">
+        <td>396</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当满足此条件时
+按住[System:Color name=tutorial ][ML:icon icon=R ]键[/System:Color]不放 再按下[System:Color name=tutorial ][ML:icon icon=X ]键[/System:Color]焰就会觉醒</td>
+      </tr>
+      <tr id="397">
+        <td>397</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">觉醒后的焰在发动异刃连击时
+可发挥能将内心构想具现化的力量
+能选择释放[System:Color name=tutorial ]喜好的连击路线[/System:Color]</td>
+      </tr>
+      <tr id="398">
+        <td>398</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">要选择连击路线
+请在连击申请中按[System:Color name=tutorial ][ML:icon icon=up ][ML:icon icon=down ]键[/System:Color]进行选择</td>
+      </tr>
+      <tr id="399">
+        <td>399</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">虽然觉醒后的焰非常强大
+[System:Color name=tutorial ]但经过一定时间后觉醒会解除[/System:Color]
+请一定要注意剩余的时间槽长短</td>
+      </tr>
+      <tr id="400">
+        <td>400</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">不过 在这场战斗中并没有觉醒时间的限制
+尽情地发挥真实之力吧</td>
+      </tr>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在莱克斯与[System:Color name=tutorial ]焰和尼娅绑定[/System:Color]的状态下
+当他[System:Color name=tutorial ]与两人的牵绊达到MAX[/System:Color]时
+使用[System:Color name=tutorial ]等级4的必杀技[/System:Color]</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">就可以发动在使用普通异刃时无法见到的
+三人必杀技</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">由于其威力要高于普通的必杀技
+所以建议与焰和尼娅绑定时
+积极使用这种必杀技</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">关于辅助核心
+会在获得时对其进行说明</td>
+      </tr>
+      <tr id="405">
+        <td>405</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尝试过买东西了吗？
+到达新城镇时
+请去新的商店看看</td>
+      </tr>
+      <tr id="406">
+        <td>406</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">也许可以买到
+新城镇独有的道具</td>
+      </tr>
+      <tr id="407">
+        <td>407</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">辅助核心可通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;
+[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]异刃设置[/System:Color]&gt;[System:Color name=tutorial ]辅助核心装备[/System:Color]
+对异刃进行装备</td>
+      </tr>
+      <tr id="408">
+        <td>408</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">另外 乘这个机会使用传送
+返回阿伐利缇亚商会 对比一下出售的商品
+也是一个不错的选择</td>
+      </tr>
+      <tr id="409">
+        <td>409</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来开始说明有关[System:Color name=tutorial ]取消[/System:Color]攻击的方式</td>
+      </tr>
+      <tr id="410">
+        <td>410</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]自动攻击[/System:Color]击中敌人的瞬间
+[System:Color name=tutorial ]使用武技追加攻击[/System:Color]的话
+玩家的周围会有[System:Color name=tutorial ]光环[/System:Color]扩散开</td>
+      </tr>
+      <tr id="411">
+        <td>411</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这个光环就代表已经成功发动了取消攻击</td>
+      </tr>
+      <tr id="412">
+        <td>412</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">如果成功发动取消攻击
+比起直接发动武技
+攻击力会提升</td>
+      </tr>
+      <tr id="413">
+        <td>413</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">此外 必杀技的填充槽也会
+迅速累积
+因此能够在战斗中获得更有利的局势</td>
+      </tr>
+      <tr id="414">
+        <td>414</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">并且 取消攻击的效果
+会随着自动攻击的阶段进展
+而不断提高</td>
+      </tr>
+      <tr id="415">
+        <td>415</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这就是仇恨值系统
+掌握御刃者位阶的区别
+巧妙地打倒莫夫</td>
+      </tr>
+      <tr id="416">
+        <td>416</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">此时在敌人周围会有
+[System:Color name=tutorial ]标注着表示抗性的球[/System:Color]不断旋转
+这种球称作[System:Color name=tutorial ]属性球[/System:Color]</td>
+      </tr>
+      <tr id="417">
+        <td>417</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这表示使用
+和属性球相同属性的攻击
+将很难造成伤害</td>
+      </tr>
+      <tr id="418">
+        <td>418</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">这里需要注意
+罗盘上的粉红色图标
+只有把任务[System:Color name=tutorial ]设为当前任务才会显示[/System:Color]</td>
+      </tr>
+      <tr id="419">
+        <td>419</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">无法进行冒险时
+推荐设定任务为当前任务</td>
+      </tr>
+      <tr id="420">
+        <td>420</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">为方便进行基本操作
+在此对操作方法进行了简单总结</td>
+      </tr>
+      <tr id="421">
+        <td>421</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">需要查看操作方法时
+请按下[System:Color name=tutorial ][ML:icon icon=left ][ML:icon icon=up ][ML:icon icon=right ][/System:Color]中的任意键</td>
+      </tr>
+      <tr id="422">
+        <td>422</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">按下[System:Color name=tutorial ][ML:icon icon=left ]键[/System:Color]可查看[System:Color name=tutorial ]战斗操作[/System:Color]的说明
+按下[System:Color name=tutorial ][ML:icon icon=up ]键[/System:Color]可查看[System:Color name=tutorial ]视角操作[/System:Color]的说明
+按下[System:Color name=tutorial ][ML:icon icon=right ]键[/System:Color]可查看[System:Color name=tutorial ]场景操作[/System:Color]的说明</td>
+      </tr>
+      <tr id="423">
+        <td>423</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">云海的涨落潮
+可以通过[System:Color name=tutorial ]环境情报[/System:Color]进行确认</td>
+      </tr>
+      <tr id="424">
+        <td>424</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">当云海面[System:Color name=tutorial ]高于[/System:Color]环境情报最左侧
+追加图标的[System:Color name=tutorial ]中央线[/System:Color]时
+云海处于[System:Color name=tutorial ]涨潮[/System:Color]状态</td>
+      </tr>
+      <tr id="425">
+        <td>425</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">与之相反 当云海面[System:Color name=tutorial ]低于中央线[/System:Color]时
+云海处于[System:Color name=tutorial ]落潮[/System:Color]状态</td>
+      </tr>
+      <tr id="426">
+        <td>426</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来 焰暂时休息
+[System:Color name=tutorial ]光[/System:Color]将会有活跃表现</td>
+      </tr>
+      <tr id="427">
+        <td>427</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">光将会发挥超越焰的力量
+[System:Color name=tutorial ]等级4的必杀技神圣之箭[/System:Color]
+是从天空降下光箭的招式</td>
+      </tr>
+      <tr id="428">
+        <td>428</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">也就是说 在[System:Color name=tutorial ]有屋顶的地点
+[/System:Color]会[System:Color name=tutorial ]限制使用 [/System:Color]请多加注意</td>
+      </tr>
+      <tr id="429">
+        <td>429</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在此详细介绍御刃者属性
+御刃者的基本属性有
+[System:Color name=tutorial ]HP[/System:Color]&#183;[System:Color name=tutorial ]力量[/System:Color]&#183;[System:Color name=tutorial ]以太力[/System:Color]&#183;[System:Color name=tutorial ]灵巧[/System:Color]&#183;[System:Color name=tutorial ]敏捷[/System:Color]&#183;[System:Color name=tutorial ]运气[/System:Color]</td>
+      </tr>
+      <tr id="430">
+        <td>430</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]HP[/System:Color]：是御刃者的体力 变为0则无法战斗
+[System:Color name=tutorial ]力量[/System:Color]：影响力量系的武技伤害
+[System:Color name=tutorial ]以太力[/System:Color]：影响以太系的武技伤害&#183;回复值</td>
+      </tr>
+      <tr id="431">
+        <td>431</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]灵巧[/System:Color]：影响攻击的命中
+[System:Color name=tutorial ]敏捷[/System:Color]：影响对敌人攻击的回避
+[System:Color name=tutorial ]运气[/System:Color]：易于抵抗敌人的减益效果&#183;反应动作</td>
+      </tr>
+      <tr id="432">
+        <td>432</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">提升[System:Color name=tutorial ]御刃者属性[/System:Color]中[System:Color name=tutorial ]运气[/System:Color]的数值
+会提升特殊异刃的诞生概率</td>
+      </tr>
+      <tr id="433">
+        <td>433</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">之前说过 异刃连击不到第3段
+就不能附加属性球
+但这次特例 试着给义经加上[System:Color name=tutorial ]水属性球[/System:Color]</td>
+      </tr>
+      <tr id="434">
+        <td>434</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想要有效破坏水属性球
+首先要用[System:Color name=tutorial ]相反属性的火属性必杀技对其造成伤害[/System:Color]
+说到这里 你应该已经明白了吧</td>
+      </tr>
+      <tr id="435">
+        <td>435</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]佣兵团菜单[/System:Color]已解锁
+佣兵团相关的事宜
+可在[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]佣兵团[/System:Color]进行确认</td>
+      </tr>
+      <tr id="436">
+        <td>436</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">还有 一旦开始连锁攻击
+队伍槽就会变成[System:Color name=tutorial ]全爆发槽[/System:Color]</td>
+      </tr>
+      <tr id="437">
+        <td>437</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">破坏属性球
+将逐渐累积全爆发槽
+满槽将触发[System:Color name=tutorial ]全爆发[/System:Color]</td>
+      </tr>
+      <tr id="438">
+        <td>438</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一旦触发全爆发
+将会对敌人造成巨大伤害</td>
+      </tr>
+      <tr id="439">
+        <td>439</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">想知道有什么样的牵绊奖励
+可以通过[System:Color name=tutorial ]主菜单[/System:Color]&gt;[System:Color name=tutorial ]角色[/System:Color]&gt;[System:Color name=tutorial ]异刃设置[/System:Color]&gt;
+[System:Color name=tutorial ]牵绊圆环[/System:Color]进行确认</td>
+      </tr>
+      <tr id="440">
+        <td>440</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">发生了二选一任务
+这种类型的任务
+有多种通过方法</td>
+      </tr>
+      <tr id="441">
+        <td>441</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">首先调查一下脚印吧
+如果调谐过的异刃有调查所需的场景技能
+就能轻松推进任务</td>
+      </tr>
+      <tr id="442">
+        <td>442</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">如果还没有调谐过那样的异刃
+请再次向奥特搭话
+获取提示后进行任务</td>
+      </tr>
+      <tr id="443">
+        <td>443</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">用通常方式迎战恶魔之王异形怪
+可能会很棘手</td>
+      </tr>
+      <tr id="444">
+        <td>444</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">此时让焰（光）觉醒
+就能顺利推进战斗</td>
+      </tr>
+      <tr id="445">
+        <td>445</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在此赠送队伍槽
+和异刃的冷却时间
+请务必和觉醒后的焰（光）一起战斗试试</td>
+      </tr>
+      <tr id="446">
+        <td>446</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在队伍槽MAX时
+同时按下[ML:icon icon=R ]键和[ML:icon icon=X ]键
+就能觉醒焰（光）</td>
+      </tr>
+      <tr id="447">
+        <td>447</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]Advanced New Game[/System:Color]可在住宿设施中
+[System:Color name=tutorial ]降低等级[/System:Color]</td>
+      </tr>
+      <tr id="448">
+        <td>448</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">所降低等级对应的经验值将转为[System:Color name=tutorial ]奖励EXP[/System:Color]
+向[System:Color name=tutorial ]战斗吟游诗人[/System:Color]搭话
+可以[System:Color name=tutorial ]用奖励EXP交换道具[/System:Color]</td>
+      </tr>
+      <tr id="449">
+        <td>449</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">[System:Color name=tutorial ]战斗吟游诗人[/System:Color]所在的地方
+迷你地图上会显示[System:Color name=tutorial ]绿色的商店图标[/System:Color]</td>
+      </tr>
+      <tr id="450">
+        <td>450</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">如果没有看到商店图标
+尝试在传送画面切换显示设定吧</td>
+      </tr>
+      <tr id="451">
+        <td>451</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以与
+[System:Color name=tutorial ]花巴斯塔[/System:Color]进行异刃绑定了
+现在花巴斯塔与[System:Color name=tutorial ]莱克斯[/System:Color]正处于绑定中</td>
+      </tr>
+      <tr id="452">
+        <td>452</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">花巴斯塔可以[System:Color name=tutorial ]不使用超频[/System:Color]
+与[System:Color name=tutorial ]除虎以外[/System:Color]的任何御刃者
+进行绑定</td>
+      </tr>
+      <tr id="453">
+        <td>453</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">绑定可以在各御刃者的
+[System:Color name=tutorial ]异刃绑定画面[/System:Color]进行设定</td>
+      </tr>
+      <tr id="454">
+        <td>454</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">根据战况
+灵活运用全新的力量[System:Color name=tutorial ]花巴斯塔[/System:Color]吧</td>
+      </tr>
+      <tr id="455">
+        <td>455</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以与[System:Color name=tutorial ]修尔克[/System:Color]以及[System:Color name=tutorial ]菲奥伦[/System:Color]
+进行异刃绑定了</td>
+      </tr>
+      <tr id="456">
+        <td>456</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在修尔克与[System:Color name=tutorial ]莱克斯[/System:Color]
+菲奥伦与[System:Color name=tutorial ]尼娅[/System:Color]正处于绑定中</td>
+      </tr>
+      <tr id="457">
+        <td>457</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">修尔克和菲奥伦可以[System:Color name=tutorial ]不使用超频[/System:Color]
+与[System:Color name=tutorial ]除虎以外[/System:Color]的任何御刃者
+进行绑定</td>
+      </tr>
+      <tr id="458">
+        <td>458</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">绑定可以在各御刃者的
+[System:Color name=tutorial ]异刃绑定画面[/System:Color]进行设定
+根据战况灵活运用[System:Color name=tutorial ]修尔克[/System:Color]和[System:Color name=tutorial ]菲奥伦[/System:Color]吧</td>
+      </tr>
+      <tr id="459">
+        <td>459</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">但是 不能将修尔克和菲奥伦
+带去挑战之地以外的地方</td>
+      </tr>
+      <tr id="460">
+        <td>460</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">从传送门[System:Color name=tutorial ]回到幽界[/System:Color]后
+[System:Color name=tutorial ]修尔克和菲奥伦将会脱离队伍[/System:Color]
+这一点请多加注意</td>
+      </tr>
+      <tr id="461">
+        <td>461</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">听说在诺彭大仙人的挑战报酬中
+有可以将修尔克和菲奥伦
+带进幽界的道具</td>
+      </tr>
+      <tr id="462">
+        <td>462</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">多多尝试
+诺彭大仙人的挑战吧！</td>
+      </tr>
+      <tr id="463">
+        <td>463</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以顺利将[System:Color name=tutorial ]修尔克[/System:Color]和[System:Color name=tutorial ]菲奥伦[/System:Color]
+带去幽界了</td>
+      </tr>
+      <tr id="464">
+        <td>464</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">请务必在幽界也灵活运用
+新同伴的新力量！</td>
+      </tr>
+      <tr id="465">
+        <td>465</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">关于挑战战斗的注意事项</td>
+      </tr>
+      <tr id="466">
+        <td>466</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">根据剧情进展 在可以前往卡拉姆遗迹之前
+挑战战斗的传送门
+会配置在阿伐利缇亚商会中</td>
+      </tr>
+      <tr id="467">
+        <td>467</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">在传送门配置在卡拉姆遗迹中之后
+阿伐利缇亚商会中的传送门将会消失
+这一点请多加注意</td>
+      </tr>
+      <tr id="468">
+        <td>468</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑战战斗终于要开始了
+一旦画面上显示[System:Color name=tutorial ]CHALLENGE BATTLE START[/System:Color]的字样
+挑战即开始</td>
+      </tr>
+      <tr id="469">
+        <td>469</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">首先进入画面说明</td>
+      </tr>
+      <tr id="470">
+        <td>470</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">箭头所指的是挑战的[System:Color name=tutorial ]经过时间[/System:Color]
+[System:Color name=tutorial ]在时间限制内[/System:Color]完成任务吧</td>
+      </tr>
+      <tr id="471">
+        <td>471</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">每场挑战战斗的时间限制各不相同
+请多加留意</td>
+      </tr>
+      <tr id="472">
+        <td>472</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">接下来箭头所指的是[System:Color name=tutorial ]以太魔方的收集量[/System:Color]</td>
+      </tr>
+      <tr id="473">
+        <td>473</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">收集到的以太魔方
+会不断累积在这个[System:Color name=tutorial ]箱子[/System:Color]中</td>
+      </tr>
+      <tr id="474">
+        <td>474</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">根据攒满的[System:Color name=tutorial ]箱子[/System:Color]的数量
+可以在挑战战斗结束后获得相应的宝箱</td>
+      </tr>
+      <tr id="475">
+        <td>475</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在掉落的橙色立方体
+即为[System:Color name=tutorial ]以太魔方[/System:Color]</td>
+      </tr>
+      <tr id="476">
+        <td>476</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">一定时间后 以太魔方将会消失
+一边拾取魔方一边战斗吧</td>
+      </tr>
+      <tr id="477">
+        <td>477</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑战失败！
+[System:Color name=tutorial ]没有在时间限制内通关[/System:Color]或
+[System:Color name=tutorial ]中途在战斗中被打败[/System:Color]会导致挑战失败！</td>
+      </tr>
+      <tr id="478">
+        <td>478</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">并且 在挑战时
+按下[System:Color name=tutorial ]收刀[/System:Color]→[System:Color name=tutorial ][ML:icon icon=plus ]键[/System:Color]放弃挑战也将被视为挑战失败</td>
+      </tr>
+      <tr id="479">
+        <td>479</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑战成功！</td>
+      </tr>
+      <tr id="480">
+        <td>480</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">挑战成功后会有短暂的时间
+可供收集以太魔方</td>
+      </tr>
+      <tr id="481">
+        <td>481</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">超出以太魔方的回收时间后
+将会自动返回挑战之地</td>
+      </tr>
+      <tr id="482">
+        <td>482</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">超出时间限制</td>
+      </tr>
+      <tr id="483">
+        <td>483</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">每场挑战战斗都设置了不同的时间限制
+接受挑战时注意多加确认</td>
+      </tr>
+      <tr id="484">
+        <td>484</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">看 这就是[System:Color name=tutorial ]WAVE[/System:Color]的信号</td>
+      </tr>
+      <tr id="485">
+        <td>485</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">将战斗中的敌人全部打倒
+或经过一段时间 WAVE就会出现
+WAVE中的敌人数量会根据不同的挑战发生变化</td>
+      </tr>
+      <tr id="486">
+        <td>486</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+「疯狂进击」开始</td>
+      </tr>
+      <tr id="487">
+        <td>487</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">本场战斗是[System:Color name=tutorial ]挑战最高分[/System:Color]的模式
+使用[System:Color name=tutorial ]连锁攻击[/System:Color]或打出[System:Color name=tutorial ]各种连击[/System:Color]
+可以提高分数</td>
+      </tr>
+      <tr id="488">
+        <td>488</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+「羽蛇袭击」开始</td>
+      </tr>
+      <tr id="489">
+        <td>489</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">羽蛇的等级会因HP减少而提高</td>
+      </tr>
+      <tr id="490">
+        <td>490</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">尽可能提升羽蛇的等级再将其打倒！
+（羽蛇的等级最高可达Lv.200）</td>
+      </tr>
+      <tr id="491">
+        <td>491</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">SPECIAL BATTLE
+「巨神兽战舰强袭」开始</td>
+      </tr>
+      <tr id="492">
+        <td>492</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">巨神兽战舰中有100个敌人
+请操作真并尽快打倒这100个敌人</td>
+      </tr>
+      <tr id="493">
+        <td>493</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">可以在这里使用[System:Color name=tutorial ]诺彭水晶[/System:Color]
+来交换稀有道具或特殊道具</td>
+      </tr>
+      <tr id="494">
+        <td>494</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">把[System:Color name=tutorial ]穿着带耳朵的斗篷的焰[/System:Color]等特殊道具
+给名字出现在道具名中的角色装备
+可以变更外观</td>
+      </tr>
+      <tr id="495">
+        <td>495</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">给名字没有出现在道具名中的角色装备时
+则与普通道具相同
+不会对外观产生影响</td>
+      </tr>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">通过完成各种挑战战斗
+不断收集诺彭水晶吧！</td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">把尼娅作为异刃的玩家需要将其切换回御刃者后
+才能将菲奥伦当作异刃使用
+这一点请多加注意</td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">现在修尔克和菲奥伦
+作为后补加入队伍</td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="531">
+        <td>531</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="532">
+        <td>532</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="533">
+        <td>533</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="534">
+        <td>534</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="535">
+        <td>535</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="536">
+        <td>536</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="537">
+        <td>537</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="538">
+        <td>538</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="539">
+        <td>539</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="540">
+        <td>540</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="541">
+        <td>541</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="542">
+        <td>542</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="543">
+        <td>543</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="544">
+        <td>544</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">行けなさそうな場所があっても
+近づいて　調べてみることが重要になります</td>
+      </tr>
+      <tr id="545">
+        <td>545</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="546">
+        <td>546</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="547">
+        <td>547</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="548">
+        <td>548</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="549">
+        <td>549</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="550">
+        <td>550</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="551">
+        <td>551</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="552">
+        <td>552</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="553">
+        <td>553</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="554">
+        <td>554</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="555">
+        <td>555</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="556">
+        <td>556</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="557">
+        <td>557</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="558">
+        <td>558</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="559">
+        <td>559</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="560">
+        <td>560</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="561">
+        <td>561</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="562">
+        <td>562</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="563">
+        <td>563</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="564">
+        <td>564</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="565">
+        <td>565</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="566">
+        <td>566</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="567">
+        <td>567</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="568">
+        <td>568</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="569">
+        <td>569</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="570">
+        <td>570</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="571">
+        <td>571</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="572">
+        <td>572</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="573">
+        <td>573</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="574">
+        <td>574</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="575">
+        <td>575</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="576">
+        <td>576</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="577">
+        <td>577</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="578">
+        <td>578</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="579">
+        <td>579</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="580">
+        <td>580</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="581">
+        <td>581</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="582">
+        <td>582</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="583">
+        <td>583</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="584">
+        <td>584</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="585">
+        <td>585</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="586">
+        <td>586</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="587">
+        <td>587</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="588">
+        <td>588</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="589">
+        <td>589</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="590">
+        <td>590</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="591">
+        <td>591</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="592">
+        <td>592</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="593">
+        <td>593</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="594">
+        <td>594</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="595">
+        <td>595</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="596">
+        <td>596</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="597">
+        <td>597</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="598">
+        <td>598</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="599">
+        <td>599</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="600">
+        <td>600</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="601">
+        <td>601</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="602">
+        <td>602</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="603">
+        <td>603</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="604">
+        <td>604</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="605">
+        <td>605</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="606">
+        <td>606</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="607">
+        <td>607</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="608">
+        <td>608</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="609">
+        <td>609</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="610">
+        <td>610</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="611">
+        <td>611</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="612">
+        <td>612</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="613">
+        <td>613</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="614">
+        <td>614</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="615">
+        <td>615</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="616">
+        <td>616</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="617">
+        <td>617</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="618">
+        <td>618</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="619">
+        <td>619</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="620">
+        <td>620</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="621">
+        <td>621</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="622">
+        <td>622</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="623">
+        <td>623</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="624">
+        <td>624</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="625">
+        <td>625</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="626">
+        <td>626</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="627">
+        <td>627</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="628">
+        <td>628</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="629">
+        <td>629</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="630">
+        <td>630</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="631">
+        <td>631</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="632">
+        <td>632</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="633">
+        <td>633</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="634">
+        <td>634</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="635">
+        <td>635</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="636">
+        <td>636</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="637">
+        <td>637</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="638">
+        <td>638</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="639">
+        <td>639</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="640">
+        <td>640</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="641">
+        <td>641</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="642">
+        <td>642</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="643">
+        <td>643</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="644">
+        <td>644</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+      <tr id="645">
+        <td>645</td>
+        <td>
+        </td>
+        <td>160</td>
+        <td class="side">text</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

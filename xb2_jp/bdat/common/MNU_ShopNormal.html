@@ -1,0 +1,4273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_ShopNormal</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>DefItem1</th>
+          <th>DefItem2</th>
+          <th>DefItem3</th>
+          <th>DefItem4</th>
+          <th>DefItem5</th>
+          <th>DefItem6</th>
+          <th>DefItem7</th>
+          <th>DefItem8</th>
+          <th>DefItem9</th>
+          <th>DefItem10</th>
+          <th>Addtem1</th>
+          <th>AddCondition1</th>
+          <th>PrivilegeCheck1</th>
+          <th>Addtem2</th>
+          <th>AddCondition2</th>
+          <th>PrivilegeCheck2</th>
+          <th>Addtem3</th>
+          <th>AddCondition3</th>
+          <th>PrivilegeCheck3</th>
+          <th>Addtem4</th>
+          <th>AddCondition4</th>
+          <th>PrivilegeCheck4</th>
+          <th>Addtem5</th>
+          <th>AddCondition5</th>
+          <th>PrivilegeCheck5</th>
+          <th>PrivilegeFlag</th>
+          <th>PrivilegeItem</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#2">MNU_ShopList#【ショップ名・１２文字】</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40001">ジューシーサモ</td></a>
+        <td><a href="ITM_FavoriteList.html#40002">ぷりっとチャーハン</td></a>
+        <td><a href="ITM_FavoriteList.html#40003">アヴァリティアチャノポン</td></a>
+        <td><a href="ITM_FavoriteList.html#40004">ドデカきのこパイ</td></a>
+        <td><a href="ITM_FavoriteList.html#40005">サンサンサモ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40006">うまうまコルデスサモ</td></a>
+        <td><a href="FLD_ConditionList.html#476">476</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40007">アンカーテールのグリル</td></a>
+        <td><a href="FLD_ConditionList.html#477">477</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40008">オイルオイスター炒め</td></a>
+        <td><a href="FLD_ConditionList.html#478">478</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#2">2</td></a>
+        <td><a href="ITM_PreciousList.html#25002">かんぺき測距センサ</td></a>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#11">MNU_ShopList#アクセサリー・キラキラ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#1">アビスベスト</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#16">MNU_ShopList#アクセサリー・キラキラ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#20">ガチガチベスト</td></a>
+        <td><a href="ITM_PcEquip.html#22">ムキムキベルト</td></a>
+        <td><a href="ITM_PcEquip.html#24">フサフサハット</td></a>
+        <td><a href="ITM_PcEquip.html#68">アタックストーン</td></a>
+        <td><a href="ITM_PcEquip.html#88">友情の指輪</td></a>
+        <td><a href="ITM_PcEquip.html#94">シェルカメオ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#17">MNU_ShopList#鍛冶屋キノコソード</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10002">アルミチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PcWpnChip.html#10005">アイアンチップ</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_PcWpnChip.html#10006">コバルトチップ</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_PcWpnChip.html#10007">スチールチップ</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#18">MNU_ShopList#ハラペッコ食堂</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40001">ジューシーサモ</td></a>
+        <td><a href="ITM_FavoriteList.html#40002">ぷりっとチャーハン</td></a>
+        <td><a href="ITM_FavoriteList.html#40004">ドデカきのこパイ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40005">サンサンサモ</td></a>
+        <td><a href="FLD_ConditionList.html#2215">2215</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40006">うまうまコルデスサモ</td></a>
+        <td><a href="FLD_ConditionList.html#2216">2216</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#3">3</td></a>
+        <td><a href="ITM_PreciousList.html#25249">ハラペッコ店権利書</td></a>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#19">MNU_ShopList#麺屋チャノポン</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40003">アヴァリティアチャノポン</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#20">MNU_ShopList#魚屋ピッチピッチ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40007">アンカーテールのグリル</td></a>
+        <td><a href="ITM_FavoriteList.html#40008">オイルオイスター炒め</td></a>
+        <td><a href="ITM_FavoriteList.html#40009">マリン甘酢あんかけ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#4">4</td></a>
+        <td><a href="ITM_PreciousList.html#25250">ピッチピッチ店権利書</td></a>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#21">MNU_ShopList#スイーツハニーシロップ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40010">めろめろめろんパフェ</td></a>
+        <td><a href="ITM_FavoriteList.html#40011">ノポポンロール</td></a>
+        <td><a href="ITM_FavoriteList.html#40012">きらきらさとう</td></a>
+        <td><a href="ITM_FavoriteList.html#40014">ナルシナシゼリー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40013">蜜豆おはぎ</td></a>
+        <td><a href="FLD_ConditionList.html#2218">2218</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#5">5</td></a>
+        <td><a href="ITM_PreciousList.html#25251">ハニーシロップ店権利書</td></a>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#22">MNU_ShopList#カフェ・ノポン十二兄弟</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40015">ぴかぴかじゅーす</td></a>
+        <td><a href="ITM_FavoriteList.html#40016">ぷちぷちじゅーす</td></a>
+        <td><a href="ITM_FavoriteList.html#40017">しゃりしゃりじゅーす</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40018">野菜水スオウ</td></a>
+        <td><a href="FLD_ConditionList.html#2355">2355</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40019">はちみつみるく・オレ</td></a>
+        <td><a href="FLD_ConditionList.html#2355">2355</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40020">パリパリミックスシェイク</td></a>
+        <td><a href="FLD_ConditionList.html#2355">2355</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#6">6</td></a>
+        <td><a href="ITM_PreciousList.html#25252">ノポン十二兄弟店権利書</td></a>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#23">MNU_ShopList#楽器ジャンジャン</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40021">まんまるマラカス</td></a>
+        <td><a href="ITM_FavoriteList.html#40022">ノポレレ</td></a>
+        <td><a href="ITM_FavoriteList.html#40023">ふぁんきーコンガ</td></a>
+        <td><a href="ITM_FavoriteList.html#40024">ふーぴーリコーダー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40025">もくもくカスタネット</td></a>
+        <td><a href="FLD_ConditionList.html#2220">2220</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40026">カチコチチャイム</td></a>
+        <td><a href="FLD_ConditionList.html#2221">2221</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#7">7</td></a>
+        <td><a href="ITM_PreciousList.html#25253">ジャンジャン店権利書</td></a>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#24">MNU_ShopList#ハナマル書房</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40027">簡単サルベージマニュアル</td></a>
+        <td><a href="ITM_FavoriteList.html#40028">怪盗マウマウと黄金の銃</td></a>
+        <td><a href="ITM_FavoriteList.html#40029">千年のアルス</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40030">メイラム森林冒険紀行</td></a>
+        <td><a href="FLD_ConditionList.html#2222">2222</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40031">子ノポンムーニと蒸気の街</td></a>
+        <td><a href="FLD_ConditionList.html#2223">2223</td></a>
+        <td>0</td>
+        <td><a href="ITM_PreciousList.html#25128">モルスの古文書2巻</td></a>
+        <td><a href="FLD_ConditionList.html#2657">2657</td></a>
+        <td>0</td>
+        <td><a href="ITM_PreciousList.html#25093">アルストの今昔</td></a>
+        <td><a href="FLD_ConditionList.html#2726">2726</td></a>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#8">8</td></a>
+        <td><a href="ITM_PreciousList.html#25254">ハナマル店権利書</td></a>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#25">MNU_ShopList#ハナマル書房</a>
+          </details>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PreciousList.html#25093">アルストの今昔</td></a>
+        <td><a href="FLD_ConditionList.html#1089">1089</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#26">MNU_ShopList#ホビー・トイノポックス</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40032">ガタガタン</td></a>
+        <td><a href="ITM_FavoriteList.html#40033">ノポンチェス</td></a>
+        <td><a href="ITM_FavoriteList.html#40034">こそこそスニーキング</td></a>
+        <td><a href="ITM_FavoriteList.html#40035">交易ルート66</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40036">サンゴ製ノポンチェス</td></a>
+        <td><a href="FLD_ConditionList.html#2224">2224</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40037">リベラリタス・ライフ</td></a>
+        <td><a href="FLD_ConditionList.html#2225">2225</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#9">9</td></a>
+        <td><a href="ITM_PreciousList.html#25255">トイノポックス店権利書</td></a>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#27">MNU_ShopList#コスメ・クレオール</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40038">ふわりんコロン</td></a>
+        <td><a href="ITM_FavoriteList.html#40039">もちもち化粧水</td></a>
+        <td><a href="ITM_FavoriteList.html#40040">スースージェル</td></a>
+        <td><a href="ITM_FavoriteList.html#40041">くるりんまつげ</td></a>
+        <td><a href="ITM_FavoriteList.html#40042">ぷくぷくマニキュア</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40043">ふわっと満月ライナー</td></a>
+        <td><a href="FLD_ConditionList.html#2227">2227</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#10">10</td></a>
+        <td><a href="ITM_PreciousList.html#25256">クレオール店権利書</td></a>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#28">MNU_ShopList#サルベージ・鎌海豚</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#29">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26067">戦いの基本</td></a>
+        <td><a href="ITM_InfoList.html#26068">ブレイドの戦い方</td></a>
+        <td><a href="ITM_InfoList.html#26069">移動時の心得</td></a>
+        <td><a href="ITM_InfoList.html#26066">ブレイドとのキズナ</td></a>
+        <td><a href="ITM_InfoList.html#26109">宿屋について</td></a>
+        <td><a href="ITM_InfoList.html#26126">悪臭について</td></a>
+        <td><a href="ITM_InfoList.html#26127">後方攻撃について</td></a>
+        <td><a href="ITM_InfoList.html#26131">挑発について</td></a>
+        <td><a href="ITM_InfoList.html#26133">サルベージの心得その1</td></a>
+        <td><a href="ITM_InfoList.html#26134">サルベージの心得その2</td></a>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26001">ファララの息子の行方</td></a>
+        <td><a href="FLD_ConditionList.html#62">62</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26002">開閉用パーツの情報その1</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26116">イデアとブレイド</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#36">MNU_ShopList#アクセサリー・キーダル</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#26">レザーグローブ</td></a>
+        <td><a href="ITM_PcEquip.html#28">ヴォルフシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#76">ビーストフード</td></a>
+        <td><a href="ITM_PcEquip.html#79">ノポンの仮面</td></a>
+        <td><a href="ITM_PcEquip.html#128">アックスアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#129">ランスアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#138">赤い糸</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#37">MNU_ShopList#鍛冶屋・ツェルコヴァ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10002">アルミチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10009">ファングチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10010">ウイングチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#38">MNU_ShopList#テゥーリベーカリー</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40044">ルスカの団子</td></a>
+        <td><a href="ITM_FavoriteList.html#40045">煮込みルスカ麺</td></a>
+        <td><a href="ITM_FavoriteList.html#40046">ハムとピュアトマサンド</td></a>
+        <td><a href="ITM_FavoriteList.html#40048">ビートすり身パラータ</td></a>
+        <td><a href="ITM_FavoriteList.html#40296">クリームオレンジパラータ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40047">チャノポンルスカ麺</td></a>
+        <td><a href="FLD_ConditionList.html#2228">2228</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40304">幸福のサチベリアパン</td></a>
+        <td><a href="FLD_ConditionList.html#1112">1112</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#11">11</td></a>
+        <td><a href="ITM_PreciousList.html#25257">テゥーリ店権利書</td></a>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#39">MNU_ShopList#ペルーニベジタブル</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40049">カリカリソテー</td></a>
+        <td><a href="ITM_FavoriteList.html#40050">トリゴ風野菜マリネ</td></a>
+        <td><a href="ITM_FavoriteList.html#40051">ミートパプリカの野菜詰め</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40052">ぷりリーフキャベツサラダ</td></a>
+        <td><a href="FLD_ConditionList.html#2548">2548</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#12">12</td></a>
+        <td><a href="ITM_PreciousList.html#25258">ペルーニ店権利書</td></a>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#40">MNU_ShopList#肉屋グリラフ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40054">エストラルステーキ</td></a>
+        <td><a href="ITM_FavoriteList.html#40055">あまあまういんな</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40056">挽き肉とダール炒め</td></a>
+        <td><a href="FLD_ConditionList.html#2232">2232</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40057">マスタードコルデス</td></a>
+        <td><a href="FLD_ConditionList.html#2233">2233</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#13">13</td></a>
+        <td><a href="ITM_PreciousList.html#25259">グリラフ店権利書</td></a>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#41">MNU_ShopList#トアミ・フィッシュ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40058">グーラかつおぶし</td></a>
+        <td><a href="ITM_FavoriteList.html#40059">コンゴウイワナの香草焼き</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40060">ニソクガニのチリスープ</td></a>
+        <td><a href="FLD_ConditionList.html#2234">2234</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#14">14</td></a>
+        <td><a href="ITM_PreciousList.html#25260">トアミ店権利書</td></a>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#42">MNU_ShopList#カフェ・サヴィー</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40061">月光バナナ・オレ</td></a>
+        <td><a href="ITM_FavoriteList.html#40062">グーラ・アマミツティー</td></a>
+        <td><a href="ITM_FavoriteList.html#40063">ククレール天然水</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40064">パリパリパッション・オレ</td></a>
+        <td><a href="FLD_ConditionList.html#2235">2235</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40065">センショウスムージィ</td></a>
+        <td><a href="FLD_ConditionList.html#2236">2236</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#15">15</td></a>
+        <td><a href="ITM_PreciousList.html#25261">サヴィー店権利書</td></a>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#43">MNU_ShopList#ティモー楽器</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40066">トリゴリウト</td></a>
+        <td><a href="ITM_FavoriteList.html#40067">木目アルプホルン</td></a>
+        <td><a href="ITM_FavoriteList.html#40068">万年杉の琴</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40069">ウッドボード</td></a>
+        <td><a href="FLD_ConditionList.html#2237">2237</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40070">コーラルマリンバ</td></a>
+        <td><a href="FLD_ConditionList.html#2238">2238</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#16">16</td></a>
+        <td><a href="ITM_PreciousList.html#25262">ティモー店権利書</td></a>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#44">MNU_ShopList#美術クーマラヴァ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40071">丘陵に佇む少女</td></a>
+        <td><a href="ITM_FavoriteList.html#40072">黒い花畑</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40073">バーンの版画</td></a>
+        <td><a href="FLD_ConditionList.html#2239">2239</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40074">木彫刻の烈王</td></a>
+        <td><a href="FLD_ConditionList.html#2240">2240</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#17">17</td></a>
+        <td><a href="ITM_PreciousList.html#25263">クーマラヴァ店権利書</td></a>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#45">MNU_ShopList#コスメ・シェトゥリー</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40075">ぱふぱふファンデーション</td></a>
+        <td><a href="ITM_FavoriteList.html#40076">樹液コンディショナー</td></a>
+        <td><a href="ITM_FavoriteList.html#40077">風花のコーム</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40078">巻貝エクステ</td></a>
+        <td><a href="FLD_ConditionList.html#2241">2241</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40079">雪花キラキラ香水</td></a>
+        <td><a href="FLD_ConditionList.html#2242">2242</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#18">18</td></a>
+        <td><a href="ITM_PreciousList.html#25264">シェトゥリー店権利書</td></a>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#46">MNU_ShopList#ネウロミネン織物店</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40080">パズルツリーのポーチ</td></a>
+        <td><a href="ITM_FavoriteList.html#40081">トリゴ織のマット</td></a>
+        <td><a href="ITM_FavoriteList.html#40082">樹木染めこしまき</td></a>
+        <td><a href="ITM_FavoriteList.html#40083">木漏れ日織のカーテン</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40084">カラ織リーフケープ</td></a>
+        <td><a href="FLD_ConditionList.html#2243">2243</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40085">雪花織フリルストール</td></a>
+        <td><a href="FLD_ConditionList.html#2244">2244</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#19">19</td></a>
+        <td><a href="ITM_PreciousList.html#25265">ネウロミネン店権利書</td></a>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#47">MNU_ShopList#サルベージ・ヤラヴィ</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#48">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26070">キズナ最高の効果</td></a>
+        <td><a href="ITM_InfoList.html#26071">属性の重要性</td></a>
+        <td><a href="ITM_InfoList.html#26072">キズナの効果</td></a>
+        <td><a href="ITM_InfoList.html#26103">敵への不意打ち</td></a>
+        <td><a href="ITM_InfoList.html#26108">隠されたランドマーク</td></a>
+        <td><a href="ITM_InfoList.html#26110">アーツの数</td></a>
+        <td><a href="ITM_InfoList.html#26111">コアチップについて</td></a>
+        <td><a href="ITM_InfoList.html#26112">コアチップの入手</td></a>
+        <td><a href="ITM_InfoList.html#26114">コアクリスタルの種類</td></a>
+        <td><a href="ITM_InfoList.html#26117">ブレイドスイッチ</td></a>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26002">開閉用パーツの情報その1</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26033">打ち揚げられた巨神獣</td></a>
+        <td><a href="FLD_ConditionList.html#842">842</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26062">グーラ料理のレシピ</td></a>
+        <td><a href="FLD_ConditionList.html#1975">1975</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26007">傭兵ガルロの情報</td></a>
+        <td><a href="FLD_ConditionList.html#1976">1976</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#49">MNU_ShopList#雑貨屋マージャ</a>
+          </details>
+        </td>
+        <td><a href="ITM_TresureList.html#35009">グーラヘッド</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_TresureList.html#35012">ビヨンコネクタ</td></a>
+        <td><a href="FLD_ConditionList.html#1413">1413</td></a>
+        <td>0</td>
+        <td><a href="ITM_CrystalList.html#45003">受け継ぎしコアクリスタル</td></a>
+        <td><a href="FLD_ConditionList.html#472">472</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#64">MNU_ShopList#アクセサリー・クジンラ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#25">ファビュラスハット</td></a>
+        <td><a href="ITM_PcEquip.html#56">ダークオーブ</td></a>
+        <td><a href="ITM_PcEquip.html#91">豊穣の首飾り</td></a>
+        <td><a href="ITM_PcEquip.html#101">眼帯</td></a>
+        <td><a href="ITM_PcEquip.html#131">ハンマーアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#141">活性のアミュレット</td></a>
+        <td><a href="ITM_PcEquip.html#148">ミントポプリ</td></a>
+        <td><a href="ITM_PcEquip.html#150">巫女の護符</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#65">MNU_ShopList#アクセサリー・ピッカカ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#21">傭兵のベスト</td></a>
+        <td><a href="ITM_PcEquip.html#23">チャンピオンベルト</td></a>
+        <td><a href="ITM_PcEquip.html#82">極彩鳥の羽飾り</td></a>
+        <td><a href="ITM_PcEquip.html#89">親愛の指輪</td></a>
+        <td><a href="ITM_PcEquip.html#130">キャノンアタッチメント</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#66">MNU_ShopList#鍛冶屋プラウプラタ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10017">ターコイズチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10018">スピネルチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#67">MNU_ShopList#鍛冶屋レイマイネ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10003">ブロンズチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10011">スケイルチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#68">MNU_ShopList#フラットブラッド</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40086">グラーナの包み焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40087">三種のチーズプラーナ</td></a>
+        <td><a href="ITM_FavoriteList.html#40303">シュニンカレー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40088">とろピカイモプラーナ</td></a>
+        <td><a href="FLD_ConditionList.html#2245">2245</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40089">具沢山コルデスプラーナ</td></a>
+        <td><a href="FLD_ConditionList.html#2246">2246</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#24">24</td></a>
+        <td><a href="ITM_PreciousList.html#25266">フラットブラッド店権利書</td></a>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#69">MNU_ShopList#八百屋サデーコット</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40090">クロザクロ香味スープ</td></a>
+        <td><a href="ITM_FavoriteList.html#40091">漬けスパーク一本串</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40092">ハッスルハスの水炊き</td></a>
+        <td><a href="FLD_ConditionList.html#2247">2247</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40093">アイスキャベツの流水漬け</td></a>
+        <td><a href="FLD_ConditionList.html#2248">2248</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#20">20</td></a>
+        <td><a href="ITM_PreciousList.html#25274">サデーコット店権利書</td></a>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#70">MNU_ShopList#肉屋ヴォルティ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40094">骨付きアルマ肉ステーキ</td></a>
+        <td><a href="ITM_FavoriteList.html#40095">獣肉合わせ練りフィデル</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40096">鉄板肉のソースグリル</td></a>
+        <td><a href="FLD_ConditionList.html#2249">2249</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40097">テッカ鳥の炭焼き</td></a>
+        <td><a href="FLD_ConditionList.html#2250">2250</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#25">25</td></a>
+        <td><a href="ITM_PreciousList.html#25267">ヴォルティ店権利書</td></a>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#71">MNU_ShopList#魚屋イクテュエス</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40098">ワクワク干しマンボウ</td></a>
+        <td><a href="ITM_FavoriteList.html#40099">バントロカルパッチョ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40100">とろピカマリッジ蒸し</td></a>
+        <td><a href="FLD_ConditionList.html#2251">2251</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40101">氷魚のシードグリル</td></a>
+        <td><a href="FLD_ConditionList.html#2252">2252</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#26">26</td></a>
+        <td><a href="ITM_PreciousList.html#25268">イクテュエス店権利書</td></a>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#72">MNU_ShopList#スイーツ・スペランツァ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40102">レインボーパフェ</td></a>
+        <td><a href="ITM_FavoriteList.html#40103">フルールババロア</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40104">ハゴロモピーチ水ようかん</td></a>
+        <td><a href="FLD_ConditionList.html#2253">2253</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#27">27</td></a>
+        <td><a href="ITM_PreciousList.html#25269">スペランツァ店権利書</td></a>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#73">MNU_ShopList#シエロブラウ・ワゴン</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40105">センショウチュロス</td></a>
+        <td><a href="ITM_FavoriteList.html#40283">ビターチョコット</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#75">MNU_ShopList#酒場ヴァーゲル</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40111">深煎り・クロ・コーヒー</td></a>
+        <td><a href="ITM_FavoriteList.html#40112">セリオスティー</td></a>
+        <td><a href="ITM_FavoriteList.html#40114">ダール豆乳シェイク</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40113">ぷちぷちラッシー</td></a>
+        <td><a href="FLD_ConditionList.html#2254">2254</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#21">21</td></a>
+        <td><a href="ITM_PreciousList.html#25275">ヴァーゲル店権利書</td></a>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#76">MNU_ShopList#インラッティオ楽器</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40115">赤棹三味線</td></a>
+        <td><a href="ITM_FavoriteList.html#40116">フォンス・ヴィオロネ</td></a>
+        <td><a href="ITM_FavoriteList.html#40117">ゴウケツハープ</td></a>
+        <td><a href="ITM_FavoriteList.html#40119">雲巻貝アルペジョーネ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40118">ポップンチェロ</td></a>
+        <td><a href="FLD_ConditionList.html#2256">2256</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#22">22</td></a>
+        <td><a href="ITM_PreciousList.html#25276">インラッティオ店権利書</td></a>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#77">MNU_ShopList#プルマリア古美術</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40120">喜劇王の彫刻</td></a>
+        <td><a href="ITM_FavoriteList.html#40121">最後の合唱</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40122">聖歌を歌う乙女像</td></a>
+        <td><a href="FLD_ConditionList.html#2258">2258</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40123">天へと昇るアルス</td></a>
+        <td><a href="FLD_ConditionList.html#2259">2259</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#28">28</td></a>
+        <td><a href="ITM_PreciousList.html#25270">プルマリア店権利書</td></a>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#78">MNU_ShopList#アルドマール書房</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40124">アルスト神話戯曲</td></a>
+        <td><a href="ITM_FavoriteList.html#40125">セーロスア公伝記「継承」</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40126">アルスト美術名画全集</td></a>
+        <td><a href="FLD_ConditionList.html#2260">2260</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40127">アデル初恋戦記</td></a>
+        <td><a href="FLD_ConditionList.html#2261">2261</td></a>
+        <td>0</td>
+        <td><a href="ITM_PreciousList.html#25199">アルスト幻の大陸紀行</td></a>
+        <td><a href="FLD_ConditionList.html#2639">2639</td></a>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#29">29</td></a>
+        <td><a href="ITM_PreciousList.html#25271">アルドマール店権利書</td></a>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#79">MNU_ShopList#アルドマール書房</a>
+          </details>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PreciousList.html#25199">アルスト幻の大陸紀行</td></a>
+        <td><a href="FLD_ConditionList.html#686">686</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#80">MNU_ShopList#ホビー・コトンカタン</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40128">カーストポーカー</td></a>
+        <td><a href="ITM_FavoriteList.html#40129">剣闘士相撲</td></a>
+        <td><a href="ITM_FavoriteList.html#40130">珊瑚オセロ</td></a>
+        <td><a href="ITM_FavoriteList.html#40131">ジュエルライン</td></a>
+        <td><a href="ITM_FavoriteList.html#40132">ノポポヤード</td></a>
+        <td><a href="ITM_FavoriteList.html#40133">珊瑚カジノ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#30">30</td></a>
+        <td><a href="ITM_PreciousList.html#25272">コトンカタン店権利書</td></a>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#81">MNU_ShopList#コスメ・アクアネーゼ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40134">オパール珊瑚の口紅</td></a>
+        <td><a href="ITM_FavoriteList.html#40135">アルス油ハンドクリーム</td></a>
+        <td><a href="ITM_FavoriteList.html#40136">ゴールデンマスカラ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40137">ウツクシチーク</td></a>
+        <td><a href="FLD_ConditionList.html#2264">2264</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40138">イヤサキ珊瑚のグロス</td></a>
+        <td><a href="FLD_ConditionList.html#2265">2265</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#31">31</td></a>
+        <td><a href="ITM_PreciousList.html#25273">アクアネーゼ店権利書</td></a>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#82">MNU_ShopList#フォルロネ手芸</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40139">サナル織の髪飾り</td></a>
+        <td><a href="ITM_FavoriteList.html#40140">アルマ皮グラディエーター</td></a>
+        <td><a href="ITM_FavoriteList.html#40141">珊瑚織タオル</td></a>
+        <td><a href="ITM_FavoriteList.html#40142">絢爛絵のハンカチーフ</td></a>
+        <td><a href="ITM_FavoriteList.html#40143">グーラウッドの羽衣織</td></a>
+        <td><a href="ITM_FavoriteList.html#40144">サナル織結晶ブランケット</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#23">23</td></a>
+        <td><a href="ITM_PreciousList.html#25277">フォルロネ店権利書</td></a>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#83">MNU_ShopList#サルベージ・マルブラン</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20009">クエスト用ボンベ（仮）</td></a>
+        <td><a href="FLD_ConditionList.html#1013">1013</td></a>
+        <td>0</td>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#84">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26074">キズナの上昇</td></a>
+        <td><a href="ITM_InfoList.html#26075">アーツ強化</td></a>
+        <td><a href="ITM_InfoList.html#26076">スキル習得</td></a>
+        <td><a href="ITM_InfoList.html#26077">イデアを増やす方法</td></a>
+        <td><a href="ITM_InfoList.html#26118">キズナトークのヒント</td></a>
+        <td><a href="ITM_InfoList.html#26124">属性玉について</td></a>
+        <td><a href="ITM_InfoList.html#26125">属性玉を割ると</td></a>
+        <td><a href="ITM_InfoList.html#26106">ブレイドアピール</td></a>
+        <td><a href="ITM_InfoList.html#26128">ドライバー封鎖について</td></a>
+        <td><a href="ITM_InfoList.html#26130">敵の増援</td></a>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26095">開閉用パーツの情報その2</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26120">傭兵団任務の種類</td></a>
+        <td><a href="FLD_ConditionList.html#2930">2930</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26121">傭兵団任務のコツ</td></a>
+        <td><a href="FLD_ConditionList.html#2930">2930</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#85">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26078">キズナが最高になると</td></a>
+        <td><a href="ITM_InfoList.html#26079">ドライバーの戦い方その1</td></a>
+        <td><a href="ITM_InfoList.html#26080">索敵範囲</td></a>
+        <td><a href="ITM_InfoList.html#26098">フュージョンコンボその1</td></a>
+        <td><a href="ITM_InfoList.html#26099">フュージョンコンボその2</td></a>
+        <td><a href="ITM_InfoList.html#26104">ドライバーの戦い方その2</td></a>
+        <td><a href="ITM_InfoList.html#26105">ブレイドの性格</td></a>
+        <td><a href="ITM_InfoList.html#26113">ユニークモンスターの墓？</td></a>
+        <td><a href="ITM_InfoList.html#26119">キズナトークについて</td></a>
+        <td><a href="ITM_InfoList.html#26129">ブレイド封鎖について</td></a>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26007">傭兵ガルロの情報</td></a>
+        <td><a href="FLD_ConditionList.html#1976">1976</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26008">スペルビアの名医</td></a>
+        <td><a href="FLD_ConditionList.html#1977">1977</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26096">開閉用パーツの情報その3</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#92">MNU_ShopList#アクセサリー・ピトタパズ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#2">ギアベスト</td></a>
+        <td><a href="ITM_PcEquip.html#5">スチームベルト</td></a>
+        <td><a href="ITM_PcEquip.html#27">スミスグローブ</td></a>
+        <td><a href="ITM_PcEquip.html#29">スプリングシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#38">鉄のはちまき</td></a>
+        <td><a href="ITM_PcEquip.html#44">機械化レガース</td></a>
+        <td><a href="ITM_PcEquip.html#105">0からバトル講座</td></a>
+        <td><a href="ITM_PcEquip.html#132">刀アタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#133">ボールアタッチメント</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#93">MNU_ShopList#鍛冶屋カラヴォッド</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10025">コイルチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10026">チェーンチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#94">MNU_ShopList#八百屋エラザート</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40145">ドルフィンゴーヤの挟み焼</td></a>
+        <td><a href="ITM_FavoriteList.html#40146">タソガレ炭火焼き串</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40147">カリシャキ温菜ザラート</td></a>
+        <td><a href="FLD_ConditionList.html#2268">2268</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40148">蒸気雪花タブレ</td></a>
+        <td><a href="FLD_ConditionList.html#2269">2269</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#32">32</td></a>
+        <td><a href="ITM_PreciousList.html#25278">エラザート店権利書</td></a>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#95">MNU_ShopList#バーサニッツミート</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40149">獣肉とダールの串焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40150">香草生肉のカシュ</td></a>
+        <td><a href="ITM_FavoriteList.html#40151">テッカ鳥のスチーム蒸し</td></a>
+        <td><a href="ITM_FavoriteList.html#40152">エストラルカタレッタ</td></a>
+        <td><a href="ITM_FavoriteList.html#40153">アルマ肉のダール豆煮</td></a>
+        <td><a href="ITM_FavoriteList.html#40299">カタレッタ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#33">33</td></a>
+        <td><a href="ITM_PreciousList.html#25279">バーサニッツ店権利書</td></a>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#96">MNU_ShopList#魚屋ハンヌーン</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40154">サンドサーモンの香草焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40155">雲海蟹クリームコロッケ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40156">サンドサーモンの甘酢がけ</td></a>
+        <td><a href="FLD_ConditionList.html#2272">2272</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40157">干しマグロと香草のあら汁</td></a>
+        <td><a href="FLD_ConditionList.html#2273">2273</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#34">34</td></a>
+        <td><a href="ITM_PreciousList.html#25280">ハンヌーン店権利書</td></a>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#97">MNU_ShopList#サルアタ・スイーツ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40158">蒸気ミルクパン</td></a>
+        <td><a href="ITM_FavoriteList.html#40159">スチームジェルアイス</td></a>
+        <td><a href="ITM_FavoriteList.html#40160">ダール豆大福</td></a>
+        <td><a href="ITM_FavoriteList.html#40161">満天ジュエルタルト</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40162">オーディファジェルタルト</td></a>
+        <td><a href="FLD_ConditionList.html#2274">2274</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40163">ホットルビー蒸気パン</td></a>
+        <td><a href="FLD_ConditionList.html#2275">2275</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#35">35</td></a>
+        <td><a href="ITM_PreciousList.html#25281">サルアタ店権利書</td></a>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#98">MNU_ShopList#アディルノ楽器</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40164">パイプトランペット</td></a>
+        <td><a href="ITM_FavoriteList.html#40165">スチームオルガン</td></a>
+        <td><a href="ITM_FavoriteList.html#40166">ミリタリーヴァイオリン</td></a>
+        <td><a href="ITM_FavoriteList.html#40167">メタルスネア</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40168">パイプシロフォン</td></a>
+        <td><a href="FLD_ConditionList.html#2276">2276</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40169">氷柱マリンバ</td></a>
+        <td><a href="FLD_ConditionList.html#2277">2277</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#36">36</td></a>
+        <td><a href="ITM_PreciousList.html#25282">アディルノ店権利書</td></a>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#99">MNU_ShopList#ヤフシャ古美術</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40170">パンクドール</td></a>
+        <td><a href="ITM_FavoriteList.html#40171">エフィムの銅像</td></a>
+        <td><a href="ITM_FavoriteList.html#40302">スペルビアベアの木彫り</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40172">妖精フェルメリの彫像</td></a>
+        <td><a href="FLD_ConditionList.html#2278">2278</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40173">巻貝のオルヘル</td></a>
+        <td><a href="FLD_ConditionList.html#2279">2279</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#37">37</td></a>
+        <td><a href="ITM_PreciousList.html#25283">ヤフシャ店権利書</td></a>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#100">MNU_ShopList#ハセフェル書房</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40174">スペルビア帝国軍兵器図鑑</td></a>
+        <td><a href="ITM_FavoriteList.html#40175">皇帝エフィム戦記</td></a>
+        <td><a href="ITM_FavoriteList.html#40176">日帰り帝国秘湯めぐり</td></a>
+        <td><a href="ITM_FavoriteList.html#40177">アーム・ジョー</td></a>
+        <td><a href="ITM_FavoriteList.html#40179">純白の恋～雪原を越えて～</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40178">ノポンは戦争で儲けるか？</td></a>
+        <td><a href="FLD_ConditionList.html#2280">2280</td></a>
+        <td>0</td>
+        <td><a href="ITM_PreciousList.html#25094">グーラ歴史全書</td></a>
+        <td><a href="FLD_ConditionList.html#2726">2726</td></a>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#38">38</td></a>
+        <td><a href="ITM_PreciousList.html#25284">ハセフェル店権利書</td></a>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#101">MNU_ShopList#ハセフェル書房</a>
+          </details>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PreciousList.html#25094">グーラ歴史全書</td></a>
+        <td><a href="FLD_ConditionList.html#1089">1089</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#102">MNU_ShopList#ホビー・エレグシェル</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40180">アーミーフィールド</td></a>
+        <td><a href="ITM_FavoriteList.html#40181">パイプジェンガ</td></a>
+        <td><a href="ITM_FavoriteList.html#40182">密告裁判</td></a>
+        <td><a href="ITM_FavoriteList.html#40183">デュエルキングダム</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40184">交渉キングダム</td></a>
+        <td><a href="FLD_ConditionList.html#2282">2282</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40185">配管工脱出ゲーム</td></a>
+        <td><a href="FLD_ConditionList.html#2283">2283</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#39">39</td></a>
+        <td><a href="ITM_PreciousList.html#25285">エレグシェル店権利書</td></a>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#103">MNU_ShopList#サルベージ・ラルモッグ</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#104">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26060">スペルビア料理のレシピ</td></a>
+        <td><a href="ITM_InfoList.html#26081">封印効果</td></a>
+        <td><a href="ITM_InfoList.html#26082">ドライバーコンボについて</td></a>
+        <td><a href="ITM_InfoList.html#26083">ドライバーのクラス</td></a>
+        <td><a href="ITM_InfoList.html#26084">信頼度の上昇</td></a>
+        <td><a href="ITM_InfoList.html#26107">スマッシュのメリット</td></a>
+        <td><a href="ITM_InfoList.html#26115">コアクリスタルの可能性</td></a>
+        <td><a href="ITM_InfoList.html#26132">チェインアタックの極意</td></a>
+        <td><a href="ITM_InfoList.html#26122">傭兵団任務の報酬その1</td></a>
+        <td><a href="ITM_InfoList.html#26123">傭兵団任務の報酬その2</td></a>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26021">機密文書の行方</td></a>
+        <td><a href="FLD_ConditionList.html#903">903</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26002">開閉用パーツの情報その1</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26008">スペルビアの名医</td></a>
+        <td><a href="FLD_ConditionList.html#1977">1977</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#105">MNU_ShopList#ジャンク屋ベルシェット</a>
+          </details>
+        </td>
+        <td><a href="ITM_TresureList.html#35001">パピヨンレンズ</td></a>
+        <td><a href="ITM_TresureList.html#35017">フロートアーミー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#113">MNU_ShopList#アクセサリー・コハクリオ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#11">虹色グローブ</td></a>
+        <td><a href="ITM_PcEquip.html#14">シェルシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#149">ラベンダーポプリ</td></a>
+        <td><a href="ITM_PcEquip.html#50">スパイクショルダー</td></a>
+        <td><a href="ITM_PcEquip.html#83">銀鳥の羽飾り</td></a>
+        <td><a href="ITM_PcEquip.html#86">霊樹のお守り</td></a>
+        <td><a href="ITM_PcEquip.html#90">誓いの指輪</td></a>
+        <td><a href="ITM_PcEquip.html#151">賢者の護符</td></a>
+        <td><a href="ITM_PcEquip.html#134">ナックルアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#139">情熱の糸</td></a>
+        <td><a href="ITM_PcEquip.html#152">穏やかな香水</td></a>
+        <td><a href="FLD_ConditionList.html#520">520</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#114">MNU_ShopList#鍛冶屋レグルス</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10033">トライチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10034">ローンバスチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#115">MNU_ShopList#ベーカリー・カルキーノ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40001">ジューシーサモ</td></a>
+        <td><a href="ITM_FavoriteList.html#40045">煮込みルスカ麺</td></a>
+        <td><a href="ITM_FavoriteList.html#40086">グラーナの包み焼き</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#116">MNU_ShopList#肉屋イケロス</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40054">エストラルステーキ</td></a>
+        <td><a href="ITM_FavoriteList.html#40095">獣肉合わせ練りフィデル</td></a>
+        <td><a href="ITM_FavoriteList.html#40150">香草生肉のカシュ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#117">MNU_ShopList#クッキー売り</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40306">まごころのクッキー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#118">MNU_ShopList#カフェ・ルティーノ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40202">オーディファ</td></a>
+        <td><a href="ITM_FavoriteList.html#40203">アーケディアンティー</td></a>
+        <td><a href="ITM_FavoriteList.html#40204">フローズンオーディファ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#119">MNU_ShopList#古美術ジュゴス</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40071">丘陵に佇む少女</td></a>
+        <td><a href="ITM_FavoriteList.html#40121">最後の合唱</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#120">MNU_ShopList#コルピオン書房</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40029">千年のアルス</td></a>
+        <td><a href="ITM_FavoriteList.html#40124">アルスト神話戯曲</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#121">MNU_ShopList#シルクトゥ織物店</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40082">樹木染めこしまき</td></a>
+        <td><a href="ITM_FavoriteList.html#40142">絢爛絵のハンカチーフ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#122">MNU_ShopList#サルベージ・アクアリウス</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#123">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26084">信頼度の上昇</td></a>
+        <td><a href="ITM_InfoList.html#26085">リベラリタスの採集情報１</td></a>
+        <td><a href="ITM_InfoList.html#26086">リベラリタスの採集情報２</td></a>
+        <td><a href="ITM_InfoList.html#26087">リベラリタスの採集情報３</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#128">MNU_ShopList#アクセサリー・ランリズマ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#3">ジェイドベスト</td></a>
+        <td><a href="ITM_PcEquip.html#6">シルバーベルト</td></a>
+        <td><a href="ITM_PcEquip.html#9">パールハット</td></a>
+        <td><a href="ITM_PcEquip.html#39">氷紋はちまき</td></a>
+        <td><a href="ITM_PcEquip.html#45">結晶の脛当て</td></a>
+        <td><a href="ITM_PcEquip.html#48">戦女神の団旗</td></a>
+        <td><a href="ITM_PcEquip.html#121">リングアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#125">サーベルアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#126">エッジアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#142">治癒のアミュレット</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#129">MNU_ShopList#鍛冶屋クシーフォス</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10029">バッテリーチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10030">エンジンチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10041">ロドラナイトチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#130">MNU_ShopList#ベーカリー・プロテイニ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40217">フォンダン餅</td></a>
+        <td><a href="ITM_FavoriteList.html#40218">オーチェシャ</td></a>
+        <td><a href="ITM_FavoriteList.html#40301">マヨヤキタコ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40219">サモの果実あんかけ</td></a>
+        <td><a href="FLD_ConditionList.html#2296">2296</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40220">テッカツ丼</td></a>
+        <td><a href="FLD_ConditionList.html#2297">2297</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#40">40</td></a>
+        <td><a href="ITM_PreciousList.html#25286">プロテイニ店権利書</td></a>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#131">MNU_ShopList#レクティッカベジタブル</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40221">野菜煮込みルーシチ</td></a>
+        <td><a href="ITM_FavoriteList.html#40222">英雄アデル焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40224">カリカリスノウピクルス</td></a>
+        <td><a href="ITM_FavoriteList.html#40053">粉雪とダドレアジュレ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40223">アイスキャベツの雪酢あえ</td></a>
+        <td><a href="FLD_ConditionList.html#2298">2298</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#41">41</td></a>
+        <td><a href="ITM_PreciousList.html#25287">レクティッカ店権利書</td></a>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#132">MNU_ShopList#フィッシュ・タタラティ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40225">アロマノカリスポワレ</td></a>
+        <td><a href="ITM_FavoriteList.html#40226">アビスタージョンの丸焼き</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40227">バーニャオイスターロール</td></a>
+        <td><a href="FLD_ConditionList.html#2300">2300</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40228">氷魚とサモのポ・ト・フー</td></a>
+        <td><a href="FLD_ConditionList.html#2301">2301</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#42">42</td></a>
+        <td><a href="ITM_PreciousList.html#25288">タタラティ店権利書</td></a>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#133">MNU_ShopList#パティスリー・プラクース</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40229">ふわふわ雪花シャーベット</td></a>
+        <td><a href="ITM_FavoriteList.html#40230">ゆきどけミルフィーユ</td></a>
+        <td><a href="ITM_FavoriteList.html#40231">ナルシナシのオーブン焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40232">スノウレアチーズケーキ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40233">オーディファポンチ</td></a>
+        <td><a href="FLD_ConditionList.html#2302">2302</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40234">餅雪団子</td></a>
+        <td><a href="FLD_ConditionList.html#2303">2303</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#43">43</td></a>
+        <td><a href="ITM_PreciousList.html#25289">プラクース店権利書</td></a>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#134">MNU_ShopList#美術メモーリア</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40235">古王の肖像</td></a>
+        <td><a href="ITM_FavoriteList.html#40236">雪花水晶の壺</td></a>
+        <td><a href="ITM_FavoriteList.html#40237">隠れ勇者ガラードの肖像画</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40071">丘陵に佇む少女</td></a>
+        <td><a href="FLD_ConditionList.html#511">511</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40121">最後の合唱</td></a>
+        <td><a href="FLD_ConditionList.html#511">511</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#44">44</td></a>
+        <td><a href="ITM_PreciousList.html#25290">メモーリア店権利書</td></a>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#135">MNU_ShopList#書店ビブリオ・ポリオ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40238">誇りと共に歩む</td></a>
+        <td><a href="ITM_FavoriteList.html#40239">アルマのきもち</td></a>
+        <td><a href="ITM_FavoriteList.html#40240">シュリブ座の証人</td></a>
+        <td><a href="ITM_FavoriteList.html#40241">英雄アデルの歴史</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40242">吹雪の中の聖歌隊</td></a>
+        <td><a href="FLD_ConditionList.html#2304">2304</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40243">天文占い大辞典</td></a>
+        <td><a href="FLD_ConditionList.html#2305">2305</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40297">花の図鑑</td></a>
+        <td><a href="FLD_ConditionList.html#75">75</td></a>
+        <td>1</td>
+        <td><a href="ITM_FavoriteList.html#40298">耽美な殿方の本</td></a>
+        <td><a href="FLD_ConditionList.html#76">76</td></a>
+        <td>1</td>
+        <td><a href="ITM_PreciousList.html#25095">失われし民の石板</td></a>
+        <td><a href="FLD_ConditionList.html#2726">2726</td></a>
+        <td>1</td>
+        <td><a href="../flags/FLG_32bit.html#45">45</td></a>
+        <td><a href="ITM_PreciousList.html#25291">ビブリオ・ポリオ店権利書</td></a>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#136">MNU_ShopList#書店ビブリオ・ポリオ</a>
+          </details>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PreciousList.html#25095">失われし民の石板</td></a>
+        <td><a href="FLD_ConditionList.html#1089">1089</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#137">MNU_ShopList#書店ビブリオ・ポリオ</a>
+          </details>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#138">MNU_ShopList#ホビー・にっちもさっちも</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40244">鳶之油揚</td></a>
+        <td><a href="ITM_FavoriteList.html#40245">ブラフナイト</td></a>
+        <td><a href="ITM_FavoriteList.html#40246">バイバイ・マネー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40247">雪原ノポンたたき</td></a>
+        <td><a href="FLD_ConditionList.html#2306">2306</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40248">ジュエルビリヤード</td></a>
+        <td><a href="FLD_ConditionList.html#2307">2307</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#46">46</td></a>
+        <td><a href="ITM_PreciousList.html#25292">にっちもさっちも店権利書</td></a>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#139">MNU_ShopList#コスメ・プラクシモ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40249">ほかほかオイル</td></a>
+        <td><a href="ITM_FavoriteList.html#40250">ショコラシャドウ</td></a>
+        <td><a href="ITM_FavoriteList.html#40251">ムーンスターリップ</td></a>
+        <td><a href="ITM_FavoriteList.html#40252">ノポジリネイル</td></a>
+        <td><a href="ITM_FavoriteList.html#40253">スチームパウダー</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#47">47</td></a>
+        <td><a href="ITM_PreciousList.html#25293">プラクシモ店権利書</td></a>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#140">MNU_ShopList#ボルダード織物店</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40254">ルクスリアンベルベット</td></a>
+        <td><a href="ITM_FavoriteList.html#40255">雪花織のソール</td></a>
+        <td><a href="ITM_FavoriteList.html#40256">玄武織のブロード</td></a>
+        <td><a href="ITM_FavoriteList.html#40257">ホットストライプ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40258">五線譜織バレッタ</td></a>
+        <td><a href="FLD_ConditionList.html#2310">2310</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40259">トリゴ織粉雪巾着</td></a>
+        <td><a href="FLD_ConditionList.html#2311">2311</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#48">48</td></a>
+        <td><a href="ITM_PreciousList.html#25294">ボルダード店権利書</td></a>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#141">MNU_ShopList#サルベージ・河海豚</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#142">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26088">ルクスリアの採集情報１</td></a>
+        <td><a href="ITM_InfoList.html#26089">ルクスリアの採集情報２</td></a>
+        <td><a href="ITM_InfoList.html#26090">ルクスリアの採集情報３</td></a>
+        <td><a href="ITM_InfoList.html#26091">ルクスリアの採集情報４</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26056">ハーハルの居場所</td></a>
+        <td><a href="FLD_ConditionList.html#1893">1893</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26061">ルクスリア料理のレシピ</td></a>
+        <td><a href="FLD_ConditionList.html#2312">2312</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26095">開閉用パーツの情報その2</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#145">MNU_ShopList#アクセサリー・キンキラ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#72">漢のフンドシ</td></a>
+        <td><a href="ITM_PcEquip.html#73">魅惑の水着</td></a>
+        <td><a href="ITM_PcEquip.html#122">シールドアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#123">アームズアタッチメント</td></a>
+        <td><a href="ITM_PcEquip.html#442">ノポン人形</td></a>
+        <td><a href="ITM_PcEquip.html#99">バイオガントレット</td></a>
+        <td><a href="ITM_PcEquip.html#96">将軍の勲章</td></a>
+        <td><a href="ITM_PcEquip.html#54">拳闘者の腕輪</td></a>
+        <td><a href="ITM_PcEquip.html#63">クロオビ</td></a>
+        <td><a href="ITM_PcEquip.html#42">スターキューブ</td></a>
+        <td><a href="ITM_PcEquip.html#153">悟りの香水</td></a>
+        <td><a href="FLD_ConditionList.html#520">520</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#146">MNU_ShopList#出張鍛冶屋タケノコソード</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10021">ガーネットチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10022">アクアマリンチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10037">スフィアチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10038">キューブチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_PcWpnChip.html#10045">ナクライトチップ</td></a>
+        <td><a href="FLD_ConditionList.html#1863">1863</td></a>
+        <td>0</td>
+        <td><a href="ITM_PcWpnChip.html#10049">ダークマターチップ</td></a>
+        <td><a href="FLD_ConditionList.html#1864">1864</td></a>
+        <td>0</td>
+        <td><a href="ITM_PcWpnChip.html#10055">フォトンチップ</td></a>
+        <td><a href="FLD_ConditionList.html#1865">1865</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#147">MNU_ShopList#八百屋コロカージャ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40186">リベリーヤチャウダー</td></a>
+        <td><a href="ITM_FavoriteList.html#40187">グリンチーズサラダ</td></a>
+        <td><a href="ITM_FavoriteList.html#40188">ミルフィーユ野菜グリル</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40189">温野菜のオイスタージュレ</td></a>
+        <td><a href="FLD_ConditionList.html#2284">2284</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40190">ゆきんこポテサラダ</td></a>
+        <td><a href="FLD_ConditionList.html#2285">2285</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#49">49</td></a>
+        <td><a href="ITM_PreciousList.html#25295">コロカージャ店権利書</td></a>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#148">MNU_ShopList#肉屋シューペック</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40191">パステル・カミル</td></a>
+        <td><a href="ITM_FavoriteList.html#40192">ホワイトベーコン重ね焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40193">アルマバラ肉の甘角煮</td></a>
+        <td><a href="ITM_FavoriteList.html#40194">電撃ロースのスタミナ炒め</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40195">香味サモのルーシチ</td></a>
+        <td><a href="FLD_ConditionList.html#2286">2286</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40196">グラーナチャンプルー</td></a>
+        <td><a href="FLD_ConditionList.html#2287">2287</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#50">50</td></a>
+        <td><a href="ITM_PreciousList.html#25296">シューペック店権利書</td></a>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#149">MNU_ShopList#コラル・リーフ鮮魚店</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40197">ハリッポンの煮付け</td></a>
+        <td><a href="ITM_FavoriteList.html#40198">ビートシュリンプソテー</td></a>
+        <td><a href="ITM_FavoriteList.html#40199">雲海鮫のあぶり焼き</td></a>
+        <td><a href="ITM_FavoriteList.html#40201">氷魚と花胡桃のたたき</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40200">燻製ミツメダカのブレゼ</td></a>
+        <td><a href="FLD_ConditionList.html#2288">2288</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#51">51</td></a>
+        <td><a href="ITM_PreciousList.html#25297">コラル・リーフ店権利書</td></a>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#150">MNU_ShopList#古美術プルミエ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40207">ムーン・リザー・リース</td></a>
+        <td><a href="ITM_FavoriteList.html#40208">モッテコラ人形</td></a>
+        <td><a href="ITM_FavoriteList.html#40209">スチールパイプのレクソス</td></a>
+        <td><a href="ITM_FavoriteList.html#40210">新緑の月光マスク</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#52">52</td></a>
+        <td><a href="ITM_PreciousList.html#25298">プルミエ店権利書</td></a>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#151">MNU_ShopList#ライネン手芸店</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40211">クラゲホウセンカの絨毯</td></a>
+        <td><a href="ITM_FavoriteList.html#40212">マダラ織のノレン</td></a>
+        <td><a href="ITM_FavoriteList.html#40213">魔除けのマダラ織毛布</td></a>
+        <td><a href="ITM_FavoriteList.html#40214">カラ織のスツール</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40215">ノポンチョ</td></a>
+        <td><a href="FLD_ConditionList.html#2294">2294</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40216">カラ織のカチューシャ</td></a>
+        <td><a href="FLD_ConditionList.html#2295">2295</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#53">53</td></a>
+        <td><a href="ITM_PreciousList.html#25299">ライネン店権利書</td></a>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#152">MNU_ShopList#サルベージ・コートコスタ</a>
+          </details>
+        </td>
+        <td><a href="ITM_SalvageList.html#20001">ノーマルシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20002">シルバーシリンダ</td></a>
+        <td><a href="ITM_SalvageList.html#20003">ゴールドシリンダ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_SalvageList.html#20004">プレミアムシリンダ</td></a>
+        <td><a href="FLD_ConditionList.html#2090">2090</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#153">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26084">信頼度の上昇</td></a>
+        <td><a href="ITM_InfoList.html#26085">リベラリタスの採集情報１</td></a>
+        <td><a href="ITM_InfoList.html#26086">リベラリタスの採集情報２</td></a>
+        <td><a href="ITM_InfoList.html#26087">リベラリタスの採集情報３</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26096">開閉用パーツの情報その3</td></a>
+        <td><a href="FLD_ConditionList.html#1833">1833</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#174">MNU_ShopList#行商人モクモク</a>
+          </details>
+        </td>
+        <td><a href="ITM_PreciousList.html#25029">グーラウォールナット</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#170">MNU_ShopList#歌姫ファララ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40273">ピリ辛ストラルーシチ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#201">MNU_ShopList#カフェ・ルティーノ</a>
+          </details>
+        </td>
+        <td><a href="ITM_FavoriteList.html#40202">オーディファ</td></a>
+        <td><a href="ITM_FavoriteList.html#40203">アーケディアンティー</td></a>
+        <td><a href="ITM_FavoriteList.html#40204">フローズンオーディファ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_FavoriteList.html#40205">配管ストロースムージー</td></a>
+        <td><a href="FLD_ConditionList.html#2290">2290</td></a>
+        <td>0</td>
+        <td><a href="ITM_FavoriteList.html#40206">アルマミルクレモンティー</td></a>
+        <td><a href="FLD_ConditionList.html#2291">2291</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td><a href="../flags/FLG_32bit.html#54">54</td></a>
+        <td><a href="ITM_PreciousList.html#25300">ルティーノ店権利書</td></a>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#203">MNU_ShopList#情報屋</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26057">巨神獣戦艦に関する噂</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_InfoList.html#26019">大食らいのマーリンに注意</td></a>
+        <td><a href="FLD_ConditionList.html#521">521</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26033">打ち揚げられた巨神獣</td></a>
+        <td><a href="FLD_ConditionList.html#842">842</td></a>
+        <td>0</td>
+        <td><a href="ITM_InfoList.html#26018">コアクリスタル狩りの情報</td></a>
+        <td><a href="FLD_ConditionList.html#522">522</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#209">MNU_ShopList#雑貨屋マージャ</a>
+          </details>
+        </td>
+        <td><a href="ITM_TresureList.html#35009">グーラヘッド</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="ITM_TresureList.html#35012">ビヨンコネクタ</td></a>
+        <td><a href="FLD_ConditionList.html#1413">1413</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#247">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#26">レザーグローブ</td></a>
+        <td><a href="ITM_PcEquip.html#28">ヴォルフシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#76">ビーストフード</td></a>
+        <td><a href="ITM_PcEquip.html#79">ノポンの仮面</td></a>
+        <td><a href="ITM_PcEquip.html#138">赤い糸</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#248">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10002">アルミチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10009">ファングチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10010">ウイングチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#249">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#21">傭兵のベスト</td></a>
+        <td><a href="ITM_PcEquip.html#23">チャンピオンベルト</td></a>
+        <td><a href="ITM_PcEquip.html#25">ファビュラスハット</td></a>
+        <td><a href="ITM_PcEquip.html#56">ダークオーブ</td></a>
+        <td><a href="ITM_PcEquip.html#82">極彩鳥の羽飾り</td></a>
+        <td><a href="ITM_PcEquip.html#89">親愛の指輪</td></a>
+        <td><a href="ITM_PcEquip.html#91">豊穣の首飾り</td></a>
+        <td><a href="ITM_PcEquip.html#101">眼帯</td></a>
+        <td><a href="ITM_PcEquip.html#141">活性のアミュレット</td></a>
+        <td><a href="ITM_PcEquip.html#148">ミントポプリ</td></a>
+        <td><a href="ITM_PcEquip.html#150">巫女の護符</td></a>
+        <td><a href="FLD_ConditionList.html#3519">3519</td></a>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#250">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10017">ターコイズチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10018">スピネルチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#251">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#2">ギアベスト</td></a>
+        <td><a href="ITM_PcEquip.html#5">スチームベルト</td></a>
+        <td><a href="ITM_PcEquip.html#27">スミスグローブ</td></a>
+        <td><a href="ITM_PcEquip.html#29">スプリングシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#38">鉄のはちまき</td></a>
+        <td><a href="ITM_PcEquip.html#44">機械化レガース</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#252">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10025">コイルチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10026">チェーンチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#253">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcEquip.html#11">虹色グローブ</td></a>
+        <td><a href="ITM_PcEquip.html#14">シェルシューズ</td></a>
+        <td><a href="ITM_PcEquip.html#50">スパイクショルダー</td></a>
+        <td><a href="ITM_PcEquip.html#83">銀鳥の羽飾り</td></a>
+        <td><a href="ITM_PcEquip.html#86">霊樹のお守り</td></a>
+        <td><a href="ITM_PcEquip.html#90">誓いの指輪</td></a>
+        <td><a href="ITM_PcEquip.html#139">情熱の糸</td></a>
+        <td><a href="ITM_PcEquip.html#149">ラベンダーポプリ</td></a>
+        <td><a href="ITM_PcEquip.html#151">賢者の護符</td></a>
+        <td><a href="ITM_PcEquip.html#152">穏やかな香水</td></a>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#254">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_PcWpnChip.html#10013">ウッドチップ</td></a>
+        <td><a href="ITM_PcWpnChip.html#10014">フラワーチップ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="MNU_ShopList.html#255">MNU_ShopList#ああああああああああああ</a>
+          </details>
+        </td>
+        <td><a href="ITM_InfoList.html#26192">ああああああ</td></a>
+        <td><a href="ITM_InfoList.html#26193">ああああああ</td></a>
+        <td><a href="ITM_InfoList.html#26194">ああああああ</td></a>
+        <td><a href="ITM_InfoList.html#26195">ああああああ</td></a>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

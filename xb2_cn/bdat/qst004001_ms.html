@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst004001_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst004001_msg0001</td>
+        <td>84</td>
+        <td class="side">你们就是
+杨找来帮忙的人啊
+拜托你们了！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst004001_msg0002</td>
+        <td>84</td>
+        <td class="side">我请求诸位
+协助追查砍断缆绳的犯人！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst004001_msg0003</td>
+        <td>84</td>
+        <td class="side">要解决事件 先从打听情况开始！
+去找镇上的人们收集情报吧！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst004001_msg0004</td>
+        <td>84</td>
+        <td class="side">男老女少[ML:Dash ] 呃
+男少女老[ML:Dash ] 咦？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst004001_msg0005</td>
+        <td>84</td>
+        <td class="side">呃[ML:Dash ]
+总之大家都喜欢八卦
+所以去打听一下吧！</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst004001_msg0006</td>
+        <td>84</td>
+        <td class="side">嗯！
+别漏掉什么人啊！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst004001_msg0101</td>
+        <td>84</td>
+        <td class="side">情报收集进展顺利吗？
+抓捕犯人是诸位的职责！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst004001_msg0102</td>
+        <td>84</td>
+        <td class="side">之前听斯佩比亚的士兵说过这话
+职责到底是什么意思？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst004001_msg0103</td>
+        <td>84</td>
+        <td class="side">那帮家伙 觉得用点听不懂的词汇
+就可了不得了 他们肯定是这么想的！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst004001_msg0201</td>
+        <td>84</td>
+        <td class="side">咦！？
+你说解决了？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst004001_msg0202</td>
+        <td>84</td>
+        <td class="side">哎呀[ML:Dash ]
+来报告吧！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst004001_msg0203</td>
+        <td>84</td>
+        <td class="side">是火鸡人用弓箭射断的啊！
+太厉害了！！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst004001_msg0204</td>
+        <td>84</td>
+        <td class="side">马切大叔
+做的那种缆绳可强韧了
+居然还能用弓箭射断 也太有本事了！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst004001_msg0205</td>
+        <td>84</td>
+        <td class="side">诸位好能干啊！
+我要去向杨老大报告
+事情已经解决了！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst004001_msg0206</td>
+        <td>84</td>
+        <td class="side">那么 我就
+授予你们
+抓捕犯人的超棒奖励！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

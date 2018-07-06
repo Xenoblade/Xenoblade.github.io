@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102108_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102108_msg0001</td>
+        <td>84</td>
+        <td class="side">哈哈哈哈！
+蘑菇和武器
+都是我的了嗼～！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102108_msg0002</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]嗼嗼嗼！？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102108_msg0003</td>
+        <td>84</td>
+        <td class="side">是你嗼[ML:Dash ]
+别吓我嗼！</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102108_msg0004</td>
+        <td>84</td>
+        <td class="side">别打扰
+巴米巴米吃饭嗼！
+一边去嗼！</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102108_msg0005</td>
+        <td>84</td>
+        <td class="side">要 要我仔细说[ML:Dash ]
+诺彭族的人喜欢吃蘑菇</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102108_msg0006</td>
+        <td>84</td>
+        <td class="side">呃[ML:Dash ] 要是不打倒
+尖刺海胆怪
+它们就会跑来村里</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102108_msg0017</td>
+        <td>84</td>
+        <td class="side">所以我趁乱洗劫了武器库
+打算吃掉这里的美味蘑菇
+再跑路[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102108_msg0007</td>
+        <td>84</td>
+        <td class="side">啊[ML:Dash ]！！ 哼[ML:Dash ]！！
+我不会交出武器的嗼！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102108_msg0008</td>
+        <td>84</td>
+        <td class="side">不把这些交给
+奥德姆拉佣兵团的话
+我就拿不到报酬了！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102108_msg0009</td>
+        <td>84</td>
+        <td class="side">原来如此[ML:Dash ]
+是奥德姆拉佣兵团唆使的吗</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102108_msg0010</td>
+        <td>84</td>
+        <td class="side">那是个讨厌凡达姆做法的
+落魄贵族佣兵团[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102108_msg0011</td>
+        <td>84</td>
+        <td class="side">真卑鄙</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102108_msg0012</td>
+        <td>84</td>
+        <td class="side">吵死了嗼！
+走开嗼！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102108_msg0013</td>
+        <td>84</td>
+        <td class="side">不走的话[ML:Dash ]
+我就把武器和蘑菇都烧掉嗼！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102108_msg0014</td>
+        <td>165</td>
+        <td class="side">怎么办？</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102108_msg0015</td>
+        <td>165</td>
+        <td class="side">说服他</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102108_msg0016</td>
+        <td>165</td>
+        <td class="side">用钱解决</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102108_msg0101</td>
+        <td>84</td>
+        <td class="side">在这里放火 然后把自己也烧死？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102108_msg0102</td>
+        <td>84</td>
+        <td class="side">确[ML:Dash ] 确实
+在狭小的地方点火有点[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102108_msg0103</td>
+        <td>84</td>
+        <td class="side">那就给我钱嗼！
+佣兵都是收钱做事的嗼！</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102108_msg0201</td>
+        <td>84</td>
+        <td class="side">你要给我钱嗼？
+[ML:Dash ]给多少嗼？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst102108_msg0301</td>
+        <td>84</td>
+        <td class="side">你的合同上 交出武器
+卖出情报[ML:Dash ]
+能从那边拿到多少报酬？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst102108_msg0302</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]2万G嗼</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst102108_msg0303</td>
+        <td>84</td>
+        <td class="side">那我出3万G</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst102108_msg0304</td>
+        <td>84</td>
+        <td class="side">啊！？
+那么多！？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst102108_msg0305</td>
+        <td>84</td>
+        <td class="side">用来买下那些武器和你</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst102108_msg0306</td>
+        <td>84</td>
+        <td class="side">顺便
+这里的蘑菇也随便你吃</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst102108_msg0307</td>
+        <td>84</td>
+        <td class="side">3万[ML:Dash ]
+蘑菇[ML:Dash ]
+成交嗼！！</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst102108_msg0308</td>
+        <td>84</td>
+        <td class="side">看钱办事的才叫佣兵啊[ML:Dash ]
+因为钱最可信嘛</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst102108_msg0309</td>
+        <td>84</td>
+        <td class="side">希望有朝一日他能变成
+像凡达姆那样的
+看心就可以信赖的同伴[ML:Dash ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst102108_msg0310</td>
+        <td>84</td>
+        <td class="side">嗯 谢谢
+抱歉我提出了这么过分的要求</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst102108_msg0311</td>
+        <td>84</td>
+        <td class="side">那么武器还给你嗼！
+我要吃蘑菇嗼！
+我开动了嗼！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

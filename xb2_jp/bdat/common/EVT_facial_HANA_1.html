@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EVT_facial_HANA_1</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>brow_type</th>
+          <th>brow_weight</th>
+          <th>eye_type</th>
+          <th>eye_weight</th>
+          <th>lip_type</th>
+          <th>lip_weight</th>
+          <th>facial_blend</th>
+          <th>talk_head_weight</th>
+          <th>talk_head_speed</th>
+          <th>talk_lip_weight</th>
+          <th>talk_lip_speed</th>
+          <th>talk_blend</th>
+        </tr>
+      </thead>
+      <tr id="0">
+        <td>0</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_IDLE</td>
+        <td><a href="EVT_browtype.html#0">BROW_NONE</td></a>
+        <td>0</td>
+        <td><a href="EVT_eyetype.html#0">EYE_NONE</td></a>
+        <td>0</td>
+        <td><a href="EVT_liptype.html#0">LIP_NONE</td></a>
+        <td>0</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>0.6</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_HAPPY</td>
+        <td><a href="EVT_browtype.html#1">BROW_HAPPY</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#1">EYE_CLOSE</td></a>
+        <td>0</td>
+        <td><a href="EVT_liptype.html#1">LIP_UP</td></a>
+        <td>0.7</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_ANGRY</td>
+        <td><a href="EVT_browtype.html#2">BROW_ANGRY</td></a>
+        <td>0.7</td>
+        <td><a href="EVT_eyetype.html#1">EYE_CLOSE</td></a>
+        <td>0</td>
+        <td><a href="EVT_liptype.html#2">LIP_DOWN</td></a>
+        <td>0.5</td>
+        <td>5</td>
+        <td>0.6</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_SAD</td>
+        <td><a href="EVT_browtype.html#3">BROW_SAD</td></a>
+        <td>0.7</td>
+        <td><a href="EVT_eyetype.html#1">EYE_CLOSE</td></a>
+        <td>0</td>
+        <td><a href="EVT_liptype.html#2">LIP_DOWN</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_SURPRISE</td>
+        <td><a href="EVT_browtype.html#4">BROW_SURPRISE</td></a>
+        <td>0.7</td>
+        <td><a href="EVT_eyetype.html#2">EYE_SURPISE</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#2">LIP_DOWN</td></a>
+        <td>0.5</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_SURPRISE2</td>
+        <td><a href="EVT_browtype.html#4">BROW_SURPRISE</td></a>
+        <td>0.7</td>
+        <td><a href="EVT_eyetype.html#2">EYE_SURPISE</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#2">LIP_DOWN</td></a>
+        <td>0.5</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_FEAR</td>
+        <td><a href="EVT_browtype.html#5">BROW_FEAR</td></a>
+        <td>0.7</td>
+        <td><a href="EVT_eyetype.html#3">EYE_PEER</td></a>
+        <td>0.4</td>
+        <td><a href="EVT_liptype.html#2">LIP_DOWN</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX1</td>
+        <td><a href="EVT_browtype.html#6">BROW_EX1</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#4">EYE_EX1</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#5">LIP_EX1</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX2</td>
+        <td><a href="EVT_browtype.html#7">BROW_EX2</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#5">EYE_EX2</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#6">LIP_EX2</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX3</td>
+        <td><a href="EVT_browtype.html#8">BROW_EX3</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#6">EYE_EX3</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#7">LIP_EX3</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX4</td>
+        <td><a href="EVT_browtype.html#9">BROW_EX4</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#7">EYE_EX4</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#8">LIP_EX4</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX5</td>
+        <td><a href="EVT_browtype.html#10">BROW_EX5</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#8">EYE_EX5</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#9">LIP_EX5</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td class="side">FACIAL_EX6</td>
+        <td><a href="EVT_browtype.html#11">BROW_EX6</td></a>
+        <td>1</td>
+        <td><a href="EVT_eyetype.html#9">EYE_EX6</td></a>
+        <td>1</td>
+        <td><a href="EVT_liptype.html#10">LIP_EX6</td></a>
+        <td>1</td>
+        <td>5</td>
+        <td>0.4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

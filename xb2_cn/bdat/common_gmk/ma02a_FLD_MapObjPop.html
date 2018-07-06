@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ma02a_FLD_MapObjPop</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th class="side">name</th>
+          <th>Condition</th>
+          <th>RSC_ID</th>
+          <th>StateName</th>
+          <th>Visible_XZ</th>
+          <th>Visible_Y</th>
+          <th>Invisible_XZ</th>
+          <th>Invisible_Y</th>
+          <th>Priority</th>
+          <th>mapobjcol</th>
+        </tr>
+      </thead>
+      <tr id="2001">
+        <td>2001</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180001_01</td>
+        <td><a href="../common/FLD_ConditionList.html#19">19</td></a>
+        <td><a href="../common/RSC_MapObjList.html#1">1</td></a>
+        <td></td>
+        <td>20000</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>25000</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2002">
+        <td>2002</td>
+        <td>
+        </td>
+        <td class="side">obj_02_np190002_01</td>
+        <td><a href="../common/FLD_ConditionList.html#435">435</td></a>
+        <td><a href="../common/RSC_MapObjList.html#3">3</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2003">
+        <td>2003</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj190701_01</td>
+        <td></td>
+        <td><a href="../common/RSC_MapObjList.html#6">6</td></a>
+        <td></td>
+        <td>20000</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>25000</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2004">
+        <td>2004</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180102_01</td>
+        <td></td>
+        <td><a href="../common/RSC_MapObjList.html#18">18</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2005">
+        <td>2005</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180102_02</td>
+        <td><a href="../common/FLD_ConditionList.html#804">804</td></a>
+        <td><a href="../common/RSC_MapObjList.html#18">18</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2006">
+        <td>2006</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180102_03</td>
+        <td></td>
+        <td><a href="../common/RSC_MapObjList.html#18">18</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2007">
+        <td>2007</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180004_01</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td><a href="../common/RSC_MapObjList.html#9">9</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2008">
+        <td>2008</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180006_01</td>
+        <td><a href="../common/FLD_ConditionList.html#436">436</td></a>
+        <td><a href="../common/RSC_MapObjList.html#11">11</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2009">
+        <td>2009</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180006_02</td>
+        <td><a href="../common/FLD_ConditionList.html#434">434</td></a>
+        <td><a href="../common/RSC_MapObjList.html#11">11</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2010">
+        <td>2010</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj190101_01</td>
+        <td></td>
+        <td><a href="../common/RSC_MapObjList.html#19">19</td></a>
+        <td></td>
+        <td>20000</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>25000</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2011">
+        <td>2011</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj202401_01</td>
+        <td><a href="../common/FLD_ConditionList.html#1704">1704</td></a>
+        <td><a href="../common/RSC_MapObjList.html#44">44</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2012">
+        <td>2012</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj202401_02</td>
+        <td><a href="../common/FLD_ConditionList.html#1704">1704</td></a>
+        <td><a href="../common/RSC_MapObjList.html#44">44</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2013">
+        <td>2013</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj202401_03</td>
+        <td><a href="../common/FLD_ConditionList.html#1704">1704</td></a>
+        <td><a href="../common/RSC_MapObjList.html#44">44</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2014">
+        <td>2014</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj502001_01</td>
+        <td><a href="../common/FLD_ConditionList.html#2405">2405</td></a>
+        <td><a href="../common/RSC_MapObjList.html#72">72</td></a>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>110</td>
+        <td>110</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2015">
+        <td>2015</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400041_01</td>
+        <td><a href="../common/FLD_ConditionList.html#1779">1779</td></a>
+        <td><a href="../common/RSC_MapObjList.html#25">25</td></a>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>110</td>
+        <td>110</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2016">
+        <td>2016</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180005_01</td>
+        <td></td>
+        <td><a href="../common/RSC_MapObjList.html#10">10</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2017">
+        <td>2017</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400025_01</td>
+        <td><a href="../common/FLD_ConditionList.html#70">70</td></a>
+        <td><a href="../common/RSC_MapObjList.html#35">35</td></a>
+        <td>oj400025_idle</td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2018">
+        <td>2018</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400026_01</td>
+        <td><a href="../common/FLD_ConditionList.html#828">828</td></a>
+        <td><a href="../common/RSC_MapObjList.html#40">40</td></a>
+        <td>oj490001_idle</td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2019">
+        <td>2019</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400034_01</td>
+        <td><a href="../common/FLD_ConditionList.html#1052">1052</td></a>
+        <td><a href="../common/RSC_MapObjList.html#30">30</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2020">
+        <td>2020</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj180102_04</td>
+        <td><a href="../common/FLD_ConditionList.html#803">803</td></a>
+        <td><a href="../common/RSC_MapObjList.html#18">18</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2021">
+        <td>2021</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400053_01</td>
+        <td><a href="../common/FLD_ConditionList.html#2315">2315</td></a>
+        <td><a href="../common/RSC_MapObjList.html#65">65</td></a>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>110</td>
+        <td>110</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2022">
+        <td>2022</td>
+        <td>
+        </td>
+        <td class="side"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2023">
+        <td>2023</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400024_01</td>
+        <td><a href="../common/FLD_ConditionList.html#2398">2398</td></a>
+        <td><a href="../common/RSC_MapObjList.html#71">71</td></a>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>110</td>
+        <td>110</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2024">
+        <td>2024</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj502001_02</td>
+        <td><a href="../common/FLD_ConditionList.html#2406">2406</td></a>
+        <td><a href="../common/RSC_MapObjList.html#49">49</td></a>
+        <td></td>
+        <td>100</td>
+        <td>100</td>
+        <td>110</td>
+        <td>110</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2025">
+        <td>2025</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400025_02</td>
+        <td><a href="../common/FLD_ConditionList.html#2436">2436</td></a>
+        <td><a href="../common/RSC_MapObjList.html#35">35</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+      <tr id="2026">
+        <td>2026</td>
+        <td>
+        </td>
+        <td class="side">obj_02_oj400026_02</td>
+        <td><a href="../common/FLD_ConditionList.html#2437">2437</td></a>
+        <td><a href="../common/RSC_MapObjList.html#40">40</td></a>
+        <td></td>
+        <td>200</td>
+        <td>200</td>
+        <td>220</td>
+        <td>220</td>
+        <td>0</td>
+        <td>False</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

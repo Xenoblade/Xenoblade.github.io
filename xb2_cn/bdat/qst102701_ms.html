@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102701_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102701_msg001</td>
+        <td>62</td>
+        <td class="side">おじいちゃんに病気に効く薬がほしいの(仮)</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102701_msg002</td>
+        <td>62</td>
+        <td class="side">腕のいい医者探してきて(仮)</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102701_msg101</td>
+        <td>62</td>
+        <td class="side">医者見つかった？(仮)</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102701_msg201</td>
+        <td>62</td>
+        <td class="side">見つかって良かった(仮)</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102701_msg202</td>
+        <td>62</td>
+        <td class="side">良いお薬作ってくれるといいんだけど</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102701_msg301</td>
+        <td>62</td>
+        <td class="side">お薬作ってきてくれたんだ！
+ありがとう！(仮)</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102701_msg302</td>
+        <td>62</td>
+        <td class="side">おじいちゃんに届けに行く！(仮)</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102701_msg0001</td>
+        <td>84</td>
+        <td class="side">爷爷
+看上去好难受[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102701_msg0002</td>
+        <td>84</td>
+        <td class="side">身体比之前更差了[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102701_msg0003</td>
+        <td>84</td>
+        <td class="side">爷爷 
+会死掉吗？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102701_msg0004</td>
+        <td>84</td>
+        <td class="side">我记得[ML:Dash ]
+他说过
+以太流不太好</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102701_msg0005</td>
+        <td>84</td>
+        <td class="side">使用主控异刃的力量的话
+要调整以太流估计还是能办到的</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102701_msg0006</td>
+        <td>84</td>
+        <td class="side">真的吗？
+真的能治好爷爷吗？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102701_msg0007</td>
+        <td>84</td>
+        <td class="side">想完全治好是不可能的[ML:Dash ]
+毕竟是食人种对吧？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102701_msg0008</td>
+        <td>84</td>
+        <td class="side">对于人的那部分
+就无能为力了</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102701_msg0009</td>
+        <td>84</td>
+        <td class="side">那我们
+去找找看
+医术高明的医生吧</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102701_msg0010</td>
+        <td>84</td>
+        <td class="side">谢谢！
+[ML:Dash ]那个</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102701_msg0011</td>
+        <td>84</td>
+        <td class="side">我希望你不要
+把这件事情告诉爷爷</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102701_msg0012</td>
+        <td>84</td>
+        <td class="side">要是医生没能
+治好爷爷的话
+会让他很失望的[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102701_msg0013</td>
+        <td>84</td>
+        <td class="side">不要愁眉苦脸的！
+莱克斯一定会想出办法来的</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102701_msg0014</td>
+        <td>84</td>
+        <td class="side">嗯！我保证</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

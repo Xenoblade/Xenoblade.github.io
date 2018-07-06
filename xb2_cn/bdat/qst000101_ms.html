@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst000101_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst000101_msg001</td>
+        <td>84</td>
+        <td class="side">唉 头大啊[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst000101_msg002</td>
+        <td>84</td>
+        <td class="side">要指望诺彭族充当战力也指望不上[ML:Dash ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst000101_msg003</td>
+        <td>84</td>
+        <td class="side">话是这么说 可是让我去找斯佩比亚的家伙们帮忙
+更是提都不要提[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst000101_msg004</td>
+        <td>84</td>
+        <td class="side">嗯？ 你说这个啊 其实[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst000101_msg005</td>
+        <td>84</td>
+        <td class="side">有批要进行交易的货物
+从英维迪亚运到了港口那里[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst000101_msg006</td>
+        <td>84</td>
+        <td class="side">不过那批货有点棘手</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst000101_msg007</td>
+        <td>165</td>
+        <td class="side">要问什么？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst000101_msg008</td>
+        <td>165</td>
+        <td class="side">询问是不是被人盯上了</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst000101_msg009</td>
+        <td>165</td>
+        <td class="side">询问是不是黑货</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst000101_msg010</td>
+        <td>84</td>
+        <td class="side">你算得很准啊</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst000101_msg011</td>
+        <td>84</td>
+        <td class="side">不过嘛 对方并不是人</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst000101_msg012</td>
+        <td>84</td>
+        <td class="side">不
+不是那种玩意啦</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst000101_msg013</td>
+        <td>84</td>
+        <td class="side">我的原则是不碰非法买卖</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst000101_msg014</td>
+        <td>84</td>
+        <td class="side">其实那批货是
+食人寄居蟹最喜欢吃的东西</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst000101_msg015</td>
+        <td>84</td>
+        <td class="side">食人寄居蟹盯上了这批货
+会登上甲板
+来抢走货物</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst000101_msg016</td>
+        <td>84</td>
+        <td class="side">雇来保护货物的守卫
+也被打败了</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst000101_msg017</td>
+        <td>84</td>
+        <td class="side">所以我才会在这里找人
+看看有没有替代人选[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst000101_msg018</td>
+        <td>84</td>
+        <td class="side">可是实在找不出来
+我正头疼不知道该怎么是好呢</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst000101_msg019</td>
+        <td>84</td>
+        <td class="side">你愿意顶替他们吗？</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst000101_msg020</td>
+        <td>84</td>
+        <td class="side">真是个宝贵的提议
+我就觉得你和别人不太一样</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst000101_msg021</td>
+        <td>84</td>
+        <td class="side">货物在格尔特蒙特返航港
+那些货很大很醒目 你一看就会明白的</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst000101_msg022</td>
+        <td>84</td>
+        <td class="side">然后请你把来抢货物的
+食人寄居蟹赶走</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst000101_msg023</td>
+        <td>84</td>
+        <td class="side">拜托你啦</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst400906_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0001</td>
+        <td>84</td>
+        <td class="side">怎么？ 找我有事吗？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0002</td>
+        <td>84</td>
+        <td class="side">想打听有关黑色灰尘的事嗼</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0003</td>
+        <td>84</td>
+        <td class="side">有关黑色灰尘的事[ML:Dash ]吗
+是艾塞特说的吧？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0004</td>
+        <td>84</td>
+        <td class="side">是的嗼</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0005</td>
+        <td>84</td>
+        <td class="side">真受不了那家伙[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0006</td>
+        <td>84</td>
+        <td class="side">不对 反正我们没做什么坏事
+我会老实说出来的</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0007</td>
+        <td>84</td>
+        <td class="side">你们想打听什么？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0008</td>
+        <td>84</td>
+        <td class="side">有没有将大量的黑色灰尘
+流通到某处？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0009</td>
+        <td>84</td>
+        <td class="side">也算不上大量啦
+只是一桶接一桶地定期交付给别人而已</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0010</td>
+        <td>84</td>
+        <td class="side">如果是用作以太炉的屏蔽材料
+一次也许用不上
+这么多嗼</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0011</td>
+        <td>84</td>
+        <td class="side">原来如此[ML:Dash ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0012</td>
+        <td>84</td>
+        <td class="side">那么你交付到什么地方去了？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0013</td>
+        <td>84</td>
+        <td class="side">旧生产区的入口附近</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0014</td>
+        <td>84</td>
+        <td class="side">但我只是把东西放到指定地方
+没看到过是什么人</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0015</td>
+        <td>84</td>
+        <td class="side">很可疑呀[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0016</td>
+        <td>84</td>
+        <td class="side">会吗？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0017</td>
+        <td>84</td>
+        <td class="side">钱一分不少地都付给我了
+价格也挺正常
+我觉得没什么奇怪的地方啊</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0018</td>
+        <td>84</td>
+        <td class="side">要是想在城镇外制作什么的话
+那运到城镇里就白运了啊</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0019</td>
+        <td>84</td>
+        <td class="side">而且特意约好时间
+去碰面也很麻烦吧？</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0020</td>
+        <td>84</td>
+        <td class="side">话是这么说[ML:Dash ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0021</td>
+        <td>84</td>
+        <td class="side">下一次交付是什么时候？</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0022</td>
+        <td>84</td>
+        <td class="side">10天后</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0023</td>
+        <td>84</td>
+        <td class="side">哇
+还得等到那个时候啊？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0024</td>
+        <td>84</td>
+        <td class="side">要不要去边泡温泉边等啊</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0025</td>
+        <td>84</td>
+        <td class="side">泡这么久会泡晕的吧？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0026</td>
+        <td>84</td>
+        <td class="side">可是我才刚刚送过去不久
+现在去的话应该还在那里吧？</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0027</td>
+        <td>84</td>
+        <td class="side">这话你倒是早点说啊！</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0028</td>
+        <td>84</td>
+        <td class="side">那我们赶紧走吧！</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0029</td>
+        <td>84</td>
+        <td class="side">那个桶有什么显眼的地方嗼？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0030</td>
+        <td>84</td>
+        <td class="side">嗯 很显眼
+因为桶是绿色的</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>tlk400906_msg0031</td>
+        <td>84</td>
+        <td class="side">还有什么不明白的就来问我吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

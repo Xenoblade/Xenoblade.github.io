@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst102203_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst102203_msg0001</td>
+        <td>84</td>
+        <td class="side">来てくれたか！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst102203_msg0002</td>
+        <td>84</td>
+        <td class="side">ニシュが声をかけてくれたんだってな
+忙しいだろうに　すまんね</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst102203_msg0003</td>
+        <td>84</td>
+        <td class="side">あんたに頼みたいのは
+キャンプ地周辺にいる
+モンスターの討伐だ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst102203_msg0004</td>
+        <td>84</td>
+        <td class="side">安全確保は重要だからな</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst102203_msg0005</td>
+        <td>84</td>
+        <td class="side">討伐対象は
+ガムニ・タスマン　3体と
+ダスキィ・ラトール　3体だ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst102203_msg0006</td>
+        <td>84</td>
+        <td class="side">それだけ対処すれば
+近寄ってこないだろう</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst102203_msg0007</td>
+        <td>84</td>
+        <td class="side">頼んだぞ！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst102203_msg0101</td>
+        <td>84</td>
+        <td class="side">討伐対象は
+ガムニ・タスマン　3体と
+ダスキィ・ラトール　3体だ</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst102203_msg0102</td>
+        <td>84</td>
+        <td class="side">ヴァンダムが認めた腕を
+ぞんぶんに振るってきてくれ！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst102203_msg0201</td>
+        <td>84</td>
+        <td class="side">おお！　もう終わったのか！
+お疲れさん！</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst102203_msg0202</td>
+        <td>84</td>
+        <td class="side">こっちの任務も
+一区切りついたところだ
+休憩がてら食事にしよう</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst102203_msg0203</td>
+        <td>84</td>
+        <td class="side">ニシュの初任務記念に
+調理担当へ指名したんだ</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst102203_msg0204</td>
+        <td>84</td>
+        <td class="side">俺が若いころも　初任務で
+ヴァンダムに指名されたのさ！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst102203_msg0205</td>
+        <td>84</td>
+        <td class="side">伝統ってやつだ！
+ハハハ！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst102203_msg0206</td>
+        <td>84</td>
+        <td class="side">おお！　助かるぞ
+手伝うことがあるか
+ニシュに聞いてくれ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst102203_msg0207</td>
+        <td>84</td>
+        <td class="side">予定より早く食事に
+ありつけそうだな！</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst102203_msg0301</td>
+        <td>84</td>
+        <td class="side">ニシュの戦闘能力は
+問題ないが[ML:Dash ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst102203_msg0302</td>
+        <td>84</td>
+        <td class="side">やたら仲間のことを
+心配しすぎるクセがある</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst102203_msg0303</td>
+        <td>84</td>
+        <td class="side">悪い方に作用しなけりゃ
+いいが[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst102203_msg0401</td>
+        <td>84</td>
+        <td class="side">シェイドトラウトに
+スポイルアップルか[ML:Dash ]
+なるほど　なるほど</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst102203_msg0402</td>
+        <td>84</td>
+        <td class="side">シェイドトラウトは
+この川の上流でよく獲れるぞ</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst102203_msg0403</td>
+        <td>84</td>
+        <td class="side">スポイルアップルは[ML:Dash ]
+どこだったっけな</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst102203_msg0404</td>
+        <td>84</td>
+        <td class="side">なかなか見つからなかったことしか
+覚えてないな[ML:Dash ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst102203_msg0501</td>
+        <td>84</td>
+        <td class="side">さあて　メシだメシだ！</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst102203_msg0601</td>
+        <td>84</td>
+        <td class="side">いやぁ　ニシュのメシは
+なかなかうまかったな</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst102203_msg0602</td>
+        <td>84</td>
+        <td class="side">グーラ風っていうのか？
+スパイスが　ピリッとして[ML:Dash ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst102203_msg0603</td>
+        <td>84</td>
+        <td class="side">おっと　すまんすまん
+次の任務の話だな</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst102203_msg0604</td>
+        <td>84</td>
+        <td class="side">光る鍾乳石を
+取ってきて欲しいんだ</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst102203_msg0605</td>
+        <td>84</td>
+        <td class="side">エルピス霊洞にあるとは
+聞いているんだが
+なかなか見つからなくてな</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst102203_msg0606</td>
+        <td>84</td>
+        <td class="side">頼んだぜ</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst102203_msg0607</td>
+        <td>84</td>
+        <td class="side">その間　俺達は
+非情のアスピードの
+討伐に向かう</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst102203_msg0608</td>
+        <td>84</td>
+        <td class="side">かなり凶悪な奴だとは
+聞いている[ML:Dash ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst102203_msg0609</td>
+        <td>84</td>
+        <td class="side">初任務のニシュには
+ちょいと重いかもしれんが
+少しくらい歯ごたえがないとな</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst102203_msg0610</td>
+        <td>84</td>
+        <td class="side">光る鍾乳石を探すのなんざ
+簡単すぎるかもしれんが
+ま　少しは楽してくれよ</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst102203_msg0611</td>
+        <td>84</td>
+        <td class="side">それじゃあ　また後でな</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

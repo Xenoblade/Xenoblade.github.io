@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201413_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201413_msg0001</td>
+        <td>84</td>
+        <td class="side">アンタ達　まだ起きてんの？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201413_msg0002</td>
+        <td>84</td>
+        <td class="side">どっちの方が女子力が高いか
+ガールズトークで決めようとしてるのよ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201413_msg0003</td>
+        <td>84</td>
+        <td class="side">せっかく来たんだから
+メイ　判定してよ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201413_msg0004</td>
+        <td>84</td>
+        <td class="side">いいよ
+このアタシが直々に判定してあげる</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201413_msg0005</td>
+        <td>84</td>
+        <td class="side">夜だっていうのにメイは元気だね</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201413_msg0006</td>
+        <td>84</td>
+        <td class="side">フッ[ML:Dash ]
+アタシは闇に生きる者[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201413_msg0007</td>
+        <td>84</td>
+        <td class="side">夜の眷属＜ナハトクラン＞だからね！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201413_msg0008</td>
+        <td>84</td>
+        <td class="side">なは[ML:Dash ]
+ごめん　何て言ったの？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201413_msg0009</td>
+        <td>84</td>
+        <td class="side">夜の眷属＜ナハトクラン＞だよ</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201413_msg0010</td>
+        <td>84</td>
+        <td class="side">闇の力は夜の眷属＜ナハトクラン＞の証
+選ばれし者のみが使えるのよ</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201413_msg0011</td>
+        <td>84</td>
+        <td class="side">これに対抗できるのは
+光の眷属＜リヒトクラン＞だけ</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201413_msg0012</td>
+        <td>84</td>
+        <td class="side">闇と光が喰らい合う
+聖なる戦い＜ハイリガークリーク＞の
+日まで[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201413_msg0013</td>
+        <td>84</td>
+        <td class="side">アタシ達は力を溜め
+互いの動向を見張り　牽制し合っているの</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201413_msg0014</td>
+        <td>84</td>
+        <td class="side">そうしてアタシ達が勝った暁には[ML:Dash ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201413_msg0015</td>
+        <td>84</td>
+        <td class="side">夜の神＜ナハトゴット＞が支配する
+新世界が生まれるのよ！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201413_msg0016</td>
+        <td>84</td>
+        <td class="side">ああ　その日がくるのが待ち遠しい[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201413_msg0017</td>
+        <td>84</td>
+        <td class="side">ヒカリ　意味わかる？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201413_msg0018</td>
+        <td>84</td>
+        <td class="side">全っ然わからない</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201413_msg0019</td>
+        <td>84</td>
+        <td class="side">500年前でもああいうタイプには
+会ったことないもの[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201413_msg0020</td>
+        <td>84</td>
+        <td class="side">何ていうか　こう[ML:Dash ]
+生きている世界が違うわよね</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201413_msg0021</td>
+        <td>84</td>
+        <td class="side">ね[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

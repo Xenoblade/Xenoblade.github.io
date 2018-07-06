@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>kizunatalk070_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg001</td>
+        <td>84</td>
+        <td class="side">噢噢 真厉害
+真是壮观！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg002</td>
+        <td>84</td>
+        <td class="side">请看啊！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg003</td>
+        <td>84</td>
+        <td class="side">在这边的是兵员运输舰
+在那边的是驱逐舰</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg004</td>
+        <td>84</td>
+        <td class="side">纽兹 你看起来特别开心呢</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg005</td>
+        <td>84</td>
+        <td class="side">纽兹 你看起来特别开心呢</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg006</td>
+        <td>84</td>
+        <td class="side">纽兹
+你看起来特别开心呢</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg007</td>
+        <td>84</td>
+        <td class="side">纽兹 你看起来特别开心呢</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg008</td>
+        <td>84</td>
+        <td class="side">那是当然了</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg009</td>
+        <td>84</td>
+        <td class="side">毕竟斯佩比亚的
+最新战斗舰就在眼前啊</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg010</td>
+        <td>84</td>
+        <td class="side">怎么可能会不感动呢！</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg011</td>
+        <td>84</td>
+        <td class="side">啊！请看啊！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg012</td>
+        <td>84</td>
+        <td class="side">那把正在维护的
+是最新型的强袭登陆舰！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg013</td>
+        <td>84</td>
+        <td class="side">那边的是第二亲卫队
+第一军所属的舰艇啊</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg014</td>
+        <td>165</td>
+        <td class="side">要怎么搭话？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg015</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢战舰啊</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg016</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢斯佩比亚军啊</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg017</td>
+        <td>165</td>
+        <td class="side">要怎么搭话？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg018</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢战舰啊</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg019</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢斯佩比亚军啊</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg020</td>
+        <td>165</td>
+        <td class="side">要怎么搭话？</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg021</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢战舰这类啊</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg022</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢斯佩比亚的军队啊</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg023</td>
+        <td>165</td>
+        <td class="side">要怎么搭话？</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg024</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢战舰啊</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg025</td>
+        <td>164</td>
+        <td class="side">纽兹真的
+很喜欢斯佩比亚军啊</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg026</td>
+        <td>84</td>
+        <td class="side">这你就说错了！</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg027</td>
+        <td>84</td>
+        <td class="side">咦？
+[ML:Dash ]说错？</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg028</td>
+        <td>84</td>
+        <td class="side">咦？
+[ML:Dash ]说错了吗？</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg029</td>
+        <td>84</td>
+        <td class="side">怎么 说错了吗？</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg030</td>
+        <td>84</td>
+        <td class="side">什么啊 说错了吗？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg031</td>
+        <td>84</td>
+        <td class="side">大家
+经常都会搞错[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg032</td>
+        <td>84</td>
+        <td class="side">所谓战舰 只是种类众多的
+战斗舰中的其中一类[ML:Dash ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg033</td>
+        <td>84</td>
+        <td class="side">称之为战斗舰或军舰
+才比较合适</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg034</td>
+        <td>84</td>
+        <td class="side">战斗舰的种类大致分为
+驱逐舰 护卫舰 巡洋舰 战舰[ML:Dash ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg035</td>
+        <td>84</td>
+        <td class="side">另外 区别于这些 还有运输舰
+以及为特殊任务而存在的特务舰[ML:Dash ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg036</td>
+        <td>84</td>
+        <td class="side">再加上为适应各个任务
+由作为基底的巨神兽的大小
+性能 武器的不同[ML:Dash ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg038</td>
+        <td>84</td>
+        <td class="side">我明白了啦！</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg039</td>
+        <td>84</td>
+        <td class="side">你一次性对我说那么多
+我也不懂啦</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg040</td>
+        <td>84</td>
+        <td class="side">我明白了 我明白了！</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg041</td>
+        <td>84</td>
+        <td class="side">你一次性对我说那么多
+我也不懂</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg042</td>
+        <td>84</td>
+        <td class="side">已经够了</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg043</td>
+        <td>84</td>
+        <td class="side">抱歉 我失言了
+今后我会注意措辞的</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg044</td>
+        <td>84</td>
+        <td class="side">够了够了</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg045</td>
+        <td>84</td>
+        <td class="side">我已经十分明白了
+别那么喋喋不休的了</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg046</td>
+        <td>84</td>
+        <td class="side">是吗？
+接下来的内容才正要精彩起来呢[ML:Dash ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg047</td>
+        <td>84</td>
+        <td class="side">那么 接下去的内容
+就等下次有机会再慢慢道来！</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg048</td>
+        <td>84</td>
+        <td class="side">哇啊！</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg049</td>
+        <td>84</td>
+        <td class="side">那是亲卫队的特殊工作舰！
+没想到能在这里碰上！！</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg050</td>
+        <td>84</td>
+        <td class="side">来 御刃者大人
+加快脚步吧！</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg051</td>
+        <td>84</td>
+        <td class="side">…………</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg052</td>
+        <td>84</td>
+        <td class="side">当然了！</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg053</td>
+        <td>84</td>
+        <td class="side">毕竟斯佩比亚军
+是全世界最优秀的军队！</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg054</td>
+        <td>84</td>
+        <td class="side">和其他国家不同 斯佩比亚将军队的
+机能原封不动地当做国家制度[ML:Dash ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg055</td>
+        <td>84</td>
+        <td class="side">不仅致力于过去技术的研究解析
+还将那些技术加以独特改良[ML:Dash ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg056</td>
+        <td>84</td>
+        <td class="side">用于最先进的
+军事技术之中！</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg057</td>
+        <td>84</td>
+        <td class="side">顺带一提 英维迪亚的军队
+其战斗力依仗于佣兵[ML:Dash ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg058</td>
+        <td>84</td>
+        <td class="side">所以士兵的素质和武器的种类等
+都参差不齐
+很难说是平衡性优良的军队</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg059</td>
+        <td>84</td>
+        <td class="side">另外 斯佩比亚有着
+以梅勒芙大人为首的
+一大批优秀将军和指挥官[ML:Dash ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg061</td>
+        <td>84</td>
+        <td class="side">啊 我明白了！
+别说下去啦</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg062</td>
+        <td>84</td>
+        <td class="side">我再怎么厉害
+也记不住那么多啊</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg063</td>
+        <td>84</td>
+        <td class="side">我明白了！
+别说了</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg064</td>
+        <td>84</td>
+        <td class="side">你一次性说那么多
+我也记不住啊</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg065</td>
+        <td>84</td>
+        <td class="side">抱歉 已经够了
+通过刚才的说明我已经充分理解了</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg066</td>
+        <td>84</td>
+        <td class="side">明白了 明白了！
+别说了</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg067</td>
+        <td>84</td>
+        <td class="side">你一次性说那么多
+我也记不住啊</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg068</td>
+        <td>84</td>
+        <td class="side">不不 别这么说
+接下来才是关键呢</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg069</td>
+        <td>84</td>
+        <td class="side">接下来让我来说说
+各个指挥官的英雄事迹吧</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>kizunatalk070_msg070</td>
+        <td>84</td>
+        <td class="side">来吧 我要跟您
+一直介绍到天亮为止！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

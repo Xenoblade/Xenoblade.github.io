@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>bf01140100_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>bf01140100_0010</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ][ML:Dash ]？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>bf01140100_0020</td>
+        <td>82</td>
+        <td class="side">港にいた黒い船[ML:Dash ]
+ついてきてるのか[ML:Dash ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>bf01140100_0030</td>
+        <td>82</td>
+        <td class="side">何だよ　結構寒いな</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>bf01140100_0040</td>
+        <td>82</td>
+        <td class="side">お前[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>bf01140100_0050</td>
+        <td>82</td>
+        <td class="side">お前じゃない　ニアって名前がある</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>bf01140100_0060</td>
+        <td>82</td>
+        <td class="side">下で酒盛りが始まったんだよ
+ちょっと付き合え</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>bf01140100_0070</td>
+        <td>82</td>
+        <td class="side">ニアは酒が嫌いなのか？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>bf01140100_0080</td>
+        <td>82</td>
+        <td class="side">酒は嫌いじゃない
+けど酔っ払いは嫌いだ</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>bf01140100_0090</td>
+        <td>82</td>
+        <td class="side">ふぅん
+じゃあサルベージャーにはなれないな</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>bf01140100_0100</td>
+        <td>82</td>
+        <td class="side">何で？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>bf01140100_0110</td>
+        <td>82</td>
+        <td class="side">船には酔うな　酔うなら酒だ
+サルベージャーの合言葉みたいなもんだよ</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>bf01140100_0120</td>
+        <td>82</td>
+        <td class="side">くっだらない
+転職する気も起こらないよ</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>bf01140100_0130</td>
+        <td>82</td>
+        <td class="side">ま　そうだよな</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>bf01140100_0140</td>
+        <td>82</td>
+        <td class="side">ドライバーならサルベージャーなんかより
+もっと稼げるんだろ？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>bf01140100_0150</td>
+        <td>82</td>
+        <td class="side">アンタは[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>bf01140100_0160</td>
+        <td>82</td>
+        <td class="side">レックスでいいよ</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>bf01140100_0170</td>
+        <td>82</td>
+        <td class="side">[ML:Dash ]レックスは
+何でサルベージャーをやってるのさ？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>bf01140100_0180</td>
+        <td>82</td>
+        <td class="side">あれさ[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>bf01140100_0190</td>
+        <td>82</td>
+        <td class="side">世界樹[ML:Dash ]
+がどうかしたのか？</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>bf01140100_0200</td>
+        <td>82</td>
+        <td class="side">サルベージャーをやってるとさ
+いろんなものを拾うんだ</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>bf01140100_0210</td>
+        <td>82</td>
+        <td class="side">誰かが落としたもの　誰かが遺したもの[ML:Dash ]
+どれもが一度は死んだもの達[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>bf01140100_0220</td>
+        <td>82</td>
+        <td class="side">最近　[System:Ruby rt=アルス ]巨神獣[/System:Ruby]の数もめっきり減ったろ？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>bf01140100_0230</td>
+        <td>82</td>
+        <td class="side">この前も一体
+大型の[System:Ruby rt=アルス ]巨神獣[/System:Ruby]が沈んでいくのを見た</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>bf01140100_0240</td>
+        <td>82</td>
+        <td class="side">沢山の動物達を乗せたまま[ML:Dash ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>bf01140100_0250</td>
+        <td>82</td>
+        <td class="side">オレ達の暮らせる場所は
+どんどん減ってきている</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>bf01140100_0260</td>
+        <td>82</td>
+        <td class="side">オレ達もいずれ
+一度は死んだものになる</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>bf01140100_0270</td>
+        <td>82</td>
+        <td class="side">けど[ML:Dash ]
+あそこには楽園がある</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>bf01140100_0280</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ]ぷっ[ML:Dash ]　あははははははは</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>bf01140100_0290</td>
+        <td>82</td>
+        <td class="side">アンタ　マジで信じてるの？
+楽園伝説</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>bf01140100_0300</td>
+        <td>82</td>
+        <td class="side">あるわけないじゃんそんなもの
+アレはただのデッカイ樹だよ</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>bf01140100_0310</td>
+        <td>82</td>
+        <td class="side">[ML:Dash ]で　サルベージャーってわけ？</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>bf01140100_0320</td>
+        <td>82</td>
+        <td class="side">あそこに行ける道具か何かが
+見つかるかもしれないだろ？</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>bf01140100_0330</td>
+        <td>82</td>
+        <td class="side">いいじゃないか別に</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>bf01140100_0340</td>
+        <td>82</td>
+        <td class="side">でもさ[ML:Dash ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>bf01140100_0350</td>
+        <td>82</td>
+        <td class="side">数少ない[System:Ruby rt=アルス ]巨神獣[/System:Ruby]や資源を奪い合う必要もない</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>bf01140100_0360</td>
+        <td>82</td>
+        <td class="side">大地が沈む不安に怯える必要もない</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>bf01140100_0370</td>
+        <td>82</td>
+        <td class="side">皆が安心して暮らせる場所</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>bf01140100_0380</td>
+        <td>82</td>
+        <td class="side">そんな場所があるって
+夢見ちゃいけないのかよ？</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>bf01140100_0390</td>
+        <td>82</td>
+        <td class="side">別に夢見るのは勝手だけど[ML:Dash ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>bf01140100_0400</td>
+        <td>82</td>
+        <td class="side">へぇ　皆がねぇ[ML:Dash ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>bf01140100_0410</td>
+        <td>82</td>
+        <td class="side">何だよ？</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>bf01140100_0420</td>
+        <td>82</td>
+        <td class="side">人間ってのはもっと自分勝手な
+生きものだと思ってたけど　ね</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>bf01140100_0430</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ]？</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>bf01140100_0440</td>
+        <td>82</td>
+        <td class="side">レックス　親は？</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>bf01140100_0450</td>
+        <td>82</td>
+        <td class="side">いない</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>bf01140100_0460</td>
+        <td>82</td>
+        <td class="side">オレが小さい時に死んだって
+じっちゃん達から聞いた</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>bf01140100_0470</td>
+        <td>82</td>
+        <td class="side">じっちゃんって
+アーツを教えてくれたっていう？</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>bf01140100_0480</td>
+        <td>82</td>
+        <td class="side">ああ　オレをずっと育ててくれた</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>bf01140100_0490</td>
+        <td>82</td>
+        <td class="side">人間じゃないけどね</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>bf01140100_0500</td>
+        <td>82</td>
+        <td class="side">人間じゃない[ML:Dash ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>bf01140100_0510</td>
+        <td>82</td>
+        <td class="side">何だかよくわかんないけど
+そのじっちゃんとかに感謝しな</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>bf01140100_0520</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ]え？</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>bf01140100_0530</td>
+        <td>82</td>
+        <td class="side">アンタ　悪かないよ</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>bf01140100_0540</td>
+        <td>82</td>
+        <td class="side">アタシと一緒だな[ML:Dash ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>bf01140100_0550</td>
+        <td>82</td>
+        <td class="side">[ML:undisp ][ML:Dash ]？</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

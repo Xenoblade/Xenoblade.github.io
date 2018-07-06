@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tlk501804_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst501804_msg0001</td>
+        <td>84</td>
+        <td class="side">あなたがシキさんですね？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst501804_msg0002</td>
+        <td>84</td>
+        <td class="side">そうだよ
+あなたがモルスの古文書を
+届けにきてくれた人？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst501804_msg0003</td>
+        <td>84</td>
+        <td class="side">いえ[ML:Dash ]
+私は所有者だったんです</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst501804_msg0004</td>
+        <td>84</td>
+        <td class="side">おおー！！
+直接持ってきてくれたんだね？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst501804_msg0005</td>
+        <td>84</td>
+        <td class="side">すみません[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst501804_msg0006</td>
+        <td>84</td>
+        <td class="side">あの[ML:Dash ]
+スペルビアから搬送中に
+なくしてしまいました</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst501804_msg0007</td>
+        <td>84</td>
+        <td class="side">へ？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst501804_msg0008</td>
+        <td>84</td>
+        <td class="side">正確にはなくしたのではなく
+輸送船ごと雲海の藻屑と消えました</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst501804_msg0009</td>
+        <td>84</td>
+        <td class="side">何てことだ！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst501804_msg0010</td>
+        <td>84</td>
+        <td class="side">シキさんから手紙をいただいて
+すぐにでもアヴァリティアに届けようと考え
+運び屋に依頼したのですが[ML:Dash ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst501804_msg0011</td>
+        <td>84</td>
+        <td class="side">それがモンスターに襲われたりして
+沈没してしまったと[ML:Dash ]？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst501804_msg0012</td>
+        <td>84</td>
+        <td class="side">ええ[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst501804_msg0013</td>
+        <td>84</td>
+        <td class="side">あれ程熱心に手紙をいただいて
+楽しみになさっていたのに
+申しわけないと思って　直接謝罪に[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst501804_msg0014</td>
+        <td>84</td>
+        <td class="side">いやいや[ML:Dash ]
+悪いのはモンスターか運び屋だから</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst501804_msg0015</td>
+        <td>84</td>
+        <td class="side">あなたの気持ちだけでも
+ボクは十分に嬉しいよ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst501804_msg0016</td>
+        <td>84</td>
+        <td class="side">でも　シキさんの研究は
+進まなくなってしまうのでは[ML:Dash ]？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst501804_msg0017</td>
+        <td>84</td>
+        <td class="side">大丈夫！
+優秀なサルベージャーを
+一人知ってるからね！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst501804_msg0018</td>
+        <td>84</td>
+        <td class="side">船はどこで沈没したかわかる？</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst501804_msg0019</td>
+        <td>84</td>
+        <td class="side">グーラのウモンの造船所周辺と
+聞いてます</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst501804_msg0020</td>
+        <td>84</td>
+        <td class="side">よしよし
+場所さえわかればこっちのもんだよ</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst501804_msg0021</td>
+        <td>84</td>
+        <td class="side">テルエスさん
+ありがとう！</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst501804_msg0022</td>
+        <td>84</td>
+        <td class="side">いえ[ML:Dash ]
+シキさんのお役にたてる可能性が
+まだ残ってるみたいで良かったです[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5791 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>fld_quest_mercenaries</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">積み下ろしの手伝い</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアから届いた荷物の量が
+予定よりも多く　作業が遅れている
+力自慢のブレイドに力を借りたい</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">クレーンの修理</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">港のサルベージ用クレーンが壊れて　
+作業ができなくなってしまい　
+修理の人員が足りなくなってしまった
+手伝いを頼めないか</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">サルベージ中の安全確保</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近サルベージ中にモンスターに
+襲われる事件が多く
+サルベージャーがおびえている
+作業中の安全確保と護衛をお願いしたい</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ノポン特製野菜炒め</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">子供達の大好きな料理があるから
+いっぱい食べさせてあげたいけど
+火力が足りないも！
+火を強くするのを手伝って欲しいも！</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">食堂のアルバイト</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">大人数の予約が入ったので
+臨時スタッフを探しているが
+ウェイトレスが見つからない[ML:Dash ]
+誰か適役はいないだろうか</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">港のシース退治</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">商船の貨物庫にシースが
+侵入してきたため出港できず
+商談にも影響が出ている
+急いで退治して欲しい</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">座礁した商船の救出</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">商船が航行中に座礁してしまった
+船は救出できたがあちこち壊れて困っている
+傭兵団から修理スタッフを派遣して欲しい</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">違法船の調査</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">商会からの許可なしで勝手に商売をしている
+商船があって周りも迷惑しているも！
+とっちめてきて欲しいも！</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">大損害の回避</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">大切な商談の書類を無くして
+このままでは大損害だも！
+荷物の中から見つけだして欲しいも！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">金　カネ　かね</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">シホン島にあるシホの花のミツは
+若返りするって聞いたも！
+手に入れてもうけたいも！
+よく取れる場所を調べても！</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">飛び回るモンスター</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">積荷の果物を狙ってシガルが
+甲板に集まってきてしまった
+素早い相手に対応できるブレイドはいないか</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">大漁の予感だもー！！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ベーチング雲海で魚が増えているも！
+たくさんの魚を釣り上げてうまうま料理で
+ひともうけするも！</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">クレーンを守れ</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">サルベージ用クレーンが雲海に住む大物
+ロドンに引っかかってしまったも！
+クレーンが壊れる前に討伐して欲しいも</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ノポン新聞</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">新聞のネタに困ってるも[ML:Dash ]
+うわさ好きな人から
+流行やうわさ話を調査してきても！
+とびきり面白いネタを待っているも！</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">甲板の見張り</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">甲板の見張り勤務時間が増えて
+息子に寂しい思いをさせている
+息子と遊びたいので少しの間交代して欲しい</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">沈没船の調査</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">航行中に見つかった沈没船から
+お宝と冒険の気配がするんだも！
+傭兵さんに探索してきて欲しいんだも！</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">大型商船護衛任務</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ノポンにとって欠かせない物を運んでいる
+ンモモ商会の船を護衛して欲しいも
+近辺は雷に弱いエネミーが多いらしいも</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ゴチソウを作るんだも！</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">家族が久々に旅から帰ってくるから
+ゴチソウたくさん作りたいけど
+そんなには作れないも[ML:Dash ]
+誰か手伝っても！</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">深海に潜む魔物</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">夜になると　商船が
+深海の強力なモンスターに
+海へ引きずり込まれる事件が起きている
+傭兵団に討伐をお願いしたい</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">人命救助</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">サルベージ用クレーンのワイヤーに
+人が巻き込まれてしまい　危険な状況だ！
+一刻も早く救出活動を開始しなくては！</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">木材の加工</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">木材加工場で相方であるきこりのエゴルが
+けがをしてしまった
+木材を切る手伝いをしてもらえないか？</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">絵のモデル</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラの木々と風をテーマに
+絵を描くためのモデルを探しているんだ
+スケッチをさせてもらえないだろうか</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">土砂崩れ対策</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ブラッカの街で連日雨が降っているらしい
+雨はありがたいが
+山崩れや水害が不安なので
+調査に同行する傭兵を探している</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">収穫の手伝い</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">豊作で収穫が追いつかず困っているも
+このままでは
+大事な果物の品質が落ちてしまうので
+収穫の手伝いを頼みたいも</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">畑を荒らす魔物</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近夜になると農作物を食い荒らす
+バニットが現れて困っているんだ
+退治してもらえないだろうか</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">マンホンジュースの運搬</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">マンホンジュースを
+ポムの村まで運びたいのだが
+最近は物騒なので傭兵団に護衛を頼みたい</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">木材の収集</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビア帝国議員からの特注家具に必要な
+白藍の森深くの特別な木を手に入れたい
+傭兵団に採取をお願いしたい</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">アルマの捕獲</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ポムの村へ出荷した運搬用アルマ1頭が
+途中で逃げ出して迷子になってしまった
+モンスターに襲われる前に捕まえて
+村へ届けて欲しい</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">肝試し</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">イアール湖へ肝試しに行くことになったの
+怖くはないけど
+キツネのような鋭い感覚があると便利なので
+付いてきてもいいのよ！</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">山火事を防げ！</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">白藍の森に雷が落ちたようだ
+森林火災になると大変なので状況を調べたい
+急な話だが森まで警護を頼む</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">遭難者の救出</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ラザンナ村からトリゴの街への道中で
+崖から落ちてしまい
+けがで身動きできない商人がいる
+救出と手当を頼めないか</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">グーラの秘境</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラ領のどこかにあると言われている
+秘境を死ぬ前に一度見たいが
+私は戦闘ができない[ML:Dash ]
+プロの護衛を頼みたい</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">神聖な場所を守れ</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">キザス渓谷にある儀式の聖地に
+最近不審者が立ち入っていて
+聖地を汚されるのが心配です[ML:Dash ]
+傭兵団に討伐をお願いしたいです</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">フォネクス用心棒</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フォネクスは草食動物で弱いだロ？
+ほかの集落へ移動する時に
+よくサウラーに襲われるから
+護衛してくれヨ</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">模擬演習訓練</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近怠けている兵が多く困っているので
+模擬演習の相手になって欲しい
+遠慮や手加減はいらないのでよろしく頼む</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">指名手配犯の捕縛</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">果物の名所ポムの村で果物泥棒が多発中だ
+トリゴの街でも作物に被害が出る可能性が
+あるので捜査に協力して欲しい</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">反乱分子の粛清</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラのどこかで反帝国組織が取引すると
+情報が入ったので未然に首謀者を捕まえたい
+戦闘の可能性も考えて準備を頼む</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ワイン輸送</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ポムの村から
+名産のワインをブラッカの街へ運びたいが
+モンスターの襲撃が心配だ[ML:Dash ]
+ワインと輸送団を守ってくれ</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">幻の果実</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラ高地にあると言われる
+万病に効く果実は
+さまざまな病気の特効薬として期待できる
+樹を傷つけずに採取してきてくれ</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">水が怪しい</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">今までの水と比べて味や臭いが変だし
+飲んで体調を崩す者も出てきている
+至急シノーホの森にある川の
+上流の調査を頼みたい</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">漂着物調査</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨神獣が飲み込んだ漂着物が
+口内洞窟にたまっている
+危険物がないか調査を頼む
+何かあっても手をつけずに報告してくれ</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">遺失物捜索隊</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">旅行中の落とし物を捜索する任務を始めたの
+でも　評判が良く問い合わせが
+殺到してしまって追いつかなくて[ML:Dash ]
+臨時で手伝ってもらえないだろうか</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">雷轟のジーク？討伐</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">雷属性のブレイドを連れ　眼帯をした
+イグーナを怒らせてしまったも！
+覇王の心眼で村が壊される前に退治するも！</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">美しい真珠</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フォンス・マイムでは真珠の飾りを恋人へ
+贈るのが流行らしく
+女性の意見を聞きたい
+贈り物を一緒に選んでくれないか？</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">イグーナ調査隊</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近イグーナの数が増えたらしく
+ディナル街道での出没数も倍増しているので
+討伐を検討したい
+腕の立つ傭兵が欲しい</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">無許可の採掘者</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">トプルェア鉱石の急騰で無許可採掘者が増え
+王都からも監視強化の要請がきた
+定期の見回りを頼む</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">貯蔵庫の整理</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">食糧貯蔵庫にある物資の整理をしたい
+幸い保存食が大量に確保できたので
+古くなった物資の処分に協力を頼めないか？</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">泉のヌシ</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨大な魚を子供達が見かけたらしい
+どこの傭兵が先に釣り上げるか釣り勝負だ！</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">日々修練</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">傭兵は体を鍛え技術を学ぶことが必要だ
+よその傭兵団との手合せは
+良い経験になるので真剣勝負をして欲しい</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨大な蟹を討て！</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フォンス・マイム南にあるマナンティアルで
+巨大化したシュリブが暴れている
+退治を傭兵に頼みたい</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">物資運搬</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">軍港で大量の荷物運搬があるそうだ
+商業倉庫の人手不足で
+港の積み荷運搬が滞っているため
+整理を手伝って欲しい</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">絵の具の材料</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ラゲルト女王の肖像画を依頼されたのだが
+絵の具の顔料が尽きてしまった
+トリコロ岩を大量に集めてきてもらいたい</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">水質調査依頼</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近水に泥水が混じるようになったが水路の
+どこに原因があるか判断できない
+私は内側の水路を調べるので外側を頼みたい</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">素晴らしい舞台</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアを巡回中のルメリア劇団が
+カニナの街にきたが
+劇場側の準備が遅れている
+準備の手伝いを頼めないだろうか？</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">街道整備</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">マナンティアルまでをつなぐオンダ街道橋で
+突風が発生し道や柵が破損した
+資材はあるが人手不足なので協力して欲しい</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">七色に輝く貝</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアでは貝や甲羅から削り出した
+食器が多く作られているんだ
+しかも素材が綺麗なほど価値が高い
+一級品の食器を調達してきてほしい</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">希少品の修理</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">サルベージでしか入手できない計器が
+故障してしまったが
+ここではパーツも高価なので再利用したい
+修理が得意なブレイドはいないか？</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">幻の稲穂</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアでは稲作が主流で
+研究も盛んだが
+フォンス・マイムは研究が停滞中だ
+植物に詳しいブレイドを派遣して欲しい</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">前線砦の救援</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヴォルダ砦にイグーナの軍勢が
+攻め込もうとしているも！
+このままだとインヴィディア兵が全滅するも
+傭兵団に協力を仰ぎたいも！</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">水源の安全確保</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">マナンティアルの水源付近で
+グロッグが大増殖し
+飲み水不足などが発生しかねない
+傭兵団に退治をお願いしたい</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">調理用の香辛料</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">肉の匂いを消す香辛料が不足している
+原料の果物が群生している
+ハンザック荒野はモンスターが多いので
+代わりに採ってきてくれないか</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">愛情たっぷりのお弁当</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">第二採掘場で働く父親のために
+お弁当を作ったけど
+道中でモンスターが出てきたらどうしよう
+採掘場まで連れていってくれよ！</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨神獣兵器を守れ</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨神獣兵器の負担になるパラスが
+大量発生している
+ビビル草を焚けば大丈夫だそうだ
+現地で試してみてくれ</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">女性要人警護</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">重要会議で各国からアルバ・マーゲンに
+要人が集結する
+工業都市ウクリイェの女性要人に
+女性ボディーガードを派遣してくれ</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">害獣討伐！</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">店の食材用に作物を収穫しにいったら
+モンスターに食い荒らされていた
+貴重な作物が駄目になる前に討伐して欲しい</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ゴンドラの点検作業</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">物資を運ぶゴンドラの
+点検作業を頼まれたんだが
+高い所が苦手なんだ[ML:Dash ]
+代わりに行ってくれる人を探している</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ノポンレター</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">いーっぱい手紙が届いたけど多すぎて
+一人じゃウクリイェまで運べないも[ML:Dash ]
+信用に関わるので
+一緒に手紙を運んで欲しいも！</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">骨董品の目利き</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">物資を運んでいる際に　不手際で
+本物の骨董品と贋作が混ざってしまった
+骨董品を目利きして探し出して欲しい</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">燃やされた手配書</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">反帝国組織の手配書が燃やされたそうだが
+反帝国組織関係者の犯行という可能性もある
+重大な反逆行為なので調査を頼みたい</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">発掘作業用の機械</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">メンテナンスを考えていた矢先に
+発掘現場の機械が壊れて
+大幅な遅れが出てしまった
+急ぎ作業員を数名派遣してもらいたい</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨神獣の調査依頼</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアにいる巨神獣の寿命について
+研究者が大規模な調査を行う予定だ
+護衛強化のため優秀な人材を派遣してくれ</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">メレフに憧れて</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">メレフ様のようなドライバーに憧れてます！
+カグツチ様のように強いブレイドを
+使いこなしたいので稽古してください！</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">不法投棄の業者</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">工業都市ウクリイェでは
+スクラップの再生利用を進めたいのだが
+雲海に不法投棄をする業者が後を絶たない
+業者の摘発に協力して欲しい</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">希少パーツの入手</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">採掘現場のエーテルボイラーが破損した
+ボイラーに必要な特殊パーツの入手を
+ベテランのサルべージャーにお願いしたい</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">街の見回り</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">強盗事件で街の人達が不安を感じている
+犯人は不明だが
+同じような事件が起きないように
+巡回して警備を強化してくれ</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">科学の発展に協力</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">今関わっている研究を
+急ピッチで進めるためには
+現地研究員からの最新情報が必要です
+至急集めてきてください</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ひえひえだもー</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ももももも！！
+暑すぎて倒れてしまいそうだも！
+いっそ自分を凍らせて身体全部を冷やして
+欲しいも！</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">密売業者の捕縛</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">武器密売組織について匿名での通報があった
+傭兵団にも協力を頼みたいので
+組織のメンバーを見つけたら
+すぐに捕縛して欲しい</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヴォルフのいたずら</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">夜の間にコンテナがヴォルフに襲われて
+フタもカギも壊れてしまった
+数も多いし　早めに修復したい
+誰か手伝ってくれないだろうか</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お化けなんか怖くない</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">裏通りで毎夜泣き声が聞こえる[ML:Dash ]
+長い髪の女性の影を見かけたという噂も[ML:Dash ]
+もしかして幽霊[ML:Dash ]
+怖いので調査してきて[ML:Dash ]</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お墓の花</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">村のお墓に供える花として
+ロナリア小島にのみ生えている
+青い花を使いたいんだ
+少し摘んできてもらえないだろうか</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">幻の巨大魚</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">珍味とうわさの幻の巨大魚が
+バルドタス島で発見された！
+釣り上げて食べてみたいけど巨大すぎて
+一人で釣るのは難しいから協力して欲しい！</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">子供の忘れ物</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">村の子供達が大人に内緒で行った
+ポロロン湖で忘れ物をしてきたらしい
+子供達に行かせるのは危険なので
+かわりに探してきて欲しい</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">畑の害虫駆除</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">畑を害虫から守るためにモンスターの体液と
+特殊な果物で防虫剤を作りたい
+自分は果物を採取するので
+体液の採取を頼めないか</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">タミンビの根盗難事件</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">薬として重宝されているタミンビの根が
+数本畑から盗まれていた
+イタズラなら注意するのが大人の務め！</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ムシムシ博士</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">昆虫標本を作りたいけど目的の虫が
+見つからなくて困っているんだ
+昆虫に詳しい人が一緒に来てくれないかなぁ</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">パラスの駆除</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">イヤサキ村の水源にパラスが湧いてきた
+水源の安全確保のために退治してもらいたい</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">開けられない収穫</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">僕達サルベージをやってみたんだ！！
+宝箱を見つけたけど
+どうやっても開かないんだ[ML:Dash ]
+誰か開けてくれないかなぁ[ML:Dash ]</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">カマクラ貝を守れ</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">カマクラ貝はリベラリタス特有の
+希少生物なので
+無法者達に乱獲されています
+乱獲を止めるよう業者を説得してください</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">廃船の解体</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">港に廃船が流れ着いたが
+夫達だけでは大きすぎて手がつけられない
+どうにかして解体したいので人手が欲しい</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">思い出のブレスレット</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">畑でクロードに襲われた時
+ばあさまの形見のブレスレットを
+持ち去られてのぉ[ML:Dash ]
+何とかして取り戻して欲しいのじゃ！</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">レックスの様子</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コルレルおばさんがレックスの様子を
+知りたがっているらしい
+レックスの様子を報告してきてくれないか</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">生物調査結果の輸送</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアから雲海の生物調査に来たら
+小型生物が肥大化していることがわかった
+報告書を本国の教授に届けてくれないか？</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">不審な船舶</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">港のないレカージ島に
+不審船が出入りしている[ML:Dash ]
+反帝国組織の拠点という可能性もある
+軍総出で調査するので傭兵団も協力を頼む！</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ドリングワーム討伐</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">キサラ村があるエミ島で巨大な
+ドリングワームが大地を食い破っている
+過去には島が雲海へ沈んだこともあるので
+駆除を頼みたい</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤシマ祭</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">夜になると巨神獣の輝きが美しい
+ヤシマ高地で定期的に行っているヤシマ祭の
+準備が遅れてしまっています
+準備を手伝ってもらえませんか？</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">エネルギー調査</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨神獣の雷エネルギーを利用できないか
+研究員が調査にくるため
+傭兵団に同行を頼みたい
+比較的安全な地域だが油断はできないんだ</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">深夜の訪問者</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">深夜にイヤサキ村から少し離れた物陰で
+幾つも人のような怪しい影を見た！
+原因がわかるまで村全体の警護を頼む！</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">エルピス霊洞の調査</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">危険な場所だとわかっているが
+エルピス霊洞の調査がしたい
+安全が確保できる場所まで護衛を頼めないか</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">雲海の怪音</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルド雲海道で奇妙な演奏が聞こえました
+モンスターの鳴き声かもしれませんが
+こんなことは今までなかったので
+張り込んで調査をお願いします</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">エーテル炉の点検</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">王都テオスアウレで重要なエーテル炉の
+定期点検で人手不足が深刻だ
+壊れると困るので傭兵団の手を借りたい</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">子供達の防寒具</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">子供達のために暖かい防寒具を
+フレッシュ・ムースの毛皮で作りたい
+数匹倒して毛皮を持ってきてくれない？</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">除雪作業</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">街の中はドーム状の屋根で覆われているが
+外の橋には多くの雪が積もり
+通行者の妨げになっている
+体力自慢に除雪を手伝ってもらいたい</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルクスリアの外へ</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ノポン商会から定期輸入している物資の
+契約更新でナルドロン商会に向かう
+国外へ出るため傭兵に護衛を頼みたい</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">温かいルーシチ</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">身体が温まる肉入りルーシチを作りたいが
+材料のウルスは
+子育て期間中で凶暴になっている
+その点に注意しつつ狩りをお願いしたい！</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">雪の華</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ナラリア雪原にある結晶のような花は
+テオスアウレで煎じ薬として使用されている
+在庫が切れたので摘んできてくれないか</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">肉食獣の調査</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">イセベル岸壁にあるゴゴールの巣を
+ルクスリア軍が安全のため調査している
+ゴゴールは獰猛なので力を借りたい</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">新しい本が読みたいの！</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">読書が好きで毎日読んでいるのだけど
+フィルソフィ大図書館にある小説を
+読みつくしてしまいそうなの[ML:Dash ]
+何か新しい小説を探してきてもらえない？</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">豪雪地帯の調査</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">侵入を拒む程の
+豪雪地帯であるネヨーカ雪原で
+雪が解け始めているという噂があります
+観測をして原因究明を頼みます</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">寒さに強い作物</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルクスリア王国では
+寒さでなかなか作物が育たないので
+寒さに強い作物の種が欲しい
+食料を得るために探してきてもらいたい</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">軍事訓練</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">王都テオスアウレでは
+定期的に軍事訓練を行っている
+傭兵団の訓練に興味があるので
+合同訓練の機会を設けてもらえないか</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">闇市の調査</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">他国との違法取引商品を扱う店があるらしい
+大々的にやると隠蔽工作の恐れもあるので
+傭兵団の力を借り秘密裏に捜査を進めたい</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">グンデス岩塩窟の塩</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">国内の塩の大半をまかなう
+グンデス岩塩窟近辺に
+ディブロが住み着いてしまった
+被害が出る前に追い払ってくれないか</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">積雪調査依頼</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ナレル断崖の積雪量を調べたいが
+危険な山道が続くうえ
+モンスターも多く危険なので
+護衛を頼めないか</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">揺れる氷柱</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コルト渓谷には巨大な氷柱が多く
+過去に何度か崩落してけが人が出たので
+被害が出る前に排除したいです
+協力を頼みます</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">極秘資料</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">極秘に開発を進めていたボードゲームの
+企画書が盗まれたも　情報を売られる前に
+犯人を検挙してもらうようにして欲しいも！</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">本の執筆のために</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スランプで本に書くネタが思い浮かばない！
+刺激的な体験をすればひらめく可能性が
+あるので冒険に連れていってくれないか？</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">本の中の世界</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">いつか鎖国が解ける日がくると夢見てた
+のですが実際にその機会がくると怖くて[ML:Dash ]
+誰か外の世界の話を聞かせてくれませんか？</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">氷雪の狩人</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ノブ山脈中腹で訓練していた小隊が
+ヴォルフの狩場に入り込み
+怪我人が出てしまった
+傭兵団にも救助隊への参加を頼みたい</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">謎の巨大生物</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルクスリアでは存在が確認されてなかった
+モンスターがグンデス岩塩窟で発見された
+生態系に影響が出る前に退治してもらいたい</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">待望の新作</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ノポンの大作家ピピンの小説が
+グーラへ輸出され　グーラからは懐かしの
+蜜豆おはぎなどが輸入される
+安全に商品を輸送するため　護衛を頼む</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">料理の発展</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディア産の調味料は料理に旨味を
+増すので人気商品になるはず！
+他店より早く契約して交易を開始したい！</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">新しい音色</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアの一部に古くから伝わる
+楽器をこちらの商品に加えたい
+目的地は治安が悪いので護衛を頼みたい</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">鮮度が第一！</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタス地方から
+新鮮な魚やコスメを輸入したいが
+航路にはモンスターが多い
+退治して安全な交易路を確保して欲しい</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">古の航路</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">長く交流がなかったルクスリアと
+貿易を再開したいが航路情報が古く
+安全が確保できていない
+まずは調査団を作って航路を調べたい</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">縄張り争いから護衛</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">目的の航路上で
+サルベージャー同士の縄張り争いに
+巻き込まれてしまう事件が起きている
+万が一のため護衛を頼みたい</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ラドン一家</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアとグーラを結ぶ航路に
+ラドン一家なる空賊が現れ船を襲っている！
+危険なので護衛を頼みたい</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">評判の生産品</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタス地方の生産品は手の込んだ
+仕上がりで評判も上々なので大量輸入したい
+護衛の数が足りないので力を貸してくれ</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">水の都のフォンス・マイム</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディア烈王国の
+フォンス・マイムから行商人が来ている
+画伯の絵画や匠の楽器などを卸してくれる
+よう交渉して欲しい</td>
+      </tr>
+      <tr id="259">
+        <td>259</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">農業技術交流</td>
+      </tr>
+      <tr id="260">
+        <td>260</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルクスリアから薬の原料になる果実や肉類
+コスメをセットで輸入できることになった
+現地で品質調査をする際の護衛を頼めないか</td>
+      </tr>
+      <tr id="261">
+        <td>261</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">流行りを取り込め</td>
+      </tr>
+      <tr id="262">
+        <td>262</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアには女性に大人気の
+スイーツや評判の健康料理があるそうだ
+輸入したいので経路を調べてくれないか</td>
+      </tr>
+      <tr id="263">
+        <td>263</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">五穀豊穣</td>
+      </tr>
+      <tr id="264">
+        <td>264</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">トリゴの街が豊作らしい
+グーラの食文化を学び作物や書物を
+定期買い付けする交渉をしたいので
+道中の護衛を頼む</td>
+      </tr>
+      <tr id="265">
+        <td>265</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">航路を塞ぐ障害物</td>
+      </tr>
+      <tr id="266">
+        <td>266</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタス地方への航路には
+モンスターの襲撃で
+難破した商船が幾つもある
+障害物になるので撤去を手伝ってくれないか</td>
+      </tr>
+      <tr id="267">
+        <td>267</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">秘密の抜け道</td>
+      </tr>
+      <tr id="268">
+        <td>268</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルクスリアと裏ルートで取引している
+ノポン商人を介して
+食料や書物の輸入を始めたい
+パイプ役であるノポン商人の護衛を頼む</td>
+      </tr>
+      <tr id="269">
+        <td>269</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">雲海に潜む陰</td>
+      </tr>
+      <tr id="270">
+        <td>270</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアとの交易を少しずつ再開したい
+まずは美術品や食料から始めたいので
+向こうに同じ考えの者がいるか調べて欲しい</td>
+      </tr>
+      <tr id="271">
+        <td>271</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">秘伝のスパイス</td>
+      </tr>
+      <tr id="272">
+        <td>272</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">旅行で訪れたトリゴの街の
+料理と音楽が忘れられないんだ[ML:Dash ]
+こうなったら現地へ学びにいくしかない！
+トリゴの街まで同行してくれ</td>
+      </tr>
+      <tr id="273">
+        <td>273</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">造船所の警護</td>
+      </tr>
+      <tr id="274">
+        <td>274</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアとの交易用に船を作りたいが
+造船所付近にモンスターが大量発生した
+このままでは作業できないので討伐してくれ</td>
+      </tr>
+      <tr id="275">
+        <td>275</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">航路の安全確保</td>
+      </tr>
+      <tr id="276">
+        <td>276</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタス地方の航路にレクソスが
+出現してしまい困っている
+美術品を安全に運ぶために退治して欲しい</td>
+      </tr>
+      <tr id="277">
+        <td>277</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">白くて冷たいもの</td>
+      </tr>
+      <tr id="278">
+        <td>278</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">交易でルクスリアにいる船員達が
+寒さで体調を崩してしまったので
+暖かいコートを支給したい
+コートに必要な素材集めを頼めないか</td>
+      </tr>
+      <tr id="279">
+        <td>279</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">冷たい倉庫</td>
+      </tr>
+      <tr id="280">
+        <td>280</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアから魚やスイーツの材料を
+輸入したいのだが
+スペルビアの気候で傷まないか心配している
+傷まないようにするための知恵を借りたい</td>
+      </tr>
+      <tr id="281">
+        <td>281</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ノポン式調理術</td>
+      </tr>
+      <tr id="282">
+        <td>282</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">今まで不明だった食材の調理法を
+アヴァリティアに住むノポンが
+知っているそうなので調査をして欲しい
+ほかにも独自技術がありそうだ</td>
+      </tr>
+      <tr id="283">
+        <td>283</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">交易用の船</td>
+      </tr>
+      <tr id="284">
+        <td>284</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアとの交易用に準備していた船が
+ターキン達のイタズラで故障したそうだ
+追い払ってくれないだろうか</td>
+      </tr>
+      <tr id="285">
+        <td>285</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">航路の明かり</td>
+      </tr>
+      <tr id="286">
+        <td>286</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアへの航路が暗いので船に
+新たな照明設備を付けることになった
+高所の力仕事なので手伝って欲しい</td>
+      </tr>
+      <tr id="287">
+        <td>287</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">荷馬車の警護</td>
+      </tr>
+      <tr id="288">
+        <td>288</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ポムの村は果実飲料や
+工芸品の生産が盛んなので
+イヤサキ村でも生産可能か視察したい
+道中の盗賊が怖いので護衛を頼めないか？</td>
+      </tr>
+      <tr id="289">
+        <td>289</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">倉庫に潜む恐怖</td>
+      </tr>
+      <tr id="290">
+        <td>290</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ルクスリアとの交易用保管庫として
+利用する予定だった空き倉庫に
+モンスターが住み着いてしまった
+皆さんに退治をお願いできませんか？</td>
+      </tr>
+      <tr id="291">
+        <td>291</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">凍りついた扉</td>
+      </tr>
+      <tr id="292">
+        <td>292</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">過去に交易で使っていたと思われる港跡が
+あるが扉が凍りついて中を整備できない
+氷を溶かすのに力を貸してもらいたい</td>
+      </tr>
+      <tr id="293">
+        <td>293</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">天気に負けない丈夫な船</td>
+      </tr>
+      <tr id="294">
+        <td>294</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタス地方との交易船を強化したい
+強化材用鉱石の採取地を占拠している
+大型のエクスを倒してくれないか</td>
+      </tr>
+      <tr id="295">
+        <td>295</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">美食研究家</td>
+      </tr>
+      <tr id="296">
+        <td>296</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フォンス・マイムはレストランが多いので
+食べ歩いて料理の開発に活かしたい！
+誰か案内をしてもらえないだろうか</td>
+      </tr>
+      <tr id="297">
+        <td>297</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">暑さ対策</td>
+      </tr>
+      <tr id="298">
+        <td>298</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアと交易したいが
+巨神獣の寿命の関係で暑いらしく
+気温差で体調を崩す者が出ないか心配だ
+暑さ対策の手伝いを頼む</td>
+      </tr>
+      <tr id="299">
+        <td>299</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">新しい技術</td>
+      </tr>
+      <tr id="300">
+        <td>300</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラは染色技術が高いらしい
+ルクスリアの織物と組み合わせて
+新たな商品を開発したい
+職人を捜してきてほしい</td>
+      </tr>
+      <tr id="301">
+        <td>301</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">流行に乗ろう</td>
+      </tr>
+      <tr id="302">
+        <td>302</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアで流行っている
+楽器があるらしい
+フォンス・マイムでも販売したいので
+取引してくれる商人を捜してきて欲しい</td>
+      </tr>
+      <tr id="303">
+        <td>303</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">アカツキの行方を追え</td>
+      </tr>
+      <tr id="304">
+        <td>304</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ストールの協力を得られなくなってしまった
+独自にアカツキの行方の手がかりを探そう</td>
+      </tr>
+      <tr id="305">
+        <td>305</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨神獣兵器の輸送</td>
+      </tr>
+      <tr id="306">
+        <td>306</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">港湾都市チルソナスに神獣兵器を
+輸送するための人員が必要になった。
+輸送に長けた傭兵を数人派遣してもらいたい</td>
+      </tr>
+      <tr id="307">
+        <td>307</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">息子の手がかりを追え！</td>
+      </tr>
+      <tr id="308">
+        <td>308</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">息子のソララが未だに帰ってこないも
+何か手がかりになるものを
+探してきて欲しいも[ML:Dash ]</td>
+      </tr>
+      <tr id="309">
+        <td>309</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ももっ！？
+ソララの居場所わかったも？</td>
+      </tr>
+      <tr id="310">
+        <td>310</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">考古学者の密入国</td>
+      </tr>
+      <tr id="311">
+        <td>311</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ハサーヌをインヴィディアに
+密入国させるため
+護衛と案内役を同行させよう</td>
+      </tr>
+      <tr id="312">
+        <td>312</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ここがインヴィディア！
+さっそく壁画のあるフレースヴェルグに
+向かうとしよう</td>
+      </tr>
+      <tr id="313">
+        <td>313</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">盗まれた機密情報</td>
+      </tr>
+      <tr id="314">
+        <td>314</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">帝国軍から逃れたスパイは盗んだ情報を
+ネクロ・スキートの一匹に隠したらしい
+情報奪還のため　モンスターを特定しよう</td>
+      </tr>
+      <tr id="315">
+        <td>315</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">モンスターの一匹に
+動きの遅いものがいるらしい
+調べにいこう！</td>
+      </tr>
+      <tr id="316">
+        <td>316</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">グーラへの逃亡者</td>
+      </tr>
+      <tr id="317">
+        <td>317</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">玉印の指輪を奪ったグーラ人の傭兵ガルロは
+グーラの何処かに潜んでいるらしい
+迅速かつ慎重に情報を集めてきて欲しい</td>
+      </tr>
+      <tr id="318">
+        <td>318</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">トリゴの街に潜んでいることが判明した
+傭兵ガルロを捜しにいこう</td>
+      </tr>
+      <tr id="319">
+        <td>319</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">腕の良い医者</td>
+      </tr>
+      <tr id="320">
+        <td>320</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">おじいちゃんを治してくれる
+お医者さんを探してきて欲しいの
+おじいちゃんには秘密だよ</td>
+      </tr>
+      <tr id="321">
+        <td>321</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアのアルバ・マーゲンに
+優秀なお医者さんがいるの？
+これでおじいちゃん元気になるかな[ML:Dash ]</td>
+      </tr>
+      <tr id="322">
+        <td>322</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">薬の知識</td>
+      </tr>
+      <tr id="323">
+        <td>323</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">困った　手が足りない
+人材を提供してくれ</td>
+      </tr>
+      <tr id="324">
+        <td>324</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">精度の高い薬が完成した
+さあ　早く患者の元に持っていけ</td>
+      </tr>
+      <tr id="325">
+        <td>325</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">3つのパーツ</td>
+      </tr>
+      <tr id="326">
+        <td>326</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">バーンの宝箱を開けるためには
+3つのパーツが必要だも！
+手がかりを探してきて欲しいも</td>
+      </tr>
+      <tr id="327">
+        <td>327</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ももも！
+パーツの場所わかったも！？
+さすがだも！</td>
+      </tr>
+      <tr id="328">
+        <td>328</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルクスリア兵士の護衛任務</td>
+      </tr>
+      <tr id="329">
+        <td>329</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ゲンブ頭部に兵士を駐屯させるため、
+ルクスリア部隊の護衛を頼みたい。</td>
+      </tr>
+      <tr id="330">
+        <td>330</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ゲンブ頭部に到着できたのはいいが[ML:Dash ]
+困ったことになった
+こっちへ来てもらえないだろうか</td>
+      </tr>
+      <tr id="331">
+        <td>331</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">造船用の木材</td>
+      </tr>
+      <tr id="332">
+        <td>332</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">丈夫な船を製作するためには良質な
+木材が不可欠！　ウモンの新しい船を
+造るために集めてきて欲しい</td>
+      </tr>
+      <tr id="333">
+        <td>333</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">長年の風雨にも耐えられそうな
+良質な木材が集まったようだ
+次は集めた木材を加工しよう</td>
+      </tr>
+      <tr id="334">
+        <td>334</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">匠の技術</td>
+      </tr>
+      <tr id="335">
+        <td>335</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">良質な木材を集めたは良いが　加工方法を
+間違えたら台無しになってしまう
+集めた木材を慎重に加工して欲しい</td>
+      </tr>
+      <tr id="336">
+        <td>336</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">木材加工が完了し
+造船に向けての準備が整った
+次は組み立て作業に取り掛かろう</td>
+      </tr>
+      <tr id="337">
+        <td>337</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨神獣船の造船</td>
+      </tr>
+      <tr id="338">
+        <td>338</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">あとは組み立てを残すのみになった
+巨神獣に加工した木材を組み込み
+巨神獣船を完成させて欲しい</td>
+      </tr>
+      <tr id="339">
+        <td>339</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">立派な巨神獣船が完成した
+ウモンに報告しよう！</td>
+      </tr>
+      <tr id="340">
+        <td>340</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">直通便の護衛</td>
+      </tr>
+      <tr id="341">
+        <td>341</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアとイヤサキ村を繋ぐ直通便が
+モンスターに襲われないよう
+護衛を手伝ってもらえると助かるんだが[ML:Dash ]</td>
+      </tr>
+      <tr id="342">
+        <td>342</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">改造用エネルギー</td>
+      </tr>
+      <tr id="343">
+        <td>343</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ハナの改造に使う装置が動かないも！
+エネルギーになりそうなアイテムを
+集めてきて欲しいも！</td>
+      </tr>
+      <tr id="344">
+        <td>344</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">おかげでエネルギー満タンも！
+ありがとうだも！</td>
+      </tr>
+      <tr id="345">
+        <td>345</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">悪人退治・その1</td>
+      </tr>
+      <tr id="346">
+        <td>346</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る1つ目の悪
+ケガをさせるように仕向けた悪人を倒せ
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="347">
+        <td>347</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る悪の
+1つ目を摘み取った</td>
+      </tr>
+      <tr id="348">
+        <td>348</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">悪人退治・その2</td>
+      </tr>
+      <tr id="349">
+        <td>349</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る2つ目の悪
+借金を取り立てた悪人を倒せ
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="350">
+        <td>350</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る悪の
+2つ目を摘み取った</td>
+      </tr>
+      <tr id="351">
+        <td>351</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">悪人退治・その3</td>
+      </tr>
+      <tr id="352">
+        <td>352</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る3つ目の悪
+治療のために医者を紹介した悪人を倒せ
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="353">
+        <td>353</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る悪の
+3つ目を摘み取った</td>
+      </tr>
+      <tr id="354">
+        <td>354</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">悪人退治・その4</td>
+      </tr>
+      <tr id="355">
+        <td>355</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る4つ目の悪
+ワザとケガをした悪人を倒せ
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="356">
+        <td>356</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルバ・マーゲンの裏で蔓延る悪の
+4つ目を摘み取った
+ヴァサラから詳細な報告をスペルビアの
+宿屋ジャルカマロで聞こう</td>
+      </tr>
+      <tr id="357">
+        <td>357</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">悪の組織調査</td>
+      </tr>
+      <tr id="358">
+        <td>358</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">暗殺集団ブラッディロブスターの情報を
+収集し彼らの行動を探ろう
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="359">
+        <td>359</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ブラッディロブスターの次の標的は
+アヴァリティア商会のプニンらしい[ML:Dash ]</td>
+      </tr>
+      <tr id="360">
+        <td>360</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リジデリアの魔獣</td>
+      </tr>
+      <tr id="361">
+        <td>361</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">かつてテンペランティア周辺に存在した
+リジデリアを滅ぼしたとされる
+魔獣の情報を入手せよ！</td>
+      </tr>
+      <tr id="362">
+        <td>362</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">テンペランティアに駐屯している帝国軍の
+兵士カルコルが巨大な魔獣を目撃したらしい</td>
+      </tr>
+      <tr id="363">
+        <td>363</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">偽の情報</td>
+      </tr>
+      <tr id="364">
+        <td>364</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コアクリスタルを狙う強盗団を捕まえるため
+大量のコアクリスタルの受け渡しに関する
+偽の情報を流し　強盗団を誘き出そう</td>
+      </tr>
+      <tr id="365">
+        <td>365</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">情報が十分知れ渡った
+強盗団もきっと掴んでいることだろう[ML:Dash ]
+次の作戦の準備をしよう</td>
+      </tr>
+      <tr id="366">
+        <td>366</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">待ち伏せ作戦</td>
+      </tr>
+      <tr id="367">
+        <td>367</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">噂を利用し二箇所に強盗団を誘き出す
+別働隊として保安部と共に戦う傭兵達を
+派遣しよう</td>
+      </tr>
+      <tr id="368">
+        <td>368</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">敵部隊の半数を倒すことはできましたが
+こちらも痛手を負ってしまいました[ML:Dash ]
+詳しくはイエナモから聞いてください</td>
+      </tr>
+      <tr id="369">
+        <td>369</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">子供の失踪事件調査</td>
+      </tr>
+      <tr id="370">
+        <td>370</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアの子供達失踪事件の
+犯人を突き止めるため　情報を集めて欲しい
+《部隊リーダートキハ限定任務です》</td>
+      </tr>
+      <tr id="371">
+        <td>371</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">どうやらインヴィディアでも
+失踪事件が起こっているらしいです
+ひとまず　フォンス・マイム港で
+概要をお話します</td>
+      </tr>
+      <tr id="372">
+        <td>372</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">怪しい人物の行動監視</td>
+      </tr>
+      <tr id="373">
+        <td>373</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">最近インヴィディア周辺に現れる
+怪しい集団の行動の監視をお願いしたい
+特にフォンス・マイム港に注意してくれ
+《部隊リーダーアザミ限定任務です》</td>
+      </tr>
+      <tr id="374">
+        <td>374</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">一人で寂しかったわ[ML:Dash ]
+私はもっと愛しのドライバーと
+一緒にいたいのに[ML:Dash ]</td>
+      </tr>
+      <tr id="375">
+        <td>375</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">逃げられると思って？</td>
+      </tr>
+      <tr id="376">
+        <td>376</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アザミの攻撃によるどさくさに紛れ
+逃げてしまった傭兵達を見つけ出して
+捕まえて欲しい</td>
+      </tr>
+      <tr id="377">
+        <td>377</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">傭兵達はリベラリタスのレカージ島に
+身を潜めているらしいわ</td>
+      </tr>
+      <tr id="378">
+        <td>378</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ボーカル・レッスン1</td>
+      </tr>
+      <tr id="379">
+        <td>379</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">大きな会場でも大丈夫なように
+声の出し方について勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="380">
+        <td>380</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ボーカル・レッスン2</td>
+      </tr>
+      <tr id="381">
+        <td>381</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">歌って踊れたらファンもきっと喜びますも
+リズム感について勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="382">
+        <td>382</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ボーカル・レッスン3</td>
+      </tr>
+      <tr id="383">
+        <td>383</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">オリジナルの歌を作りますも
+今回は作詞について勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="384">
+        <td>384</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ボーカル・レッスン4</td>
+      </tr>
+      <tr id="385">
+        <td>385</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">オリジナルの歌を作りますも
+今回は作曲について勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="386">
+        <td>386</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ボーカル・レッスン5</td>
+      </tr>
+      <tr id="387">
+        <td>387</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">心がこもった歌は　泣けちゃうものですも
+表現について勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="388">
+        <td>388</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルックス・レッスン1</td>
+      </tr>
+      <tr id="389">
+        <td>389</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">おしゃれは細部まで大事ですも
+ファッションを勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="390">
+        <td>390</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルックス・レッスン2</td>
+      </tr>
+      <tr id="391">
+        <td>391</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">伝統のノポンダンスを教えてあげますも
+ノリノリで踊りますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="392">
+        <td>392</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルックス・レッスン3</td>
+      </tr>
+      <tr id="393">
+        <td>393</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アイドルは見た目も大事ですも
+メイク方法を勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="394">
+        <td>394</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルックス・レッスン4</td>
+      </tr>
+      <tr id="395">
+        <td>395</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">身体を動かしてシェイプアップですも
+体力もつくし　イッセキニチョーですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="396">
+        <td>396</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ルックス・レッスン5</td>
+      </tr>
+      <tr id="397">
+        <td>397</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">やっぱり決めポーズも必要ですも？
+ポージングも勉強しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="398">
+        <td>398</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ソウル・レッスン1</td>
+      </tr>
+      <tr id="399">
+        <td>399</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">滝に打たれるシュギョーがあるそうですも
+インヴィディアの滝でシュギョーしますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="400">
+        <td>400</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ソウル・レッスン2</td>
+      </tr>
+      <tr id="401">
+        <td>401</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">高い所で綱渡りして心を鍛えますも
+下を見ると怖いですも！
+見たら駄目ですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="402">
+        <td>402</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ソウル・レッスン3</td>
+      </tr>
+      <tr id="403">
+        <td>403</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">宣伝チラシを配りながら
+声を出して　人に慣れる特訓ですも
+はずかしがっちゃだめですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="404">
+        <td>404</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ソウル・レッスン4</td>
+      </tr>
+      <tr id="405">
+        <td>405</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアにお化けが出るらしいですも[ML:Dash ]
+肝試しで根性アップしますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="406">
+        <td>406</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ソウル・レッスン5</td>
+      </tr>
+      <tr id="407">
+        <td>407</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ザ・ゼーンで瞑想すると良いって
+聞きましたも　足がビリビリになるのが
+難点だそうですも
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="408">
+        <td>408</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">キラキラ衣装</td>
+      </tr>
+      <tr id="409">
+        <td>409</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コンサートの衣装を作りますも
+デザイナーと相談しにいきますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="410">
+        <td>410</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">[ML:Dash ]もも？
+前と変わってないですも？
+でも　ナナコオリさんはその服が
+一番にあってる気がしてきましたも</td>
+      </tr>
+      <tr id="411">
+        <td>411</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">想いよとどけ</td>
+      </tr>
+      <tr id="412">
+        <td>412</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コンサートで歌う曲の打ち合わせを
+劇場都市ドルゥイで行いますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="413">
+        <td>413</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">歌う曲　きまりましたも！
+ナナコオリさんにぴったりな　いい曲ですも
+今から楽しみですもー！</td>
+      </tr>
+      <tr id="414">
+        <td>414</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">豪華なステージ</td>
+      </tr>
+      <tr id="415">
+        <td>415</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コンサートは　ド派手にしたいですも！
+ステージに飾るキラキラの装飾品を
+リベラリタスに集めに行きますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="416">
+        <td>416</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">装飾品の仕上げはまかせてくださいも！
+絶対すごいコンサートになりますも！
+ピィもすごく楽しみですも</td>
+      </tr>
+      <tr id="417">
+        <td>417</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リハーサル</td>
+      </tr>
+      <tr id="418">
+        <td>418</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コンサート前の最終調整ですも
+ナハール中央広場でリハーサルをしますも
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="419">
+        <td>419</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ピィもドキドキしてきましたも[ML:Dash ]
+ドキドキで胸が苦しいですも[ML:Dash ]</td>
+      </tr>
+      <tr id="420">
+        <td>420</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">聖なる合唱隊</td>
+      </tr>
+      <tr id="421">
+        <td>421</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">聖歌隊からゲストに呼んでもらえましたも！
+皆で歌うの　すっごく楽しみですも
+待たせないように急いで行きますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="422">
+        <td>422</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">聖歌隊の歌は素晴らしいですも
+心が洗われるようですも
+皆で歌うのも　楽しいですも！</td>
+      </tr>
+      <tr id="423">
+        <td>423</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ファッションショー</td>
+      </tr>
+      <tr id="424">
+        <td>424</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ファッションショーに招待されましたも！
+ふりふり[ML:Dash ]　ふわふわ[ML:Dash ]
+かわいい衣装がいっぱいですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="425">
+        <td>425</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">いつもと違うナナコオリも
+かわいかったですも！
+新しいファンも　がっぽがっぽですも</td>
+      </tr>
+      <tr id="426">
+        <td>426</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ファン感謝握手会！</td>
+      </tr>
+      <tr id="427">
+        <td>427</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">いつも応援してくれているファンのために
+握手会を開催しますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="428">
+        <td>428</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ファンの皆　うれしそうでしたも
+応援してくれるファンのために
+もっともっと　がんばらないとですも！</td>
+      </tr>
+      <tr id="429">
+        <td>429</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">アヴァリティアコンサート</td>
+      </tr>
+      <tr id="430">
+        <td>430</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">交易船ゴルトムントでコンサートしますも！
+ゴルトムントに集合ですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="431">
+        <td>431</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">コンサートは失敗でしたけど
+コンサートをしたこと自体は大成功ですも！
+早くもファンクラブができたそうですも</td>
+      </tr>
+      <tr id="432">
+        <td>432</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">インヴィディアコンサート</td>
+      </tr>
+      <tr id="433">
+        <td>433</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアでコンサートしますも！
+バジェナ劇場に集合ですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="434">
+        <td>434</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">大成功でしたも！
+皆さん　歌を聞いて感動してましたも！
+人気もうなぎのぼりですも！</td>
+      </tr>
+      <tr id="435">
+        <td>435</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">スペルビアコンサート</td>
+      </tr>
+      <tr id="436">
+        <td>436</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアでコンサートしますも！
+ナハール中央広場に集合ですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="437">
+        <td>437</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アイドルやめちゃうのは
+凄く残念ですけども[ML:Dash ]
+ピィはこれからも　ナナコオリさんの
+一番のファンとして応援してますも！</td>
+      </tr>
+      <tr id="438">
+        <td>438</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ノポン達のアイドル</td>
+      </tr>
+      <tr id="439">
+        <td>439</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ンモモ商会で歌って欲しいと
+依頼されましたも！
+皆楽しみにしてるそうですも
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="440">
+        <td>440</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ンモモ商会の皆楽しそうでしたも
+ピィもハナ高々でしたも！
+これからも　一緒にがんばりますも！</td>
+      </tr>
+      <tr id="441">
+        <td>441</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ご当地アイドル？</td>
+      </tr>
+      <tr id="442">
+        <td>442</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ポムの村で路上コンサートしますも
+ポムの村は果物がおいしいらしいですも
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="443">
+        <td>443</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ポムの村の皆　喜んでましたも
+お礼の果物でお腹いっぱいですも
+うっぷ[ML:Dash ]　
+もうたべれないですも[ML:Dash ]</td>
+      </tr>
+      <tr id="444">
+        <td>444</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">舞台スター</td>
+      </tr>
+      <tr id="445">
+        <td>445</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">劇場都市ドルゥイの劇場で
+コンサートしますも　でも　劇団から
+スカウトきちゃったらピィは困りますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="446">
+        <td>446</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">目指すのはアイドルですけども
+舞台で歌って踊ってるナナコオリさんも
+みてみたい気がしますも</td>
+      </tr>
+      <tr id="447">
+        <td>447</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">サマーコンサート</td>
+      </tr>
+      <tr id="448">
+        <td>448</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ウクリイェ工業都市で路上コンサート
+しますも　暑い所らしいですも！　
+燃えるようなコンサートにしますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="449">
+        <td>449</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">思っていたより　ずっと
+暑い所でしたも[ML:Dash ]
+熱気ムンムンなコンサートでしたも[ML:Dash ]</td>
+      </tr>
+      <tr id="450">
+        <td>450</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">慰問コンサート</td>
+      </tr>
+      <tr id="451">
+        <td>451</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アーケディアの難民の皆さんの
+悲しみは深いですも[ML:Dash ]
+でもきっと　歌で励ますことはできますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="452">
+        <td>452</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ナナコオリさんの歌を聴いて
+涙を浮かべている人がいましたも[ML:Dash ]
+難しいかもしれないですけども
+早く　元気になって欲しいですも[ML:Dash ]</td>
+      </tr>
+      <tr id="453">
+        <td>453</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">女王からの誘い</td>
+      </tr>
+      <tr id="454">
+        <td>454</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ラゲルト女王様から
+王宮で歌って欲しいって依頼ですも！
+びっくりしすぎて嘘かと思いましたも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="455">
+        <td>455</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女王様もノリノリでしたも！
+インヴィディアのファンがぐぐっと
+増えた気がしますも！</td>
+      </tr>
+      <tr id="456">
+        <td>456</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">皇帝からの誘い</td>
+      </tr>
+      <tr id="457">
+        <td>457</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアの兵士さんにも
+熱狂的なファンがいるらしいですも！
+兵士さんのためにお城でコンサートですも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="458">
+        <td>458</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">お城の中はキンチョーしましたも
+スペルビアのファンがぐぐぐっと
+増えた気がしますも！</td>
+      </tr>
+      <tr id="459">
+        <td>459</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">スペシャルコンサート</td>
+      </tr>
+      <tr id="460">
+        <td>460</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ついにファンが4000人突破ですも！
+皆に感謝のコンサートをしますも！
+《部隊リーダーナナコオリ限定任務です》</td>
+      </tr>
+      <tr id="461">
+        <td>461</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ももも！！　こんなにたくさんの人に
+応援してもらえるなんて
+ナナコオリさんはすごいですも！！</td>
+      </tr>
+      <tr id="462">
+        <td>462</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">黒毛ノポン捜索隊</td>
+      </tr>
+      <tr id="463">
+        <td>463</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ワラワを騙した憎きアホウドリの
+居場所を突き止めるのじゃ！
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="464">
+        <td>464</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">黒毛アホウドリはスペルビアの街に
+潜伏しているようじゃ！
+ハーレムの恨み　許しはせぬぞ[ML:Dash ]</td>
+      </tr>
+      <tr id="465">
+        <td>465</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リンネのお茶会1</td>
+      </tr>
+      <tr id="466">
+        <td>466</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女子を集め女子会を開催するのじゃ！
+今日は女子の悩みを聞くかの[ML:Dash ]
+遠慮せず話してみるのじゃ
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="467">
+        <td>467</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">無事解決できて良かったの
+笑顔の女子はいいものじゃな[ML:Dash ]
+協力してくれた皆にも感謝しておるぞ</td>
+      </tr>
+      <tr id="468">
+        <td>468</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リンネのお茶会2</td>
+      </tr>
+      <tr id="469">
+        <td>469</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女子を集め女子会を開催するのじゃ！
+今日は女子の悩みを聞くかの[ML:Dash ]
+遠慮せず話してみるのじゃ
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="470">
+        <td>470</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">無事解決できて良かったの
+女子の笑顔のためなら
+どんな困難も乗り越えられるのじゃ</td>
+      </tr>
+      <tr id="471">
+        <td>471</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リンネのお茶会3</td>
+      </tr>
+      <tr id="472">
+        <td>472</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女子を集め女子会を開催するのじゃ！
+今日は女子の悩みを聞くかの[ML:Dash ]
+遠慮せず話してみるのじゃ
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="473">
+        <td>473</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">無事解決できて良かったの
+お礼などいらぬのじゃ[ML:Dash ]　いや
+またお茶会に参加して欲しいかの
+それが何よりのお礼じゃ！</td>
+      </tr>
+      <tr id="474">
+        <td>474</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リンネのお茶会4</td>
+      </tr>
+      <tr id="475">
+        <td>475</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女子を集め女子会を開催するのじゃ！
+今日は女子の悩みを聞くかの[ML:Dash ]
+遠慮せず話してみるのじゃ
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="476">
+        <td>476</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">無事解決できて良かったの
+これでワラワのハーレムが[ML:Dash ]
+い　いや　何でもないのじゃ！</td>
+      </tr>
+      <tr id="477">
+        <td>477</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">リンネのお茶会5</td>
+      </tr>
+      <tr id="478">
+        <td>478</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">女子を集め女子会を開催するのじゃ！
+今日は女子と親睦を深めるかの[ML:Dash ]
+遠慮せず楽しんでいくのじゃ
+《部隊リーダーリンネ限定任務です》</td>
+      </tr>
+      <tr id="479">
+        <td>479</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">楽しい時間はあっという間じゃの[ML:Dash ]
+そういえば　リベラリタスの伝承の箱庭には
+何かが埋まってるらしいの[ML:Dash ]</td>
+      </tr>
+      <tr id="480">
+        <td>480</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">シキのパスワード調査</td>
+      </tr>
+      <tr id="481">
+        <td>481</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">光る石板の謎を解析するんだ！
+絶対に謎を解いてみせるよ！
+《部隊リーダーシキ限定任務です》</td>
+      </tr>
+      <tr id="482">
+        <td>482</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">石板について書かれた古文書を
+持っている人達の情報が手に入ったよ
+早速　古文書を見せてもらいにいこう</td>
+      </tr>
+      <tr id="483">
+        <td>483</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤエギリ　強敵を求めて1</td>
+      </tr>
+      <tr id="484">
+        <td>484</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アヴァリティアの雲海にモンスターが
+現れたんだって！強いヤツと出会えるかな？
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="485">
+        <td>485</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アタシが求める
+強いヤツではなかったみたい
+もっと強いヤツを見つけにいくぞー！</td>
+      </tr>
+      <tr id="486">
+        <td>486</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤエギリ　強敵を求めて2</td>
+      </tr>
+      <tr id="487">
+        <td>487</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラの森にモンスターが現れたんだって！
+強いヤツと出会えるかな？
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="488">
+        <td>488</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アタシが求める
+強いヤツではなかったみたい
+もっと強いヤツを見つけにいくぞー！</td>
+      </tr>
+      <tr id="489">
+        <td>489</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤエギリ　強敵を求めて3</td>
+      </tr>
+      <tr id="490">
+        <td>490</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアにモンスターが
+現れたんだって！強いヤツと出会えるかな？
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="491">
+        <td>491</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アタシが求める
+強いヤツではなかったみたい
+もっと強いヤツを見つけにいくぞー！</td>
+      </tr>
+      <tr id="492">
+        <td>492</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤエギリ　強敵を求めて4</td>
+      </tr>
+      <tr id="493">
+        <td>493</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアの採掘場にモンスターが
+現れたんだって！強いヤツと出会えるかな？
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="494">
+        <td>494</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アタシが求める
+強いヤツではなかったみたい
+もっと強いヤツを見つけにいくぞー！</td>
+      </tr>
+      <tr id="495">
+        <td>495</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">話があるんだ！</td>
+      </tr>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ドライバー達とヒカリに話したいことが
+あるんだ！　だからアヴァリティアの
+ゴルトムント居住区に集合ね！
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">やっぱり腹を割って話すといいね！
+さあ　獣の王とやらのこと　調べにいこう！</td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ターキンのヒメはどこに1</td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはどこに行ってしまったんダ！
+グーラでヒメの居所の情報を
+集めてきてくレ！</td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはグーラには居ないみたいダ！
+他の場所の情報を集めてきてくレ！</td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ターキンのヒメはどこに2</td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはどこに行ってしまったんダ！
+スペルビアでヒメの居所の情報を
+集めてきてくレ！</td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはスペルビアには
+居ないみたいダ！
+他の場所の情報を集めてきてくレ！</td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ターキンのヒメはどこに3</td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはどこに行ってしまったんダ！
+インヴィディアでヒメの居所の
+情報を集めてきてくレ！</td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはインヴィディアには
+居ないみたいダ！
+他の場所の情報を集めてきてくレ！</td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ターキンのヒメはどこに4</td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメはどこに行ってしまったんダ！
+ルクスリアでヒメの居所の
+情報を集めてきてくレ！</td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ヒメ！
+ヒメがルクスリアに居ル！？
+急いで迎えにいかなけレバ！</td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">テンイ捜索隊</td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">テンイに無理をさせすぎてしまった[ML:Dash ]
+大事な仲間を放ってはおけない
+どこかに行ってしまったテンイを探そう</td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">テンイはエルピス霊洞にいるが　どうやら
+力の制御ができなくなっているようだ
+苦しんでいるテンイを助けにいこう！</td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">大量生産のお手伝い</td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">人手が足りなくて困ってるも[ML:Dash ]
+ノポポダイコンをおすそ分けしてあげるから
+大量生産の手伝いをして欲しいも！</td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">モルスの古文書2巻の解読</td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">モルスの古文書2巻を解読するよ
+さて　一体何が書かれてるのかな？
+《部隊リーダーシキ限定任務です》</td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">うーん[ML:Dash ]
+1冊だけじゃよくわからないね[ML:Dash ]
+他の巻も探さないと[ML:Dash ]</td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">モルスの古文書4巻の解読</td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">モルスの古文書4巻を解読するよ
+今度は何が書いてあるのかな？
+《部隊リーダーシキ限定任務です》</td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">これで半分だね
+でもまだまだわからないことばかりだ
+あと2冊探さないと[ML:Dash ]</td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">モルスの古文書3巻の解読</td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">モルスの古文書3巻を解読するよ
+どんな内容か楽しみだね
+《部隊リーダーシキ限定任務です》</td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フムフム[ML:Dash ]　
+だいぶ色々なことがわかってきたよ
+もう1冊どこかにあるはずなんだけど[ML:Dash ]</td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">モルスの古文書1巻の解読</td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">モルスの古文書1巻を解読するよ
+ボクに掛かればこんなのすぐさ
+《部隊リーダーシキ限定任務です》</td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">すごい！　すごいよ！
+これは大発見だ！！
+皆ボクの話を聞いてくれないか？</td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方1</td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">お店がなくなっちゃったも[ML:Dash ]
+これからどうしたらいいも[ML:Dash ]
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">もう騙されないように気をつけるも！
+取り返してくれてすっきりしたも！
+助けてくれてありがとだも！</td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方2</td>
+      </tr>
+      <tr id="531">
+        <td>531</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラの森の中で
+子供が迷子になってしまったの[ML:Dash ]
+だれか探すのを手伝って
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="532">
+        <td>532</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">みつけてくれて本当にありがとう[ML:Dash ]
+もう目を離さないように気をつけるわ
+本当にありがとう</td>
+      </tr>
+      <tr id="533">
+        <td>533</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方3</td>
+      </tr>
+      <tr id="534">
+        <td>534</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">お父さんが急にいなくなっちゃったんだ
+お父さん　どうしちゃったんだろう[ML:Dash ]
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="535">
+        <td>535</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">帰り道にモンスターがいて
+立ち往生してたの？
+お兄さん強いんだね！かっこいい！</td>
+      </tr>
+      <tr id="536">
+        <td>536</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方4</td>
+      </tr>
+      <tr id="537">
+        <td>537</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">歳をとると野菜を運ぶのも一苦労じゃ[ML:Dash ]
+若いもんもおらんし　困ったのぉ[ML:Dash ]
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="538">
+        <td>538</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">兄ちゃん力持ちじゃのぉ[ML:Dash ]
+おかげ様で助かったわい
+お礼に婆の飯でも振舞うかのぉ</td>
+      </tr>
+      <tr id="539">
+        <td>539</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方5</td>
+      </tr>
+      <tr id="540">
+        <td>540</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">やっと研究者になれそうだったのに
+研究の成果が盗まれてしまったんだ[ML:Dash ]
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="541">
+        <td>541</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">取り返してくれてありがとう！
+お兄さんみたいに熱い心をもって
+もっともっとがんばることにするよ！</td>
+      </tr>
+      <tr id="542">
+        <td>542</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">正義の味方6</td>
+      </tr>
+      <tr id="543">
+        <td>543</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ボードゲームが　取られちゃったんだ[ML:Dash ]
+誰か取り返してくれないかな[ML:Dash ]
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="544">
+        <td>544</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">僕も大人になったら
+ブレイドさんに負けないくらい強くなって
+人を助けられる優しい人になりたいな</td>
+      </tr>
+      <tr id="545">
+        <td>545</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">絶対に逃がさないわ</td>
+      </tr>
+      <tr id="546">
+        <td>546</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタスのレカージ島に身を潜めている
+傭兵を捕まえてきて欲しいの
+私は　愛しのドライバーと一緒にいたいわ</td>
+      </tr>
+      <tr id="547">
+        <td>547</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">もう既に居場所を変えていたみたいね
+残念だけど　もう一度探しましょ？</td>
+      </tr>
+      <tr id="548">
+        <td>548</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">私は執拗な女</td>
+      </tr>
+      <tr id="549">
+        <td>549</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">リベラリタスから逃げた
+傭兵達の行き先を調べて欲しいの
+私は　愛しのドライバーと一緒にいたいわ</td>
+      </tr>
+      <tr id="550">
+        <td>550</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">傭兵達はグーラのミマの街に
+移動したようね
+今度こそ捕まえましょう</td>
+      </tr>
+      <tr id="551">
+        <td>551</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">どこまでも追いかけるわ</td>
+      </tr>
+      <tr id="552">
+        <td>552</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">グーラのミマの街に移動した
+傭兵を捕まえてきて欲しいの
+私は　愛しのドライバーと一緒にいたいわ</td>
+      </tr>
+      <tr id="553">
+        <td>553</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">逃げ足の速い傭兵ね
+でも　もう逃げ場はないわ
+フフッ　たっぷりお仕置きしないとね</td>
+      </tr>
+      <tr id="554">
+        <td>554</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ほら掴まえた</td>
+      </tr>
+      <tr id="555">
+        <td>555</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">愛しのドライバーの邪魔をする子は
+お仕置きしないとね
+《部隊リーダーアザミ限定任務です》</td>
+      </tr>
+      <tr id="556">
+        <td>556</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フフフ[ML:Dash ]　
+私と愛しのドライバーの邪魔をする
+悪い子にはお仕置き鞭打ち1000回よ</td>
+      </tr>
+      <tr id="557">
+        <td>557</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ニセモノの花瓶</td>
+      </tr>
+      <tr id="558">
+        <td>558</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">偽の商品を高値で売り
+違法に利益を上げている商人がいるらしい
+詐欺商人を捕まえよう</td>
+      </tr>
+      <tr id="559">
+        <td>559</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">捕まえてもらったノポン商人は
+アヴァリティアに引き渡したよ
+捕まえてくれてありがとう</td>
+      </tr>
+      <tr id="560">
+        <td>560</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">美しい花には[ML:Dash ]</td>
+      </tr>
+      <tr id="561">
+        <td>561</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">インヴィディアで通り魔事件が
+多発しているらしい
+目撃情報によると犯人は美しい女性ブレイド
+だったという　探し出して捕まえよう</td>
+      </tr>
+      <tr id="562">
+        <td>562</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">犯人はインヴィディア兵に引渡したよ
+美しいブレイドだからといって
+油断してはいけないな[ML:Dash ]</td>
+      </tr>
+      <tr id="563">
+        <td>563</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">返せないお金</td>
+      </tr>
+      <tr id="564">
+        <td>564</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">返せなくなる程の違法な利子をつけ
+難民に金銭を貸す商人がいるらしい
+探し出して捕まえよう</td>
+      </tr>
+      <tr id="565">
+        <td>565</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">商人はスペルビア兵に引き渡したよ
+ただでさえ弱い立場の難民を騙すなんて
+許せない行いだな[ML:Dash ]</td>
+      </tr>
+      <tr id="566">
+        <td>566</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">一網打尽</td>
+      </tr>
+      <tr id="567">
+        <td>567</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">違法業者の大きな取引が
+スペルビアで行われるという
+同時に二つの業者の元締めを捕まえよう</td>
+      </tr>
+      <tr id="568">
+        <td>568</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨大組織の元締めを
+それぞれの国に引き渡したよ[ML:Dash ]
+これで暫くは大人しくなるだろう</td>
+      </tr>
+      <tr id="569">
+        <td>569</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">最初の任務</td>
+      </tr>
+      <tr id="570">
+        <td>570</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">フレースヴェルグの近くにアンセルが
+いるのを見たことがあるッスよね？
+村に入ってくるようなら追い返してくれッス</td>
+      </tr>
+      <tr id="571">
+        <td>571</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ご苦労さんッス　きっちりアンセルを
+追い払ってくれたみたいッスね
+おかげで村の中は今日も平穏無事だったッス</td>
+      </tr>
+      <tr id="572">
+        <td>572</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">材料の行方</td>
+      </tr>
+      <tr id="573">
+        <td>573</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">人工ブレイドの材料が入っている
+緑の樽と黄色の樽を見張る
+メンバーを派遣しよう</td>
+      </tr>
+      <tr id="574">
+        <td>574</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ノポン族がとある場所に運び込んで
+いたらしい
+宿屋に戻り相談しよう</td>
+      </tr>
+      <tr id="575">
+        <td>575</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ペンダントは誰のもの？</td>
+      </tr>
+      <tr id="576">
+        <td>576</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ジーナにペンダントを渡した人は
+一体誰なんだろう[ML:Dash ]
+詳しい情報を探してみようよ！</td>
+      </tr>
+      <tr id="577">
+        <td>577</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ジーナにペンダントを渡したのは
+スペルビアの傭兵さんみたいだね
+今はどこにいるのかな[ML:Dash ]</td>
+      </tr>
+      <tr id="578">
+        <td>578</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ペンダントの持ち主の行方</td>
+      </tr>
+      <tr id="579">
+        <td>579</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ジーナにペンダントを渡した人を
+スペルビアで見かけた人がいるらしいんだ！
+彼を探して詳しい話を聞いてみようよ</td>
+      </tr>
+      <tr id="580">
+        <td>580</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">どうやら傭兵さんは拷問されて
+死んじゃったみたい[ML:Dash ]
+この文書そんなに大事なものなのかな</td>
+      </tr>
+      <tr id="581">
+        <td>581</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">命を懸けた文書</td>
+      </tr>
+      <tr id="582">
+        <td>582</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">命を懸けて守るくらい大事な文書[ML:Dash ]
+一体何が書かれてるのかな
+誰か読める人いない？</td>
+      </tr>
+      <tr id="583">
+        <td>583</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">こんな悪巧みしてるなんて許せない！
+ボクがオトリになれば
+首謀者が出てくるのかな[ML:Dash ]</td>
+      </tr>
+      <tr id="584">
+        <td>584</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">オトリ大作戦</td>
+      </tr>
+      <tr id="585">
+        <td>585</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ボクがオトリになって悪い奴をおびき出すよ
+心配？　大丈夫だって　ボクに任せて！
+《部隊リーダーホタル限定任務です》</td>
+      </tr>
+      <tr id="586">
+        <td>586</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">皆のおかげで首謀者を
+捕まえることができたよ
+皆　手伝ってくれてありがと！</td>
+      </tr>
+      <tr id="587">
+        <td>587</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">皆ホタルが大好き</td>
+      </tr>
+      <tr id="588">
+        <td>588</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">きっとちゃんと話をすればきっと大丈夫！
+ボクがお話してくるね！
+《部隊リーダーホタル限定任務です》</td>
+      </tr>
+      <tr id="589">
+        <td>589</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">お話してみたらすごく良い人だったよ
+ボクのファンになってくれたんだ
+これでもう襲われないね</td>
+      </tr>
+      <tr id="590">
+        <td>590</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">反帝国組織ブリューナクのアジトが
+旧工場の満腹食堂付近に
+あることが判明した
+調べに行こう</td>
+      </tr>
+      <tr id="591">
+        <td>591</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">新たな商売</td>
+      </tr>
+      <tr id="592">
+        <td>592</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">長く交易がなかったルクスリアと
+商いを始めたいが[ML:Dash ]
+取引相手がいないことには始まらない
+見つけてきてくれないだろうか</td>
+      </tr>
+      <tr id="593">
+        <td>593</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">これは綺麗な食器だね！
+こんなのなかなかお目にかかれないよ
+ロースト肉のタリアータを極めるために
+この皿を使わせてもらうよ</td>
+      </tr>
+      <tr id="594">
+        <td>594</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+スイーツハニーシロップ
+ハナマル書房</td>
+      </tr>
+      <tr id="595">
+        <td>595</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+ハラペッコ食堂
+ホビー・トイノポックス</td>
+      </tr>
+      <tr id="596">
+        <td>596</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+楽器ジャンジャン
+ハナマル書房</td>
+      </tr>
+      <tr id="597">
+        <td>597</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+ホビー・トイノポックス
+コスメ・クレオール</td>
+      </tr>
+      <tr id="598">
+        <td>598</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+ハラペッコ食堂
+楽器ジャンジャン</td>
+      </tr>
+      <tr id="599">
+        <td>599</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+テゥーリベーカリー
+美術クーマラヴァ</td>
+      </tr>
+      <tr id="600">
+        <td>600</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+肉屋グリラフ
+カフェ・サヴィー
+ティモー楽器</td>
+      </tr>
+      <tr id="601">
+        <td>601</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+コスメ・シェトゥリー
+ネウロミネン織物店</td>
+      </tr>
+      <tr id="602">
+        <td>602</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+トアミ・フィッシュ　カフェ・サヴィー
+ティモー楽器
+美術クーマラヴァ</td>
+      </tr>
+      <tr id="603">
+        <td>603</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+肉屋グリラフ
+コスメ・シェトゥリー
+ネウロミネン織物店</td>
+      </tr>
+      <tr id="604">
+        <td>604</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+酒場ヴァーゲル
+フラットブラッド
+魚屋イクテュエス</td>
+      </tr>
+      <tr id="605">
+        <td>605</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋サデーコット
+肉屋ヴォルティ
+アルドマール書房</td>
+      </tr>
+      <tr id="606">
+        <td>606</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+スイーツ・スペランツァ
+プルマリア古美術
+コスメ・アクアネーゼ</td>
+      </tr>
+      <tr id="607">
+        <td>607</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋サデーコット　フラットブラッド
+魚屋イクテュエス
+アルドマール書房</td>
+      </tr>
+      <tr id="608">
+        <td>608</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+肉屋ヴォルティ
+プルマリア古美術</td>
+      </tr>
+      <tr id="609">
+        <td>609</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋エラザート
+アディルノ楽器
+ヤフシャ古美術</td>
+      </tr>
+      <tr id="610">
+        <td>610</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+魚屋ハンヌーン
+ハセフェル書房
+ホビー・エレグシェル</td>
+      </tr>
+      <tr id="611">
+        <td>611</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+サルアタ・スイーツ
+ヤフシャ古美術</td>
+      </tr>
+      <tr id="612">
+        <td>612</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋エラザート
+アディルノ楽器</td>
+      </tr>
+      <tr id="613">
+        <td>613</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+魚屋ハンヌーン
+サルアタ・スイーツ
+ホビー・エレグシェル</td>
+      </tr>
+      <tr id="614">
+        <td>614</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋コロカージャ
+肉屋シューペック
+ライネン手芸店</td>
+      </tr>
+      <tr id="615">
+        <td>615</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+コラル・リーフ鮮魚店
+カフェ・ルティーノ</td>
+      </tr>
+      <tr id="616">
+        <td>616</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+肉屋シューペック
+ライネン手芸店</td>
+      </tr>
+      <tr id="617">
+        <td>617</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+カフェ・ルティーノ</td>
+      </tr>
+      <tr id="618">
+        <td>618</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+八百屋コロカージャ</td>
+      </tr>
+      <tr id="619">
+        <td>619</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+ベーカリー・プロテイニ
+フィッシュ・タタラティ
+ホビー・にっちもさっちも</td>
+      </tr>
+      <tr id="620">
+        <td>620</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+レクティッカベジタブル
+パティスリー・プラクース
+書店ビブリオ・ポリオ</td>
+      </tr>
+      <tr id="621">
+        <td>621</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+フィッシュ・タタラティ
+ホビー・にっちもさっちも
+ボルダード織物店</td>
+      </tr>
+      <tr id="622">
+        <td>622</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+ベーカリー・プロテイニ
+パティスリー・プラクース</td>
+      </tr>
+      <tr id="623">
+        <td>623</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+書店ビブリオ・ポリオ
+ボルダード織物店</td>
+      </tr>
+      <tr id="624">
+        <td>624</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">以下のショップのラインナップが変化した
+インラッティオ楽器
+コスメ・アクアネーゼ</td>
+      </tr>
+      <tr id="625">
+        <td>625</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">特別配達任務1</td>
+      </tr>
+      <tr id="626">
+        <td>626</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツが大人気のため
+他国から依頼がきています
+素早く配達してください
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="627">
+        <td>627</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">お疲れ様でした
+報告はUO・スイーツで聞かせてください</td>
+      </tr>
+      <tr id="628">
+        <td>628</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">特別配達任務2</td>
+      </tr>
+      <tr id="629">
+        <td>629</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">今度は途中で食べてしまわないように
+忍耐力のある人も一緒に行ってきてください
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="630">
+        <td>630</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">無事　届けられたようですね
+良かったです
+これで益々有名になってしまいますね</td>
+      </tr>
+      <tr id="631">
+        <td>631</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お菓子の配達1</td>
+      </tr>
+      <tr id="632">
+        <td>632</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツの人気商品の配達を
+お願いします
+今回の配達先はアヴァリティアです
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="633">
+        <td>633</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お菓子の配達2</td>
+      </tr>
+      <tr id="634">
+        <td>634</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツの人気商品の配達を
+お願いします
+今回の配達先はグーラです
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="635">
+        <td>635</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お菓子の配達3</td>
+      </tr>
+      <tr id="636">
+        <td>636</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツの人気商品の配達を
+お願いします
+今回の配達先はスペルビアです
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="637">
+        <td>637</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お菓子の配達4</td>
+      </tr>
+      <tr id="638">
+        <td>638</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツの人気商品の配達を
+お願いします
+今回の配達先はリベラリタスです
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="639">
+        <td>639</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">お菓子の配達5</td>
+      </tr>
+      <tr id="640">
+        <td>640</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">UO・スイーツの人気商品の配達を
+お願いします
+今回の配達先はルクスリアです
+《部隊リーダーイダテン限定任務です》</td>
+      </tr>
+      <tr id="641">
+        <td>641</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">闇討ち</td>
+      </tr>
+      <tr id="642">
+        <td>642</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ターキンだろうがモンスターだろうが同じだ
+誰であろうが我が懲らしめてこよう[ML:Dash ]
+《部隊リーダーヴァサラ限定任務です》</td>
+      </tr>
+      <tr id="643">
+        <td>643</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">これで畑の被害はなくなったはずだ[ML:Dash ]
+詳しくは皆が集まった時に話すとしよう</td>
+      </tr>
+      <tr id="644">
+        <td>644</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">畑の警備</td>
+      </tr>
+      <tr id="645">
+        <td>645</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">私は畑を夜通し見張ることにします
+残りの野菜を奪いにくるかもしれません
+《部隊リーダートキハ限定任務です》</td>
+      </tr>
+      <tr id="646">
+        <td>646</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">野菜は盗まれませんでした
+詳しくは皆が集まった時に話しますね</td>
+      </tr>
+      <tr id="647">
+        <td>647</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">情報収集</td>
+      </tr>
+      <tr id="648">
+        <td>648</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">イヤサキ村の家を回って村人と話してくる！
+目撃情報がないかどうか[ML:Dash ]
+犯人だったら自白するように説き伏せるぜ！
+《部隊リーダーグレン限定任務です》</td>
+      </tr>
+      <tr id="649">
+        <td>649</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">この村に悪人はいないな
+詳しくは皆が集まった時に話すぜ！</td>
+      </tr>
+      <tr id="650">
+        <td>650</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">畑作業の手伝い</td>
+      </tr>
+      <tr id="651">
+        <td>651</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">せっかく　守ってもらったんだが[ML:Dash ]
+人手不足で畑が荒れてしまったんだ
+作業を手伝ってくれると助かるよ</td>
+      </tr>
+      <tr id="652">
+        <td>652</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">開墾</td>
+      </tr>
+      <tr id="653">
+        <td>653</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">まずは畑を耕してくれ
+いい野菜を作るにはいい土が必要じゃ
+しかし　力任せではいかん
+仲良く丁寧にやってくれよ</td>
+      </tr>
+      <tr id="654">
+        <td>654</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">種まき</td>
+      </tr>
+      <tr id="655">
+        <td>655</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">次は種まき　最も繊細な作業じゃ
+相手を思いやり　大切に扱うように
+仲良く心を込めてやってくれよ</td>
+      </tr>
+      <tr id="656">
+        <td>656</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">栽培</td>
+      </tr>
+      <tr id="657">
+        <td>657</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">いい野菜を作るには水や肥料をやり
+虫を駆除する必要がある
+我が子のように育てなければならん
+それから収穫？　それはワシがやる</td>
+      </tr>
+      <tr id="658">
+        <td>658</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ライコの提案</td>
+      </tr>
+      <tr id="659">
+        <td>659</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">海のヴァイスさんはわたしと
+テンイさんに任せてください！
+力を合わせてがんばります！</td>
+      </tr>
+      <tr id="660">
+        <td>660</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">海のヴァイスさんはやっつけましたよ！
+テンイさんすっごく強かったです！</td>
+      </tr>
+      <tr id="661">
+        <td>661</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">ヤエギリの提案</td>
+      </tr>
+      <tr id="662">
+        <td>662</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">陸のデザイアはアタシに任せてよ
+楽しい戦いになりそうだ[ML:Dash ]！
+《部隊リーダーヤエギリ限定任務です》</td>
+      </tr>
+      <tr id="663">
+        <td>663</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">陸のデザイアは倒したよ
+思ったより楽しかったかな
+でも　もっと強いヤツと戦いたい！</td>
+      </tr>
+      <tr id="664">
+        <td>664</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">テンペランティアの生命線</td>
+      </tr>
+      <tr id="665">
+        <td>665</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビア本国からテンペランティアへ
+定期的に物資が輸送されています
+その護衛をお願いできますか
+テンペランティア周辺は危険なんです</td>
+      </tr>
+      <tr id="666">
+        <td>666</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">巨神獣戦艦のメンテナンス</td>
+      </tr>
+      <tr id="667">
+        <td>667</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">巨神獣戦艦をメンテナンスするため
+アヴァリティアから大量のサルベージ品を
+運ぶ必要があるのです
+その護衛をお願いできますか</td>
+      </tr>
+      <tr id="668">
+        <td>668</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">橋渡し</td>
+      </tr>
+      <tr id="669">
+        <td>669</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">スペルビアとルクスリアの交易が
+始まったのですが　商人達の護衛に
+軍の人員を割くことはできないので
+皆さまにお願いできますでしょうか</td>
+      </tr>
+      <tr id="670">
+        <td>670</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">インヴィディア兵の特訓</td>
+      </tr>
+      <tr id="671">
+        <td>671</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アンタ達にぴったりの仕事を回すよ
+インヴィディアの新米兵士達を
+鍛えてやって欲しいんだ</td>
+      </tr>
+      <tr id="672">
+        <td>672</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">庭の手入れ</td>
+      </tr>
+      <tr id="673">
+        <td>673</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アンタ達にぴったりの仕事を回すよ
+いやぴったりじゃないかもしれないが
+ラゲルト女王の庭園の手入れだ
+少しのミスでも怒られるから要注意だぞ</td>
+      </tr>
+      <tr id="674">
+        <td>674</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">六大貴族の警護</td>
+      </tr>
+      <tr id="675">
+        <td>675</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アンタ達にぴったりの仕事を回すよ
+インヴィディアの六大貴族が集まって
+会合を開くんだがその護衛を頼む</td>
+      </tr>
+      <tr id="676">
+        <td>676</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">結婚式</td>
+      </tr>
+      <tr id="677">
+        <td>677</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">今度オンディーナの結婚式があるんだ
+で　驚いたことに婿さんに聞いた話だと
+あんた達は知り合いらしいな
+忙しいだろうがぜひ参加してやってくれ</td>
+      </tr>
+      <tr id="678">
+        <td>678</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">ボナヴェントにも見せたかったぜ[ML:Dash ]
+いつかオンディーナとレオニダスを
+あいつの墓前に連れていかなきゃな
+ただスペルビア側なんだよな　あそこは</td>
+      </tr>
+      <tr id="679">
+        <td>679</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">イブキのすごい情報って？</td>
+      </tr>
+      <tr id="680">
+        <td>680</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">イブキが宿で聞いたすごい情報とは
+何だったのか？
+傭兵団の皆に手伝ってもらい
+調べてみよう</td>
+      </tr>
+      <tr id="681">
+        <td>681</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">情報収集したところ　ルクスリアの兵士が
+テオスカルディアの真誠の間で
+反乱を企てているらしい
+急いで行こう！</td>
+      </tr>
+      <tr id="682">
+        <td>682</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">グンデスの強敵</td>
+      </tr>
+      <tr id="683">
+        <td>683</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルスト最強の傭兵団に依頼だ
+スパイドみたいなモンスターが
+グンデス岩塩窟で暴れ回ってるらしい
+相当手ごわいみたいだが頼んだぞ</td>
+      </tr>
+      <tr id="684">
+        <td>684</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">チルソネスの強敵</td>
+      </tr>
+      <tr id="685">
+        <td>685</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルスト最強の傭兵団に依頼だ
+サウラーみたいなモンスターが
+港湾都市チルソネスに接近している
+凶暴な相手だが追い払ってくれ</td>
+      </tr>
+      <tr id="686">
+        <td>686</td>
+        <td>
+        </td>
+        <td>57</td>
+        <td class="side">メルクリベの強敵再び</td>
+      </tr>
+      <tr id="687">
+        <td>687</td>
+        <td>
+        </td>
+        <td>64</td>
+        <td class="side">アルスト最強の傭兵団に依頼だ
+またまたメルクリベ小島に
+凶悪なモンスターが棲みつきやがった
+完膚なきまでに倒してくれ！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst104211_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst104211_msg0001</td>
+        <td>84</td>
+        <td class="side">绿色的风 轻抚发丝
+那是古拉的呼吸[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst104211_msg0002</td>
+        <td>84</td>
+        <td class="side">啊 古拉 古拉哟
+阳光透过树荫 温暖似母亲
+大树挺拔 宛如慈父[ML:Dash ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst104211_msg0003</td>
+        <td>84</td>
+        <td class="side">我正用语言描述
+古拉的自然之美</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst104211_msg0004</td>
+        <td>84</td>
+        <td class="side">希望城里的孩子 也能把故乡的情景
+用丰富的语言表现出来</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst104211_msg0005</td>
+        <td>84</td>
+        <td class="side">比起组织语言
+大家好像更喜欢用身体去感受自然
+所以都没有人理会我[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst104211_msg0006</td>
+        <td>84</td>
+        <td class="side">去弥先村当老师？
+你说我吗？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst104211_msg0007</td>
+        <td>84</td>
+        <td class="side">噢噢[ML:Dash ]
+巨神兽的指引！
+云海的潮汐！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst104211_msg0008</td>
+        <td>84</td>
+        <td class="side">但是我身负债务[ML:Dash ]
+不还清的话
+就不能离开这里</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst104211_msg0009</td>
+        <td>84</td>
+        <td class="side">总共是7500G[ML:Dash ]
+该怎么办呢[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst104211_msg0010</td>
+        <td>165</td>
+        <td class="side">是否支付7500G？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst104211_msg0011</td>
+        <td>165</td>
+        <td class="side">支付</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst104211_msg0012</td>
+        <td>165</td>
+        <td class="side">不支付</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst104211_msg0081</td>
+        <td>84</td>
+        <td class="side">不去工作
+沉迷于自己的兴趣
+这样不适合当老师啊[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst104211_msg0101</td>
+        <td>84</td>
+        <td class="side">老师[ML:Dash ]
+听起来真叫人心旷神怡呀</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst104211_msg0102</td>
+        <td>84</td>
+        <td class="side">但是 我不能带着
+7500G的借款走[ML:Dash ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst104211_msg0301</td>
+        <td>84</td>
+        <td class="side">哦哦！
+如从天而降的星星一般
+飘然飞落的7500G！</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst104211_msg0302</td>
+        <td>84</td>
+        <td class="side">这样就能还清借款了[ML:Dash ]
+我可以换个心情
+前往弥先村了</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst104211_msg0303</td>
+        <td>84</td>
+        <td class="side">那么事不宜迟 这就收好行李
+朝着弥先村出发吧！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst104211_msg0401</td>
+        <td>84</td>
+        <td class="side">再不还清借款
+就要惹老大生气了[ML:Dash ]
+我还是认命去工作吧[ML:Dash ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst104211_msg0501</td>
+        <td>84</td>
+        <td class="side">要是有机会
+将我的知识与经验教给别人就好了
+但这机会也是很难得的吧[ML:Dash ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

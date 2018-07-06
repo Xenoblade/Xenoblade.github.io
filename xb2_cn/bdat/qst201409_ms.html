@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst201409_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst201409_msg0001</td>
+        <td>84</td>
+        <td class="side">都没有人路过了[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst201409_msg0002</td>
+        <td>84</td>
+        <td class="side">一味等待是不行的
+我们主动去找
+愿意当裁判的人吧</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst201409_msg0003</td>
+        <td>84</td>
+        <td class="side">哎呀 你们也在散步吗？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst201409_msg0004</td>
+        <td>84</td>
+        <td class="side">你说也
+那就是说迦具土你在散步了？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst201409_msg0005</td>
+        <td>84</td>
+        <td class="side">是呀</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst201409_msg0006</td>
+        <td>84</td>
+        <td class="side">我睡前习惯这样在周围散散步
+吹吹夜风</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst201409_msg0007</td>
+        <td>84</td>
+        <td class="side">哦 是这样啊</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst201409_msg0008</td>
+        <td>84</td>
+        <td class="side">迦具土 我们有件事情要拜托你</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst201409_msg0009</td>
+        <td>84</td>
+        <td class="side">你能陪我和光聊聊天
+判断一下我们谁更有女人味吗？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst201409_msg0010</td>
+        <td>84</td>
+        <td class="side">你们以前说过的那个比赛啊[ML:Dash ]
+你们不嫌弃的话 我很乐意啊</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst201409_msg0011</td>
+        <td>84</td>
+        <td class="side">谢谢！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst201409_msg0012</td>
+        <td>84</td>
+        <td class="side">难得迦具土在这里
+我们就来聊聊美容和美的话题吧？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst201409_msg0027</td>
+        <td>84</td>
+        <td class="side">好啊
+这方面我很有信心会赢的！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst201409_msg0013</td>
+        <td>84</td>
+        <td class="side">我每天都在
+用心保养肌肤[ML:Dash ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst201409_msg0014</td>
+        <td>84</td>
+        <td class="side">而且还在镜子前面
+练习能让我看起来更可爱的姿势！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst201409_msg0015</td>
+        <td>84</td>
+        <td class="side">你说的那个练习摆姿势
+和美没什么关系吧？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst201409_msg0016</td>
+        <td>84</td>
+        <td class="side">再说了 真正可爱的人根本不需要练习
+本来就是很可爱的</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst201409_msg0017</td>
+        <td>84</td>
+        <td class="side">我只要站在在这里就很可爱了
+所以不需要做这种努力</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst201409_msg0018</td>
+        <td>84</td>
+        <td class="side">我是为了让自己变得更可爱
+才努力的！</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst201409_msg0019</td>
+        <td>84</td>
+        <td class="side">这可是我一直精益求精的
+进取精神的结晶！</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst201409_msg0020</td>
+        <td>84</td>
+        <td class="side">有进取精神确实重要[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst201409_msg0021</td>
+        <td>84</td>
+        <td class="side">可是像这样互相竞争
+说明你们还不够成熟</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst201409_msg0022</td>
+        <td>84</td>
+        <td class="side">真正美丽的人不只是外表美丽
+举止也要表现出相应的优雅和游刃有余</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst201409_msg0023</td>
+        <td>84</td>
+        <td class="side">所以这场比试是平局</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst201409_msg0024</td>
+        <td>84</td>
+        <td class="side">啊！？</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst201409_msg0025</td>
+        <td>84</td>
+        <td class="side">怎么这样[ML:Dash ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst201409_msg0026</td>
+        <td>84</td>
+        <td class="side">等你们的精神更加成熟了之后
+再来谈论美吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

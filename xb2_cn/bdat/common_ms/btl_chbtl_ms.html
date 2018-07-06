@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>btl_chbtl_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">大群草食动物</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">驱除农田的害虫</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">士兵的梦想</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">妖艳乱舞</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">暗空</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">神树</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">三权制衡</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">恐怖的感染道路</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">海滩惊魂</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">REAL TIGER! TIGER!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">伊拉御刃者</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">真枪实弹的比试</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">恐龙战线</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">亚人联军</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">逃亡军团</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">云海大王逆袭</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">新面孔猩猩怪</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">第八世代</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">最强流派</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">帝国军第九装甲师</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">疯狂进击</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">羽蛇袭击</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">巨神兽战舰强袭</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">今年的天选勇者</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td class="side">ああああ</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">古拉出现了大群草食动物嗼
+性情与平时不同 非常凶暴嗼
+在托里格镇受害前赶快击退它们嗼</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">托里格镇的农田遭到了践踏嗼
+在大家肚子饿扁之前
+惩治干坏事的家伙们嗼</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">总是被打败的帝国无名小兵
+尽管如此 他们也曾梦想成为最强的战士嗼……
+与平时判若两人 动真格的他们是这次的对手嗼</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">无论在什么时代 美丽的事物都会吸引害虫聚集嗼
+不赶快打倒的话 就会不断出现
+战斗时要注意嗼</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">与将天空染成漆黑的飞行怪物战斗嗼
+如果能把它打落到地面上 可能就有办法了……
+诺彭大仙人是这么想的嗼</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">火鸡人的目的是破坏如同神树一般
+被崇拜的图腾嗼 不能心慈手软嗼
+崇拜者聚集得越来越多了嗼 好羡慕嗼</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">这个挑战需要动动脑筋嗼
+对于诺彭大仙人来说很简单嗼
+你们行嗼？</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">不管目睹过几次 文明的终结都令人悲伤嗼
+是时候将变得面目全非的生命
+归还给大地了嗼</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">弥先村的云海浴场中出现了海豚蜥嗼
+就由你们去为海滩重新带回和平嗼
+听说红色的海豚蜥是色鬼嗼</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">那个TIGER! TIGER!的真实版嗼
+很少有机会能获得这种体验嗼
+快上嗼 虎！ 你是天选之人嗼！</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">利用诺彭大仙人的力量进行特训嗼！
+可以与使你们陷入苦战的伊拉御刃者
+再次战斗嗼 期待你们的胜利嗼</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">用尽浑身的力量 来一场男子汉之间严肃的比试
+诺彭大仙人想看这个嗼
+千万不可疏忽大意嗼</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">恐龙非常大嗼 恐龙非常强嗼
+如果这些恐龙聚集在一起……会有多强嗼？
+……不过 其中最危险的是提着灯笼的恐龙嗼</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">火鸡人 蜥蜴人 巨像兵 这3个种族
+正联手想要打倒你们嗼
+比试哪方更加团结嗼！</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">收到了来自怪物的挑战书嗼！
+逃亡战士黑暗罗德将与同伴共同登场嗼
+没有什么比逃亡者的反击更加可怕了嗼</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">你们激起了云海大王的愤怒嗼
+由于太过气愤 大王差点变得通红通红嗼
+逆袭的科罗萨尔 激战的开端嗼！</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">猩猩怪的老兵里 看守地盘的巴尔巴罗萨
+和不动的岗扎雷斯非常有名嗼
+但乱世之中终于又诞生出新英雄嗼……</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">超级智能一旦诞生 就算脱离创造者的管理
+也不会停止进化嗼
+你们将体会到它的恐怖嗼</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">武术就是要一心追求强大嗼
+其中流派多如繁星嗼
+今天……将要决出最强流派嗼！</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第九装甲师是帝国军最强部队……
+而且还开始使用禁忌的巨神兽兵器了嗼
+应该会是一场艰难的战斗嗼……好兴奋嗼……</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">这个挑战就是所谓的得分挑战嗼
+不仅要打倒出现的怪物
+还要你们在战斗时思考如何赚取分数嗼</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">在这个挑战中要让羽蛇成长嗼
+让它求生不得 求死不能……就像某个当权者一样
+要巧妙地与羽蛇不断战斗嗼</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">独自攻下巨神兽战舰的男人 真
+利用诺彭大仙人的力量
+可以体验他的战斗嗼 颤栗起来嗼！</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">终于又迎来这一天了嗼！
+决出今年的诺彭勇者的日子嗼！
+个性独特的挑战者正等着虎嗼！</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">ああああ</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第4章之后可以挑战</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第5章之后可以挑战</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第6章之后可以挑战</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第7章之后可以挑战</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第8章之后可以挑战</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第9章之后可以挑战</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">第10章之后可以挑战</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">游戏通关后可以挑战</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">TIGER! TIGER! 关卡5通关后
+可以挑战</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>43</td>
+        <td class="side">击破特定的珍稀种怪物后
+可以挑战</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
