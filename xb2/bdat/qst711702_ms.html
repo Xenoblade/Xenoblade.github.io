@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst711702_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst711702_msg0001</td>
+        <td>84</td>
+        <td class="side">How is going with test that Rolipoli
+set to friends?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst711702_msg0002</td>
+        <td>84</td>
+        <td class="side">Meh? Want more hints? Oh, that not
+bode well for success... But whatever,
+can give nudge in right direction.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst711702_msg0003</td>
+        <td>84</td>
+        <td class="side">Are friends making sure to use
+Switch Arts? That get used when
+switching vanguard and rear guard.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst711702_msg0004</td>
+        <td>84</td>
+        <td class="side">Depending on circumstance, sometime
+this maneuver also inflict Topple!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst711702_msg0005</td>
+        <td>84</td>
+        <td class="side">Looking at party of friends, Rolipoli
+think edgy Blade-man with white hair
+can probably pull off.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst711702_msg0006</td>
+        <td>84</td>
+        <td class="side">...And now Rolipoli all hinted out!</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst711702_msg0007</td>
+        <td>84</td>
+        <td class="side">Friends use precious knowledge that
+Rolipoli offer, and Topple five enemies.
+Then Rolipoli know you real deal!</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst711702_msg0101</td>
+        <td>84</td>
+        <td class="side">Meh-meh?
+Faces of friends have look that say,
+&quot;We pass your test, oh great Rolipoli!&quot;</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst711702_msg0102</td>
+        <td>84</td>
+        <td class="side">How Rolipoli know without even look?
+Oh, Rolipoli is master warrior! Can tell
+such thing by sense aura and so on.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst711702_msg0103</td>
+        <td>84</td>
+        <td class="side">That aside, it seem that first impression
+of Rolipoli was correct, and friends can
+hold friends&#39; own. Very good!</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst711702_msg0104</td>
+        <td>84</td>
+        <td class="side">That conclude this test...but there is
+more test coming up in near future!
+Level of difficult will be much higher!</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst711702_msg0105</td>
+        <td>84</td>
+        <td class="side">Also, Blade of Rolipoli is scouting field
+for skilled Drivers over Gormott way.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst711702_msg0106</td>
+        <td>84</td>
+        <td class="side">If friends not have pleasure of meeting
+yet, would be great if could find and
+show him what friends can do.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst711702_msg0107</td>
+        <td>84</td>
+        <td class="side">OK, Rolipoli will wait on tenderloins
+for next time when can give friends
+test to do! Till then!</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst701105_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst701105_msg0001</td>
+        <td>84</td>
+        <td class="side">...You&#39;re looking for a skipper?
+And you&#39;re serious about it?</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst701105_msg0002</td>
+        <td>84</td>
+        <td class="side">Oh, but my services don&#39;t come cheap,
+darlings. Let&#39;s see now... My rates are...
+Hmm. How&#39;s 200,000G sound?</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst701105_msg0101</td>
+        <td>165</td>
+        <td class="side">What will you do?</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst701105_msg0102</td>
+        <td>165</td>
+        <td class="side">Turn her down</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst701105_msg0103</td>
+        <td>165</td>
+        <td class="side">Pay up</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst701105_msg0104</td>
+        <td>165</td>
+        <td class="side">Mention Arb&#39;s name</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst701105_msg0201</td>
+        <td>84</td>
+        <td class="side">Nooo! For reals?
+Aww, well, come again, darlings. ♪</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst701105_msg0301</td>
+        <td>84</td>
+        <td class="side">Urk-! You&#39;ve seriously got that kind
+of scratch? What are you, highborn
+or something?!</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst701105_msg0302</td>
+        <td>84</td>
+        <td class="side">No no, not a problem! Nope, I&#39;m good.
+I&#39;ll do it! Just tell me where to be and
+I&#39;ll be there with bells on.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst701105_msg0303</td>
+        <td>84</td>
+        <td class="side">...Yanchik Harbor? Yep, got it.
+By the by, d&#39;you need me to go in all
+sneaky-like? Is someone after you?</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst701105_msg0304</td>
+        <td>84</td>
+        <td class="side">...Oh, you&#39;re not really involved? Still,
+your pockets have got to be quite deep,
+throwing money around like that...</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst701105_msg0305</td>
+        <td>84</td>
+        <td class="side">Huh? Oh, don&#39;t mind me, darlings.
+Let&#39;s just meet in Yanchik Harbor.
+Toodle-pip, and all that. ♪</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst701105_msg0401</td>
+        <td>84</td>
+        <td class="side">Oh, you&#39;re friends with the old fart?
+Well, why didn&#39;t you say so sooner,
+darlings?</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst701105_msg0402</td>
+        <td>84</td>
+        <td class="side">If you need a skipper, I&#39;ll be there.
+I can&#39;t very well refuse if he&#39;s asking...
+I&#39;m sure he&#39;s got reasons to, and so on.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst701105_msg0403</td>
+        <td>84</td>
+        <td class="side">...What, money? Nah, forget about it!
+I&#39;m not so far gone that I can&#39;t do a
+friend a favor. So, where do I go?</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst701105_msg0404</td>
+        <td>84</td>
+        <td class="side">...Yanchik Harbor? Yep, got it.
+By the by, d&#39;you need me to go in all
+sneaky-like? Is someone after you?</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst701105_msg0405</td>
+        <td>84</td>
+        <td class="side">...Oh, you&#39;re not really involved?
+Cool. No precautions necessary, then.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst701105_msg0406</td>
+        <td>84</td>
+        <td class="side">Huh? Oh, don&#39;t mind me, darlings.
+Let&#39;s just meet in Yanchik Harbor.
+Toodle-pip, and all that. ♪</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst701105_msg0501</td>
+        <td>84</td>
+        <td class="side">Will you pay 200,000G?</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst701105_msg0502</td>
+        <td>84</td>
+        <td class="side">Don&#39;t pay</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst701105_msg0503</td>
+        <td>84</td>
+        <td class="side">Aww pooh, so you&#39;re short after all...</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
