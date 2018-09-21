@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst700807_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst700807_msg0001</td>
+        <td>84</td>
+        <td class="side">いらっしゃいま[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst700807_msg0002</td>
+        <td>84</td>
+        <td class="side">もも！
+見つかっちゃいましたも！</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst700807_msg0101</td>
+        <td>84</td>
+        <td class="side">まじめに働いているのは
+とっても偉いけど[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst700807_msg0102</td>
+        <td>84</td>
+        <td class="side">まずはお婆さんに
+謝ってくるのが先だと思うよ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst700807_msg0201</td>
+        <td>84</td>
+        <td class="side">働いているところを済まないな</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst700807_msg0202</td>
+        <td>84</td>
+        <td class="side">だが　あのお婆さんに誠意を伝えるのは
+労働と同じくらい大事なことだと思うぞ！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst700807_msg0301</td>
+        <td>84</td>
+        <td class="side">はは　なかなか悪くない潜伏先でしたが
+僕達には通用しませんよ</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst700807_msg0302</td>
+        <td>84</td>
+        <td class="side">さ　あのお婆さんのもとへ
+行ってくれますね？</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst700807_msg0401</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]やはりノポン族には
+まだまだ俺が理解できない部分があるな</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst700807_msg0501</td>
+        <td>84</td>
+        <td class="side">働いてるところをゴメンなさい</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst700807_msg0502</td>
+        <td>84</td>
+        <td class="side">でも　あのお婆さんも
+あなた達の言葉を待っていると思うんです</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst700807_msg0601</td>
+        <td>84</td>
+        <td class="side">ちょ！？
+何で逃げた先で働いてるのよ！？</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst700807_msg0602</td>
+        <td>84</td>
+        <td class="side">こんな所で油売ってないで
+さっさとあのお婆さんのところへ
+行きなさい！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst700807_msg0701</td>
+        <td>84</td>
+        <td class="side">木の葉を隠すなら森の中　とは言うが
+まさか店の従業員になりすますとはな</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst700807_msg0702</td>
+        <td>84</td>
+        <td class="side">なかなか見事だったが
+見つけたからには
+老婆の所へ行ってもらおうか</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst700807_msg0801</td>
+        <td>84</td>
+        <td class="side">あなた
+本当に隠れる気があるんでしょうね？</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst700807_msg0802</td>
+        <td>84</td>
+        <td class="side">まあいいわ
+早くあのご婦人の所へ　お行きなさい</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst700807_msg0901</td>
+        <td>84</td>
+        <td class="side">ふむ　隠れ方としては
+なかなか斬新だが[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst700807_msg0902</td>
+        <td>84</td>
+        <td class="side">見つけたからには
+あのご婦人の所へ
+行ってもらおうか</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

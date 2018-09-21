@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst701002_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst701002_msg0001</td>
+        <td>84</td>
+        <td class="side">建造避难所
+首先需要技艺高超的木匠协助</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst701002_msg0002</td>
+        <td>84</td>
+        <td class="side">扎因是商店街数一数二的工匠
+他现在在克雷亚雷工房街
+不过他有些难相处</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst701002_msg0003</td>
+        <td>84</td>
+        <td class="side">据说他和摩尔莫关系很好
+应该不至于吃闭门羹 但是[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst701002_msg0101</td>
+        <td>84</td>
+        <td class="side">这样啊 我就知道
+事情没那么简单</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst701002_msg0102</td>
+        <td>84</td>
+        <td class="side">扎因先生很顽固
+该说传统的工匠脾气吧
+平时都是丽塔从中调剂[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst701002_msg0103</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]说起来他之前说过
+不能丢下孩子不管
+所以不能离开王都</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst701002_msg0104</td>
+        <td>84</td>
+        <td class="side">也许他是因为担心自己的独生女
+所以才那么焦躁？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst701002_msg0105</td>
+        <td>84</td>
+        <td class="side">不好意思 你们如果在哪里见到丽塔
+麻烦让她回来一趟
+估计她还在古拉的某处</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst701002_msg0106</td>
+        <td>84</td>
+        <td class="side">你问我怎么知道？
+因为是我劝她去古拉的
+「玉不琢不成器」嘛</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst701002_msg0201</td>
+        <td>84</td>
+        <td class="side">我不知道丽塔具体在哪里
+考虑到她们两人的实力
+应该还在古拉四处闲逛</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst701002_msg0202</td>
+        <td>84</td>
+        <td class="side">对了 你们可以在古拉的港口
+打听一下</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst701002_msg0203</td>
+        <td>84</td>
+        <td class="side">她们俩那么吵闹
+也许会有人记得</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst701002_msg0301</td>
+        <td>84</td>
+        <td class="side">你们在收集建造避难所的素材吧？
+这个给你们吧</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst701002_msg0302</td>
+        <td>84</td>
+        <td class="side">抱歉 眼下能用的
+就只有那个了
+考虑到我们家的家计 只能给你们这个</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst701002_msg0303</td>
+        <td>84</td>
+        <td class="side">你们要珍惜地使用啊</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst701002_msg0401</td>
+        <td>84</td>
+        <td class="side">扎因的水平真的高
+要是能建好避难所
+这段时间住民也就用不着担惊受怕了</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst701002_msg0402</td>
+        <td>84</td>
+        <td class="side">我知道这很辛苦
+不过还是希望你们再帮我一下</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

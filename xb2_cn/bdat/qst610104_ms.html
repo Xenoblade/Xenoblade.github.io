@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst610104_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst610104_msg0001</td>
+        <td>84</td>
+        <td class="side">是埃里克拜托你
+来追查小偷的吗？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst610104_msg0002</td>
+        <td>84</td>
+        <td class="side">确实像是那个顽固家伙会有的想法</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst610104_msg0003</td>
+        <td>84</td>
+        <td class="side">我可不想因为隐瞒情报被那家伙记恨上
+所以还是告诉你吧</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst610104_msg0004</td>
+        <td>84</td>
+        <td class="side">最近 我看见有帮家伙
+在暗中窥探这个伐木厂的情况</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst610104_msg0005</td>
+        <td>84</td>
+        <td class="side">大概是为了偷走这里的木材而在制定计划吧</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst610104_msg0006</td>
+        <td>84</td>
+        <td class="side">你猜是谁？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst610104_msg0007</td>
+        <td>84</td>
+        <td class="side">是谁在暗中观察伐木厂的情况？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst610104_msg0008</td>
+        <td>84</td>
+        <td class="side">诺彭</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst610104_msg0009</td>
+        <td>84</td>
+        <td class="side">火鸡人</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst610104_msg0010</td>
+        <td>84</td>
+        <td class="side">斯佩比亚人</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst610104_msg0101</td>
+        <td>84</td>
+        <td class="side">猜错啦</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst610104_msg0102</td>
+        <td>84</td>
+        <td class="side">诺彭里是有些看见钱就两眼发光的
+不过没这么坏的家伙啦</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst610104_msg0103</td>
+        <td>84</td>
+        <td class="side">其实是火鸡人</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst610104_msg0201</td>
+        <td>84</td>
+        <td class="side">你真是目光如炬啊</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst610104_msg0202</td>
+        <td>84</td>
+        <td class="side">没错 之前有帮火鸡人在暗中窥探这里</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst610104_msg0301</td>
+        <td>84</td>
+        <td class="side">对斯佩比亚人来说
+古拉的木材可是很高档的商品啊</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst610104_msg0302</td>
+        <td>84</td>
+        <td class="side">所以就算有人想要偷走
+也不足为奇</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst610104_msg0303</td>
+        <td>84</td>
+        <td class="side">不过这次情况不一样
+[ML:Dash ]是火鸡人</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst610104_msg0401</td>
+        <td>84</td>
+        <td class="side">火鸡人里有些听得懂人话
+有时候还会用木材盖房子</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst610104_msg0402</td>
+        <td>84</td>
+        <td class="side">所以会想要这里的木材
+也不足为奇</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst610104_msg0403</td>
+        <td>84</td>
+        <td class="side">嗯 我知道的就这些了
+你再问问别人吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

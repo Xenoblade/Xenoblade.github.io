@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst620201_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst620201_msg0001</td>
+        <td>84</td>
+        <td class="side">見てくれ[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst620201_msg0002</td>
+        <td>84</td>
+        <td class="side">この畑にはたくさんの野菜ができとったのに
+今じゃすっからかんじゃ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst620201_msg0003</td>
+        <td>84</td>
+        <td class="side">収穫を終えたから[ML:Dash ]
+という理由ではなさそうですね</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst620201_msg0004</td>
+        <td>84</td>
+        <td class="side">そうじゃ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst620201_msg0005</td>
+        <td>84</td>
+        <td class="side">夜の間に何者かが野菜を全部盗みおった[ML:Dash ]
+隣の婆さんの畑のは残っとるがな</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst620201_msg0006</td>
+        <td>84</td>
+        <td class="side">そいつは許せねぇな！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst620201_msg0007</td>
+        <td>84</td>
+        <td class="side">じいさんが毎日汗水垂らし
+雨の日も嵐の日も
+死に物狂いで育てた野菜を盗むなんてな！</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst620201_msg0008</td>
+        <td>84</td>
+        <td class="side">いや[ML:Dash ]
+そこまでは苦労しておらんが[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst620201_msg0009</td>
+        <td>84</td>
+        <td class="side">何にせよ人の物を盗むのは悪人の仕業だ</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst620201_msg0010</td>
+        <td>84</td>
+        <td class="side">人とは限らないのでは？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst620201_msg0011</td>
+        <td>84</td>
+        <td class="side">ターキンだろうがモンスターだろうが同じだ</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst620201_msg0012</td>
+        <td>84</td>
+        <td class="side">誰であろうが我が懲らしめてこよう[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst620201_msg0013</td>
+        <td>84</td>
+        <td class="side">ヴァサラ[ML:Dash ]！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst620201_msg0014</td>
+        <td>84</td>
+        <td class="side">全くアイツは
+ちっとも人の話を聞かねぇな</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst620201_msg0015</td>
+        <td>84</td>
+        <td class="side">オレは一軒一軒家を回って
+村の人と話してくる！</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst620201_msg0016</td>
+        <td>84</td>
+        <td class="side">目撃情報がないかどうか[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst620201_msg0017</td>
+        <td>84</td>
+        <td class="side">あるいは犯人だった場合は自白するように
+説き伏せてくるぜ！！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst620201_msg0018</td>
+        <td>84</td>
+        <td class="side">じゃあな！</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst620201_msg0019</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]はぁ</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst620201_msg0020</td>
+        <td>84</td>
+        <td class="side">どちらも似たり寄ったりですね
+正義感が強いところもですが</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst620201_msg0021</td>
+        <td>84</td>
+        <td class="side">私はここで畑を見張るのが良いかと思います
+残りの野菜を奪いにくるかもしれません</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst620201_msg0022</td>
+        <td>84</td>
+        <td class="side">どうでしょう
+私に任せてはくれませんか？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst620201_msg0023</td>
+        <td>84</td>
+        <td class="side">ありがとうございます
+必ずや期待に応えてみせます</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst620201_msg0024</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]あんたらが野菜を盗んだ犯人を
+見つけてくれるってことでええんかの？</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst620201_msg0025</td>
+        <td>84</td>
+        <td class="side">そりゃ助かるわい
+よろしく頼んだぞ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

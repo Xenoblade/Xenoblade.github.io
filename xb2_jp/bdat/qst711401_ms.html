@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst711401_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst711401_msg0001</td>
+        <td>84</td>
+        <td class="side">君達　知ってるかい？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst711401_msg0002</td>
+        <td>84</td>
+        <td class="side">ここグーラやイーラの地には
+雲海から偶発的に流れ着いた
+機械部品があることを</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst711401_msg0003</td>
+        <td>84</td>
+        <td class="side">私はそういった機械部品を探して
+アルスト中を旅している冒険者なんだ</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst711401_msg0004</td>
+        <td>84</td>
+        <td class="side">ただ
+それは素人目にはスクラップと
+なかなか見分けがつかなくてね</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst711401_msg0005</td>
+        <td>84</td>
+        <td class="side">部品の回収には
+機械の知識を持った人が造る
+「サーチマシン」という道具が必要なんだ</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst711401_msg0006</td>
+        <td>84</td>
+        <td class="side">だが　私が持っている
+サーチマシンは故障してしまってね</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst711401_msg0007</td>
+        <td>84</td>
+        <td class="side">これを使ってグーラ各地で
+たくさん機械部品を調達してやろうと
+思っていたんだが　アテが外れてしまったよ</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst711401_msg0008</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]いや　待てよ
+ここで待ちほうけているだけなら
+いっそのこと[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst711401_msg0009</td>
+        <td>84</td>
+        <td class="side">君達　私に代わって
+機械部品を集めてきてくれないかい？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst711401_msg0010</td>
+        <td>84</td>
+        <td class="side">ぶしつけだが
+君達はドライバーとそのブレイド達だよね？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst711401_msg0011</td>
+        <td>84</td>
+        <td class="side">君達なら
+モンスターが生息する場所でも
+探索するのは　お手の物じゃないかい？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst711401_msg0012</td>
+        <td>84</td>
+        <td class="side">お？　まんざらでもないという顔だね
+よし　決まりだ！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst711401_msg0013</td>
+        <td>84</td>
+        <td class="side">それじゃあ　まずは
+サーチマシン・シルバーを
+造ってみて欲しい</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst711401_msg0014</td>
+        <td>84</td>
+        <td class="side">これがあれば　各地にある機械部品から
+有用な部品を回収できるようになるはずだ</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst711401_msg0015</td>
+        <td>84</td>
+        <td class="side">サーチマシン・シルバーを作るために必要な
+クライブの甲殻は　この辺りじゃ
+憩いの水辺で採れるから　探してみてくれ</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst711401_msg0016</td>
+        <td>84</td>
+        <td class="side">それができたら
+次は各地に漂着している機械部品の
+探索と回収だ</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst711401_msg0017</td>
+        <td>84</td>
+        <td class="side">いま私が集めているのは
+コウモリヒンジという部品が1つと
+スカーレットコイルという部品が1つだ</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst711401_msg0018</td>
+        <td>84</td>
+        <td class="side">これらはグーラの各地にある
+「銀色の機械部品」に含まれていることが
+多いから　探してみて欲しい</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst711401_msg0019</td>
+        <td>84</td>
+        <td class="side">それじゃあ
+期待して待っているよ！</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

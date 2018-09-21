@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst720601_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst720601_msg0001</td>
+        <td>84</td>
+        <td class="side">嗨 蒙托斯[ML:Dash ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst720601_msg0002</td>
+        <td>84</td>
+        <td class="side">啊 阿德尔大人
+您的旅伴们也在啊</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst720601_msg0003</td>
+        <td>84</td>
+        <td class="side">看各位来拜访我
+是想要渡沙药吧</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst720601_msg0004</td>
+        <td>84</td>
+        <td class="side">就是这样
+给 我们按人数采集了
+美拉胡萝卜和巢穴精华</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst720601_msg0005</td>
+        <td>84</td>
+        <td class="side">真是太周到了！
+我蒙托斯感激涕零</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst720601_msg0006</td>
+        <td>84</td>
+        <td class="side">不 不只是我
+亚莱特的人民和反抗军的士兵
+都会很高兴吧？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst720601_msg0007</td>
+        <td>84</td>
+        <td class="side">？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst720601_msg0008</td>
+        <td>84</td>
+        <td class="side">毕竟阿德尔大人终于下定决心
+为了伊拉 挺身而出了[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst720601_msg0009</td>
+        <td>84</td>
+        <td class="side">啊？这是什么意思[ML:Dash ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst720601_msg0010</td>
+        <td>84</td>
+        <td class="side">阿德尔殿下
+终于要坐上王位
+我蒙托斯一直等着这一天</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst720601_msg0011</td>
+        <td>84</td>
+        <td class="side">哎哎哎 阿德尔
+你居然在想这些！？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst720601_msg0012</td>
+        <td>84</td>
+        <td class="side">不不不 我没想！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst720601_msg0013</td>
+        <td>84</td>
+        <td class="side">蒙托斯
+你从哪里得出这个结论的！</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst720601_msg0014</td>
+        <td>84</td>
+        <td class="side">唉 我这么说很失礼
+现今的国王陛下尽管仁慈
+却也实在是优柔寡断</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst720601_msg0015</td>
+        <td>84</td>
+        <td class="side">所有人都希望得到阿德尔大人这样
+拥有领导才能的人的指引</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst720601_msg0016</td>
+        <td>84</td>
+        <td class="side">的确 阿德尔的领导天赋
+连我都感到羡慕</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst720601_msg0017</td>
+        <td>84</td>
+        <td class="side">您在说什么呢 皇帝陛下</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst720601_msg0018</td>
+        <td>84</td>
+        <td class="side">即使阿德尔大人仁德出众
+要说我们陛下不如他
+我绵津见可是绝不能认同</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst720601_msg0019</td>
+        <td>84</td>
+        <td class="side">我迦具土也是这么认为的</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst720601_msg0020</td>
+        <td>84</td>
+        <td class="side">不是 所以说 不管我有没有领导天赋
+我可没想过要篡位</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst720601_msg0021</td>
+        <td>84</td>
+        <td class="side">我想要保护伊拉
+所以才要去王都 仅此而已</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst720601_msg0022</td>
+        <td>84</td>
+        <td class="side">是吗[ML:Dash ]
+真是遗憾</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst720601_msg0023</td>
+        <td>84</td>
+        <td class="side">不过不管您是认真的还是开玩笑
+都最好不要把这些话挂在嘴边上</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst720601_msg0024</td>
+        <td>84</td>
+        <td class="side">要是被那位以心胸狭窄闻名的
+王弟殿下听到 可就有意思了</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst720601_msg0025</td>
+        <td>84</td>
+        <td class="side">竟然说有趣 真是事不关己[ML:Dash ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst720601_msg0026</td>
+        <td>84</td>
+        <td class="side">本来就不关我事啊</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst720601_msg0027</td>
+        <td>84</td>
+        <td class="side">不过这句忠告
+我会牢记在心</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst720601_msg0028</td>
+        <td>84</td>
+        <td class="side">作为希望能看到阿德尔陛下治世的人
+今后我会谨言慎行</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst720601_msg0029</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Think ][ML:Dash ]那就别叫我陛下嘛</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst720601_msg0030</td>
+        <td>84</td>
+        <td class="side">药师大人
+渡沙药什么时候能完成呢？</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst720601_msg0031</td>
+        <td>84</td>
+        <td class="side">哦 这才是正题啊</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst720601_msg0032</td>
+        <td>84</td>
+        <td class="side">只要有材料 很快就能做好
+我这就加紧调配</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst720601_msg0033</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]久等了
+给您五人份的渡沙药</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst720601_msg0034</td>
+        <td>84</td>
+        <td class="side">谢了 蒙托斯</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst720601_msg0035</td>
+        <td>84</td>
+        <td class="side">这下终于能渡过雷特桥
+前往王都了</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst720601_msg0036</td>
+        <td>84</td>
+        <td class="side">祈祷各位的旅途平安无事</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

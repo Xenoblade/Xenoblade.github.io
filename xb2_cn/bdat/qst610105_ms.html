@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst610105_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst610105_msg0001</td>
+        <td>84</td>
+        <td class="side">你问过大伙儿了吧？
+有什么收获吗？</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst610105_msg0002</td>
+        <td>84</td>
+        <td class="side">嗯嗯[ML:Dash ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst610105_msg0003</td>
+        <td>84</td>
+        <td class="side">是这样啊</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst610105_msg0004</td>
+        <td>84</td>
+        <td class="side">木材是在假日被偷走的[ML:Dash ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst610105_msg0005</td>
+        <td>84</td>
+        <td class="side">这个我之前就知道了[ML:Dash ]
+因为我是头儿
+希望你们能告诉我更有价值的情报啊</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst610105_msg0006</td>
+        <td>84</td>
+        <td class="side">接下来是[ML:Dash ]
+火鸡人之前在暗中窥探
+我们伐木场的情况啊</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst610105_msg0007</td>
+        <td>84</td>
+        <td class="side">说不定那家伙就是犯人</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst610105_msg0008</td>
+        <td>84</td>
+        <td class="side">还有[ML:Dash ]
+听说赛加尔丘陵的瀑布水潭附近的小屋那边
+最近出现了很多木材</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst610105_msg0009</td>
+        <td>84</td>
+        <td class="side">说不定火鸡人
+就潜伏在那里</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst610105_msg0010</td>
+        <td>84</td>
+        <td class="side">收获不小啊</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst610105_msg0011</td>
+        <td>84</td>
+        <td class="side">能帮我继续去小屋看看吗？
+希望你曝光那帮火鸡人的阴谋诡计</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst610105_msg0012</td>
+        <td>84</td>
+        <td class="side">拜托你啦
+不过 去的时候多加小心啊</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst610105_msg0101</td>
+        <td>84</td>
+        <td class="side">太好了
+你平安回来了啊</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst610105_msg0102</td>
+        <td>84</td>
+        <td class="side">那么 结果如何？</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst610105_msg0103</td>
+        <td>84</td>
+        <td class="side">是这样啊
+犯人果然是火鸡人啊</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst610105_msg0104</td>
+        <td>84</td>
+        <td class="side">后来火鸡人身上掉出来个木雕？
+给我瞧瞧</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst610105_msg0105</td>
+        <td>84</td>
+        <td class="side">这 这是[ML:Dash ]！！</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst610105_msg0106</td>
+        <td>84</td>
+        <td class="side">雕得好精巧啊[ML:Dash ]
+可以算是相当少见的艺术品了[ML:Dash ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst610105_msg0107</td>
+        <td>84</td>
+        <td class="side">木雕手艺这么精致 这么用心
+火鸡人也懂得爱惜树木啊</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst610105_msg0108</td>
+        <td>84</td>
+        <td class="side">对了！
+我想到个好主意</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst610105_msg0109</td>
+        <td>84</td>
+        <td class="side">把这个出口到斯佩比亚去
+可以大赚一笔！</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst610105_msg0110</td>
+        <td>84</td>
+        <td class="side">跟火鸡人搞好关系
+给他们木材 请他们做木雕[ML:Dash ]
+这主意超棒吧？</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst610105_msg0111</td>
+        <td>84</td>
+        <td class="side">啊 糟了！</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst610105_msg0112</td>
+        <td>84</td>
+        <td class="side">火鸡人已经
+被你们全歼了啊[ML:Dash ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst610105_msg0113</td>
+        <td>84</td>
+        <td class="side">不 不 没事[ML:Dash ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst610105_msg0114</td>
+        <td>84</td>
+        <td class="side">机会难得 你带着这个木雕
+去托里格镇的饰品店走一趟吧</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst610105_msg0115</td>
+        <td>84</td>
+        <td class="side">我会跟伊蕾奈打声招呼
+她肯定会做出很棒的成品来的</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst610105_msg0116</td>
+        <td>84</td>
+        <td class="side">我才要谢谢你</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst610105_msg0117</td>
+        <td>84</td>
+        <td class="side">查出犯人是谁 我总算是舒爽了
+不过也有点难以释怀啦[ML:Dash ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst610105_msg0201</td>
+        <td>84</td>
+        <td class="side">火鸡人
+居然手这么巧[ML:Dash ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst610105_msg0202</td>
+        <td>84</td>
+        <td class="side">失去了值得惋惜的人才啊[ML:Dash ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst610105_msg0203</td>
+        <td>84</td>
+        <td class="side">把火鸡人留下的最后的木雕
+带到托里格镇的饰品店去吧</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst610105_msg0204</td>
+        <td>84</td>
+        <td class="side">我会跟伊蕾奈打声招呼
+她肯定会做出很棒的成品来的</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

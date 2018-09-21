@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>fev11140150_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0001</td>
+        <td>84</td>
+        <td class="side">果然多了些同伴
+热热闹闹的真好呢
+遇上战斗也能轻松些</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0002</td>
+        <td>84</td>
+        <td class="side">那是当然
+毕竟有我在呢
+怎么可能轻易和怪物陷入苦战</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0003</td>
+        <td>84</td>
+        <td class="side">你的力量确实很强大 天之圣杯</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0004</td>
+        <td>84</td>
+        <td class="side">不过劳拉并没有
+在说这一点</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0005</td>
+        <td>84</td>
+        <td class="side">劳拉并没有认为只有御刃者才能互为同伴
+而异刃只不过是道具[ML:Dash ]
+你是这个意思吧？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0006</td>
+        <td>84</td>
+        <td class="side">说得没错！</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0007</td>
+        <td>84</td>
+        <td class="side">增加的同伴包括阿德尔和光
+还有霞哦</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0008</td>
+        <td>84</td>
+        <td class="side">与谁是御刃者谁是异刃无关
+我只是为了同伴的增加
+而单纯地感到高兴</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0009</td>
+        <td>84</td>
+        <td class="side">原来如此[ML:Dash ]
+真奇怪啊</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0010</td>
+        <td>84</td>
+        <td class="side">是吗？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0011</td>
+        <td>84</td>
+        <td class="side">各位
+差不多该向亚基卡港出发了</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0012</td>
+        <td>84</td>
+        <td class="side">沿着这条路走就能到港口</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0013</td>
+        <td>84</td>
+        <td class="side">从亚基卡到古拉的定期航班啊[ML:Dash ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>fev11_140_150_msg0014</td>
+        <td>84</td>
+        <td class="side">现在还没有听到停航的消息
+我们赶紧走吧</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

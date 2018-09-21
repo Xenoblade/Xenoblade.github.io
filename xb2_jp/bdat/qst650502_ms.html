@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst650502_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst650502_msg0001</td>
+        <td>84</td>
+        <td class="side">くっ[ML:Dash ]！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst650502_msg0002</td>
+        <td>84</td>
+        <td class="side">ここは[ML:Dash ]！？</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst650502_msg0003</td>
+        <td>84</td>
+        <td class="side">だ　大丈夫[ML:Dash ]！？</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst650502_msg0004</td>
+        <td>84</td>
+        <td class="side">バイアス人じゃ[ML:Dash ]　ない？</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst650502_msg0005</td>
+        <td>84</td>
+        <td class="side">さっきから何度も言ってるけど
+そのバイアス人って何なのさ？</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst650502_msg0006</td>
+        <td>84</td>
+        <td class="side">ここにはグーラ人もスペルビア人も
+ルクスリア人もいるけど　
+バイアス人なんて聞いたことがないよ</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst650502_msg0007</td>
+        <td>84</td>
+        <td class="side">ああ　寡聞にして耳にしたことがないな</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst650502_msg0008</td>
+        <td>84</td>
+        <td class="side">さっきまで　あなた達がバイアス人[ML:Dash ]
+私の敵に見えていた[ML:Dash ]
+</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst650502_msg0009</td>
+        <td>84</td>
+        <td class="side">これはバトルシミュレーションではない？
+現実だとしたら　あの行商人が
+目論んだということ？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst650502_msg0010</td>
+        <td>84</td>
+        <td class="side">よく気づいたも</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst650502_msg0011</td>
+        <td>84</td>
+        <td class="side">うわ　出た！</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst650502_msg0012</td>
+        <td>84</td>
+        <td class="side">失礼も！
+名を冠する者と出くわしたような
+反応するんじゃないも！</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst650502_msg0013</td>
+        <td>84</td>
+        <td class="side">ノポン・ダイセンニンさん[ML:Dash ]
+やっぱりあなたが仕掛け人だったんですね</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst650502_msg0014</td>
+        <td>84</td>
+        <td class="side">えっへんも！
+ノポン・ダイセンニンにできないことは
+あんまりないも！</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst650502_msg0015</td>
+        <td>84</td>
+        <td class="side">なんか微妙な威張り方だな</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst650502_msg0016</td>
+        <td>84</td>
+        <td class="side">ノポン・ダイセンニンなんて　
+ただの行商人にしては
+大層な名だとは思ったけれど[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst650502_msg0017</td>
+        <td>84</td>
+        <td class="side">あのバトルシミュレーターに
+いったいどんな細工をしたの？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst650502_msg0018</td>
+        <td>84</td>
+        <td class="side">ただちょっとエルマの意識を
+この挑戦の地に飛ばしてみたんだも</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst650502_msg0019</td>
+        <td>84</td>
+        <td class="side">つまり本来の私はＮＬＡで
+バトルシミュレーターの
+中にいるままということ？</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst650502_msg0020</td>
+        <td>84</td>
+        <td class="side">そういうことも
+話が早くて助かるも</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst650502_msg0021</td>
+        <td>84</td>
+        <td class="side">意識だけというより
+実体をともなっているように感じるけど
+いったい何のために[ML:Dash ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst650502_msg0022</td>
+        <td>84</td>
+        <td class="side">よく聞いてくれたも！
+すべてはノポン・ダイセンニンの野望！
+長年の夢だったも！</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst650502_msg0023</td>
+        <td>84</td>
+        <td class="side">夢？　どんな夢だよ</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst650502_msg0024</td>
+        <td>84</td>
+        <td class="side">それは[ML:Dash ]僕やエルマを
+レックスと会わせることじゃないのかな</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst650502_msg0025</td>
+        <td>84</td>
+        <td class="side">シュルクの言う通りも！
+シュルクやエルマがやってくるのは
+みんなの夢も！</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst650502_msg0026</td>
+        <td>84</td>
+        <td class="side">みんなって誰のことなんだ――？</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst650502_msg0027</td>
+        <td>84</td>
+        <td class="side">呆れたわね
+そんなことのためにこんな大仕掛けを[ML:Dash ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>qst650502_msg0028</td>
+        <td>84</td>
+        <td class="side">いえ　それよりまず
+あなた達に謝罪する方が先ね</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>qst650502_msg0029</td>
+        <td>84</td>
+        <td class="side">敵と誤認させられたとはいえ
+いきなり攻撃した私に非があった
+赦してもらえると嬉しいわ</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>qst650502_msg0030</td>
+        <td>84</td>
+        <td class="side">赦すも赦さないもないよ
+ただの勘違いだったんだから！</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>qst650502_msg0031</td>
+        <td>84</td>
+        <td class="side">俺はレックス[ML:Dash ]
+君は？</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>qst650502_msg0032</td>
+        <td>84</td>
+        <td class="side">私はエルマ[ML:Dash ]
+惑星ミラにおける地球人居留地ＮＬＡの
+民間軍事組織ブレイドの一員よ</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>qst650502_msg0033</td>
+        <td>84</td>
+        <td class="side">へえ　ブレイドなんだ[ML:Dash ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>qst650502_msg0034</td>
+        <td>84</td>
+        <td class="side">え　ええ[ML:Dash ]
+あなた達　ブレイドを知っているの？</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>qst650502_msg0035</td>
+        <td>84</td>
+        <td class="side">知っているもなにも
+私達は皆ブレイドと
+そのドライバーですから</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>qst650502_msg0036</td>
+        <td>84</td>
+        <td class="side">ドライバー？</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>qst650502_msg0037</td>
+        <td>84</td>
+        <td class="side">ハナだけは人工ブレイドなのですも！</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>qst650502_msg0038</td>
+        <td>84</td>
+        <td class="side">ちょ　ちょっと待って
+なんだか混乱してきたわ</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>qst650502_msg0039</td>
+        <td>84</td>
+        <td class="side">どうやらブレイドひとつとっても
+レックスの世界とエルマの世界では
+意味がまったく違うようだね</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>qst650502_msg0040</td>
+        <td>84</td>
+        <td class="side">違うからオモシロいんだも！</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>qst650502_msg0041</td>
+        <td>84</td>
+        <td class="side">私達の世界ではブレイドというのは
+組織の名を意味しているわ</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>qst650502_msg0042</td>
+        <td>84</td>
+        <td class="side">そちらでは種族名[ML:Dash ]
+みたいなものかしら</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>qst650502_msg0043</td>
+        <td>84</td>
+        <td class="side">まあ　近いといえば近いが
+ちょっと違うかのう[ML:Dash ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>qst650502_msg0044</td>
+        <td>84</td>
+        <td class="side">人がコアクリスタルに触れることで生まれる
+亜種生命体[ML:Dash ]それがブレイドじゃ</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>qst650502_msg0045</td>
+        <td>84</td>
+        <td class="side">亜種生命体[ML:Dash ]それで
+こんな多種多様な姿をしているのね</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>qst650502_msg0046</td>
+        <td>84</td>
+        <td class="side">でもエルマさん　じっちゃんやビャッコが
+喋ることには驚かないんですね</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>qst650502_msg0047</td>
+        <td>84</td>
+        <td class="side">そうね　慣れきっていたのかもしれない
+惑星ミラにも様々な姿を持った
+種族がいたから[ML:Dash ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>qst650502_msg0048</td>
+        <td>84</td>
+        <td class="side">しかも　意思疎通に不自由がなかった[ML:Dash ]
+何者かの意図的な干渉によるものだと
+推測する者もいたのだけれど</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>qst650502_msg0049</td>
+        <td>84</td>
+        <td class="side">惑星ミラ[ML:Dash ]聞いたことがないけど
+エルマさんの世界は僕達の世界とは
+ずいぶん違うようですね</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>qst650502_msg0050</td>
+        <td>84</td>
+        <td class="side">巨神界とアルストとは
+そんなに変わらない感じだったんですけど</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>qst650502_msg0051</td>
+        <td>84</td>
+        <td class="side">だよな！
+人間型の巨神獣から来たのかもって
+ちょっと思ったりもしたし</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>qst650502_msg0052</td>
+        <td>84</td>
+        <td class="side">だけど　ひとつ確認したいことがあるわ</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>qst650502_msg0053</td>
+        <td>84</td>
+        <td class="side">な　なんだも[ML:Dash ]
+エルマの姉ちゃん　トラになにか
+恨みでもあるも？</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>qst650502_msg0054</td>
+        <td>84</td>
+        <td class="side">トラ　何わけわかんない
+うろたえ方してんの</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>qst650502_msg0055</td>
+        <td>84</td>
+        <td class="side">だってトラ　異世界の人に
+借金とかしてないも！
+にらまれる覚えないも！</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>qst650502_msg0056</td>
+        <td>84</td>
+        <td class="side">その口調　間違いない[ML:Dash ]
+トラといったわね？
+タツのオトモダチのノポン人[ML:Dash ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>qst650502_msg0057</td>
+        <td>84</td>
+        <td class="side">ももも！？</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>qst650502_msg0058</td>
+        <td>84</td>
+        <td class="side">トラ　知らないも！
+タツなんてオトモダチいないも！</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>qst650502_msg0059</td>
+        <td>84</td>
+        <td class="side">そう[ML:Dash ]
+言われてみれば　ノポンちがいかもしれない</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>qst650502_msg0060</td>
+        <td>84</td>
+        <td class="side">私が知っているトラは
+もっと小さくてかわいらしい子だった[ML:Dash ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>qst650502_msg0061</td>
+        <td>84</td>
+        <td class="side">もも　確かにトラはノポン族としては
+大きい方だけれども
+かわいらしいことには定評が[ML:Dash ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>qst650502_msg0062</td>
+        <td>84</td>
+        <td class="side">はいはい　余計なこだわり置いといて
+話が進まなくなるから</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>qst650502_msg0063</td>
+        <td>84</td>
+        <td class="side">今　ノポン人と言ったみたいだけれど
+それはノポン族とは違うのかしら</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>qst650502_msg0064</td>
+        <td>84</td>
+        <td class="side">見た目も口調も同じである以上　
+たいした違いとは思えないけれど</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>qst650502_msg0065</td>
+        <td>84</td>
+        <td class="side">それでも　我々が属する世界が異なるという
+推測[ML:Dash ]それを裏付ける傍証かもしれない
+今さらかもしれないけれど[ML:Dash ]</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>qst650502_msg0066</td>
+        <td>84</td>
+        <td class="side">レックス　シュルク[ML:Dash ]
+あなた達がシミュレーター上の
+仮想存在ではないと納得できたわ</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>qst650502_msg0067</td>
+        <td>84</td>
+        <td class="side">よかったぁ
+なら私達　きっと仲間になれますよね</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>qst650502_msg0068</td>
+        <td>84</td>
+        <td class="side">そうよね
+私達とホムラ達も
+仲良くやっていけてるんだから</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>qst650502_msg0069</td>
+        <td>84</td>
+        <td class="side">ええ　そうみたいね</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>qst650502_msg0070</td>
+        <td>84</td>
+        <td class="side">ももも！
+この光景が見たかったも！</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>qst650502_msg0071</td>
+        <td>84</td>
+        <td class="side">ダイセンニンって割りには
+なんだか子供っぽい夢だなぁ</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>qst650502_msg0072</td>
+        <td>84</td>
+        <td class="side">だよなぁ</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>qst650502_msg0073</td>
+        <td>84</td>
+        <td class="side">ノポン・ダイセンニンの夢　
+バカにしたらダメも！</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>qst650502_msg0074</td>
+        <td>84</td>
+        <td class="side">お前達もいっぱい経験つめる上に
+もんのすごいアイテムも
+手に入るチャンスも！</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>qst650502_msg0075</td>
+        <td>84</td>
+        <td class="side">それは悪くない話だけど[ML:Dash ]
+私にはブレイドとしての任務があるの</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>qst650502_msg0076</td>
+        <td>84</td>
+        <td class="side">シミュレーターに長時間
+費やすわけにはいかないわ</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>qst650502_msg0077</td>
+        <td>84</td>
+        <td class="side">大丈夫も！
+ちゃんと時間設定をいじってあるも</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>qst650502_msg0078</td>
+        <td>84</td>
+        <td class="side">こっちで一日経つ間に
+惑星ミラでは270ミリセコンドしか
+経過しないも</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>qst650502_msg0079</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Think ]ミリセコンド[ML:Dash ]聞いたことない単位だな</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>qst650502_msg0080</td>
+        <td>84</td>
+        <td class="side">つまり　こちらで一年過ぎても　
+向こうでは十秒程度ということ？</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>qst650502_msg0081</td>
+        <td>84</td>
+        <td class="side">そういうことも！
+それなら　自分を鍛え直すのにピッタリも？</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>qst650502_msg0082</td>
+        <td>84</td>
+        <td class="side">え　ええ　確かに[ML:Dash ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>qst650502_msg0083</td>
+        <td>84</td>
+        <td class="side">レックスはどう考えてるも？
+シュルクやフィオルンと同じように
+エルマの力を借りてみるも？</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>qst650502_msg0084</td>
+        <td>84</td>
+        <td class="side">エルマを仲間にする</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>qst650502_msg0085</td>
+        <td>84</td>
+        <td class="side">エルマを仲間にはしない</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>qst650502_msg0101</td>
+        <td>84</td>
+        <td class="side">もちろん！
+仲間は多いに越したことがないからな！</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>qst650502_msg0102</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]決まりね
+今から私はあなたの指揮下に入るわ
+</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>qst650502_msg0103</td>
+        <td>84</td>
+        <td class="side">そしてよろしく　レックスチームのみんな</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>qst650502_msg0201</td>
+        <td>84</td>
+        <td class="side">いや　そう言われても
+まだエルマのことよく知らないし[ML:Dash ]</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>qst650502_msg0202</td>
+        <td>84</td>
+        <td class="side">それはこれから把握すればいい
+ともに戦う以上に
+互いをよく知り合う方法はないわ</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>qst650502_msg0203</td>
+        <td>84</td>
+        <td class="side">そ　そうなのかなぁ</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>qst650502_msg0204</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]決まりね
+今から私はあなたの指揮下に入るわ
+よろしくね　レックスチームのリーダー</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>qst650502_msg0205</td>
+        <td>84</td>
+        <td class="side">そして　チームメイトのみんな</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>qst650502_msg0206</td>
+        <td>84</td>
+        <td class="side">どうする？</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

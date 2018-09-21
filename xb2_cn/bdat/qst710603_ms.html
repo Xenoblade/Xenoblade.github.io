@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst710603_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst710603_msg0001</td>
+        <td>84</td>
+        <td class="side">甜品真好嗼～ 甜的和咸的
+嘴鼓鼓都喜欢嗼～</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst710603_msg0101</td>
+        <td>84</td>
+        <td class="side">嗼嗼～这回真的吃饱了嗼～</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst710603_msg0102</td>
+        <td>84</td>
+        <td class="side">所有的食物都好好吃嗼～
+嘴鼓鼓的感激之情有如滔滔江水嗼～</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst710603_msg0103</td>
+        <td>84</td>
+        <td class="side">由于吃了很多东西
+也涨了很多有关食物和料理的知识嗼～</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst710603_msg0104</td>
+        <td>84</td>
+        <td class="side">希望有一天能找到
+活用这份经验的工作嗼～</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst710603_msg0105</td>
+        <td>84</td>
+        <td class="side">比如可以从事
+跑遍幽界各地的餐厅
+来解说料理的味道的工作之类的[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst710603_msg0106</td>
+        <td>84</td>
+        <td class="side">或者开一家把嘴鼓鼓
+至今品尝过的料理的食谱
+传授给大家的料理教室也不错嗼～</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst710603_msg0107</td>
+        <td>84</td>
+        <td class="side">不不 比起美食评论和料理教室
+还是在审查味道的比赛中
+可以一口气吃到更多料理[ML:Dash ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst710603_msg0108</td>
+        <td>84</td>
+        <td class="side">嗼嗼嗼～ 认真考虑事情之后
+感觉肚子又饿了嗼！
+老板 上菜单嗼！</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst710603_msg0201</td>
+        <td>84</td>
+        <td class="side">还早嗼！
+嘴鼓鼓的另一个胃有宇宙那么大嗼！
+这点东西还吃不饱嗼！</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst710603_msg0202</td>
+        <td>84</td>
+        <td class="side">尤其是白金色的糖球[ML:Dash ]
+嘴鼓鼓无法忘怀那芳醇的
+芳香和口味嗼～</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

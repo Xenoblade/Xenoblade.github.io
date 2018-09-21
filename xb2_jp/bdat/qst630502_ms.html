@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst630502_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst630502_msg0001</td>
+        <td>84</td>
+        <td class="side">最近　このリベラリタス島嶼群も
+平穏じゃなくてな</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst630502_msg0002</td>
+        <td>84</td>
+        <td class="side">メルクリベ小島に海のヴァイスっていう
+凶悪なモンスターが棲みついたんだよ</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst630502_msg0003</td>
+        <td>84</td>
+        <td class="side">だから見るからに強そうなあんた達に
+討伐を依頼したい</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst630502_msg0004</td>
+        <td>84</td>
+        <td class="side">海のヴァイスを倒してくれ</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst630502_msg0101</td>
+        <td>84</td>
+        <td class="side">無事だったか[ML:Dash ]
+見事　討ち果たしてくれたみたいだな</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst630502_msg0102</td>
+        <td>84</td>
+        <td class="side">何？　合計4体もいたって？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst630502_msg0103</td>
+        <td>84</td>
+        <td class="side">道理で目撃者の証言が違うわけだ</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst630502_msg0104</td>
+        <td>84</td>
+        <td class="side">とあるドライバーは獣のようなモンスター
+とある船長は鳥のようなモンスターだと
+言っていた</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst630502_msg0105</td>
+        <td>84</td>
+        <td class="side">まさかそんなカラクリがあったとはな</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst630502_msg0106</td>
+        <td>84</td>
+        <td class="side">だ　だが　そんな凶悪なモンスターを4体も
+討伐するとは大したもんだよ</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst630502_msg0107</td>
+        <td>84</td>
+        <td class="side">これで巨神獣船も安全に航行できるだろう</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst630502_msg0108</td>
+        <td>84</td>
+        <td class="side">あんた達は間違いなく
+アルスト最強のドライバーと
+ブレイドだろうな</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst630502_msg0109</td>
+        <td>84</td>
+        <td class="side">これからも大きな仕事があれば
+あんた達に回すよ</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst630502_msg0110</td>
+        <td>84</td>
+        <td class="side">よければ引き受けてくれ</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst630502_msg0111</td>
+        <td>84</td>
+        <td class="side">そうそう約束通り報酬は
+たんまり用意しといた
+受け取ってくれ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

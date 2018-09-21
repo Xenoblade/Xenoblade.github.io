@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst630102_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst630102_msg0001</td>
+        <td>84</td>
+        <td class="side">持ってきてくれたか！</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst630102_msg0002</td>
+        <td>84</td>
+        <td class="side">では　残りの作業をちゃちゃっと
+終わらせるかの</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst630102_msg0003</td>
+        <td>84</td>
+        <td class="side">むむむ[ML:Dash ][ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst630102_msg0004</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]はて
+ワシは何を作ろうとしていたのだったか</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst630102_msg0005</td>
+        <td>84</td>
+        <td class="side">ふぅむ[ML:Dash ]
+思い出せるような
+思い出せないような[ML:Dash ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst630102_msg0006</td>
+        <td>84</td>
+        <td class="side">お主は覚えておるか？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst630102_msg0007</td>
+        <td>84</td>
+        <td class="side">作ろうとしていたのは？</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst630102_msg0008</td>
+        <td>84</td>
+        <td class="side">アルスト最強のアクセサリー</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst630102_msg0009</td>
+        <td>84</td>
+        <td class="side">よく知らないと正直に答える</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst630102_msg0101</td>
+        <td>84</td>
+        <td class="side">アルスト最強のアクセサリーとな！？</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst630102_msg0102</td>
+        <td>84</td>
+        <td class="side">むむぅ[ML:Dash ]
+そうじゃったかの？</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst630102_msg0103</td>
+        <td>84</td>
+        <td class="side">言われてみればそうじゃったような[ML:Dash ]？
+いやいや　何か違うような[ML:Dash ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst630102_msg0104</td>
+        <td>84</td>
+        <td class="side">さてはお主
+テキトーなことを言いおったな？</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst630102_msg0201</td>
+        <td>84</td>
+        <td class="side">何じゃ　お主も覚えとらんのか
+正直者め</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>qst630102_msg0202</td>
+        <td>84</td>
+        <td class="side">何？
+そもそも聞かされてないじゃと？</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>qst630102_msg0203</td>
+        <td>84</td>
+        <td class="side">困ったのう
+素材があっても　思い出せなければ
+何も作れやせん[ML:Dash ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>qst630102_msg0301</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling kind=Anger ]！？</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>qst630102_msg0302</td>
+        <td>84</td>
+        <td class="side">[ML:Feeling ]閃いたぞ</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>qst630102_msg0303</td>
+        <td>84</td>
+        <td class="side">集めてきた素材を使って
+お主の好きなアクセサリーを
+作ってやろうではないか</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>qst630102_msg0304</td>
+        <td>84</td>
+        <td class="side">何を作るかはお主次第[ML:Dash ]
+ワシは作るのが趣味じゃから
+何だって良かったんじゃ</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>qst630102_msg0305</td>
+        <td>84</td>
+        <td class="side">うむ　うむ
+いつでもワシに声を掛けてくれ</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>qst630102_msg0306</td>
+        <td>84</td>
+        <td class="side">素材さえあれば
+特注のアクセサリーを作ってやるからの</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>qst630102_msg0307</td>
+        <td>84</td>
+        <td class="side">欲しい材料はジャングルフレーム
+ピオーネストーンとヴォルフの牙じゃ</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>qst630102_msg0308</td>
+        <td>84</td>
+        <td class="side">ジャングルフレームは
+グーラでサルベージをすれば
+稀に取れるみたいじゃな</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>qst630102_msg0309</td>
+        <td>84</td>
+        <td class="side">ピオーネストーンは
+インヴィディアの岩場でよく採れるじゃろ</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>qst630102_msg0310</td>
+        <td>84</td>
+        <td class="side">ヴォルフの牙は[ML:Dash ]
+穿孔橋付近にいる
+リップ・ヴォルフを倒せば手に入るじゃろ</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>qst630102_msg0311</td>
+        <td>84</td>
+        <td class="side">ワシがぽっくり逝く前に
+持ってきてくれよ</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

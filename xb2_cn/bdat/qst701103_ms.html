@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst701103_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst701103_msg0001</td>
+        <td>84</td>
+        <td class="side">小姐
+我对你今后 能达成什么
+会创造什么 很有兴趣</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst701103_msg0002</td>
+        <td>84</td>
+        <td class="side">我的徒弟应该还在居住区
+如果愿意帮忙造船的话
+请一定去见见他</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst701103_msg0003</td>
+        <td>84</td>
+        <td class="side">但是 千万不要忘记
+是为了什么而帮助他人
+自己的目标又是什么</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst701103_msg0101</td>
+        <td>84</td>
+        <td class="side">呵呵呵 果然又回来了啊
+沃塔从前就是这样
+就由我来说明需要的玻璃和木材吧</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst701103_msg0102</td>
+        <td>84</td>
+        <td class="side">木材呢 总之要注重耐久性
+古拉的肌肉树枝应该不错
+先收集10根</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst701103_msg0103</td>
+        <td>84</td>
+        <td class="side">接下来讲玻璃
+普通的玻璃强度不够
+也就是说 需要的是强化玻璃[ML:Dash ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst701103_msg0104</td>
+        <td>84</td>
+        <td class="side">这种玻璃
+可不会到处都有
+还是去请专家帮忙比较妥当</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst701103_msg0105</td>
+        <td>84</td>
+        <td class="side">关于最后的操舵手
+我有一条线索
+在古拉有一个名叫玛琪亚的女性</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst701103_msg0106</td>
+        <td>84</td>
+        <td class="side">只要报上我的名字
+她就会聆听你们的请求
+可以拜托你们吗？</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst701103_msg0201</td>
+        <td>84</td>
+        <td class="side">虽然沃塔是个静不下来的家伙
+不过反过来说 这份活跃
+也等同于达成目标的意志</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst701103_msg0202</td>
+        <td>84</td>
+        <td class="side">不管绕了多少弯路
+都能分毫不差地回到原点
+这一点可不是任何人都能做到的</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst701103_msg0203</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]归根结底 他是一个前途无量的家伙
+我相信他将来一定能够帮到各位
+完成一番大事</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst701103_msg0204</td>
+        <td>84</td>
+        <td class="side">虽然现在还只是一个没出息的徒弟
+还请各位用长远的眼光 多多关照</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

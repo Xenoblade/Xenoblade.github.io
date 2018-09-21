@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst711901_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst711901_msg0001</td>
+        <td>84</td>
+        <td class="side">我叫黑金
+是某个御刃者的异刃</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst711901_msg0002</td>
+        <td>84</td>
+        <td class="side">我的御刃者
+虽然模样可爱 却是战斗专家[ML:Dash ]
+就是所谓的佣兵</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst711901_msg0003</td>
+        <td>84</td>
+        <td class="side">这位御刃者
+这次接下的任务
+似乎相当危险</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst711901_msg0004</td>
+        <td>84</td>
+        <td class="side">所以我和他一起
+正在寻找愿意和我们一起
+完成任务的强大同伴</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst711901_msg0005</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]话说 我从你们身上
+感到了非同寻常的气息[ML:Dash ]
+我想你们实力相当强劲</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst711901_msg0006</td>
+        <td>84</td>
+        <td class="side">怎么样？
+你们愿意让我测试你们的实力吗？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst711901_msg0007</td>
+        <td>84</td>
+        <td class="side">方法就是[ML:Dash ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst711901_msg0008</td>
+        <td>84</td>
+        <td class="side">将异刃连击
+发动到第2阶段[ML:Dash ]
+要发动5次</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst711901_msg0009</td>
+        <td>84</td>
+        <td class="side">属性不限
+就是在等级1的必杀技后接上等级2以上的必杀技
+完成异刃连击5次就好</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst711901_msg0010</td>
+        <td>84</td>
+        <td class="side">当然
+和其他小队的同伴也可以连接必杀技
+你们自己去试一试吧</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst711901_msg0011</td>
+        <td>84</td>
+        <td class="side">还有 进行异刃连击的
+场所对象也不限
+你们可以在任意地点对任意敌人使用</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst711901_msg0012</td>
+        <td>84</td>
+        <td class="side">别看我这样
+我很擅长通过以太感知</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>qst711901_msg0013</td>
+        <td>84</td>
+        <td class="side">你们这样的强者使用必杀技
+我在哪里都能感受到</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>qst711901_msg0014</td>
+        <td>84</td>
+        <td class="side">我期待着你们的表现</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

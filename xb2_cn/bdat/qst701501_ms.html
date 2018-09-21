@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>qst701501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>label</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>qst701501_msg0001</td>
+        <td>84</td>
+        <td class="side">是你们啊
+我正好在想
+要找谁帮忙好呢</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>qst701501_msg0002</td>
+        <td>84</td>
+        <td class="side">其实 我很快就要死了
+因为生病[ML:Dash ] 别别 不用在意
+都这把年纪了 死已经像是常年的好友一般了</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>qst701501_msg0003</td>
+        <td>84</td>
+        <td class="side">我已经照看过好几位临终的朋友[ML:Dash ]
+这次终于轮到自己了
+况且[ML:Dash ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>qst701501_msg0004</td>
+        <td>84</td>
+        <td class="side">我坚信阿卡狄亚的教义
+所有的灵魂
+都会得到救赎</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>qst701501_msg0005</td>
+        <td>84</td>
+        <td class="side">[ML:Dash ]我刚才想说什么来着？ 对了对了
+我还有个遗憾 就是曾经和老相识相约
+要做的陶壶还没有完成</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>qst701501_msg0006</td>
+        <td>84</td>
+        <td class="side">如果你们有
+完成陶壶所需的材料的话
+可以让与我吗？</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>qst701501_msg0007</td>
+        <td>84</td>
+        <td class="side">2个弯曲榭寄生
+4个银翼石英
+4个永劫之土 就是这些</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>qst701501_msg0008</td>
+        <td>84</td>
+        <td class="side">要是正巧得到
+能分给我一些 我就很感激了</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>qst701501_msg0009</td>
+        <td>84</td>
+        <td class="side">对了对了
+听说永劫之土
+从前在洛塔森林保护区可以采集到很多</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>qst701501_msg0010</td>
+        <td>84</td>
+        <td class="side">现在是很贵重的东西
+不知道还有没有了
+不过我觉得有去寻找的价值</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>qst701501_msg0011</td>
+        <td>84</td>
+        <td class="side">那么
+你们顺便去找找就行
+拜托啦</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>qst701501_msg0012</td>
+        <td>84</td>
+        <td class="side">那个人
+大概已经忘记这件事了吧 呵呵
+不过我还是想完成约定后再离开人世</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
