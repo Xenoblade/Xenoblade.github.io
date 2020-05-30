@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>0301e2_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Hey, Shulk... What&#39;s it like[XENO:n ]
+being able to see the future?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]It&#39;s kinda hard to explain.[XENO:wait wait=key ][System:PageBreak ]If I had to describe it, it&#39;s like[XENO:n ]
+I&#39;m being made to watch a dream.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]A dream, huh? That&#39;s[XENO:n ]
+one strange power.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Tell me, Sharla... What do you[XENO:n ]
+think of my power?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・I wish I had it./・I still don&#39;t quite believe it. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]If I had your power, maybe[XENO:n ]
+I could have saved Colony 6.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I can see why that would[XENO:n ]
+mean a lot to you.[XENO:wait wait=key ][System:PageBreak ]You might have even been[XENO:n ]
+able to save Gadolt.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Yeah. But honestly, the[XENO:n ]
+more I think about it...[XENO:wait wait=key ][System:PageBreak ]The more I realise none of this[XENO:n ]
+could have been helped.[XENO:wait wait=key ][System:PageBreak ]And your power kept Juju safe.[XENO:n ]
+I&#39;ll always be grateful for that.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Yeah, that was a close one.[XENO:n ]
+I&#39;m glad we got to him in time.[XENO:wait wait=key ][System:PageBreak ]Otherwise there could have been[XENO:n ]
+a future where Juju didn&#39;t make it.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Thank goodness for[XENO:n ]
+your visions.[XENO:wait wait=key ][System:PageBreak ]If you have a vision, it means...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・There&#39;s nothing to fear!/・You can save someone&#39;s life! ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]But it doesn&#39;t work like that.[XENO:n ]
+Some things I can&#39;t see.[XENO:wait wait=key ][System:PageBreak ]Even if I do see someone dying,[XENO:n ]
+I might not be able to stop it.[XENO:wait wait=key ][System:PageBreak ]I couldn&#39;t stop what[XENO:n ]
+happened to Fiora.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]No, I suppose not.[XENO:wait wait=key ][System:PageBreak ]I&#39;m sorry. I didn&#39;t mean to bring[XENO:n ]
+up bad memories.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I could see it, just as it was[XENO:n ]
+about to happen.[XENO:wait wait=key ][System:PageBreak ]But I was still powerless[XENO:n ]
+to save her.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I guess I misunderstood.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]What do you mean?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]The ability to have these visions...[XENO:n ]
+It&#39;s not without its consequences.[XENO:wait wait=key ][System:PageBreak ]It means you can help people, but[XENO:n ]
+it&#39;s a heavy burden as well.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Yeah.[XENO:wait wait=key ][System:PageBreak ]Thank you, Sharla. I feel[XENO:n ]
+better from talking to you.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I can&#39;t see the future.[XENO:wait wait=key ][System:PageBreak ]But I&#39;m good at solving[XENO:n ]
+problems I can see.[XENO:wait wait=key ][System:PageBreak ]Talk to me about[XENO:n ]
+anything, anytime![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I feel like a stronger person[XENO:n ]
+when I&#39;m around you.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">That&#39;s kind of you to say.[XENO:n ]
+Thank you, Sharla.[XENO:wait wait=key ][System:PageBreak ]But...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">What is it?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]I can&#39;t see everything. Sometimes[XENO:n ]
+the visions are quite hazy.[XENO:wait wait=key ][System:PageBreak ]And even when I&#39;ve seen the[XENO:n ]
+future, I can&#39;t always change it.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Are you talking about...[XENO:n ]
+what happened to Fiora?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Yeah.[XENO:wait wait=key ][System:PageBreak ]I&#39;m also worried about what&#39;s[XENO:n ]
+going to happen to Bionis.[XENO:wait wait=key ][System:PageBreak ]I&#39;ve hardly been able to see[XENO:n ]
+anything.[XENO:wait wait=key ][System:PageBreak ]If only my power wasn&#39;t[XENO:n ]
+so limited...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Don&#39;t be so hard on yourself![XENO:wait wait=key ][System:PageBreak ]You&#39;ve saved us how[XENO:n ]
+many times now?[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Yeah, I guess I have![XENO:n ]
+Thanks, Sharla![XENO:wait wait=key ][System:PageBreak ]But I still wish I could master[XENO:n ]
+my power a bit better.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]If there&#39;s anything I can do[XENO:n ]
+to help, just let me know![XENO:wait wait=key ][System:PageBreak ]I&#39;ll support you all the way![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:type type=anger ][XENO:act act=EVT_EXT4 ]What?! All this time, and you[XENO:n ]
+still don&#39;t believe me?![XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]No! That&#39;s not what I meant at all.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">What did you mean then?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]It&#39;s just...such an[XENO:n ]
+unbelievable thing.[XENO:wait wait=key ][System:PageBreak ]Even as I think about it now,[XENO:n ]
+I can&#39;t fathom how you can do it.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Oh, I see what you&#39;re saying now.[XENO:wait wait=key ][System:PageBreak ]Actually, I kind of feel[XENO:n ]
+the same way.[XENO:wait wait=key ][System:PageBreak ]Maybe I&#39;ll never understand it.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Sharla, if you could have[XENO:n ]
+one vision of the future...[XENO:wait wait=key ][System:PageBreak ]What would you want to see?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Juju getting married./・How Colony 6 turns out. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]That&#39;s what you want to see?![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Hey! It&#39;s my vision and it can[XENO:n ]
+be anything I want![XENO:wait wait=key ][System:PageBreak ]Don&#39;t you have any brothers or[XENO:n ]
+sisters you want to know about?[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">No, I&#39;m an only child.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Then you don&#39;t know how much[XENO:n ]
+I worry about little Juju.[XENO:wait wait=key ][System:PageBreak ]If Juju ends up with the wrong girl,[XENO:n ]
+I&#39;ll be devastated![XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Oh, I didn&#39;t think of that.[XENO:wait wait=key ][System:PageBreak ]I&#39;m sorry. That sounds important.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I&#39;m very protective of him.[XENO:wait wait=key ][System:PageBreak ]Not long after we were born,[XENO:n ]
+we lost both our parents.[XENO:wait wait=key ][System:PageBreak ]I became like a mother to him.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I&#39;m slightly jealous of Juju.[XENO:wait wait=key ][System:PageBreak ]I wish I had someone like you[XENO:n ]
+looking out for me![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I can&#39;t stop wondering about the[XENO:n ]
+day the colony is back to normal.[XENO:wait wait=key ][System:PageBreak ]It used to be a fun, bustling place.[XENO:wait wait=key ][System:PageBreak ]That&#39;s the home I remember, and[XENO:n ]
+I want it back the way it was.[XENO:act act=EVT_EXT3 ][XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Sharla... I...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]And not just that...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:type type=think ][XENO:jaw jaw=off ]I wonder about who&#39;s going to be[XENO:n ]
+by my side, enjoying it with me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Sharla? What were you gonna say?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Oh, nothing. The point is...[XENO:wait wait=key ][System:PageBreak ]I might not have your power, but[XENO:n ]
+I&#39;m gonna get my home back![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]And I&#39;ll be there to help you.[XENO:n ]
+We&#39;ll fix it together![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

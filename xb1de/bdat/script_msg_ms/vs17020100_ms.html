@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>vs17020100_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">We&#39;ve relocated the High Entia and[XENO:n ]
+Nopon refugees to Colony 6.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Thankfully the Mechon did us a favour by[XENO:n ]
+fortifying it for us. It should hold out for a while.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]It&#39;s ironic.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">We want to escape Zanza but we[XENO:n ]
+can&#39;t leave his body, the Bionis.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Well...this is our home.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Princess, I have to know. Should we be[XENO:n ]
+worried about the evacuated High Entia?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]I cannot be sure, but I believe not.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]All those who survived are part Homs like me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]Understood.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">If they ever do transform, I will be among them.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]If that time comes, you know what to do.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]Are you sure?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]Everyone is obliged to accept their fate.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]No way![XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">There&#39;s no way Kallian would leave the fate of the[XENO:n ]
+High Entia to you if that was gonna happen![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]Precisely.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]And Melia... If we are to survive, we must[XENO:n ]
+fight Zanza and the Telethia.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">It may not be the case with all of them,[XENO:n ]
+but a large number of Telethia were once[XENO:n ]
+High Entia - your subjects and your brethren.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]I am prepared for that.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Even if it means harming my brethren,[XENO:n ]
+it is for the protection of the survivors.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">That is the final wish of my father and brother.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I will fight! To free the souls stolen by Zanza.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You are a fighter, Melia. We will need[XENO:n ]
+all your strength in the fight ahead.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]How&#39;s Shulk?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]He&#39;s going to make it.[XENO:n ]
+His wound has closed.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]I think Meyneth used the last of[XENO:n ]
+her power to protect him...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]So he&#39;s OK.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Linada is tending to him now.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Fiora?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">He won&#39;t wake up.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">It&#39;s like his consciousness has sunk[XENO:n ]
+to the bottom of a cold, dark lake.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I keep saying his name but he doesn&#39;t respond.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Zanza&#39;s gonna pay for this![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]What if the Telethia attack?![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Then we&#39;ll have to fight without Shulk.[XENO:n ]
+That&#39;s why we&#39;ve strengthened our defences.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]That weapon I made should come in handy as well.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT19 ]We&#39;re backed into a corner,[XENO:n ]
+but we&#39;ll give it all we&#39;ve got.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Can your resistance truly achieve anything?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">What do you mean by that, Alvis?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Exactly what I said. We were all born of the Bionis, of Zanza.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">It is Zanza&#39;s will that the Telethia return[XENO:n ]
+us to the body from whence we came.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Whether we die of old age or in battle,[XENO:n ]
+we all eventually return to the Bionis.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT2 ]We cannot escape this fate. Am I wrong?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You&#39;ve got it backwards, man.[XENO:n ]
+Just &#39;cos he thinks it, doesn&#39;t make it so.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">We decide whether to keep living or not.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]I agree.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Even though he is our creator, that does not[XENO:n ]
+afford him the right to take our lives on a whim.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]But that is the thinking of a Homs.[XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">He is a god. Such morals cannot apply to gods.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]So you think we should just shut up and die?![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">If that is the fate decided by a god.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]You are mistaken if you think we will simply[XENO:n ]
+accept such a fate and wait to die.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]We&#39;ll never stop fighting.[XENO:n ]
+Not till the end![XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT2 ]To Zanza, the outcome is the same.[XENO:n ]
+Thus your logic is flawed.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]It ain&#39;t the outcome that&#39;s important.[XENO:n ]
+It&#39;s the will to fight back.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Even if you die in vain?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Alvis! Whose side are you on?![XENO:wait wait=key ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">You scared or something?![XENO:n ]
+Frightened of a few Telethia?![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Stop this. There&#39;s no point fighting[XENO:n ]
+amongst ourselves![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:jaw jaw=off ][XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Fiora?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Sorry. I need to go and get some air.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:jaw jaw=off ][XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

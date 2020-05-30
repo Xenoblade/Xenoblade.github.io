@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>vs10110100_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I could go for a hot cup of Dickson&#39;s homebrew[XENO:n ]
+right about now. We&#39;re not built for this cold.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]It is to be expected. This climate is as different to your[XENO:n ]
+home as it gets. It only snows this high up on the Bionis.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Riki hate cold![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">This can&#39;t be nice for Riki. He&#39;s from Makna.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]A little further down is Sword Valley, right?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Yes. But before then I must[XENO:n ]
+show you something.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Me?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">[XENO:act act=EVT1 ]You, Shulk.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Do you not see? That tall formation that[XENO:n ]
+looks like a tower. Ruins, to be precise.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Riki see it! Bigger than big tree in village![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">We can rest there. I&#39;ll explain everything then.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt2001_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There is a troop of Mechon waiting at the Storage[XENO:n ]
+Depot! Defeat the leader and reduce their attack[XENO:n ]
+power.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Beautiful Vagul[/System:Color ] in the Storage Depot.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You defeated the Mechon troop leader and[XENO:n ]
+reduced their attack power.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">You discover Mechon waiting when you enter the[XENO:n ]
+factory. Break through the enemy!</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the [System:Color name=item ]M96 Crisis Unit[/System:Color ] in the Mechon[XENO:n ]
+Factory.</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 2 [System:Color name=item ]Crisis Response Units[/System:Color ] in the Mechon[XENO:n ]
+Factory.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You crushed the enemy and forced your way[XENO:n ]
+through.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There is a Mechon stationed on the roof![XENO:n ]
+Defeat the troop leader.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Venerable Focalor[/System:Color ] on the Training[XENO:n ]
+Ground Roof.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You defeated the Mechon troop leader and[XENO:n ]
+reduced the Mechon&#39;s attack power.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">It looks like the Weapon Creation Panel in the Central[XENO:n ]
+Factory will be able to make Fiora a new weapon.[XENO:n ]
+Use the materials and make a weapon.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Use the Weapon Creation Machine in the[XENO:n ]
+Control Tower of the Central Factory.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You made a weapon for Fiora.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The lift to the Central Tower doesn&#39;t seem to work.[XENO:n ]
+Find an alternative route.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Go to Maintenance Entrance 1.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">It looks like you can get to the upper levels if[XENO:n ]
+you use the lift in the Maintenance Wing.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The path from the Maintenance Wing to the lift is[XENO:n ]
+blocked by an electrical barrier. Release the barrier[XENO:n ]
+and find a way to the lift.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Use the Barrier Control Panel to release the[XENO:n ]
+electrical barrier.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You released the electrical barrier in the[XENO:n ]
+Maintenance Wing.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The lift to the top floor is blocked, but you should be[XENO:n ]
+able to get to the upper levels through the Mechon[XENO:n ]
+factory.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find a way to infiltrate the Mechon Factory.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect materials for the bomb.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Use the Weapon Creation Panel in the[XENO:n ]
+Maintenance Wing to make a bomb.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Use the bomb to blast open the vent.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You blasted the vent open and you can now[XENO:n ]
+enter the Mechon Factory.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">It seems there is a way to the Mechon Factory through[XENO:n ]
+the vent. You will need a bomb to blast it open. Collect[XENO:n ]
+bomb components from Mechon on the second floor.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect an [System:Color name=item ]Electrical Fuse[/System:Color ] from the M88[XENO:n ]
+Watchtower guarding the Main Factory Gate.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect an [System:Color name=item ]Ether Explosive[/System:Color ] from the M97[XENO:n ]
+Commander in the Large Mechon Store.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect a [System:Color name=item ]Timer[/System:Color ] from a flying Mechon in the[XENO:n ]
+central container storeroom.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have collected the materials to use the[XENO:n ]
+Weapon Creation Panel and make a bomb.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Your way is blocked by an electrical barrier. Turn off[XENO:n ]
+the electrical barrier and head to the top of the tower.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Turn off the electrical barrier.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Reach the peak of the tower.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have arrived at the transporter to the capital.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>0401e3_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]So, Sharla... Is this what Colony 6[XENO:n ]
+is supposed to look like?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]It&#39;s definitely getting there.[XENO:wait wait=key ][System:PageBreak ]We&#39;ve come a long way. A little[XENO:n ]
+more work and it&#39;ll be perfect.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Really? If you ask me,[XENO:n ]
+it&#39;s looking good already.[XENO:wait wait=key ][System:PageBreak ]Plenty of warm homes and thriving[XENO:n ]
+businesses... It&#39;s great![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]True, we have nearly everything[XENO:n ]
+we need. But we can&#39;t stop here.[XENO:wait wait=key ][System:PageBreak ]It has to be a place where[XENO:n ]
+everyone can feel safe.[XENO:wait wait=key ][System:PageBreak ]Then it&#39;ll really feel like[XENO:n ]
+Colony 6 again.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・I can&#39;t wait to see the result./・A safe haven for everyone, huh? ][XENO:del del=all ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]It won&#39;t be easy. In fact, it[XENO:n ]
+could take a very long time.[XENO:wait wait=key ][System:PageBreak ]But one day, Colony 6 will be[XENO:n ]
+back the way it used to be.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]It might not take as long[XENO:n ]
+as you think.[XENO:wait wait=key ][System:PageBreak ]When peace is restored to Bionis,[XENO:n ]
+just wait. People will flock here.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]I hope so.[XENO:wait wait=key ][System:PageBreak ]But what if people still don&#39;t want[XENO:n ]
+to come back even then?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Why would you say that?/・Don&#39;t worry about it! ][XENO:del del=all ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Say we get the colony working.[XENO:wait wait=key ][System:PageBreak ]No one can forget that this place[XENO:n ]
+was reduced to rubble in a day.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ]But just look at it![XENO:wait wait=key ][System:PageBreak ]People have already moved[XENO:n ]
+here in droves.[XENO:wait wait=key ][System:PageBreak ]And they&#39;re all mucking in. It&#39;s an[XENO:n ]
+exciting place to live, like before![XENO:wait wait=key ][System:PageBreak ]The colony is on the up, Sharla.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ]I know, I see it too.[XENO:wait wait=key ][System:PageBreak ]But it just doesn&#39;t feel like[XENO:n ]
+the colony I knew.[XENO:wait wait=key ][System:PageBreak ]In more ways than one.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Then make it into a better colony[XENO:n ]
+than the one you knew.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Better? Well, I suppose so.[XENO:wait wait=key ][System:PageBreak ]Actually, you know what? You&#39;re[XENO:n ]
+right. I was being silly.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]You&#39;ll never forget the past, but[XENO:n ]
+you can never bring it back either.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT4 ]And if it was a good place to live,[XENO:n ]
+make it the BEST place to live.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]But...how do I do that?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You can&#39;t do it on your own.[XENO:wait wait=key ][System:PageBreak ]We&#39;ll all help you. Me, Reyn...[XENO:n ]
+everyone! We&#39;ll do it together.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]You really think Reyn&#39;ll chip in?[XENO:wait wait=key ][System:PageBreak ]Hmm. When this is all over, I&#39;ll[XENO:n ]
+ask him. It&#39;d be great if he did.[XENO:wait wait=key ][XENO:act act=EVT_EXT18 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Of course he&#39;ll help. We all will.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]And Reyn isn&#39;t gonna turn down a[XENO:n ]
+request by you, Sharla. Trust me.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT3 ]Anyway, you wanna go and[XENO:n ]
+find the others?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Yeah, and we&#39;d better hurry.[XENO:n ]
+Don&#39;t want to make Fiora jealous.[XENO:wait wait=key ][System:PageBreak ]Thanks for lending an ear, Shulk.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]I only have to look at the faces[XENO:n ]
+of the colony&#39;s residents.[XENO:wait wait=key ][System:PageBreak ]Everyone is happy here.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">You really think so?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">If they really felt unsure about[XENO:n ]
+moving here, would they smile?[XENO:wait wait=key ][System:PageBreak ]They feel safe and happy here.[XENO:n ]
+Who wouldn&#39;t?[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Yeah. You&#39;re probably right.[XENO:wait wait=key ][System:PageBreak ]If I lived in a place I didn&#39;t like,[XENO:n ]
+it would just make me sad.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Right. So don&#39;t worry, Sharla![XENO:n ]
+Everything&#39;s gonna be fine.[XENO:wait wait=key ][System:PageBreak ]Me and Reyn are gonna come and[XENO:n ]
+visit all the time when this is over![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]Oh yeah... I guess Reyn will[XENO:n ]
+go back to Colony 9, huh?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]What was that?[XENO:n ]
+You say something?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]No, it&#39;s nothing important. Hey,[XENO:n ]
+let&#39;s go and find the others.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]OK. They&#39;ll be waiting anyway.[XENO:n ]
+But I enjoyed our chat, Sharla.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I know what you mean.[XENO:wait wait=key ][System:PageBreak ]You&#39;ve come so far... It would be[XENO:n ]
+a tragedy to lose it all again.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Yes. And that&#39;s why we[XENO:n ]
+have to make it safe.[XENO:wait wait=key ][System:PageBreak ]A place where no one will ever be[XENO:n ]
+sad or afraid of losing their home.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You will achieve your dream.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]How can you be so sure?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Just look around you./・Because it&#39;s everyone&#39;s dream. ][XENO:del del=all ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]What kind of people do you see?[XENO:n ]
+It&#39;s not just us Homs.[XENO:wait wait=key ][System:PageBreak ]There are Nopon, High Entia and[XENO:n ]
+Machina as well.[XENO:wait wait=key ][System:PageBreak ]Do you realise what you&#39;re[XENO:n ]
+creating here?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]You know, I hadn&#39;t even thought[XENO:n ]
+about it before...[XENO:wait wait=key ][System:PageBreak ]But it&#39;s amazing to see this.[XENO:wait wait=key ][System:PageBreak ]All the different people of the[XENO:n ]
+world, living together in peace.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]It&#39;s something special all right.[XENO:n ]
+And I realised something else.[XENO:wait wait=key ][System:PageBreak ]This colony will become[XENO:n ]
+the focal point of Bionis.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ]Here? Our colony?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ]I don&#39;t doubt it for a second.[XENO:wait wait=key ][System:PageBreak ]Colony 6 will be a place where it[XENO:n ]
+doesn&#39;t matter where you&#39;re from.[XENO:wait wait=key ][System:PageBreak ]Anyone can come here and make[XENO:n ]
+friends, build a family.[XENO:wait wait=key ][System:PageBreak ]Can you picture it, Sharla?![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Those who lost their lives will[XENO:n ]
+not have died in vain.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">And people everywhere can look[XENO:n ]
+to it as a beacon of hope.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You&#39;re right, Shulk![XENO:wait wait=key ][System:PageBreak ]We can&#39;t afford to lose this hard[XENO:n ]
+work. We have to push on.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Great! Just don&#39;t forget to tell[XENO:n ]
+me if you need anything.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I will.[XENO:wait wait=key ][System:PageBreak ]And don&#39;t expect me to give you[XENO:n ]
+the easy work![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Everyone here has the same goal.[XENO:wait wait=key ][System:PageBreak ]Reconstructing Colony 6 is[XENO:n ]
+practically what they live for.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I guess I&#39;m the only one worried.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT10 ]But it&#39;s all I think about[XENO:n ]
+sometimes.[XENO:wait wait=key ][System:PageBreak ]How long peace will last...[XENO:n ]
+Whether we&#39;ll be safe even then...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ]I can totally understand.[XENO:wait wait=key ][System:PageBreak ]What happened here was awful,[XENO:n ]
+and you&#39;ll never forget it.[XENO:wait wait=key ][System:PageBreak ]Just like I&#39;ll never forget the[XENO:n ]
+attack on Colony 9.[XENO:wait wait=key ][System:PageBreak ]But this is a chance for[XENO:n ]
+a new beginning.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:tail_off ][XENO:act act=EVT_EXT12 ]I guess if I can&#39;t let go of the past[XENO:n ]
+I&#39;ll never get over what happened.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Exactly.[XENO:wait wait=key ][System:PageBreak ]And it&#39;ll help if you create as many[XENO:n ]
+good memories as you can.[XENO:wait wait=key ][System:PageBreak ]Then maybe the bad ones[XENO:n ]
+won&#39;t seem so bad.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Now you mention it, we&#39;ve had[XENO:n ]
+some good times on the road.[XENO:wait wait=key ][System:PageBreak ]And I don&#39;t intend on forgetting[XENO:n ]
+those any time soon.[XENO:wait wait=key ][System:PageBreak ]And...well, there are other good[XENO:n ]
+memories I don&#39;t plan to forget.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Are you talking about the[XENO:n ]
+time you spent with Gadolt?[XENO:wait wait=key ][System:PageBreak ]It might sound weird coming from[XENO:n ]
+me, but hold onto those memories.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]In the end, memories of Gadolt[XENO:n ]
+are the only proof he was here.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I&#39;ll never forget him, don&#39;t worry.[XENO:wait wait=key ][System:PageBreak ]Thank you. For everything. I feel[XENO:n ]
+like rebuilding the entire world![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I know the feeling! But I&#39;ll be glad[XENO:n ]
+if I can help out even a little bit.[XENO:wait wait=key ][System:PageBreak ]Anyway, let&#39;s find the others.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

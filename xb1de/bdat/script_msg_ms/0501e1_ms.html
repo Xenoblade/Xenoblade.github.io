@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>0501e1_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">This place is...beautiful.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Some call it the[XENO:n ]
+Shimmering Marsh.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I can see why![XENO:wait wait=key ][System:PageBreak ]Had you ever been here before?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]No. And I&#39;m suitably amazed.[XENO:wait wait=key ][System:PageBreak ]How can a place light up[XENO:n ]
+so much at night?[XENO:wait wait=key ][System:PageBreak ]I&#39;ve never seen anything like it.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]I have. Once, when I was[XENO:n ]
+very young.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Maybe it was a dream?/・Really? Interesting. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]It wasn&#39;t a dream. I know it![XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT15 ]But...I do remember being asleep[XENO:n ]
+for most of it.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]Then it must have been[XENO:n ]
+a dream, surely.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]No. It was at the ruins where[XENO:n ]
+me and the Monado were found.[XENO:wait wait=key ][System:PageBreak ]The same thing happens there. At[XENO:n ]
+night, glowing ether fills the air.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT18 ]All right, I&#39;m convinced.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]It&#39;s OK. My memory of it&#39;s[XENO:n ]
+a little hazy anyway.[XENO:wait wait=key ][System:PageBreak ]I assume the effect is caused by[XENO:n ]
+high ether content in the ground.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Ether content?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Surely you must know something[XENO:n ]
+about ether content.[XENO:wait wait=key ][System:PageBreak ]How it&#39;s higher in some regions[XENO:n ]
+of Bionis than in others?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Especially the upper regions./・Especially the lower regions. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Right?[XENO:wait wait=key ][System:PageBreak ]The upper regions of Bionis are[XENO:n ]
+known for their high ether content.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Correct! You always know the[XENO:n ]
+right answer, Dunban.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Well, everyone knows that one.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Anyway, the ruins are quite high[XENO:n ]
+up on the Bionis.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Do you remember much[XENO:n ]
+about that time?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]I found my way into those ruins[XENO:n ]
+but then I lost consciousness.[XENO:wait wait=key ][System:PageBreak ]That&#39;s about all I can remember[XENO:n ]
+from back then.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]But for some reason I can just[XENO:n ]
+about recall that ether glow.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]I suppose you&#39;d never forget[XENO:n ]
+a sight like that.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]What? No![XENO:wait wait=key ][System:PageBreak ]It&#39;s the upper regions that have[XENO:n ]
+higher ether content![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]Oh. Er... I see.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT15 ]Way down where we live, the[XENO:n ]
+ether levels are at their lowest.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]That&#39;s why there aren&#39;t as many[XENO:n ]
+rich ether mines.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT18 ]Well done, Shulk![XENO:n ]
+You passed my test.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]So you&#39;re saying you were just[XENO:n ]
+pretending not to know?[XENO:wait wait=key ][System:PageBreak ]Hmm...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I&#39;m so glad I got to see this[XENO:n ]
+wondrous sight. Aren&#39;t you?[XENO:wait wait=key ][System:PageBreak ]I&#39;d just love to spend some more[XENO:n ]
+time exploring it...in silence...[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Whatever you say, Dunban.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">It was at the ruins where me[XENO:n ]
+and the Monado were found.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT12 ]The same thing happens there. At[XENO:n ]
+night, glowing ether fills the air.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]So that&#39;s where you saw it.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]I don&#39;t remember much[XENO:n ]
+about the ruins.[XENO:wait wait=key ][System:PageBreak ]I found my way in and then[XENO:n ]
+I lost consciousness.[XENO:wait wait=key ][System:PageBreak ]That&#39;s about all I can remember[XENO:n ]
+from back then, except the light.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]If it was as beautiful as this,[XENO:n ]
+no wonder you remember it.[XENO:wait wait=key ][System:PageBreak ]Ether is an incredible thing.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]It really is.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Will it ever run out?/・It can&#39;t be good for us. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Great question, Dunban![XENO:n ]
+I&#39;ve always wondered that.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Great minds think alike.[XENO:n ]
+And your thoughts?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I can&#39;t draw any firm conclusions[XENO:n ]
+or anything.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]All I know is, ether isn&#39;t unlimited.[XENO:n ]
+So I guess it won&#39;t last forever.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]I don&#39;t suppose we have anything[XENO:n ]
+to worry about in our lifetime.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Maybe not. But we should still try[XENO:n ]
+and find another energy source.[XENO:wait wait=key ][System:PageBreak ]We can&#39;t just rely on it[XENO:n ]
+always being there.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT16 ]Energy aside, it will be a shame[XENO:n ]
+when this natural beauty is gone.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Yes... Whether that&#39;s a hundred[XENO:n ]
+years from now or a thousand.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]Why do you think that? There&#39;s[XENO:n ]
+no evidence to support it.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]It&#39;s just a feeling. Nothing more.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT15 ]Actually, we haven&#39;t made any big[XENO:n ]
+leaps in researching this field.[XENO:wait wait=key ][System:PageBreak ]So it&#39;s still possible.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]It was just a passing thought.[XENO:n ]
+Don&#39;t take it so seriously, Shulk.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]But you&#39;re right, Dunban.[XENO:wait wait=key ][System:PageBreak ]It has to be worth spending more[XENO:n ]
+resources to study this.[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Hey, where are you going?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I&#39;m gonna fetch my notes![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">But we were enjoying this strange[XENO:n ]
+phenomenon![XENO:wait wait=key ][System:PageBreak ]You can take the boy out of the[XENO:n ]
+lab, but not the lab out of the boy![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

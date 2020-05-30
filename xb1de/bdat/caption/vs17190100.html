@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>vs17190100</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>time</th>
+          <th>caption</th>
+          <th>time_jp</th>
+          <th>caption_jp</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>3.76666665</td>
+        <td>It&#39;s beautiful.</td>
+        <td>3.7</td>
+        <td>It&#39;s beautiful.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>5.0666666</td>
+        <td>3</td>
+        <td>4.633333</td>
+        <td>1</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>6.16666651</td>
+        <td>Is that a ball of water?</td>
+        <td>6.266667</td>
+        <td>Is that a ball of water?</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>9.1</td>
+        <td>5</td>
+        <td>6.83333349</td>
+        <td>1</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>9.2</td>
+        <td>[ML:undisp ]</td>
+        <td>7.5333333</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>9.3</td>
+        <td>7</td>
+        <td>8.633333</td>
+        <td>1</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>9.733334</td>
+        <td>So, you finally made it, Shulk.</td>
+        <td>9.9</td>
+        <td>So, you finally made it, Shulk.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>12.9</td>
+        <td>9</td>
+        <td>11.3</td>
+        <td>1</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>12.9666662</td>
+        <td>[ML:undisp ]</td>
+        <td>11.5333338</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>13</td>
+        <td>11</td>
+        <td>12.333333</td>
+        <td>1</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>14.8666668</td>
+        <td>It&#39;s you!</td>
+        <td>14.9666662</td>
+        <td>It&#39;s you!</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>15.833333</td>
+        <td>13</td>
+        <td>15.833333</td>
+        <td>1</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>17.4666672</td>
+        <td>What is it, Shulk?</td>
+        <td>17.4666672</td>
+        <td>What is it, Shulk?</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>19</td>
+        <td>15</td>
+        <td>19</td>
+        <td>1</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>19.6</td>
+        <td>I cannot wait to see which path you choose.</td>
+        <td>19.6</td>
+        <td>I cannot wait to see which path you choose.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>23.2666664</td>
+        <td>17</td>
+        <td>21.1333332</td>
+        <td>1</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>23.333334</td>
+        <td>[ML:undisp ]</td>
+        <td>21.833334</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>23.666666</td>
+        <td>19</td>
+        <td>23.666666</td>
+        <td>1</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>23.8</td>
+        <td>Let us meet again after you
+have made your choice.</td>
+        <td>24.333334</td>
+        <td>Let us meet again after you
+have made your choice.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>27.5333328</td>
+        <td>21</td>
+        <td>26.166666</td>
+        <td>1</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>27.6</td>
+        <td>[ML:undisp ]</td>
+        <td>26.666666</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>27.666666</td>
+        <td>23</td>
+        <td>27.5333328</td>
+        <td>1</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>49.6666679</td>
+        <td>Welcome, Shulk.</td>
+        <td>49.5</td>
+        <td>Welcome, Shulk.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>51.4</td>
+        <td>25</td>
+        <td>51.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>52.9</td>
+        <td>That voice!</td>
+        <td>53.1</td>
+        <td>That voice!</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>54</td>
+        <td>27</td>
+        <td>54</td>
+        <td>1</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>54.8</td>
+        <td>It&#39;s Zanza!</td>
+        <td>54.9333344</td>
+        <td>It&#39;s Zanza!</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>55.9666672</td>
+        <td>29</td>
+        <td>55.6666679</td>
+        <td>1</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>57.7333336</td>
+        <td>But he looks different.</td>
+        <td>57.6666679</td>
+        <td>But he looks different.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>59.7</td>
+        <td>31</td>
+        <td>59.7</td>
+        <td>1</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>60.3666649</td>
+        <td>[ML:undisp ]</td>
+        <td>60.3333321</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>60.4333344</td>
+        <td>33</td>
+        <td>62.36667</td>
+        <td>1</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>60.6333351</td>
+        <td>I had planned to use the
+body obtained from Shulk</td>
+        <td>62.86667</td>
+        <td>I had planned to use the
+body obtained from Shulk</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>64.36667</td>
+        <td>as a vessel in which to dwell
+for the next millennium.</td>
+        <td>66.5666656</td>
+        <td>as a vessel in which to dwell
+for the next millennium.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>67.8333359</td>
+        <td>36</td>
+        <td>69.03333</td>
+        <td>1</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>70.1</td>
+        <td>However, I came to possess
+a great and unexpected power.</td>
+        <td>70.1666641</td>
+        <td>However, I came to possess
+a great and unexpected power.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>75</td>
+        <td>38</td>
+        <td>70.86667</td>
+        <td>1</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>75.1</td>
+        <td>[ML:undisp ]</td>
+        <td>71.3333359</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>75.2</td>
+        <td>40</td>
+        <td>74.5</td>
+        <td>1</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>75.9333344</td>
+        <td>Meyneth&#39;s Monado.</td>
+        <td>76.0666656</td>
+        <td>Meyneth&#39;s Monado.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>77.5666656</td>
+        <td>42</td>
+        <td>77.3</td>
+        <td>1</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>78.23333</td>
+        <td>Correct.</td>
+        <td>78.23334</td>
+        <td>Correct.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>79.03333</td>
+        <td>44</td>
+        <td>79.03333</td>
+        <td>1</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>79.5</td>
+        <td>In addition to my own Monado,
+which you kept safe for me,</td>
+        <td>79.6</td>
+        <td>In addition to my own Monado,
+which you kept safe for me,</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>83.23333</td>
+        <td>46</td>
+        <td>82.8</td>
+        <td>1</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>83.4333344</td>
+        <td>I was able to obtain a second weapon
+which holds the power of creation.</td>
+        <td>83.4333344</td>
+        <td>I was able to obtain a second weapon
+which holds the power of creation.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>88.4</td>
+        <td>[ML:undisp ]</td>
+        <td>86.03333</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>88.46667</td>
+        <td>49</td>
+        <td>88.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>89.26667</td>
+        <td>Now I possess all I desire.</td>
+        <td>89.4</td>
+        <td>Now I possess all I desire.</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>92.26667</td>
+        <td>51</td>
+        <td>91.6</td>
+        <td>1</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>94.76667</td>
+        <td>There is no longer any need
+for the life of Bionis.</td>
+        <td>95.13333</td>
+        <td>There is no longer any need
+for the life of Bionis.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>98.8333359</td>
+        <td>53</td>
+        <td>97.83333</td>
+        <td>1</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>100</td>
+        <td>I must thank you indeed, Shulk.</td>
+        <td>99.8</td>
+        <td>I must thank you indeed, Shulk.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>103</td>
+        <td>[ML:undisp ]</td>
+        <td>102.133331</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>103.066666</td>
+        <td>56</td>
+        <td>103</td>
+        <td>1</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>103.76667</td>
+        <td>You were of more use to me
+than any of my disciples.</td>
+        <td>103.833328</td>
+        <td>You were of more use to me
+than any of my disciples.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>108</td>
+        <td>58</td>
+        <td>105.166672</td>
+        <td>1</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>108.066666</td>
+        <td>[ML:undisp ]</td>
+        <td>105.566666</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>108.133331</td>
+        <td>60</td>
+        <td>108</td>
+        <td>1</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>109.066666</td>
+        <td>Now that I have the Monados,
+I can forgive you your betrayal.</td>
+        <td>109.066666</td>
+        <td>Now that I have the Monados,
+I can forgive you your betrayal.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>114.76667</td>
+        <td>62</td>
+        <td>111</td>
+        <td>1</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>114.833336</td>
+        <td>[ML:undisp ]</td>
+        <td>111.533333</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>114.9</td>
+        <td>64</td>
+        <td>114.866669</td>
+        <td>1</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>116.133331</td>
+        <td>You gonna give him a reward?</td>
+        <td>115.9</td>
+        <td>You gonna give him a reward?</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>117.8</td>
+        <td>66</td>
+        <td>117.666672</td>
+        <td>1</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>118.666664</td>
+        <td>Precisely.</td>
+        <td>118.5</td>
+        <td>Precisely.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>120.1</td>
+        <td>68</td>
+        <td>119.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>120.533333</td>
+        <td>I will have him serve as my new disciple.</td>
+        <td>120.6</td>
+        <td>I will have him serve as my new disciple.</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>123.366669</td>
+        <td>70</td>
+        <td>123.73333</td>
+        <td>1</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>124.366669</td>
+        <td>You will be granted eternal life
+and unimaginable strength.</td>
+        <td>124.133331</td>
+        <td>You will be granted eternal life
+and unimaginable strength.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>128.9</td>
+        <td>72</td>
+        <td>125.366669</td>
+        <td>1</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>128.96666</td>
+        <td>[ML:undisp ]</td>
+        <td>126.066666</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>129.03334</td>
+        <td>74</td>
+        <td>127.433334</td>
+        <td>1</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>129.133331</td>
+        <td>Death will be but a fleeting afterthought.</td>
+        <td>128.133331</td>
+        <td>Death will be but a fleeting afterthought.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>131.6</td>
+        <td>76</td>
+        <td>131.133331</td>
+        <td>1</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>131.6</td>
+        <td>Are you so arrogant to believe
+that the High Entia,</td>
+        <td>131.53334</td>
+        <td>Are you so arrogant to believe
+that the High Entia,</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>135.066666</td>
+        <td>78</td>
+        <td>132.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>135.133331</td>
+        <td>[ML:undisp ]</td>
+        <td>133.766663</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>135.2</td>
+        <td>80</td>
+        <td>134.633331</td>
+        <td>1</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>135.53334</td>
+        <td>no, all life on Bionis, are nothing
+but your playthings?!</td>
+        <td>135.666672</td>
+        <td>no, all life on Bionis, are nothing
+but your playthings?!</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>140.46666</td>
+        <td>[ML:undisp ]</td>
+        <td>139.666672</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>140.53334</td>
+        <td>83</td>
+        <td>140.466675</td>
+        <td>1</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>141.133331</td>
+        <td>Playthings?</td>
+        <td>141.133331</td>
+        <td>Playthings?</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>142.366669</td>
+        <td>85</td>
+        <td>142.366669</td>
+        <td>1</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>143.46666</td>
+        <td>Yes.</td>
+        <td>143.533325</td>
+        <td>Yes.</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>144.2</td>
+        <td>87</td>
+        <td>144.2</td>
+        <td>1</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>145.066666</td>
+        <td>You don&#39;t know how it feels
+to have slain my brethren</td>
+        <td>145.733337</td>
+        <td>You don&#39;t know how it feels
+to have slain my brethren</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>148.066666</td>
+        <td>89</td>
+        <td>147.633331</td>
+        <td>1</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>148.6</td>
+        <td>after they had transformed into Telethia!</td>
+        <td>148.6</td>
+        <td>after they had transformed into Telethia!</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>151.166672</td>
+        <td>91</td>
+        <td>150.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>152.166672</td>
+        <td>What are you talking about?</td>
+        <td>152.3</td>
+        <td>What are you talking about?</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>153.633331</td>
+        <td>93</td>
+        <td>153.833328</td>
+        <td>1</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>154.03334</td>
+        <td>A Telethia is a High Entia&#39;s true form.</td>
+        <td>154.233337</td>
+        <td>A Telethia is a High Entia&#39;s true form.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>157.066666</td>
+        <td>95</td>
+        <td>156.766663</td>
+        <td>1</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>157.2</td>
+        <td>I did not transform them, I returned them.</td>
+        <td>157.366669</td>
+        <td>I did not transform them, I returned them.</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>160.566666</td>
+        <td>97</td>
+        <td>158.666672</td>
+        <td>1</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>160.633331</td>
+        <td>[ML:undisp ]</td>
+        <td>159.266663</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>160.7</td>
+        <td>99</td>
+        <td>160.266663</td>
+        <td>1</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>160.9</td>
+        <td>The Telethia are mere cells from my body.</td>
+        <td>161.066666</td>
+        <td>The Telethia are mere cells from my body.</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>164.03334</td>
+        <td>101</td>
+        <td>163.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>164.166672</td>
+        <td>I conferred intelligence upon
+them on a mistaken whim,</td>
+        <td>164.266663</td>
+        <td>I conferred intelligence upon
+them on a mistaken whim,</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>167.53334</td>
+        <td>103</td>
+        <td>167.466675</td>
+        <td>1</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>168.3</td>
+        <td>creating a primitive life form - the High Entia.</td>
+        <td>168.066666</td>
+        <td>creating a primitive life form - the High Entia.</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>171.9</td>
+        <td>105</td>
+        <td>171.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>174.03334</td>
+        <td>[ML:undisp ]</td>
+        <td>173.433334</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>174.1</td>
+        <td>107</td>
+        <td>174.833328</td>
+        <td>1</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>174.166672</td>
+        <td>They enjoyed a brief existence
+as sentient beings.</td>
+        <td>175.266663</td>
+        <td>They enjoyed a brief existence
+as sentient beings.</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>178.03334</td>
+        <td>109</td>
+        <td>177.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>178.03334</td>
+        <td>For that they should be grateful.</td>
+        <td>178.033325</td>
+        <td>For that they should be grateful.</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>180.6</td>
+        <td>111</td>
+        <td>180.333328</td>
+        <td>1</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>181.6</td>
+        <td>[ML:undisp ]</td>
+        <td>181.166672</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>181.666672</td>
+        <td>113</td>
+        <td>181.933334</td>
+        <td>1</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>182.46666</td>
+        <td>So this is the arrogance of a creator.</td>
+        <td>182.7</td>
+        <td>So this is the arrogance of a creator.</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>185.766663</td>
+        <td>115</td>
+        <td>185.3</td>
+        <td>1</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>185.766663</td>
+        <td>As I planned,</td>
+        <td>186.066666</td>
+        <td>As I planned,</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>187.266663</td>
+        <td>117</td>
+        <td>188.6</td>
+        <td>1</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>187.266663</td>
+        <td>the life of Bionis existed simply to
+serve as my vessels and my food.</td>
+        <td>189.3</td>
+        <td>the life of Bionis existed simply to
+serve as my vessels and my food.</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>193.96666</td>
+        <td>119</td>
+        <td>193.366669</td>
+        <td>1</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>194.666672</td>
+        <td>Bionis is nothing more than an accumulation
+of their corpses and life energy.</td>
+        <td>194.633331</td>
+        <td>Bionis is nothing more than an accumulation
+of their corpses and life energy.</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>201.4</td>
+        <td>[ML:undisp ]</td>
+        <td>196.033325</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>201.46666</td>
+        <td>122</td>
+        <td>200.933334</td>
+        <td>1</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>201.633331</td>
+        <td>But though you feign omnipotence,</td>
+        <td>201.7</td>
+        <td>But though you feign omnipotence,</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>203.666672</td>
+        <td>the High Entia still confined
+you to Prison Island!</td>
+        <td>203.4</td>
+        <td>the High Entia still confined
+you to Prison Island!</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>206.833328</td>
+        <td>125</td>
+        <td>206.633331</td>
+        <td>1</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>207.1</td>
+        <td>That is how limited you are.</td>
+        <td>207.166672</td>
+        <td>That is how limited you are.</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>208.9</td>
+        <td>127</td>
+        <td>208.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>209.333328</td>
+        <td>Confined me?</td>
+        <td>209.333328</td>
+        <td>Confined me?</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>210.9</td>
+        <td>129</td>
+        <td>210.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>211.933334</td>
+        <td>I was merely...</td>
+        <td>211.933334</td>
+        <td>I was merely...</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>213.066666</td>
+        <td>131</td>
+        <td>213.066666</td>
+        <td>1</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>213.666672</td>
+        <td>resting there for a while.</td>
+        <td>213.666672</td>
+        <td>resting there for a while.</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>215.7</td>
+        <td>133</td>
+        <td>215.7</td>
+        <td>1</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>216.53334</td>
+        <td>[ML:undisp ]</td>
+        <td>216.533325</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>217.2</td>
+        <td>135</td>
+        <td>217.2</td>
+        <td>1</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>217.46666</td>
+        <td>I was wounded in the battle
+with Meyneth&#39;s vessel.</td>
+        <td>217.533325</td>
+        <td>I was wounded in the battle
+with Meyneth&#39;s vessel.</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>220.8</td>
+        <td>137</td>
+        <td>219.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>220.9</td>
+        <td>[ML:undisp ]</td>
+        <td>220.166672</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>221.666672</td>
+        <td>139</td>
+        <td>221.766663</td>
+        <td>1</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>221.733337</td>
+        <td>I simply awaited the day when a new vessel,</td>
+        <td>222.5</td>
+        <td>I simply awaited the day when a new vessel,</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>224.933334</td>
+        <td>141</td>
+        <td>225.466675</td>
+        <td>1</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>225.4</td>
+        <td>revealed to me in a vision, would be born.</td>
+        <td>226.333328</td>
+        <td>revealed to me in a vision, would be born.</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>228.833328</td>
+        <td>143</td>
+        <td>228.933334</td>
+        <td>1</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>229.8</td>
+        <td>Until</td>
+        <td>229.866669</td>
+        <td>Until</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>230.7</td>
+        <td>145</td>
+        <td>230.7</td>
+        <td>1</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>231.666672</td>
+        <td>I was born.</td>
+        <td>231.866669</td>
+        <td>I was born.</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>233.1</td>
+        <td>147</td>
+        <td>232.5</td>
+        <td>1</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>233.1</td>
+        <td>Precisely.</td>
+        <td>232.866669</td>
+        <td>Precisely.</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>234.3</td>
+        <td>149</td>
+        <td>233.7</td>
+        <td>1</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>234.933334</td>
+        <td>I intended to inhabit your body and
+once again do battle with Meyneth.</td>
+        <td>234.433334</td>
+        <td>I intended to inhabit your body and
+once again do battle with Meyneth.</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>239.833328</td>
+        <td>151</td>
+        <td>235.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>239.9</td>
+        <td>[ML:undisp ]</td>
+        <td>236.466675</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>240.433334</td>
+        <td>153</td>
+        <td>240.433334</td>
+        <td>1</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>240.4</td>
+        <td>However, I had no idea that
+I would defeat her so easily.</td>
+        <td>240.833328</td>
+        <td>However, I had no idea that
+I would defeat her so easily.</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>245.266663</td>
+        <td>155</td>
+        <td>241.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>245.333328</td>
+        <td>[ML:undisp ]</td>
+        <td>241.8</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>245.4</td>
+        <td>157</td>
+        <td>245.266663</td>
+        <td>1</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>246</td>
+        <td>Meyneth...</td>
+        <td>246</td>
+        <td>Meyneth...</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>246.766663</td>
+        <td>159</td>
+        <td>246.766663</td>
+        <td>1</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>250.5</td>
+        <td>You did a great deed in
+granting me a new Monado.</td>
+        <td>250.6</td>
+        <td>You did a great deed in
+granting me a new Monado.</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>254</td>
+        <td>161</td>
+        <td>254</td>
+        <td>1</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>254.433334</td>
+        <td>I will gladly take you as my new disciple,</td>
+        <td>254.433334</td>
+        <td>I will gladly take you as my new disciple,</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>257.6</td>
+        <td>163</td>
+        <td>257.6</td>
+        <td>1</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>258.666656</td>
+        <td>Shulk.</td>
+        <td>258.733337</td>
+        <td>Shulk.</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>259.766663</td>
+        <td>165</td>
+        <td>259.766663</td>
+        <td>1</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>259.933319</td>
+        <td>Never!</td>
+        <td>260.066681</td>
+        <td>Never!</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>260.733337</td>
+        <td>167</td>
+        <td>260.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>261.5</td>
+        <td>I don&#39;t wanna be your vessel
+or your disciple!</td>
+        <td>261.666656</td>
+        <td>I don&#39;t wanna be your vessel
+or your disciple!</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>264.733337</td>
+        <td>169</td>
+        <td>262.833344</td>
+        <td>1</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>264.8</td>
+        <td>[ML:undisp ]</td>
+        <td>263.333344</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>264.9</td>
+        <td>171</td>
+        <td>264.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>265.566681</td>
+        <td>I just want to live my life as a Homs.</td>
+        <td>265.733337</td>
+        <td>I just want to live my life as a Homs.</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>268</td>
+        <td>173</td>
+        <td>268</td>
+        <td>1</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>268.633331</td>
+        <td>In a world without you!</td>
+        <td>268.966675</td>
+        <td>In a world without you!</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>270.9</td>
+        <td>175</td>
+        <td>270.5</td>
+        <td>1</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>271.5</td>
+        <td>That is most regrettable.</td>
+        <td>271.5</td>
+        <td>That is most regrettable.</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>273.433319</td>
+        <td>177</td>
+        <td>272.966675</td>
+        <td>1</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>274.266663</td>
+        <td>You could have entrusted all
+to me and attained peace.</td>
+        <td>273.7</td>
+        <td>You could have entrusted all
+to me and attained peace.</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>278.233337</td>
+        <td>[ML:undisp ]</td>
+        <td>275.733337</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>278.3</td>
+        <td>180</td>
+        <td>278.3</td>
+        <td>1</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>279.433319</td>
+        <td>[ML:undisp ]</td>
+        <td>279.5</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>279.5</td>
+        <td>182</td>
+        <td>280.06665</td>
+        <td>1</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>279.633331</td>
+        <td>But perhaps the vision
+of mortals will ever remain</td>
+        <td>280.466675</td>
+        <td>But perhaps the vision
+of mortals will ever remain</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>283.5</td>
+        <td>184</td>
+        <td>283.866669</td>
+        <td>1</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>283.5</td>
+        <td>limited.</td>
+        <td>284.866669</td>
+        <td>limited.</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>284.5</td>
+        <td>186</td>
+        <td>286.166656</td>
+        <td>1</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>285.5</td>
+        <td>Using one&#39;s power to change the world.</td>
+        <td>286.7</td>
+        <td>Using one&#39;s power to change the world.</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>288.533325</td>
+        <td>188</td>
+        <td>288.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>289.266663</td>
+        <td>That is a right possessed only by gods.</td>
+        <td>290.333344</td>
+        <td>That is a right possessed only by gods.</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>293.1</td>
+        <td>190</td>
+        <td>293.5</td>
+        <td>1</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>294.333344</td>
+        <td>Is that why you laid waste to Mechonis?!</td>
+        <td>294.333344</td>
+        <td>Is that why you laid waste to Mechonis?!</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>296.533325</td>
+        <td>192</td>
+        <td>296.533325</td>
+        <td>1</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>297.333344</td>
+        <td>Of course.</td>
+        <td>297.43335</td>
+        <td>Of course.</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>298.6</td>
+        <td>194</td>
+        <td>298.6</td>
+        <td>1</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>299.466675</td>
+        <td>Along with the beings called Machina,
+who followed Meyneth.</td>
+        <td>299.06665</td>
+        <td>Along with the beings called Machina,
+who followed Meyneth.</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>303.333344</td>
+        <td>[ML:undisp ]</td>
+        <td>300.733337</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>303.4</td>
+        <td>197</td>
+        <td>302.566681</td>
+        <td>1</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>304.466675</td>
+        <td>They had evolved and become
+insolent under her protection.</td>
+        <td>303.2</td>
+        <td>They had evolved and become
+insolent under her protection.</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>309.5</td>
+        <td>[ML:undisp ]</td>
+        <td>306.033325</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>309.566681</td>
+        <td>200</td>
+        <td>308.966675</td>
+        <td>1</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>310.333344</td>
+        <td>So you&#39;re saying us Homs are next in line, eh?</td>
+        <td>310.566681</td>
+        <td>So you&#39;re saying us Homs are next in line, eh?</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>313.466675</td>
+        <td>202</td>
+        <td>313.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>313.466675</td>
+        <td>You are correct.</td>
+        <td>313.566681</td>
+        <td>You are correct.</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>314.833344</td>
+        <td>204</td>
+        <td>314.833344</td>
+        <td>1</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>315.2</td>
+        <td>You yourselves have proven that
+Homs are a dangerous species.</td>
+        <td>315.5</td>
+        <td>You yourselves have proven that
+Homs are a dangerous species.</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>319.7</td>
+        <td>[ML:undisp ]</td>
+        <td>316.933319</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>319.833344</td>
+        <td>[ML:undisp ]</td>
+        <td>319.1</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>321.266663</td>
+        <td>208</td>
+        <td>321.266663</td>
+        <td>1</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>320.6</td>
+        <td>How unfortunate.</td>
+        <td>322.066681</td>
+        <td>How unfortunate.</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>323.366669</td>
+        <td>210</td>
+        <td>323.366669</td>
+        <td>1</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>324.033325</td>
+        <td>I had a desire for friendship.</td>
+        <td>324.033325</td>
+        <td>I had a desire for friendship.</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>326.333344</td>
+        <td>212</td>
+        <td>326.333344</td>
+        <td>1</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>327.133331</td>
+        <td>But granting intelligence to the
+lives I created was a mistake.</td>
+        <td>327.4</td>
+        <td>But granting intelligence to the
+lives I created was a mistake.</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>332.1</td>
+        <td>214</td>
+        <td>328.033325</td>
+        <td>1</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>332.166656</td>
+        <td>[ML:undisp ]</td>
+        <td>328.833344</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>332.233337</td>
+        <td>216</td>
+        <td>332.1</td>
+        <td>1</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>333.533325</td>
+        <td>A god should not long for friendship.</td>
+        <td>333.56665</td>
+        <td>A god should not long for friendship.</td>
+      </tr>
+      <tr id="218">
+        <td>218</td>
+        <td>
+        </td>
+        <td>336.766663</td>
+        <td>218</td>
+        <td>336.766663</td>
+        <td>1</td>
+      </tr>
+      <tr id="219">
+        <td>219</td>
+        <td>
+        </td>
+        <td>338.133331</td>
+        <td>You&#39;re wrong!</td>
+        <td>338.3</td>
+        <td>You&#39;re wrong!</td>
+      </tr>
+      <tr id="220">
+        <td>220</td>
+        <td>
+        </td>
+        <td>339</td>
+        <td>220</td>
+        <td>339</td>
+        <td>1</td>
+      </tr>
+      <tr id="221">
+        <td>221</td>
+        <td>
+        </td>
+        <td>340.266663</td>
+        <td>Meyneth chose to exist alongside us!</td>
+        <td>340.866669</td>
+        <td>Meyneth chose to exist alongside us!</td>
+      </tr>
+      <tr id="222">
+        <td>222</td>
+        <td>
+        </td>
+        <td>343.4</td>
+        <td>222</td>
+        <td>343.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="223">
+        <td>223</td>
+        <td>
+        </td>
+        <td>344.133331</td>
+        <td>She grew to consider us her friends.</td>
+        <td>344.2</td>
+        <td>She grew to consider us her friends.</td>
+      </tr>
+      <tr id="224">
+        <td>224</td>
+        <td>
+        </td>
+        <td>346.266663</td>
+        <td>224</td>
+        <td>346.266663</td>
+        <td>1</td>
+      </tr>
+      <tr id="225">
+        <td>225</td>
+        <td>
+        </td>
+        <td>346.666656</td>
+        <td>You should have accepted that!</td>
+        <td>346.833344</td>
+        <td>You should have accepted that!</td>
+      </tr>
+      <tr id="226">
+        <td>226</td>
+        <td>
+        </td>
+        <td>347.966675</td>
+        <td>226</td>
+        <td>347.966675</td>
+        <td>1</td>
+      </tr>
+      <tr id="227">
+        <td>227</td>
+        <td>
+        </td>
+        <td>348.7</td>
+        <td>But</td>
+        <td>348.9</td>
+        <td>But</td>
+      </tr>
+      <tr id="228">
+        <td>228</td>
+        <td>
+        </td>
+        <td>349.4</td>
+        <td>228</td>
+        <td>349.4</td>
+        <td>1</td>
+      </tr>
+      <tr id="229">
+        <td>229</td>
+        <td>
+        </td>
+        <td>350</td>
+        <td>what you were hoping for was not friendship.</td>
+        <td>350</td>
+        <td>what you were hoping for was not friendship.</td>
+      </tr>
+      <tr id="230">
+        <td>230</td>
+        <td>
+        </td>
+        <td>353</td>
+        <td>230</td>
+        <td>351.466675</td>
+        <td>1</td>
+      </tr>
+      <tr id="231">
+        <td>231</td>
+        <td>
+        </td>
+        <td>353.133331</td>
+        <td>[ML:undisp ]</td>
+        <td>351.866669</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="232">
+        <td>232</td>
+        <td>
+        </td>
+        <td>353.2</td>
+        <td>232</td>
+        <td>352.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="233">
+        <td>233</td>
+        <td>
+        </td>
+        <td>353.433319</td>
+        <td>You wanted worthless slaves.</td>
+        <td>353.833344</td>
+        <td>You wanted worthless slaves.</td>
+      </tr>
+      <tr id="234">
+        <td>234</td>
+        <td>
+        </td>
+        <td>355.333344</td>
+        <td>234</td>
+        <td>355.166656</td>
+        <td>1</td>
+      </tr>
+      <tr id="235">
+        <td>235</td>
+        <td>
+        </td>
+        <td>355.866669</td>
+        <td>Our lives as food!</td>
+        <td>355.866669</td>
+        <td>Our lives as food!</td>
+      </tr>
+      <tr id="236">
+        <td>236</td>
+        <td>
+        </td>
+        <td>357.233337</td>
+        <td>236</td>
+        <td>357.233337</td>
+        <td>1</td>
+      </tr>
+      <tr id="237">
+        <td>237</td>
+        <td>
+        </td>
+        <td>357.9</td>
+        <td>Just as I suspected.</td>
+        <td>358.233337</td>
+        <td>Just as I suspected.</td>
+      </tr>
+      <tr id="238">
+        <td>238</td>
+        <td>
+        </td>
+        <td>360.066681</td>
+        <td>238</td>
+        <td>359.06665</td>
+        <td>1</td>
+      </tr>
+      <tr id="239">
+        <td>239</td>
+        <td>
+        </td>
+        <td>360.066681</td>
+        <td>It appears that I was mistaken to grant free will.</td>
+        <td>359.333344</td>
+        <td>It appears that I was mistaken to grant free will.</td>
+      </tr>
+      <tr id="240">
+        <td>240</td>
+        <td>
+        </td>
+        <td>363.733337</td>
+        <td>240</td>
+        <td>363.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="241">
+        <td>241</td>
+        <td>
+        </td>
+        <td>364.5</td>
+        <td>However, all will soon be over.</td>
+        <td>364.733337</td>
+        <td>However, all will soon be over.</td>
+      </tr>
+      <tr id="242">
+        <td>242</td>
+        <td>
+        </td>
+        <td>368</td>
+        <td>242</td>
+        <td>365.233337</td>
+        <td>1</td>
+      </tr>
+      <tr id="243">
+        <td>243</td>
+        <td>
+        </td>
+        <td>368.066681</td>
+        <td>[ML:undisp ]</td>
+        <td>365.766663</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="244">
+        <td>244</td>
+        <td>
+        </td>
+        <td>368.133331</td>
+        <td>244</td>
+        <td>368</td>
+        <td>1</td>
+      </tr>
+      <tr id="245">
+        <td>245</td>
+        <td>
+        </td>
+        <td>368.533325</td>
+        <td>The Telethia will exterminate
+all life on Bionis.</td>
+        <td>368.733337</td>
+        <td>The Telethia will exterminate
+all life on Bionis.</td>
+      </tr>
+      <tr id="246">
+        <td>246</td>
+        <td>
+        </td>
+        <td>372</td>
+        <td>246</td>
+        <td>372</td>
+        <td>1</td>
+      </tr>
+      <tr id="247">
+        <td>247</td>
+        <td>
+        </td>
+        <td>372.466675</td>
+        <td>I will then create a new world!</td>
+        <td>372.633331</td>
+        <td>I will then create a new world!</td>
+      </tr>
+      <tr id="248">
+        <td>248</td>
+        <td>
+        </td>
+        <td>375.366669</td>
+        <td>248</td>
+        <td>373.433319</td>
+        <td>1</td>
+      </tr>
+      <tr id="249">
+        <td>249</td>
+        <td>
+        </td>
+        <td>375.466675</td>
+        <td>[ML:undisp ]</td>
+        <td>373.733337</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="250">
+        <td>250</td>
+        <td>
+        </td>
+        <td>376.733337</td>
+        <td>250</td>
+        <td>376.733337</td>
+        <td>1</td>
+      </tr>
+      <tr id="251">
+        <td>251</td>
+        <td>
+        </td>
+        <td>376.3</td>
+        <td>Just as I have done many times before!</td>
+        <td>377.6</td>
+        <td>Just as I have done many times before!</td>
+      </tr>
+      <tr id="252">
+        <td>252</td>
+        <td>
+        </td>
+        <td>380.166656</td>
+        <td>252</td>
+        <td>380.833344</td>
+        <td>1</td>
+      </tr>
+      <tr id="253">
+        <td>253</td>
+        <td>
+        </td>
+        <td>380.833344</td>
+        <td>We will not allow it!</td>
+        <td>381.233337</td>
+        <td>We will not allow it!</td>
+      </tr>
+      <tr id="254">
+        <td>254</td>
+        <td>
+        </td>
+        <td>382.233337</td>
+        <td>254</td>
+        <td>381.966675</td>
+        <td>1</td>
+      </tr>
+      <tr id="255">
+        <td>255</td>
+        <td>
+        </td>
+        <td>382.5</td>
+        <td>We cannot!</td>
+        <td>382.7</td>
+        <td>We cannot!</td>
+      </tr>
+      <tr id="256">
+        <td>256</td>
+        <td>
+        </td>
+        <td>383.5</td>
+        <td>256</td>
+        <td>383.466675</td>
+        <td>1</td>
+      </tr>
+      <tr id="257">
+        <td>257</td>
+        <td>
+        </td>
+        <td>384.466675</td>
+        <td>We will stop you!</td>
+        <td>384.7</td>
+        <td>We will stop you!</td>
+      </tr>
+      <tr id="258">
+        <td>258</td>
+        <td>
+        </td>
+        <td>386.166656</td>
+        <td>258</td>
+        <td>386.166656</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ElvGm0401</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>gimID</th>
+          <th>MSGID</th>
+          <th>mapObj</th>
+          <th>LIFTLOD</th>
+          <th>shtALOD</th>
+          <th>shtBLOD</th>
+          <th>swtLOD</th>
+          <th>switchEF</th>
+          <th>switchSE</th>
+          <th>shtSE</th>
+          <th>LSSE</th>
+          <th>LLSE</th>
+          <th>LESE</th>
+          <th>LODSTOP</th>
+          <th>A_rectype</th>
+          <th>A_posX</th>
+          <th>A_posY</th>
+          <th>A_posZ</th>
+          <th>A_area_x</th>
+          <th>A_area_py</th>
+          <th>A_area_my</th>
+          <th>A_area_z</th>
+          <th>A_area_rx</th>
+          <th>A_area_ry</th>
+          <th>A_area_rz</th>
+          <th>B_rectype</th>
+          <th>B_posX</th>
+          <th>B_posY</th>
+          <th>B_posZ</th>
+          <th>B_area_x</th>
+          <th>B_area_py</th>
+          <th>B_area_my</th>
+          <th>B_area_z</th>
+          <th>B_area_rx</th>
+          <th>B_area_ry</th>
+          <th>B_area_rz</th>
+          <th>C_rectype</th>
+          <th>C_posX</th>
+          <th>C_posY</th>
+          <th>C_posZ</th>
+          <th>C_area_x</th>
+          <th>C_area_py</th>
+          <th>C_area_my</th>
+          <th>C_area_z</th>
+          <th>C_area_rx</th>
+          <th>C_area_ry</th>
+          <th>C_area_rz</th>
+          <th>D_rectype</th>
+          <th>D_posX</th>
+          <th>D_posY</th>
+          <th>D_posZ</th>
+          <th>D_area_x</th>
+          <th>D_area_py</th>
+          <th>D_area_my</th>
+          <th>D_area_z</th>
+          <th>D_area_rx</th>
+          <th>D_area_ry</th>
+          <th>D_area_rz</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>70</td>
+        <td>1</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>301</td>
+        <td>302</td>
+        <td>303</td>
+        <td>304</td>
+        <td>305</td>
+        <td>0</td>
+        <td>9</td>
+        <td>19470</td>
+        <td>-17960</td>
+        <td>-73649</td>
+        <td>300</td>
+        <td>400</td>
+        <td>200</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>20430</td>
+        <td>-12490</td>
+        <td>-73648</td>
+        <td>300</td>
+        <td>400</td>
+        <td>200</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>19952</td>
+        <td>-17960</td>
+        <td>-73750</td>
+        <td>300</td>
+        <td>400</td>
+        <td>200</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>19952</td>
+        <td>-12490</td>
+        <td>-73750</td>
+        <td>300</td>
+        <td>400</td>
+        <td>200</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

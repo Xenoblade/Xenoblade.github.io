@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>trial_portal</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>mapID</th>
+          <th>type</th>
+          <th>scenarioFlag</th>
+          <th>checkClearMelia</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>height</th>
+          <th>radius</th>
+          <th>moveMapID</th>
+          <th>movePosX</th>
+          <th>movePosY</th>
+          <th>movePosZ</th>
+          <th>moveAngle</th>
+          <th>leavePosX</th>
+          <th>leavePosY</th>
+          <th>leavePosZ</th>
+          <th>leaveAngle</th>
+          <th>moveStartEffectID</th>
+          <th>moveStartSeID</th>
+          <th>moveEndEffectID</th>
+          <th>moveEndSeID</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#3">Tephra Cave</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#58">58</td></a>
+        <td>0</td>
+        <td>-461.5</td>
+        <td>140.1</td>
+        <td>-121.5</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-461.6</td>
+        <td>138.9</td>
+        <td>-117.2</td>
+        <td>0</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#32">32</td></a>
+        <td>1</td>
+        <td><a href="../MNU_scenario.html#58">58</td></a>
+        <td>0</td>
+        <td>-1745.064</td>
+        <td>95</td>
+        <td>203.094</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#2">Colony 9</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#59">59</td></a>
+        <td>0</td>
+        <td>-193.5</td>
+        <td>0</td>
+        <td>-23.5</td>
+        <td>5</td>
+        <td>0.5</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-193.6</td>
+        <td>-1</td>
+        <td>-19</td>
+        <td>0</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#4">Bionis&#39; Leg</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#70">70</td></a>
+        <td>0</td>
+        <td>1131.9</td>
+        <td>126.4</td>
+        <td>555.9</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>1134.8</td>
+        <td>125</td>
+        <td>550.7</td>
+        <td>145</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#5">Colony 6</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#103">103</td></a>
+        <td>0</td>
+        <td>-32.2</td>
+        <td>-88.8</td>
+        <td>433.3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-25.8</td>
+        <td>-88.9</td>
+        <td>434.4</td>
+        <td>60</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#9">Frontier Village</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#138">138</td></a>
+        <td>0</td>
+        <td>3</td>
+        <td>-8.3</td>
+        <td>-100.8</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-1</td>
+        <td>-9.3</td>
+        <td>-102.8</td>
+        <td>0</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#13">Alcamoth</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#196">196</td></a>
+        <td>0</td>
+        <td>702.6</td>
+        <td>687.9</td>
+        <td>-551.5</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>695.1</td>
+        <td>686.9</td>
+        <td>-551.2</td>
+        <td>35</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#19">Fallen Arm</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#276">276</td></a>
+        <td>0</td>
+        <td>-686.8</td>
+        <td>0.5</td>
+        <td>284</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-694.1</td>
+        <td>0</td>
+        <td>284.2</td>
+        <td>310</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#24">Central Factory</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#323">323</td></a>
+        <td>0</td>
+        <td>178.2</td>
+        <td>-45</td>
+        <td>-9.4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>176.6</td>
+        <td>-46</td>
+        <td>-0.5</td>
+        <td>270</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#25">Bionis&#39; Interior</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#382">382</td></a>
+        <td>0</td>
+        <td>-344.3</td>
+        <td>-125.9</td>
+        <td>-926.2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-347.1</td>
+        <td>-126</td>
+        <td>-922.9</td>
+        <td>45</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td><a href="../bdat_common/FLD_maplist.html#15">Prison Island</td></a>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#389">389</td></a>
+        <td>0</td>
+        <td>-360.3</td>
+        <td>1172.1</td>
+        <td>-39.3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>-1753.831</td>
+        <td>95</td>
+        <td>201.385</td>
+        <td>260</td>
+        <td>-353.6</td>
+        <td>1171.1</td>
+        <td>-38.5</td>
+        <td>90</td>
+        <td>30</td>
+        <td>501</td>
+        <td>30</td>
+        <td>501</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

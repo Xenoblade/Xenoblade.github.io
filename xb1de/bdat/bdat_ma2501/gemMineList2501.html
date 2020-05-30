@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>gemMineList2501</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>obj_id</th>
+          <th>mine_type</th>
+          <th>reset_time</th>
+          <th>cnt_min</th>
+          <th>cnt_max</th>
+          <th>point_id</th>
+          <th>point_id2</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>quest_id1</th>
+          <th>quest_id2</th>
+          <th>rank_min1</th>
+          <th>rank_max1</th>
+          <th>rank_min2</th>
+          <th>rank_max2</th>
+          <th>skill1</th>
+          <th>skill1_per</th>
+          <th>skill2</th>
+          <th>skill2_per</th>
+          <th>skill3</th>
+          <th>skill3_per</th>
+          <th>skill4</th>
+          <th>skill4_per</th>
+          <th>skill5</th>
+          <th>skill5_per</th>
+          <th>skill6</th>
+          <th>skill6_per</th>
+          <th>skill7</th>
+          <th>skill7_per</th>
+          <th>skill8</th>
+          <th>skill8_per</th>
+        </tr>
+      </thead>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#1">1</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>301</td>
+        <td>371</td>
+        <td>-9868000</td>
+        <td>310000</td>
+        <td>5753000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#17">HP Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#18">Poison Defence</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#24">Damage Heal</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#25">Arts Heal</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#2">2</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>300</td>
+        <td>371</td>
+        <td>-12015000</td>
+        <td>347000</td>
+        <td>573000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#1">Strength Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#5">Bind Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#10">Blaze Attack</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#12">Revival HP Up</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#3">3</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>302</td>
+        <td>371</td>
+        <td>-12268620</td>
+        <td>845000</td>
+        <td>1710930</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#33">Ether Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#38">Phys Def Down</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#40">Lightning Attack</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#47">Daze Tension</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#4">4</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>302</td>
+        <td>371</td>
+        <td>-13443480</td>
+        <td>570200</td>
+        <td>349710</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#34">Double Attack</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#37">Daze Plus</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#41">Electric Plus</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#46">Tension Swing</td></a>
+        <td>30</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#5">5</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>660</td>
+        <td>371</td>
+        <td>-10200000</td>
+        <td>316500</td>
+        <td>8980000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#49">Ether Def Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#54">Ether Protect</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#55">Slow</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#59">Chill Attack</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#6">6</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>302</td>
+        <td>371</td>
+        <td>-5160000</td>
+        <td>110000</td>
+        <td>710000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#33">Ether Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#36">Pierce Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#40">Lightning Attack</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#44">Daze Up</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#7">7</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>301</td>
+        <td>371</td>
+        <td>-4740000</td>
+        <td>-62500</td>
+        <td>-1280000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#17">HP Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#18">Poison Defence</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#20">Paralysis Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#25">Arts Heal</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#8">8</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>229030</td>
+        <td>217500</td>
+        <td>-1708210</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#65">Agility Up</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#66">Topple Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#72">Bleed Attack</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#74">Topple Up</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#9">9</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>658</td>
+        <td>371</td>
+        <td>1980270</td>
+        <td>50000</td>
+        <td>-1344930</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#81">Muscle Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#85">Bleed Defence</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#87">Physical Protect</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#93">Poison Attack</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#10">10</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>658</td>
+        <td>371</td>
+        <td>6450000</td>
+        <td>417500</td>
+        <td>-5490000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#81">Muscle Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#85">Bleed Defence</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#92">Poison Plus</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#91">Ether Down</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#11">11</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>302</td>
+        <td>371</td>
+        <td>5090000</td>
+        <td>-330000</td>
+        <td>440000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#35">Daze Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#37">Daze Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#39">Paralysis</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#44">Daze Up</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#12">12</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>300</td>
+        <td>371</td>
+        <td>6435160</td>
+        <td>-599500</td>
+        <td>2363810</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#3">Sleep Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#8">Strength Down</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#11">Spike</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#14">Aggro Up</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#13">13</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>5049000</td>
+        <td>-620000</td>
+        <td>-1069000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#65">Agility Up</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#66">Topple Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#76">Break</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#79">Aerial Cloak</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#14">14</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>300</td>
+        <td>371</td>
+        <td>-4040000</td>
+        <td>406500</td>
+        <td>-4860000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#1">Strength Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#4">Slow Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#12">Revival HP Up</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#14">Aggro Up</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#15">15</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>660</td>
+        <td>371</td>
+        <td>-9090000</td>
+        <td>622500</td>
+        <td>-4840000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#49">Ether Def Up</td></a>
+        <td>40</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#50">Blaze Defence</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#54">Ether Protect</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#57">Ether Def Down</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#16">16</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>300</td>
+        <td>371</td>
+        <td>-8468820</td>
+        <td>686500</td>
+        <td>-3047730</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#2">Chill Defence</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#3">Sleep Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#8">Strength Down</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#13">Initial Tension</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#17">17</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>301</td>
+        <td>371</td>
+        <td>-5660000</td>
+        <td>850000</td>
+        <td>-4000000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#17">HP Up</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#20">Paralysis Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#22">Recovery Up</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#26">HP Steal</td></a>
+        <td>30</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#18">18</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>660</td>
+        <td>371</td>
+        <td>11490000</td>
+        <td>-683500</td>
+        <td>1080000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#51">Lock-On Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#56">Bind</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#61">Arts Stealth</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#63">Heat Sink</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#19">19</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>302</td>
+        <td>371</td>
+        <td>10740000</td>
+        <td>-905000</td>
+        <td>6820000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#35">Daze Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#37">Daze Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#39">Paralysis</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#46">Tension Swing</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#20">20</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>301</td>
+        <td>371</td>
+        <td>10500000</td>
+        <td>-1087000</td>
+        <td>5550000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#19">Spike Defence</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#22">Recovery Up</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#26">HP Steal</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#29">Aquatic Cloak</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#21">21</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>658</td>
+        <td>371</td>
+        <td>14680000</td>
+        <td>-800000</td>
+        <td>6740000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#82">Attack Stability</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#83">Attack Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#86">Divine Protect</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#94">Aggro Down</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#22">22</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>1610000</td>
+        <td>-10000</td>
+        <td>-2740000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#67">Good Footing</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#75">Agility Down</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#76">Break</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#79">Aerial Cloak</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#23">23</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>300</td>
+        <td>371</td>
+        <td>-4730000</td>
+        <td>-505000</td>
+        <td>-7190000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#2">Chill Defence</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#6">Buff Time Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#7">Weapon Power</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#9">Blaze Plus</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#24">24</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>301</td>
+        <td>371</td>
+        <td>-10652710</td>
+        <td>-516500</td>
+        <td>-5664310</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#19">Spike Defence</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#22">Recovery Up</td></a>
+        <td>30</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#23">Aura Heal</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#29">Aquatic Cloak</td></a>
+        <td>20</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#25">25</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>660</td>
+        <td>371</td>
+        <td>-13760000</td>
+        <td>-680000</td>
+        <td>-5110000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#52">Confuse Resist</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#58">Chill Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#60">Auto-Atk Stealth</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#62">Talent Boost</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#26">26</td></a>
+        <td>1</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>658</td>
+        <td>371</td>
+        <td>-14030000</td>
+        <td>-682500</td>
+        <td>-6680000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#84">Critical Up</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#88">Night Vision</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#89">Debuff Plus</td></a>
+        <td>25</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#95">Earth Cloak</td></a>
+        <td>25</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#14">14</td></a>
+        <td>2</td>
+        <td>20</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>-14440000</td>
+        <td>-471000</td>
+        <td>-6050000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#68">Arts Seal Resist</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#70">Haste</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#71">Topple Plus</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#75">Agility Down</td></a>
+        <td>20</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#66">Topple Resist</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#67">Good Footing</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#72">Bleed Attack</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#74">Topple Up</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#14">14</td></a>
+        <td>2</td>
+        <td>20</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>-14400000</td>
+        <td>-471000</td>
+        <td>-5980000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#68">Arts Seal Resist</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#70">Haste</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#71">Topple Plus</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#75">Agility Down</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#66">Topple Resist</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#67">Good Footing</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#72">Bleed Attack</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#74">Topple Up</td></a>
+        <td>10</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td><a href="mapobjlist2501.html#14">14</td></a>
+        <td>2</td>
+        <td>20</td>
+        <td>2</td>
+        <td>3</td>
+        <td>659</td>
+        <td>371</td>
+        <td>-14340000</td>
+        <td>-471000</td>
+        <td>-6020000</td>
+        <td><a href="../bdat_common/JNL_quest2501.html#1021">Ether Exploitation</td></a>
+        <td><a href="../bdat_common/JNL_quest2501.html#1032">Finding Happiness</td></a>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#68">Arts Seal Resist</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#70">Haste</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#71">Topple Plus</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#75">Agility Down</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#66">Topple Resist</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#67">Good Footing</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#72">Bleed Attack</td></a>
+        <td>15</td>
+        <td><a href="../bdat_common/BTL_skilllist.html#74">Topple Up</td></a>
+        <td>15</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

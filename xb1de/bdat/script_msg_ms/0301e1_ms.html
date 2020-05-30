@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>0301e1_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">You&#39;ll never see a sight like this[XENO:n ]
+from Colony 9. Right, Dunban?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Right.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I don&#39;t think I&#39;d ever get tired of[XENO:n ]
+looking out at this landscape.[XENO:wait wait=key ][System:PageBreak ]I wonder when these rock[XENO:n ]
+formations date from?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Yeah.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">You don&#39;t sound very interested.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Sorry, what was that?/・Of course I&#39;m interested. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Yeah, I guess not then.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Did you say something?[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]I...I apologise, Shulk.[XENO:n ]
+My mind was elsewhere.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I guess if you&#39;re not into a topic,[XENO:n ]
+you&#39;re really not into it![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Me? Am I really like that?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Yes, you are.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT4 ]Here, let me test you. What part[XENO:n ]
+of the Bionis are we on?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・The thigh of course./・The lower leg of course. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Who do you think you are[XENO:n ]
+talking to, Shulk?[XENO:wait wait=key ][System:PageBreak ]That much I do know. It&#39;s obvious.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I didn&#39;t mean to offend you.[XENO:n ]
+I could have put that better...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]I&#39;ll get over it.[XENO:wait wait=key ][System:PageBreak ]These things interest you a lot,[XENO:n ]
+don&#39;t they? They always have.[XENO:wait wait=key ][System:PageBreak ]Geography, geology...[XENO:n ]
+That kind of thing.[XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Yeah.[XENO:wait wait=key ][System:PageBreak ]It&#39;s just...the Bionis is so big![XENO:wait wait=key ][System:PageBreak ]There are all these places and[XENO:n ]
+I&#39;ve not even seen half of them.[XENO:wait wait=key ][System:PageBreak ]Can you imagine exploring the[XENO:n ]
+Bionis&#39; back, for example?[XENO:wait wait=key ][System:PageBreak ]No one&#39;s ever been there.[XENO:n ]
+It&#39;s completely uncharted![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]And I bet the view is better than[XENO:n ]
+anywhere else on Bionis![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I feel your enthusiasm, Shulk.[XENO:n ]
+Your passion is a great thing.[XENO:wait wait=key ][System:PageBreak ]I support you implicitly in[XENO:n ]
+all your endeavours.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]You can support me out loud as[XENO:n ]
+well, you know. I won&#39;t mind![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Who do you think you are[XENO:n ]
+talking to, Shulk?[XENO:wait wait=key ][System:PageBreak ]That much I do know. It&#39;s obvious.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Obvious? You&#39;re not even[XENO:n ]
+close, Dunban![XENO:wait wait=key ][System:PageBreak ]This is the thigh![XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]It... It is?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Yes! Don&#39;t you remember?[XENO:n ]
+I&#39;m the one who told you that![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Then I owe you an apology.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I still have my old textbook,[XENO:n ]
+&#39;Bionis Geography for Beginners&#39;.[XENO:wait wait=key ][System:PageBreak ]You should read it.[XENO:n ]
+From page one![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Y-yes, sir![XENO:wait wait=key ][System:PageBreak ]But I doubt I&#39;ll ever be as[XENO:n ]
+knowledgeable as you, Shulk...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I listened to every word.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You did? It looked like you[XENO:n ]
+were just staring into space.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">It was about those rock formations[XENO:n ]
+and how they looked in the past.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Uh, something like that.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I guess when I talk about geeky[XENO:n ]
+stuff, you&#39;re gonna switch off.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Me? Switch off?[XENO:n ]
+I didn&#39;t realise I did that.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">It&#39;s not just geeky stuff. It&#39;s[XENO:n ]
+anything that doesn&#39;t interest you.[XENO:wait wait=key ][System:PageBreak ]Like the latest fads in the[XENO:n ]
+colony. I could ask you...[XENO:wait wait=key ][System:PageBreak ]What&#39;s the latest &#39;superfood&#39;[XENO:n ]
+everyone&#39;s talking about?[XENO:wait wait=key ][System:PageBreak ]And you&#39;d say...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・No idea. Not a clue./・Oh! I know! ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]See! You don&#39;t really care.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]And why do I have to care?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">What if Fiora was interested?[XENO:n ]
+Would you care then?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Well... If Fiora liked something,[XENO:n ]
+I suppose I would pay attention.[XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Now I think of it, I don&#39;t actually[XENO:n ]
+know what it is either.[XENO:wait wait=key ][System:PageBreak ]I heard someone mention it once,[XENO:n ]
+but I&#39;ve forgotten by now.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]What&#39;s that sound? Is it the pot[XENO:n ]
+calling the kettle black?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]All right, how about this.[XENO:wait wait=key ][System:PageBreak ]Instead of me trying to make you[XENO:n ]
+care about geography...[XENO:wait wait=key ][System:PageBreak ]We could both try and learn about[XENO:n ]
+the latest trends instead![XENO:wait wait=key ][System:PageBreak ]It could be fun![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I cannot argue with that.[XENO:n ]
+You have a deal.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]Chewy Radishes! They&#39;re the[XENO:n ]
+latest healthy ingredient.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]I saw a line of people queueing[XENO:n ]
+up to buy them the other day.[XENO:wait wait=key ][System:PageBreak ]It was as long as the Bionis&#39; leg.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Wow! You really are in the know.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Wait, does that mean that the[XENO:n ]
+all-knowing Shulk didn&#39;t know?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]I&#39;m afraid so. I&#39;ve barely even[XENO:n ]
+heard of a Chewy Radish.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You really had no idea. And you[XENO:n ]
+thought I was out of the loop.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I was kind of betting on you not[XENO:n ]
+knowing. You surprised me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Let this be a lesson to you.[XENO:n ]
+Studying is all well and good...[XENO:wait wait=key ][System:PageBreak ]But there are some things you[XENO:n ]
+can&#39;t learn from books.[XENO:wait wait=key ][System:PageBreak ]Or from conducting ether research[XENO:n ]
+and building weapons.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]You&#39;re right. I&#39;ll try to bear that[XENO:n ]
+in mind from now on![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

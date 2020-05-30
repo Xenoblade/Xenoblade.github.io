@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>limited_artsset</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>arts1</th>
+          <th>lv1</th>
+          <th>arts2</th>
+          <th>lv2</th>
+          <th>arts3</th>
+          <th>lv3</th>
+          <th>arts4</th>
+          <th>lv4</th>
+          <th>arts5</th>
+          <th>lv5</th>
+          <th>arts6</th>
+          <th>lv6</th>
+          <th>arts7</th>
+          <th>lv7</th>
+          <th>arts8</th>
+          <th>lv8</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#1">limited_charset#1</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#20">Hammer Beat</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#21">Wild Down</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#22">Guard Shift</td></a>
+        <td>3</td>
+        <td><a href="../bdat_common/pc_arts.html#23">War Swing</td></a>
+        <td>3</td>
+        <td><a href="../bdat_common/pc_arts.html#24">Sword Drive</td></a>
+        <td>3</td>
+        <td><a href="../bdat_common/pc_arts.html#27">Engage</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#29">Rage</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#33">Aura Burst</td></a>
+        <td>3</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#2">limited_charset#2</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#11">Slit Edge</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#12">Back Slash</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#13">Light Heal</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#15">Air Slash</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#16">Shadow Eye</td></a>
+        <td>3</td>
+        <td><a href="../bdat_common/pc_arts.html#18">Stream Edge</td></a>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#2">limited_charset#2</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#3">Buster</td></a>
+        <td>3</td>
+        <td><a href="../bdat_common/pc_arts.html#5">Shield</td></a>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#3">limited_charset#3</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#63">Heal Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#64">Thunder Bullet</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#65">Shield Bullet</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#66">Cure Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#68">Heal Blast</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#69">Heal Round</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#71">Metal Blast</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#77">Tranquilliser</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#4">limited_charset#4</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#11">Slit Edge</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#12">Back Slash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#13">Light Heal</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#14">Shaker Edge</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#15">Air Slash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#16">Shadow Eye</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#18">Stream Edge</td></a>
+        <td>4</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#4">limited_charset#4</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#3">Buster</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#5">Shield</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#5">limited_charset#5</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#20">Hammer Beat</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#21">Wild Down</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#23">War Swing</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#24">Sword Drive</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#27">Engage</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#28">Last Stand</td></a>
+        <td>4</td>
+        <td><a href="../bdat_common/pc_arts.html#29">Rage</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#33">Aura Burst</td></a>
+        <td>4</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#6">limited_charset#6</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#45">Gale Slash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#46">Electric Gutbuster</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#47">Peerless</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#48">Worldly Slash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#50">Steel Strike</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#51">Serene Heart</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#56">Spirit Breath</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#60">Blinding Blossom</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#7">limited_charset#7</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#21">Wild Down</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#23">War Swing</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#24">Sword Drive</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#26">Shield Bash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#27">Engage</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#29">Rage</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#31">Bone Upper</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#33">Aura Burst</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#8">limited_charset#8</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#63">Heal Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#65">Shield Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#66">Cure Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#68">Heal Blast</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#69">Heal Round</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#71">Metal Blast</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#75">Covert Stance</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#77">Tranquilliser</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#9">limited_charset#9</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#81">Bitey Bitey</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#82">Sneaky</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#84">Lurgy</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#86">Roly-Poly</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#87">Behave</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#89">Bedtime</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#90">You Can Do It</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#94">Freezinate</td></a>
+        <td>6</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#10">limited_charset#10</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#63">Heal Bullet</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#65">Shield Bullet</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#66">Cure Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#68">Heal Blast</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#69">Heal Round</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#73">Heat Bullet</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#74">Head Shaker</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#75">Covert Stance</td></a>
+        <td>6</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#11">limited_charset#11</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#11">Slit Edge</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#12">Back Slash</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#13">Light Heal</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#14">Shaker Edge</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#15">Air Slash</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#16">Shadow Eye</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#17">Battle Soul</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#18">Stream Edge</td></a>
+        <td>5</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#11">limited_charset#11</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#3">Buster</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#5">Shield</td></a>
+        <td>2</td>
+        <td><a href="../bdat_common/pc_arts.html#6">Speed</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#7">Purge</td></a>
+        <td>6</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#12">limited_charset#12</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#103">Summon Bolt</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#104">Summon Flare</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#108">Shadow Stitch</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#109">Summon Copy</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#111">Summon Wind</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#113">Summon Aqua</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#114">Healing Gift</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#118">Mind Blast</td></a>
+        <td>6</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#13">limited_charset#13</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#45">Gale Slash</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#46">Electric Gutbuster</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#47">Peerless</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#48">Worldly Slash</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#50">Steel Strike</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#51">Serene Heart</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#57">Soaring Tempest</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#60">Blinding Blossom</td></a>
+        <td>6</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#14">limited_charset#14</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#81">Bitey Bitey</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#82">Sneaky</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#83">Play Dead</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#84">Lurgy</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#89">Bedtime</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#90">You Can Do It</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#93">Burninate</td></a>
+        <td>6</td>
+        <td><a href="../bdat_common/pc_arts.html#94">Freezinate</td></a>
+        <td>6</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#15">limited_charset#15</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#128">Double Blade</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#129">Healing Energy</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#130">Spear Blade</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#131">Cross Impact</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#136">Double Wind</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#138">Shutdown</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#139">Air Fang</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#142">Second Gear</td></a>
+        <td>8</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#16">limited_charset#16</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#103">Summon Bolt</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#104">Summon Flare</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#109">Summon Copy</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#110">Reflection</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#111">Summon Wind</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#112">Summon Earth</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#113">Summon Aqua</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#114">Healing Gift</td></a>
+        <td>7</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#17">limited_charset#17</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#45">Gale Slash</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#46">Electric Gutbuster</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#47">Peerless</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#48">Worldly Slash</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#50">Steel Strike</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#51">Serene Heart</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#57">Soaring Tempest</td></a>
+        <td>7</td>
+        <td><a href="../bdat_common/pc_arts.html#60">Blinding Blossom</td></a>
+        <td>7</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#18">limited_charset#18</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#11">Slit Edge</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#12">Back Slash</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#13">Light Heal</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#14">Shaker Edge</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#15">Air Slash</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#16">Shadow Eye</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#17">Battle Soul</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#18">Stream Edge</td></a>
+        <td>8</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#18">limited_charset#18</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#4">Enchant</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#3">Buster</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#5">Shield</td></a>
+        <td>5</td>
+        <td><a href="../bdat_common/pc_arts.html#6">Speed</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#7">Purge</td></a>
+        <td>8</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#19">limited_charset#19</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#21">Wild Down</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#23">War Swing</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#24">Sword Drive</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#26">Shield Bash</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#29">Rage</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#30">Magnum Charge</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#31">Bone Upper</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#33">Aura Burst</td></a>
+        <td>8</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#20">limited_charset#20</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#128">Double Blade</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#129">Healing Energy</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#132">Speed Shift</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#136">Double Wind</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#138">Shutdown</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#139">Air Fang</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#140">Power Drain</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#142">Second Gear</td></a>
+        <td>8</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#21">limited_charset#21</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#103">Summon Bolt</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#104">Summon Flare</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#109">Summon Copy</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#110">Reflection</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#112">Summon Earth</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#113">Summon Aqua</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#114">Healing Gift</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#118">Mind Blast</td></a>
+        <td>9</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#22">limited_charset#22</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#81">Bitey Bitey</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#82">Sneaky</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#84">Lurgy</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#88">Riki is Angry</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#90">You Can Do It</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#92">Say Sorry</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#93">Burninate</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#94">Freezinate</td></a>
+        <td>8</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#23">limited_charset#23</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#128">Double Blade</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#129">Healing Energy</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#132">Speed Shift</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#136">Double Wind</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#138">Shutdown</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#140">Power Drain</td></a>
+        <td>8</td>
+        <td><a href="../bdat_common/pc_arts.html#142">Second Gear</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#143">Final Cross</td></a>
+        <td>9</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#24">limited_charset#24</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#45">Gale Slash</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#48">Worldly Slash</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#46">Electric Gutbuster</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#50">Steel Strike</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#47">Peerless</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#51">Serene Heart</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#53">Jaws of Death</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#52">Final Flicker</td></a>
+        <td>9</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#25">limited_charset#25</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#65">Shield Bullet</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#66">Cure Bullet</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#68">Heal Blast</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#71">Metal Blast</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#69">Heal Round</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#70">Head Shot</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#75">Covert Stance</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#74">Head Shaker</td></a>
+        <td>9</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#26">limited_charset#26</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#82">Sneaky</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#81">Bitey Bitey</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#84">Lurgy</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#90">You Can Do It</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#94">Freezinate</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#93">Burninate</td></a>
+        <td>9</td>
+        <td><a href="../bdat_common/pc_arts.html#88">Riki is Angry</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#92">Say Sorry</td></a>
+        <td>10</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#27">limited_charset#27</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#128">Double Blade</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#130">Spear Blade</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#131">Cross Impact</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#132">Speed Shift</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#136">Double Wind</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#142">Second Gear</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#143">Final Cross</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#140">Power Drain</td></a>
+        <td>10</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#28">limited_charset#28</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#103">Summon Bolt</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#104">Summon Flare</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#113">Summon Aqua</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#109">Summon Copy</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#111">Summon Wind</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#112">Summon Earth</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#110">Reflection</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#105">Summon Ice</td></a>
+        <td>10</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_charset.html#29">limited_charset#29</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/pc_arts.html#65">Shield Bullet</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#66">Cure Bullet</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#68">Heal Blast</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#69">Heal Round</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#70">Head Shot</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#74">Head Shaker</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#75">Covert Stance</td></a>
+        <td>10</td>
+        <td><a href="../bdat_common/pc_arts.html#76">Heal Counter</td></a>
+        <td>10</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>0402e2_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">This ether lamp... It&#39;s like the[XENO:n ]
+ones in Tephra Cave.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You mean the ones on the route[XENO:n ]
+between our two colonies?[XENO:wait wait=key ][System:PageBreak ]Those would have been put there[XENO:n ]
+by people from Colony 6.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">You learn something new[XENO:n ]
+every day.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You see the yellow glow?[XENO:wait wait=key ][System:PageBreak ]That&#39;s because the lamp uses[XENO:n ]
+electric ether crystals.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Didn&#39;t know that either.[XENO:wait wait=key ][System:PageBreak ]I guess some days you learn[XENO:n ]
+two new things.[XENO:wait wait=key ][System:PageBreak ]I do know that electric-type[XENO:n ]
+crystals glow the brightest.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Bingo![XENO:wait wait=key ][System:PageBreak ]Once upon a time, replenishing[XENO:n ]
+lamps with fresh ether was my job.[XENO:wait wait=key ][System:PageBreak ]It was my very first job, actually.[XENO:wait wait=key ][System:PageBreak ]I used to follow the route all the[XENO:n ]
+way down into the Ether Mine.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Sounds like fun!/・Must&#39;ve been tough. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]I used to get lost when I started.[XENO:n ]
+But I soon got the hang of it.[XENO:wait wait=key ][System:PageBreak ]We used to time each other to see[XENO:n ]
+who could get it done quickest.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]You mean...you and Gadolt?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]Am I that obvious?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]You start talking about your old[XENO:n ]
+life and I see tears...[XENO:wait wait=key ][System:PageBreak ]It had to be Gadolt.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Didn&#39;t think you were[XENO:n ]
+even paying attention.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT22 ]Oi! I always pay attention to you.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Shulk said something interesting[XENO:n ]
+to me once.[XENO:wait wait=key ][System:PageBreak ]He thinks you&#39;re...insensitive when[XENO:n ]
+it comes to this kind of thing.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT24 ]He can talk! The only girl he&#39;s[XENO:n ]
+ever talked to is Fiora![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Hahaha. I&#39;m almost jealous.[XENO:n ]
+I mean, of your male camaraderie.[XENO:wait wait=key ][System:PageBreak ]I wonder what it would be like.[XENO:n ]
+Being a guy, doing guy things...[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Like fighting alongside Gadolt?/・Gadolt would just be a friend. ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]I know I can&#39;t change the past,[XENO:n ]
+whatever I do or say.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT10 ]But when everyone fled the colony[XENO:n ]
+during the attack...[XENO:wait wait=key ][System:PageBreak ]I was so...angry![XENO:wait wait=key ][System:PageBreak ]I wanted to be by his side,[XENO:n ]
+and fight to the end with him.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]One good thing came out of it all.[XENO:n ]
+You met us.[XENO:wait wait=key ][System:PageBreak ]Me and Shulk couldn&#39;t have got far[XENO:n ]
+without you, Sharla.[XENO:wait wait=key ][System:PageBreak ]We really needed you.[XENO:wait wait=key ][System:PageBreak ]And those people at the camp.[XENO:n ]
+I saw how they needed you.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Reyn... I...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Wait, I&#39;ve got that all wrong.[XENO:n ]
+There&#39;s no &#39;needed&#39; about it.[XENO:wait wait=key ][System:PageBreak ]We need you more than ever.[XENO:wait wait=key ][System:PageBreak ]You and your healing abilities are[XENO:n ]
+a vital part of our team.[XENO:wait wait=key ][System:PageBreak ]That Heal Bullet of yours has[XENO:n ]
+saved my bacon more than once.[XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Thanks. It&#39;s nice to feel needed.[XENO:wait wait=key ][System:PageBreak ]And you&#39;re right... I have an[XENO:n ]
+important role to play.[XENO:wait wait=key ][System:PageBreak ]One I couldn&#39;t have fulfilled if[XENO:n ]
+I&#39;d stayed and fought.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]Thank you, Reyn.[XENO:wait wait=key ][System:PageBreak ]You have an amazing calming[XENO:n ]
+effect on me, you know that?[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]That&#39;s funny... I&#39;d say the[XENO:n ]
+same about you![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Just remember that you can&#39;t[XENO:n ]
+rely on me forever.[XENO:wait wait=key ][System:PageBreak ]Someday you&#39;ll have to learn[XENO:n ]
+how to fight properly.[XENO:wait wait=key ][System:PageBreak ]You know...without taking so[XENO:n ]
+many knocks on the head.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Haha! No promises, but I&#39;ll[XENO:n ]
+give it my best shot.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Hehe. Even the most ridiculous[XENO:n ]
+thing is a serious question to you.[XENO:wait wait=key ][System:PageBreak ]It&#39;s quite sweet actually. I guess[XENO:n ]
+that&#39;s why I like you.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]What? What am I missing here?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I meant that if I were a guy,[XENO:n ]
+I might have been able to fight.[XENO:wait wait=key ][System:PageBreak ]I could have stayed with Gadolt[XENO:n ]
+in Colony 6 until the end.[XENO:wait wait=key ][System:PageBreak ]That&#39;s all.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT10 ]I really didn&#39;t want to leave[XENO:n ]
+without him.[XENO:wait wait=key ][System:PageBreak ]Not while the Mechon were[XENO:n ]
+destroying the entire colony.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I&#39;m so sorry, Sharla.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Maybe I should have just kicked[XENO:n ]
+up a fuss like a little girl.[XENO:wait wait=key ][System:PageBreak ]Refused to leave.[XENO:wait wait=key ][System:PageBreak ]He always thought the best of me.[XENO:n ]
+Trusting in me, relying on me.[XENO:wait wait=key ][System:PageBreak ]But I was never as strong as[XENO:n ]
+he thought.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]I&#39;m sure letting you go was[XENO:n ]
+just as hard for him.[XENO:wait wait=key ][System:PageBreak ]But he put his feelings aside[XENO:n ]
+for your sake.[XENO:wait wait=key ][System:PageBreak ]So you could live on. So you[XENO:n ]
+could lead the colony.[XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">I know.[XENO:wait wait=key ][System:PageBreak ]But...I miss him so much.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Cheer up, Sharla![XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]Hey, how about this? From now[XENO:n ]
+on I&#39;ll work really, really hard...[XENO:wait wait=key ][System:PageBreak ]And then one day I&#39;ll be[XENO:n ]
+the man of your dreams![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Heh. How long&#39;s that gonna take?[XENO:wait wait=key ][System:PageBreak ]I can&#39;t spend my entire life[XENO:n ]
+waiting around![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT3 ]That&#39;s my Sharla all right![XENO:wait wait=key ][System:PageBreak ]I like you best when you&#39;re giving[XENO:n ]
+me that big old smile of yours.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Looks like you&#39;re learning fast![XENO:n ]
+Keep those compliments coming.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][System:PageBreak ]And by the way, Reyn...[XENO:n ]
+Thank you.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Not really. It wasn&#39;t that bad.[XENO:wait wait=key ][System:PageBreak ]I just kept my eyes on the prize.[XENO:wait wait=key ][System:PageBreak ]Otharon used to give me a pretty[XENO:n ]
+good reward whenever I finished.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Oh yeah? What&#39;d he give you?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]A small ether crystal shard.[XENO:wait wait=key ][System:PageBreak ]Not big enough to give out[XENO:n ]
+any energy on its own.[XENO:wait wait=key ][System:PageBreak ]But when I had enough, I&#39;d[XENO:n ]
+combine them to make a cartridge.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT9 ]You could do that back then?[XENO:n ]
+Wow. That&#39;s some talent.[XENO:wait wait=key ][System:PageBreak ]When Shulk asks me to do gem[XENO:n ]
+crafting, he ends up hating me.[XENO:wait wait=key ][XENO:act act=EVT4 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Colony 6 relies on its ether[XENO:n ]
+mining. We grow up with it.[XENO:wait wait=key ][System:PageBreak ]So using ether and manipulating it[XENO:n ]
+to make things comes naturally.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][System:PageBreak ]Thinking about it brings back[XENO:n ]
+so many memories...[XENO:wait wait=key ][System:PageBreak ]I collected crystal shards of all[XENO:n ]
+different colours.[XENO:wait wait=key ][System:PageBreak ]Then I tried mixing them together.[XENO:wait wait=key ][System:PageBreak ]I thought I might be able to make[XENO:n ]
+an entirely new colour of crystal.[XENO:wait wait=key ][System:PageBreak ]I combined things like...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:sel sel=・Electric, wind and water?/・Wind crystals and glowmoss? ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT1 ]Yeah, things like that.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]If you mix yellow and blue[XENO:n ]
+paint, you get green, right?[XENO:wait wait=key ][System:PageBreak ]I figured it had to be the same for[XENO:n ]
+ether crystals, so I tried it out.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]Did you get it to work?[XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][System:PageBreak ]I had a go at doing something[XENO:n ]
+like that once.[XENO:wait wait=key ][System:PageBreak ]Taking bits of different crystals[XENO:n ]
+and mixing them all up.[XENO:wait wait=key ][System:PageBreak ]Then Shulk started shouting at me[XENO:n ]
+for wasting all our good crystals.[XENO:wait wait=key ][System:PageBreak ]So I just kinda gave up.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]I guess it&#39;s different in Colony 9.[XENO:wait wait=key ][System:PageBreak ]You don&#39;t have a limitless supply[XENO:n ]
+of crystals like we do.[XENO:wait wait=key ][System:PageBreak ]Me, Gadolt and Juju used to[XENO:n ]
+experiment all the time, but...[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT3 ]If the colour is different, forget it.[XENO:n ]
+All you get is a pile of soot.[XENO:wait wait=key ][XENO:act act=EVT2 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Funny, isn&#39;t it?[XENO:wait wait=key ][System:PageBreak ]Only a small difference and[XENO:n ]
+things don&#39;t mix well.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Like men and women...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]Where did that come from? We[XENO:n ]
+were talking about ether crystals.[XENO:wait wait=key ][XENO:act act=EVT_EXT15 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">It&#39;s this place. I just can&#39;t help[XENO:n ]
+thinking about certain things.[XENO:wait wait=key ][XENO:act act=EVT_EXT9 ][System:PageBreak ]I learnt so much from Gadolt.[XENO:n ]
+About rifles, cartridges, fighting.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT10 ]If only I could turn back time...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Don&#39;t be so down on yourself.[XENO:wait wait=key ][System:PageBreak ]All that frowning is gonna give[XENO:n ]
+you wrinkles.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Not the nicest way to put it, but[XENO:n ]
+I can see what you&#39;re getting at.[XENO:wait wait=key ][System:PageBreak ]Sorry, Reyn. I guess I&#39;m not[XENO:n ]
+really acting like myself...[XENO:wait wait=key ][System:PageBreak ]But talking to you like this[XENO:n ]
+makes me feel calm somehow.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT3 ]I don&#39;t even know what you&#39;re[XENO:n ]
+supposed to be apologising for.[XENO:wait wait=key ][System:PageBreak ]But whatever it is,[XENO:n ]
+it doesn&#39;t matter.[XENO:wait wait=key ][System:PageBreak ]Now, how about we try mixing[XENO:n ]
+up some different colour crystals?[XENO:wait wait=key ][System:PageBreak ]We could be the first people[XENO:n ]
+ever to make a new colour![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Maybe now&#39;s not quite the[XENO:n ]
+right time for that.[XENO:wait wait=key ][System:PageBreak ]But one day I&#39;ll teach you all there[XENO:n ]
+is to know about ether crystals.[XENO:wait wait=key ][System:PageBreak ]You have to handle them with[XENO:n ]
+care, like a woman&#39;s heart![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]Ouch. I get the feeling this stuff&#39;s[XENO:n ]
+never gonna be my forte...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]What?[XENO:wait wait=key ][System:PageBreak ]What does glowmoss have to[XENO:n ]
+do with anything?[XENO:wait wait=key ][XENO:act act=EVT_EXT15 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT4 ]I just figured &#39;cos of the colour.[XENO:wait wait=key ][System:PageBreak ]Glowmoss is green and wind-type[XENO:n ]
+ether crystals are green, right?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT7 ]Reyn, even if that made the[XENO:n ]
+slightest bit of sense...[XENO:wait wait=key ][System:PageBreak ]I was talking about combining[XENO:n ]
+DIFFERENT colours! Remember?[XENO:wait wait=key ][System:PageBreak ]But...you have got me wondering[XENO:n ]
+what would happen.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT1 ]Then let&#39;s give it a go![XENO:wait wait=key ][System:PageBreak ]You and me. Could get interesting![XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">Gadolt used to experiment[XENO:n ]
+with these things as well.[XENO:wait wait=key ][System:PageBreak ]Him and Otharon tried all different[XENO:n ]
+things when making cartridges.[XENO:act act=EVT_EXT9 ][XENO:wait wait=key ][System:PageBreak ]He used to get so mad when[XENO:n ]
+whatever he was trying failed.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT10 ]He taught me all this. Using[XENO:n ]
+rifles, constructing cartridges.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Oh, sorry about that. Didn&#39;t[XENO:n ]
+mean to remind you.[XENO:wait wait=key ][System:PageBreak ]I just thought it might be cool to[XENO:n ]
+hang out and combine crystals.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT12 ]Oh, stop it, Reyn. You don&#39;t[XENO:n ]
+have to tiptoe around me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT13 ]I just don&#39;t want to upset you.[XENO:wait wait=key ][XENO:act act=EVT_EXT15 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT2 ]Just keep being you, Reyn.[XENO:wait wait=key ][System:PageBreak ][XENO:act act=EVT_EXT1 ]Now, let&#39;s find some glowmoss.[XENO:wait wait=key ][XENO:act act=EVT_EXT3 ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>126</td>
+        <td class="side">[XENO:act act=EVT_EXT4 ]So we&#39;re gonna try out[XENO:n ]
+my idea? Nice![XENO:wait wait=key ][System:PageBreak ]Trust me, we&#39;re gonna make[XENO:n ]
+the best ether crystal ever![XENO:wait wait=key ][System:PageBreak ]Even that old geezer Otharon&#39;ll[XENO:n ]
+be impressed![XENO:wait wait=key ][XENO:act act=EVT_EXT6 ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

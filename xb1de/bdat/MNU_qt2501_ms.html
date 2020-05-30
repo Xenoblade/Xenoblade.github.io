@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt2501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">概要</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">目的</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">報告</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">結果</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">グランデルにいるアルマが霧乃獣になってしまった
+住人に危害を及ぼす前にアルマを倒そう（仮）</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">霧乃獣となったアルマをすべて倒す（仮）</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">グランデルの被害は最小限に抑えられたようだ（仮）</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">To defeat the Fog King, a high-density ether field will be
+necessary. To obtain the High Ether Crystal required,
+the team will need info from the townspeople.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ask Gran Dell militia members about High Ether Crystals.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ask the Gran Dell militia member on the Ramparts
+about High Ether Crystals.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Speak with Sarja at Heroes&#39; Rest.</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Radzam.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find a [System:Color name=item ]High Ether Crystal[/System:Color].</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With information about High Ether Crystals in hand,
+the heroes are a step closer to defeating the Fog King.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The information led you to a High Ether Crystal.
+It&#39;s time to enhance the Monado Replica at Radzam&#39;s.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">You found a promising lead on High Ether Crystals.
+Search the hitherto mostly uncharted caves around the
+Forbidden Hushland.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Go to the caves around the Forbidden Hushland
+in search of a [System:Color name=item ]High Ether Crystal[/System:Color].</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find High Ether Crystal (TBC)</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You&#39;ve found a High Ether Crystal. Return to Radzam
+to start the Replica Monado remodelling process.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Tutu seems to have dropped his precious mirror on
+the small islet at Tranquil Tarn. He can&#39;t seem to work
+without it; best lend him a land.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search for [System:Color name=item ]Tutu&#39;s Mirror[/System:Color] on the small islet
+at Tranquil Tarn.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return [System:Color name=item ]Tutu&#39;s Mirror[/System:Color] to Tutu resting
+at Tranquil Tarn&#39;s edge.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Tutu has reclaimed his mirror. Now he can admire his
+own reflection and get the esteem boost he deserves.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">To make up for interrupting her survey work,
+you decide to hear out Fofora&#39;s request.
+Time to displace some Kromars.</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the 3 Kromars in the vicinity of
+Xen&#39;s Thoroughfare.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Fofora.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Speak to Fofora at the far end
+of Xen&#39;s Thoroughfare.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With the Kromars out of the way, Fofora was able
+to finish her survey task. She looks very relieved.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Having finished her survey, Faifa&#39;s mind is more on
+researching the ecosystem than heading back. But
+she might reconsider if you solve her riddles.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect an item that drifts and digs,
+but has no eyes.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Deliver the [System:Color name=item ]Sky Mole[/System:Color] to Faifa.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat a highly &quot;fer&quot;-ocious enemy
+with the colour of a plant .</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Faifa.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You solved Faifa&#39;s riddles. It looks as though she&#39;ll
+honour her promise and tag along with you.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Though Hekasa planted stakes to use in her
+survey, they keep going missing, making her job
+impossible. Won&#39;t someone lend her a hand?</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Plant [System:Color name=item ]Hekasa&#39;s Stake[/System:Color] on the lakeshore
+by the side of the Junks.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Hekasa.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the thief in the higher reaches of
+Navvir Highland to recover Hekasa&#39;s stolen stake.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Hekasa.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With the stake thief defeated, Hekasa could complete
+her survey. One less thing for her to worry about...</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Setset wishes to have a shout from the terrace of
+the rope bridge, but it&#39;s currently occupied by Rhoguls.
+There seems to be no way forward but to evict them.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the [System:Color name=item ]Bodacious Rhoguls [/System:Color]on the terrace of
+Whisperwind Crossing.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Setset.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With the Rhoguls gone, Setset was able to express
+himself, after which he decided to join the party.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Tei-Tei finished his survey work, only to be spotted by
+monsters at the last second. He dropped his precious
+charm in his hurry to escape. Let&#39;s help him out.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Look for [System:Color name=item ]Tei-Tei&#39;s Charm [/System:Color]at Nerthis Necropolis.</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return the charm to Tei-Tei.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Tei-Tei appears to treasure his charm more than life
+itself. He&#39;s regained his composure now that it&#39;s back.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Follow Nonona&#39;s cryptic instructions and slay the
+&quot;odious fiend&quot; he speaks of to prove your worth.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the [System:Color name=item ]Thing-a-Majicker XIII[/System:Color].</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return [System:Color name=item ]Nonona&#39;s License[/System:Color] to Nonona.</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The &quot;Proof&quot; Nonona spoke of turned out to be a simple
+Ponspector license, belonging to Nonona himself.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Enemies are closing in on a Ponspector.
+Save them before they get eaten.</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the [System:Color name=item ]Slobbering Antols[/System:Color] attacking the Ponspector.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to the Ponspector to make sure
+they&#39;re OK.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">It seems the enemy was drawn in by the
+incense. At least Dekadeka was all right.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Evelen was ready to eat her snack after a hard day&#39;s
+surveying, when, tragically, it slipped into the nearby
+lake. Help is in order.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the shoal of [System:Color name=item ]Whapol Sardi[/System:Color] that ate
+Evelen&#39;s snack.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Evelen.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 of the [System:Color name=item ]Morrow Cobs [/System:Color]that Evelen
+wants to eat.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Deliver the food to Evelen.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You vanquished the monsters and relieved Evelen&#39;s
+hunger. She looks pleasantly satiated.</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Wunwun, the current Ponspector Chief, unfortunately
+forgot to specify where he would hold his meeting.
+It&#39;s time to unite all the Ponspectors in one place.</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Gather the other 11 Ponspectors.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Wunwun.</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Get back the memo from the [System:Color name=item ]Cutpurse Igna
+[/System:Color]north of Clear Sky Bluff.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return the memo to Wunwun.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Ponspectors are united and the memo is back. Now
+Wunwun is ready to explain what they&#39;re doing here.</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The Ponspectors have come to the Shoulder in search
+of treasure. Finding it will be their last request for you.
+Let&#39;s help them track down the loot!</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search for the treasure in the ruins at the back of
+Nerthis Necropolis.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the monster guarding the treasure in the ruins
+at the back of Nerthis Necropolis.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate the treasure chest in the ruins at the back
+of Nerthis Necropolis.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Ponspectors have found their treasure! This will
+ensure a prosperous future for the Archaeology HQ.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Exterminate the ether organisms that have spawned
+abnormally in two locations on Navvir Highland.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Exterminate the wind elementals.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Exterminate the water elementals.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Tulleana.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The two kinds of ether organism have been eliminated.
+Monsters should no longer be drawn to their presence.</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Carranelle has requested you assist with her research.
+She needs someone to try mining an ether deposit with
+the Common Ether Pick she&#39;s working on.</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Excavate an ether deposit using
+the [System:Color name=item ]Common Ether Pick[/System:Color].</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Carranelle.</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With the ether pick you received from Carranelle, you
+can now mine gems directly from ether deposits. Neat!</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Haemlin is lacking the manpower to deal with stockpiling
+food. Hunt some Eks, collect Eks Iron Hearts, and place
+some Rainbow Carrots to aid future hunts.</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat Makna Eks at Navvir Highland
+and collect 4 [System:Color name=item ]Eks Iron Hearts[/System:Color].</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Gather 3 [System:Color name=item ]Rainbow Carrots[/System:Color] to be used
+as bait for the Makna Eks.</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Head to north-western Navvir Highland and place the
+Rainbow Carrots there to lure out the Makna Eks.</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Haemlin.</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You delivered the Eks Iron Hearts to Haemlin. Some
+of them are sure to be cured and stored for later.</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Laennar has asked you to help with three jobs around
+the camp. Ease his burden by completing them for him.</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Complete the quest &quot;Plump Pickings&quot;.</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Complete the quest &quot;Praying Caterpile Control&quot;.</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Complete the quest &quot;Supplant the Noble Brogs&quot;.</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Laennar.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Food shortage is the next big issue the Companions are
+facing, but you won Laennar the time to figure it out.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Gwinneath is having trouble gathering Plump Wildgrass
+in the required amounts. Helping her out seems like the
+right thing to do...</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 5 bundles of [System:Color name=item ]Plump Wildgrass [/System:Color]in the area
+between Navvir Highland and the Purifying Falls.</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The harvest was a success...this time around.
+It seems the scarcity was caused by Caterpiles.</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Praying Caterpiles have been breeding in extraordinary
+numbers. Phaedlus doesn&#39;t feel up to the task of
+taking them out, so the job falls to Melia and friends.</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 3 [System:Color name=item ]Praying Caterpiles[/System:Color] in the vicinity of
+Navvir Crossroads.</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Caterpiles have been winnowed out.
+It seems they were congregating to eat wildgrass.</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Noble Brogs have been appearing in extraordinary
+numbers. Loh&#39;ban cannot take them all out on his own,
+so Melia and friends must take charge.</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 2 [System:Color name=item ]Noble Brogs[/System:Color] in the vicinity of
+the Purifying Falls.</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Brogs have been successfully dealt with.
+It seems they were gathering to hunt Caterpiles.</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Gather Pororo&#39;s scattered favourites from all across
+the Bionis&#39; Shoulder and bring them to her.</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search every nook and cranny of the Bionis&#39; Shoulder
+for [System:Color name=item ]Pororo&#39;s Favourites[/System:Color] and bring them to her.</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Check with Pororo to see whether her [System:Color name=item ]Favourites
+[/System:Color]are now all accounted for.</td>
+      </tr>
+      <tr id="107">
+        <td>107</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You got back all of Pororo&#39;s favourite foods. Now she
+can meet her &quot;esteemed person&quot; without mortal fear.</td>
+      </tr>
+      <tr id="108">
+        <td>108</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Rescue the High Entia woman who is being
+attacked by Antols.</td>
+      </tr>
+      <tr id="109">
+        <td>109</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the Antols to rescue the woman.</td>
+      </tr>
+      <tr id="110">
+        <td>110</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Make sure the woman is OK.</td>
+      </tr>
+      <tr id="111">
+        <td>111</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You dealt with the Antols and saved Laffaelle
+the Armu herder. She returns to Gran Dell.</td>
+      </tr>
+      <tr id="112">
+        <td>112</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The old ID card you found was once Lavean&#39;s brother&#39;s.
+He asks you to find the heirloom bangle the man used
+to wear, too.</td>
+      </tr>
+      <tr id="113">
+        <td>113</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search for the bangle on the high ground
+at Shoulderstone Scree.</td>
+      </tr>
+      <tr id="114">
+        <td>114</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the [System:Color name=item ]Warped Bangle[/System:Color] to Lavean.</td>
+      </tr>
+      <tr id="115">
+        <td>115</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You&#39;ve reunited Lavean and his family&#39;s heirloom bangle.
+He vows to wear it with pride.</td>
+      </tr>
+      <tr id="116">
+        <td>116</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Shoo-shoo climbed a tree to escape a monster, but a
+moment of carelessness caused her to fall and injure
+herself. The situation calls for a helping, caring hand.</td>
+      </tr>
+      <tr id="117">
+        <td>117</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Gather a [System:Color name=item ]Peppity Herb[/System:Color] from atop the
+Cragmaw Caverns.</td>
+      </tr>
+      <tr id="118">
+        <td>118</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the [System:Color name=item ]Peppity Herb[/System:Color] to Shoo-Shoo.</td>
+      </tr>
+      <tr id="119">
+        <td>119</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Take out the [System:Color name=item ]Revenant Volff[/System:Color] that are after Shoo-Shoo.</td>
+      </tr>
+      <tr id="120">
+        <td>120</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Shoo-Shoo.</td>
+      </tr>
+      <tr id="121">
+        <td>121</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Thanks to Nene, Shoo-Shoo won&#39;t be giving up her
+tree-climbing pursuits. Here&#39;s hoping she&#39;ll be careful...</td>
+      </tr>
+      <tr id="122">
+        <td>122</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">In return for finding a catalyst for him to use in his
+tool upgrades, Lott offers to improve your Ether Pick.
+Find him a Cerulean Shard in Barouh Ruins Cave.</td>
+      </tr>
+      <tr id="123">
+        <td>123</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Look for a [System:Color name=item ]Cerulean Shard[/System:Color] around
+Barouh Ruins Cave.</td>
+      </tr>
+      <tr id="124">
+        <td>124</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Hand in the [System:Color name=item ]Cerulean Shard[/System:Color] to Lott.</td>
+      </tr>
+      <tr id="125">
+        <td>125</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With your new Reinforced Ether Pick, you&#39;ll be able to
+find better gems from ether deposits than before.</td>
+      </tr>
+      <tr id="126">
+        <td>126</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Melekanze is studying the fauna of the Bionis&#39; Shoulder,
+but seems to have run into some trouble. Shulk will
+have to take photos of the monsters in her place.</td>
+      </tr>
+      <tr id="127">
+        <td>127</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Take a photo of a [System:Color name=item ]Glow Deinos[/System:Color] in the
+Forbidden Hushland during the night.</td>
+      </tr>
+      <tr id="128">
+        <td>128</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Take a photo of a [System:Color name=item ]Dozy Eluca[/System:Color] at the plateau
+near the Purifying Falls during the day.</td>
+      </tr>
+      <tr id="129">
+        <td>129</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Melekanze.</td>
+      </tr>
+      <tr id="130">
+        <td>130</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Melekanze was overjoyed seeing the pictures you took.
+The less said of her follow-up request, the better...</td>
+      </tr>
+      <tr id="131">
+        <td>131</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">It appears Paguls near the Junks&#39; crash site are running
+amok. To allow residents to forage in peace, you&#39;ll have
+to eliminate the Paguls along the lakeshore.</td>
+      </tr>
+      <tr id="132">
+        <td>132</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Take out [System:Color name=item ]3 Clamouring Paguls[/System:Color] in the area of the lake
+where the Junks landed.</td>
+      </tr>
+      <tr id="133">
+        <td>133</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Mithril.</td>
+      </tr>
+      <tr id="134">
+        <td>134</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Exterminating the nearby Paguls brought peace to the
+lake. With any luck, the fishing can now safely resume.</td>
+      </tr>
+      <tr id="135">
+        <td>135</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The old Machina who took in Miles has sustained leg
+damage and apparently cannot move. The party decides
+to retrieve a First-Aid Kit from the Junks.</td>
+      </tr>
+      <tr id="136">
+        <td>136</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Head for the Junks and acquire a [System:Color name=item ]First-Aid Kit[/System:Color].</td>
+      </tr>
+      <tr id="137">
+        <td>137</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Head for Nerthis Necropolis and look for Solthas.</td>
+      </tr>
+      <tr id="138">
+        <td>138</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Persuade Solthas to give you the [System:Color name=item ]First-Aid Kit[/System:Color].</td>
+      </tr>
+      <tr id="139">
+        <td>139</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the [System:Color name=item ]First-Aid Kit[/System:Color] to Miles.</td>
+      </tr>
+      <tr id="140">
+        <td>140</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You delivered the First-Aid Kit to Miles. That should get
+the old Machina back on his feet in no time.</td>
+      </tr>
+      <tr id="141">
+        <td>141</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The ancient city of Gran Dell is peppered with
+rubble. Hover Stone would make it easy to remove.
+Collect some Hover Stone!</td>
+      </tr>
+      <tr id="142">
+        <td>142</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 pieces of [System:Color name=item ]Hover Stone[/System:Color] at Soltnar
+Seal Island, Pillar Knoll and Scapular Lance.</td>
+      </tr>
+      <tr id="143">
+        <td>143</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the [System:Color name=item ]Hover Stone[/System:Color] to Selsetana.</td>
+      </tr>
+      <tr id="144">
+        <td>144</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">With the rubble gone, Gran Dell looks much
+nicer. Its former residents would be proud.</td>
+      </tr>
+      <tr id="145">
+        <td>145</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Nestinor has been searching Gran Dell with his friends
+for flowers to place at a grave. It&#39;s too dangerous for
+him to leave the walls...but that&#39;s where you come in.</td>
+      </tr>
+      <tr id="146">
+        <td>146</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search Lamentation Ridge for 3 [System:Color name=item ]Dawn Smiles[/System:Color].</td>
+      </tr>
+      <tr id="147">
+        <td>147</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Hand the [System:Color name=item ]Dawn Smiles[/System:Color] over to Nestinor.</td>
+      </tr>
+      <tr id="148">
+        <td>148</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You found the Dawn Smiles without too much trouble.
+Nestinor placed them on the grave and prayed solemnly.</td>
+      </tr>
+      <tr id="149">
+        <td>149</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">You may be able to get parts for repairing the
+Junks from airships grounded in Alcamoth.
+The party decides to investigate.</td>
+      </tr>
+      <tr id="150">
+        <td>150</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate the airship in the vicinity of
+Alcamoth&#39;s Main Entrance.</td>
+      </tr>
+      <tr id="151">
+        <td>151</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate the airship in the vicinity of
+Melfica Road.</td>
+      </tr>
+      <tr id="152">
+        <td>152</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate the airship on the 2nd-level
+mezzanine.</td>
+      </tr>
+      <tr id="153">
+        <td>153</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Helmaline.</td>
+      </tr>
+      <tr id="154">
+        <td>154</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Despite encountering a Telethia, you&#39;ve found
+some useful parts, but more will be needed.</td>
+      </tr>
+      <tr id="155">
+        <td>155</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Arara, a Nopon from Frontier Village, wants to collect
+on a debt that Riki incurred. Find the ingredients, and a
+chef, to create the dessert Arara has requested.</td>
+      </tr>
+      <tr id="156">
+        <td>156</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Search each region of the Bionis&#39; Shoulder
+for 7 [System:Color name=item ]Kilopumpkins[/System:Color].</td>
+      </tr>
+      <tr id="157">
+        <td>157</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find a [System:Color name=item ]Sweet Cherry[/System:Color] along the banks of the
+Tranquil Tarn.</td>
+      </tr>
+      <tr id="158">
+        <td>158</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ask Thad in Gran Dell to prepare the dessert.</td>
+      </tr>
+      <tr id="159">
+        <td>159</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Arara and let him know that preparations
+for making the dessert are complete.</td>
+      </tr>
+      <tr id="160">
+        <td>160</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The perfection of the meal and the party&#39;s efforts have
+moved Arara deeply. The debt is forgiven and all is well.</td>
+      </tr>
+      <tr id="161">
+        <td>161</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Ines has misplaced the growth stimulant used to
+nurture the wheat fields. Help her out by collecting
+the necessary supplies.</td>
+      </tr>
+      <tr id="162">
+        <td>162</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 5 [System:Color name=item ]High Leaves[/System:Color].</td>
+      </tr>
+      <tr id="163">
+        <td>163</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat Skeeters at Xen&#39;s Thoroughfare and collect
+4 globs of [System:Color name=item ]Thick Nectar[/System:Color] (clear weather only).</td>
+      </tr>
+      <tr id="164">
+        <td>164</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Ines.</td>
+      </tr>
+      <tr id="165">
+        <td>165</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ines is striving to increase the output from the fields.
+(New collection points are available at Halcyon Wheats.)</td>
+      </tr>
+      <tr id="166">
+        <td>166</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Bartholomew wants to make a new-fangled fishing
+device with Vredda&#39;s help, but she can&#39;t do much
+without the right components. Find them for her.</td>
+      </tr>
+      <tr id="167">
+        <td>167</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 pieces of [System:Color name=item ]Snare Wire[/System:Color] and 3 [System:Color name=item ]Half Parts[/System:Color].</td>
+      </tr>
+      <tr id="168">
+        <td>168</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the remaining [System:Color name=item ]Half Parts[/System:Color].</td>
+      </tr>
+      <tr id="169">
+        <td>169</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Hand over the machine parts to Vredda.</td>
+      </tr>
+      <tr id="170">
+        <td>170</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the remaining pieces of [System:Color name=item ]Snare Wire[/System:Color].</td>
+      </tr>
+      <tr id="171">
+        <td>171</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the Katchafish DX to Bartholomew
+at Tranquil Tarn.</td>
+      </tr>
+      <tr id="172">
+        <td>172</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You&#39;ve learnt how to use the Katchafish DX.
+(New collection points are available at Tranquil Tarn.)</td>
+      </tr>
+      <tr id="173">
+        <td>173</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Radzam has asked you to gather Glutton&#39;s Herbs so he
+can finish his nutritional solution, &quot;Radzamalt&#179;&quot;.</td>
+      </tr>
+      <tr id="174">
+        <td>174</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Gather 3 [System:Color name=item ]Glutton&#39;s Herbs[/System:Color].</td>
+      </tr>
+      <tr id="175">
+        <td>175</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Radzam.</td>
+      </tr>
+      <tr id="176">
+        <td>176</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">&quot;Radzamalt&#179;&quot; is now finished! The name aside, at least
+the product itself is reportedly quite tasteful.</td>
+      </tr>
+      <tr id="177">
+        <td>177</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">When Kino approached little Angela playing all on
+her own, it became clear that she was painfully shy.
+Find her some friends so she won&#39;t be so lonely.</td>
+      </tr>
+      <tr id="178">
+        <td>178</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Selene should be somewhere with a good view
+of the capital. Find and talk to her.</td>
+      </tr>
+      <tr id="179">
+        <td>179</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Nestinor should be somewhere around Tranquil Tarn.
+Find and talk to him.</td>
+      </tr>
+      <tr id="180">
+        <td>180</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Rudodo should be somewhere among Gran Dell&#39;s ruins.
+Find and talk to her.</td>
+      </tr>
+      <tr id="181">
+        <td>181</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Angela.</td>
+      </tr>
+      <tr id="182">
+        <td>182</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Kino played his part in helping Angela make some
+new friends. Counting Kino, she now has four!</td>
+      </tr>
+      <tr id="183">
+        <td>183</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Angela wants to celebrate her new friendship.
+Kino offers to make traditional Nopon friendship
+bracelets for her, but will need materials first.</td>
+      </tr>
+      <tr id="184">
+        <td>184</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 5 lengths of [System:Color name=item ]Elastic Ivy [/System:Color]in the woods along
+Thulles Way.</td>
+      </tr>
+      <tr id="185">
+        <td>185</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Angela.</td>
+      </tr>
+      <tr id="186">
+        <td>186</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 5 [System:Color name=item ]Sparkle Stones [/System:Color]among the rocks
+near the lake where the Junks landed.</td>
+      </tr>
+      <tr id="187">
+        <td>187</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Angela.</td>
+      </tr>
+      <tr id="188">
+        <td>188</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The bracelets were to everyone&#39;s liking.
+Putting them on will deepen their friendship.</td>
+      </tr>
+      <tr id="189">
+        <td>189</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Ardred is concerned about Winnie&#39;s lack of cheer.
+To bring a smile to her lips, he asks you to find a
+craftsman who could craft a ring for her.</td>
+      </tr>
+      <tr id="190">
+        <td>190</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find someone who can make you a ring.</td>
+      </tr>
+      <tr id="191">
+        <td>191</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect [System:Color name=item ]Brightite [/System:Color]in the stony area at the back
+of the Forbidden Hushland.</td>
+      </tr>
+      <tr id="192">
+        <td>192</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Bring the [System:Color name=item ]Brightite [/System:Color]to Qarz.</td>
+      </tr>
+      <tr id="193">
+        <td>193</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Give the ring Qarz made to Ardred.</td>
+      </tr>
+      <tr id="194">
+        <td>194</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ardred accepted the ring made by Qarz.
+He even seemed somewhat satisfied...</td>
+      </tr>
+      <tr id="195">
+        <td>195</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Ardred and Qarz have gone to Zekr Marga Quarry.
+It would be best to find them before they get
+themselves into any mischief...</td>
+      </tr>
+      <tr id="196">
+        <td>196</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find Ardred at Zekr Marga Quarry.</td>
+      </tr>
+      <tr id="197">
+        <td>197</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Find Qarz at Zekr Marga Quarry.</td>
+      </tr>
+      <tr id="198">
+        <td>198</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Winnie and let her know both men are all right.</td>
+      </tr>
+      <tr id="199">
+        <td>199</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Ardred and Qarz have safely returned from the quarry.
+This adventure has taught Winnie a valuable lesson.</td>
+      </tr>
+      <tr id="200">
+        <td>200</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Thad wants to woo Tyrea with a home-cooked meal.
+Gather the three ingredients he&#39;ll need.</td>
+      </tr>
+      <tr id="201">
+        <td>201</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Gather 3 bunches of [System:Color name=item ]Cream Wheat[/System:Color].</td>
+      </tr>
+      <tr id="202">
+        <td>202</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 [System:Color name=item ]Gentleclams[/System:Color].</td>
+      </tr>
+      <tr id="203">
+        <td>203</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Catch 3 [System:Color name=item ]Angel Breams[/System:Color].</td>
+      </tr>
+      <tr id="204">
+        <td>204</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Bring the ingredients to Thad.</td>
+      </tr>
+      <tr id="205">
+        <td>205</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Thad has what he needs to cook the meal.
+All that&#39;s left is to pray for his safety...</td>
+      </tr>
+      <tr id="206">
+        <td>206</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The note&#39;s sender is waiting for Melia at
+Companions&#39; Cape. Let&#39;s go and meet them.</td>
+      </tr>
+      <tr id="207">
+        <td>207</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Go to Companions&#39; Cape.</td>
+      </tr>
+      <tr id="208">
+        <td>208</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Resentful Gael&#39;gar[/System:Color].</td>
+      </tr>
+      <tr id="209">
+        <td>209</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Gael&#39;gar.</td>
+      </tr>
+      <tr id="210">
+        <td>210</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">After a fierce battle, Melia and her friends
+witnessed Gael&#39;gar&#39;s ultimate fate.</td>
+      </tr>
+      <tr id="211">
+        <td>211</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Some of the townspeople have been acting strangely
+lately. Maxis would like you to get some information
+from a certain Nopon who seems to be in the know.</td>
+      </tr>
+      <tr id="212">
+        <td>212</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Pororo.</td>
+      </tr>
+      <tr id="213">
+        <td>213</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Maxis about the &quot;Mystery Drink&quot;.</td>
+      </tr>
+      <tr id="214">
+        <td>214</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Apprehend Bana, who escaped towards the
+Halcyon Wheats.</td>
+      </tr>
+      <tr id="215">
+        <td>215</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat Bana, who is waiting for you at the
+Halcyon Wheats with weapons at the ready.</td>
+      </tr>
+      <tr id="216">
+        <td>216</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Bana, who is acting contrite at the
+Halcyon Wheats.</td>
+      </tr>
+      <tr id="217">
+        <td>217</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Bana&#39;s great ambitions have been scuppered by Melia
+and co. He can look forward to getting his just deserts.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

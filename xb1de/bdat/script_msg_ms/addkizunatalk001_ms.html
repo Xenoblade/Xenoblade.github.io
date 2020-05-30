@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>addkizunatalk001_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Ah, Shulk.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">What were you looking at?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Wow... What a view.[XENO:n ]
+It&#39;s nice to see the capital like this.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Being able to see it from here, it&#39;s
+enough to make me...tense up.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">In all honesty, it&#39;s making me consider[XENO:n ]
+my position and standing.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I see...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">My brethren, who transformed into[XENO:n ]
+Telethia back then...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">And those who survived, feeling the sadness[XENO:n ]
+that seeped into this land...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">And then, my father and brother&#39;s expectations...[XENO:n ]
+Calling me &#39;the hope of the High Entia&#39;...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I must be an empress worthy of taking on[XENO:n ]
+that mantle... But I don&#39;t know how...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Much as I hate to admit it... I have not been[XENO:n ]
+able to find the right answer yet.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Melia...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Shulk, you of all people[XENO:n ]
+must surely understand?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">You, who secured a future for all of us[XENO:n ]
+in that decisive battle![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">You know, I&#39;ve been thinking a lot lately...[XENO:n ]
+About what my visions were.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Oh?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">The future that Zanza wanted...[XENO:n ]
+That was certainly one of the things I saw.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But we&#39;ve fought to deny that future,[XENO:n ]
+and in doing so forged our own path.[XENO:n ]
+That&#39;s part of it too.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But...now that I can no longer see them,[XENO:n ]
+I find myself doubting.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Were we... Were we really, actually[XENO:n ]
+determining our own fate all along...?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Well...it&#39;s a good question.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But look, you have saved me more[XENO:n ]
+times than I can count![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">That did not come about because of your visions![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">You used your own judgement,[XENO:n ]
+and you chose to act, did you not?![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">And thanks to that, I believe I&#39;ve grown[XENO:n ]
+as an individual as well![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">...Hah![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Wha- I hardly think I said anything funny![XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I&#39;m sorry, you&#39;re right.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I want...my actions to have meaning, too.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Not to craft Zanza&#39;s future...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Nor defy him and bend the world[XENO:n ]
+to a future of *our* design...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But to give the freedom to choose to all[XENO:n ]
+beings that call this world home.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Freedom to choose, huh...?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">What would my father and brother[XENO:n ]
+wish for, I wonder...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I don&#39;t think you need mystic visions[XENO:n ]
+to work that out.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Hm?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">They&#39;d just want you to be happy. Right?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Ah...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">...Hahah. My gloom is no match for you, Shulk.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">It&#39;s just as you say.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">To become the hope of the High Entia[XENO:n ]
+is a fate I choose for myself...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Those were the words Father imparted to me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">There is no need to fear...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">That is how my brother encouraged me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I&#39;ve been so impatient and homesick,[XENO:n ]
+I nearly forgot those most important words...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I can hear Father...lecturing me even now,[XENO:n ]
+chiding me for my foolishness.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I give you my thanks, Shulk.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">It&#39;s nothing.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">To lack clear-cut answers[XENO:n ]
+is hardly a sin...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But a sin it would be to cease searching[XENO:n ]
+for those answers altogether.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">For the High Entia who live on[XENO:n ]
+in this land...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Nay, not only the High Entia...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">For the sake of all the people of this world,[XENO:n ]
+that they may decide the future as equals.[XENO:n ]
+That is the vision...I choose to guide me.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">*That*...is the future I wish for.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Yeah. If anyone can make it happen,[XENO:n ]
+it&#39;s you.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">But I won&#39;t lie to you - the road ahead[XENO:n ]
+will be long and arduous.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">I hope...you won&#39;t mind me lending a hand?[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">After all, that&#39;s the future I want too.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Shulk...[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>125</td>
+        <td class="side">Indeed. It&#39;ll be my pleasure.[XENO:wait wait=key ][XENO:del del=this ]</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

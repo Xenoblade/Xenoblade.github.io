@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JNL_PClinelist</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>pain1</th>
+          <th>pain2</th>
+          <th>icon_pain</th>
+          <th>txt_pain</th>
+          <th>rlt_posX</th>
+          <th>rlt_posY</th>
+          <th>face_n01</th>
+          <th>face_n02</th>
+          <th>face_m01</th>
+          <th>face_m02</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>pic_bcline01</td>
+        <td>pic_line01</td>
+        <td>pic_icon01</td>
+        <td>txt_para01</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>113</td>
+        <td>112</td>
+        <td>113</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>pic_bcline02</td>
+        <td>pic_line02</td>
+        <td>pic_icon02</td>
+        <td>txt_para02</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>114</td>
+        <td>112</td>
+        <td>119</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>pic_bcline03</td>
+        <td>pic_line03</td>
+        <td>pic_icon03</td>
+        <td>txt_para03</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>115</td>
+        <td>112</td>
+        <td>115</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>pic_bcline04</td>
+        <td>pic_line04</td>
+        <td>pic_icon04</td>
+        <td>txt_para04</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>116</td>
+        <td>112</td>
+        <td>116</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>pic_bcline05</td>
+        <td>pic_line05</td>
+        <td>pic_icon05</td>
+        <td>txt_para05</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>117</td>
+        <td>112</td>
+        <td>117</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>pic_bcline06</td>
+        <td>pic_line06</td>
+        <td>pic_icon06</td>
+        <td>txt_para06</td>
+        <td>0</td>
+        <td>0</td>
+        <td>112</td>
+        <td>118</td>
+        <td>112</td>
+        <td>118</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>pic_bcline07</td>
+        <td>pic_line07</td>
+        <td>pic_icon07</td>
+        <td>txt_para07</td>
+        <td>0</td>
+        <td>0</td>
+        <td>113</td>
+        <td>114</td>
+        <td>113</td>
+        <td>119</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>pic_bcline08</td>
+        <td>pic_line08</td>
+        <td>pic_icon08</td>
+        <td>txt_para08</td>
+        <td>0</td>
+        <td>0</td>
+        <td>113</td>
+        <td>115</td>
+        <td>113</td>
+        <td>115</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>pic_bcline09</td>
+        <td>pic_line09</td>
+        <td>pic_icon03</td>
+        <td>txt_para03</td>
+        <td>0</td>
+        <td>0</td>
+        <td>113</td>
+        <td>116</td>
+        <td>113</td>
+        <td>116</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>pic_bcline10</td>
+        <td>pic_line10</td>
+        <td>pic_icon10</td>
+        <td>txt_para10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>113</td>
+        <td>117</td>
+        <td>113</td>
+        <td>117</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>pic_bcline11</td>
+        <td>pic_line11</td>
+        <td>pic_icon11</td>
+        <td>txt_para11</td>
+        <td>0</td>
+        <td>0</td>
+        <td>113</td>
+        <td>118</td>
+        <td>113</td>
+        <td>118</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>pic_bcline12</td>
+        <td>pic_line12</td>
+        <td>pic_icon12</td>
+        <td>txt_para12</td>
+        <td>0</td>
+        <td>0</td>
+        <td>114</td>
+        <td>115</td>
+        <td>119</td>
+        <td>115</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>pic_bcline13</td>
+        <td>pic_line13</td>
+        <td>pic_icon13</td>
+        <td>txt_para13</td>
+        <td>0</td>
+        <td>0</td>
+        <td>114</td>
+        <td>116</td>
+        <td>119</td>
+        <td>116</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>pic_bcline14</td>
+        <td>pic_line14</td>
+        <td>pic_icon14</td>
+        <td>txt_para14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>114</td>
+        <td>117</td>
+        <td>119</td>
+        <td>117</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>pic_bcline15</td>
+        <td>pic_line15</td>
+        <td>pic_icon15</td>
+        <td>txt_para15</td>
+        <td>0</td>
+        <td>0</td>
+        <td>114</td>
+        <td>118</td>
+        <td>119</td>
+        <td>118</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>pic_bcline16</td>
+        <td>pic_line16</td>
+        <td>pic_icon16</td>
+        <td>txt_para16</td>
+        <td>0</td>
+        <td>0</td>
+        <td>115</td>
+        <td>116</td>
+        <td>115</td>
+        <td>116</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>pic_bcline17</td>
+        <td>pic_line17</td>
+        <td>pic_icon17</td>
+        <td>txt_para17</td>
+        <td>0</td>
+        <td>0</td>
+        <td>115</td>
+        <td>117</td>
+        <td>115</td>
+        <td>117</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>pic_bcline18</td>
+        <td>pic_line18</td>
+        <td>pic_icon18</td>
+        <td>txt_para18</td>
+        <td>0</td>
+        <td>0</td>
+        <td>115</td>
+        <td>118</td>
+        <td>115</td>
+        <td>118</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>pic_bcline19</td>
+        <td>pic_line19</td>
+        <td>pic_icon19</td>
+        <td>txt_para19</td>
+        <td>0</td>
+        <td>0</td>
+        <td>116</td>
+        <td>117</td>
+        <td>116</td>
+        <td>117</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>pic_bcline20</td>
+        <td>pic_line20</td>
+        <td>pic_icon20</td>
+        <td>txt_para20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>116</td>
+        <td>118</td>
+        <td>116</td>
+        <td>118</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>pic_bcline21</td>
+        <td>pic_line21</td>
+        <td>pic_icon21</td>
+        <td>txt_para21</td>
+        <td>0</td>
+        <td>0</td>
+        <td>117</td>
+        <td>118</td>
+        <td>117</td>
+        <td>118</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

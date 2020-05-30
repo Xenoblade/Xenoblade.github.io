@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>trial_root</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>title</th>
+          <th>type</th>
+          <th>MCLEAR_FLG</th>
+          <th>S_FLG</th>
+          <th>lockMsg</th>
+          <th>lvTrial</th>
+          <th>lvParty</th>
+          <th>waveNum</th>
+          <th>mapID</th>
+          <th>fldLockID</th>
+          <th>BGMID</th>
+          <th>rewardID</th>
+          <th>ptID</th>
+          <th>posX</th>
+          <th>posY</th>
+          <th>posZ</th>
+          <th>rot</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>Humble Beginnings</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#58">58</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>20</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#33">33</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#1">1</td></a>
+        <td></td>
+        <td>-662.8</td>
+        <td>20.4</td>
+        <td>-337.7</td>
+        <td>113</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>Humble Beginnings</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#58">58</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#33">33</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#2">2</td></a>
+        <td><a href="limited_party.html#1">1</td></a>
+        <td>-662.8</td>
+        <td>20.4</td>
+        <td>-337.7</td>
+        <td>113</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>Fair Game</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#70">70</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>25</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#35">35</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#3">3</td></a>
+        <td></td>
+        <td>2536.9</td>
+        <td>216</td>
+        <td>-278.2</td>
+        <td>200</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>Fair Game</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#70">70</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#35">35</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#4">4</td></a>
+        <td><a href="limited_party.html#2">2</td></a>
+        <td>2536.9</td>
+        <td>216</td>
+        <td>-278.2</td>
+        <td>200</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>The Walls Have Eyes</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#103">103</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>30</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#36">36</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#5">5</td></a>
+        <td></td>
+        <td>59.2</td>
+        <td>4</td>
+        <td>-131</td>
+        <td>210</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>The Walls Have Eyes</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#103">103</td></a>
+        <td>Continue the story!</td>
+        <td>1</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#36">36</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#6">6</td></a>
+        <td><a href="limited_party.html#3">3</td></a>
+        <td>59.2</td>
+        <td>4</td>
+        <td>-131</td>
+        <td>210</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>Shaggy-dog Story</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#138">138</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>35</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#37">37</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#7">7</td></a>
+        <td></td>
+        <td>1452.6</td>
+        <td>-70</td>
+        <td>-350</td>
+        <td>357</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>Shaggy-dog Story</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#138">138</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#37">37</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#8">8</td></a>
+        <td><a href="limited_party.html#4">4</td></a>
+        <td>1452.6</td>
+        <td>-70</td>
+        <td>-350</td>
+        <td>357</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>Oh, Brother!</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#196">196</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>45</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#38">38</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#9">9</td></a>
+        <td></td>
+        <td>1318.7</td>
+        <td>170</td>
+        <td>916.1</td>
+        <td>177</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>Oh, Brother!</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#196">196</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#38">38</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#27">b01_loop</td></a>
+        <td><a href="trial_reward.html#10">10</td></a>
+        <td><a href="limited_party.html#5">5</td></a>
+        <td>1318.7</td>
+        <td>170</td>
+        <td>916.1</td>
+        <td>177</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>Third Wheel</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#276">276</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>55</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#39">39</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#29">b03_loop</td></a>
+        <td><a href="trial_reward.html#11">11</td></a>
+        <td></td>
+        <td>-958</td>
+        <td>21</td>
+        <td>304.5</td>
+        <td>303</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>Third Wheel</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#276">276</td></a>
+        <td>Continue the story!</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#39">39</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#29">b03_loop</td></a>
+        <td><a href="trial_reward.html#12">12</td></a>
+        <td><a href="limited_party.html#6">6</td></a>
+        <td>-958</td>
+        <td>21</td>
+        <td>304.5</td>
+        <td>303</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>Sparks Fly, You Die</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#323">323</td></a>
+        <td>Continue the story!</td>
+        <td>3</td>
+        <td>65</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#40">40</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#28">b02_loop</td></a>
+        <td><a href="trial_reward.html#13">13</td></a>
+        <td></td>
+        <td>-219.9</td>
+        <td>570.2</td>
+        <td>-90</td>
+        <td>181</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>Sparks Fly, You Die</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#323">323</td></a>
+        <td>Continue the story!</td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#40">40</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#28">b02_loop</td></a>
+        <td><a href="trial_reward.html#14">14</td></a>
+        <td><a href="limited_party.html#7">7</td></a>
+        <td>-219.9</td>
+        <td>570.2</td>
+        <td>-90</td>
+        <td>181</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>Lost in a Dark Dream</td>
+        <td>Free</td>
+        <td>1</td>
+        <td></td>
+        <td>Complete the extra story!</td>
+        <td>3</td>
+        <td>80</td>
+        <td>1</td>
+        <td><a href="../bdat_common/FLD_maplist.html#46">46</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#140">b52_loop</td></a>
+        <td><a href="trial_reward.html#15">15</td></a>
+        <td></td>
+        <td>195</td>
+        <td>53</td>
+        <td>-139</td>
+        <td>260</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>Lost in a Dark Dream</td>
+        <td>Restricted</td>
+        <td>1</td>
+        <td></td>
+        <td>Complete the extra story!</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="../bdat_common/FLD_maplist.html#46">46</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#140">b52_loop</td></a>
+        <td><a href="trial_reward.html#16">16</td></a>
+        <td><a href="limited_party.html#8">8</td></a>
+        <td>195</td>
+        <td>53</td>
+        <td>-139</td>
+        <td>260</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>He of the Metal Face</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#382">382</td></a>
+        <td>Continue the story!</td>
+        <td>3</td>
+        <td>90</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#41">41</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#31">b05_loop</td></a>
+        <td><a href="trial_reward.html#17">17</td></a>
+        <td></td>
+        <td>-36.1</td>
+        <td>-2.5</td>
+        <td>0.8</td>
+        <td>300</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>He of the Metal Face</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#382">382</td></a>
+        <td>Continue the story!</td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td><a href="../bdat_common/FLD_maplist.html#41">41</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#31">b05_loop</td></a>
+        <td><a href="trial_reward.html#18">18</td></a>
+        <td><a href="limited_party.html#9">9</td></a>
+        <td>-36.1</td>
+        <td>-2.5</td>
+        <td>0.8</td>
+        <td>300</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>Uniquely Disadvantaged</td>
+        <td>Free</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#389">389</td></a>
+        <td>Continue the story!</td>
+        <td>4</td>
+        <td>99</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#42">42</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#28">b02_loop</td></a>
+        <td><a href="trial_reward.html#19">19</td></a>
+        <td></td>
+        <td>-245</td>
+        <td>176</td>
+        <td>-49</td>
+        <td>0</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>Uniquely Disadvantaged</td>
+        <td>Restricted</td>
+        <td>0</td>
+        <td><a href="../MNU_scenario.html#389">389</td></a>
+        <td>Continue the story!</td>
+        <td>4</td>
+        <td>0</td>
+        <td>3</td>
+        <td><a href="../bdat_common/FLD_maplist.html#42">42</td></a>
+        <td>1</td>
+        <td><a href="../bdat_common/bgmlist.html#28">b02_loop</td></a>
+        <td><a href="trial_reward.html#20">20</td></a>
+        <td><a href="limited_party.html#10">10</td></a>
+        <td>-245</td>
+        <td>176</td>
+        <td>-49</td>
+        <td>0</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

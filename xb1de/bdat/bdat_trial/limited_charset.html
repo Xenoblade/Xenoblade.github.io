@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>limited_charset</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>pc</th>
+          <th>lv</th>
+          <th>wpn</th>
+          <th>head</th>
+          <th>body</th>
+          <th>arm</th>
+          <th>waist</th>
+          <th>legg</th>
+          <th colspan="2">arts_set</th>
+          <th>skill_set</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#1">limited_party#1</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#2">Reyn</td></a>
+        <td>20</td>
+        <td><a href="limited_equip.html#55">55</td></a>
+        <td><a href="limited_equip.html#56">56</td></a>
+        <td><a href="limited_equip.html#57">57</td></a>
+        <td><a href="limited_equip.html#58">58</td></a>
+        <td><a href="limited_equip.html#59">59</td></a>
+        <td><a href="limited_equip.html#60">60</td></a>
+        <td><a href="limited_artsset.html#1">1</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#9">9</td></a>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#1">limited_party#1</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#1">Shulk</td></a>
+        <td>20</td>
+        <td><a href="limited_equip.html#61">61</td></a>
+        <td><a href="limited_equip.html#62">62</td></a>
+        <td><a href="limited_equip.html#63">63</td></a>
+        <td><a href="limited_equip.html#64">64</td></a>
+        <td><a href="limited_equip.html#65">65</td></a>
+        <td><a href="limited_equip.html#66">66</td></a>
+        <td><a href="limited_artsset.html#2">2</td></a>
+        <td><a href="limited_artsset.html#3">3</td></a>
+        <td><a href="limited_skillset.html#10">10</td></a>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#2">limited_party#2</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#5">Sharla</td></a>
+        <td>25</td>
+        <td><a href="limited_equip.html#67">67</td></a>
+        <td><a href="limited_equip.html#68">68</td></a>
+        <td><a href="limited_equip.html#69">69</td></a>
+        <td><a href="limited_equip.html#70">70</td></a>
+        <td><a href="limited_equip.html#71">71</td></a>
+        <td><a href="limited_equip.html#72">72</td></a>
+        <td><a href="limited_artsset.html#4">4</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#11">11</td></a>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#2">limited_party#2</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#1">Shulk</td></a>
+        <td>25</td>
+        <td><a href="limited_equip.html#73">73</td></a>
+        <td><a href="limited_equip.html#74">74</td></a>
+        <td><a href="limited_equip.html#75">75</td></a>
+        <td><a href="limited_equip.html#76">76</td></a>
+        <td><a href="limited_equip.html#77">77</td></a>
+        <td><a href="limited_equip.html#78">78</td></a>
+        <td><a href="limited_artsset.html#5">5</td></a>
+        <td><a href="limited_artsset.html#6">6</td></a>
+        <td><a href="limited_skillset.html#11">11</td></a>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#2">limited_party#2</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#2">Reyn</td></a>
+        <td>25</td>
+        <td><a href="limited_equip.html#79">79</td></a>
+        <td><a href="limited_equip.html#80">80</td></a>
+        <td><a href="limited_equip.html#81">81</td></a>
+        <td><a href="limited_equip.html#82">82</td></a>
+        <td><a href="limited_equip.html#83">83</td></a>
+        <td><a href="limited_equip.html#84">84</td></a>
+        <td><a href="limited_artsset.html#7">7</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#11">11</td></a>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#3">limited_party#3</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#4">Dunban</td></a>
+        <td>30</td>
+        <td><a href="limited_equip.html#85">85</td></a>
+        <td><a href="limited_equip.html#86">86</td></a>
+        <td><a href="limited_equip.html#87">87</td></a>
+        <td><a href="limited_equip.html#88">88</td></a>
+        <td><a href="limited_equip.html#89">89</td></a>
+        <td><a href="limited_equip.html#90">90</td></a>
+        <td><a href="limited_artsset.html#8">8</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#14">14</td></a>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#3">limited_party#3</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#2">Reyn</td></a>
+        <td>30</td>
+        <td><a href="limited_equip.html#91">91</td></a>
+        <td><a href="limited_equip.html#92">92</td></a>
+        <td><a href="limited_equip.html#93">93</td></a>
+        <td><a href="limited_equip.html#94">94</td></a>
+        <td><a href="limited_equip.html#95">95</td></a>
+        <td><a href="limited_equip.html#96">96</td></a>
+        <td><a href="limited_artsset.html#9">9</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#15">15</td></a>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#3">limited_party#3</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#5">Sharla</td></a>
+        <td>30</td>
+        <td><a href="limited_equip.html#97">97</td></a>
+        <td><a href="limited_equip.html#98">98</td></a>
+        <td><a href="limited_equip.html#99">99</td></a>
+        <td><a href="limited_equip.html#100">100</td></a>
+        <td><a href="limited_equip.html#101">101</td></a>
+        <td><a href="limited_equip.html#102">102</td></a>
+        <td><a href="limited_artsset.html#10">10</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#16">16</td></a>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#4">limited_party#4</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#6">Riki</td></a>
+        <td>35</td>
+        <td><a href="limited_equip.html#103">103</td></a>
+        <td><a href="limited_equip.html#104">104</td></a>
+        <td><a href="limited_equip.html#105">105</td></a>
+        <td><a href="limited_equip.html#106">106</td></a>
+        <td><a href="limited_equip.html#107">107</td></a>
+        <td><a href="limited_equip.html#108">108</td></a>
+        <td><a href="limited_artsset.html#11">11</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#17">17</td></a>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#4">limited_party#4</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#5">Sharla</td></a>
+        <td>35</td>
+        <td><a href="limited_equip.html#109">109</td></a>
+        <td><a href="limited_equip.html#110">110</td></a>
+        <td><a href="limited_equip.html#111">111</td></a>
+        <td><a href="limited_equip.html#112">112</td></a>
+        <td><a href="limited_equip.html#113">113</td></a>
+        <td><a href="limited_equip.html#114">114</td></a>
+        <td><a href="limited_artsset.html#12">12</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#18">18</td></a>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#4">limited_party#4</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#1">Shulk</td></a>
+        <td>35</td>
+        <td><a href="limited_equip.html#115">115</td></a>
+        <td><a href="limited_equip.html#116">116</td></a>
+        <td><a href="limited_equip.html#117">117</td></a>
+        <td><a href="limited_equip.html#118">118</td></a>
+        <td><a href="limited_equip.html#119">119</td></a>
+        <td><a href="limited_equip.html#120">120</td></a>
+        <td><a href="limited_artsset.html#13">13</td></a>
+        <td><a href="limited_artsset.html#14">14</td></a>
+        <td><a href="limited_skillset.html#19">19</td></a>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#5">limited_party#5</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#7">Melia</td></a>
+        <td>45</td>
+        <td><a href="limited_equip.html#121">121</td></a>
+        <td><a href="limited_equip.html#122">122</td></a>
+        <td><a href="limited_equip.html#123">123</td></a>
+        <td><a href="limited_equip.html#124">124</td></a>
+        <td><a href="limited_equip.html#125">125</td></a>
+        <td><a href="limited_equip.html#126">126</td></a>
+        <td><a href="limited_artsset.html#15">15</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#20">20</td></a>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#5">limited_party#5</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#4">Dunban</td></a>
+        <td>45</td>
+        <td><a href="limited_equip.html#127">127</td></a>
+        <td><a href="limited_equip.html#128">128</td></a>
+        <td><a href="limited_equip.html#129">129</td></a>
+        <td><a href="limited_equip.html#130">130</td></a>
+        <td><a href="limited_equip.html#131">131</td></a>
+        <td><a href="limited_equip.html#132">132</td></a>
+        <td><a href="limited_artsset.html#16">16</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#21">21</td></a>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#5">limited_party#5</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#6">Riki</td></a>
+        <td>45</td>
+        <td><a href="limited_equip.html#133">133</td></a>
+        <td><a href="limited_equip.html#134">134</td></a>
+        <td><a href="limited_equip.html#135">135</td></a>
+        <td><a href="limited_equip.html#136">136</td></a>
+        <td><a href="limited_equip.html#137">137</td></a>
+        <td><a href="limited_equip.html#138">138</td></a>
+        <td><a href="limited_artsset.html#17">17</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#22">22</td></a>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#6">limited_party#6</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#8">Fiora</td></a>
+        <td>55</td>
+        <td><a href="limited_equip.html#139">139</td></a>
+        <td><a href="limited_equip.html#140">140</td></a>
+        <td><a href="limited_equip.html#141">141</td></a>
+        <td><a href="limited_equip.html#142">142</td></a>
+        <td><a href="limited_equip.html#143">143</td></a>
+        <td><a href="limited_equip.html#144">144</td></a>
+        <td><a href="limited_artsset.html#18">18</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#23">23</td></a>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#6">limited_party#6</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#7">Melia</td></a>
+        <td>55</td>
+        <td><a href="limited_equip.html#145">145</td></a>
+        <td><a href="limited_equip.html#146">146</td></a>
+        <td><a href="limited_equip.html#147">147</td></a>
+        <td><a href="limited_equip.html#148">148</td></a>
+        <td><a href="limited_equip.html#149">149</td></a>
+        <td><a href="limited_equip.html#150">150</td></a>
+        <td><a href="limited_artsset.html#19">19</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#24">24</td></a>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#6">limited_party#6</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#4">Dunban</td></a>
+        <td>55</td>
+        <td><a href="limited_equip.html#151">151</td></a>
+        <td><a href="limited_equip.html#152">152</td></a>
+        <td><a href="limited_equip.html#153">153</td></a>
+        <td><a href="limited_equip.html#154">154</td></a>
+        <td><a href="limited_equip.html#155">155</td></a>
+        <td><a href="limited_equip.html#156">156</td></a>
+        <td><a href="limited_artsset.html#20">20</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#25">25</td></a>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#7">limited_party#7</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#1">Shulk</td></a>
+        <td>65</td>
+        <td><a href="limited_equip.html#157">157</td></a>
+        <td><a href="limited_equip.html#158">158</td></a>
+        <td><a href="limited_equip.html#159">159</td></a>
+        <td><a href="limited_equip.html#160">160</td></a>
+        <td><a href="limited_equip.html#161">161</td></a>
+        <td><a href="limited_equip.html#162">162</td></a>
+        <td><a href="limited_artsset.html#21">21</td></a>
+        <td><a href="limited_artsset.html#22">22</td></a>
+        <td><a href="limited_skillset.html#26">26</td></a>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#7">limited_party#7</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#2">Reyn</td></a>
+        <td>65</td>
+        <td><a href="limited_equip.html#163">163</td></a>
+        <td><a href="limited_equip.html#164">164</td></a>
+        <td><a href="limited_equip.html#165">165</td></a>
+        <td><a href="limited_equip.html#166">166</td></a>
+        <td><a href="limited_equip.html#167">167</td></a>
+        <td><a href="limited_equip.html#168">168</td></a>
+        <td><a href="limited_artsset.html#23">23</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#27">27</td></a>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#7">limited_party#7</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#8">Fiora</td></a>
+        <td>65</td>
+        <td><a href="limited_equip.html#169">169</td></a>
+        <td><a href="limited_equip.html#170">170</td></a>
+        <td><a href="limited_equip.html#171">171</td></a>
+        <td><a href="limited_equip.html#172">172</td></a>
+        <td><a href="limited_equip.html#173">173</td></a>
+        <td><a href="limited_equip.html#174">174</td></a>
+        <td><a href="limited_artsset.html#24">24</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#28">28</td></a>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#8">limited_party#8</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#7">Melia</td></a>
+        <td>80</td>
+        <td><a href="limited_equip.html#175">175</td></a>
+        <td><a href="limited_equip.html#176">176</td></a>
+        <td><a href="limited_equip.html#177">177</td></a>
+        <td><a href="limited_equip.html#178">178</td></a>
+        <td><a href="limited_equip.html#179">179</td></a>
+        <td><a href="limited_equip.html#180">180</td></a>
+        <td><a href="limited_artsset.html#25">25</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#29">29</td></a>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#8">limited_party#8</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#6">Riki</td></a>
+        <td>80</td>
+        <td><a href="limited_equip.html#181">181</td></a>
+        <td><a href="limited_equip.html#182">182</td></a>
+        <td><a href="limited_equip.html#183">183</td></a>
+        <td><a href="limited_equip.html#184">184</td></a>
+        <td><a href="limited_equip.html#185">185</td></a>
+        <td><a href="limited_equip.html#186">186</td></a>
+        <td><a href="limited_artsset.html#26">26</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#30">30</td></a>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#8">limited_party#8</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#8">Fiora</td></a>
+        <td>80</td>
+        <td><a href="limited_equip.html#187">187</td></a>
+        <td><a href="limited_equip.html#188">188</td></a>
+        <td><a href="limited_equip.html#189">189</td></a>
+        <td><a href="limited_equip.html#190">190</td></a>
+        <td><a href="limited_equip.html#191">191</td></a>
+        <td><a href="limited_equip.html#192">192</td></a>
+        <td><a href="limited_artsset.html#27">27</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#31">31</td></a>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#9">limited_party#9</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#4">Dunban</td></a>
+        <td>90</td>
+        <td><a href="limited_equip.html#193">193</td></a>
+        <td><a href="limited_equip.html#194">194</td></a>
+        <td><a href="limited_equip.html#195">195</td></a>
+        <td><a href="limited_equip.html#196">196</td></a>
+        <td><a href="limited_equip.html#197">197</td></a>
+        <td><a href="limited_equip.html#198">198</td></a>
+        <td><a href="limited_artsset.html#28">28</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#32">32</td></a>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#9">limited_party#9</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#5">Sharla</td></a>
+        <td>90</td>
+        <td><a href="limited_equip.html#199">199</td></a>
+        <td><a href="limited_equip.html#200">200</td></a>
+        <td><a href="limited_equip.html#201">201</td></a>
+        <td><a href="limited_equip.html#202">202</td></a>
+        <td><a href="limited_equip.html#203">203</td></a>
+        <td><a href="limited_equip.html#204">204</td></a>
+        <td><a href="limited_artsset.html#29">29</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#33">33</td></a>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#9">limited_party#9</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#6">Riki</td></a>
+        <td>90</td>
+        <td><a href="limited_equip.html#205">205</td></a>
+        <td><a href="limited_equip.html#206">206</td></a>
+        <td><a href="limited_equip.html#207">207</td></a>
+        <td><a href="limited_equip.html#208">208</td></a>
+        <td><a href="limited_equip.html#209">209</td></a>
+        <td><a href="limited_equip.html#210">210</td></a>
+        <td><a href="limited_artsset.html#30">30</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#34">34</td></a>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#10">limited_party#10</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#8">Fiora</td></a>
+        <td>99</td>
+        <td><a href="limited_equip.html#211">211</td></a>
+        <td><a href="limited_equip.html#212">212</td></a>
+        <td><a href="limited_equip.html#213">213</td></a>
+        <td><a href="limited_equip.html#214">214</td></a>
+        <td><a href="limited_equip.html#215">215</td></a>
+        <td><a href="limited_equip.html#216">216</td></a>
+        <td><a href="limited_artsset.html#31">31</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#35">35</td></a>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#10">limited_party#10</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#7">Melia</td></a>
+        <td>99</td>
+        <td><a href="limited_equip.html#217">217</td></a>
+        <td><a href="limited_equip.html#218">218</td></a>
+        <td><a href="limited_equip.html#219">219</td></a>
+        <td><a href="limited_equip.html#220">220</td></a>
+        <td><a href="limited_equip.html#221">221</td></a>
+        <td><a href="limited_equip.html#222">222</td></a>
+        <td><a href="limited_artsset.html#32">32</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#36">36</td></a>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+          <details>
+            <summary>1 refs</summary>
+            <a href="limited_party.html#10">limited_party#10</a>
+          </details>
+        </td>
+        <td><a href="../bdat_common/BTL_pclist.html#5">Sharla</td></a>
+        <td>99</td>
+        <td><a href="limited_equip.html#223">223</td></a>
+        <td><a href="limited_equip.html#224">224</td></a>
+        <td><a href="limited_equip.html#225">225</td></a>
+        <td><a href="limited_equip.html#226">226</td></a>
+        <td><a href="limited_equip.html#227">227</td></a>
+        <td><a href="limited_equip.html#228">228</td></a>
+        <td><a href="limited_artsset.html#33">33</td></a>
+        <td></td>
+        <td><a href="limited_skillset.html#37">37</td></a>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

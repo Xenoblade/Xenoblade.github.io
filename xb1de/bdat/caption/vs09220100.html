@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>vs09220100</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>time</th>
+          <th>caption</th>
+          <th>time_jp</th>
+          <th>caption_jp</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>3.8</td>
+        <td>We must be outside the tower.</td>
+        <td>3.13333344</td>
+        <td>We must be outside the tower.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>5.9666667</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>6.0666666</td>
+        <td>[ML:undisp ]</td>
+        <td>4.6</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>6.133333</td>
+        <td>5</td>
+        <td>6.133333</td>
+        <td>1</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>8.566667</td>
+        <td>Are we here?</td>
+        <td>8.033334</td>
+        <td>Are we here?</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>9.466666</td>
+        <td>7</td>
+        <td>8.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>14.5666666</td>
+        <td>This is it.</td>
+        <td>13.4666662</td>
+        <td>This is it.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>15.5666666</td>
+        <td>9</td>
+        <td>15.0333338</td>
+        <td>1</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>27.833334</td>
+        <td>This is the place I saw.</td>
+        <td>27.7666664</td>
+        <td>This is the place I saw.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>29.4666672</td>
+        <td>11</td>
+        <td>29.2</td>
+        <td>1</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>43.4</td>
+        <td>Melia?</td>
+        <td>43.1</td>
+        <td>Melia?</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>44.4</td>
+        <td>13</td>
+        <td>44</td>
+        <td>1</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>45.1</td>
+        <td>Father!</td>
+        <td>44.4</td>
+        <td>Father!</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>46.1</td>
+        <td>15</td>
+        <td>45.1666679</td>
+        <td>1</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>51.6666679</td>
+        <td>Father, who is this?</td>
+        <td>51.6666679</td>
+        <td>Father, who is this?</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>54.8</td>
+        <td>17</td>
+        <td>52.3666649</td>
+        <td>1</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>54.8666649</td>
+        <td>[ML:undisp ]</td>
+        <td>53.5</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>54.9333344</td>
+        <td>19</td>
+        <td>54.2333336</td>
+        <td>1</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>58.7666664</td>
+        <td>Welcome, True Heir to the Monado.</td>
+        <td>58.4</td>
+        <td>Welcome, True Heir to the Monado.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>63.4</td>
+        <td>[ML:undisp ]</td>
+        <td>60.2666664</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>64.4</td>
+        <td>22</td>
+        <td>62.9</td>
+        <td>1</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>66.9333344</td>
+        <td>Who are you?</td>
+        <td>66.9333344</td>
+        <td>Who are you?</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>68.3</td>
+        <td>24</td>
+        <td>67.8</td>
+        <td>1</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>68.9333344</td>
+        <td>Check that guy out!</td>
+        <td>68.9333344</td>
+        <td>Check that guy out!</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>71</td>
+        <td>26</td>
+        <td>71</td>
+        <td>1</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>72.86667</td>
+        <td>Is this...?</td>
+        <td>72.46667</td>
+        <td>Is this...?</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>73.86667</td>
+        <td>28</td>
+        <td>73.26666</td>
+        <td>1</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>74.0666656</td>
+        <td>[ML:undisp ]</td>
+        <td>74.5</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>74.13333</td>
+        <td>30</td>
+        <td>75.26666</td>
+        <td>1</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>74.2</td>
+        <td>He&#39;s one of the Giants, said to have
+become extinct eons ago.</td>
+        <td>76.03333</td>
+        <td>He&#39;s one of the Giants, said to have
+become extinct eons ago.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>78.73333</td>
+        <td>32</td>
+        <td>78.73334</td>
+        <td>1</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>80.36667</td>
+        <td>This is what our forefathers locked away.</td>
+        <td>80</td>
+        <td>This is what our forefathers locked away.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>83.9</td>
+        <td>34</td>
+        <td>83.46667</td>
+        <td>1</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>84.03333</td>
+        <td>I am Zanza.</td>
+        <td>84.03333</td>
+        <td>I am Zanza.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>86.26667</td>
+        <td>36</td>
+        <td>86.26666</td>
+        <td>1</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>86.63333</td>
+        <td>And I have waited centuries for you.</td>
+        <td>86.5666656</td>
+        <td>And I have waited centuries for you.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>90.1</td>
+        <td>[ML:undisp ]</td>
+        <td>87.8</td>
+        <td>[ML:undisp ]</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>90.1666641</td>
+        <td>39</td>
+        <td>90.1</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

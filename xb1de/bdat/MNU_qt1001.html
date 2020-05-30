@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt1001</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>purpose</th>
+          <th>info_prog</th>
+          <th>info_succ_A1</th>
+          <th>info_succ_A2</th>
+          <th>info_succ_A3</th>
+          <th>info_succ_B1</th>
+          <th>info_succ_B2</th>
+          <th>info_succ_B3</th>
+          <th>info_report</th>
+          <th>info_end_A</th>
+          <th>info_end_B</th>
+        </tr>
+      </thead>
+      <tr id="496">
+        <td>496</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="497">
+        <td>497</td>
+        <td>
+        </td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>4</td>
+        <td>5</td>
+        <td></td>
+      </tr>
+      <tr id="498">
+        <td>498</td>
+        <td>
+        </td>
+        <td>6</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>8</td>
+        <td></td>
+      </tr>
+      <tr id="499">
+        <td>499</td>
+        <td>
+        </td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>14</td>
+        <td></td>
+      </tr>
+      <tr id="500">
+        <td>500</td>
+        <td>
+        </td>
+        <td>15</td>
+        <td>16</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>17</td>
+        <td>18</td>
+        <td></td>
+      </tr>
+      <tr id="501">
+        <td>501</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="502">
+        <td>502</td>
+        <td>
+        </td>
+        <td>19</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>21</td>
+        <td>22</td>
+        <td></td>
+      </tr>
+      <tr id="503">
+        <td>503</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="504">
+        <td>504</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="505">
+        <td>505</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="506">
+        <td>506</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="507">
+        <td>507</td>
+        <td>
+        </td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>27</td>
+        <td></td>
+      </tr>
+      <tr id="508">
+        <td>508</td>
+        <td>
+        </td>
+        <td>28</td>
+        <td>29</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>30</td>
+        <td>31</td>
+        <td></td>
+      </tr>
+      <tr id="509">
+        <td>509</td>
+        <td>
+        </td>
+        <td>32</td>
+        <td>33</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>34</td>
+        <td>35</td>
+        <td></td>
+      </tr>
+      <tr id="510">
+        <td>510</td>
+        <td>
+        </td>
+        <td>36</td>
+        <td>37</td>
+        <td>38</td>
+        <td>39</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>40</td>
+        <td>41</td>
+        <td></td>
+      </tr>
+      <tr id="511">
+        <td>511</td>
+        <td>
+        </td>
+        <td>42</td>
+        <td>43</td>
+        <td>44</td>
+        <td>45</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>46</td>
+        <td>47</td>
+        <td></td>
+      </tr>
+      <tr id="512">
+        <td>512</td>
+        <td>
+        </td>
+        <td>48</td>
+        <td>49</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>50</td>
+        <td>51</td>
+        <td></td>
+      </tr>
+      <tr id="513">
+        <td>513</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="514">
+        <td>514</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="515">
+        <td>515</td>
+        <td>
+        </td>
+        <td>52</td>
+        <td>53</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>54</td>
+        <td></td>
+      </tr>
+      <tr id="516">
+        <td>516</td>
+        <td>
+        </td>
+        <td>55</td>
+        <td>56</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>57</td>
+        <td></td>
+      </tr>
+      <tr id="517">
+        <td>517</td>
+        <td>
+        </td>
+        <td>58</td>
+        <td>59</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>60</td>
+        <td></td>
+      </tr>
+      <tr id="518">
+        <td>518</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="519">
+        <td>519</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="520">
+        <td>520</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="521">
+        <td>521</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="522">
+        <td>522</td>
+        <td>
+        </td>
+        <td>61</td>
+        <td>62</td>
+        <td>63</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>64</td>
+        <td></td>
+      </tr>
+      <tr id="523">
+        <td>523</td>
+        <td>
+        </td>
+        <td>65</td>
+        <td>66</td>
+        <td>67</td>
+        <td>68</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>69</td>
+        <td></td>
+      </tr>
+      <tr id="524">
+        <td>524</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="525">
+        <td>525</td>
+        <td>
+        </td>
+        <td>70</td>
+        <td>71</td>
+        <td>72</td>
+        <td>73</td>
+        <td>74</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>75</td>
+        <td></td>
+      </tr>
+      <tr id="526">
+        <td>526</td>
+        <td>
+        </td>
+        <td>76</td>
+        <td>77</td>
+        <td>78</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>79</td>
+        <td></td>
+      </tr>
+      <tr id="527">
+        <td>527</td>
+        <td>
+        </td>
+        <td>80</td>
+        <td>81</td>
+        <td>82</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>83</td>
+        <td></td>
+      </tr>
+      <tr id="528">
+        <td>528</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="529">
+        <td>529</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+      <tr id="530">
+        <td>530</td>
+        <td>
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

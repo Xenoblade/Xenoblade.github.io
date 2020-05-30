@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MNU_qt0501_ms</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>style</th>
+          <th class="side">name</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Zazadan was injured by some monsters and he[XENO:n ]
+hasn&#39;t been able to move properly since. He also[XENO:n ]
+hasn&#39;t had any food. Bring him some food.</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 2 [System:Color name=item ]Twin Flamii Eggs[/System:Color] from Flamii in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 5 [System:Color name=item ]Lemon Stones[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Zazadan.</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You helped Zazadan stop his stomach rumbling.[XENO:n ]
+But he is still very badly injured...</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Zazadan is too scared of monsters now to go outside.[XENO:n ]
+Clear the monsters so that Zazadan can venture[XENO:n ]
+out.</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 8 [System:Color name=item ]Ogre Bunnias[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Zazadan.</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have cleared the monsters but something[XENO:n ]
+still seems to be bothering Zazadan.</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Zazadan has told you that there is a flying monster[XENO:n ]
+that also wants to eat him. Kill this monster to alleviate[XENO:n ]
+Zazadan&#39;s fears.</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Sunlight Schvaik[/System:Color] in the area of Barren[XENO:n ]
+Moor in Satorl Marsh. (Only at daytime.)</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Zazadan.</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Now the monsters really are all cleared, but[XENO:n ]
+Zazadan still doesn&#39;t seem well enough.</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Zazadan is still not well. Get some of the Nopon[XENO:n ]
+Potion to see if that will heal his injuries.</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect some [System:Color name=item ]Nopon Potion[/System:Color] in the area of[XENO:n ]
+Lacus Swamp in Satorl Marsh.</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Zazadan.</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Nopon Potion has done the trick![XENO:n ]
+Zazadan is fully recovered.</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Apparently something amazing will appear if you dip[XENO:n ]
+a Red Pollen Orb into the Shining Pond.</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate Dark Swamp&#39;s Shining Pond in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Zazadan.</td>
+      </tr>
+      <tr id="21">
+        <td>21</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Highmore Caviar came out of the Red Pollen[XENO:n ]
+Orb. Zazadan is really happy.</td>
+      </tr>
+      <tr id="22">
+        <td>22</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">A Nopon called Dedeba has asked for some[XENO:n ]
+Highmore Caviar from Zazadan. Take it to him.</td>
+      </tr>
+      <tr id="23">
+        <td>23</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Speak to a male Nopon called Dedeba.</td>
+      </tr>
+      <tr id="24">
+        <td>24</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You handed the Highmore Caviar over to[XENO:n ]
+Dedeba. What is he going to do with it though?</td>
+      </tr>
+      <tr id="25">
+        <td>25</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Zazadan seems to know something. Ask him and[XENO:n ]
+obtain some information about the black market.</td>
+      </tr>
+      <tr id="26">
+        <td>26</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Interrogate Zazadan who is in the Nopon Refuge[XENO:n ]
+of Satorl Marsh.</td>
+      </tr>
+      <tr id="27">
+        <td>27</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Continue your interrogation of Zazadan who is[XENO:n ]
+in the Nopon Refuge of Satorl Marsh.</td>
+      </tr>
+      <tr id="28">
+        <td>28</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Force a confession out of Zazadan who is in the[XENO:n ]
+Nopon Refuge of Satorl Marsh.</td>
+      </tr>
+      <tr id="29">
+        <td>29</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You might find Dedeba with the note Zazadan[XENO:n ]
+left behind. Ask Gadada to read it for you.</td>
+      </tr>
+      <tr id="30">
+        <td>30</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The scholar Kacha was carried off by Ignas.[XENO:n ]
+It seems there is something they want to know.[XENO:n ]
+Go to Exile Fortress and save Kacha.</td>
+      </tr>
+      <tr id="31">
+        <td>31</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Save Kacha who is in Exile Fortress in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="32">
+        <td>32</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Bokoko.</td>
+      </tr>
+      <tr id="33">
+        <td>33</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Kacha has been rescued. However, she has told[XENO:n ]
+a secret to the Ignas.</td>
+      </tr>
+      <tr id="34">
+        <td>34</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Ignas are looking for the Giants&#39; Key so they can get[XENO:n ]
+their hands on the treasure of the Giants. You must[XENO:n ]
+find a way of stopping them.</td>
+      </tr>
+      <tr id="35">
+        <td>35</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 5 [System:Color name=item ]Deluded Ignas[/System:Color] on the high plateau of[XENO:n ]
+Dark Swamp in Satorl Marsh.</td>
+      </tr>
+      <tr id="36">
+        <td>36</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Dig up the [System:Color name=item ]Giants&#39; Key[/System:Color] on the plateau above[XENO:n ]
+Dark Swamp in Satorl Marsh.</td>
+      </tr>
+      <tr id="37">
+        <td>37</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Investigate the altar on the roof of Exile Fortress[XENO:n ]
+in Satorl Marsh.</td>
+      </tr>
+      <tr id="38">
+        <td>38</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Kacha.</td>
+      </tr>
+      <tr id="39">
+        <td>39</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You stopped the treasure falling into the hands[XENO:n ]
+of the Ignas. Kacha will explain the altar to you.</td>
+      </tr>
+      <tr id="40">
+        <td>40</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">You have to make an offering to obtain the Giants&#39;[XENO:n ]
+treasure. Collect the Giants&#39; Mirror and place it on[XENO:n ]
+the altar.</td>
+      </tr>
+      <tr id="41">
+        <td>41</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the [System:Color name=item ]Giants&#39; Mirror[/System:Color] in the area of[XENO:n ]
+Daksha Shrine on the Bionis&#39; Leg.</td>
+      </tr>
+      <tr id="42">
+        <td>42</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offer the Giants&#39; Mirror on the altar on the roof[XENO:n ]
+of Exile Fortress.</td>
+      </tr>
+      <tr id="43">
+        <td>43</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Kacha.</td>
+      </tr>
+      <tr id="44">
+        <td>44</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You got the Daring of the Giants from the altar on[XENO:n ]
+Exile Fortress. But now you need something else.</td>
+      </tr>
+      <tr id="45">
+        <td>45</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Bokoko is feeling ill and needs your help preparing[XENO:n ]
+a camp. Collect some materials to make a bed.</td>
+      </tr>
+      <tr id="46">
+        <td>46</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 4 [System:Color name=item ]Glowing Upa Seeds[/System:Color] from Upas in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="47">
+        <td>47</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 [System:Color name=item ]Fancy Volff Hides[/System:Color] from Volff in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="48">
+        <td>48</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 4 [System:Color name=item ]Feather Leaves[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="49">
+        <td>49</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect 3 [System:Color name=item ]Wool Rocks[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="50">
+        <td>50</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Bokoko.</td>
+      </tr>
+      <tr id="51">
+        <td>51</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You&#39;ve collected the items for a comfortable bed.[XENO:n ]
+Now Bokoko should be able to get some sleep.</td>
+      </tr>
+      <tr id="52">
+        <td>52</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The Nopon Merchant was almost eaten by a Brog.[XENO:n ]
+Make sure it never happens again by killing some[XENO:n ]
+of them.</td>
+      </tr>
+      <tr id="53">
+        <td>53</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 2 [System:Color name=item ]Detox Brogs[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="54">
+        <td>54</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You completed the Nopon Merchant&#39;s request.[XENO:n ]
+Hopefully it won&#39;t happen again.</td>
+      </tr>
+      <tr id="55">
+        <td>55</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There are some monsters disturbing the camp.[XENO:n ]
+Defeat them and solve the problem.</td>
+      </tr>
+      <tr id="56">
+        <td>56</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 3 [System:Color name=item ]Coppice Quadwings[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="57">
+        <td>57</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You completed the Nopon Merchant&#39;s request.[XENO:n ]
+Hopefully the camp will be safe now.</td>
+      </tr>
+      <tr id="58">
+        <td>58</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Nopon generally venture out during the day. However,[XENO:n ]
+they keep meeting terrible monsters on Barren Moor.[XENO:n ]
+Defeat the monsters.</td>
+      </tr>
+      <tr id="59">
+        <td>59</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 2 [System:Color name=item ]Mist Rhoguls[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="60">
+        <td>60</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You completed the Nopon Merchant&#39;s request.[XENO:n ]
+Now the daytime will be safe for Nopon.</td>
+      </tr>
+      <tr id="61">
+        <td>61</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There are terrible monsters attacking the camp. The[XENO:n ]
+responsibility for the camp&#39;s safety falls on the oldest,[XENO:n ]
+Bokoko. Help him by defeating one of the monsters.</td>
+      </tr>
+      <tr id="62">
+        <td>62</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat 1 [System:Color name=item ]Officer Volff[/System:Color] in Satorl Marsh.</td>
+      </tr>
+      <tr id="63">
+        <td>63</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You completed the Nopon Merchant&#39;s request.[XENO:n ]
+Now the camp should be a little safer.</td>
+      </tr>
+      <tr id="64">
+        <td>64</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The High Entia encountered a terrible beast[XENO:n ]
+when out foraging for food at night. Defeat it so that[XENO:n ]
+he can continue looking for food.</td>
+      </tr>
+      <tr id="65">
+        <td>65</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Veteran Yozel[/System:Color] at Silent Obelisk in Satorl[XENO:n ]
+Marsh.</td>
+      </tr>
+      <tr id="66">
+        <td>66</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Report to the male High Entia near the Sororal[XENO:n ]
+Statues.</td>
+      </tr>
+      <tr id="67">
+        <td>67</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You helped the High Entia refugee. Now he[XENO:n ]
+should be able to continue his foraging.</td>
+      </tr>
+      <tr id="68">
+        <td>68</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Rozeal&#39;s close friend, Galvin, turned into a Telethia[XENO:n ]
+right before her eyes. However, he left without[XENO:n ]
+attacking her. She wants to find out where he is now.</td>
+      </tr>
+      <tr id="69">
+        <td>69</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Scarlen in Satorl Marsh.</td>
+      </tr>
+      <tr id="70">
+        <td>70</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Kaleka in Frontier Village.</td>
+      </tr>
+      <tr id="71">
+        <td>71</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Talk to Atael in Frontier Village.</td>
+      </tr>
+      <tr id="72">
+        <td>72</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Rozeal.</td>
+      </tr>
+      <tr id="73">
+        <td>73</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">After speaking to former Alcamoth residents, you[XENO:n ]
+have determined that Galvin is in Revelation Hall.</td>
+      </tr>
+      <tr id="74">
+        <td>74</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">Even after becoming a Telethia, Galvin continues to[XENO:n ]
+guard the Imperial Palace. He no longer remembers[XENO:n ]
+who he was. It is best to put him out of his misery.</td>
+      </tr>
+      <tr id="75">
+        <td>75</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Telethia Galvin[/System:Color] in Revelation Hall at[XENO:n ]
+Alcamoth.</td>
+      </tr>
+      <tr id="76">
+        <td>76</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Rozeal.</td>
+      </tr>
+      <tr id="77">
+        <td>77</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">There was nothing left of Galvin&#39;s old self.[XENO:n ]
+At least now he will be able to rest in peace.</td>
+      </tr>
+      <tr id="78">
+        <td>78</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There are other guards like Galvin protecting the[XENO:n ]
+imperial capital. Send them to a happier place too.</td>
+      </tr>
+      <tr id="79">
+        <td>79</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Telethia Lecrough[/System:Color] in the area of the[XENO:n ]
+Great Hall in Alcamoth.</td>
+      </tr>
+      <tr id="80">
+        <td>80</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Telethia Galdo[/System:Color] in the area of the[XENO:n ]
+Imperial Villa in Alcamoth.</td>
+      </tr>
+      <tr id="81">
+        <td>81</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Telethia Kaelin[/System:Color] in the area of the[XENO:n ]
+Sky Terrace in Alcamoth.</td>
+      </tr>
+      <tr id="82">
+        <td>82</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Telethia Donnis[/System:Color] in the area of the[XENO:n ]
+Audience Chamber in Alcamoth.</td>
+      </tr>
+      <tr id="83">
+        <td>83</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Return to Rozeal.</td>
+      </tr>
+      <tr id="84">
+        <td>84</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have put the guardians of the Imperial City[XENO:n ]
+to rest.</td>
+      </tr>
+      <tr id="85">
+        <td>85</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">The imperial family used to hold ceremonies in Satorl.[XENO:n ]
+Perhaps completing this ceremony will grant you[XENO:n ]
+something that may be of use in future battles.</td>
+      </tr>
+      <tr id="86">
+        <td>86</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the Radiants from all around the world[XENO:n ]
+in order to perform the ceremony.</td>
+      </tr>
+      <tr id="87">
+        <td>87</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offer the Radiants to the engravings at the[XENO:n ]
+Sororal Statues in Satorl Marsh.</td>
+      </tr>
+      <tr id="88">
+        <td>88</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat [System:Color name=item ]Radiant Pterix[/System:Color] at the Sororal Statues in[XENO:n ]
+Satorl Marsh.</td>
+      </tr>
+      <tr id="89">
+        <td>89</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offering the Radiants made a Guardian appear.[XENO:n ]
+Defeating it earned you the High Entia Emblem.</td>
+      </tr>
+      <tr id="90">
+        <td>90</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">There are Radiants located in various places relating[XENO:n ]
+to the High Entia. Travel the world and look for the[XENO:n ]
+Radiants.</td>
+      </tr>
+      <tr id="91">
+        <td>91</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the [System:Color name=item ]Mist Radiant[/System:Color] from the area of Basin[XENO:n ]
+Cave in Satorl Marsh.</td>
+      </tr>
+      <tr id="92">
+        <td>92</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the [System:Color name=item ]Ocean Radiant[/System:Color] from the area of[XENO:n ]
+Central Seal Island at Eryth Sea.</td>
+      </tr>
+      <tr id="93">
+        <td>93</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the [System:Color name=item ]Imperial Radiant[/System:Color] from the area of the[XENO:n ]
+Ceremony Hall in the High Entia Tomb.</td>
+      </tr>
+      <tr id="94">
+        <td>94</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Collect the [System:Color name=item ]Snow Radiant[/System:Color] from the area of[XENO:n ]
+the Sealed Tower at Valak Mountain.</td>
+      </tr>
+      <tr id="95">
+        <td>95</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have collected all of the Radiants. Return to[XENO:n ]
+Satorl to perform the ceremony.</td>
+      </tr>
+      <tr id="96">
+        <td>96</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">According to the Nopon Merchant, only those who[XENO:n ]
+complete an ancient High Entia ceremony will be[XENO:n ]
+granted passage to the upper regions of the Bionis.</td>
+      </tr>
+      <tr id="97">
+        <td>97</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Complete preparations for the ceremony.</td>
+      </tr>
+      <tr id="98">
+        <td>98</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Present the offerings to the Adulthood Emblem[XENO:n ]
+to complete the Coming-of-Age Ceremony.</td>
+      </tr>
+      <tr id="99">
+        <td>99</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Defeat the Satorl Guardian.</td>
+      </tr>
+      <tr id="100">
+        <td>100</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">The Coming-of-Age Ceremony is complete and[XENO:n ]
+the path to the top of the Bionis is open.</td>
+      </tr>
+      <tr id="101">
+        <td>101</td>
+        <td>
+        </td>
+        <td>148</td>
+        <td class="side">It is necessary to provide proof for the ceremony.[XENO:n ]
+There are 4 offerings in Satorl Marsh. Collect them[XENO:n ]
+and prepare for the Coming-of-Age Ceremony.</td>
+      </tr>
+      <tr id="102">
+        <td>102</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offering in Igna Territory.[XENO:n ]
+Collect the [System:Color name=item ]Blue Radiant[/System:Color].</td>
+      </tr>
+      <tr id="103">
+        <td>103</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offering at the Altar of Fate.[XENO:n ]
+Collect the [System:Color name=item ]Rainbow Radiant[/System:Color].</td>
+      </tr>
+      <tr id="104">
+        <td>104</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offering at Dark Swamp.[XENO:n ]
+Collect the [System:Color name=item ]Dull Radiant[/System:Color].</td>
+      </tr>
+      <tr id="105">
+        <td>105</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">Offering at Basin Cave.[XENO:n ]
+Collect the [System:Color name=item ]White Radiant[/System:Color].</td>
+      </tr>
+      <tr id="106">
+        <td>106</td>
+        <td>
+        </td>
+        <td>138</td>
+        <td class="side">You have collected the 4 offerings. It&#39;s time to go[XENO:n ]
+to the Sororal Statues to perform the ceremony.</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>

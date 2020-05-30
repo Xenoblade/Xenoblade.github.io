@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CL6_materiallist</title>
+    <style>
+      th {position:sticky; top:-1px; background-color:#F0F0F0;}
+      table,th,td {border:1px solid black; border-collapse:collapse;}
+      .side {position:sticky; left:-1px; background-color:#F0F0F0;}
+      th.side {z-index:3}
+      .sortable tbody tr:nth-child(odd){background:#F5F5F5}
+      .sortable th{background:#e4e4e4;cursor:pointer;white-space:nowrap;vertical-align:middle}
+      .sortable th.dir-d::after{content:" \025BE";vertical-align:inherit}
+      .sortable th.dir-u::after{content:" \025B4";vertical-align:inherit}
+      :target td {background-color:#CCC !important;}
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Return to BDAT index</a><br/>
+    <input type="button" value="Open all references" onclick="openAll(true)" />
+    <input type="button" value="Close all references" onclick="openAll(false)" />
+    <table class="sortable">
+      <thead>
+        <tr id="header">
+          <th class=" dir-d ">ID</th>
+          <th>Referenced By</th>
+          <th>money</th>
+          <th>material1</th>
+          <th>number1</th>
+          <th>material2</th>
+          <th>number2</th>
+          <th>material3</th>
+          <th>number3</th>
+          <th>material4</th>
+          <th>number4</th>
+          <th>material5</th>
+          <th>number5</th>
+        </tr>
+      </thead>
+      <tr id="1">
+        <td>1</td>
+        <td>
+        </td>
+        <td>90</td>
+        <td><a href="ITM_itemlist.html#2225">Spotted Volff Hide</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2107">Steel Silk</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="2">
+        <td>2</td>
+        <td>
+        </td>
+        <td>190</td>
+        <td><a href="ITM_itemlist.html#2293">Bunnia Scent Wood</td></a>
+        <td>4</td>
+        <td><a href="ITM_itemlist.html#1975">Fossil Monkey</td></a>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="3">
+        <td>3</td>
+        <td>
+        </td>
+        <td>550</td>
+        <td><a href="ITM_itemlist.html#2347">Eks Iron Heart</td></a>
+        <td>1</td>
+        <td><a href="ITM_itemlist.html#2374">Sturdy Armour</td></a>
+        <td>4</td>
+        <td><a href="ITM_itemlist.html#2048">Oil Branch</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="4">
+        <td>4</td>
+        <td>
+        </td>
+        <td>1200</td>
+        <td><a href="ITM_itemlist.html#2485">Ponio Hoof Seal</td></a>
+        <td>5</td>
+        <td><a href="ITM_itemlist.html#2488">Royal Volff Hide</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2089">Warning Lamp</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2091">Retro Diode</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="5">
+        <td>5</td>
+        <td>
+        </td>
+        <td>3000</td>
+        <td><a href="ITM_itemlist.html#2313">Vang Star Wing</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2314">Gogol Horn</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2134">Red Frontier</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2066">Black Styrene</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2105">Rainbow Zirconia</td></a>
+        <td>3</td>
+      </tr>
+      <tr id="6">
+        <td>6</td>
+        <td>
+        </td>
+        <td>100</td>
+        <td><a href="ITM_itemlist.html#2299">Igna Hide Jacket</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1965">Amblygon Turtle</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="7">
+        <td>7</td>
+        <td>
+        </td>
+        <td>220</td>
+        <td><a href="ITM_itemlist.html#2354">Hode Plank</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2073">Ready Coil</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="8">
+        <td>8</td>
+        <td>
+        </td>
+        <td>550</td>
+        <td><a href="ITM_itemlist.html#2384">Shiny Kromar Hide</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2385">Slick Kromar Stone</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2018">Blue Ladybird</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="9">
+        <td>9</td>
+        <td>
+        </td>
+        <td>1000</td>
+        <td><a href="ITM_itemlist.html#2483">Piranhax Fishmeal</td></a>
+        <td>5</td>
+        <td><a href="ITM_itemlist.html#2490">Silver Antol Fibre</td></a>
+        <td>8</td>
+        <td><a href="ITM_itemlist.html#1878">Sour Turnip</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2061">Mossy Panel</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="10">
+        <td>10</td>
+        <td>
+        </td>
+        <td>2500</td>
+        <td><a href="ITM_itemlist.html#2328">Ocean Elixir of Life</td></a>
+        <td>1</td>
+        <td><a href="ITM_itemlist.html#2318">Ancient Sardi Meat</td></a>
+        <td>4</td>
+        <td><a href="ITM_itemlist.html#2087">Art Core Coil</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2064">Fortune Feather</td></a>
+        <td>1</td>
+        <td><a href="ITM_itemlist.html#2004">Hill Firefly</td></a>
+        <td>4</td>
+      </tr>
+      <tr id="11">
+        <td>11</td>
+        <td>
+        </td>
+        <td>50</td>
+        <td><a href="ITM_itemlist.html#2229">Sharp Hox Spur</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1892">Dark Grape</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="12">
+        <td>12</td>
+        <td>
+        </td>
+        <td>180</td>
+        <td><a href="ITM_itemlist.html#2292">Quadwing Bag</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2016">Empress Beetle</td></a>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="13">
+        <td>13</td>
+        <td>
+        </td>
+        <td>400</td>
+        <td><a href="ITM_itemlist.html#2366">Jagged Tail</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#1942">Despair Clover</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1872">Ice Cabbage</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="14">
+        <td>14</td>
+        <td>
+        </td>
+        <td>990</td>
+        <td><a href="ITM_itemlist.html#2306">Caterpile Silk</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2325">Hox Daylight Spur</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#1986">Oil Oyster</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#1917">White Plum</td></a>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="15">
+        <td>15</td>
+        <td>
+        </td>
+        <td>2800</td>
+        <td><a href="ITM_itemlist.html#2317">Ardun Elder Beard</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2310">Tokilos King Egg</td></a>
+        <td>1</td>
+        <td><a href="ITM_itemlist.html#1957">Lewisia Silver</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1887">Black Liver Bean</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2008">Black Beetle</td></a>
+        <td>2</td>
+      </tr>
+      <tr id="16">
+        <td>16</td>
+        <td>
+        </td>
+        <td>80</td>
+        <td><a href="ITM_itemlist.html#2248">Light Rain Element</td></a>
+        <td>1</td>
+        <td><a href="ITM_itemlist.html#2032">Kneecap Rock</td></a>
+        <td>1</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="17">
+        <td>17</td>
+        <td>
+        </td>
+        <td>250</td>
+        <td><a href="ITM_itemlist.html#2364">Dust Element</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1941">Sea Berry</td></a>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="18">
+        <td>18</td>
+        <td>
+        </td>
+        <td>500</td>
+        <td><a href="ITM_itemlist.html#2391">Squall Element</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2432">Snow Element</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2119">Lemonade Sky</td></a>
+        <td>3</td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="19">
+        <td>19</td>
+        <td>
+        </td>
+        <td>1300</td>
+        <td><a href="ITM_itemlist.html#2529">Flexible Selua Cell</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2530">Steel Selua Cell</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#1989">Rainbow Slug</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#1955">Azure Hollyhock</td></a>
+        <td>2</td>
+        <td></td>
+        <td>0</td>
+      </tr>
+      <tr id="20">
+        <td>20</td>
+        <td>
+        </td>
+        <td>4000</td>
+        <td><a href="ITM_itemlist.html#2545">Inferno Element</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2546">Bolt Element</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2095">Blue Light Amp</td></a>
+        <td>3</td>
+        <td><a href="ITM_itemlist.html#2098">Angel Engine X</td></a>
+        <td>2</td>
+        <td><a href="ITM_itemlist.html#2069">Rabbit Diode</td></a>
+        <td>3</td>
+      </tr>
+    </table>
+    <script>
+      function openAll(open) {
+        document.querySelectorAll("details").forEach(function(details) {
+          details.open = open;
+        });
+      }
+      document.addEventListener("click",function(e){var a=" dir-d ",r=" dir-u ",n=/ dir-(u|d) /,l=e.target;function o(e,a){e.className=e.className.replace(n,"")+(a||"")}if("TH"==l.nodeName){var c=l.parentNode.parentNode.parentNode;if(/\bsortable\b/.test(c.className)){for(var t=0,d=l.parentNode.cells,i=0;i<d.length&&d[i]!==l;i++)t+=d[i].colSpan,o(d[i]);var s=a;-1!==l.className.indexOf(a)&&(s=r),o(l,s);var N=c.tBodies[0],p=[].slice.call(N.cloneNode(!0).rows,0),f=s==r;p.sort(function(e,a){if(e=e.cells[t].innerText,a=a.cells[t].innerText,f){var r=e;e=a,a=r}return isNaN(e-a)?e.localeCompare(a):e-a});var v=N.cloneNode();for(i in p)v.appendChild(p[i]);c.replaceChild(v,N)}}});
+      function offsetAnchor() {
+        if(location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - document.getElementById('header').clientHeight);
+        }
+      }
+      window.addEventListener("hashchange", offsetAnchor);
+      window.setTimeout(offsetAnchor, 1);
+    </script>
+  </body>
+</html>
